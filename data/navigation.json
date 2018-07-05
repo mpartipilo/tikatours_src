@@ -1,0 +1,76 @@
+{
+    "path": "/",
+    "title": "Tika Tours",
+    "pages": [{
+            "path": "/georgia-tours",
+            "title": "Georgia Tours",
+            "pages": [{
+                "path": "/georgia-tours/luxury-group-journeys",
+                "title": "Luxury Group Journeys"
+            }, {
+                "path": "/georgia-tours/adventure-tours",
+                "title": "Adventure Tours"
+            }]
+        },
+        {
+            "path": "/multi-country-tours",
+            "title": "Multi-Country Tours",
+            "pages": [{
+                "path": "/multi-country-tours/georgia-armenia-azerbaijan",
+                "title": "Georgia, Armenia & Azerbaijan"
+            }, {
+                "path": "/multi-country-tours/georgia-and-armenia",
+                "title": "Georgia & Armenia"
+            }]
+        },
+        {
+            "path": "/georgia-travel-guide",
+            "title": "Georgia Travel Guide",
+            "pages": [{
+                "path": "/why-should-i-visit",
+                "title": "Why should I visit?"
+            }, {
+                "path": "/regions",
+                "title": "Regions"
+            }, {
+                "path": "/georgia-facts",
+                "title": "Georgia Facts"
+            }, {
+                "path": "/history-and-culture",
+                "title": "History & Culture"
+            }, {
+                "path": "/travel-info",
+                "title": "Travel Info"
+            }, {
+                "path": "/hotels",
+                "title": "Hotels"
+            }]
+        }, {
+            "path": "/gallery",
+            "title": "Gallery",
+            "pages": [{
+                "path": "/video-gallery",
+                "title": "Video gallery"
+            }]
+        }, {
+            "path": "/about",
+            "title": "About",
+            "pages": [{
+                "path": "/our-properties",
+                "title": "Our Properties"
+            }, {
+                "path": "/blog",
+                "title": "Blog"
+            }, {
+                "path": "/giving-back",
+                "title": "Giving Back"
+            }, {
+                "path": "/testimonials",
+                "title": "Testimonials"
+            }]
+        }, {
+            "path": "/contact-us",
+            "title": "Contact Us"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Heuristica-Bold';
+  src: url('Heuristica-Bold.eot?#iefix') format('embedded-opentype'),  url('Heuristica-Bold.otf')  format('opentype'),
+	     url('Heuristica-Bold.woff') format('woff'), url('Heuristica-Bold.ttf')  format('truetype'), url('Heuristica-Bold.svg#Heuristica-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
