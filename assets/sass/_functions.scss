@@ -1,0 +1,7 @@
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function em($target, $context: 14) {
+  @return ($target / $context) * 1em;
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'oxygen';
+    src: url('../fonts/oxygen/bold/oxygen-bold-webfont.eot');
+    src: url('../fonts/oxygen/bold/oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/bold/oxygen-bold-webfont.woff2') format('woff2'),
+         url('../fonts/oxygen/bold/oxygen-bold-webfont.woff') format('woff'),
+         url('../fonts/oxygen/bold/oxygen-bold-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/bold/oxygen-bold-webfont.svg#oxygenbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oxygen';
+    src: url('../fonts/oxygen/regular/oxygen-webfont.eot');
+    src: url('../fonts/oxygen/regular/oxygen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/regular/oxygen-webfont.woff2') format('woff2'),
+         url('../fonts/oxygen/regular/oxygen-webfont.woff') format('woff'),
+         url('../fonts/oxygen/regular/oxygen-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/regular/oxygen-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oxygenlight';
+    src: url('../fonts/oxygen/light/oxygen-light-webfont.eot');
+    src: url('../fonts/oxygen/light/oxygen-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen/light/oxygen-light-webfont.woff2') format('woff2'),
+         url('../fonts/oxygen/light/oxygen-light-webfont.woff') format('woff'),
+         url('../fonts/oxygen/light/oxygen-light-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen/light/oxygen-light-webfont.svg#oxygenlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'heuristica';
+  src:  url('../fonts/heuristica/bold/Heuristica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/heuristica/bold/Heuristica-Bold.otf')  format('opentype'),
+        url('../fonts/heuristica/bold/Heuristica-Bold.woff') format('woff'),
+        url('../fonts/heuristica/bold/Heuristica-Bold.ttf')  format('truetype'),
+        url('../fonts/heuristica/bold/Heuristica-Bold.svg#Heuristica-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heuristica';
+  src:  url('../fonts/heuristica/regular/Heuristica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/heuristica/regular/Heuristica-Regular.otf')  format('opentype'),
+        url('../fonts/heuristica/regular/Heuristica-Regular.woff') format('woff'),
+        url('../fonts/heuristica/regular/Heuristica-Regular.ttf')  format('truetype'),
+        url('../fonts/heuristica/regular/Heuristica-Regular.svg#Heuristica-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

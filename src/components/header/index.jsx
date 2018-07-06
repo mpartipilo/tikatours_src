@@ -4,21 +4,25 @@ import FontAwesome from "react-fontawesome"
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
-import "./_index.scss"
-
 class Header extends React.Component {
-  state = {
-    isOpen: false
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isOpen: false
+    }
+
+    this.toggleNavbar = this.toggleNavbar.bind(this)
   }
 
-  toggleNavbar = () => {
+  toggleNavbar() {
     this.setState(prevState => ({
       isOpen: !prevState.isOpen
     }))
   }
 
   render() {
-    const { languages, contact } = this.props
+    const { languages, contact, navigation } = this.props
     return (
       <header>
         <div className="top">

@@ -2,23 +2,33 @@ import React from "react"
 import Select, { components } from "react-select"
 import ReactCountryFlag from "react-country-flag"
 
-const SingleValue = ({ children, ...props }) => (
-  <components.SingleValue {...props}>
-    <ReactCountryFlag code={props.data.value.countryCode} />
-  </components.SingleValue>
-)
+const LanguageSelector = props => {
+  const options = props.languages.map(l => ({
+    value: l.languageCode,
+    label: l.languageName
+  }))
 
-const Option = props => (
-  <div>
+  return (
+    <select defaultValue={props.selectedLanguage}>
+      {options.map(o => (
+        <option key={o.value} value={o.value}>
+          {o.label}
+        </option>
+      ))}
+    </select>
+  )
+}
+
+const SingleValue = ({ ...props }) => (
+  <components.SingleValue {...props}>
     <ReactCountryFlag
       code={props.data.value.countryCode}
       styleProps={{ padding: -4 }}
     />
-    <components.Option {...props} />
-  </div>
+  </components.SingleValue>
 )
 
-class LanguageSelector extends React.Component {
+class LanguageSelectorFancy extends React.Component {
   constructor(props) {
     super(props)
 
@@ -39,7 +49,7 @@ class LanguageSelector extends React.Component {
     return (
       <Select
         defaultValue={this.state.defaultValue}
-        components={{ SingleValue, Option }}
+        components={{ SingleValue }}
         options={this.state.options}
         isSearchable={false}
         isClearable={false}
@@ -49,3 +59,4 @@ class LanguageSelector extends React.Component {
 }
 
 export default LanguageSelector
+export { LanguageSelector, LanguageSelectorFancy }

@@ -14,6 +14,10 @@ const mapFlagLanguage = [
   {
     lang: "ka",
     flag: "GE"
+  },
+  {
+    lang: "zh",
+    flag: "CN"
   }
 ]
 
