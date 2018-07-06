@@ -4,6 +4,24 @@ import FontAwesome from "react-fontawesome"
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
+const NavigationMenu = ({menu}) => (
+  <ul>
+    {menu.pages.map(p => (
+      <li>
+        <i className="fa fa-bars"></i>
+        <a href={p.path}>{p.title}</a>
+        { p.pages && (
+          <React.Fragment>
+            <i className="fa fa-caret-down" />
+            <i className="fa fa-caret-right" />
+            <NavigationMenu menu={p} />
+          </React.Fragment>
+        ) }
+      </li>
+    ))}
+  </ul>
+)
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -29,19 +47,17 @@ class Header extends React.Component {
           <a href="/" className="logo">
             <img src={logo} alt="Tika Tours logo" />
           </a>
-          <FontAwesome
-            onClick={this.toggleNavbar}
-            name="bars"
-            className="hidden-lg"
-          />
+          <i class="fa fa-bars hidden-lg" onClick={this.toggleNavbar}></i>
+          <LanguageSelector languages={languages} selectedLanguage="en" />
           {contact.telephone && (
             <a className="visible-xs" href={`tel:${contact.telephone}`}>
               <FontAwesome name="phone" />
             </a>
           )}
-          {this.state.isOpen && <span>==nav-main==</span>}
-          <LanguageSelector languages={languages} selectedLanguage="en" />
         </div>
+        <nav style={{display: this.state.isOpen ? "block" : "none"}}>
+          <NavigationMenu menu={navigation} />
+        </nav>
       </header>
     )
   }
