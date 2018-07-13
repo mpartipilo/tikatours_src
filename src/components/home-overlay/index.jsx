@@ -17,7 +17,13 @@ const HomeOverlay = ({ heading, subheading, intro, btn_text, btn_url }) => (
         </div>
         <div className="col-xs-2 col-sm-2 col-md-4">
           <div className="hidden-xs hidden-sm pad">
-            {intro && <p>{intro.replace(/(?:\r\n|\r|\n)/g, "<br />")}</p>}
+            {intro && (
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: intro.replace(/(?:\r\n|\r|\n)/g, "<br />")
+                }}
+              />
+            )}
             {btn_text &&
               btn_url && (
                 <p>

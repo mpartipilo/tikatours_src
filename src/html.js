@@ -31,13 +31,10 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script type="text/javascript">
-            {`
-          document.cookie='resolution='+Math.max(screen.width,screen.height)+';
-          path=/';
-        `}
-          </script>
           <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
+          <script src="/assets/js/libs/vendor.js" />
+          <script src="/assets/js/main.js" />
+
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -47,8 +44,6 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="/assets/js/libs/vendor.js" type="text/javascript" />
-          <script async src="/assets/js/main.js" onLoad="app.init()" />
         </body>
       </html>
     )

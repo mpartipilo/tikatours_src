@@ -46,35 +46,19 @@ const Layout = ({ children, data }) => (
     />
     <div className="push" />
     <HomeOverlay
-      heading="test"
-      subheading="test"
-      intro="test"
-      btn_text="test"
-      btn_url="http://google.com/"
+      heading="Life changing travel experiences"
+      subheading="Luxury Journeys to Georgia, Armenia and Azerbaijan"
+      intro={`TikaTours warmly welcomes you to places of extraordinary culture and history, geographical diversity and startling beauty. 
+
+      We are your specialists in luxury journeys to less-travelled destinations, offering trips to the Caucasus region of Georgia, Armenia, and Azerbaijan.`}
+      btn_text="About us"
+      btn_url="/about"
     />
-    {children()}
     <div className="main">
-      <div className="container">
-        ==breadcrumbs==
-        <div className="row">
-          <div className="col-xs-12 text-center ==has-bc==">
-            <h1>==heading==</h1>
-          </div>
-        </div>
-        ==sub-nav==
-        <div className="content">==content==</div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
-        ==cat-list==
-      </div>
-      ==gallery-index== ==tour-list== ==reasons== ==map_canvas_view==
-      ==social-panel== ==home-gallery==
+      {children()}
       <Footer />
     </div>
-    ==video== ==jsVars== ==scripts-load-top== ==slideshow-script== ==analytics==
+    ==video== ==scripts-load-top== ==slideshow-script== ==analytics==
   </React.Fragment>
 )
 
