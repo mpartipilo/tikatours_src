@@ -4,10 +4,9 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import Header from "../components/header"
-import Footer from "../components/footer"
-import HomeOverlay from "../components/home-overlay"
 
 import "../../assets/sass/main.scss"
+
 import navigation from "../../data/navigation.json"
 
 const Layout = ({ children, data }) => (
@@ -45,20 +44,7 @@ const Layout = ({ children, data }) => (
       navigation={navigation}
     />
     <div className="push" />
-    <HomeOverlay
-      heading="Life changing travel experiences"
-      subheading="Luxury Journeys to Georgia, Armenia and Azerbaijan"
-      intro={`TikaTours warmly welcomes you to places of extraordinary culture and history, geographical diversity and startling beauty. 
-
-      We are your specialists in luxury journeys to less-travelled destinations, offering trips to the Caucasus region of Georgia, Armenia, and Azerbaijan.`}
-      btn_text="About us"
-      btn_url="/about"
-    />
-    <div className="main">
-      {children()}
-      <Footer />
-    </div>
-    ==video== ==scripts-load-top== ==slideshow-script== ==analytics==
+    {children()}
   </React.Fragment>
 )
 

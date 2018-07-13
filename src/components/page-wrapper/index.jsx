@@ -1,6 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import ReasonsSlider from "../reasons"
+import Footer from "../footer"
+import HomeOverlay from "../home-overlay"
+import TourList from "../tour-list"
+import MapCanvasView from "../map-canvas"
+
 const PageWrapper = ({
   children,
   breadcrumbs,
@@ -10,33 +16,52 @@ const PageWrapper = ({
   galleryIndex,
   tourList,
   reasons,
-  mapCanvasView,
+  mapCanvasCountry,
   socialPanel,
   homeGallery
 }) => (
   <React.Fragment>
-    <div className="container">
-      {breadcrumbs && breadcrumbs()}
-      <div className="row">
-        <div className="col-xs-12 text-center ==has-bc==">
-          <h1>{heading && heading}</h1>
+    <HomeOverlay
+      heading="Life changing travel experiences"
+      subheading="Luxury Journeys to Georgia, Armenia and Azerbaijan"
+      intro={`TikaTours warmly welcomes you to places of extraordinary culture and history, geographical diversity and startling beauty. 
+
+      We are your specialists in luxury journeys to less-travelled destinations, offering trips to the Caucasus region of Georgia, Armenia, and Azerbaijan.`}
+      btn_text="About us"
+      btn_url="/about"
+    />
+    <div className="main">
+      <div className="container">
+        {breadcrumbs && breadcrumbs()}
+        <div className="row">
+          <div className="col-xs-12 text-center ==has-bc==">
+            <h1>{heading && heading}</h1>
+          </div>
         </div>
-      </div>
-      {subNav || "==sub-nav=="}
-      <div className="content">{children}</div>
-      <div className="row">
-        <div className="col-xs-12">
-          <div className="divider" />
+        {subNav || "==sub-nav=="}
+        <div className="content">{children}</div>
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="divider" />
+          </div>
         </div>
+        {catlist || "==cat-list=="}
       </div>
-      {catlist || "==cat-list=="}
+      {galleryIndex || "==gallery-index=="}
+      {tourList && <TourList {...tourList} />}
+      {reasons && (
+        <ReasonsSlider
+          reasons={reasons}
+          btnUrl="/georgia-tours"
+          btnText="View Georgia Tours"
+        />
+      )}
+      {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
+      {socialPanel || "==social-panel=="}
+      {homeGallery || "==home-gallery=="}
+      <Footer />
     </div>
-    {galleryIndex || "==gallery-index=="}
-    {tourList && tourList}
-    {reasons || "==reasons=="}
-    {mapCanvasView || "==map_canvas_view=="}
-    {socialPanel || "==social-panel=="}
-    {homeGallery || "==home-gallery=="}
+    ==video== ==scripts-load-top== ==slideshow-script== ==analytics==
   </React.Fragment>
 )
 
@@ -47,9 +72,9 @@ PageWrapper.propTypes = {
   subNav: PropTypes.node,
   catlist: PropTypes.array,
   galleryIndex: PropTypes.any,
-  tourList: PropTypes.node,
+  tourList: PropTypes.object,
   reasons: PropTypes.array,
-  mapCanvasView: PropTypes.node,
+  mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.node,
   homeGallery: PropTypes.node
 }
