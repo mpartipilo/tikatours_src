@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import ReasonsSlider from "../reasons"
 import Breadcrumbs from "../breadcrumbs"
@@ -24,30 +25,35 @@ const PageWrapper = ({
   subNav,
   catlist,
   galleryIndex,
+  homeOverlay,
   tourList,
   reasons,
   mapCanvasCountry,
   socialPanel,
   homeGallery,
   slideshow,
-  video
+  video,
+  bodyTagClasses,
+  location,
+  hasBreadcrumbs
 }) => (
   <React.Fragment>
-    <HomeOverlay
-      heading="Life changing travel experiences"
-      subheading="Luxury Journeys to Georgia, Armenia and Azerbaijan"
-      intro={`TikaTours warmly welcomes you to places of extraordinary culture and history, geographical diversity and startling beauty. 
-
-      We are your specialists in luxury journeys to less-travelled destinations, offering trips to the Caucasus region of Georgia, Armenia, and Azerbaijan.`}
-      btn_text="About us"
-      btn_url="/about"
+    <Helmet
+      bodyAttributes={{
+        class: (bodyTagClasses || "") + (slideshow ? "" : " no-ss")
+      }}
     />
+    {homeOverlay && <HomeOverlay {...homeOverlay} />}
     {slideshow && <Slideshow {...slideshow} />}
     <div className="main">
       <div className="container">
         {breadcrumbs && <Breadcrumbs {...breadcrumbs} />}
         <div className="row">
-          <div className="col-xs-12 text-center ==has-bc==">
+          <div
+            className={
+              "col-xs-12 text-center" + (hasBreadcrumbs ? " has-bc" : "")
+            }
+          >
             {heading && <h1>{heading}</h1>}
           </div>
         </div>
@@ -58,7 +64,7 @@ const PageWrapper = ({
             <div className="divider" />
           </div>
         </div>
-        {catlist && <CatList {...catlist} />}
+        {catlist && <CatList {...catlist} location={location} />}
       </div>
       {galleryIndex && <GalleryIndex {...galleryIndex} />}
       {tourList && <TourList {...tourList} />}
@@ -119,15 +125,19 @@ PageWrapper.propTypes = {
   breadcrumbs: PropTypes.func,
   heading: PropTypes.node,
   subNav: PropTypes.node,
-  catlist: PropTypes.array,
+  catlist: PropTypes.any,
   galleryIndex: PropTypes.any,
+  homeOverlay: PropTypes.bool,
   tourList: PropTypes.object,
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,
   homeGallery: PropTypes.bool,
   slideshow: PropTypes.any,
-  video: PropTypes.any
+  video: PropTypes.any,
+  bodyTagClasses: PropTypes.string,
+  location: PropTypes.string,
+  hasBreadcrumbs: PropTypes.bool
 }
 
 export default PageWrapper

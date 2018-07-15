@@ -30,9 +30,6 @@ const Layout = ({ children, data }) => (
         },
         { "http-equiv": "cleartype", content: "on" }
       ]}
-      bodyAttributes={{
-        class: "home"
-      }}
     >
       /* -- ==ex_meta_taga== -- */
       <link rel="shortcut icon" href="/favicon.ico" />
