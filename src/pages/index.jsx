@@ -8,6 +8,7 @@ import reasonsData from "../../data/reasons.json"
 const IndexPage = () => (
   <PageWrapper
     heading="Welcome to Tika Tours"
+    slideshow
     tourList={{
       heading: "Our Featured Tours",
       toursFilter: data =>
