@@ -6,6 +6,7 @@ import Footer from "../footer"
 import HomeOverlay from "../home-overlay"
 import TourList from "../tour-list"
 import MapCanvasView from "../map-canvas"
+import SocialPanel from "../social-panel"
 
 const PageWrapper = ({
   children,
@@ -57,7 +58,7 @@ const PageWrapper = ({
         />
       )}
       {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
-      {socialPanel || "==social-panel=="}
+      {socialPanel && <SocialPanel />}
       {homeGallery || "==home-gallery=="}
       <Footer />
     </div>
@@ -75,7 +76,7 @@ PageWrapper.propTypes = {
   tourList: PropTypes.object,
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,
-  socialPanel: PropTypes.node,
+  socialPanel: PropTypes.bool,
   homeGallery: PropTypes.node
 }
 
