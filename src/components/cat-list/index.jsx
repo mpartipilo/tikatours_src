@@ -20,7 +20,7 @@ class CatList extends React.Component {
         {this.state.categories &&
           this.state.categories.map(c => (
             <div className="col-xs-12 col-sm-6" key={c.id}>
-              <a href={`/{$page}/{$cat['url']}`}>
+              <a href={`${this.props.location.pathname}/${c.url}`}>
                 <div
                   className="sub-cat"
                   style={{ backgroundImage: `url(${c.image_path})` }}
@@ -38,6 +38,7 @@ class CatList extends React.Component {
 }
 
 CatList.propTypes = {
+  location: PropTypes.object,
   heading: PropTypes.string,
   tourCategoryFilter: PropTypes.func
 }
