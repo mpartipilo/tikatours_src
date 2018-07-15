@@ -1,24 +1,7 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const data = {
-  phone: "+995 570 70 72 14",
-  email: "info@tikatours.com",
-  address: `11, Grishashvili str.
-            0105
-            Tbilisi, Georgia`,
-  copyright: "© Copyright 2018. Tika Tours.",
-  credits: "Website by Michelangelo Partipilo",
-  navFooter: [
-    {
-      title: "About",
-      url: "/about"
-    },
-    {
-      title: "Contact us",
-      url: "/contact-us"
-    }
-  ]
-}
+import data from "../../../data/contact.json"
 
 const FooterNav = props => (
   <div className="row">
@@ -36,7 +19,7 @@ const FooterNav = props => (
   </div>
 )
 
-const Footer = props => (
+const Footer = () => (
   <footer>
     <div className="container-fluid">
       <FooterNav links={data.navFooter} />
@@ -97,5 +80,9 @@ const Footer = props => (
     </div>
   </footer>
 )
+
+FooterNav.propTypes = {
+  links: PropTypes.array
+}
 
 export default Footer
