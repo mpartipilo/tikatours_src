@@ -3,6 +3,12 @@ import PropTypes from "prop-types"
 
 import tourCategoryData from "../../../data/tour_category.json"
 
+const fullUrl = (main_category_id, sub_category_id, url) => {
+  var main_category = tourCategoryData.find(c => c.id === main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+  return `/${main_category.url}/${sub_category.url}/${url}`
+}
+
 const TourCard = ({
   id,
   name,
@@ -26,7 +32,8 @@ const TourCard = ({
   gallery_id,
   country_id,
   tag,
-  flag
+  flag,
+  subCategory
 }) => (
   <div className="col-xs-12 col-md-6 t-item">
     <div className="row">
@@ -36,15 +43,23 @@ const TourCard = ({
       >
         <span className="t-info" />
         <div className="tag">
-          {is_featured === "1"
-            ? "featured tour"
-            : tourCategoryData.find(c => c.id === main_category_id).name}
+          {subCategory
+            ? tourCategoryData.find(c => c.id === sub_category_id)
+              ? tourCategoryData.find(c => c.id === sub_category_id).name
+              : is_featured === "1"
+                ? "featured tour"
+                : ""
+            : tourCategoryData.find(c => c.id === main_category_id)
+              ? tourCategoryData.find(c => c.id === main_category_id).name
+              : is_featured === "1"
+                ? "featured tour"
+                : ""}
         </div>
       </div>
       <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
         <div className="t-info">
           <h3>
-            <a href={url}>{name}</a>
+            <a href={fullUrl(main_category_id, sub_category_id, url)}>{name}</a>
           </h3>
           <div className="duration">
             {flag && flag}
@@ -58,7 +73,10 @@ const TourCard = ({
             </p>
           )}
           <div>
-            <a href={url} className="btn">
+            <a
+              href={fullUrl(main_category_id, sub_category_id, url)}
+              className="btn"
+            >
               MORE INFO
             </a>
             <form className="book-btn-form" method="POST" action="/">
