@@ -3,41 +3,51 @@ import PropTypes from "prop-types"
 
 const TourCard = ({
   id,
-  imagePath,
+  name,
+  url,
+  heading,
+  short_descr,
+  long_descr,
+  image_path,
+  price_from,
+  inclusions,
+  itinerary,
+  duration,
+  title,
+  meta_descr,
+  status,
+  rank,
+  is_featured,
+  slideshow_id,
+  main_category_id,
+  sub_category_id,
+  gallery_id,
+  country_id,
   tag,
-  fullUrl,
-  tourName,
-  tourDuration,
-  shortDescription,
-  flag,
-  priceFrom,
-  featured,
-  featuredTag
+  flag
 }) => (
   <div className="col-xs-12 col-md-6 t-item">
     <div className="row">
       <div
         className="col-xs-12 col-sm-6 col-md-12 col-lg-6"
-        style={{ backgroundImage: "url('" + imagePath + "')" }}
+        style={{ backgroundImage: "url('" + image_path + "')" }}
       >
         <span className="t-info" />
-        <div className="tag">
-          {featured ? featuredTag || "featured tour" : tag}
-        </div>
+        <div className="tag">{is_featured === "1" ? "featured tour" : tag}</div>
       </div>
       <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
         <div className="t-info">
           <h3>
-            <a href={fullUrl}>{tourName}</a>
+            <a href={url}>{name}</a>
           </h3>
           <div className="duration">
             {flag && flag}
-            <span>{tourDuration}</span>
+            <span>{duration}</span>
           </div>
-          <p>{shortDescription}</p>
-          {priceFrom && priceFrom}
+          <p>{short_descr}</p>
+          {price_from > 0 && price_from}
           <div>
-            <a href={fullUrl} className="btn">
+            <a href={url} className="btn">
               MORE INFO
             </a>
             <form className="book-btn-form" method="POST" action="/">
@@ -47,26 +57,12 @@ const TourCard = ({
           </div>
         </div>
         <div className="blur-img">
-          <div style={{ backgroundImage: "url('" + imagePath + "')" }} />
+          <div style={{ backgroundImage: "url('" + image_path + "')" }} />
           <div className="olay" />
         </div>
       </div>
     </div>
   </div>
 )
-
-TourCard.propTypes = {
-  id: PropTypes.string,
-  imagePath: PropTypes.string,
-  tag: PropTypes.string,
-  fullUrl: PropTypes.string,
-  tourName: PropTypes.string,
-  tourDuration: PropTypes.string,
-  shortDescription: PropTypes.string,
-  flag: PropTypes.string,
-  priceFrom: PropTypes.string,
-  featured: PropTypes.bool,
-  featuredTag: PropTypes.string
-}
 
 export default TourCard

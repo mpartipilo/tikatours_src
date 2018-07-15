@@ -15,7 +15,7 @@ const ReasonsSlider = ({ reasons, btnUrl, btnText }) => (
             <div className="row">
               <div className="col-xs-12 col-sm-8 col-sm-push-2">
                 <ul className="slides">
-                  {reasons.map(r => (
+                  {reasons.sort((a, b) => b.rank - a.rank).map(r => (
                     <li key={r.id} className="slide">
                       <p>{r.highlight}</p>
                     </li>

@@ -7,6 +7,7 @@ import HomeOverlay from "../home-overlay"
 import TourList from "../tour-list"
 import MapCanvasView from "../map-canvas"
 import SocialPanel from "../social-panel"
+import HomeGallery from "../home-gallery"
 
 const PageWrapper = ({
   children,
@@ -49,7 +50,12 @@ const PageWrapper = ({
         {catlist || "==cat-list=="}
       </div>
       {galleryIndex || "==gallery-index=="}
-      {tourList && <TourList {...tourList} />}
+      {tourList && (
+        <TourList
+          heading={tourList.heading}
+          toursFilter={tourList.toursFilter}
+        />
+      )}
       {reasons && (
         <ReasonsSlider
           reasons={reasons}
@@ -59,7 +65,7 @@ const PageWrapper = ({
       )}
       {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
       {socialPanel && <SocialPanel />}
-      {homeGallery || "==home-gallery=="}
+      {homeGallery && <HomeGallery galleryId={5} />}
       <Footer />
     </div>
     ==video== ==scripts-load-top== ==slideshow-script== ==analytics==
@@ -77,7 +83,7 @@ PageWrapper.propTypes = {
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,
-  homeGallery: PropTypes.node
+  homeGallery: PropTypes.bool
 }
 
 export default PageWrapper

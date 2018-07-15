@@ -3,7 +3,6 @@ import Link from "gatsby-link"
 
 import PageWrapper from "../components/page-wrapper"
 
-import toursData from "../../data/tours.json"
 import reasonsData from "../../data/reasons.json"
 
 const IndexPage = () => (
@@ -11,11 +10,13 @@ const IndexPage = () => (
     heading="Welcome to Tika Tours"
     tourList={{
       heading: "Our Featured Tours",
-      tours: toursData.filter(t => t.featured)
+      toursFilter: data =>
+        data.filter(t => t.is_featured === "1").sort((a, b) => a.rank - b.rank)
     }}
     reasons={reasonsData}
     mapCanvasCountry="Georgia"
     socialPanel
+    homeGallery
   >
     <div className="col-xs-12 col-sm-6 col-md-6">
       <p>
