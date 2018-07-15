@@ -1,8 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { CSSTransition } from 'react-transition-group'
+import { CSSTransition } from "react-transition-group"
 
 import CountryMap from "../countrymap"
+
+import "./styles.scss"
 
 class MapCanvasView extends React.Component {
   constructor(props) {
@@ -41,10 +43,11 @@ class MapCanvasView extends React.Component {
         </div>
         <CSSTransition
           in={this.state.mapVisible}
-          transitionName="mapInView"
-          timeout={500}
+          timeout={{ enter: 500, exit: 300 }}
+          classNames="mapInView"
+          unmountOnExit
         >
-          {this.state.mapVisible && (
+          {state => (
             <div key="mapInView">
               <div id="map-view">
                 <CountryMap

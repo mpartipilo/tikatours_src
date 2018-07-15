@@ -1,0 +1,33 @@
+#map-view {
+  max-height: 70vh;
+}
+
+.map-view-toggler {
+  display: block;
+  cursor: pointer;
+  padding: 2em;
+  transition: background-color 200ms linear;
+  &:hover {
+    background-color: #fff2c7;
+  }
+}
+
+.mapInView-enter {
+  opacity: 0.01;
+  max-height: 10px;
+  &-active {
+    opacity: 1;
+    max-height: 70vh;
+    transition: max-height 500ms linear, opacity 300ms 200ms ease-out;
+  }
+}
+
+.mapInView-exit {
+  opacity: 1;
+  max-height: 70vh;
+  &-active {
+    opacity: 0.01;
+    max-height: 10px;
+    transition: opacity 300ms ease-out, max-height 200ms 100ms ease-in;
+  }
+}
