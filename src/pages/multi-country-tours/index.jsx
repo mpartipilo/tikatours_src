@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import PropTypes from "prop-types"
 
 import PageWrapper from "../../components/page-wrapper"
 
@@ -28,5 +28,9 @@ const Page = ({ location }) => (
     }}
   />
 )
+
+Page.propTypes = {
+  location: PropTypes.object
+}
 
 export default Page
