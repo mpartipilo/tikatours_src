@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import tourCategoryData from "../../../data/tour_category.json"
+
 const TourCard = ({
   id,
   name,
@@ -33,7 +35,11 @@ const TourCard = ({
         style={{ backgroundImage: "url('" + image_path + "')" }}
       >
         <span className="t-info" />
-        <div className="tag">{is_featured === "1" ? "featured tour" : tag}</div>
+        <div className="tag">
+          {is_featured === "1"
+            ? "featured tour"
+            : tourCategoryData.find(c => c.id === main_category_id).name}
+        </div>
       </div>
       <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
         <div className="t-info">
@@ -45,7 +51,12 @@ const TourCard = ({
             <span>{duration}</span>
           </div>
           <p>{short_descr}</p>
-          {price_from > 0 && price_from}
+          {price_from > 0 && (
+            <p>
+              from &#x20AC;<span className="price">{price_from}</span> per
+              person
+            </p>
+          )}
           <div>
             <a href={url} className="btn">
               MORE INFO

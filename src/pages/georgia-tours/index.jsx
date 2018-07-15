@@ -5,6 +5,7 @@ import PageWrapper from "../../components/page-wrapper"
 
 const Page = ({ location }) => (
   <PageWrapper
+    hasBreadcrumbs
     location={location}
     heading="Georgia Tours"
     catlist={{
