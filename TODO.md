@@ -8,3 +8,6 @@
 - Blog
 - Contact form
 - Window title needs updating
+- Breadcrumbs on tour details
+- Gallery on tour details
+- Flag on tour details
