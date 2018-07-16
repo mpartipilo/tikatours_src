@@ -10,7 +10,8 @@ import "../../assets/sass/main.scss"
 const Layout = ({ children, data, location }) => {
   const defaultLanguage = "en"
   var langRegex = /^\/(en|zh)\/?/i
-  var currentLanguage = location.pathname.match(langRegex)[1] || defaultLanguage
+  var match = location.pathname.match(langRegex)
+  var currentLanguage = (match && match[1]) || defaultLanguage
 
   return (
     <React.Fragment>
