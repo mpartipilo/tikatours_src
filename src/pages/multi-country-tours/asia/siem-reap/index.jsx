@@ -7,10 +7,9 @@ import TourDetails from "../../../../components/tour-details"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="Hiking in Svaneti"
+    heading="Siem Reap"
     isTourDetails
     hasBreadcrumbs
-    mapCanvasCountry="Georgia"
   >
     <TourDetails url={location.pathname} subCategory />
   </PageWrapper>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 import ReasonsSlider from "../reasons"
-import { BreadcrumbsNavigation } from "../breadcrumbs"
+import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
 import Content from "../content"
 import Footer from "../footer"
 import HomeOverlay from "../home-overlay"
@@ -36,7 +36,8 @@ const PageWrapper = ({
   bodyTagClasses,
   location,
   hasBreadcrumbs,
-  content
+  content,
+  isTourDetails
 }) => (
   <React.Fragment>
     <Helmet
@@ -48,7 +49,10 @@ const PageWrapper = ({
     {slideshow && <Slideshow {...slideshow} />}
     <div className="main">
       <div className="container">
-        {hasBreadcrumbs && <BreadcrumbsNavigation page={location.pathname} />}
+        {hasBreadcrumbs &&
+          !isTourDetails && <BreadcrumbsNavigation page={location.pathname} />}
+        {hasBreadcrumbs &&
+          isTourDetails && <BreadcrumbsTour page={location.pathname} />}
         <div className="row">
           <div
             className={
@@ -132,7 +136,8 @@ PageWrapper.propTypes = {
   bodyTagClasses: PropTypes.string,
   location: PropTypes.object,
   hasBreadcrumbs: PropTypes.bool,
-  content: PropTypes.object
+  content: PropTypes.object,
+  isTourDetails: PropTypes.bool
 }
 
 export default PageWrapper
