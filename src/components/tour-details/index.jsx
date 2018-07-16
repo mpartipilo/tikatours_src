@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import tourData from "../../../data/tour.json"
-import tourCategoryData from "../../../data/tour_category.json"
+import tourCategoryData from "../../../data/tour_category_en.json"
 
 const fullUrl = (main_category_id, sub_category_id, url) => {
   var main_category = tourCategoryData.find(c => c.id === main_category_id)

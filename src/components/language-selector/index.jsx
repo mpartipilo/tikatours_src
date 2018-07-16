@@ -6,9 +6,8 @@ class LanguageSelector extends React.Component {
   constructor(props) {
     super(props)
 
-    var langRegex = /^\/([a-z]{2})\//i
-    var urlLang = props.location.match(langRegex) || props.defaultLanguage
-    var urlNoLang = props.location.replace(langRegex, "/")
+    var langRegex = /^\/(en|zh)/i
+    var urlNoLang = props.location.replace(langRegex, "")
 
     var currentUrl = props.location
 
@@ -16,8 +15,9 @@ class LanguageSelector extends React.Component {
       value: l.languageCode,
       label: l.languageName,
       url:
-        (l.languageCode !== props.defaultLanguage ? `/${l.languageCode}` : "") +
-        urlNoLang
+        urlNoLang.length > 1
+          ? `/${l.languageCode}${urlNoLang}`
+          : `/${l.languageCode}`
     }))
 
     this.state = {

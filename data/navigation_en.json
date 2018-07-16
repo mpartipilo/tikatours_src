@@ -1,0 +1,199 @@
+{
+  "path": "/en/",
+  "title": "Tika Tours",
+  "pages": [
+    {
+      "path": "/en/georgia-tours",
+      "title": "Georgia Tours",
+      "pages": [
+        {
+          "path": "/en/georgia-tours/adventure-tours",
+          "title": "Adventure Tours"
+        },
+        {
+          "path": "/en/georgia-tours/cultural-tours",
+          "title": "Cultural Tours"
+        },
+        {
+          "path": "/en/georgia-tours/food-and-wine",
+          "title": "Food and Wine"
+        },
+        {
+          "path": "/en/georgia-tours/leisure-and-health",
+          "title": "Leisure and Health"
+        },
+        {
+          "path": "/en/georgia-tours/romance",
+          "title": "Romance"
+        },
+        {
+          "path": "/en/georgia-tours/family",
+          "title": "Family"
+        },
+        {
+          "path": "/en/georgia-tours/business",
+          "title": "Business"
+        }
+      ]
+    },
+    {
+      "path": "/en/multi-country-tours",
+      "title": "Multi-Country Tours",
+      "pages": [
+        {
+          "path": "/en/multi-country-tours/georgia-armenia-azerbaijan",
+          "title": "Georgia, Armenia & Azerbaijan"
+        },
+        {
+          "path": "/en/multi-country-tours/georgia-and-armenia",
+          "title": "Georgia & Armenia"
+        },
+        {
+          "path": "/en/multi-country-tours/asia",
+          "title": "Asia"
+        },
+        {
+          "path": "/en/multi-country-tours/europe",
+          "title": "Europe"
+        },
+        {
+          "path": "/en/multi-country-tours/latin-america",
+          "title": "Latin America"
+        },
+        {
+          "path": "/en/multi-country-tours/southern-africa",
+          "title": "Southern Africa"
+        }
+      ]
+    },
+    {
+      "path": "/en/georgia-travel-guide",
+      "title": "Georgia Travel Guide",
+      "pages": [
+        {
+          "path": "/en/why-should-i-visit",
+          "title": "Why should I visit?"
+        },
+        {
+          "path": "/en/regions",
+          "title": "Regions"
+        },
+        {
+          "path": "/en/georgia-facts",
+          "title": "Georgia Facts",
+          "pages": [
+            {
+              "path": "/en/geography",
+              "title": "Geography"
+            },
+            {
+              "path": "/en/flora-and-fauna",
+              "title": "Flora & Fauna"
+            },
+            {
+              "path": "/en/unesco-world-heritage-sites",
+              "title": "UNESCO World Heritage Sites"
+            }
+          ]
+        },
+        {
+          "path": "/en/history-and-culture",
+          "title": "History & Culture",
+          "pages": [
+            {
+              "path": "/en/history",
+              "title": "History"
+            },
+            {
+              "path": "/en/wine-and-cuisine",
+              "title": "Wine & Cuisine"
+            },
+            {
+              "path": "/en/music",
+              "title": "Music"
+            },
+            {
+              "path": "/en/theatre",
+              "title": "Theatre"
+            },
+            {
+              "path": "/en/folk-dance",
+              "title": "Folk Dance"
+            },
+            {
+              "path": "/en/art-and-architecture",
+              "title": "Art & Architecture"
+            },
+            {
+              "path": "/en/language-and-script",
+              "title": "Language & Script"
+            }
+          ]
+        },
+        {
+          "path": "/en/travel-info",
+          "title": "Travel Info",
+          "pages": [
+            {
+              "path": "/en/getting-to-georgia",
+              "title": "Getting to Georgia"
+            },
+            {
+              "path": "/en/visa-support",
+              "title": "Visa Support"
+            },
+            {
+              "path": "/en/georgian-embassies",
+              "title": "Georgian Embasies",
+              "title_long": "Georgian Embassies and General Consulates"
+            },
+            {
+              "path": "/en/foreign-missions-in-georgia",
+              "title": "Foreign Missions in Georgia"
+            }
+          ]
+        },
+        {
+          "path": "/en/hotels",
+          "title": "Hotels"
+        }
+      ]
+    },
+    {
+      "path": "/en/gallery",
+      "title": "Gallery",
+      "pages": [
+        {
+          "path": "/en/video-gallery",
+          "title": "Video gallery"
+        }
+      ]
+    },
+    {
+      "path": "/en/about",
+      "title": "About",
+      "pages": [
+        {
+          "path": "/en/our-properties",
+          "title": "Our Properties"
+        },
+        {
+          "path": "/en/blog",
+          "title": "Blog"
+        },
+        {
+          "path": "/en/giving-back",
+          "title": "Giving Back"
+        },
+        {
+          "path": "/en/testimonials",
+          "title": "Testimonials"
+        }
+      ]
+    },
+    {
+      "path": "/en/contact-us",
+      "title": "Contact Us"
+    }
+  ]
+}

@@ -4,6 +4,9 @@ import FontAwesome from "react-fontawesome"
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
+import navigation_en from "../../../data/navigation_en.json"
+import navigation_zh from "../../../data/navigation_zh.json"
+
 const NavigationMenu = ({
   menu,
   level,
@@ -28,7 +31,7 @@ const NavigationMenu = ({
     {level === 0 && (
       <li>
         <LanguageSelector
-          location={location.pathname}
+          location={location}
           languages={languages}
           defaultLanguage={defaultLanguage}
         />
@@ -58,14 +61,17 @@ class Header extends React.Component {
     const {
       location,
       languages,
+      currentLanguage,
       defaultLanguage,
-      contact,
-      navigation
+      contact
     } = this.props
+
+    const navigation = currentLanguage === "zh" ? navigation_zh : navigation_en
+
     return (
       <header>
         <div className="top">
-          <a href="/" className="logo">
+          <a href={"/" + currentLanguage} className="logo">
             <img src={logo} alt="Tika Tours logo" />
           </a>
           <i className="fa fa-bars hidden-lg" onClick={this.toggleNavbar} />
@@ -79,7 +85,7 @@ class Header extends React.Component {
           <NavigationMenu
             menu={navigation}
             level={0}
-            location={location}
+            location={location.pathname}
             languages={languages}
             defaultLanguage={defaultLanguage}
           />

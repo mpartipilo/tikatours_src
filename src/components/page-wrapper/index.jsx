@@ -18,6 +18,9 @@ import GalleryIndex from "../gallery-index"
 import Video from "../video"
 import Analytics from "../analytics"
 
+import general_pages_en from "../../../data/general_pages_en.json"
+import general_pages_zh from "../../../data/general_pages_zh.json"
+
 const PageWrapper = ({
   analytics,
   children,
@@ -38,61 +41,93 @@ const PageWrapper = ({
   hasBreadcrumbs,
   content,
   isTourDetails
-}) => (
-  <React.Fragment>
-    <Helmet
-      bodyAttributes={{
-        class: (bodyTagClasses || "") + (slideshow ? "" : " no-ss")
-      }}
-    />
-    {homeOverlay && <HomeOverlay {...homeOverlay} />}
-    {slideshow && <Slideshow {...slideshow} />}
-    <div className="main">
-      <div className="container">
-        {hasBreadcrumbs &&
-          !isTourDetails && <BreadcrumbsNavigation page={location.pathname} />}
-        {hasBreadcrumbs &&
-          isTourDetails && <BreadcrumbsTour page={location.pathname} />}
-        <div className="row">
-          <div
-            className={
-              "col-xs-12 text-center" + (hasBreadcrumbs ? " has-bc" : "")
-            }
-          >
-            {heading && <h1>{heading}</h1>}
+}) => {
+  const defaultLanguage = "en"
+  const langRegex = /^\/(en|zh)\/?/i
+  const currentLanguage =
+    location.pathname.match(langRegex)[1] || defaultLanguage
+
+  const general_pages =
+    currentLanguage === "zh" ? general_pages_zh : general_pages_en
+
+  var autoHeading = null
+  if (content) {
+    var page = general_pages.find(p => p.page_id == content.page_id)
+    autoHeading = page && page.page_heading
+  }
+
+  return (
+    <React.Fragment>
+      <Helmet
+        bodyAttributes={{
+          class: (bodyTagClasses || "") + (slideshow ? "" : " no-ss")
+        }}
+      />
+      {homeOverlay && <HomeOverlay {...homeOverlay} />}
+      {slideshow && <Slideshow {...slideshow} />}
+      <div className="main">
+        <div className="container">
+          {hasBreadcrumbs &&
+            !isTourDetails && (
+              <BreadcrumbsNavigation
+                language={currentLanguage}
+                page={location.pathname}
+              />
+            )}
+          {hasBreadcrumbs &&
+            isTourDetails && (
+              <BreadcrumbsTour
+                language={currentLanguage}
+                page={location.pathname}
+              />
+            )}
+          <div className="row">
+            <div
+              className={
+                "col-xs-12 text-center" + (hasBreadcrumbs ? " has-bc" : "")
+              }
+            >
+              {heading && <h1>{heading}</h1>}
+              {!heading && autoHeading && <h1>{autoHeading}</h1>}
+            </div>
           </div>
-        </div>
-        {subNav && <SubNav {...subNav} />}
-        <div className="content">
-          {!content && children}
-          {content && <Content {...content} />}
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
+          {subNav && <SubNav {...subNav} />}
+          <div className="content">
+            {!content && children}
+            {content && <Content language={currentLanguage} {...content} />}
           </div>
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="divider" />
+            </div>
+          </div>
+          {catlist && (
+            <CatList
+              language={currentLanguage}
+              {...catlist}
+              location={location}
+            />
+          )}
         </div>
-        {catlist && <CatList {...catlist} location={location} />}
+        {galleryIndex && <GalleryIndex {...galleryIndex} />}
+        {tourList && <TourList language={currentLanguage} {...tourList} />}
+        {reasons && (
+          <ReasonsSlider
+            reasons={reasons}
+            btnUrl={"/" + currentLanguage + "/georgia-tours"}
+            btnText="View Georgia Tours"
+          />
+        )}
+        {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
+        {socialPanel && <SocialPanel />}
+        {homeGallery && <HomeGallery galleryId={5} />}
+        <Footer currentLanguage={currentLanguage} />
       </div>
-      {galleryIndex && <GalleryIndex {...galleryIndex} />}
-      {tourList && <TourList {...tourList} />}
-      {reasons && (
-        <ReasonsSlider
-          reasons={reasons}
-          btnUrl="/georgia-tours"
-          btnText="View Georgia Tours"
-        />
-      )}
-      {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
-      {socialPanel && <SocialPanel />}
-      {homeGallery && <HomeGallery galleryId={5} />}
-      <Footer />
-    </div>
-    {video && <Video {...video} />}
-    ==scripts-load-top==
-    {slideshow && (
-      <script>
-        {`
+      {video && <Video {...video} />}
+      ==scripts-load-top==
+      {slideshow && (
+        <script>
+          {`
     $(function($){
         $.supersized({
             slide_interval: 5000,
@@ -112,11 +147,12 @@ const PageWrapper = ({
             api.nextSlide();
         });
       });`}
-      </script>
-    )}
-    {analytics && <Analytics {...analytics} />}
-  </React.Fragment>
-)
+        </script>
+      )}
+      {analytics && <Analytics {...analytics} />}
+    </React.Fragment>
+  )
+}
 
 PageWrapper.propTypes = {
   analytics: PropTypes.any,
@@ -134,7 +170,7 @@ PageWrapper.propTypes = {
   slideshow: PropTypes.any,
   video: PropTypes.any,
   bodyTagClasses: PropTypes.string,
-  location: PropTypes.object,
+  location: PropTypes.object.isRequired,
   hasBreadcrumbs: PropTypes.bool,
   content: PropTypes.object,
   isTourDetails: PropTypes.bool

@@ -1,8 +1,10 @@
 import React from "react"
 
 import tourData from "../../../data/tour.json"
-import tourCategoryData from "../../../data/tour_category.json"
-import navigation from "../../../data/navigation.json"
+import tourCategoryData from "../../../data/tour_category_en.json"
+
+import navigation_en from "../../../data/navigation_en.json"
+import navigation_zh from "../../../data/navigation_zh.json"
 
 const Breadcrumbs = props => (
   <div className="row hidden-xs">
@@ -44,6 +46,7 @@ function flatten(data, results, parent) {
 
 const BreadcrumbsNavigation = props => {
   var flatNav = {}
+  const navigation = props.language === "zh" ? navigation_zh : navigation_en
   flatten(navigation, flatNav, undefined)
   var trail = []
   var currentNode = flatNav[props.page]

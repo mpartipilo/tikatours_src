@@ -2,8 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import content from "../../../data/content.json"
-import content_column from "../../../data/content_column.json"
 import content_row from "../../../data/content_row.json"
+import content_column_en from "../../../data/content_column_en.json"
+import content_column_zh from "../../../data/content_column_zh.json"
 
 class Content extends React.Component {
   constructor(props) {
@@ -13,6 +14,9 @@ class Content extends React.Component {
     )
 
     var content_rows = []
+
+    const content_column =
+      props.language === "zh" ? content_column_zh : content_column_en
 
     if (content_index) {
       var rows = content_row

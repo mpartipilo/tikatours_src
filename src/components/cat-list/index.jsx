@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import tourCategoryData from "../../../data/tour_category.json"
+import tourCategoryData from "../../../data/tour_category_en.json"
 
 class CatList extends React.Component {
   constructor(props) {

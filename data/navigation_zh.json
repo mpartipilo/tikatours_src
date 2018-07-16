@@ -1,0 +1,199 @@
+{
+  "path": "/zh/",
+  "title": "Tika Tours",
+  "pages": [
+    {
+      "path": "/zh/georgia-tours",
+      "title": "格鲁吉亚之旅",
+      "pages": [
+        {
+          "path": "/zh/georgia-tours/adventure-tours",
+          "title": "探险旅游"
+        },
+        {
+          "path": "/zh/georgia-tours/cultural-tours",
+          "title": "文化之旅"
+        },
+        {
+          "path": "/zh/georgia-tours/food-and-wine",
+          "title": "食物和酒"
+        },
+        {
+          "path": "/zh/georgia-tours/leisure-and-health",
+          "title": "休闲与健康"
+        },
+        {
+          "path": "/zh/georgia-tours/romance",
+          "title": "浪漫"
+        },
+        {
+          "path": "/zh/georgia-tours/family",
+          "title": "家庭"
+        },
+        {
+          "path": "/zh/georgia-tours/business",
+          "title": "商业"
+        }
+      ]
+    },
+    {
+      "path": "/zh/multi-country-tours",
+      "title": "多国之旅",
+      "pages": [
+        {
+          "path": "/zh/multi-country-tours/georgia-armenia-azerbaijan",
+          "title": "格鲁吉亚，亚美尼亚和阿塞拜疆"
+        },
+        {
+          "path": "/zh/multi-country-tours/georgia-and-armenia",
+          "title": "格鲁吉亚和亚美尼亚"
+        },
+        {
+          "path": "/zh/multi-country-tours/asia",
+          "title": "亚洲"
+        },
+        {
+          "path": "/zh/multi-country-tours/europe",
+          "title": "欧洲"
+        },
+        {
+          "path": "/zh/multi-country-tours/latin-america",
+          "title": "拉丁美洲"
+        },
+        {
+          "path": "/zh/multi-country-tours/southern-africa",
+          "title": "非洲南部"
+        }
+      ]
+    },
+    {
+      "path": "/zh/georgia-travel-guide",
+      "title": "佐治亚旅游指南",
+      "pages": [
+        {
+          "path": "/zh/why-should-i-visit",
+          "title": "我为什么要去参观？"
+        },
+        {
+          "path": "/zh/regions",
+          "title": "地区"
+        },
+        {
+          "path": "/zh/georgia-facts",
+          "title": "格鲁吉亚事实",
+          "pages": [
+            {
+              "path": "/zh/geography",
+              "title": "地理"
+            },
+            {
+              "path": "/zh/flora-and-fauna",
+              "title": "植物群和动物群"
+            },
+            {
+              "path": "/zh/unesco-world-heritage-sites",
+              "title": "教科文组织世界遗产"
+            }
+          ]
+        },
+        {
+          "path": "/zh/history-and-culture",
+          "title": "历史与文化",
+          "pages": [
+            {
+              "path": "/zh/history",
+              "title": "历史"
+            },
+            {
+              "path": "/zh/wine-and-cuisine",
+              "title": "葡萄酒和美食"
+            },
+            {
+              "path": "/zh/music",
+              "title": "音乐"
+            },
+            {
+              "path": "/zh/theatre",
+              "title": "剧院"
+            },
+            {
+              "path": "/zh/folk-dance",
+              "title": "民间舞蹈"
+            },
+            {
+              "path": "/zh/art-and-architecture",
+              "title": "艺术与建筑"
+            },
+            {
+              "path": "/zh/language-and-script",
+              "title": "语言和脚本"
+            }
+          ]
+        },
+        {
+          "path": "/zh/travel-info",
+          "title": "旅游信息",
+          "pages": [
+            {
+              "path": "/zh/getting-to-georgia",
+              "title": "去格鲁吉亚"
+            },
+            {
+              "path": "/zh/visa-support",
+              "title": "签证支持"
+            },
+            {
+              "path": "/zh/georgian-embassies",
+              "title": "格鲁吉亚大使馆",
+              "title_long": "格鲁吉亚大使馆和总领事馆"
+            },
+            {
+              "path": "/zh/foreign-missions-in-georgia",
+              "title": "格鲁吉亚的外国使团"
+            }
+          ]
+        },
+        {
+          "path": "/zh/hotels",
+          "title": "酒店"
+        }
+      ]
+    },
+    {
+      "path": "/zh/gallery",
+      "title": "画廊",
+      "pages": [
+        {
+          "path": "/zh/video-gallery",
+          "title": "视频库"
+        }
+      ]
+    },
+    {
+      "path": "/zh/about",
+      "title": "关于",
+      "pages": [
+        {
+          "path": "/zh/our-properties",
+          "title": "我们的属性"
+        },
+        {
+          "path": "/zh/blog",
+          "title": "博客"
+        },
+        {
+          "path": "/zh/giving-back",
+          "title": "回馈"
+        },
+        {
+          "path": "/zh/testimonials",
+          "title": "褒奖"
+        }
+      ]
+    },
+    {
+      "path": "/zh/contact-us",
+      "title": "联系我们"
+    }
+  ]
+}
