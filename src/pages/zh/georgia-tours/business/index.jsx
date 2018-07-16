@@ -7,10 +7,10 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    heading="Business"
+    heading="商业"
     tourList={{
       subCategory: true,
-      heading: "Business",
+      heading: "商业",
       toursFilter: data =>
         data
           .filter(t => t.status === "A" && t.sub_category_id === 14)
