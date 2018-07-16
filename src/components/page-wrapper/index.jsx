@@ -125,7 +125,7 @@ PageWrapper.propTypes = {
   subNav: PropTypes.node,
   catlist: PropTypes.any,
   galleryIndex: PropTypes.any,
-  homeOverlay: PropTypes.bool,
+  homeOverlay: PropTypes.object,
   tourList: PropTypes.object,
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,

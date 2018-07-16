@@ -6,9 +6,9 @@ import PageWrapper from "../../components/page-wrapper"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="Video Gallery"
+    heading="Folk Dance"
     content={{
-      page_id: 42,
+      page_id: 26,
       module_id: 1
     }}
   />

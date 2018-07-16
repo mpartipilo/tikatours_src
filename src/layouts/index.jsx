@@ -9,7 +9,7 @@ import "../../assets/sass/main.scss"
 
 import navigation from "../../data/navigation.json"
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location }) => (
   <React.Fragment>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -35,8 +35,10 @@ const Layout = ({ children, data }) => (
       <link rel="shortcut icon" href="/favicon.ico" />
     </Helmet>
     <Header
+      location={location}
       siteTitle={data.site.siteMetadata.title}
       languages={data.site.siteMetadata.languages}
+      defaultLanguage="en"
       contact={data.site.siteMetadata.contact}
       navigation={navigation}
     />

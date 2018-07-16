@@ -8,14 +8,6 @@ const mapFlagLanguage = [
     flag: "US"
   },
   {
-    lang: "es",
-    flag: "ES"
-  },
-  {
-    lang: "ka",
-    flag: "GE"
-  },
-  {
     lang: "zh",
     flag: "CN"
   }

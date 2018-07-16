@@ -6,9 +6,9 @@ import PageWrapper from "../../components/page-wrapper"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="Video Gallery"
+    heading="UNESCO World Heritage Sites"
     content={{
-      page_id: 42,
+      page_id: 21,
       module_id: 1
     }}
   />

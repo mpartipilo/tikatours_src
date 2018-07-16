@@ -6,9 +6,9 @@ import PageWrapper from "../../components/page-wrapper"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="Video Gallery"
+    heading="Visa Support"
     content={{
-      page_id: 42,
+      page_id: 30,
       module_id: 1
     }}
   />
