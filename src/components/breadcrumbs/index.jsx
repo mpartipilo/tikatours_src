@@ -16,18 +16,20 @@ const Breadcrumbs = props => (
         <li>
           <a href={"/" + props.language} title="home" />
         </li>
-        {props.trail.filter(t => t.path != "/").map(t => (
-          <li key={t.path}>
-            <i className="fa fa-angle-right" />
-            <a
-              href={t.path}
-              className={t.path == props.location ? "active" : null}
-              title={t.page_title}
-            >
-              {t.page_title}
-            </a>
-          </li>
-        ))}
+        {props.trail
+          .filter(t => t.path.replace(/\/$/i, "") != "/" + props.language)
+          .map(t => (
+            <li key={t.path}>
+              <i className="fa fa-angle-right" />
+              <a
+                href={t.path}
+                className={t.path == props.location ? "active" : null}
+                title={t.page_title}
+              >
+                {t.page_title}
+              </a>
+            </li>
+          ))}
       </ul>
     </div>
   </div>

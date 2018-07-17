@@ -27,6 +27,27 @@ import sitemetadata from "../../../data/sitemetadata.json"
 import general_pages_en from "../../../data/general_pages_en.json"
 import general_pages_zh from "../../../data/general_pages_zh.json"
 
+import tourData_en from "../../../data/tour_en.json"
+import tourData_zh from "../../../data/tour_zh.json"
+
+import tourCategoryData_en from "../../../data/tour_category_en.json"
+import tourCategoryData_zh from "../../../data/tour_category_zh.json"
+
+const fullUrl = (
+  language,
+  tourCategoryData,
+  main_category_id,
+  sub_category_id,
+  url
+) => {
+  var main_category = tourCategoryData.find(c => c.id === main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+
+  if (!main_category || !sub_category) return null
+
+  return `/${language}/${main_category.url}/${sub_category.url}/${url}`
+}
+
 const PageWrapper = ({
   analytics,
   children,
@@ -57,10 +78,36 @@ const PageWrapper = ({
   const general_pages =
     currentLanguage === "zh" ? general_pages_zh : general_pages_en
 
+  const tourData = currentLanguage === "zh" ? tourData_zh : tourData_en
+
+  const tourCategoryData =
+    currentLanguage === "zh" ? tourCategoryData_zh : tourCategoryData_en
+
   var autoHeading = null
   if (content) {
-    var page = general_pages.find(p => p.page_id == content.page_id)
-    autoHeading = page && page.page_heading
+    if (content.module == 1) {
+      var page = general_pages.find(p => p.page_id == content.page_id)
+      autoHeading = page && page.page_heading
+    }
+
+    if (content.module == 100) {
+      // TODO: Get heading from tour category
+    }
+  }
+
+  if (isTourDetails) {
+    var data = tourData.find(t => {
+      const tourUrl = fullUrl(
+        currentLanguage,
+        tourCategoryData,
+        t.main_category_id,
+        t.sub_category_id,
+        t.url
+      )
+      return tourUrl === location.pathname.replace(/\/?$/i, "")
+    })
+
+    autoHeading = data && data.heading
   }
 
   return (

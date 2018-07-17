@@ -6,7 +6,6 @@ import PageWrapper from "../../../../../components/page-wrapper"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="In a State of Wine Mind"
     isTourDetails
     hasBreadcrumbs
     mapCanvasCountry="Georgia"

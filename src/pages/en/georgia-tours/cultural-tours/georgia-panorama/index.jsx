@@ -6,7 +6,6 @@ import PageWrapper from "../../../../../components/page-wrapper"
 const Page = ({ location }) => (
   <PageWrapper
     location={location}
-    heading="Georgian Panorama"
     isTourDetails
     hasBreadcrumbs
     mapCanvasCountry="Georgia"
