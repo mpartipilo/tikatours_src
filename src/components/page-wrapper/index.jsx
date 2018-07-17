@@ -195,8 +195,8 @@ const PageWrapper = ({
           {catlist && (
             <CatList
               language={currentLanguage}
-              {...catlist}
               location={location}
+              {...catlist}
             />
           )}
         </div>

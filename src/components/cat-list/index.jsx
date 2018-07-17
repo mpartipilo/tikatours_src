@@ -1,13 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import tourCategoryData from "../../../data/tour_category_en.json"
+import tourCategoryData_en from "../../../data/tour_category_en.json"
+import tourCategoryData_zh from "../../../data/tour_category_zh.json"
 
 class CatList extends React.Component {
   constructor(props) {
     super(props)
+
+    var data =
+      props.language === "zh" ? tourCategoryData_zh : tourCategoryData_en
+
     this.state = {
-      categories: props.tourCategoryFilter(tourCategoryData)
+      categories: props.tourCategoryFilter(data)
     }
   }
 
@@ -38,6 +43,7 @@ class CatList extends React.Component {
 }
 
 CatList.propTypes = {
+  language: PropTypes.string.isRequired,
   location: PropTypes.object,
   heading: PropTypes.string,
   tourCategoryFilter: PropTypes.func
