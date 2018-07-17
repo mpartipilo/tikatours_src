@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
+import Header from "../header"
 import ReasonsSlider from "../reasons"
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
 import Content from "../content"
@@ -17,6 +18,10 @@ import HomeGallery from "../home-gallery"
 import GalleryIndex from "../gallery-index"
 import Video from "../video"
 import Analytics from "../analytics"
+
+import "../../../assets/sass/main.scss"
+
+import sitemetadata from "../../../data/sitemetadata.json"
 
 import general_pages_en from "../../../data/general_pages_en.json"
 import general_pages_zh from "../../../data/general_pages_zh.json"
@@ -44,8 +49,9 @@ const PageWrapper = ({
 }) => {
   const defaultLanguage = "en"
   const langRegex = /^\/(en|zh)\/?/i
-  const currentLanguage =
-    location.pathname.match(langRegex)[1] || defaultLanguage
+
+  var match = location.pathname.match(langRegex)
+  var currentLanguage = (match && match[1]) || defaultLanguage
 
   const general_pages =
     currentLanguage === "zh" ? general_pages_zh : general_pages_en
@@ -59,11 +65,40 @@ const PageWrapper = ({
   return (
     <React.Fragment>
       <Helmet
+        title={sitemetadata.title}
+        meta={[
+          {
+            name: "description",
+            content: "==mdescr=="
+          },
+          { name: "keywords", content: "==mkeyw==" },
+          { name: "http-equiv", content: "" },
+          { name: "author", content: "==mauthor==" },
+          { name: "HandheldFriendly", content: "True" },
+          { name: "MobileOptimized", content: "320" },
+          {
+            name: "viewport",
+            content:
+              "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+          },
+          { "http-equiv": "cleartype", content: "on" }
+        ]}
         bodyAttributes={{
           class: (bodyTagClasses || "") + (slideshow ? "" : " no-ss")
         }}
+      >
+        /* -- ==ex_meta_taga== -- */
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Helmet>
+      <Header
+        location={location}
+        siteTitle={sitemetadata.title}
+        languages={sitemetadata.languages}
+        currentLanguage={currentLanguage}
+        defaultLanguage={defaultLanguage}
+        contact={sitemetadata.contact}
       />
-      {homeOverlay && <HomeOverlay {...homeOverlay} />}
+      <div className="push" /> {homeOverlay && <HomeOverlay {...homeOverlay} />}
       {slideshow && <Slideshow {...slideshow} />}
       <div className="main">
         <div className="container">

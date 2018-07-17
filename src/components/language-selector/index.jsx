@@ -1,6 +1,7 @@
 import React from "react"
 import Select, { components } from "react-select"
 import ReactCountryFlag from "react-country-flag"
+import ISO6391 from "iso-639-1"
 
 class LanguageSelector extends React.Component {
   constructor(props) {
@@ -11,7 +12,13 @@ class LanguageSelector extends React.Component {
 
     var currentUrl = props.location
 
-    const options = props.languages.map(l => ({
+    var languagesLocal = props.languages.map(l => ({
+      countryCode: l.flag,
+      languageCode: l.lang,
+      languageName: ISO6391.getNativeName(l.lang)
+    }))
+
+    const options = languagesLocal.map(l => ({
       value: l.languageCode,
       label: l.languageName,
       url:
@@ -59,7 +66,13 @@ class LanguageSelectorFancy extends React.Component {
   constructor(props) {
     super(props)
 
-    const options = props.languages.map(l => ({
+    var languagesLocal = props.languages.map(l => ({
+      countryCode: l.flag,
+      languageCode: l.lang,
+      languageName: ISO6391.getNativeName(l.lang)
+    }))
+
+    const options = languagesLocal.map(l => ({
       value: l,
       label: l.languageName
     }))
