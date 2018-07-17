@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import PageWrapper from "../../../../../components/page-wrapper"
-import TourDetails from "../../../../../components/tour-details"
 
 const Page = ({ location }) => (
   <PageWrapper
@@ -11,9 +10,7 @@ const Page = ({ location }) => (
     isTourDetails
     hasBreadcrumbs
     mapCanvasCountry="Georgia"
-  >
-    <TourDetails url={location.pathname} subCategory />
-  </PageWrapper>
+  />
 )
 
 Page.propTypes = {

@@ -1,7 +1,10 @@
 import React from "react"
 
-import tourData from "../../../data/tour.json"
-import tourCategoryData from "../../../data/tour_category_en.json"
+import tourData_en from "../../../data/tour_en.json"
+import tourData_zh from "../../../data/tour_zh.json"
+
+import tourCategoryData_en from "../../../data/tour_category_en.json"
+import tourCategoryData_zh from "../../../data/tour_category_zh.json"
 
 import navigation_en from "../../../data/navigation_en.json"
 import navigation_zh from "../../../data/navigation_zh.json"
@@ -11,7 +14,7 @@ const Breadcrumbs = props => (
     <div className="col-xs-12">
       <ul className="breadcrumbs text-center">
         <li>
-          <a href="/" title="home" />
+          <a href={"/" + props.language} title="home" />
         </li>
         {props.trail.filter(t => t.path != "/").map(t => (
           <li key={t.path}>
@@ -46,10 +49,12 @@ function flatten(data, results, parent) {
 
 const BreadcrumbsNavigation = props => {
   var flatNav = {}
-  const navigation = props.language === "zh" ? navigation_zh : navigation_en
+
+  var navigation = props.language === "zh" ? navigation_zh : navigation_en
+
   flatten(navigation, flatNav, undefined)
   var trail = []
-  var currentNode = flatNav[props.page]
+  var currentNode = flatNav[props.page.replace(/\/?$/i, "")]
   trail.push(currentNode)
   while (currentNode.parent_path) {
     currentNode = flatNav[currentNode.parent_path]
@@ -58,38 +63,73 @@ const BreadcrumbsNavigation = props => {
 
   trail = trail.reverse()
 
-  return <Breadcrumbs trail={trail} location={props.page} />
+  return (
+    <Breadcrumbs
+      trail={trail}
+      location={props.page}
+      language={props.language}
+    />
+  )
 }
 
-const fullUrl = (main_category_id, sub_category_id, url) => {
-  var main_category = tourCategoryData.find(c => c.id === main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+const fullUrl = (
+  language,
+  tourCategoryData,
+  main_category_id,
+  sub_category_id,
+  url
+) => {
+  const main_category = tourCategoryData.find(c => c.id === main_category_id)
+  const sub_category = tourCategoryData.find(c => c.id === sub_category_id)
 
   if (!main_category || !sub_category) return null
 
-  return `/${main_category.url}/${sub_category.url}/${url}`
+  const tourUrl = `/${language}/${main_category.url}/${sub_category.url}/${url}`
+
+  return tourUrl
 }
 
-const BreadcrumbsTour = props => {
-  const data = tourData.find(
-    t => fullUrl(t.main_category_id, t.sub_category_id, t.url) === props.page
+const BreadcrumbsTour = ({ language, page }) => {
+  const tourData = (language === "zh" ? tourData_zh : tourData_en).filter(
+    c => c.main_category_id && c.sub_category_id
   )
+  const tourCategoryData =
+    language === "zh" ? tourCategoryData_zh : tourCategoryData_en
 
-  var main_category = tourCategoryData.find(c => c.id === data.main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id === data.sub_category_id)
+  var data = tourData.find(t => {
+    const tourUrl = fullUrl(
+      language,
+      tourCategoryData,
+      t.main_category_id,
+      t.sub_category_id,
+      t.url
+    )
+    return tourUrl === page.replace(/\/?$/i, "")
+  })
 
   var trail = []
-  trail.push({ path: `/${main_category.url}`, page_title: main_category.name })
-  trail.push({
-    path: `/${main_category.url}/${sub_category.url}`,
-    page_title: sub_category.name
-  })
-  trail.push({
-    path: `/${main_category.url}/${sub_category.url}/${data.url}`,
-    page_title: data.name
-  })
 
-  return <Breadcrumbs trail={trail} location={props.page} />
+  if (data) {
+    var main_category = tourCategoryData.find(
+      c => c.id === data.main_category_id
+    )
+    var sub_category = tourCategoryData.find(c => c.id === data.sub_category_id)
+
+    trail.push({
+      path: `/${language}/${main_category.url}`,
+      page_title: main_category.name
+    })
+    trail.push({
+      path: `/${language}/${main_category.url}/${sub_category.url}`,
+      page_title: sub_category.name
+    })
+    trail.push({
+      path: `/${language}/${main_category.url}/${sub_category.url}/${data.url}`,
+      page_title: data.name
+    })
+  }
+
+  return <Breadcrumbs trail={trail} location={page} language={language} />
 }
 
 export { Breadcrumbs, BreadcrumbsNavigation, BreadcrumbsTour }

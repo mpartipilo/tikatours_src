@@ -9,6 +9,7 @@ import Content from "../content"
 import Footer from "../footer"
 import HomeOverlay from "../home-overlay"
 import TourList from "../tour-list"
+import TourDetails from "../tour-details"
 import MapCanvasView from "../map-canvas"
 import SocialPanel from "../social-panel"
 import Slideshow from "../slideshow"
@@ -129,6 +130,14 @@ const PageWrapper = ({
           {subNav && <SubNav {...subNav} />}
           <div className="content">
             {!content && children}
+            {!content &&
+              isTourDetails && (
+                <TourDetails
+                  language={currentLanguage}
+                  url={location.pathname}
+                  subCategory
+                />
+              )}
             {content && <Content language={currentLanguage} {...content} />}
           </div>
           <div className="row">

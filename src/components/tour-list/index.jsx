@@ -3,9 +3,12 @@ import PropTypes from "prop-types"
 
 import TourCard from "../tour-card"
 
-import dataTourList from "../../../data/tour.json"
+import dataTourList_en from "../../../data/tour_en.json"
+import dataTourList_zh from "../../../data/tour_zh.json"
 
-const TourList = ({ heading, toursFilter, subCategory }) => {
+const TourList = ({ language, heading, toursFilter, subCategory }) => {
+  const dataTourList = language === "zh" ? dataTourList_zh : dataTourList_en
+
   var list = toursFilter(dataTourList)
 
   return (
@@ -16,7 +19,12 @@ const TourList = ({ heading, toursFilter, subCategory }) => {
           <div className="col-xs-12 text-center">
             <h2>{heading}</h2>
             {list.map(t => (
-              <TourCard key={t.id} {...t} subCategory={subCategory} />
+              <TourCard
+                language={language}
+                key={t.id}
+                {...t}
+                subCategory={subCategory}
+              />
             ))}
           </div>
         </div>

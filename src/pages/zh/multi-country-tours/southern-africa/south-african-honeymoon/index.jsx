@@ -10,9 +10,7 @@ const Page = ({ location }) => (
     heading="South African Honeymoon"
     isTourDetails
     hasBreadcrumbs
-  >
-    <TourDetails url={location.pathname} subCategory />
-  </PageWrapper>
+  />
 )
 
 Page.propTypes = {

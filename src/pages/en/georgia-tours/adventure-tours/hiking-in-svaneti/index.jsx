@@ -11,9 +11,7 @@ const Page = ({ location }) => (
     isTourDetails
     hasBreadcrumbs
     mapCanvasCountry="Georgia"
-  >
-    <TourDetails url={location.pathname} subCategory />
-  </PageWrapper>
+  />
 )
 
 Page.propTypes = {

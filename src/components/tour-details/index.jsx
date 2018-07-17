@@ -1,36 +1,64 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import tourData from "../../../data/tour.json"
-import tourCategoryData from "../../../data/tour_category_en.json"
+import tourData_en from "../../../data/tour_en.json"
+import tourData_zh from "../../../data/tour_zh.json"
 
-const fullUrl = (main_category_id, sub_category_id, url) => {
+import tourCategoryData_en from "../../../data/tour_category_en.json"
+import tourCategoryData_zh from "../../../data/tour_category_zh.json"
+
+const fullUrl = (
+  language,
+  tourCategoryData,
+  main_category_id,
+  sub_category_id,
+  url
+) => {
   var main_category = tourCategoryData.find(c => c.id === main_category_id)
   var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
 
   if (!main_category || !sub_category) return null
 
-  return `/${main_category.url}/${sub_category.url}/${url}`
+  return `/${language}/${main_category.url}/${sub_category.url}/${url}`
 }
 
 class TourDetails extends React.Component {
   constructor(props) {
     super(props)
 
-    const { url } = props
+    const { language, url, subCategory } = props
 
-    const data = tourData.find(
-      t => fullUrl(t.main_category_id, t.sub_category_id, t.url) === url
+    var tourData = language === "zh" ? tourData_zh : tourData_en
+
+    var tourCategoryData =
+      language === "zh" ? tourCategoryData_zh : tourCategoryData_en
+
+    var data = tourData.find(t => {
+      const tourUrl = fullUrl(
+        language,
+        tourCategoryData,
+        t.main_category_id,
+        t.sub_category_id,
+        t.url
+      )
+      return tourUrl === url.replace(/\/?$/i, "")
+    })
+
+    const subCategoryFound = tourCategoryData.find(
+      c => c.id === data.sub_category_id
+    )
+    const mainCategoryFound = tourCategoryData.find(
+      c => c.id === data.main_category_id
     )
 
-    const tag = props.subCategory
-      ? tourCategoryData.find(c => c.id === data.sub_category_id)
+    const tag = subCategory
+      ? subCategoryFound
         ? tourCategoryData.find(c => c.id === data.sub_category_id).name
         : data.is_featured === "1"
           ? "featured tour"
           : ""
-      : tourCategoryData.find(c => c.id === data.main_category_id)
-        ? tourCategoryData.find(c => c.id === data.main_category_id).name
+      : mainCategoryFound
+        ? mainCategoryFound.name
         : data.is_featured === "1"
           ? "featured tour"
           : ""
@@ -107,6 +135,7 @@ class TourDetails extends React.Component {
 TourDetails.propTypes = {
   id: PropTypes.number,
   url: PropTypes.string,
+  language: PropTypes.string.isRequired,
   subCategory: PropTypes.bool
 }
 

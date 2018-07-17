@@ -12,10 +12,11 @@
 - Gallery on tour details
 - Flag on tour details
 - List other related tours on tour details
-- Tour cards, and Tour details able to handle languages
+- Translate tour details
 
 ## Done
 
 - Chinese language content
 - Language switcher
 - Video Gallery
+- Tour cards, and Tour details able to handle languages
