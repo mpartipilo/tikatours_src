@@ -3,14 +3,7 @@ import PropTypes from "prop-types"
 
 import TourCard from "../tour-card"
 
-import dataTourList_en from "../../../data/tour_en.json"
-import dataTourList_zh from "../../../data/tour_zh.json"
-
-const TourList = ({ language, heading, toursFilter, subCategory }) => {
-  const dataTourList = language === "zh" ? dataTourList_zh : dataTourList_en
-
-  var list = toursFilter(dataTourList)
-
+const TourList = ({ language, heading, list, subCategory }) => {
   return (
     list &&
     list.length > 0 && (
@@ -36,7 +29,7 @@ const TourList = ({ language, heading, toursFilter, subCategory }) => {
 TourList.propTypes = {
   subCategory: PropTypes.bool,
   heading: PropTypes.string,
-  toursFilter: PropTypes.func
+  list: PropTypes.array
 }
 
 export default TourList

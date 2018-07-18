@@ -7,14 +7,9 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    heading="Georgia, Armenia & Azerbaijan Tours"
-    tourList={{
-      subCategory: true,
-      heading: "Georgia, Armenia & Azerbaijan Tours",
-      toursFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.sub_category_id === 16)
-          .sort((a, b) => a.rank - b.rank)
+    tourListDetails={{
+      main_category_id: 2,
+      sub_category_id: 16
     }}
     content={{
       page_id: 16,

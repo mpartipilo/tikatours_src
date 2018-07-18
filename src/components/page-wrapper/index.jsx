@@ -56,7 +56,7 @@ const PageWrapper = ({
   catlist,
   galleryIndex,
   homeOverlay,
-  tourList,
+  tourListDetails,
   reasons,
   mapCanvasCountry,
   socialPanel,
@@ -84,14 +84,37 @@ const PageWrapper = ({
     currentLanguage === "zh" ? tourCategoryData_zh : tourCategoryData_en
 
   var autoHeading = null
+  var autoSubHeading = null
+  var tourList = null
   if (content) {
-    if (content.module == 1) {
+    if (content.module_id == 1) {
       var page = general_pages.find(p => p.page_id == content.page_id)
       autoHeading = page && page.page_heading
     }
 
-    if (content.module == 100) {
-      // TODO: Get heading from tour category
+    if (content.module_id == 100 && tourListDetails) {
+      const subCategoryFound =
+        tourListDetails.sub_category_id &&
+        tourCategoryData.find(c => c.id === tourListDetails.sub_category_id)
+
+      const mainCategoryFound = tourCategoryData.find(
+        c => c.id === tourListDetails.main_category_id
+      )
+
+      if (subCategoryFound) {
+        tourList = tourData
+          .filter(
+            t =>
+              t.status === "A" &&
+              t.sub_category_id === tourListDetails.sub_category_id
+          )
+          .sort((a, b) => a.rank - b.rank)
+      }
+
+      autoHeading =
+        (subCategoryFound && subCategoryFound.heading) ||
+        (mainCategoryFound && mainCategoryFound.heading)
+      autoSubHeading = mainCategoryFound && mainCategoryFound.sub_heading
     }
   }
 
@@ -201,7 +224,7 @@ const PageWrapper = ({
           )}
         </div>
         {galleryIndex && <GalleryIndex {...galleryIndex} />}
-        {tourList && <TourList language={currentLanguage} {...tourList} />}
+        {tourList && <TourList language={currentLanguage} list={tourList} />}
         {reasons && (
           <ReasonsSlider
             reasons={reasons}
@@ -253,6 +276,7 @@ PageWrapper.propTypes = {
   catlist: PropTypes.any,
   galleryIndex: PropTypes.any,
   homeOverlay: PropTypes.object,
+  tourListDetails: PropTypes.object,
   tourList: PropTypes.object,
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,

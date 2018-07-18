@@ -7,14 +7,9 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    heading="亚洲"
-    tourList={{
-      subCategory: true,
-      heading: "亚洲",
-      toursFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.sub_category_id === 20)
-          .sort((a, b) => a.rank - b.rank)
+    tourListDetails={{
+      main_category_id: 2,
+      sub_category_id: 20
     }}
     content={{
       page_id: 20,
