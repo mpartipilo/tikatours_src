@@ -33,6 +33,16 @@ import tourData_zh from "../../../data/tour_zh.json"
 import tourCategoryData_en from "../../../data/tour_category_en.json"
 import tourCategoryData_zh from "../../../data/tour_category_zh.json"
 
+import homeOverlayData_en from "../../../data/home-overlay_en.json"
+import homeOverlayData_zh from "../../../data/home-overlay_zh.json"
+
+import reasonsData from "../../../data/reasons.json"
+
+const featuredTags = {
+  zh: "我们的特色旅游",
+  en: "Our featured tours"
+}
+
 const fullUrl = (
   language,
   tourCategoryData,
@@ -82,6 +92,9 @@ const PageWrapper = ({
   const tourCategoryData =
     currentLanguage === "zh" ? tourCategoryData_zh : tourCategoryData_en
 
+  const homeOverlayData =
+    currentLanguage === "zh" ? homeOverlayData_zh : homeOverlayData_en
+
   var autoHeading = null
   var tourList = null
   var tourListHeading = null
@@ -98,7 +111,14 @@ const PageWrapper = ({
       autoHeading = page && page.page_heading
     }
 
-    if (tourListDetails) {
+    if (tourListDetails && tourListDetails.featured) {
+      tourListHeading = featuredTags[currentLanguage]
+      tourList = tourData
+        .filter(t => t.is_featured === "1")
+        .sort((a, b) => a.rank - b.rank)
+    }
+
+    if (tourListDetails && !tourListDetails.featured) {
       const subCategoryFound =
         tourListDetails.sub_category_id &&
         tourCategoryData.find(c => c.id === tourListDetails.sub_category_id)
@@ -197,7 +217,8 @@ const PageWrapper = ({
         defaultLanguage={defaultLanguage}
         contact={sitemetadata.contact}
       />
-      <div className="push" /> {homeOverlay && <HomeOverlay {...homeOverlay} />}
+      <div className="push" />
+      {homeOverlay && <HomeOverlay {...homeOverlayData} />}
       {slideshow && <Slideshow {...slideshow} />}
       <div className="main">
         <div className="container">
@@ -262,7 +283,7 @@ const PageWrapper = ({
         )}
         {reasons && (
           <ReasonsSlider
-            reasons={reasons}
+            reasons={reasonsData}
             btnUrl={"/" + currentLanguage + "/georgia-tours"}
             btnText="View Georgia Tours"
           />
@@ -309,9 +330,9 @@ PageWrapper.propTypes = {
   heading: PropTypes.node,
   subNav: PropTypes.node,
   galleryIndex: PropTypes.any,
-  homeOverlay: PropTypes.object,
+  homeOverlay: PropTypes.bool,
   tourListDetails: PropTypes.object,
-  reasons: PropTypes.array,
+  reasons: PropTypes.bool,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,
   homeGallery: PropTypes.bool,
