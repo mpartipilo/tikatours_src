@@ -9,7 +9,7 @@ const IndexPage = ({ location }) => (
     homeOverlay
     slideshow
     tourListDetails={{
-      fweatured: true
+      featured: true
     }}
     reasons
     mapCanvasCountry="Georgia"
