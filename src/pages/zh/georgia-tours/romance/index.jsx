@@ -7,15 +7,6 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    heading="浪漫"
-    tourList={{
-      subCategory: true,
-      heading: "浪漫",
-      toursFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.sub_category_id === 12)
-          .sort((a, b) => a.rank - b.rank)
-    }}
     mapCanvasCountry="Georgia"
     content={{
       page_id: 12,

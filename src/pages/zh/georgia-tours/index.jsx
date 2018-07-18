@@ -7,19 +7,8 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    catlist={{
-      heading: "Choose your tour style",
-      tourCategoryFilter: data =>
-        data
-          .filter(t => t.parent_id === 1 && t.status === "A" && t.rank > 0)
-          .sort((a, b) => a.rank - b.rank)
-    }}
-    tourList={{
-      heading: "Georgia Tours",
-      toursFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.main_category_id === 1)
-          .sort((a, b) => a.rank - b.rank)
+    tourListDetails={{
+      main_category_id: 1
     }}
     mapCanvasCountry="Georgia"
     content={{

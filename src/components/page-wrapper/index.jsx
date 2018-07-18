@@ -53,7 +53,6 @@ const PageWrapper = ({
   children,
   heading,
   subNav,
-  catlist,
   galleryIndex,
   homeOverlay,
   tourListDetails,
@@ -84,24 +83,53 @@ const PageWrapper = ({
     currentLanguage === "zh" ? tourCategoryData_zh : tourCategoryData_en
 
   var autoHeading = null
-  var autoSubHeading = null
   var tourList = null
+  var tourListHeading = null
+  var catList = null
+  var catListHeading = null
+
   if (content) {
+    if (content.module_id == 100 && !tourListDetails) {
+      tourListDetails = { sub_category_id: content.page_id }
+    }
+
     if (content.module_id == 1) {
       var page = general_pages.find(p => p.page_id == content.page_id)
       autoHeading = page && page.page_heading
     }
 
-    if (content.module_id == 100 && tourListDetails) {
+    if (tourListDetails) {
       const subCategoryFound =
         tourListDetails.sub_category_id &&
         tourCategoryData.find(c => c.id === tourListDetails.sub_category_id)
 
-      const mainCategoryFound = tourCategoryData.find(
-        c => c.id === tourListDetails.main_category_id
-      )
+      const mainCategoryFound =
+        tourListDetails.main_category_id &&
+        tourCategoryData.find(c => c.id === tourListDetails.main_category_id)
+
+      if (mainCategoryFound) {
+        catListHeading = mainCategoryFound.sub_heading
+        catList = tourCategoryData
+          .filter(
+            t =>
+              t.parent_id === tourListDetails.main_category_id &&
+              t.status === "A" &&
+              t.rank > 0
+          )
+          .sort((a, b) => a.rank - b.rank)
+
+        tourListHeading = mainCategoryFound.name
+        tourList = tourData
+          .filter(
+            t =>
+              t.status === "A" &&
+              t.main_category_id === tourListDetails.main_category_id
+          )
+          .sort((a, b) => a.rank - b.rank)
+      }
 
       if (subCategoryFound) {
+        tourListHeading = subCategoryFound.label
         tourList = tourData
           .filter(
             t =>
@@ -112,9 +140,9 @@ const PageWrapper = ({
       }
 
       autoHeading =
+        autoHeading ||
         (subCategoryFound && subCategoryFound.heading) ||
         (mainCategoryFound && mainCategoryFound.heading)
-      autoSubHeading = mainCategoryFound && mainCategoryFound.sub_heading
     }
   }
 
@@ -215,16 +243,23 @@ const PageWrapper = ({
               <div className="divider" />
             </div>
           </div>
-          {catlist && (
+          {catList && (
             <CatList
-              language={currentLanguage}
               location={location}
-              {...catlist}
+              language={currentLanguage}
+              list={catList}
+              heading={catListHeading}
             />
           )}
         </div>
         {galleryIndex && <GalleryIndex {...galleryIndex} />}
-        {tourList && <TourList language={currentLanguage} list={tourList} />}
+        {tourList && (
+          <TourList
+            language={currentLanguage}
+            list={tourList}
+            heading={tourListHeading}
+          />
+        )}
         {reasons && (
           <ReasonsSlider
             reasons={reasons}
@@ -273,11 +308,9 @@ PageWrapper.propTypes = {
   children: PropTypes.node,
   heading: PropTypes.node,
   subNav: PropTypes.node,
-  catlist: PropTypes.any,
   galleryIndex: PropTypes.any,
   homeOverlay: PropTypes.object,
   tourListDetails: PropTypes.object,
-  tourList: PropTypes.object,
   reasons: PropTypes.array,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,

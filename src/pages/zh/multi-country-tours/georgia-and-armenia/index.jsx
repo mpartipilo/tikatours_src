@@ -7,10 +7,6 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    tourListDetails={{
-      main_category_id: 2,
-      sub_category_id: 17
-    }}
     content={{
       page_id: 17,
       module_id: 100

@@ -7,19 +7,8 @@ const Page = ({ location }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
-    catlist={{
-      heading: "Choose your tour destination",
-      tourCategoryFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.parent_id === 2 && t.rank > 0)
-          .sort((a, b) => a.rank - b.rank)
-    }}
-    tourList={{
-      heading: "Multi Country Tours",
-      toursFilter: data =>
-        data
-          .filter(t => t.status === "A" && t.main_category_id === 2)
-          .sort((a, b) => a.rank - b.rank)
+    tourListDetails={{
+      main_category_id: 2
     }}
     content={{
       page_id: 4,
