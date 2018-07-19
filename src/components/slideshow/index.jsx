@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const Slideshow = props => (
-  <div className={`ss-wrap ${props.fixed ? "fixed" : false}`}>
+  <div className={`ss-wrap ${props.fixed ? "fixed" : ""}`}>
     <div className="ss-cap" />
     <div className="prev">
       <i className="fa fa-angle-left" />

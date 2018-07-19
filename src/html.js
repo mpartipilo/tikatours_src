@@ -34,7 +34,6 @@ module.exports = class HTML extends React.Component {
           <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
           <script src="/assets/js/libs/vendor.js" />
           <script src="/assets/js/main.js" />
-
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -44,6 +43,7 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script>{`window.jsVars = {}`}</script>
         </body>
       </html>
     )
