@@ -18,14 +18,16 @@ const NavigationMenu = ({
     {menu.pages.map(p => (
       <li key={p.path}>
         <i className="fa fa-bars" />
-        <a href={p.path}>{p.title}</a>
-        {p.pages && (
-          <React.Fragment>
-            <i className="fa fa-caret-down" />
-            <i className="fa fa-caret-right" />
-            <NavigationMenu menu={p} level={level + 1} />
-          </React.Fragment>
-        )}
+        <a href={p.path}>
+          {p.title}
+          {p.pages && (
+            <React.Fragment>
+              <i className="fa fa-caret-down" />
+              <i className="fa fa-caret-right" />
+            </React.Fragment>
+          )}
+        </a>
+        {p.pages && <NavigationMenu menu={p} level={level + 1} />}
       </li>
     ))}
     {level === 0 && (
