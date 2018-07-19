@@ -4,6 +4,7 @@
 
 - Window title needs to reflect current page
 - Regions sub-navigation
+- Regions pages
 - Slideshows on top of the pages
 - Gallery
 
