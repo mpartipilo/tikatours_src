@@ -1,0 +1,330 @@
+[
+    {
+        "imggrp_id": "1",
+        "imggrp_name": "Homepage slideshow",
+        "is_gallery": "1",
+        "is_carousel": "0",
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "2",
+        "imggrp_name": "Tour",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "5",
+        "imggrp_name": "Landscape",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "1"
+    },
+    {
+        "imggrp_id": "6",
+        "imggrp_name": "Regions",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "1"
+    },
+    {
+        "imggrp_id": "7",
+        "imggrp_name": "Adjara",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "8",
+        "imggrp_name": "Dmanisi",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "9",
+        "imggrp_name": "Guria",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "10",
+        "imggrp_name": "Imereti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "11",
+        "imggrp_name": "Kakheti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "12",
+        "imggrp_name": "Kartli",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "13",
+        "imggrp_name": "Khevi",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "14",
+        "imggrp_name": "Khevsureti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "15",
+        "imggrp_name": "Mtskheta Mtianeti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "16",
+        "imggrp_name": "Racha Lechkhumi",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "17",
+        "imggrp_name": "Samegrelo",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "18",
+        "imggrp_name": "Samtskhe Javakheti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "19",
+        "imggrp_name": "Svaneti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "20",
+        "imggrp_name": "Tbilisi",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "21",
+        "imggrp_name": "Tusheti",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "23",
+        "imggrp_name": "New Slideshow",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "24",
+        "imggrp_name": "Georgian Panorama",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "25",
+        "imggrp_name": "Georgia Travel Guide",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "26",
+        "imggrp_name": "Caucasus",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "27",
+        "imggrp_name": "winetour",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "28",
+        "imggrp_name": "adventure",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "29",
+        "imggrp_name": "Food and Wine",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "30",
+        "imggrp_name": "Hiking in Svaneti",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "31",
+        "imggrp_name": "Leisure and Spa",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "32",
+        "imggrp_name": "Family",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "33",
+        "imggrp_name": "Romance",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "34",
+        "imggrp_name": "Giving Back",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "35",
+        "imggrp_name": "Special Interest",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "36",
+        "imggrp_name": "VIP",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "37",
+        "imggrp_name": "Business",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "38",
+        "imggrp_name": "Culture",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "39",
+        "imggrp_name": "Winter Escape",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "40",
+        "imggrp_name": "",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "41",
+        "imggrp_name": "Georgianpanorama",
+        "is_gallery": "1",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "42",
+        "imggrp_name": "Regions Slider",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "43",
+        "imggrp_name": "New Slideshow",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "44",
+        "imggrp_name": "Our Properties",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
+    }
+]

@@ -11,6 +11,16 @@ class Slideshow extends React.Component {
 
     this.supersized = React.createRef()
     this.initSupersized.bind($)
+
+    this.state = {
+      params: {
+        slide_interval: 5000,
+        transition_speed: 800,
+        performance: 0,
+        slide_links: "blank",
+        slides: props.slides || []
+      }
+    }
   }
 
   componentDidMount() {
@@ -18,19 +28,8 @@ class Slideshow extends React.Component {
   }
 
   initSupersized() {
-    $(this.supersized).supersized({
-      slide_interval: 5000,
-      transition_speed: 800,
-      performance: 0,
-      slide_links: "blank",
-      slides: [
-        {
-          image: "http://www.tikatours.com/library/slides/slide1.jpg",
-          title:
-            '<span>Discover Amazing Georgia</span><span class="caption">Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly lovely.</span><div><a href="#" data-href="#slide-1867" class="btn video-link"><i class="fa fa-youtube-play"></i>watch video</a></div>'
-        }
-      ]
-    })
+    const { params } = this.state
+    $(this.supersized).supersized(params)
 
     $(".prev").click(function() {
       api.prevSlide()
@@ -69,7 +68,8 @@ class Slideshow extends React.Component {
 }
 
 Slideshow.propTypes = {
-  fixed: PropTypes.bool
+  fixed: PropTypes.bool,
+  slides: PropTypes.array.isRequired
 }
 
 export default Slideshow

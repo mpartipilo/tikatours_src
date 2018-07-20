@@ -64,13 +64,13 @@ class TourDetails extends React.Component {
           : ""
 
     this.state = {
-      data: data,
-      tag: tag
+      data,
+      tag
     }
   }
 
   render() {
-    const { data, tag } = this.state
+    const { data, tag, tourGallery } = this.state
     const { duration, inclusions, itinerary, long_descr, price_from } = data
 
     return (
@@ -81,7 +81,7 @@ class TourDetails extends React.Component {
               <h2>Tour Overview</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
-            ==tour-gallery==
+            {tourGallery && <span>A GALLERY HAS BEEN PROVIDED</span>}
             {itinerary && (
               <div className="col-xs-12">
                 <h2>Itinerary</h2>
@@ -98,7 +98,7 @@ class TourDetails extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <div className="tag">{tag}</div>
-              ==flag==
+              {/* flag */}
               <span className="duration">{duration}</span>
               {price_from > 0 && (
                 <p>

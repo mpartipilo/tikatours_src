@@ -19,7 +19,6 @@ import SubNav from "../sub-nav"
 import CatList from "../cat-list"
 import HomeGallery from "../home-gallery"
 import GalleryIndex from "../gallery-index"
-import Video from "../video"
 import Analytics from "../analytics"
 
 import "../../../assets/sass/main.scss"
@@ -38,11 +37,66 @@ import tourCategoryData_zh from "../../../data/tour_category_zh.json"
 import homeOverlayData_en from "../../../data/home-overlay_en.json"
 import homeOverlayData_zh from "../../../data/home-overlay_zh.json"
 
-import reasonsData from "../../../data/reasons.json"
+import imagesSlides_en from "../../../data/images_slides_en.json"
+import imagesSlides_zh from "../../../data/images_slides_zh.json"
+
+import countryHighlights_en from "../../../data/country_highlights_en.json"
+import countryHighlights_zh from "../../../data/country_highlights_zh.json"
 
 const featuredTags = {
   zh: "我们的特色旅游",
   en: "Our featured tours"
+}
+
+function createSlide(m) {
+  var src = m.imgslide_path
+  var cap = m.imgslide_caption
+  var cap_heading = m.caption_heading
+  //var alt = m.imgslide_alt
+  var button = m.button_label
+  var button_url = m.button_url
+  var youtube_id = m.youtube_id
+  var id = m.imgslide_id
+
+  var button_view = ""
+
+  if (button && button_url) {
+    button_view = `<div><a class="btn" href="${button_url}">${button}</a></div>`
+  }
+
+  var video_button = ""
+  var video_html = ""
+  if (youtube_id) {
+    video_button = `<div><a href="#" data-href="#slide-${id}" class="btn video-link"><i class="fa fa-youtube-play"></i>watch video</a></div>`
+    video_html = `<div class="video-wrap" id="slide-${id}"><span>loading video...</span><div class="text-right"><i class="fa fa-times"></i></div><iframe width="100%" height="95%" data-src="https://www.youtube.com/embed/${youtube_id}?rel=0&autoplay=1&showinfo=1" frameborder="0" allowfullscreen></iframe></div>`
+  }
+
+  var capHTML = ""
+  if (cap_heading) {
+    if (youtube_id) {
+      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${video_button}`
+    } else {
+      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${button_view}`
+    }
+  }
+
+  return {
+    slide: { image: src, title: capHTML },
+    video_html
+  }
+}
+
+function getSlideshowData(imagesSlides, groupId) {
+  var slides = imagesSlides
+    .filter(f => f.imggrp_id == groupId)
+    .sort((a, b) => a.rank - b.rank)
+
+  var slideData = slides.map(createSlide)
+
+  return {
+    slides: slideData.map(s => s.slide),
+    videos_html: slideData.map(s => s.video_html).join("\r\n")
+  }
 }
 
 const fullUrl = (
@@ -72,24 +126,21 @@ class PageWrapper extends React.Component {
   render() {
     var {
       analytics,
-      children,
-      heading,
-      subNav,
-      galleryIndex,
-      homeOverlay,
-      tourListDetails,
-      reasons,
-      mapCanvasCountry,
-      socialPanel,
-      homeGallery,
-      slideshow,
-      video,
       bodyTagClasses,
+      children,
+      content,
+      galleryIndex,
+      hasBreadcrumbs,
+      heading,
+      homeGallery,
+      homeOverlay,
+      isTourDetails,
+      mapCanvasCountry,
       locale,
       location,
-      hasBreadcrumbs,
-      content,
-      isTourDetails
+      socialPanel,
+      subNav,
+      tourListDetails
     } = this.props
 
     const defaultLanguage = "en"
@@ -106,16 +157,25 @@ class PageWrapper extends React.Component {
     const homeOverlayData =
       currentLanguage === "zh" ? homeOverlayData_zh : homeOverlayData_en
 
+    const imagesSlides =
+      currentLanguage === "zh" ? imagesSlides_zh : imagesSlides_en
+
+    const countryHighlights =
+      currentLanguage === "zh" ? countryHighlights_zh : countryHighlights_en
+
     var autoHeading = null
     var tourList = null
     var tourListHeading = null
     var catList = null
     var catListHeading = null
 
-    var slideshowData = null
-
     const slideshowFixed =
-      content && content.module_id && content.module_id == 1
+      content &&
+      content.module_id &&
+      content.module_id == 1 &&
+      content.page_id == 1
+
+    var imgGroup = null
 
     if (content) {
       if (content.module_id == 100 && !tourListDetails) {
@@ -124,6 +184,12 @@ class PageWrapper extends React.Component {
 
       if (content.module_id == 1) {
         var page = general_pages.find(p => p.page_id == content.page_id)
+        imgGroup = page.imggrp_id
+
+        if (content.page_id && content.page_id == 1) {
+          var highlights = true
+        }
+
         autoHeading = page && page.page_heading
       }
 
@@ -165,6 +231,7 @@ class PageWrapper extends React.Component {
         }
 
         if (subCategoryFound) {
+          imgGroup = subCategoryFound.slideshow_id
           tourListHeading = subCategoryFound.label
           tourList = tourData
             .filter(
@@ -193,8 +260,17 @@ class PageWrapper extends React.Component {
         )
         return tourUrl === location.pathname.replace(/\/?$/i, "")
       })
-
+      imgGroup = data && data.slideshow_id
       autoHeading = data && data.heading
+    }
+
+    if (imgGroup) {
+      var { slides: slideshowData, videos_html } = getSlideshowData(
+        imagesSlides,
+        imgGroup
+      )
+
+      var slideshow = slideshowData && slideshowData.length > 0
     }
 
     return (
@@ -235,7 +311,11 @@ class PageWrapper extends React.Component {
         />
         <div className="push" />
         {homeOverlay && <HomeOverlay {...homeOverlayData} />}
-        {slideshow && <Slideshow fixed={slideshowFixed} {...slideshowData} />}
+        {slideshow &&
+          slideshowData &&
+          slideshowData.length > 0 && (
+            <Slideshow fixed={slideshowFixed} slides={slideshowData} />
+          )}
         <div className="main">
           <div className="container">
             {hasBreadcrumbs &&
@@ -297,9 +377,9 @@ class PageWrapper extends React.Component {
               heading={tourListHeading}
             />
           )}
-          {reasons && (
+          {highlights && (
             <ReasonsSlider
-              reasons={reasonsData}
+              reasons={countryHighlights}
               btnUrl={"/" + currentLanguage + "/georgia-tours"}
               btnText="View Georgia Tours"
             />
@@ -309,7 +389,9 @@ class PageWrapper extends React.Component {
           {homeGallery && <HomeGallery galleryId={5} />}
           <Footer currentLanguage={currentLanguage} />
         </div>
-        {video && <Video {...video} />}
+        {videos_html && (
+          <span dangerouslySetInnerHTML={{ __html: videos_html }} />
+        )}
         ==scripts-load-top==
         {analytics && <Analytics {...analytics} />}
       </React.Fragment>
@@ -319,24 +401,21 @@ class PageWrapper extends React.Component {
 
 PageWrapper.propTypes = {
   analytics: PropTypes.any,
-  children: PropTypes.node,
-  heading: PropTypes.node,
-  subNav: PropTypes.node,
-  galleryIndex: PropTypes.any,
-  homeOverlay: PropTypes.bool,
-  tourListDetails: PropTypes.object,
-  reasons: PropTypes.bool,
-  mapCanvasCountry: PropTypes.string,
-  socialPanel: PropTypes.bool,
-  homeGallery: PropTypes.bool,
-  slideshow: PropTypes.any,
-  video: PropTypes.any,
   bodyTagClasses: PropTypes.string,
+  children: PropTypes.node,
+  content: PropTypes.object,
+  galleryIndex: PropTypes.any,
+  hasBreadcrumbs: PropTypes.bool,
+  heading: PropTypes.node,
+  homeGallery: PropTypes.bool,
+  homeOverlay: PropTypes.bool,
+  isTourDetails: PropTypes.bool,
   locale: PropTypes.string.isRequired,
   location: PropTypes.object.isRequired,
-  hasBreadcrumbs: PropTypes.bool,
-  content: PropTypes.object,
-  isTourDetails: PropTypes.bool
+  mapCanvasCountry: PropTypes.string,
+  socialPanel: PropTypes.bool,
+  subNav: PropTypes.node,
+  tourListDetails: PropTypes.object
 }
 
 export default PageWrapper
