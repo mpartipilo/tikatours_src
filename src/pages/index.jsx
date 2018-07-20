@@ -1,10 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import PageWrapper from "../components/page-wrapper"
 
-const IndexPage = ({ location }) => (
+const IndexPage = ({ location, pathContext }) => (
   <PageWrapper
     location={location}
+    locale={pathContext.locale}
     bodyTagClasses="home"
     homeOverlay
     slideshow
@@ -21,5 +23,10 @@ const IndexPage = ({ location }) => (
     }}
   />
 )
+
+IndexPage.propTypes = {
+  location: PropTypes.object,
+  pathContext: PropTypes.object.isRequired
+}
 
 export default IndexPage

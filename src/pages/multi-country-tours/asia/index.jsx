@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 
 import PageWrapper from "../../../components/page-wrapper"
 
-const Page = ({ location }) => (
+const Page = ({ location, pathContext }) => (
   <PageWrapper
     hasBreadcrumbs
     location={location}
+    locale={pathContext.locale}
     content={{
       page_id: 20,
       module_id: 100
@@ -15,7 +16,8 @@ const Page = ({ location }) => (
 )
 
 Page.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
+  pathContext: PropTypes.object.isRequired
 }
 
 export default Page

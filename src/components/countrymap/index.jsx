@@ -1,15 +1,15 @@
-import React from "react";
-import { compose, withProps } from "recompose";
+import React from "react"
+import { compose, withProps } from "recompose"
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker
-} from "react-google-maps";
-import "regenerator-runtime/runtime";
-import Geocode from "../geocode";
+} from "react-google-maps"
+import "regenerator-runtime/runtime"
+import Geocode from "../geocode"
 
-const API_KEY = "AIzaSyBHpsccoDBi78-8IccP48y57zf_i8o2UhU";
+const API_KEY = "AIzaSyBHpsccoDBi78-8IccP48y57zf_i8o2UhU"
 
 const InternalMap = compose(
   withProps({
@@ -32,37 +32,37 @@ const InternalMap = compose(
       <Marker position={props.defaultCenter} onClick={props.onMarkerClick} />
     )}
   </GoogleMap>
-));
+))
 
 export default class CountryMap extends React.Component {
   constructor(props) {
-    super(props);
-    this.mapRef = React.createRef();
+    super(props)
+    this.mapRef = React.createRef()
 
     this.state = {
       countryName: this.props.countryName,
       showMap: false
-    };
+    }
   }
 
   componentDidMount() {
-    Geocode.setApiKey(API_KEY);
+    Geocode.setApiKey(API_KEY)
 
     // Get latidude & longitude from address.
     Geocode.fromAddress(`${this.state.countryName} Country`).then(
       response => {
-        const { location, viewport } = response.results[0].geometry;
+        const { location, viewport } = response.results[0].geometry
         this.setState({
           defaultCenter: location,
           location,
           viewport,
           showMap: true
-        });
+        })
       },
       error => {
-        throw new Error(error);
+        throw new Error(error)
       }
-    );
+    )
   }
 
   render() {
@@ -75,6 +75,6 @@ export default class CountryMap extends React.Component {
       />
     ) : (
       <div style={{ height: 0 }} />
-    );
+    )
   }
 }

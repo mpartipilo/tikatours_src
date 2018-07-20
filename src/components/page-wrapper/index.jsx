@@ -1,7 +1,4 @@
-/* global $ */
-/* global api */
 /* global app */
-/* global Hammer */
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -70,35 +67,6 @@ class PageWrapper extends React.Component {
 
   componentDidMount() {
     app.init()
-
-    //$(function($) {
-    //  $.supersized({
-    //    slide_interval: 5000,
-    //    transition_speed: 800,
-    //    performance: 0,
-    //    slide_links: "blank",
-    //    slides: [
-    //      {
-    //        image: "http://www.tikatours.com/library/slides/slide1.jpg",
-    //        title:
-    //          '<span>Discover Amazing Georgia</span><span class="caption">Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly lovely.</span><div><a href="#" data-href="#slide-1867" class="btn video-link"><i class="fa fa-youtube-play"></i>watch video</a></div>'
-    //      }
-    //    ]
-    //  })
-    //  $(".prev").click(function() {
-    //    api.prevSlide()
-    //  })
-    //  $(".next").click(function() {
-    //    api.nextSlide()
-    //  })
-    //  var hammertime = new Hammer($(".ss-wrap")[0])
-    //  hammertime.on("swipeleft", function(ev) {
-    //    api.prevSlide()
-    //  })
-    //  hammertime.on("swiperight", function(ev) {
-    //    api.nextSlide()
-    //  })
-    //})
   }
 
   render() {
@@ -117,16 +85,15 @@ class PageWrapper extends React.Component {
       slideshow,
       video,
       bodyTagClasses,
+      locale,
       location,
       hasBreadcrumbs,
       content,
       isTourDetails
     } = this.props
-    const defaultLanguage = "en"
-    const langRegex = /^\/(en|zh)\/?/i
 
-    var match = location.pathname.match(langRegex)
-    var currentLanguage = (match && match[1]) || defaultLanguage
+    const defaultLanguage = "en"
+    var currentLanguage = locale || defaultLanguage
 
     const general_pages =
       currentLanguage === "zh" ? general_pages_zh : general_pages_en
@@ -365,6 +332,7 @@ PageWrapper.propTypes = {
   slideshow: PropTypes.any,
   video: PropTypes.any,
   bodyTagClasses: PropTypes.string,
+  locale: PropTypes.string.isRequired,
   location: PropTypes.object.isRequired,
   hasBreadcrumbs: PropTypes.bool,
   content: PropTypes.object,
