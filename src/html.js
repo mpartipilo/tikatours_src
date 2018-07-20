@@ -31,6 +31,7 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
+          <script dangerouslySetInnerHTML={{__html: `document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';`}} />
           <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
           <script src="/assets/js/libs/vendor.js" />
           <script src="/assets/js/main.js" />

@@ -6,7 +6,8 @@
 - Regions sub-navigation
 - Regions pages
 - Slideshows on top of the pages
-- Gallery
+- Fix jump on homepage when overlay scrolls out of view
+- Gallery page
 
 - Gallery on tour details
 - Flag on tour details
@@ -18,6 +19,8 @@
 
 ## Done
 
+- Slideshows functionality working
+- Overlay properly sized
 - Chinese language content
 - Language switcher
 - Video Gallery
