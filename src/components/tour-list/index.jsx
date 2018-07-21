@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import TourCard from "../tour-card"
 
-const TourList = ({ language, heading, list, subCategory }) => {
+const TourList = ({ language, heading, list, tag, tourCategoryData }) => {
   return (
     list &&
     list.length > 0 && (
@@ -15,8 +15,9 @@ const TourList = ({ language, heading, list, subCategory }) => {
               <TourCard
                 language={language}
                 key={t.id}
-                {...t}
-                subCategory={subCategory}
+                tour={t}
+                tag={tag}
+                tourCategoryData={tourCategoryData}
               />
             ))}
           </div>
@@ -27,9 +28,11 @@ const TourList = ({ language, heading, list, subCategory }) => {
 }
 
 TourList.propTypes = {
-  subCategory: PropTypes.bool,
-  heading: PropTypes.string,
-  list: PropTypes.array
+  language: PropTypes.string,
+  heading: PropTypes.string.isRequired,
+  list: PropTypes.array.isRequired,
+  tag: PropTypes.string,
+  tourCategoryData: PropTypes.array
 }
 
 export default TourList

@@ -2,29 +2,34 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-const TourGallery = props => (
-  <div className="col-xs-12">
-    <h2>Tour Gallery</h2>
-    <ul className="gallery text-left">
-      {props.photos.map(m => (
-        <li key={m.imgslide_id}>
-          <a
-            href={m.imgslide_path}
-            rel="group"
-            className="fancybox"
-            title={m.imgslide_caption}
-          >
-            <img
-              src={m.srcThumb}
-              alt={m.caption_heading}
-              title={m.imgslide_caption}
-            />
-          </a>
-        </li>
-      ))}
-    </ul>
-    <div className="clearfix" />
-  </div>
+const TourGallery = ({ photos }) => (
+  <React.Fragment>
+    {photos &&
+      photos.length > 0 && (
+        <div className="col-xs-12">
+          <h2>Tour Gallery</h2>
+          <ul className="gallery text-left">
+            {photos.map(m => (
+              <li key={m.imgslide_id}>
+                <a
+                  href={m.imgslide_path}
+                  rel="group"
+                  className="fancybox"
+                  title={m.imgslide_caption}
+                >
+                  <img
+                    src={m.srcThumb}
+                    alt={m.caption_heading}
+                    title={m.imgslide_caption}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="clearfix" />
+        </div>
+      )}
+  </React.Fragment>
 )
 
 TourGallery.propTypes = {
@@ -62,8 +67,6 @@ class TourDetails extends React.Component {
       .sort((l, r) => {
         return l.imgslide_rank - r.imgslide_rank
       })
-
-    console.log(tourGallery)
 
     this.state = {
       tour,

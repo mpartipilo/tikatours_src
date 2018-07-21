@@ -44,8 +44,22 @@ import countryHighlights_en from "../../../data/country_highlights_en.json"
 import countryHighlights_zh from "../../../data/country_highlights_zh.json"
 
 const featuredTags = {
+  zh: "featured tour",
+  en: "featured tour"
+}
+
+const featuredListHeading = {
   zh: "我们的特色旅游",
   en: "Our featured tours"
+}
+
+const textsIntl = {
+  zh: {
+    otherTours: "Other "
+  },
+  en: {
+    otherTours: "Other "
+  }
 }
 
 function createSlide(m) {
@@ -170,11 +184,13 @@ class PageWrapper extends React.Component {
     var catListHeading = null
     var tour = null
 
-    const slideshowFixed =
+    const isHome =
       content &&
       content.module_id &&
       content.module_id == 1 &&
       content.page_id == 1
+
+    const slideshowFixed = isHome
 
     var imgGroup = null
 
@@ -194,14 +210,15 @@ class PageWrapper extends React.Component {
         autoHeading = page && page.page_heading
       }
 
-      if (tourListDetails && tourListDetails.featured) {
-        tourListHeading = featuredTags[currentLanguage]
+      if (tourListDetails && isHome) {
+        tourListHeading = featuredListHeading[currentLanguage]
+        var tourListTag = featuredTags[currentLanguage]
         tourList = tourData
           .filter(t => t.is_featured === "1")
           .sort((a, b) => a.rank - b.rank)
       }
 
-      if (tourListDetails && !tourListDetails.featured) {
+      if (tourListDetails && !isHome) {
         const subCategoryFound =
           tourListDetails.sub_category_id &&
           tourCategoryData.find(c => c.id === tourListDetails.sub_category_id)
@@ -251,7 +268,7 @@ class PageWrapper extends React.Component {
     }
 
     if (isTourDetails) {
-      var data = tourData.find(t => {
+      const data = tourData.find(t => {
         const tourUrl = fullUrl(
           currentLanguage,
           tourCategoryData,
@@ -262,7 +279,21 @@ class PageWrapper extends React.Component {
         return tourUrl === location.pathname.replace(/\/?$/i, "")
       })
       tour = data
+      const subCategoryFound =
+        data.sub_category_id &&
+        tourCategoryData.find(c => c.id === data.sub_category_id)
       imgGroup = data && data.slideshow_id
+      tourListHeading =
+        textsIntl[currentLanguage].otherTours + subCategoryFound.label
+      tourList = tourData
+        .filter(
+          t =>
+            t.status === "A" &&
+            t.sub_category_id === tour.sub_category_id &&
+            t.id != data.id
+        )
+        .sort((a, b) => a.rank - b.rank)
+
       autoHeading = data && data.heading
     }
 
@@ -354,6 +385,7 @@ class PageWrapper extends React.Component {
                     url={location.pathname}
                     imagesSlidesData={imagesSlides}
                     tourCategoryData={tourCategoryData}
+                    tourData={tourData}
                     tour={tour}
                   />
                 )}
@@ -379,6 +411,8 @@ class PageWrapper extends React.Component {
               language={currentLanguage}
               list={tourList}
               heading={tourListHeading}
+              tag={tourListTag}
+              tourCategoryData={tourCategoryData}
             />
           )}
           {highlights && (

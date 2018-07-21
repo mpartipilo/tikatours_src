@@ -8,8 +8,6 @@
 - Fix jump on homepage when overlay scrolls out of view
 - Gallery page
 
-- List other related tours on tour details
-
 - Social panel is missing some functionality
 - About must be refreshed with the most recent content (add nino and the other guy)
 - Blog
@@ -17,6 +15,7 @@
 
 ## Done
 
+- List other related tours on tour details
 - Gallery on tour details
 - Slideshows on top of the pages
 - Slideshows functionality working
