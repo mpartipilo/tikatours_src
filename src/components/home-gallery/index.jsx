@@ -2,15 +2,13 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-import imageSlides from "../../../data/images_slides.json"
-
 class HomeGallery extends React.Component {
   constructor(props) {
     super(props)
 
     var thumbPath = `/thumbs/galleries/g${this.props.galleryId}/`
-    var images = imageSlides
-      .filter(i => i.imggrp_id === props.galleryId)
+    var images = props.imageSlides
+      .filter(i => i.imggrp_id == props.galleryId)
       .map(i => ({
         ...i,
         srcThumb: thumbPath + path.basename(i.imgslide_path)
@@ -36,12 +34,16 @@ class HomeGallery extends React.Component {
                     href={p.imgslide_path}
                     rel="group"
                     className="fancybox"
-                    title={p.caption}
+                    title={p.imgslide_caption}
                   >
-                    <img src={p.srcThumb} alt={p.alt || ""} title={p.caption} />
-                    {p.caption && (
+                    <img
+                      src={p.srcThumb}
+                      alt={p.imgslide_alt || ""}
+                      title={p.imgslide_caption}
+                    />
+                    {p.imgslide_caption && (
                       <span>
-                        <p>{p.caption}</p>
+                        <p>{p.imgslide_caption}</p>
                       </span>
                     )}
                   </a>
@@ -57,7 +59,7 @@ class HomeGallery extends React.Component {
 }
 
 HomeGallery.propTypes = {
-  pictures: PropTypes.array,
+  imageSlides: PropTypes.array,
   galleryId: PropTypes.number
 }
 

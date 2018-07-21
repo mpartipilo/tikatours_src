@@ -168,6 +168,7 @@ class PageWrapper extends React.Component {
     var tourListHeading = null
     var catList = null
     var catListHeading = null
+    var tour = null
 
     const slideshowFixed =
       content &&
@@ -260,6 +261,7 @@ class PageWrapper extends React.Component {
         )
         return tourUrl === location.pathname.replace(/\/?$/i, "")
       })
+      tour = data
       imgGroup = data && data.slideshow_id
       autoHeading = data && data.heading
     }
@@ -350,7 +352,9 @@ class PageWrapper extends React.Component {
                   <TourDetails
                     language={currentLanguage}
                     url={location.pathname}
-                    subCategory
+                    imagesSlidesData={imagesSlides}
+                    tourCategoryData={tourCategoryData}
+                    tour={tour}
                   />
                 )}
               {content && <Content language={currentLanguage} {...content} />}
@@ -386,7 +390,9 @@ class PageWrapper extends React.Component {
           )}
           {mapCanvasCountry && <MapCanvasView countryName={mapCanvasCountry} />}
           {socialPanel && <SocialPanel />}
-          {homeGallery && <HomeGallery galleryId={5} />}
+          {homeGallery && (
+            <HomeGallery imageSlides={imagesSlides} galleryId={5} />
+          )}
           <Footer currentLanguage={currentLanguage} />
         </div>
         {videos_html && (

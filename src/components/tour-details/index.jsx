@@ -1,77 +1,80 @@
+import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-import tourData_en from "../../../data/tour_en.json"
-import tourData_zh from "../../../data/tour_zh.json"
+const TourGallery = props => (
+  <div className="col-xs-12">
+    <h2>Tour Gallery</h2>
+    <ul className="gallery text-left">
+      {props.photos.map(m => (
+        <li key={m.imgslide_id}>
+          <a
+            href={m.imgslide_path}
+            rel="group"
+            className="fancybox"
+            title={m.imgslide_caption}
+          >
+            <img
+              src={m.srcThumb}
+              alt={m.caption_heading}
+              title={m.imgslide_caption}
+            />
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div className="clearfix" />
+  </div>
+)
 
-import tourCategoryData_en from "../../../data/tour_category_en.json"
-import tourCategoryData_zh from "../../../data/tour_category_zh.json"
-
-const fullUrl = (
-  language,
-  tourCategoryData,
-  main_category_id,
-  sub_category_id,
-  url
-) => {
-  var main_category = tourCategoryData.find(c => c.id === main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
-
-  if (!main_category || !sub_category) return null
-
-  return `/${language}/${main_category.url}/${sub_category.url}/${url}`
+TourGallery.propTypes = {
+  photos: PropTypes.array
 }
 
 class TourDetails extends React.Component {
   constructor(props) {
     super(props)
 
-    const { language, url, subCategory } = props
-
-    var tourData = language === "zh" ? tourData_zh : tourData_en
-
-    var tourCategoryData =
-      language === "zh" ? tourCategoryData_zh : tourCategoryData_en
-
-    var data = tourData.find(t => {
-      const tourUrl = fullUrl(
-        language,
-        tourCategoryData,
-        t.main_category_id,
-        t.sub_category_id,
-        t.url
-      )
-      return tourUrl === url.replace(/\/?$/i, "")
-    })
+    const { tour, imagesSlidesData, tourCategoryData } = props
 
     const subCategoryFound = tourCategoryData.find(
-      c => c.id === data.sub_category_id
-    )
-    const mainCategoryFound = tourCategoryData.find(
-      c => c.id === data.main_category_id
+      c => c.id === tour.sub_category_id
     )
 
-    const tag = subCategory
-      ? subCategoryFound
-        ? tourCategoryData.find(c => c.id === data.sub_category_id).name
-        : data.is_featured === "1"
-          ? "featured tour"
-          : ""
-      : mainCategoryFound
-        ? mainCategoryFound.name
-        : data.is_featured === "1"
-          ? "featured tour"
-          : ""
+    const mainCategoryFound = tourCategoryData.find(
+      c => c.id === tour.main_category_id
+    )
+
+    const tag =
+      (subCategoryFound && subCategoryFound.name) ||
+      (mainCategoryFound && mainCategoryFound.name) ||
+      (tour.is_featured === "1" && "featured tour") ||
+      ""
+
+    var thumbPath = `/thumbs/galleries/g${tour.gallery_id}/`
+
+    const tourGallery = imagesSlidesData
+      .filter(i => i.imggrp_id == tour.gallery_id)
+      .map(i => ({
+        ...i,
+        srcThumb: thumbPath + path.basename(i.imgslide_path)
+      }))
+      .sort((l, r) => {
+        return l.imgslide_rank - r.imgslide_rank
+      })
+
+    console.log(tourGallery)
 
     this.state = {
-      data,
-      tag
+      tour,
+      tag,
+      tourGallery
     }
   }
 
   render() {
-    const { data, tag, tourGallery } = this.state
-    const { duration, inclusions, itinerary, long_descr, price_from } = data
+    const { tour, tag, tourGallery } = this.state
+    const { duration, inclusions, itinerary, long_descr, price_from } = tour
 
     return (
       <div className="row tour-wrap">
@@ -81,7 +84,7 @@ class TourDetails extends React.Component {
               <h2>Tour Overview</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
-            {tourGallery && <span>A GALLERY HAS BEEN PROVIDED</span>}
+            {tourGallery && <TourGallery photos={tourGallery} />}
             {itinerary && (
               <div className="col-xs-12">
                 <h2>Itinerary</h2>
@@ -133,10 +136,10 @@ class TourDetails extends React.Component {
 }
 
 TourDetails.propTypes = {
-  id: PropTypes.number,
-  url: PropTypes.string,
   language: PropTypes.string.isRequired,
-  subCategory: PropTypes.bool
+  tour: PropTypes.object.isRequired,
+  imagesSlidesData: PropTypes.array.isRequired,
+  tourCategoryData: PropTypes.array.isRequired
 }
 
 export default TourDetails
