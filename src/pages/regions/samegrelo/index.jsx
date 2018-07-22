@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import PageWrapper from "../../components/page-wrapper"
+import PageWrapper from "../../../components/page-wrapper"
 
 const Page = ({ location, pathContext }) => (
   <PageWrapper
@@ -9,8 +9,8 @@ const Page = ({ location, pathContext }) => (
     locale={pathContext.locale}
     mapCanvasCountry="Georgia"
     content={{
-      page_id: 10,
-      module_id: 1
+      page_id: 5,
+      module_id: 36
     }}
     isRegion
   />

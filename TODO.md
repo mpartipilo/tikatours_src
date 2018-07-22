@@ -3,8 +3,6 @@
 ## Pending
 
 - Window title needs to reflect current page
-- Regions sub-navigation
-- Regions pages
 - Fix jump on homepage when overlay scrolls out of view
 - Gallery page
 
@@ -15,6 +13,8 @@
 
 ## Done
 
+- Regions sub-navigation
+- Regions pages
 - List other related tours on tour details
 - Gallery on tour details
 - Slideshows on top of the pages

@@ -1,5 +1,6 @@
 /* global app */
 
+import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -18,7 +19,7 @@ import Slideshow from "../slideshow"
 import SubNav from "../sub-nav"
 import CatList from "../cat-list"
 import HomeGallery from "../home-gallery"
-import GalleryIndex from "../gallery-index"
+import Gallery from "../gallery"
 import Analytics from "../analytics"
 
 import "../../../assets/sass/main.scss"
@@ -42,6 +43,9 @@ import imagesSlides_zh from "../../../data/images_slides_zh.json"
 
 import countryHighlights_en from "../../../data/country_highlights_en.json"
 import countryHighlights_zh from "../../../data/country_highlights_zh.json"
+
+import regionData_en from "../../../data/region_en.json"
+import regionData_zh from "../../../data/region_zh.json"
 
 const featuredTags = {
   zh: "featured tour",
@@ -143,17 +147,16 @@ class PageWrapper extends React.Component {
       bodyTagClasses,
       children,
       content,
-      galleryIndex,
       hasBreadcrumbs,
       heading,
       homeGallery,
       homeOverlay,
       isTourDetails,
+      isRegion,
       mapCanvasCountry,
       locale,
       location,
       socialPanel,
-      subNav,
       tourListDetails
     } = this.props
 
@@ -177,12 +180,15 @@ class PageWrapper extends React.Component {
     const countryHighlights =
       currentLanguage === "zh" ? countryHighlights_zh : countryHighlights_en
 
+    const regionData = currentLanguage === "zh" ? regionData_zh : regionData_en
+
     var autoHeading = null
     var tourList = null
     var tourListHeading = null
     var catList = null
     var catListHeading = null
     var tour = null
+    var page = general_pages.find(p => p.page_id == content.page_id)
 
     const isHome =
       content &&
@@ -200,7 +206,6 @@ class PageWrapper extends React.Component {
       }
 
       if (content.module_id == 1) {
-        var page = general_pages.find(p => p.page_id == content.page_id)
         imgGroup = page.imggrp_id
 
         if (content.page_id && content.page_id == 1) {
@@ -264,6 +269,43 @@ class PageWrapper extends React.Component {
           autoHeading ||
           (subCategoryFound && subCategoryFound.heading) ||
           (mainCategoryFound && mainCategoryFound.heading)
+      }
+    }
+
+    if (isRegion) {
+      var subNav = {
+        list: regionData
+          .filter(t => t.status === "A" && t.country_id == 1)
+          .sort((a, b) => a.rank - b.rank)
+          .map(r => {
+            const full_url = `/${currentLanguage}/regions/${r.url}`
+            return {
+              active: location.pathname.replace(/\/?$/i, "") === full_url,
+              full_url,
+              ...r
+            }
+          })
+      }
+
+      const data = subNav.list.find(l => l.active)
+
+      console.log(page)
+
+      if (data) {
+        autoHeading = data.title
+        imgGroup = data.slideshow_id
+        var regionGallery = data.gallery_id
+        const thumbPath = `/thumbs/galleries/g${regionGallery}/`
+        var regionGalleryHeading = data.name + " Gallery"
+        var regionGalleryPhotos = imagesSlides
+          .filter(i => i.imggrp_id == regionGallery)
+          .map(i => ({
+            ...i,
+            srcThumb: thumbPath + path.basename(i.imgslide_path)
+          }))
+          .sort((l, r) => {
+            return l.imgslide_rank - r.imgslide_rank
+          })
       }
     }
 
@@ -390,6 +432,12 @@ class PageWrapper extends React.Component {
                   />
                 )}
               {content && <Content language={currentLanguage} {...content} />}
+              {regionGallery && (
+                <Gallery
+                  heading={regionGalleryHeading}
+                  photos={regionGalleryPhotos}
+                />
+              )}
             </div>
             <div className="row">
               <div className="col-xs-12">
@@ -405,7 +453,6 @@ class PageWrapper extends React.Component {
               />
             )}
           </div>
-          {galleryIndex && <GalleryIndex {...galleryIndex} />}
           {tourList && (
             <TourList
               language={currentLanguage}
@@ -444,17 +491,16 @@ PageWrapper.propTypes = {
   bodyTagClasses: PropTypes.string,
   children: PropTypes.node,
   content: PropTypes.object,
-  galleryIndex: PropTypes.any,
   hasBreadcrumbs: PropTypes.bool,
   heading: PropTypes.node,
   homeGallery: PropTypes.bool,
   homeOverlay: PropTypes.bool,
   isTourDetails: PropTypes.bool,
+  isRegion: PropTypes.bool,
   locale: PropTypes.string.isRequired,
   location: PropTypes.object.isRequired,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,
-  subNav: PropTypes.node,
   tourListDetails: PropTypes.object
 }
 

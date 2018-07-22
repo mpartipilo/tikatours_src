@@ -2,39 +2,7 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-const TourGallery = ({ photos }) => (
-  <React.Fragment>
-    {photos &&
-      photos.length > 0 && (
-        <div className="col-xs-12">
-          <h2>Tour Gallery</h2>
-          <ul className="gallery text-left">
-            {photos.map(m => (
-              <li key={m.imgslide_id}>
-                <a
-                  href={m.imgslide_path}
-                  rel="group"
-                  className="fancybox"
-                  title={m.imgslide_caption}
-                >
-                  <img
-                    src={m.srcThumb}
-                    alt={m.caption_heading}
-                    title={m.imgslide_caption}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="clearfix" />
-        </div>
-      )}
-  </React.Fragment>
-)
-
-TourGallery.propTypes = {
-  photos: PropTypes.array
-}
+import Gallery from "../gallery"
 
 class TourDetails extends React.Component {
   constructor(props) {
@@ -87,7 +55,9 @@ class TourDetails extends React.Component {
               <h2>Tour Overview</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
-            {tourGallery && <TourGallery photos={tourGallery} />}
+            {tourGallery && (
+              <Gallery heading="Tour gallery" photos={tourGallery} />
+            )}
             {itinerary && (
               <div className="col-xs-12">
                 <h2>Itinerary</h2>
