@@ -5,22 +5,23 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-import Header from "../header"
-import ReasonsSlider from "../reasons"
+import Analytics from "../analytics"
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
+import CatList from "../cat-list"
 import Content from "../content"
 import Footer from "../footer"
-import HomeOverlay from "../home-overlay"
-import TourList from "../tour-list"
-import TourDetails from "../tour-details"
-import MapCanvasView from "../map-canvas"
-import SocialPanel from "../social-panel"
-import Slideshow from "../slideshow"
-import SubNav from "../sub-nav"
-import CatList from "../cat-list"
-import HomeGallery from "../home-gallery"
 import Gallery from "../gallery"
-import Analytics from "../analytics"
+import GalleryIndex from "../gallery-index"
+import Header from "../header"
+import HomeGallery from "../home-gallery"
+import HomeOverlay from "../home-overlay"
+import MapCanvasView from "../map-canvas"
+import ReasonsSlider from "../reasons"
+import Slideshow from "../slideshow"
+import SocialPanel from "../social-panel"
+import SubNav from "../sub-nav"
+import TourDetails from "../tour-details"
+import TourList from "../tour-list"
 
 import "../../../assets/sass/main.scss"
 
@@ -151,6 +152,7 @@ class PageWrapper extends React.Component {
       heading,
       homeGallery,
       homeOverlay,
+      isGalleryIndex,
       isTourDetails,
       isRegion,
       mapCanvasCountry,
@@ -289,8 +291,6 @@ class PageWrapper extends React.Component {
 
       const data = subNav.list.find(l => l.active)
 
-      console.log(page)
-
       if (data) {
         autoHeading = data.title
         imgGroup = data.slideshow_id
@@ -337,6 +337,10 @@ class PageWrapper extends React.Component {
         .sort((a, b) => a.rank - b.rank)
 
       autoHeading = data && data.heading
+    }
+
+    if (isGalleryIndex) {
+      var galleryGroups = []
     }
 
     if (imgGroup) {
@@ -453,6 +457,7 @@ class PageWrapper extends React.Component {
               />
             )}
           </div>
+          {galleryGroups && <GalleryIndex groups={galleryGroups} />}
           {tourList && (
             <TourList
               language={currentLanguage}
@@ -495,6 +500,7 @@ PageWrapper.propTypes = {
   heading: PropTypes.node,
   homeGallery: PropTypes.bool,
   homeOverlay: PropTypes.bool,
+  isGalleryIndex: PropTypes.bool,
   isTourDetails: PropTypes.bool,
   isRegion: PropTypes.bool,
   locale: PropTypes.string.isRequired,

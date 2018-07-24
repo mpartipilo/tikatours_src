@@ -11,6 +11,7 @@ const Page = ({ location, pathContext }) => (
       page_id: 6,
       module_id: 1
     }}
+    isGalleryIndex
   />
 )
 
