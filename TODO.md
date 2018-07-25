@@ -3,7 +3,6 @@
 ## Pending
 
 - Window title needs to reflect current page
-- Fix jump on homepage when overlay scrolls out of view
 - Social panel is missing some functionality
 - Blog
 - Contact form
@@ -12,6 +11,7 @@
 
 ## Done
 
+- Fix jump on homepage when overlay scrolls out of view
 - Gallery page
 - Regions sub-navigation
 - Regions pages
