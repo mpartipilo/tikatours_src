@@ -1,9 +1,10 @@
-/* global app */
+/* global app, window, $ */
 
 import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+import md5 from "md5"
 
 import Analytics from "../analytics"
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
@@ -41,6 +42,8 @@ import homeOverlayData_zh from "../../../data/home-overlay_zh.json"
 
 import imagesSlides_en from "../../../data/images_slides_en.json"
 import imagesSlides_zh from "../../../data/images_slides_zh.json"
+
+import imagesGroups from "../../../data/images_groups.json"
 
 import countryHighlights_en from "../../../data/country_highlights_en.json"
 import countryHighlights_zh from "../../../data/country_highlights_zh.json"
@@ -140,6 +143,19 @@ class PageWrapper extends React.Component {
 
   componentDidMount() {
     app.init()
+
+    $(function() {
+      $(window).on("scroll", function() {
+        app.modifyHeader()
+        app.fadeOverlay()
+      })
+
+      $(window).on("resize", function() {
+        app.matchHeights($(".t-info"))
+      })
+
+      app.initGalleryShuffle("#gallery-shuffle")
+    })
   }
 
   render() {
@@ -340,7 +356,23 @@ class PageWrapper extends React.Component {
     }
 
     if (isGalleryIndex) {
-      var galleryGroups = []
+      var galleryGroups = imagesGroups
+        .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
+        .map(g => ({
+          ...g,
+          gallery_id: md5(g.imggrp_id)
+        }))
+
+      var galleryIndexPhotos = imagesSlides
+        .filter(f => galleryGroups.find(g => g.imggrp_id === f.imggrp_id))
+        .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
+        .map(p => ({
+          ...p,
+          gallery_id: md5(p.imggrp_id),
+          srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
+            p.imgslide_path
+          )}`
+        }))
     }
 
     if (imgGroup) {
@@ -457,7 +489,13 @@ class PageWrapper extends React.Component {
               />
             )}
           </div>
-          {galleryGroups && <GalleryIndex groups={galleryGroups} />}
+          {galleryGroups &&
+            galleryIndexPhotos && (
+              <GalleryIndex
+                groups={galleryGroups}
+                photos={galleryIndexPhotos}
+              />
+            )}
           {tourList && (
             <TourList
               language={currentLanguage}

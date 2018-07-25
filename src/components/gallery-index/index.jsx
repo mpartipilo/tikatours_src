@@ -21,7 +21,7 @@ const GalleryIndexTabs = ({ groups }) => (
               <a
                 className="btn shuffle-btn"
                 title={g.imggrp_name + " gallery"}
-                data-group={g.gallery_id_md5}
+                data-group={g.gallery_id}
                 href=""
               >
                 {g.imggrp_name}
@@ -38,14 +38,44 @@ GalleryIndexTabs.propTypes = {
   groups: PropTypes.array
 }
 
-const GalleryIndex = ({ groups }) => (
+const GalleryIndex = ({ groups, photos }) => (
   <React.Fragment>
     {groups &&
       groups.length >= 0 && (
         <div className="container-fluid gallery-index">
           <GalleryIndexTabs groups={groups} />
           <div className="row">
-            <div className="col-xs-12" />
+            <div className="col-xs-12">
+              <ul id="gallery-shuffle" className="gallery">
+                {photos &&
+                  photos.map(p => (
+                    <li
+                      key={p.imgslide_id}
+                      className="gallery-item"
+                      data-groups={`["all","${p.gallery_id}"]`}
+                    >
+                      <a
+                        href={p.imgslide_path}
+                        data-main-group={p.gallery_id}
+                        data-fancybox-group="all"
+                        className="fancybox"
+                        title={p.imgslide_caption}
+                      >
+                        <img
+                          src={p.srcThumb}
+                          alt={p.imgslide_alt}
+                          title={p.imgslide_caption}
+                        />
+                        {p.imgslide_caption && (
+                          <span>
+                            <p>{p.imgslide_caption}</p>
+                          </span>
+                        )}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
           </div>
         </div>
       )}
@@ -53,7 +83,8 @@ const GalleryIndex = ({ groups }) => (
 )
 
 GalleryIndex.propTypes = {
-  groups: PropTypes.array
+  groups: PropTypes.array,
+  photos: PropTypes.array
 }
 
 export default GalleryIndex

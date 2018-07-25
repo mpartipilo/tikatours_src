@@ -4,15 +4,15 @@
 
 - Window title needs to reflect current page
 - Fix jump on homepage when overlay scrolls out of view
-- Gallery page
-
 - Social panel is missing some functionality
-- About must be refreshed with the most recent content (add nino and the other guy)
 - Blog
 - Contact form
 
+- Refresh with latest data
+
 ## Done
 
+- Gallery page
 - Regions sub-navigation
 - Regions pages
 - List other related tours on tour details
