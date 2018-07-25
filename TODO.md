@@ -6,7 +6,7 @@
 - Social panel is missing some functionality
 - Blog
 - Contact form
-
+- Region map details
 - Refresh with latest data
 
 ## Done

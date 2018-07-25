@@ -11,16 +11,16 @@ const TourList = ({ language, heading, list, tag, tourCategoryData }) => {
         <div className="row">
           <div className="col-xs-12 text-center">
             <h2>{heading}</h2>
-            {list.map(t => (
-              <TourCard
-                language={language}
-                key={t.id}
-                tour={t}
-                tag={tag}
-                tourCategoryData={tourCategoryData}
-              />
-            ))}
           </div>
+          {list.map(t => (
+            <TourCard
+              language={language}
+              key={t.id}
+              tour={t}
+              tag={tag}
+              tourCategoryData={tourCategoryData}
+            />
+          ))}
         </div>
       </div>
     )
