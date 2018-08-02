@@ -41,7 +41,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host 0.0.0.0 --port 8000",
     "format": "prettier --write 'src/**/*.js' 'src/**/*.jsx'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
