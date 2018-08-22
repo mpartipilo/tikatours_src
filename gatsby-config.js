@@ -16,6 +16,31 @@ module.exports = {
         ],
         precision: 8
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data_common`,
+        path: `${__dirname}/data/common`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data_en`,
+        path: `${__dirname}/data/en`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data_zh`,
+        path: `${__dirname}/data/zh`
+      }
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
+    "gatsby-transformer-remark"
   ]
 }

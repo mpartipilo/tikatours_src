@@ -5,7 +5,7 @@
  */
 
 const path = require("path")
-const { languages } = require("./src/i18n/locales")
+const { languages, localeData } = require("./src/i18n/locales")
 
 exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage, deletePage } = boundActionCreators
@@ -22,6 +22,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
       component: redirect,
       context: {
         languages,
+        localeData,
         locale: "",
         routed: false,
         redirectPage: page.path
@@ -55,8 +56,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const indexPage = path.resolve("src/templates/index.jsx")
   const tourMainPage = path.resolve("src/templates/tourMainCategory.jsx")
   const tourSubCategoryPage = path.resolve("src/templates/tourSubCategory.jsx")
+  const tourDetailsPage = path.resolve("src/templates/tourDetails.jsx")
+  const regionPage = path.resolve("src/templates/regionPage.jsx")
+  const blogPostPage = path.resolve("src/templates/blogPostPage.jsx")
 
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
+    resolve()
+    //console.log(`Current language: ${value}`)l
     // Create Index page
     //console.log("Creating Index Page")
     //createPage({
@@ -64,11 +70,43 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     //  component: indexPage
     //})
     // Create tour main categories
-
     // Create tour subcategories for each main category
-
     // Create general pages
+    /*
+    resolve(
+      graphql(``).then(result => {
+        if (result.errors) {
+          reject(new Error(result.errors))
+        }
 
-    resolve()
+        languages.forEach(({ value }) => {
+          console.log(`Current language: ${value}`)
+
+          createPage({
+            path: "/",
+            component: indexPage
+          })
+
+          const localePage = {
+            originalPath: path,
+            path: `/${value}${path}`,
+            context: {
+              languages,
+              locale: value,
+              routed: false,
+              originalPath: path
+            }
+          }
+
+          createPage(localePage)
+        })
+      })
+    )
+    */
   })
 }
+
+exports.modifyBabelrc = ({ babelrc }) => ({
+  ...babelrc,
+  plugins: babelrc.plugins.concat(["transform-regenerator"])
+})
