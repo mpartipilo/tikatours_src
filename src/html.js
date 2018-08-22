@@ -37,6 +37,8 @@ module.exports = class HTML extends React.Component {
             }}
           />
           <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
+          <script type="text/javascript" src="/assets/js/libs/jquery.min.js" />
+          <script type="text/javascript" src="/assets/js/libs/supersized.js" />
           <script src="/assets/js/libs/vendor.js" />
           <script src="/assets/js/main.js" />
         </head>
