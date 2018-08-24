@@ -1,22 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import content from "../../../data/content.json"
-import content_row from "../../../data/content_row.json"
-import content_column_en from "../../../data/content_column_en.json"
-import content_column_zh from "../../../data/content_column_zh.json"
+import data from "../i18n-data"
 
 class Content extends React.Component {
   constructor(props) {
     super(props)
+
+    const { content, content_row, content_column } = data[props.language]
+
     var content_index = content.find(
       c => c.page_id == props.page_id && c.module_id == props.module_id
     )
-
-    var content_rows = []
-
-    const content_column =
-      props.language === "zh" ? content_column_zh : content_column_en
 
     if (content_index) {
       var rows = content_row
@@ -34,10 +29,8 @@ class Content extends React.Component {
             }))
         }))
 
-      rows.forEach(r => content_rows.push(r))
-
       this.state = {
-        rows: content_rows
+        rows
       }
     }
   }
@@ -62,7 +55,8 @@ class Content extends React.Component {
 
 Content.propTypes = {
   page_id: PropTypes.number,
-  module_id: PropTypes.number
+  module_id: PropTypes.number,
+  language: PropTypes.string.isRequired
 }
 
 export default Content

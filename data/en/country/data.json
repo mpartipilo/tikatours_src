@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Georgia",
     "flag_path": "",
     "latitude": "42.315407",
@@ -12,7 +12,7 @@
     "btn_url": "/georgia-tours"
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Armenia",
     "flag_path": "/library/flags/armenia.png",
     "latitude": "40.069099",
@@ -24,7 +24,7 @@
     "btn_url": ""
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Azerbaijan",
     "flag_path": "/library/flags/ajerbaijan.png",
     "latitude": "40.143105",
@@ -36,7 +36,7 @@
     "btn_url": ""
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Argentina",
     "flag_path": "",
     "latitude": "-38.416097",
@@ -48,7 +48,7 @@
     "btn_url": ""
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Botswana",
     "flag_path": "",
     "latitude": "-22.328474",
@@ -60,7 +60,7 @@
     "btn_url": ""
   },
   {
-    "id": 7,
+    "id": "7",
     "name": "Cambodia",
     "flag_path": "",
     "latitude": "12.565679",
@@ -72,7 +72,7 @@
     "btn_url": ""
   },
   {
-    "id": 8,
+    "id": "8",
     "name": "Italy",
     "flag_path": "",
     "latitude": "41.87194",
@@ -84,7 +84,7 @@
     "btn_url": ""
   },
   {
-    "id": 9,
+    "id": "9",
     "name": "Morocco",
     "flag_path": "",
     "latitude": "31.791702",
@@ -96,7 +96,7 @@
     "btn_url": ""
   },
   {
-    "id": 10,
+    "id": "10",
     "name": "Myanmar",
     "flag_path": "",
     "latitude": "21.913965",
@@ -108,7 +108,7 @@
     "btn_url": ""
   },
   {
-    "id": 11,
+    "id": "11",
     "name": "South Africa",
     "flag_path": "",
     "latitude": "-30.559482",
@@ -120,7 +120,7 @@
     "btn_url": ""
   },
   {
-    "id": 12,
+    "id": "12",
     "name": "Tanzania",
     "flag_path": "",
     "latitude": "-6.369028",
@@ -132,7 +132,7 @@
     "btn_url": ""
   },
   {
-    "id": 13,
+    "id": "13",
     "name": "Thailand",
     "flag_path": "",
     "latitude": "15.870032",
@@ -144,7 +144,7 @@
     "btn_url": ""
   },
   {
-    "id": 14,
+    "id": "14",
     "name": "Untitled",
     "flag_path": "",
     "latitude": null,
@@ -156,7 +156,7 @@
     "btn_url": null
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "Uganda",
     "flag_path": "",
     "latitude": "1.373333",
@@ -168,7 +168,7 @@
     "btn_url": ""
   },
   {
-    "id": 16,
+    "id": "16",
     "name": "Japan",
     "flag_path": "",
     "latitude": "",

@@ -1,8 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import data_en from "../../../data/contact_en.json"
-import data_zh from "../../../data/contact_zh.json"
+import data from "../i18n-data"
 
 const FooterNav = props => (
   <div className="row">
@@ -21,31 +20,34 @@ const FooterNav = props => (
 )
 
 const Footer = props => {
-  const data = props.currentLanguage === "zh" ? data_zh : data_en
+  const { language } = props
+  const { contact_data } = data[language]
 
   return (
     <footer>
       <div className="container-fluid">
-        <FooterNav links={data.navFooter} />
+        <FooterNav links={contact_data.navFooter} language={language} />
         <div className="row">
           <div className="col-xs-12 col-md-6">
             <div className="contact">
               <div className="row">
                 <div className="col-xs-4">phone:</div>
                 <div className="col-xs-8">
-                  <a href={"tel:" + data.phone}>{data.phone}</a>
+                  <a href={"tel:" + contact_data.phone}>{contact_data.phone}</a>
                 </div>
               </div>
               <div className="row">
                 <div className="col-xs-4">email:</div>
                 <div className="col-xs-8">
-                  <a href={"mailto:" + data.email}>{data.email}</a>
+                  <a href={"mailto:" + contact_data.email}>
+                    {contact_data.email}
+                  </a>
                 </div>
               </div>
               <div className="row">
                 <div className="col-xs-4">address:</div>
                 <div className="col-xs-8">
-                  <address>{data.address}</address>
+                  <address>{contact_data.address}</address>
                 </div>
               </div>
             </div>
@@ -71,7 +73,7 @@ const Footer = props => {
             </a>
             <div>
               <small>
-                {data.copyright} {data.credits}
+                {contact_data.copyright} {contact_data.credits}
               </small>
             </div>
           </div>
@@ -87,7 +89,8 @@ const Footer = props => {
 }
 
 FooterNav.propTypes = {
-  links: PropTypes.array
+  links: PropTypes.array,
+  language: PropTypes.string.isRequired
 }
 
 export default Footer

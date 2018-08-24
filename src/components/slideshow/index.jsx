@@ -1,6 +1,4 @@
-/* global $ */
-/* global api */
-/* global Hammer */
+/* global api, Hammer, $ */
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -10,7 +8,6 @@ class Slideshow extends React.Component {
     super(props)
 
     this.supersized = React.createRef()
-    this.initSupersized.bind($)
 
     this.state = {
       params: {
@@ -24,10 +21,6 @@ class Slideshow extends React.Component {
   }
 
   componentDidMount() {
-    this.initSupersized()
-  }
-
-  initSupersized() {
     const { params } = this.state
     $(this.supersized).supersized(params)
 
@@ -44,6 +37,11 @@ class Slideshow extends React.Component {
     hammertime.on("swiperight", function(ev) {
       api.nextSlide()
     })
+  }
+
+  componentWillUnmount() {
+    // Clean up the mess when the component unmounts
+    $(this.supersized).supersized("destroy")
   }
 
   render() {

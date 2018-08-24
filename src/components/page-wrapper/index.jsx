@@ -24,51 +24,9 @@ import SubNav from "../sub-nav"
 import TourDetails from "../tour-details"
 import TourList from "../tour-list"
 
+import contentData from "../i18n-data"
+
 import "../../../assets/sass/main.scss"
-
-import sitemetadata from "../../../data/sitemetadata.json"
-
-import general_pages_en from "../../../data/general_pages_en.json"
-import general_pages_zh from "../../../data/general_pages_zh.json"
-
-import tourData_en from "../../../data/tour_en.json"
-import tourData_zh from "../../../data/tour_zh.json"
-
-import tourCategoryData_en from "../../../data/tour_category_en.json"
-import tourCategoryData_zh from "../../../data/tour_category_zh.json"
-
-import homeOverlayData_en from "../../../data/home-overlay_en.json"
-import homeOverlayData_zh from "../../../data/home-overlay_zh.json"
-
-import imagesSlides_en from "../../../data/images_slides_en.json"
-import imagesSlides_zh from "../../../data/images_slides_zh.json"
-
-import imagesGroups from "../../../data/images_groups.json"
-
-import countryHighlights_en from "../../../data/country_highlights_en.json"
-import countryHighlights_zh from "../../../data/country_highlights_zh.json"
-
-import regionData_en from "../../../data/region_en.json"
-import regionData_zh from "../../../data/region_zh.json"
-
-const featuredTags = {
-  zh: "featured tour",
-  en: "featured tour"
-}
-
-const featuredListHeading = {
-  zh: "我们的特色旅游",
-  en: "Our featured tours"
-}
-
-const textsIntl = {
-  zh: {
-    otherTours: "Other "
-  },
-  en: {
-    otherTours: "Other "
-  }
-}
 
 function createSlide(m) {
   var src = m.imgslide_path
@@ -181,24 +139,18 @@ class PageWrapper extends React.Component {
     const defaultLanguage = "en"
     var currentLanguage = locale || defaultLanguage
 
-    const general_pages =
-      currentLanguage === "zh" ? general_pages_zh : general_pages_en
-
-    const tourData = currentLanguage === "zh" ? tourData_zh : tourData_en
-
-    const tourCategoryData =
-      currentLanguage === "zh" ? tourCategoryData_zh : tourCategoryData_en
-
-    const homeOverlayData =
-      currentLanguage === "zh" ? homeOverlayData_zh : homeOverlayData_en
-
-    const imagesSlides =
-      currentLanguage === "zh" ? imagesSlides_zh : imagesSlides_en
-
-    const countryHighlights =
-      currentLanguage === "zh" ? countryHighlights_zh : countryHighlights_en
-
-    const regionData = currentLanguage === "zh" ? regionData_zh : regionData_en
+    const {
+      imagesGroups,
+      general_pages,
+      tourData,
+      tourCategoryData,
+      homeOverlayData,
+      imagesSlides,
+      countryHighlights,
+      regionData,
+      strings,
+      sitemetadata
+    } = contentData[currentLanguage]
 
     var autoHeading = null
     var tourList = null
@@ -206,7 +158,10 @@ class PageWrapper extends React.Component {
     var catList = null
     var catListHeading = null
     var tour = null
-    var page = general_pages.find(p => p.page_id == content.page_id)
+
+    if (content) {
+      var page = general_pages.find(p => p.page_id == content.page_id)
+    }
 
     const isHome =
       content &&
@@ -233,9 +188,13 @@ class PageWrapper extends React.Component {
         autoHeading = page && page.page_heading
       }
 
+      if (content.module_id == 3) {
+        autoHeading = page && page.page_heading
+      }
+
       if (tourListDetails && isHome) {
-        tourListHeading = featuredListHeading[currentLanguage]
-        var tourListTag = featuredTags[currentLanguage]
+        tourListHeading = strings.feature_tour_list_heading
+        var tourListTag = strings.featured_tour
         tourList = tourData
           .filter(t => t.is_featured === "1")
           .sort((a, b) => a.rank - b.rank)
@@ -341,8 +300,7 @@ class PageWrapper extends React.Component {
         data.sub_category_id &&
         tourCategoryData.find(c => c.id === data.sub_category_id)
       imgGroup = data && data.slideshow_id
-      tourListHeading =
-        textsIntl[currentLanguage].otherTours + subCategoryFound.label
+      tourListHeading = strings.otherTours + subCategoryFound.label
       tourList = tourData
         .filter(
           t =>
@@ -413,7 +371,7 @@ class PageWrapper extends React.Component {
           <link rel="shortcut icon" href="/favicon.ico" />
         </Helmet>
         <Header
-          location={location}
+          location={location.pathname}
           siteTitle={sitemetadata.title}
           languages={sitemetadata.languages}
           currentLanguage={currentLanguage}
@@ -455,7 +413,7 @@ class PageWrapper extends React.Component {
             </div>
             {subNav && <SubNav {...subNav} />}
             <div className="content">
-              {!content && children}
+              {children}
               {!content &&
                 isTourDetails && (
                   <TourDetails
@@ -517,7 +475,7 @@ class PageWrapper extends React.Component {
           {homeGallery && (
             <HomeGallery imageSlides={imagesSlides} galleryId={5} />
           )}
-          <Footer currentLanguage={currentLanguage} />
+          <Footer language={currentLanguage} />
         </div>
         {videos_html && (
           <span dangerouslySetInnerHTML={{ __html: videos_html }} />

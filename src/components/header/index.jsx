@@ -1,17 +1,18 @@
 import React from "react"
+import PropTypes from "prop-types"
 import FontAwesome from "react-fontawesome"
 
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
-import navigation_en from "../../../data/navigation_en.json"
-import navigation_zh from "../../../data/navigation_zh.json"
+import data from "../i18n-data"
 
 const NavigationMenu = ({
   menu,
   level,
   location,
   languages,
+  currentLanguage,
   defaultLanguage
 }) => (
   <ul>
@@ -27,7 +28,13 @@ const NavigationMenu = ({
             </React.Fragment>
           )}
         </a>
-        {p.pages && <NavigationMenu menu={p} level={level + 1} />}
+        {p.pages && (
+          <NavigationMenu
+            currentLanguage={currentLanguage}
+            menu={p}
+            level={level + 1}
+          />
+        )}
       </li>
     ))}
     {level === 0 && (
@@ -68,13 +75,13 @@ class Header extends React.Component {
       contact
     } = this.props
 
-    const navigation = currentLanguage === "zh" ? navigation_zh : navigation_en
+    const { navigation } = data[currentLanguage]
 
     return (
       <header>
         <div className="top">
-          <a href={"/" + currentLanguage} className="logo">
-            <img src={logo} alt="Tika Tours logo" />
+          <a href={navigation.path} className="logo">
+            <img src={logo} alt={navigation.title} />
           </a>
           <i className="fa fa-bars hidden-lg" onClick={this.toggleNavbar} />
           {contact.telephone && (
@@ -87,14 +94,32 @@ class Header extends React.Component {
           <NavigationMenu
             menu={navigation}
             level={0}
-            location={location.pathname}
+            location={location}
             languages={languages}
             defaultLanguage={defaultLanguage}
+            currentLanguage={currentLanguage}
           />
         </nav>
       </header>
     )
   }
+}
+
+Header.propTypes = {
+  location: PropTypes.string.isRequired,
+  languages: PropTypes.array,
+  currentLanguage: PropTypes.string,
+  defaultLanguage: PropTypes.string,
+  contact: PropTypes.object
+}
+
+NavigationMenu.propTypes = {
+  menu: PropTypes.object,
+  level: PropTypes.number,
+  location: PropTypes.string,
+  languages: PropTypes.array,
+  currentLanguage: PropTypes.string,
+  defaultLanguage: PropTypes.string
 }
 
 export default Header

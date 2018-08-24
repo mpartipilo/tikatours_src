@@ -6,12 +6,12 @@
   "credits": "Website by Michelangelo Partipilo",
   "navFooter": [
     {
-      "title": "关于",
-      "url": "/zh/about"
+      "title": "About",
+      "url": "/about"
     },
     {
-      "title": "联系我们",
-      "url": "/zh/contact-us"
+      "title": "Contact us",
+      "url": "/contact-us"
     }
   ]
 }

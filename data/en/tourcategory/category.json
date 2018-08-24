@@ -1,10 +1,10 @@
 [
   {
-    "id": 1,
-    "name": "格鲁吉亚之旅",
+    "id": "1",
+    "name": "Georgia Tours",
     "label": null,
     "heading": null,
-    "sub_heading": "选择你的旅游风格",
+    "sub_heading": "Choose your tour style",
     "short_descr": null,
     "content": null,
     "image_path": null,
@@ -17,11 +17,11 @@
     "slideshow_id": null
   },
   {
-    "id": 2,
-    "name": "多国之旅",
+    "id": "2",
+    "name": "Multi Country Tours",
     "label": null,
     "heading": null,
-    "sub_heading": "选择您的旅游目的地",
+    "sub_heading": "Choose your tour destination",
     "short_descr": null,
     "content": null,
     "image_path": null,
@@ -34,53 +34,53 @@
     "slideshow_id": null
   },
   {
-    "id": 8,
-    "name": "探险之旅",
-    "label": "探险之旅",
-    "heading": "探险之旅",
+    "id": "8",
+    "name": "Adventure Tours",
+    "label": "Adventure Tours",
+    "heading": "Adventure Tours",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>For the ultimate adventure holiday, immerse yourself in Georgia&#39;s spectacular landscapes. To experience some of nature&#39;s most majestic scenery, head out on foot, soaking up the forested mountainsides. Follow serene trails through thickly wooded glades, past ancient stone castles or catch your breath on high winding mountain paths. Raft past thundering waterfalls down hidden river valleys and don&#39;t miss the mountain biking, with an endless range of stunning tracks all to yourself.</p><p>Georgia is home to a stunning array of magnificent mountains, some of the highest in Europe, and a mountaineering dream. Float down past the snowy peaks under a paragliding wing or head underground to explore an impossible world of caves, caverns and lakes. For those who prefer their adventures in the open air, take a tour on horseback through flower-strewn summer meadows.&nbsp;The rich diversity of flora and fauna is exceptional, perfect for botanists, birdwatchers and wildlife enthusiasts.&nbsp;</p>",
     "image_path": "/library/tourcategories/adventure.jpg",
     "url": "adventure-tours",
-    "title": "探险之旅 | Tika Tours",
-    "meta_descr": "探险之旅",
+    "title": "Adventure Tours | Tika Tours",
+    "meta_descr": "Adventure Tours",
     "status": "A",
     "rank": 1,
     "parent_id": 1,
     "slideshow_id": 28
   },
   {
-    "id": 9,
-    "name": "文化之旅",
-    "label": "文化之旅",
-    "heading": "文化之旅",
+    "id": "9",
+    "name": "Cultural Tours",
+    "label": "Cultural Tours",
+    "heading": "Cultural Tours",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>Not quite Asian, but not fully European either, Georgia is an intoxicating combination of eastern and western influences and ancient beginnings. One of the earliest places in the world to adopt Christianity, the country is also known as the birthplace of wine and home of the ancient Greek myth of Jason and the Argonauts and their search for the golden fleece. But Georgia was also home to some of our earliest human ancestors, their remains dating back nearly 2 million years.</p><p>Explore Georgia&rsquo;s fascinating history and vibrant culture. Follow the allure of the Silk Road, a journey which has beguiled travelers for centuries. Discover charming and elegant cities and their extraordinary art and architecture - churches, cathedrals, frescoes, mosaics, ancient iron age cave towns, fortresses and castles. Experience fascinating museums, amazing theatre and dancing, superb local foods and wine and incredible music. Visitors will be embraced by Georgian warmth and hospitality.</p>",
     "image_path": "/library/tourcategories/tika-tours-alaverdi.jpg",
     "url": "cultural-tours",
-    "title": "文化之旅 | Tika Tours",
-    "meta_descr": "文化之旅",
+    "title": "Cultural Tours | Tika Tours",
+    "meta_descr": "Cultural Tours",
     "status": "A",
     "rank": 2,
     "parent_id": 1,
     "slideshow_id": 38
   },
   {
-    "id": 10,
-    "name": "食物和酒",
-    "label": "食物和酒",
-    "heading": "食物和酒",
+    "id": "10",
+    "name": "Food and Wine",
+    "label": "Food and Wine",
+    "heading": "Food and Wine",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>The people of Georgia have a passionate and deeply rooted relationship with food and wine. With their superb cuisine, heady, vivid wines and unmatched hospitality, you certainly won&#39;t go hungry - or thirsty while holidaying in Georgia. Take part in a Supra and feast on local specialities such as khachapuri (stuffed flatbreads), shashlik (kebabs), and badrijani nigvzit (aubergines with walnut paste).</p><p>During a traditional Supra, not only will you enjoy the amazing local food, but you will be expected to sample much of the wine. The birthplace of viticulture, Georgia has the oldest unbroken tradition of wine making in the world, passing on 8,000 years of secrets. Almost every house still has a vine-covered trellis outside, the grapes waiting to be pressed and fermented to create delicious, organic wines.</p>",
     "image_path": "/library/tourcategories/satsivi.jpg",
     "url": "food-and-wine",
-    "title": "食物和酒| Tika Tours",
+    "title": "Food and Wine | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 3,
@@ -88,17 +88,17 @@
     "slideshow_id": 29
   },
   {
-    "id": 11,
-    "name": "休闲与健康",
-    "label": "休闲与健康",
-    "heading": "休闲与健康",
+    "id": "11",
+    "name": "Leisure and Health",
+    "label": "Leisure and Health",
+    "heading": "Leisure and Health",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>A hot soak in a thermal pool is one of life&#39;s most luxurious and rejuvenating experiences and Georgia is fortunate to be home to more than its fair share of these healing waters. More than 2000 mineral springs have been enjoyed by locals for centuries as an alternative therapy for a range of illnesses - and just to feel great. Warm mineral waters can naturally improve skin regeneration, blood circulation, joint mobility and bring about a general sense of wellbeing.</p><p>From Tbilisi&#39;s beautiful blue-tiled Orbeliani baths to wooded alpine spa towns and the Black Sea&#39;s most idyllic sun-soaked resorts, a trip to Georgia would not be complete without a visit to the country&#39;s best hot springs. There is really nothing quite like sliding into a hot pool to refresh mind and body. Follow it up with a traditional Georgian massage and brisk walks with lungfuls of fresh pine-scented mountain air and all your tensions will melt away.</p>",
     "image_path": "/library/tourcategories/leisure.jpg",
     "url": "leisure-and-health",
-    "title": "休闲与健康 | Tika Tours",
+    "title": "Leisure and Health | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 4,
@@ -106,17 +106,17 @@
     "slideshow_id": 31
   },
   {
-    "id": 12,
-    "name": "浪漫",
-    "label": "浪漫",
-    "heading": "浪漫",
+    "id": "12",
+    "name": "Romance",
+    "label": "Romance",
+    "heading": "Romance",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>Georgia is destination Romance. A fairytale tapestry of sublime stone churches and watchtowers, glacial alpine peaks, summer meadows and timeless golden vineyards, Georgia is a stunning place to share with a partner. Have a Georgian wedding amidst the breathtaking hills of the Caucasus and experience a day of romance and magic you&#39;ll never forget. Our team will immerse you in the atmosphere of a genuine Georgian wedding, with traditional dancing, music and cuisine.</p><p>Why not combine your special day with a tour of Georgia. Walk hand in hand through the charming old city lanes. Visit the most beautiful churches in Georgia, with their exquisite carvings and frescoes. Explore the enchanting landscape of snowy peaks, wooded slopes, ancient mysterious temples, fabulous palaces and awe-inspiring fortresses. After a day of sightseeing, there&#39;s no better way to relax than a luxurious soak at Tbilisi&#39;s famous mineral baths.</p>",
     "image_path": "/library/tourcategories/tika-tours-tbilisi.jpg",
     "url": "romance",
-    "title": "浪漫 | Tika Tours",
+    "title": "Romance | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 6,
@@ -124,17 +124,17 @@
     "slideshow_id": 33
   },
   {
-    "id": 13,
-    "name": "家庭",
-    "label": "家庭",
-    "heading": "家庭",
+    "id": "13",
+    "name": "Family",
+    "label": "Family",
+    "heading": "Family",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>There is plenty for families to do in Georgia. There&#39;s easy access to the sea and the mountains, river valleys for rafting and cave cities for exploring. Whether you&#39;re looking for a relaxing beach holiday, fun-filled adventure, fantastic skiing, or a luxury family retreat to just get away from it all for a while, we can offer families a memorable Georgian holiday that caters for all ages, any time of the year.</p><p>Explore vineyards and villages on short hikes or hire bikes and take the family for a pedal around the hills - and bakeries. They will love the famous cheese pies, khachapuri. Book older kids in for a riding lesson while you explore churches, castles and fortresses. The beautiful beaches and spectacular mountain trails will be a hit with the children and be sure to spend some time at the incredible botanic gardens, one of the biggest in the world.</p>",
     "image_path": "/library/tours/family-subcategory.jpg",
     "url": "family",
-    "title": "家庭 | Tika Tours",
+    "title": "Family | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 7,
@@ -142,17 +142,17 @@
     "slideshow_id": 32
   },
   {
-    "id": 14,
-    "name": "商业",
-    "label": "商业",
-    "heading": "商业",
+    "id": "14",
+    "name": "Business",
+    "label": "Business",
+    "heading": "Business",
     "sub_heading": null,
     "short_descr": "",
     "content":
       "<p>Georgia is the&nbsp;gateway for&nbsp;the Caucasus and&nbsp;Central Asia, a strategic location which provides&nbsp;investors easy access to millions of potential customers while maintaining good proximity to important business centres. Tbilisi is developing into&nbsp;the financial hub for a region which has tremendous potential for future growth. Georgia has a business friendly environment, a young talented workforce and flexible labor legislation.</p><p>TikaTours offer business and investment tours aimed at providing foreign investors with first-hand opportunities to explore the range of business and investment opportunities available in Georgia. Key sectors for investment in Georgia include tourism, agriculture, real estate, hospitality, transport and renewable energy. We can connect you with top local private-sector companies, lawyers, accountants and local government representatives.&nbsp;</p>",
     "image_path": "/library/tours/business1.jpg",
     "url": "business",
-    "title": "商业 | Tika Tours",
+    "title": "Business | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 8,
@@ -160,7 +160,7 @@
     "slideshow_id": 37
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "MICE",
     "label": "MICE",
     "heading": "MICE",
@@ -178,10 +178,10 @@
     "slideshow_id": 2
   },
   {
-    "id": 16,
-    "name": "格鲁吉亚，亚美尼亚和阿塞拜疆",
-    "label": "格鲁吉亚，亚美尼亚和阿塞拜疆",
-    "heading": "格鲁吉亚，亚美尼亚和阿塞拜疆之旅",
+    "id": "16",
+    "name": "Georgia, Armenia & Azerbaijan",
+    "label": "Georgia, Armenia & Azerbaijan",
+    "heading": "Georgia, Armenia & Azerbaijan Tours",
     "sub_heading": null,
     "short_descr":
       "These three Caucasus countries boast a wealth of historical treasures, breathtaking scenery and endless opportunities for adventure.",
@@ -190,7 +190,7 @@
     "image_path":
       "/library/tourcategories/azerbaijan-flame-tower-in-baku-sunset-buildings_230514868.jpg",
     "url": "georgia-armenia-azerbaijan",
-    "title": "格鲁吉亚，亚美尼亚和阿塞拜疆之旅 | Tika Tours",
+    "title": "Georgia, Armenia & Azerbaijan Tours | Tika Tours",
     "meta_descr":
       "These three Caucasus countries boast a wealth of historical treasures, breathtaking scenery and endless opportunities for adventure.",
     "status": "A",
@@ -199,10 +199,10 @@
     "slideshow_id": 0
   },
   {
-    "id": 17,
-    "name": "格鲁吉亚和亚美尼亚",
-    "label": "格鲁吉亚和亚美尼亚",
-    "heading": "格鲁吉亚和亚美尼亚之旅",
+    "id": "17",
+    "name": "Georgia & Armenia",
+    "label": "Georgia & Armenia",
+    "heading": "Georgia & Armenia Tours",
     "sub_heading": null,
     "short_descr":
       "Georgia and Armenia offer an unmatched combination of cultural treasures and dramatic landscapes that remain largely undiscovered by the wider world.",
@@ -211,7 +211,7 @@
     "image_path":
       "/library/tourcategories/armenia-garni-pagan-temple-the-hellenistic-temple-in-republic-of-armenia_245764552.jpg",
     "url": "georgia-and-armenia",
-    "title": "格鲁吉亚和亚美尼亚之旅 | Tika Tours",
+    "title": "Georgia & Armenia Tours | Tika Tours",
     "meta_descr":
       "Georgia and Armenia offer an unmatched combination of cultural treasures and dramatic landscapes that remain largely undiscovered by the wider world.",
     "status": "A",
@@ -220,7 +220,7 @@
     "slideshow_id": 0
   },
   {
-    "id": 18,
+    "id": "18",
     "name": "Guranteed Departures",
     "label": null,
     "heading": null,
@@ -237,16 +237,16 @@
     "slideshow_id": null
   },
   {
-    "id": 19,
-    "name": "亚洲",
-    "label": "亚洲",
-    "heading": "亚洲",
+    "id": "19",
+    "name": "Asia",
+    "label": "Asia",
+    "heading": "Asia",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path": "",
     "url": "asia",
-    "title": "亚洲",
+    "title": "Asia",
     "meta_descr": "",
     "status": "H",
     "rank": 3,
@@ -254,16 +254,16 @@
     "slideshow_id": 0
   },
   {
-    "id": 20,
-    "name": "亚洲",
-    "label": "亚洲",
-    "heading": "亚洲",
+    "id": "20",
+    "name": "Asia",
+    "label": "Asia",
+    "heading": "Asia",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path": "/library/tourcategories/sub-categories/asia.jpg",
     "url": "asia",
-    "title": "亚洲 | Tika Tours",
+    "title": "Asia | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 11,
@@ -271,17 +271,17 @@
     "slideshow_id": 0
   },
   {
-    "id": 21,
-    "name": "中非和东非",
-    "label": "中非和东非",
-    "heading": "中非和东非",
+    "id": "21",
+    "name": "Central and East Africa",
+    "label": "Central and East Africa",
+    "heading": "Central and East Africa",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path":
       "/library/tourcategories/sub-categories/central-and-east-africa.jpg",
     "url": "central-and-east-africa",
-    "title": "中非和东非 | Tika Tours",
+    "title": "Central and East Africa | Tika Tours",
     "meta_descr": "",
     "status": "H",
     "rank": 12,
@@ -289,16 +289,16 @@
     "slideshow_id": 0
   },
   {
-    "id": 22,
-    "name": "欧洲",
-    "label": "欧洲",
-    "heading": "欧洲",
+    "id": "22",
+    "name": "Europe",
+    "label": "Europe",
+    "heading": "Europe",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path": "/library/tourcategories/sub-categories/europe.jpg",
     "url": "europe",
-    "title": "欧洲 | Tika Tours",
+    "title": "Europe | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 13,
@@ -306,16 +306,16 @@
     "slideshow_id": 0
   },
   {
-    "id": 23,
-    "name": "拉丁美洲",
-    "label": "拉丁美洲",
-    "heading": "拉丁美洲",
+    "id": "23",
+    "name": "Latin America",
+    "label": "Latin America",
+    "heading": "Latin America",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path": "/library/tourcategories/sub-categories/latin-america.jpg",
     "url": "latin-america",
-    "title": "拉丁美洲 | Tika Tours",
+    "title": "Latin America | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 14,
@@ -323,7 +323,7 @@
     "slideshow_id": 0
   },
   {
-    "id": 24,
+    "id": "24",
     "name": "North Africa and Middle East",
     "label": "North Africa and Middle East",
     "heading": "North Africa and Middle East",
@@ -341,16 +341,16 @@
     "slideshow_id": 0
   },
   {
-    "id": 25,
-    "name": "非洲南部",
-    "label": "非洲南部",
-    "heading": "非洲南部",
+    "id": "25",
+    "name": "Southern Africa",
+    "label": "Southern Africa",
+    "heading": "Southern Africa",
     "sub_heading": null,
     "short_descr": "",
     "content": "",
     "image_path": "/library/tourcategories/sub-categories/southern-africa.jpg",
     "url": "southern-africa",
-    "title": "非洲南部 | Tika Tours",
+    "title": "Southern Africa | Tika Tours",
     "meta_descr": "",
     "status": "A",
     "rank": 16,
@@ -358,7 +358,7 @@
     "slideshow_id": 0
   },
   {
-    "id": 26,
+    "id": "26",
     "name": "North America",
     "label": "North America",
     "heading": "North America",
@@ -375,7 +375,7 @@
     "slideshow_id": 1
   },
   {
-    "id": 27,
+    "id": "27",
     "name": "South Pacific",
     "label": "South Pacific",
     "heading": "South Pacific",
@@ -392,7 +392,7 @@
     "slideshow_id": 1
   },
   {
-    "id": 28,
+    "id": "28",
     "name": "Special Interest Tours",
     "label": "Special Interest Tours",
     "heading": "Special Interest Tours",
@@ -409,7 +409,7 @@
     "slideshow_id": 35
   },
   {
-    "id": 29,
+    "id": "29",
     "name": "VIP & Exclusive",
     "label": "VIP & Exclusive",
     "heading": "VIP & Exclusive",
@@ -426,10 +426,10 @@
     "slideshow_id": 36
   },
   {
-    "id": 30,
-    "name": "小团体旅程",
-    "label": "豪华集团之旅",
-    "heading": "豪华小团体旅程",
+    "id": "30",
+    "name": "Small Group Journeys",
+    "label": "Luxury Group Journeys",
+    "heading": "Luxury Small Group Journeys",
     "sub_heading": null,
     "short_descr": "",
     "content":

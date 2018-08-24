@@ -5,7 +5,7 @@
  */
 
 const path = require("path")
-const { languages, localeData } = require("./src/i18n/locales")
+const { languages } = require("./src/i18n/locales")
 
 exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage, deletePage } = boundActionCreators
@@ -22,7 +22,6 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
       component: redirect,
       context: {
         languages,
-        localeData,
         locale: "",
         routed: false,
         redirectPage: page.path

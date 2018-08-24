@@ -1,13 +1,20 @@
 import React from "react"
 
-import tourData_en from "../../../data/tour_en.json"
-import tourData_zh from "../../../data/tour_zh.json"
+import contentData from "../i18n-data"
 
-import tourCategoryData_en from "../../../data/tour_category_en.json"
-import tourCategoryData_zh from "../../../data/tour_category_zh.json"
+function flatten(data, results, parent) {
+  results[data.path] = {
+    path: data.path,
+    page_title: data.title,
+    parent_path: parent ? parent.path : null
+  }
 
-import navigation_en from "../../../data/navigation_en.json"
-import navigation_zh from "../../../data/navigation_zh.json"
+  if (!data.hasOwnProperty("pages")) {
+    return
+  }
+
+  data.pages.forEach(page => flatten(page, results, data))
+}
 
 const Breadcrumbs = props => (
   <div className="row hidden-xs">
@@ -35,28 +42,16 @@ const Breadcrumbs = props => (
   </div>
 )
 
-function flatten(data, results, parent) {
-  results[data.path] = {
-    path: data.path,
-    page_title: data.title,
-    parent_path: parent ? parent.path : null
-  }
-
-  if (!data.hasOwnProperty("pages")) {
-    return
-  }
-
-  data.pages.forEach(page => flatten(page, results, data))
-}
-
 const BreadcrumbsNavigation = props => {
   var flatNav = {}
 
-  var navigation = props.language === "zh" ? navigation_zh : navigation_en
+  const { language, page } = props
+  var { navigation } = contentData[language]
 
   flatten(navigation, flatNav, undefined)
+
   var trail = []
-  var currentNode = flatNav[props.page.replace(/\/?$/i, "")]
+  var currentNode = flatNav[page.replace(/\/?$/i, "")]
   trail.push(currentNode)
   while (currentNode.parent_path) {
     currentNode = flatNav[currentNode.parent_path]
@@ -92,13 +87,13 @@ const fullUrl = (
 }
 
 const BreadcrumbsTour = ({ language, page }) => {
-  const tourData = (language === "zh" ? tourData_zh : tourData_en).filter(
+  const { tourData, tourCategoryData } = contentData[language]
+
+  const filteredTourData = tourData.filter(
     c => c.main_category_id && c.sub_category_id
   )
-  const tourCategoryData =
-    language === "zh" ? tourCategoryData_zh : tourCategoryData_en
 
-  var data = tourData.find(t => {
+  var data = filteredTourData.find(t => {
     const tourUrl = fullUrl(
       language,
       tourCategoryData,
