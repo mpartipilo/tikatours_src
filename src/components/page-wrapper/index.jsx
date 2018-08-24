@@ -24,6 +24,16 @@ import SubNav from "../sub-nav"
 import TourDetails from "../tour-details"
 import TourList from "../tour-list"
 
+import {
+  Home,
+  Region,
+  MainCategory,
+  SubCategory,
+  Tour,
+  Contact,
+  GeneralPage
+} from "./templates"
+
 import contentData from "../i18n-data"
 
 import "../../../assets/sass/main.scss"
@@ -86,8 +96,8 @@ const fullUrl = (
   sub_category_id,
   url
 ) => {
-  var main_category = tourCategoryData.find(c => c.id === main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+  var main_category = tourCategoryData.find(c => c.id == main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
   if (!main_category || !sub_category) return null
 
@@ -196,25 +206,25 @@ class PageWrapper extends React.Component {
         tourListHeading = strings.feature_tour_list_heading
         var tourListTag = strings.featured_tour
         tourList = tourData
-          .filter(t => t.is_featured === "1")
+          .filter(t => t.is_featured == "1")
           .sort((a, b) => a.rank - b.rank)
       }
 
       if (tourListDetails && !isHome) {
         const subCategoryFound =
           tourListDetails.sub_category_id &&
-          tourCategoryData.find(c => c.id === tourListDetails.sub_category_id)
+          tourCategoryData.find(c => c.id == tourListDetails.sub_category_id)
 
         const mainCategoryFound =
           tourListDetails.main_category_id &&
-          tourCategoryData.find(c => c.id === tourListDetails.main_category_id)
+          tourCategoryData.find(c => c.id == tourListDetails.main_category_id)
 
         if (mainCategoryFound) {
           catListHeading = mainCategoryFound.sub_heading
           catList = tourCategoryData
             .filter(
               t =>
-                t.parent_id === tourListDetails.main_category_id &&
+                t.parent_id == tourListDetails.main_category_id &&
                 t.status === "A" &&
                 t.rank > 0
             )
@@ -225,7 +235,7 @@ class PageWrapper extends React.Component {
             .filter(
               t =>
                 t.status === "A" &&
-                t.main_category_id === tourListDetails.main_category_id
+                t.main_category_id == tourListDetails.main_category_id
             )
             .sort((a, b) => a.rank - b.rank)
         }
@@ -237,7 +247,7 @@ class PageWrapper extends React.Component {
             .filter(
               t =>
                 t.status === "A" &&
-                t.sub_category_id === tourListDetails.sub_category_id
+                t.sub_category_id == tourListDetails.sub_category_id
             )
             .sort((a, b) => a.rank - b.rank)
         }
@@ -298,14 +308,14 @@ class PageWrapper extends React.Component {
       tour = data
       const subCategoryFound =
         data.sub_category_id &&
-        tourCategoryData.find(c => c.id === data.sub_category_id)
+        tourCategoryData.find(c => c.id == data.sub_category_id)
       imgGroup = data && data.slideshow_id
       tourListHeading = strings.otherTours + subCategoryFound.label
       tourList = tourData
         .filter(
           t =>
             t.status === "A" &&
-            t.sub_category_id === tour.sub_category_id &&
+            t.sub_category_id == tour.sub_category_id &&
             t.id != data.id
         )
         .sort((a, b) => a.rank - b.rank)
@@ -322,7 +332,7 @@ class PageWrapper extends React.Component {
         }))
 
       var galleryIndexPhotos = imagesSlides
-        .filter(f => galleryGroups.find(g => g.imggrp_id === f.imggrp_id))
+        .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
         .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
         .map(p => ({
           ...p,

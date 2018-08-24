@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import ContentI18N from "../i18n-data"
+
 const fullUrl = (
   language,
   tourCategoryData,
@@ -8,8 +10,8 @@ const fullUrl = (
   sub_category_id,
   url
 ) => {
-  var main_category = tourCategoryData.find(c => c.id === main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+  var main_category = tourCategoryData.find(c => c.id == main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
   if (!main_category || !sub_category) return null
 
@@ -17,8 +19,8 @@ const fullUrl = (
 }
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
-  var mainCategory = tourCategoryData.find(c => c.id === tour.main_category_id)
-  var subCategory = tourCategoryData.find(c => c.id === tour.sub_category_id)
+  var mainCategory = tourCategoryData.find(c => c.id == tour.main_category_id)
+  var subCategory = tourCategoryData.find(c => c.id == tour.sub_category_id)
 
   return (
     <div className="col-xs-12 col-md-6 t-item">
@@ -75,11 +77,13 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
                 )}
                 className="btn"
               >
-                MORE INFO
+                {ContentI18N[language].strings.more_info}
               </a>
               <form className="book-btn-form" method="POST" action="/">
                 <input type="hidden" name="booking-btn" value={tour.id} />
-                <button className="btn">BOOK THIS TOUR</button>
+                <button className="btn">
+                  {ContentI18N[language].strings.book_tour}
+                </button>
               </form>
             </div>
           </div>

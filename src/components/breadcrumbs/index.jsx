@@ -76,8 +76,8 @@ const fullUrl = (
   sub_category_id,
   url
 ) => {
-  const main_category = tourCategoryData.find(c => c.id === main_category_id)
-  const sub_category = tourCategoryData.find(c => c.id === sub_category_id)
+  const main_category = tourCategoryData.find(c => c.id == main_category_id)
+  const sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
   if (!main_category || !sub_category) return null
 
@@ -108,9 +108,9 @@ const BreadcrumbsTour = ({ language, page }) => {
 
   if (data) {
     var main_category = tourCategoryData.find(
-      c => c.id === data.main_category_id
+      c => c.id == data.main_category_id
     )
-    var sub_category = tourCategoryData.find(c => c.id === data.sub_category_id)
+    var sub_category = tourCategoryData.find(c => c.id == data.sub_category_id)
 
     trail.push({
       path: `/${language}/${main_category.url}`,

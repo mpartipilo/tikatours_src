@@ -11,17 +11,17 @@ class TourDetails extends React.Component {
     const { tour, imagesSlidesData, tourCategoryData } = props
 
     const subCategoryFound = tourCategoryData.find(
-      c => c.id === tour.sub_category_id
+      c => c.id == tour.sub_category_id
     )
 
     const mainCategoryFound = tourCategoryData.find(
-      c => c.id === tour.main_category_id
+      c => c.id == tour.main_category_id
     )
 
     const tag =
       (subCategoryFound && subCategoryFound.name) ||
       (mainCategoryFound && mainCategoryFound.name) ||
-      (tour.is_featured === "1" && "featured tour") ||
+      (tour.is_featured == "1" && "featured tour") ||
       ""
 
     var thumbPath = `/thumbs/galleries/g${tour.gallery_id}/`
