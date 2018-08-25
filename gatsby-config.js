@@ -17,6 +17,7 @@ module.exports = {
         precision: 8
       }
     },
+    /*
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,6 +39,7 @@ module.exports = {
         path: `${__dirname}/data/zh`
       }
     },
+    */
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",

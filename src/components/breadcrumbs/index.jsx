@@ -53,8 +53,11 @@ const BreadcrumbsNavigation = props => {
   var trail = []
   var currentNode = flatNav[page.replace(/\/?$/i, "")]
   trail.push(currentNode)
-  while (currentNode.parent_path) {
+  while (currentNode && currentNode.parent_path) {
     currentNode = flatNav[currentNode.parent_path]
+    if (currentNode == null) {
+      alert("this is null")
+    }
     trail.push(currentNode)
   }
 
@@ -76,14 +79,15 @@ const fullUrl = (
   sub_category_id,
   url
 ) => {
-  const main_category = tourCategoryData.find(c => c.id == main_category_id)
-  const sub_category = tourCategoryData.find(c => c.id == sub_category_id)
+  var main_category = tourCategoryData.find(c => c.id == main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
-  if (!main_category || !sub_category) return null
+  if (main_category && sub_category)
+    return `/${language}/${main_category.url}/${sub_category.url}/${url}`
 
-  const tourUrl = `/${language}/${main_category.url}/${sub_category.url}/${url}`
+  if (main_category) return `/${language}/${main_category.url}/${url}`
 
-  return tourUrl
+  return null
 }
 
 const BreadcrumbsTour = ({ language, page }) => {
@@ -112,16 +116,22 @@ const BreadcrumbsTour = ({ language, page }) => {
     )
     var sub_category = tourCategoryData.find(c => c.id == data.sub_category_id)
 
+    var nextPath = `/${language}/${main_category.url}`
+
     trail.push({
-      path: `/${language}/${main_category.url}`,
+      path: nextPath,
       page_title: main_category.name
     })
+    if (sub_category) {
+      nextPath = `${nextPath}/${sub_category.url}`
+      trail.push({
+        path: nextPath,
+        page_title: sub_category.name
+      })
+    }
+    nextPath = `${nextPath}/${data.url}`
     trail.push({
-      path: `/${language}/${main_category.url}/${sub_category.url}`,
-      page_title: sub_category.name
-    })
-    trail.push({
-      path: `/${language}/${main_category.url}/${sub_category.url}/${data.url}`,
+      path: nextPath,
       page_title: data.name
     })
   }

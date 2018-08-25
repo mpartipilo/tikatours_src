@@ -13,9 +13,12 @@ const fullUrl = (
   var main_category = tourCategoryData.find(c => c.id == main_category_id)
   var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
-  if (!main_category || !sub_category) return null
+  if (main_category && sub_category)
+    return `/${language}/${main_category.url}/${sub_category.url}/${url}`
 
-  return `/${language}/${main_category.url}/${sub_category.url}/${url}`
+  if (main_category) return `/${language}/${main_category.url}/${url}`
+
+  return null
 }
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {

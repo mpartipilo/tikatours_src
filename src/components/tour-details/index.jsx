@@ -9,32 +9,36 @@ class TourDetails extends React.Component {
     super(props)
 
     const { tour, imagesSlidesData, tourCategoryData } = props
+    var tag = ""
+    var tourGallery = ""
 
-    const subCategoryFound = tourCategoryData.find(
-      c => c.id == tour.sub_category_id
-    )
+    if (tour) {
+      const subCategoryFound = tourCategoryData.find(
+        c => c.id == tour.sub_category_id
+      )
 
-    const mainCategoryFound = tourCategoryData.find(
-      c => c.id == tour.main_category_id
-    )
+      const mainCategoryFound = tourCategoryData.find(
+        c => c.id == tour.main_category_id
+      )
 
-    const tag =
-      (subCategoryFound && subCategoryFound.name) ||
-      (mainCategoryFound && mainCategoryFound.name) ||
-      (tour.is_featured == "1" && "featured tour") ||
-      ""
+      tag =
+        (subCategoryFound && subCategoryFound.name) ||
+        (mainCategoryFound && mainCategoryFound.name) ||
+        (tour.is_featured == "1" && "featured tour") ||
+        ""
 
-    var thumbPath = `/thumbs/galleries/g${tour.gallery_id}/`
+      var thumbPath = `/thumbs/galleries/g${tour.gallery_id}/`
 
-    const tourGallery = imagesSlidesData
-      .filter(i => i.imggrp_id == tour.gallery_id)
-      .map(i => ({
-        ...i,
-        srcThumb: thumbPath + path.basename(i.imgslide_path)
-      }))
-      .sort((l, r) => {
-        return l.imgslide_rank - r.imgslide_rank
-      })
+      tourGallery = imagesSlidesData
+        .filter(i => i.imggrp_id == tour.gallery_id)
+        .map(i => ({
+          ...i,
+          srcThumb: thumbPath + path.basename(i.imgslide_path)
+        }))
+        .sort((l, r) => {
+          return l.imgslide_rank - r.imgslide_rank
+        })
+    }
 
     this.state = {
       tour,
@@ -45,6 +49,11 @@ class TourDetails extends React.Component {
 
   render() {
     const { tour, tag, tourGallery } = this.state
+
+    if (!tour) {
+      return "Tour not found"
+    }
+
     const { duration, inclusions, itinerary, long_descr, price_from } = tour
 
     return (

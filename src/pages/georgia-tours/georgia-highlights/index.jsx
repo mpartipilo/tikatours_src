@@ -5,13 +5,11 @@ import PageWrapper from "../../../components/page-wrapper"
 
 const Page = ({ location, pathContext }) => (
   <PageWrapper
-    hasBreadcrumbs
     location={location}
     locale={pathContext.locale}
-    content={{
-      page_id: 25,
-      module_id: 100
-    }}
+    isTourDetails
+    hasBreadcrumbs
+    mapCanvasCountry="Georgia"
   />
 )
 

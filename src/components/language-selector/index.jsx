@@ -7,6 +7,54 @@ class LanguageSelector extends React.Component {
   constructor(props) {
     super(props)
 
+    var langRegex = new RegExp(`^/${props.language}`, "i")
+    var currentUrl = props.location
+    var urlNoLang = currentUrl.replace(langRegex, "")
+
+    var languagesLocal = props.languages.map(l => ({
+      countryCode: l.flag,
+      languageCode: l.lang,
+      languageName: ISO6391.getNativeName(l.lang),
+      url: urlNoLang.length > 1 ? `/${l.lang}${urlNoLang}` : `/${l.lang}`
+    }))
+
+    this.state = {
+      currentLanguage: languagesLocal.find(
+        l => l.languageCode == props.language
+      ),
+      languages: languagesLocal.filter(l => l.languageCode != props.language),
+      urlNoLang
+    }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <i className="fa fa-bars" />
+        <a href="#">
+          <ReactCountryFlag code={this.state.currentLanguage.countryCode} />{" "}
+          {this.state.currentLanguage.languageName}
+          <i className="fa fa-caret-down" />
+          <i className="fa fa-caret-right" />
+        </a>
+        <ul>
+          {this.state.languages.map(l => (
+            <li key={l.languageCode}>
+              <a href={l.url}>
+                <ReactCountryFlag code={l.countryCode} /> {l.languageName}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </React.Fragment>
+    )
+  }
+}
+
+class LanguageSelectorForm extends React.Component {
+  constructor(props) {
+    super(props)
+
     var langRegex = /^\/(en|zh)/i
     var urlNoLang = props.location.replace(langRegex, "")
 
@@ -99,4 +147,4 @@ class LanguageSelectorFancy extends React.Component {
 }
 
 export default LanguageSelector
-export { LanguageSelector, LanguageSelectorFancy }
+export { LanguageSelectorForm, LanguageSelectorFancy }

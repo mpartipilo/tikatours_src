@@ -100,9 +100,12 @@ const fullUrl = (
   var main_category = tourCategoryData.find(c => c.id == main_category_id)
   var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
 
-  if (!main_category || !sub_category) return null
+  if (main_category && sub_category)
+    return `/${language}/${main_category.url}/${sub_category.url}/${url}`
 
-  return `/${language}/${main_category.url}/${sub_category.url}/${url}`
+  if (main_category) return `/${language}/${main_category.url}/${url}`
+
+  return null
 }
 
 class PageWrapper extends React.Component {
@@ -244,7 +247,7 @@ class PageWrapper extends React.Component {
               t =>
                 t.parent_id == tourListDetails.main_category_id &&
                 t.status === "A" &&
-                t.rank > 0
+                t.rank >= 0
             )
             .sort((a, b) => a.rank - b.rank)
 
@@ -325,18 +328,23 @@ class PageWrapper extends React.Component {
       })
       tour = data
       const subCategoryFound =
+        data &&
         data.sub_category_id &&
         tourCategoryData.find(c => c.id == data.sub_category_id)
       imgGroup = data && data.slideshow_id
-      tourListHeading = strings.otherTours + subCategoryFound.label
-      tourList = tourData
-        .filter(
-          t =>
-            t.status === "A" &&
-            t.sub_category_id == tour.sub_category_id &&
-            t.id != data.id
-        )
-        .sort((a, b) => a.rank - b.rank)
+      tourListHeading = subCategoryFound
+        ? strings.otherTours + subCategoryFound.label
+        : ""
+      if (tour) {
+        tourList = tourData
+          .filter(
+            t =>
+              t.status === "A" &&
+              t.sub_category_id == tour.sub_category_id &&
+              t.id != data.id
+          )
+          .sort((a, b) => a.rank - b.rank)
+      }
 
       autoHeading = data && data.heading
     }
@@ -406,6 +414,7 @@ class PageWrapper extends React.Component {
           defaultLanguage={defaultLanguage}
           contact={sitemetadata.contact}
         />
+        <div />
         <div className="push" />
         {homeOverlay && <HomeOverlay {...homeOverlayData} />}
         {slideshow &&

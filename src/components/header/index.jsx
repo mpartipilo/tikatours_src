@@ -40,6 +40,7 @@ const NavigationMenu = ({
     {level === 0 && (
       <li>
         <LanguageSelector
+          language={currentLanguage}
           location={location}
           languages={languages}
           defaultLanguage={defaultLanguage}
