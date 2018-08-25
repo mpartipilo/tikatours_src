@@ -7,11 +7,11 @@
   "navFooter": [
     {
       "title": "关于",
-      "url": "/about"
+      "url": "/zh/about"
     },
     {
       "title": "联系我们",
-      "url": "/contact-us"
+      "url": "/zh/contact-us"
     }
   ]
 }

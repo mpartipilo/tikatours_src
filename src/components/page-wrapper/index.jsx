@@ -8,6 +8,7 @@ import md5 from "md5"
 
 import Analytics from "../analytics"
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
+import Blog from "../blog"
 import CatList from "../cat-list"
 import Content from "../content"
 import Footer from "../footer"
@@ -129,6 +130,7 @@ class PageWrapper extends React.Component {
   render() {
     var {
       analytics,
+      blog,
       bodyTagClasses,
       children,
       content,
@@ -152,6 +154,8 @@ class PageWrapper extends React.Component {
     const {
       imagesGroups,
       general_pages,
+      blog_category,
+      blog_post,
       tourData,
       tourCategoryData,
       homeOverlayData,
@@ -179,6 +183,8 @@ class PageWrapper extends React.Component {
       content.module_id == 1 &&
       content.page_id == 1
 
+    const isBlog = content && content.module_id && content.module_id == 23
+
     const slideshowFixed = isHome
 
     var imgGroup = null
@@ -198,8 +204,20 @@ class PageWrapper extends React.Component {
         autoHeading = page && page.page_heading
       }
 
-      if (content.module_id == 3) {
+      if (content.module_id == 3 || content.module_id == 23) {
         autoHeading = page && page.page_heading
+        if (content.module_id == 23 && blog && blog.category_id) {
+          var current_blog_category = blog_category.find(
+            b => b.id == blog.category_id
+          )
+          autoHeading = `${strings.category_archives}: ${
+            current_blog_category.label
+          }`
+          if (blog.post_id) {
+            var current_blog_post = blog_post.find(p => p.id == blog.post_id)
+            autoHeading = current_blog_post.name
+          }
+        }
       }
 
       if (tourListDetails && isHome) {
@@ -377,7 +395,7 @@ class PageWrapper extends React.Component {
             class: (bodyTagClasses || "") + (slideshow ? "" : " no-ss")
           }}
         >
-          /* -- ==ex_meta_taga== -- */
+          {/* -- ==ex_meta_taga== -- */}
           <link rel="shortcut icon" href="/favicon.ico" />
         </Helmet>
         <Header
@@ -436,6 +454,7 @@ class PageWrapper extends React.Component {
                   />
                 )}
               {content && <Content language={currentLanguage} {...content} />}
+              {isBlog && <Blog language={currentLanguage} {...blog} />}
               {regionGallery && (
                 <Gallery
                   heading={regionGalleryHeading}
@@ -490,7 +509,7 @@ class PageWrapper extends React.Component {
         {videos_html && (
           <span dangerouslySetInnerHTML={{ __html: videos_html }} />
         )}
-        ==scripts-load-top==
+        {/* ==scripts-load-top== */}
         {analytics && <Analytics {...analytics} />}
       </React.Fragment>
     )
@@ -501,6 +520,7 @@ PageWrapper.propTypes = {
   analytics: PropTypes.any,
   bodyTagClasses: PropTypes.string,
   children: PropTypes.node,
+  blog: PropTypes.object,
   content: PropTypes.object,
   hasBreadcrumbs: PropTypes.bool,
   heading: PropTypes.node,

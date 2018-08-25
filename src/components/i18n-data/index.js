@@ -2,6 +2,12 @@ import sitemetadata from "../../../data/common/sitemetadata.json"
 
 import imagesGroups from "../../../data/common/content/images_groups.json"
 
+import blog_category_en from "../../../data/en/blog/category.json"
+import blog_category_zh from "../../../data/zh/blog/category.json"
+
+import blog_post_en from "../../../data/en/blog/blog_post.json"
+import blog_post_zh from "../../../data/zh/blog/blog_post.json"
+
 import general_pages_en from "../../../data/en/page/general.json"
 import general_pages_zh from "../../../data/zh/page/general.json"
 
@@ -44,6 +50,8 @@ export default {
     sitemetadata: sitemetadata,
     content: contentData,
     content_row: contentRowData,
+    blog_category: blog_category_en,
+    blog_post: blog_post_en,
     content_column: content_column_en,
     navigation: navigation_en,
     general_pages: general_pages_en,
@@ -61,6 +69,8 @@ export default {
     sitemetadata: sitemetadata,
     content: contentData,
     content_row: contentRowData,
+    blog_category: blog_category_zh,
+    blog_post: blog_post_zh,
     content_column: content_column_zh,
     navigation: navigation_zh,
     general_pages: general_pages_zh,

@@ -28,27 +28,28 @@ class Content extends React.Component {
               css_class: c.css_class
             }))
         }))
+    }
 
-      this.state = {
-        rows
-      }
+    this.state = {
+      rows
     }
   }
 
   render() {
     return (
-      this.state.rows &&
-      this.state.rows.map(r => (
-        <div className="row content-row" key={r.id}>
-          {r.columns.map(c => (
-            <div
-              key={c.id}
-              className={c.css_class}
-              dangerouslySetInnerHTML={{ __html: c.content }}
-            />
-          ))}
-        </div>
-      ))
+      (this.state.rows &&
+        this.state.rows.map(r => (
+          <div className="row content-row" key={r.id}>
+            {r.columns.map(c => (
+              <div
+                key={c.id}
+                className={c.css_class}
+                dangerouslySetInnerHTML={{ __html: c.content }}
+              />
+            ))}
+          </div>
+        ))) ||
+      null
     )
   }
 }

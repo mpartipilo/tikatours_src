@@ -4,5 +4,19 @@
   "view_this_tour": "ZH:View this tour",
   "featured_tour": "我们的特色旅游",
   "feature_tour_list_heading": "ZH: Our featured tours",
-  "otherTours": "ZH: Other "
+  "otherTours": "ZH: Other ",
+  "category_archives": "ZH: Category Archives",
+  "required_fields": "ZH: indicates required fields",
+  "first_name": "ZH: First Name",
+  "last_name": "ZH: Last Name",
+  "email": "ZH: Email",
+  "phone": "ZH: Phone/Mobile",
+  "message": "ZH: Message",
+  "captcha": "ZH: Anti Spam Captcha",
+  "submit": "ZH: Submit",
+  "enter_text_you_see_above": "ZH: Please enter the text you see above",
+  "required_fname": "ZH: First name is required",
+  "required_lname": "ZH: Last name is required",
+  "required_email": "ZH: Email name is required",
+  "required_captcha": "ZH: Captcha is required"
 }

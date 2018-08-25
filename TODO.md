@@ -2,15 +2,16 @@
 
 ## Pending
 
+- Contact form submission
 - Window title needs to reflect current page
 - Social panel is missing some functionality
-- Blog
-- Contact form
 - Region map details
 - Refresh with latest data
 
 ## Done
 
+- Blog
+- Contact form
 - Fix jump on homepage when overlay scrolls out of view
 - Gallery page
 - Regions sub-navigation

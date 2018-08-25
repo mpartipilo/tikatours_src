@@ -4,5 +4,19 @@
   "view_this_tour": "View this tour",
   "featured_tour": "featured tour",
   "feature_tour_list_heading": "Our featured tours",
-  "otherTours": "Other "
+  "otherTours": "Other ",
+  "category_archives": "Category Archives",
+  "required_fields": " indicates required fields",
+  "first_name": "First Name",
+  "last_name": "Last Name",
+  "email": "Email",
+  "phone": "Phone/Mobile",
+  "message": "Message",
+  "captcha": "Anti Spam Captcha",
+  "submit": "Submit",
+  "enter_text_you_see_above": "Please enter the text you see above",
+  "required_fname": "First name is required",
+  "required_lname": "Last name is required",
+  "required_email": "Email name is required",
+  "required_captcha": "Captcha is required"
 }

@@ -7,11 +7,11 @@
   "navFooter": [
     {
       "title": "About",
-      "url": "/about"
+      "url": "/en/about"
     },
     {
       "title": "Contact us",
-      "url": "/contact-us"
+      "url": "/en/contact-us"
     }
   ]
 }
