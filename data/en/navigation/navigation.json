@@ -7,6 +7,10 @@
       "title": "Georgia Tours",
       "pages": [
         {
+          "path": "/en/georgia-tours/group-tours",
+          "title": "Group Tours"
+        },
+        {
           "path": "/en/georgia-tours/adventure-tours",
           "title": "Adventure Tours"
         },
@@ -55,14 +59,6 @@
         {
           "path": "/en/multi-country-tours/europe",
           "title": "Europe"
-        },
-        {
-          "path": "/en/multi-country-tours/latin-america",
-          "title": "Latin America"
-        },
-        {
-          "path": "/en/multi-country-tours/southern-africa",
-          "title": "Southern Africa"
         }
       ]
     },

@@ -7,6 +7,10 @@
       "title": "格鲁吉亚之旅",
       "pages": [
         {
+          "path": "/zh/georgia-tours/group-tours",
+          "title": "Group Tours"
+        },
+        {
           "path": "/zh/georgia-tours/adventure-tours",
           "title": "探险旅游"
         },
@@ -55,14 +59,6 @@
         {
           "path": "/zh/multi-country-tours/europe",
           "title": "欧洲"
-        },
-        {
-          "path": "/zh/multi-country-tours/latin-america",
-          "title": "拉丁美洲"
-        },
-        {
-          "path": "/zh/multi-country-tours/southern-africa",
-          "title": "非洲南部"
         }
       ]
     },

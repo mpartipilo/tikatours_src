@@ -317,7 +317,7 @@
     "url": "latin-america",
     "title": "拉丁美洲 | Tika Tours",
     "meta_descr": "",
-    "status": "A",
+    "status": "H",
     "rank": 14,
     "parent_id": 2,
     "slideshow_id": 0
@@ -352,7 +352,7 @@
     "url": "southern-africa",
     "title": "非洲南部 | Tika Tours",
     "meta_descr": "",
-    "status": "A",
+    "status": "H",
     "rank": 16,
     "parent_id": 2,
     "slideshow_id": 0
@@ -438,9 +438,45 @@
     "url": "luxury-group-journeys",
     "title": "",
     "meta_descr": "",
-    "status": "A",
+    "status": "H",
     "rank": 0,
     "parent_id": 1,
     "slideshow_id": 0
+  },
+  {
+    "id": "31",
+    "name": "Group Tours",
+    "label": null,
+    "heading": null,
+    "sub_heading": "Choose your tour style",
+    "short_descr": null,
+    "content": null,
+    "image_path": null,
+    "url": null,
+    "title": null,
+    "meta_descr": null,
+    "status": "H",
+    "rank": "0",
+    "parent_id": "0",
+    "slideshow_id": null
+  },
+  {
+    "id": "32",
+    "name": "Group Tours",
+    "label": "Group Tours",
+    "heading": "Group Tours",
+    "sub_heading": null,
+    "short_descr":
+      "Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.",
+    "content":
+      "<p>Tika&nbsp;Tours is dedicated to organizing group trips to places of extraordinary culture, history, geographical diversity and startling beauty.&nbsp;</p>\r\n\r\n<p>We are dedicated to taking you on unforgettable journeys with like-minded individuals to less-traveled destinations! We are convinced that our trips will be some of the best of your life! Join our group of travelers and explore the beauty of this world together!&nbsp;</p>\r\n\r\n<p>We schedule trips to some of the most amazing countries in this world, such as Georgia (the country), which has been producing wine for around 8,000 years!</p>\r\n\r\n<p>These are trips to remember.. trips you&#39;ll never forget!</p>",
+    "image_path": "/library/content/svaneti569.jpg",
+    "url": "group-tours",
+    "title": "",
+    "meta_descr": "",
+    "status": "A",
+    "rank": "0",
+    "parent_id": "1",
+    "slideshow_id": "5"
   }
 ]
