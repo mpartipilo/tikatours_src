@@ -1,12 +1,12 @@
 {
   "phone": "+995 570 70 72 14",
   "email": "info@tikatours.com",
-  "address": "11, Grishashvili str.\r\n0105\r\nTbilisi, Georgia",
+  "address": "格鲁吉亚， 第比利斯，\r\nGrishashvili街 #11，0105",
   "copyright": "© Copyright 2018. Tika Tours.",
   "credits": "Website by Michelangelo Partipilo",
   "navFooter": [
     {
-      "title": "关于",
+      "title": "关于我们",
       "url": "/zh/about"
     },
     {

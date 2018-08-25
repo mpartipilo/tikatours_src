@@ -65,8 +65,9 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
             <p>{tour.short_descr}</p>
             {tour.price_from > 0 && (
               <p>
-                from &#x20AC;<span className="price">{tour.price_from}</span>{" "}
-                per person
+                {ContentI18N[language].strings.from_euro}
+                <span className="price">{tour.price_from}</span>
+                {ContentI18N[language].strings["per person"]}
               </p>
             )}
             <div>

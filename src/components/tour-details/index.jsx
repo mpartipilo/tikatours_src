@@ -2,13 +2,17 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
+import contentData from "../i18n-data"
+
 import Gallery from "../gallery"
 
 class TourDetails extends React.Component {
   constructor(props) {
     super(props)
 
-    const { tour, imagesSlidesData, tourCategoryData } = props
+    const { tour, imagesSlidesData, tourCategoryData, language } = props
+    const { strings } = contentData[language]
+
     var tag = ""
     var tourGallery = ""
 
@@ -43,7 +47,8 @@ class TourDetails extends React.Component {
     this.state = {
       tour,
       tag,
-      tourGallery
+      tourGallery,
+      strings
     }
   }
 
@@ -61,7 +66,7 @@ class TourDetails extends React.Component {
         <div className="col-xs-12 col-md-8">
           <div className="row">
             <div className="col-xs-12">
-              <h2>Tour Overview</h2>
+              <h2>{this.state.strings["tour overview"]}</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
             {tourGallery && (
@@ -87,8 +92,9 @@ class TourDetails extends React.Component {
               <span className="duration">{duration}</span>
               {price_from > 0 && (
                 <p>
-                  from &#x20AC;<span className="price">{price_from}</span> per
-                  person
+                  {this.state.strings.from_euro}
+                  <span className="price">{price_from}</span>
+                  {this.state.strings["per person"]}
                 </p>
               )}
               <div>
@@ -98,7 +104,9 @@ class TourDetails extends React.Component {
                   action="/{$page_bookings}"
                 >
                   <input type="hidden" name="booking-btn" value="{$id}" />
-                  <button className="btn">BOOK THIS TOUR</button>
+                  <button className="btn">
+                    {this.state.strings.book_tour}
+                  </button>
                 </form>
               </div>
             </div>

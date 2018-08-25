@@ -21,7 +21,7 @@ const FooterNav = props => (
 
 const Footer = props => {
   const { language } = props
-  const { contact_data } = data[language]
+  const { contact_data, strings } = data[language]
 
   return (
     <footer>
@@ -31,13 +31,13 @@ const Footer = props => {
           <div className="col-xs-12 col-md-6">
             <div className="contact">
               <div className="row">
-                <div className="col-xs-4">phone:</div>
+                <div className="col-xs-4">{strings["phone"]}:</div>
                 <div className="col-xs-8">
                   <a href={"tel:" + contact_data.phone}>{contact_data.phone}</a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-xs-4">email:</div>
+                <div className="col-xs-4">{strings["email"]}:</div>
                 <div className="col-xs-8">
                   <a href={"mailto:" + contact_data.email}>
                     {contact_data.email}
@@ -45,7 +45,7 @@ const Footer = props => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-xs-4">address:</div>
+                <div className="col-xs-4">{strings["address"]}:</div>
                 <div className="col-xs-8">
                   <address>{contact_data.address}</address>
                 </div>

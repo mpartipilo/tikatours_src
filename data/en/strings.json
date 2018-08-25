@@ -10,7 +10,7 @@
   "first_name": "First Name",
   "last_name": "Last Name",
   "email": "Email",
-  "phone": "Phone/Mobile",
+  "phone/mobile": "Phone/Mobile",
   "message": "Message",
   "captcha": "Anti Spam Captcha",
   "submit": "Submit",
@@ -18,5 +18,12 @@
   "required_fname": "First name is required",
   "required_lname": "Last name is required",
   "required_email": "Email name is required",
-  "required_captcha": "Captcha is required"
+  "required_captcha": "Captcha is required",
+  "from_euro": "from €",
+  "per person": " per person",
+  "phone": "phone",
+  "address": "address",
+  "tour name": "Tour Name",
+  "bookings": "Bookings",
+  "tour overview": "Tour Overview"
 }

@@ -200,7 +200,7 @@ class ContactPage extends React.Component {
                   </div>
                   <div className="form-group">
                     <label htmlFor="mobile" className="control-label">
-                      {this.state.strings.phone}
+                      {this.state.strings["phone/mobile"]}
                     </label>
                     <input
                       type="tel"
