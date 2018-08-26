@@ -32,6 +32,7 @@
     "react-dom": "^16.4.1",
     "react-fontawesome": "^1.6.1",
     "react-google-maps": "^9.4.5",
+    "react-google-recaptcha": "^1.0.0",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0",
     "react-select": "next",
@@ -63,6 +64,10 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
-    "prettier": "1.13.7"
+    "gatsby-remark-source-name": "^1.0.0",
+    "lodash": "^4.17.10",
+    "mkdirp": "^0.5.1",
+    "prettier": "1.13.7",
+    "turndown": "^5.0.0"
   }
 }

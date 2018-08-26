@@ -74,7 +74,7 @@ class TourDetails extends React.Component {
             )}
             {itinerary && (
               <div className="col-xs-12">
-                <h2>Itinerary</h2>
+                <h2>{this.state.strings["itinerary"]}</h2>
                 <div
                   dangerouslySetInnerHTML={{
                     __html: itinerary
@@ -100,10 +100,10 @@ class TourDetails extends React.Component {
               <div>
                 <form
                   className="book-btn-form"
-                  method="POST"
-                  action="/{$page_bookings}"
+                  method="GET"
+                  action={`/${this.props.language}/contact-us`}
                 >
-                  <input type="hidden" name="booking-btn" value="{$id}" />
+                  <input type="hidden" name="booking-btn" value={tour.id} />
                   <button className="btn">
                     {this.state.strings.book_tour}
                   </button>

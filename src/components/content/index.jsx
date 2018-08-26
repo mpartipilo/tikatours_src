@@ -15,7 +15,7 @@ class Content extends React.Component {
 
     if (content_index) {
       var rows = content_row
-        .filter(c => c.content_id == content_index.id)
+        .filter(c => c.content_id == content_index.id && c.rank > 0)
         .sort((a, b) => a.rank - b.rank)
         .map(r => ({
           id: r.id,

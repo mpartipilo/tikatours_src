@@ -2,27 +2,10 @@
 
 ## Pending
 
-- Contact form submission
+- Show map when country_id is available
+- Recaptcha in contact/bookings form
+- Bookings form
 - Window title needs to reflect current page
 - Social panel is missing some functionality
 - Region map details
-- Refresh with latest data
-
-## Done
-
-- Blog
-- Contact form
-- Fix jump on homepage when overlay scrolls out of view
-- Gallery page
-- Regions sub-navigation
-- Regions pages
-- List other related tours on tour details
-- Gallery on tour details
-- Slideshows on top of the pages
-- Slideshows functionality working
-- Overlay properly sized
-- Chinese language content
-- Language switcher
-- Video Gallery
-- Tour cards, and Tour details able to handle languages
-- Translate tour details
+- SEO optimizations

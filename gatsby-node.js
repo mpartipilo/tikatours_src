@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+const _ = require("lodash")
 const path = require("path")
 const { languages } = require("./src/i18n/locales")
 
@@ -52,56 +53,84 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
-  const indexPage = path.resolve("src/templates/index.jsx")
-  const tourMainPage = path.resolve("src/templates/tourMainCategory.jsx")
-  const tourSubCategoryPage = path.resolve("src/templates/tourSubCategory.jsx")
-  const tourDetailsPage = path.resolve("src/templates/tourDetails.jsx")
-  const regionPage = path.resolve("src/templates/regionPage.jsx")
-  const blogPostPage = path.resolve("src/templates/blogPostPage.jsx")
-
   return new Promise((resolve, reject) => {
-    resolve()
-    //console.log(`Current language: ${value}`)l
-    // Create Index page
-    //console.log("Creating Index Page")
-    //createPage({
-    //  path: "/",
-    //  component: indexPage
-    //})
-    // Create tour main categories
-    // Create tour subcategories for each main category
-    // Create general pages
-    /*
+    const generalPage = path.resolve("src/templates/page.jsx")
+    const galleryPage = path.resolve("src/templates/gallery.jsx")
+    const regionPage = path.resolve("src/templates/region.jsx")
+    const tourCategoryPage = path.resolve("src/templates/tourcategory.jsx")
+    const tourSubCategoryPage = path.resolve(
+      "src/templates/toursubcategory.jsx"
+    )
+    const tourDetailPage = path.resolve("src/templates/tour.jsx")
     resolve(
-      graphql(``).then(result => {
-        if (result.errors) {
-          reject(new Error(result.errors))
-        }
-
-        languages.forEach(({ value }) => {
-          console.log(`Current language: ${value}`)
-
-          createPage({
-            path: "/",
-            component: indexPage
-          })
-
-          const localePage = {
-            originalPath: path,
-            path: `/${value}${path}`,
-            context: {
-              languages,
-              locale: value,
-              routed: false,
-              originalPath: path
+      graphql(`
+        {
+          allMarkdownRemark {
+            edges {
+              node {
+                id
+                frontmatter {
+                  language
+                  url
+                  template
+                }
+                html
+              }
             }
           }
+        }
+      `).then(result => {
+        if (result.errors) {
+          console.log(result.errors)
+          reject(result.errors)
+        }
 
-          createPage(localePage)
+        const pages = result.data.allMarkdownRemark.edges
+
+        _.each(pages, (page, index) => {
+          const previous =
+            index === pages.length - 1 ? null : pages[index + 1].node
+          const next = index === 0 ? null : pages[index - 1].node
+
+          var component = generalPage
+
+          if (page.node.frontmatter.template == "gallery") {
+            component = galleryPage
+          }
+
+          if (page.node.frontmatter.template == "regions") {
+            component = regionPage
+          }
+
+          if (page.node.frontmatter.template == "tourcategory") {
+            component = tourCategoryPage
+          }
+
+          if (page.node.frontmatter.template == "toursubcategory") {
+            component = tourSubCategoryPage
+          }
+
+          if (page.node.frontmatter.template == "tour") {
+            component = tourDetailPage
+          }
+
+          createPage({
+            path: `${page.node.frontmatter.language}/${
+              page.node.frontmatter.url
+            }`,
+            component: component,
+            context: {
+              id: page.node.id,
+              slug: page.node.frontmatter.url,
+              url: page.node.frontmatter.url,
+              language: page.node.frontmatter.language,
+              previous,
+              next
+            }
+          })
         })
       })
     )
-    */
   })
 }
 

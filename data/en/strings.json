@@ -25,5 +25,10 @@
   "address": "address",
   "tour name": "Tour Name",
   "bookings": "Bookings",
-  "tour overview": "Tour Overview"
+  "tour overview": "Tour Overview",
+  "itinerary": "Itinerary",
+  "recent posts": "Recent Posts",
+  "categories": "Categories",
+  "posted on": " Posted on ",
+  " in ": " in "
 }

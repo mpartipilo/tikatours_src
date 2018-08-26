@@ -15,10 +15,17 @@ function truncate(n, useWordBoundary) {
   )
 }
 
-const BlogPostList = ({ posts }) =>
-  posts.map(p => <BlogPost key={p.id} post={p} linkTitle={posts.length > 1} />)
+const BlogPostList = ({ posts, strings }) =>
+  posts.map(p => (
+    <BlogPost
+      key={p.id}
+      post={p}
+      linkTitle={posts.length > 1}
+      strings={strings}
+    />
+  ))
 
-const BlogPost = ({ post, linkTitle }) => (
+const BlogPost = ({ post, linkTitle, strings }) => (
   <div className="col-lg-12 blog-entry">
     {linkTitle && (
       <h2>
@@ -29,7 +36,10 @@ const BlogPost = ({ post, linkTitle }) => (
     )}
     <hr />
     <p>
-      <span className="fa fa-clock-o" /> Posted on {post.date_posted} in{" "}
+      <span className="fa fa-clock-o" />
+      {strings["posted on"]}
+      {post.date_posted}
+      {strings[" in "]}
       <a href={post.category.url}>{post.category.label}</a>
     </p>
     <div className="description">
@@ -44,7 +54,7 @@ class Blog extends React.Component {
   constructor(props) {
     super(props)
 
-    const { blog_category, blog_post } = data[props.language]
+    const { blog_category, blog_post, strings } = data[props.language]
 
     var posts = blog_post
       .sort((a, b) => b.date_posted.localeCompare(a.date_posted))
@@ -71,6 +81,7 @@ class Blog extends React.Component {
     }
 
     this.state = {
+      strings,
       category_list: blog_category,
       recent_posts,
       category,
@@ -84,14 +95,17 @@ class Blog extends React.Component {
         <div className="row">
           <div className="col-lg-8">
             <div className="row">
-              <BlogPostList posts={this.state.posts} />
+              <BlogPostList
+                posts={this.state.posts}
+                strings={this.state.strings}
+              />
             </div>
             {/* <!-- pagination --> */}
           </div>
 
           <div className="col-lg-4">
             <div className="well well-small">
-              <h3>Categories</h3>
+              <h3>{this.state.strings["categories"]}</h3>
               {this.state.category_list &&
                 this.state.category_list.length > 0 && (
                   <ul className="list-unstyled">
@@ -117,7 +131,7 @@ class Blog extends React.Component {
                 )}
             </div>
             <div className="well well-small">
-              <h3>Recent posts</h3>
+              <h3>{this.state.strings["recent posts"]}</h3>
               <ul className="list-unstyled">
                 {this.state.recent_posts.map(p => (
                   <li

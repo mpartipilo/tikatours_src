@@ -17,32 +17,33 @@ module.exports = {
         precision: 8
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `general_pages`,
+        path: `${__dirname}/content`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tour`,
+        path: `${__dirname}/tour`
+      }
+    },
     /*
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data_common`,
-        path: `${__dirname}/data/common`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data_en`,
-        path: `${__dirname}/data/en`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data_zh`,
-        path: `${__dirname}/data/zh`
+        name: `blog`,
+        path: `${__dirname}/blog/blog`
       }
     },
     */
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
-    "gatsby-transformer-remark"
+    "gatsby-transformer-remark",
+    "gatsby-remark-source-name"
   ]
 }
