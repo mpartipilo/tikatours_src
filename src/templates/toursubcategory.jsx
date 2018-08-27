@@ -10,6 +10,8 @@ import TourList from "../components/tour-list"
 
 import contentData from "../components/i18n-data"
 
+// Use this template for tour sub-categories
+
 const TourSubCategoryPage = ({
   location,
   page,
