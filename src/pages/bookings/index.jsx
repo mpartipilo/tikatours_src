@@ -168,25 +168,29 @@ class ContactPage extends React.Component {
                       <span className="text-danger">*</span>
                     </label>
                     <Route
-                      location={location}
-                      key={location.key}
-                      path="/:language/:page/:tour_code?"
-                      render={({
-                        match: {
-                          params: { tour_code }
-                        }
-                      }) => (
-                        <select
-                          name="tour"
-                          className="form-control"
-                          style={{ width: "100%", padding: "0 6px" }}
-                          onChange={this.handleInputChangeTName}
-                          defaultValue={tour_code}
-                        >
-                          <option value="">Please select tour name</option>
-                          <option value="38">Tour 1</option>
-                          <option value="39">Tour 2</option>
-                        </select>
+                      render={({ location }) => (
+                        <Route
+                          location={location}
+                          key={location.key}
+                          path="/:language/:page/:tour_code?"
+                          render={({
+                            match: {
+                              params: { tour_code }
+                            }
+                          }) => (
+                            <select
+                              name="tour"
+                              className="form-control"
+                              style={{ width: "100%", padding: "0 6px" }}
+                              onChange={this.handleInputChangeTName}
+                              defaultValue={tour_code}
+                            >
+                              <option value="">Please select tour name</option>
+                              <option value="1">Tour 1</option>
+                              <option value="2">Tour 2</option>
+                            </select>
+                          )}
+                        />
                       )}
                     />
                     <p className="text-danger">{this.state.error.tname}</p>
