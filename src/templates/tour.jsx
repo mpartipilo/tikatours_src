@@ -167,6 +167,7 @@ class TourDetailPageTemplate extends React.Component {
     const { frontmatter } = data.markdownRemark
 
     const tour = {
+      id: frontmatter.tour_id,
       long_descr: data.markdownRemark.html,
       sub_category_id: frontmatter.sub_category_id,
       main_category_id: frontmatter.main_category_id,
@@ -209,6 +210,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        tour_id
         heading
         language
         url

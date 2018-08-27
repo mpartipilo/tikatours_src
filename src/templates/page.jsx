@@ -105,12 +105,15 @@ function getSlideshowData(imagesSlides, groupId) {
 }
 
 const GeneralPageTemplate = ({ location, data }) => {
-  const { sitemetadata, imagesSlides } = contentData[
-    data.markdownRemark.frontmatter.language
-  ]
   const defaultLanguage = "en"
   const currentLanguage =
     data.markdownRemark.frontmatter.language || defaultLanguage
+
+  if (!data.markdownRemark.frontmatter.language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+
+  const { sitemetadata, imagesSlides } = contentData[currentLanguage]
 
   const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
