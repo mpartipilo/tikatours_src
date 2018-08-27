@@ -43,7 +43,16 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
           originalPath: page.path
         }
       }
-      createPage(localePage)
+
+      if (localePage.originalPath === `/bookings/`) {
+        const bookingPage = {
+          ...localePage,
+          matchPath: `/${value}${page.path}:path`
+        }
+        createPage(bookingPage)
+      } else {
+        createPage(localePage)
+      }
     })
 
     resolve()

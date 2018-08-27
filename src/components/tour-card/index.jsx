@@ -86,9 +86,8 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
               <form
                 className="book-btn-form"
                 method="GET"
-                action={`/${language}/contact-us`}
+                action={`/${language}/bookings/${tour.id}`}
               >
-                <input type="hidden" name="booking-btn" value={tour.id} />
                 <button className="btn">
                   {ContentI18N[language].strings.book_tour}
                 </button>

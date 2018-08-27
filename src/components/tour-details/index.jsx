@@ -103,9 +103,8 @@ class TourDetails extends React.Component {
                 <form
                   className="book-btn-form"
                   method="GET"
-                  action={`/${this.props.language}/contact-us`}
+                  action={`/${this.props.language}/bookings/${tour.id}`}
                 >
-                  <input type="hidden" name="booking-btn" value={tour.id} />
                   <button className="btn">
                     {this.state.strings.book_tour}
                   </button>
