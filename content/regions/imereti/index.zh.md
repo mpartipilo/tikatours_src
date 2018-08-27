@@ -2,9 +2,12 @@
 language: zh
 url: regions/imereti
 heading: Imereti
+title: Imereti | Tika Tours
 country_id: 1
 imggrp_id: 10
+gallery_id: 10
 template: regions
+name: Imereti
 ---
 <div class="row content-row"><!-- 1207 (1)-->
 

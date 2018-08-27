@@ -2,6 +2,7 @@
 language: en
 url: music
 heading: Music
+title: Music | Tika Tours
 ---
 <div class="row content-row"><!-- 883 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1216 -->

@@ -2,6 +2,7 @@
 language: en
 url: getting-to-georgia
 heading: Getting to Georgia
+title: Getting to Georgia | Tika Tours
 ---
 <div class="row content-row"><!-- 1014 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1371 -->

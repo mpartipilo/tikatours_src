@@ -2,17 +2,17 @@
 language: en
 url: multi-country-tours/europe/uk-adventure
 template: tour
-tour_id: 31
 heading: UK Adventure
+title: "UK Adventure | Tika Tours"
+tour_id: 31
 short_descr: Experience London and Ireland for 8 days and 7 nights. Delve deep into Londonâ€™s deep history and world significance as one of the most unique and diverse cultural epicenters! People from all over
 price_from: 4925
 duration: 8 DAYS/ 7 NIGHTS
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 0
 main_category_id: 2
 sub_category_id: 22
-imggrp_id: 0
-itinerary: ./itinerary.en.md
-inclusions: ./inclusions.en.md
 ---
 Experience London and Ireland for 8 days and 7 nights. Delve deep into London’s deep
 history and world significance as one of the most unique and diverse cultural epicenters!

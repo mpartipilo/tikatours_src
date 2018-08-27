@@ -2,6 +2,7 @@
 language: en
 url: multi-country-tours
 heading: Multi-Country Tours
+title: Multi-Country Tours | Tika Tours
 template: tourcategory
 main_category_id: 2
 ---

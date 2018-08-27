@@ -2,17 +2,17 @@
 language: en
 url: georgia-tours/georgia-highlights
 template: tour
-tour_id: 35
 heading: 
+title: ""
+tour_id: 35
 short_descr: A glimpse into the amazing contrast of Georgian nature and warm hospitality of the Georgian people can be found on the 8-day journey. Begin in cosmopolitan Tbilisi, continue on a scenic and
 price_from: 0
 duration: 
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 1
 main_category_id: 1
 sub_category_id: 0
-imggrp_id: 0
-itinerary: ./itinerary.en.md
-inclusions: ./inclusions.en.md
 ---
 A glimpse into the amazing contrast of Georgian nature and warm hospitality of the
 Georgian people can be found on the 8\-day journey. Begin in cosmopolitan Tbilisi,

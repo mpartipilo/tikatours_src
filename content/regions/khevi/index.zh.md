@@ -2,9 +2,12 @@
 language: zh
 url: regions/khevi
 heading: Khevi
+title: Khevi | Tika Tours
 country_id: 1
 imggrp_id: 13
+gallery_id: 13
 template: regions
+name: Khevi
 ---
 <div class="row content-row"><!-- 1196 (1)-->
 

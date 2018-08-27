@@ -2,9 +2,12 @@
 language: zh
 url: regions/kakheti
 heading: Kakheti
+title: Kakheti | Tika Tours
 country_id: 1
 imggrp_id: 11
+gallery_id: 11
 template: regions
+name: Kakheti
 ---
 <div class="row content-row"><!-- 1164 (1)-->
 

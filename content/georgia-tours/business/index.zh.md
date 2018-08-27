@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours/business
 heading: 商业
+title: 商业 | Tika Tours
 imggrp_id: 37
 template: toursubcategory
 main_category_id: 1

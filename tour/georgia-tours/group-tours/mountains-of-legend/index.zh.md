@@ -2,17 +2,18 @@
 language: zh
 url: georgia-tours/group-tours/mountains-of-legend
 template: tour
-tour_id: 38
 heading: Mountains of Legend
+title: ""
+tour_id: 38
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.
 price_from: 0
 duration: 7 Days / 6 Nights
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 0
 main_category_id: 1
 sub_category_id: 32
 imggrp_id: 24
-itinerary: ./itinerary.zh.md
-inclusions: ./inclusions.zh.md
 ---
 Georgia \- the undiscovered travel destination with immensely diverse array of landscapes
 offers one of the world\`s most jaw dropping panoramic views on the planet. Begin

@@ -2,6 +2,7 @@
 language: en
 url: georgia-tours/cultural-tours
 heading: Cultural Tours
+title: Cultural Tours | Tika Tours
 imggrp_id: 38
 template: toursubcategory
 main_category_id: 1

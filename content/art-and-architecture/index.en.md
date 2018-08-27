@@ -2,6 +2,7 @@
 language: en
 url: art-and-architecture
 heading: Art & Architecture
+title: Art & Architecture | Tika Tours
 ---
 <div class="row content-row"><!-- 889 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1228 -->

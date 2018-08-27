@@ -2,9 +2,12 @@
 language: en
 url: regions/samegrelo
 heading: Samegrelo
+title: Samegrelo | Tika Tours
 country_id: 1
 imggrp_id: 17
+gallery_id: 17
 template: regions
+name: Samegrelo
 ---
 <div class="row content-row"><!-- 1211 (1)-->
 

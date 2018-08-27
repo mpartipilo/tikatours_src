@@ -2,6 +2,7 @@
 language: en
 url: georgia-tours/romance
 heading: Romance
+title: Romance | Tika Tours
 imggrp_id: 33
 template: toursubcategory
 main_category_id: 1

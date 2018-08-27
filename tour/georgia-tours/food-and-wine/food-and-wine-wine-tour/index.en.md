@@ -2,11 +2,14 @@
 language: en
 url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 template: tour
-tour_id: 28
 heading: In a State of Wine Mind
+title: ""
+tour_id: 28
 short_descr: Located at the convergence of Western Asia and Eastern Europe in the South Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has recently shown up on the radars of wine lovers
 price_from: 0
 duration: 9 DAYS/8 NIGHTS
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 1
 main_category_id: 1
 sub_category_id: 10

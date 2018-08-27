@@ -2,6 +2,7 @@
 language: en
 url: foreign-missions-in-georgia
 heading: Foreign Missions in Georgia
+title: Foreign Missions in Georgia | Tika Tours
 ---
 <div class="row content-row"><!-- 902 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->

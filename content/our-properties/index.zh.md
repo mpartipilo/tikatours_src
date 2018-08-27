@@ -2,6 +2,7 @@
 language: zh
 url: our-properties
 heading: 我们的属性
+title: 我们的属性 | Tika Tours
 country_id: 1
 imggrp_id: 44
 ---

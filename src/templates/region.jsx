@@ -1,11 +1,14 @@
 /* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import path from "path"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Slideshow from "../components/slideshow"
 import SubNav from "../components/sub-nav"
+import Gallery from "../components/gallery"
 
 import contentData from "../components/i18n-data"
 
@@ -17,7 +20,9 @@ const RegionPage = ({
   currentLanguage,
   defaultLanguage,
   slideshowData,
-  subnav
+  subnav,
+  regionGalleryPhotos,
+  regionGalleryHeading
 }) => (
   <React.Fragment>
     <Header
@@ -41,10 +46,17 @@ const RegionPage = ({
           </div>
         </div>
         {subnav && <SubNav {...subnav} />}
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: page.html }}
-        />
+        <div className="content">
+          <span dangerouslySetInnerHTML={{ __html: page.html }} />
+          <div className="row">
+            {regionGalleryPhotos && (
+              <Gallery
+                heading={regionGalleryHeading}
+                photos={regionGalleryPhotos}
+              />
+            )}
+          </div>
+        </div>
         <div className="row">
           <div className="col-xs-12">
             <div className="divider" />
@@ -107,8 +119,8 @@ function getSlideshowData(imagesSlides, groupId) {
   }
 }
 
-const RegionPageTemplate = ({ location, data }) => {
-  const { sitemetadata, imagesSlides, regionData } = contentData[
+const RegionPageTemplate = ({ location, data, pathContext }) => {
+  const { sitemetadata, imagesSlides, regionData, strings } = contentData[
     data.markdownRemark.frontmatter.language
   ]
   const defaultLanguage = "en"
@@ -137,42 +149,45 @@ const RegionPageTemplate = ({ location, data }) => {
       })
   }
 
-  const subnavData = subNav.list.find(l => l.active)
+  const subnavData = data.markdownRemark.frontmatter
 
-  //if (subnavData) {
-  //  autoHeading = data.title
-  //  imgGroup = data.slideshow_id
-  //  var regionGallery = data.gallery_id
-  //  const thumbPath = `/thumbs/galleries/g${regionGallery}/`
-  //  var regionGalleryHeading = data.name + " Gallery"
-  //  var regionGalleryPhotos = imagesSlides
-  //    .filter(i => i.imggrp_id == regionGallery)
-  //    .map(i => ({
-  //      ...i,
-  //      srcThumb: thumbPath + path.basename(i.imgslide_path)
-  //    }))
-  //    .sort((l, r) => {
-  //      return l.imgslide_rank - r.imgslide_rank
-  //    })
-  //}
+  var regionGallery = subnavData.gallery_id
+  const thumbPath = `/thumbs/galleries/g${regionGallery}/`
+  var regionGalleryHeading = subnavData.name + strings[" Gallery"]
+  var regionGalleryPhotos = imagesSlides
+    .filter(i => i.imggrp_id == regionGallery)
+    .map(i => ({
+      ...i,
+      srcThumb: thumbPath + path.basename(i.imgslide_path)
+    }))
+    .sort((l, r) => {
+      return l.imgslide_rank - r.imgslide_rank
+    })
 
   return (
-    <RegionPage
-      location={location}
-      page={data.markdownRemark}
-      data={data.markdownRemark.frontmatter}
-      sitemetadata={sitemetadata}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-      slideshowData={slides}
-      subnav={subNav}
-    />
+    <React.Fragment>
+      <Helmet title={pathContext.title || sitemetadata.title} />{" "}
+      <RegionPage
+        location={location}
+        page={data.markdownRemark}
+        data={data.markdownRemark.frontmatter}
+        sitemetadata={sitemetadata}
+        currentLanguage={currentLanguage}
+        defaultLanguage={defaultLanguage}
+        slideshowData={slides}
+        subnav={subNav}
+        subnavData={subnavData}
+        regionGalleryPhotos={regionGalleryPhotos}
+        regionGalleryHeading={regionGalleryHeading}
+      />
+    </React.Fragment>
   )
 }
 
 RegionPageTemplate.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
+  pathContext: PropTypes.object
 }
 
 export default RegionPageTemplate
@@ -187,7 +202,9 @@ export const pageQuery = graphql`
         language
         url
         imggrp_id
+        gallery_id
         country_id
+        name
       }
     }
   }

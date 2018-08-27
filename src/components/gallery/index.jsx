@@ -6,7 +6,7 @@ const Gallery = ({ heading, photos }) => (
     {photos &&
       photos.length > 0 && (
         <div className="col-xs-12">
-          <h2>{heading}</h2>
+          <h3 className="text-center">{heading}</h3>
           <ul className="gallery text-left">
             {photos.map(m => (
               <li key={m.imgslide_id}>

@@ -2,9 +2,12 @@
 language: en
 url: regions/svaneti
 heading: Svaneti
+title: Svaneti | Tika Tours
 country_id: 1
 imggrp_id: 19
+gallery_id: 19
 template: regions
+name: Svaneti
 ---
 <div class="row content-row"><!-- 1192 (1)-->
 

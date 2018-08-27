@@ -2,17 +2,19 @@
 language: en
 url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
 template: tour
-tour_id: 27
 heading: 
+title: ""
+tour_id: 27
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning strip of snow-capped mountains wedged between Black and Caspian seas. The Caucasus region holds a wealth of views
 price_from: 0
 duration: 14 DAYS/13 NIGHTS
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 1
 is_featured: true
 main_category_id: 2
 sub_category_id: 16
 imggrp_id: 26
-itinerary: ./itinerary.en.md
 ---
 Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning
 strip of snow\-capped mountains wedged between Black and Caspian seas. The Caucasus

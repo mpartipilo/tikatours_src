@@ -2,18 +2,19 @@
 language: zh
 url: georgia-tours/adventure-tours/hiking-in-svaneti
 template: tour
-tour_id: 5
 heading: 在斯瓦涅季徒步旅行
+title: "格鲁吉亚之旅：在斯瓦涅季徒步旅行 | Tika Tours"
+tour_id: 5
 short_descr: 欢迎来到斯瓦涅季（Svaneti），这是一片非常美丽的塔楼，白雪皑皑的山峰，葡萄酒和舞蹈。
 price_from: 0
 duration: 10天/ 9晚
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
 imggrp_id: 30
-itinerary: ./itinerary.zh.md
-inclusions: ./inclusions.zh.md
 ---
 欢迎来到斯瓦涅季（Svaneti），这是一片非常美丽的塔楼，白雪皑皑的山峰，葡萄酒和舞蹈。 这是一个时间不仅仅停止，而是根本不存在的地方。 整个地区都是联合国教科文组织的遗产地，如此遥远，以至于它从未被外国入侵者占领，他们可以掠夺其宝藏。
 

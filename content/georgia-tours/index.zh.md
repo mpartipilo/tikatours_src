@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours
 heading: 格鲁吉亚之旅
+title: 格鲁吉亚之旅 | Tika Tours
 country_id: 1
 template: tourcategory
 main_category_id: 1

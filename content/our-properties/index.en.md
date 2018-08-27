@@ -2,6 +2,7 @@
 language: en
 url: our-properties
 heading: Our Properties
+title: Our Properties | Tika Tours
 country_id: 1
 imggrp_id: 44
 ---

@@ -2,9 +2,12 @@
 language: zh
 url: regions/adjara
 heading: Adjara
+title: Adjara | Tika Tours
 country_id: 1
 imggrp_id: 7
+gallery_id: 7
 template: regions
+name: Adjara
 ---
 <div class="row content-row"><!-- 1203 (1)-->
 

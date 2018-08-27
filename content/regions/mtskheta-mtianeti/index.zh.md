@@ -2,9 +2,12 @@
 language: zh
 url: regions/mtskheta-mtianeti
 heading: Mtskheta-Mtianeti
+title: Mtskheta-Mtianeti | Tika Tours
 country_id: 1
 imggrp_id: 15
+gallery_id: 15
 template: regions
+name: Mtskheta-Mtianeti
 ---
 <div class="row content-row"><!-- 1497 (1)-->
 

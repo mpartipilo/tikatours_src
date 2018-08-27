@@ -2,6 +2,7 @@
 language: en
 url: multi-country-tours/georgia-armenia-azerbaijan
 heading: Georgia, Armenia & Azerbaijan Tours
+title: Georgia, Armenia & Azerbaijan Tours | Tika Tours
 template: toursubcategory
 main_category_id: 2
 sub_category_id: 16

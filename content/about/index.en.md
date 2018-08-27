@@ -2,6 +2,7 @@
 language: en
 url: about
 heading: Our Difference
+title: About | Tika Tours
 ---
 <div class="row content-row"><!-- 2201 (1)-->
 

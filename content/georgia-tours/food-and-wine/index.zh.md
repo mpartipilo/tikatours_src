@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours/food-and-wine
 heading: 食物和酒
+title: 食物和酒| Tika Tours
 imggrp_id: 29
 template: toursubcategory
 main_category_id: 1

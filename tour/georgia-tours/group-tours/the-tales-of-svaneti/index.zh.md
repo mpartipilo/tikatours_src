@@ -2,17 +2,18 @@
 language: zh
 url: georgia-tours/group-tours/the-tales-of-svaneti
 template: tour
-tour_id: 40
 heading: The Tales of Svaneti
+title: ""
+tour_id: 40
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped craggy peaks, wine and dancing.
 price_from: 0
 duration: 10 Days / 9 Nights
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 0
 main_category_id: 1
 sub_category_id: 32
 imggrp_id: 30
-itinerary: ./itinerary.zh.md
-inclusions: ./inclusions.zh.md
 ---
 Welcome to Svaneti, an extraordinarily beautiful land of towers, snow\-topped craggy
 peaks, wine and dancing. It is a place where time has not merely stopped, but rather

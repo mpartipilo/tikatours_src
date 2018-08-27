@@ -2,11 +2,14 @@
 language: zh
 url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 template: tour
-tour_id: 28
 heading: 在葡萄酒心态
+title: ""
+tour_id: 28
 short_descr: 佐治亚州位于南高加索的西亚和东欧汇合处，这个拥有令人惊叹的壮丽景色的国家最近出现在葡萄酒爱好者的雷达上
 price_from: 0
 duration: 9天/ 8晚
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 1
 main_category_id: 1
 sub_category_id: 10

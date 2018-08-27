@@ -2,6 +2,7 @@
 /* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -94,7 +95,7 @@ class GeneralPageTemplate extends React.Component {
   }
 
   render() {
-    const { location, data } = this.props
+    const { location, data, pathContext } = this.props
     const { sitemetadata, tourCategoryData, tourData } = contentData[
       data.markdownRemark.frontmatter.language
     ]
@@ -134,19 +135,23 @@ class GeneralPageTemplate extends React.Component {
     }
 
     return (
-      <GeneralPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        {...props}
-      />
+      <React.Fragment>
+        <Helmet title={pathContext.title} />
+        <GeneralPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          {...props}
+        />
+      </React.Fragment>
     )
   }
 }
 
 GeneralPageTemplate.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
+  pathContext: PropTypes.object
 }
 
 export default GeneralPageTemplate

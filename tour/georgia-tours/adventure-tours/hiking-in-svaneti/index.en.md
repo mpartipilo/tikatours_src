@@ -2,18 +2,19 @@
 language: en
 url: georgia-tours/adventure-tours/hiking-in-svaneti
 template: tour
-tour_id: 5
 heading: Hiking in Svaneti
+title: "Georgia Tours: Hiking in Svaneti | Tika Tours"
+tour_id: 5
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped craggy peaks, wine and dancing.
 price_from: 0
 duration: 10 days/9 nights
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
 imggrp_id: 30
-itinerary: ./itinerary.en.md
-inclusions: ./inclusions.en.md
 ---
 Welcome to Svaneti, an extraordinarily beautiful land of towers, snow\-topped craggy
 peaks, wine and dancing. It is a place where time has not merely stopped, but rather

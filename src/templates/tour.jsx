@@ -2,6 +2,7 @@
 /* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -139,7 +140,7 @@ class TourDetailPageTemplate extends React.Component {
   }
 
   render() {
-    const { location, data } = this.props
+    const { location, data, pathContext } = this.props
     const {
       sitemetadata,
       imagesSlides,
@@ -172,6 +173,7 @@ class TourDetailPageTemplate extends React.Component {
       sub_category_id: frontmatter.sub_category_id,
       main_category_id: frontmatter.main_category_id,
       is_featured: frontmatter.is_featured || false,
+      slideshow_id: frontmatter.imggrp_id,
       gallery_id: frontmatter.gallery_id,
       duration: frontmatter.duration,
       inclusions:
@@ -186,20 +188,24 @@ class TourDetailPageTemplate extends React.Component {
     }
 
     return (
-      <GeneralPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        {...props}
-        tour={tour}
-      />
+      <React.Fragment>
+        <Helmet title={pathContext.title || sitemetadata.title} />
+        <GeneralPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          {...props}
+          tour={tour}
+        />
+      </React.Fragment>
     )
   }
 }
 
 TourDetailPageTemplate.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
+  pathContext: PropTypes.object
 }
 
 export default TourDetailPageTemplate
@@ -215,6 +221,7 @@ export const pageQuery = graphql`
         language
         url
         imggrp_id
+        gallery_id
         duration
         price_from
         main_category_id

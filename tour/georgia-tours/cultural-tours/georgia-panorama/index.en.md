@@ -2,18 +2,20 @@
 language: en
 url: georgia-tours/cultural-tours/georgia-panorama
 template: tour
-tour_id: 7
 heading: 
+title: "Georgian Panorama | Tika Tours"
+tour_id: 7
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.
 price_from: 0
 duration: 7 DAYS/6 NIGHTS
+itinerary: ./itinerary.en.md
+inclusions: ./inclusions.en.md
 country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 9
+gallery_id: 41
 imggrp_id: 24
-itinerary: ./itinerary.en.md
-inclusions: ./inclusions.en.md
 ---
 Georgia \- the undiscovered travel destination with immensely diverse array of landscapes
 offers one of the world\`s most jaw dropping panoramic views on the planet. Begin

@@ -2,9 +2,12 @@
 language: en
 url: regions/guria
 heading: Guria
+title: Guria | Tika Tours
 country_id: 1
 imggrp_id: 9
+gallery_id: 9
 template: regions
+name: Guria
 ---
 <div class="row content-row"><!-- 1215 (1)-->
 

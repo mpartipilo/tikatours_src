@@ -2,9 +2,12 @@
 language: en
 url: regions/tbilisi
 heading: Tbilisi
+title: Tbilisi | Tika Tours
 country_id: 1
 imggrp_id: 20
+gallery_id: 20
 template: regions
+name: Tbilisi
 ---
 <div class="row content-row"><!-- 1160 (1)-->
 

@@ -2,16 +2,17 @@
 language: zh
 url: georgia-tours/georgia-highlights
 template: tour
-tour_id: 35
 heading: 
+title: ""
+tour_id: 35
 short_descr: 
 price_from: 0
 duration: 
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 1
 main_category_id: 1
 sub_category_id: 0
-imggrp_id: 0
-itinerary: ./itinerary.zh.md
 ---
 在豪华旅行车中依靠不超过14位客人的亲密团体。
 

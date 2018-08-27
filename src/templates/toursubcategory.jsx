@@ -2,6 +2,7 @@
 /* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -143,7 +144,7 @@ class TourSubCategoryPageTemplate extends React.Component {
   }
 
   render() {
-    const { location, data } = this.props
+    const { location, data, pathContext } = this.props
 
     const {
       sitemetadata,
@@ -187,19 +188,23 @@ class TourSubCategoryPageTemplate extends React.Component {
     }
 
     return (
-      <TourSubCategoryPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        {...props}
-      />
+      <React.Fragment>
+        <Helmet title={pathContext.title || sitemetadata.title} />
+        <TourSubCategoryPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          {...props}
+        />
+      </React.Fragment>
     )
   }
 }
 
 TourSubCategoryPageTemplate.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
+  pathContext: PropTypes.object
 }
 
 export default TourSubCategoryPageTemplate

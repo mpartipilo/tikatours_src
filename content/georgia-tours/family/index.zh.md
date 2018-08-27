@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours/family
 heading: 家庭
+title: 家庭 | Tika Tours
 imggrp_id: 32
 template: toursubcategory
 main_category_id: 1

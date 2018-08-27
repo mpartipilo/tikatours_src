@@ -2,6 +2,7 @@
 language: en
 url: history-and-culture
 heading: History & Culture
+title: History & Culture | Tika Tours
 ---
 <div class="row content-row"><!-- 877 (0)-->
 

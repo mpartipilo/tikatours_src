@@ -43,8 +43,11 @@ function getPageData(
 
     return {
       page_heading: data.heading,
+      page_title: data.title,
       country_id: data.country_id,
-      imggrp_id: data.gallery_id
+      imggrp_id: data.slideshow_id,
+      gallery_id: data.gallery_id,
+      region_name: data.name
     }
   }
 
@@ -74,9 +77,10 @@ function getPageData(
 
   if (cmap.content.module_id == 100) {
     const tourListDetails = { sub_category_id: cmap.content.page_id }
-    const subCategoryFound =
-      tourListDetails.sub_category_id &&
-      tourCategoryData.find(c => c.id == tourListDetails.sub_category_id)
+
+    const subCategoryFound = tourCategoryData.find(
+      c => c.id == tourListDetails.sub_category_id
+    )
 
     const mainCategoryFound =
       subCategoryFound &&
@@ -84,6 +88,7 @@ function getPageData(
 
     return {
       page_heading: subCategoryFound && subCategoryFound.heading,
+      page_title: subCategoryFound && subCategoryFound.title,
       main_category_id: (mainCategoryFound && mainCategoryFound.id) || null,
       sub_category_id: subCategoryFound.id,
       imggrp_id: subCategoryFound.slideshow_id
@@ -151,6 +156,10 @@ languages.forEach(language => {
         {
           key: "heading",
           value: page.page_heading
+        },
+        {
+          key: "title",
+          value: page.page_title
         }
       ]
 
@@ -175,6 +184,13 @@ languages.forEach(language => {
         })
       }
 
+      if (page.gallery_id && page.gallery_id > 0) {
+        frontmatter.push({
+          key: "gallery_id",
+          value: page.gallery_id
+        })
+      }
+
       if (cm.template) {
         frontmatter.push({
           key: "template",
@@ -187,6 +203,15 @@ languages.forEach(language => {
           key: "main_category_id",
           value: cm.tourDetails.main_category_id
         })
+      }
+
+      if (cm.content.module_id == 36) {
+        if (page.region_name) {
+          frontmatter.push({
+            key: "name",
+            value: page.region_name
+          })
+        }
       }
 
       if (cm.content.module_id == 100) {
@@ -332,21 +357,6 @@ languages.forEach(language => {
   tourMap.forEach(cm => {
     const { tourCategoryData, tourData } = contentData[language]
 
-    const frontmatter = [
-      {
-        key: "language",
-        value: language
-      },
-      {
-        key: "url",
-        value: cm.url
-      },
-      {
-        key: "template",
-        value: cm.template
-      }
-    ]
-
     const data = tourData.find(t => {
       const tourUrl = fullUrl(
         tourCategoryData,
@@ -361,30 +371,52 @@ languages.forEach(language => {
       console.log(`No data found for url ${cm.url}`)
     }
 
-    frontmatter.push({
-      key: "tour_id",
-      value: data.id
-    })
-
-    frontmatter.push({
-      key: "heading",
-      value: data.heading
-    })
-
-    frontmatter.push({
-      key: "short_descr",
-      value: data.short_descr
-    })
-
-    frontmatter.push({
-      key: "price_from",
-      value: data.price_from
-    })
-
-    frontmatter.push({
-      key: "duration",
-      value: data.duration
-    })
+    const frontmatter = [
+      {
+        key: "language",
+        value: language
+      },
+      {
+        key: "url",
+        value: cm.url
+      },
+      {
+        key: "template",
+        value: cm.template
+      },
+      {
+        key: "heading",
+        value: data.heading
+      },
+      {
+        key: "title",
+        value: `"${data.title}"`
+      },
+      {
+        key: "tour_id",
+        value: data.id
+      },
+      {
+        key: "short_descr",
+        value: data.short_descr
+      },
+      {
+        key: "price_from",
+        value: data.price_from
+      },
+      {
+        key: "duration",
+        value: data.duration
+      },
+      {
+        key: "itinerary",
+        value: `./itinerary.${language}.md`
+      },
+      {
+        key: "inclusions",
+        value: `./inclusions.${language}.md`
+      }
+    ]
 
     if (data.country_id) {
       frontmatter.push({
@@ -414,31 +446,17 @@ languages.forEach(language => {
       })
     }
 
-    if (data.slideshow_id) {
+    if (data.gallery_id && data.gallery_id > 0) {
       frontmatter.push({
         key: "gallery_id",
         value: data.gallery_id
       })
     }
 
-    if (data.slideshow_id) {
+    if (data.slideshow_id && data.slideshow_id > 0) {
       frontmatter.push({
         key: "imggrp_id",
         value: data.slideshow_id
-      })
-    }
-
-    if (data.itinerary) {
-      frontmatter.push({
-        key: "itinerary",
-        value: `./itinerary.${language}.md`
-      })
-    }
-
-    if (data.inclusions) {
-      frontmatter.push({
-        key: "inclusions",
-        value: `./inclusions.${language}.md`
       })
     }
 

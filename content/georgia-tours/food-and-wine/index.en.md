@@ -2,6 +2,7 @@
 language: en
 url: georgia-tours/food-and-wine
 heading: Food and Wine
+title: Food and Wine | Tika Tours
 imggrp_id: 29
 template: toursubcategory
 main_category_id: 1

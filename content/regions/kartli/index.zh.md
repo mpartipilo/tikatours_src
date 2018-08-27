@@ -2,9 +2,12 @@
 language: zh
 url: regions/kartli
 heading: Kartli
+title: Kartli | Tika Tours
 country_id: 1
 imggrp_id: 12
+gallery_id: 12
 template: regions
+name: Kartli
 ---
 <div class="row content-row"><!-- 1188 (1)-->
 

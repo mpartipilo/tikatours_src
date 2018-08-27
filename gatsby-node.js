@@ -54,6 +54,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
+    const redirect = path.resolve("src/i18n/redirect.js")
     const generalPage = path.resolve("src/templates/page.jsx")
     const galleryPage = path.resolve("src/templates/gallery.jsx")
     const regionPage = path.resolve("src/templates/region.jsx")
@@ -65,11 +66,31 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(`
         {
-          allMarkdownRemark {
+          allMarkdownRemark(filter: { frontmatter: { url: { ne: null } } }) {
             edges {
               node {
                 id
                 frontmatter {
+                  title
+                  language
+                  url
+                  template
+                }
+                html
+              }
+            }
+          }
+
+          allTours: allMarkdownRemark(
+            filter: {
+              frontmatter: { template: { eq: "tour" }, url: { ne: null } }
+            }
+          ) {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
                   language
                   url
                   template
@@ -87,10 +108,30 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         const pages = result.data.allMarkdownRemark.edges
 
+        const allUrl = _.uniqBy(pages, p => p.node.frontmatter.url).map(
+          p => p.node.frontmatter.url
+        )
+
+        _.each(allUrl, page => {
+          const redirectPage = {
+            path: page,
+            component: redirect,
+            context: {
+              languages,
+              locale: "",
+              routed: false,
+              redirectPage: page
+            }
+          }
+          createPage(redirectPage)
+        })
+
         _.each(pages, (page, index) => {
+          /*
           const previous =
             index === pages.length - 1 ? null : pages[index + 1].node
           const next = index === 0 ? null : pages[index - 1].node
+          */
 
           var component = generalPage
 
@@ -122,10 +163,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             context: {
               id: page.node.id,
               slug: page.node.frontmatter.url,
+              title: page.node.frontmatter.title,
               url: page.node.frontmatter.url,
-              language: page.node.frontmatter.language,
+              language: page.node.frontmatter.language
+              /*,
               previous,
-              next
+              next*/
             }
           })
         })

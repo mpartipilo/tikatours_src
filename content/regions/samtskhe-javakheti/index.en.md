@@ -2,9 +2,12 @@
 language: en
 url: regions/samtskhe-javakheti
 heading: Samtskhe-Javakheti
+title: Samtskhe-Javakheti | Tika Tours
 country_id: 1
 imggrp_id: 18
+gallery_id: 18
 template: regions
+name: Samtskhe-Javakheti
 ---
 <div class="row content-row"><!-- 1184 (1)-->
 

@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours/leisure-and-health
 heading: 休闲与健康
+title: 休闲与健康 | Tika Tours
 imggrp_id: 31
 template: toursubcategory
 main_category_id: 1

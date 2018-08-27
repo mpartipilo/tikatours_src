@@ -2,6 +2,7 @@
 language: en
 url: georgia-tours/business
 heading: Business
+title: Business | Tika Tours
 imggrp_id: 37
 template: toursubcategory
 main_category_id: 1

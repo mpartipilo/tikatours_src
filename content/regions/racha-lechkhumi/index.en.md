@@ -2,9 +2,12 @@
 language: en
 url: regions/racha-lechkhumi
 heading: Racha-Lechkhumi
+title: Racha-Lechkhumi | Tika Tours
 country_id: 1
 imggrp_id: 16
+gallery_id: 16
 template: regions
+name: Racha-Lechkhumi
 ---
 <div class="row content-row"><!-- 1199 (1)-->
 

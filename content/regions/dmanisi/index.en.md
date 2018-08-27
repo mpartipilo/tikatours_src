@@ -2,9 +2,12 @@
 language: en
 url: regions/dmanisi
 heading: Dmanisi
+title: Dmanisi | Tika Tours
 country_id: 1
 imggrp_id: 8
+gallery_id: 8
 template: regions
+name: Dmanisi
 ---
 <div class="row content-row"><!-- 1168 (1)-->
 

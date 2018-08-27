@@ -2,6 +2,7 @@
 language: zh
 url: about
 heading: 我们的差异
+title: 关于 | Tika Tours
 ---
 <div class="row content-row"><!-- 2201 (1)-->
 

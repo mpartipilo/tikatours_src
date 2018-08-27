@@ -2,6 +2,7 @@
 language: zh
 url: multi-country-tours/georgia-armenia-azerbaijan
 heading: 格鲁吉亚，亚美尼亚和阿塞拜疆之旅
+title: 格鲁吉亚，亚美尼亚和阿塞拜疆之旅 | Tika Tours
 template: toursubcategory
 main_category_id: 2
 sub_category_id: 16

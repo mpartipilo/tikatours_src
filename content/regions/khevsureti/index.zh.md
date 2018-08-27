@@ -2,9 +2,12 @@
 language: zh
 url: regions/khevsureti
 heading: Khevsureti
+title: Khevsureti | Tika Tours
 country_id: 1
 imggrp_id: 14
+gallery_id: 14
 template: regions
+name: Khevsureti
 ---
 <div class="row content-row"><!-- 1172 (1)-->
 

@@ -14,7 +14,6 @@ class TourDetails extends React.Component {
     const { strings } = contentData[language]
 
     var tag = ""
-    var tourGallery = ""
 
     if (tour) {
       const subCategoryFound = tourCategoryData.find(
@@ -33,7 +32,7 @@ class TourDetails extends React.Component {
 
       var thumbPath = `/thumbs/galleries/g${tour.gallery_id}/`
 
-      tourGallery = imagesSlidesData
+      var tourGallery = imagesSlidesData
         .filter(i => i.imggrp_id == tour.gallery_id)
         .map(i => ({
           ...i,
@@ -70,7 +69,10 @@ class TourDetails extends React.Component {
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
             {tourGallery && (
-              <Gallery heading="Tour gallery" photos={tourGallery} />
+              <Gallery
+                heading={this.state.strings["tour gallery"]}
+                photos={tourGallery}
+              />
             )}
             {itinerary && (
               <div className="col-xs-12">

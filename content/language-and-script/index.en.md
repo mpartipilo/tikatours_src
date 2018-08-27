@@ -2,6 +2,7 @@
 language: en
 url: language-and-script
 heading: Language & Script
+title: Language & Script | Tika Tours
 ---
 <div class="row content-row"><!-- 891 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->

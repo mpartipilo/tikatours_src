@@ -2,17 +2,19 @@
 language: zh
 url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
 template: tour
-tour_id: 27
 heading: 
+title: ""
+tour_id: 27
 short_descr: 欢迎来到高加索！ 高加索地区的三个高地国家跨越了黑色和里海之间蜿蜒的白雪皑皑的山脉。 高加索地区拥有丰富的景观
 price_from: 0
 duration: 14天/13晚
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 country_id: 1
 is_featured: true
 main_category_id: 2
 sub_category_id: 16
 imggrp_id: 26
-itinerary: ./itinerary.zh.md
 ---
 欢迎来到高加索！ 高加索地区的三个高地国家跨越了黑色和里海之间蜿蜒的白雪皑皑的山脉。 高加索地区拥有丰富的景色和热情好客的居民。 体验您只读过的地方。
 

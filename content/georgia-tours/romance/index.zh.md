@@ -2,6 +2,7 @@
 language: zh
 url: georgia-tours/romance
 heading: 浪漫
+title: 浪漫 | Tika Tours
 imggrp_id: 33
 template: toursubcategory
 main_category_id: 1

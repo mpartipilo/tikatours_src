@@ -2,6 +2,7 @@
 language: en
 url: regions
 heading: Georgia Regions
+title: Georgia Regions | Tika Tours
 country_id: 1
 template: regions
 ---

@@ -2,6 +2,7 @@
 language: en
 url: multi-country-tours/georgia-and-armenia
 heading: Georgia & Armenia Tours
+title: Georgia & Armenia Tours | Tika Tours
 template: toursubcategory
 main_category_id: 2
 sub_category_id: 17

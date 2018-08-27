@@ -1,6 +1,7 @@
 /* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -104,7 +105,9 @@ function getSlideshowData(imagesSlides, groupId) {
   }
 }
 
-const GeneralPageTemplate = ({ location, data }) => {
+const GeneralPageTemplate = props => {
+  const { location, data, pathContext } = props
+
   const defaultLanguage = "en"
   const currentLanguage =
     data.markdownRemark.frontmatter.language || defaultLanguage
@@ -120,20 +123,24 @@ const GeneralPageTemplate = ({ location, data }) => {
   const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
 
   return (
-    <GeneralPage
-      location={location}
-      page={data.markdownRemark}
-      data={data.markdownRemark.frontmatter}
-      sitemetadata={sitemetadata}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-      slideshowData={slides}
-    />
+    <React.Fragment>
+      <Helmet title={pathContext.title} />
+      <GeneralPage
+        location={location}
+        page={data.markdownRemark}
+        data={data.markdownRemark.frontmatter}
+        sitemetadata={sitemetadata}
+        currentLanguage={currentLanguage}
+        defaultLanguage={defaultLanguage}
+        slideshowData={slides}
+      />
+    </React.Fragment>
   )
 }
 
 GeneralPageTemplate.propTypes = {
   location: PropTypes.object,
+  pathContxt: PropTypes.object,
   data: PropTypes.object
 }
 

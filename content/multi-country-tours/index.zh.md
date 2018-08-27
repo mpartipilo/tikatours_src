@@ -2,6 +2,7 @@
 language: zh
 url: multi-country-tours
 heading: 多国之旅
+title: 多国之旅 | Tika Tours
 template: tourcategory
 main_category_id: 2
 ---

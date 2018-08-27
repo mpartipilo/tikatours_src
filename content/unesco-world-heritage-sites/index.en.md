@@ -2,6 +2,7 @@
 language: en
 url: unesco-world-heritage-sites
 heading: UNESCO World Heritage Sites
+title: UNESCO World Heritage Sites | Tika Tours
 ---
 <div class="row content-row"><!-- 873 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1198 -->
