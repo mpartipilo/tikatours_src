@@ -16,9 +16,7 @@ name: Khevi
 <div class="row content-row"><!-- 1197 (2)-->
 <div class="col-xs-12"><!-- 1591 -->
 
-Khevi is a small historical\-geographic area in north\-eastern Georgia. High in the
-pristine and wild Caucasus, visitors will discover proud communities and raw, powerful
-landscapes.
+Khevi~{JG8qB3<*QG116+N;SZ5DR;8v:\P!5D@zJ7:M5X@mGxSr!#~} ~{TZ8_T-J<5DR0Iz8_<SKwIOSN?M=+;a7"OV=>0A5DHKCG:M7G3#G?4s5D7g>0!#~}
 
 </div>
 
@@ -30,56 +28,30 @@ landscapes.
 ### History
 
 
-The name of this province, literally meaning "a gorge", comes from the early medieval
-district of Tzanaria. The people of Khevi are ethnic Georgians called Mokheves.
+~{Ub8vJ!5DC{WV#,WVCfRbK<JG!0O?9H!1#,@4WTVPJ@<MTgFZ~}Tzanaria~{Gx!#~}Khevi~{5DHKCqJG8qB3<*QGHK#,=PWv~}Mokheves~{!#~}
 
-Khevi has long been of great strategic and military importance due primarily to its
-proximity to the Darial Pass which connects North Caucasus with Transcaucasia.
+Khevi~{R;V1RT@46<>_SPVXR*5DU=BT:M>|JBRbRe!#VwR*JGSISZ=S=|SZA,=S118_<SKw:MMb8_<SKw5D~}Darial ~{I=?Z~}. 
+~{Ub@oC;SPC;SP5dPM5D7b=(9XO5#,K{CG6<Iz;nTZ88H(Ig;aM3VNSI~}khevisberi ~{#(R2>MJG!1~} ~{O?9H5D3$12!1#)K{JGR;C{7(9Y!"DAJ&:M>|JBAlPd!#W!TZ~}khevi ~{5DHKCq1#AtAKK{CG5DVPJ@<M4+M3:MR;VV6@LX5DIg;aPNJ=!#TZKUN,0#M3VNOB#,~}khevi ~{5DHKH41;FH@k?*I=Gx!#~}
 
-Free of typical feudal relations, they lived in a patriarchal community governed
-by a khevisberi (i.e. "gorge elder") who functioned as a judge, priest and military
-leader. When the area was placed under the control of the semi\-autonomous Duchy
-of the Aragvi, it was met with fierce resistance by the communities, a story which
-has become famous in local folklore and classical Georgian literature. The people
-of Khevi retained their medieval traditions and a unique form of society until,
-under Soviet rule, many families were forcibly removed to the lowlands.
+### ~{5X@m:MFx:r~}
 
-### Geography and climate
-
-
-Khevi is located in the Kazbegi district of the Mtskheta\-Mtianeti region. Situated
-on the northern slopes of the Greater Caucasus Mountains, the mountainous landscape
-of Khevi is dominated by snowy peaks, alpine meadows dotted with rhododendron forests,
-plunging ravines, thundering waterfalls and soaring above it all, the colossal Mount
-Kazbek. A popular tourist destination, the area is part of the projected Khevi\-Aragvi
-Biosphere Reserve.
-
-Long winters and short and cool summers are typical to this region and snow permanently
-covers the mountain peaks.
+Khevi~{N;SZD74D:UK~~}-~{D7<>0"Dy<>V]5XGx5D?(WH1p<*Gx~}. ~{WxBdTZ4s8_<SKwI=Bv5D112?P1FBIO~}. Khevi~{5D6`I=5D7g>01;Q)7e!"8_I=2]5i5cW:WE:lBL5DI-AV#,8_KJ5DO?9H#,@WCy0c5DFY2<#,WnIOCfJG>^4s5DI=Bv=P?(WH1p<*I=!#WwN*R;8vJ\;6S-5DBCSND?5D5X#,8C5XGxJG~}Khevi-Aragvi~{IzNoH&1#;$Gx5DR;2?7V!#~}
+~{6,<>:.@dB~3$~},~{OD<>A9K,6LT]~}-~{UbVVFx:rJGUb8v5XGxWnN*5dPM!#?(WH1p<*I=7eVUDjN*1yQ)828G!#~}
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1593 -->
 
-### What to see and do
 
+###~{?45=:MD\WvJ2C4#?~}	
 
-Travellers are particularly drawn to Khevi for its extraordinarily dramatic alpine
-landscape and the centuries\-old churches, monasteries and fortifications that perch
-so wonderfully amongst it.
+~{SN?MCGLX1pO2;6~}Khevi~{#,RrN*K|SPWE<+FdR}HKW"D?5D8_~}~{I=>09[#,RT<0SPWE<80YDj@zJ75D=LLC!"P^5@T::MR*H{!#~}
+~{8C5XGxVXR*5DND;/REV70|@(N;SZ8_<SKwI=Bv5DI=FBV.IO~}Gergeti~{H}R;=LLC!#=LLCJ<=(SZ~}14~{J@<M!#~}Garbani~{=LLC#,~}Sno~{1$@]#,~}Sioni~{3$7=PN;y6==LLC:M3G1$#,9E4z5D~}Betlemi~{P^5@T:=(V~H:~}.
 
-The area's important cultural sites include the Gergeti Trinity Church, a significant
-altar of the 14th century on the slopes of Mount Kazbek, Garbani Church, the Sno
-fortress, Sioni Basilica and castle and the ancient Betlemi Monastery Complex, its
-monks are said to have entered by climbing a long iron chain.
+~{?(WH1p<*9z<R9+T0JGT6WcU_!"5GI=<R:MDGP)P@IMUbP)9DNhHKPD5D9[5c5DHK5D@mOk;y5X!#~}Gveleti~{4sFY2<TZ~}Darial~{O?9HJGBCSN5D1X7CV.5X!#~}
+~{?(WH1p<*9z<R9+T0R2SP7a8;5DR0Iz6/No!#SN?MCG?IRT?45=1tN#NoVV1HHgK56+8_<SKw5DR0E##,QRAgQr:MI=S%!#~}
 
-Khevi is home to the Kazbegi National Park, an ideal base for hikers, mountaineers
-and for those who just appreciate the awe\-inspiring views. Don't miss the stunning
-Dariali Gorge or the Gveleti waterfall. Mount Kazbek is considered one of Georgia's
-must do climbs suitable for fit climbers and hikers. The park is also rich in wildlife
-and visitors can be lucky enough to see endangered species such as East\-Caucasian
-aurochs, chamois and mountain eagles.
-
+~{M(3#1;3FN*8qB3<*QG5D6`Be~}~{CW5YI=Bv#,~}Chaukhi~{I=BvJGTZ~}Khevi~{!":U@WKUN,<>:M~}Gudamakari~{H}8v5XGx5D1_=gIO~}. Chaukhi~{I=BvS5SP3,9}~}3300-3700~{CW5DI=7e:M;*@v5D8_I=2]5i#,JG8qB3<*QGWnJ\;6S-5D5GI=:MM=2=BCPPGxV.R;~}.
 Often referred to as the Georgian Dolomites, the big shouldered Chaukhi massive is
 on the border of three regions of Khevi, Khevsureti and Gudamakari. With its many
 summits over 3300\-3700 m and gorgeous alpine meadows, Chaukhi is one of the most
@@ -88,3 +60,4 @@ popular climbing and trekking areas in Georgia.
 </div>
 
 </div>
+

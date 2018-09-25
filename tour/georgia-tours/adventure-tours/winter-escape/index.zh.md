@@ -5,7 +5,7 @@ template: tour
 heading: 冬季的逃脱
 title: 冬季的逃脱
 tour_id: 29
-short_descr: 古多里位于高加索山脉的南坡位置，是一个格鲁吉亚独特而豪华的冬季度假胜地。price_from: 0
+short_descr: 古多里位于高加索山脉的南坡位置，是一个格鲁吉亚独特而豪华的冬季度假胜地。
 price_from: 0
 duration: 10天/ 9晚
 itinerary: ./itinerary.zh.md

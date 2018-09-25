@@ -1,13 +1,13 @@
----
+﻿---
 language: zh
 url: regions/racha-lechkhumi
-heading: Racha-Lechkhumi
-title: Racha-Lechkhumi | Tika Tours
+heading: 拉恰-列其呼米
+title: 拉恰-列其呼米 | Tika Tours
 country_id: 1
 imggrp_id: 16
 gallery_id: 16
 template: regions
-name: Racha-Lechkhumi
+name: 拉恰-列其呼米
 ---
 <div class="row content-row"><!-- 1199 (1)-->
 
@@ -16,18 +16,13 @@ name: Racha-Lechkhumi
 <div class="row content-row"><!-- 1200 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1594 -->
 
-The region of Racha\-Lechkhumi also officially includes Kvemo (lower) Svaneti. This
-north\-western region is the most sparsely populated in Georgia, situated in the
-midst of the awe\-inspiring Caucasus.
+拉恰-列其呼米地区也正式包括下斯瓦涅季亚州。位于该国西部地区是格鲁吉亚人口最稀少的地区，坐落在令人惊叹的高加索山脉中间。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1595 -->
 
-It is known for its impassive beauty, wine making, bee\-keeping, dairy products and
-cattle\-breeding, carpentry and singing, health resorts and like most of Georgia,
-for its hospitality. You'll be sure to get a warm welcomes from passionate people
-who enjoy sharing their paradise.
+该地区以其显著而独特的自然美，酿酒，养蜂，乳制品，牛饲养，木工手艺，疗养度假区，像大多数格鲁吉亚地区一样，为其热情好客而闻名-你一定会得到热情人的热烈欢迎。
 
 </div>
 
@@ -45,66 +40,40 @@ who enjoy sharing their paradise.
 <div class="row content-row"><!-- 1202 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1597 -->
 
-### History
+### 历史
 
 
-Racha\-Lechkhumi and Lower Savaneti was part of the early Kingdom of Colchis. Examples
-of the first money minted in the kingdom, the Colchis Tetri, were discovered in
-the city of Oni.
+拉恰-列其呼米-下斯瓦涅季亚州是早期科尔基斯王国的一部分。在科尔基斯王国铸造的第一批货币（Colchis Tetri）是在拉恰-列其呼米的城市Oni。
 
-After the Colchis Kingdom fell apart during the 1st century AD, the territory of
-modern Racha\-Lechkhumi was part of several successive kingdoms until the county
-of Racha was created in the 10th century, as part of the United Kingdom of Georgia.
+在公元前一世纪科尔基斯王国分崩离析后，直到拉恰-列其呼米县成立于10世纪作为格鲁吉亚联合王国的一部分，现代拉恰-列其呼米的领土是几个连续王国的一部分。
+根据中世纪的记载，神秘的Khvamli洞穴保存着格鲁吉亚国王的宝库，但还没有被发现。
 
-According to medieval records, the mysterious Khvamli caves preserve the treasury
-of the kings of Georgia \- but are yet to be found.
-
-### Geography and climate
+###地理和气候
 
 
-This region borders Russian territory to the north and the Georgian regions of Samegrelo
-and Imereti to the west and south. It lies in the soaring mountains, high meadows
-and green valleys of the Greater Caucasus, its elevation ranging between 400\-5000m
-asl.
+拉恰-列其呼米北与俄罗斯接壤，西部和南部与格鲁吉亚的地区-萨梅格列罗和伊梅列季亚州州接壤。它位于大高加索山脉的高耸的山峰、高高的草地和绿色的山谷中，海拔在400-5000米之间。
 
-Winters in Racha\-Lechkhumi and Lower Svaneti are typically cold and long with permanent
-ice and snow in the high mountains. The average temperature in January around the
-settlements of Oni and Ambrolauri drop to between \-2°C and \-1°C while the average
-temperature in July typically reaches between 19 °C and 21°C.
+拉恰-列其呼米-下斯瓦涅季亚州的冬天通常是寒冷的，在高山上有永久的冰和雪。Oni 和Ambrolauri 定居点周围， 1月份的平均气温下降到-2 c和-1 c之间而平均7月份的气温通常在19摄氏度到21摄氏度之间。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1598 -->
 
-### What to see and do
+### 看到和能做什么？
+
+在这个地区可以发现一个自然的仙境，冰川，河流和湖。这是一个户外天堂，对于想要尝试高山漂流，山地自行车运动，登山运动，4x4冒险之旅。它还提供钓鳟鱼、观鸟和散步。
+
+在食欲旺盛之后，一定要品尝一下当地丰富的菜肴和葡萄酒。包括一种著名的“Shkmeruli”（大蒜酱鸡）和著名的熏火腿。”赫万奇卡拉”最这个地区的最受欢迎的葡萄酒。
+
+拉恰也以其卓越的木工艺而闻名，游客们有机会观看和学习制作传统工艺品。
+
+拉恰-列其呼米有很多教堂和修道院可以追溯到中世纪年龄。中世纪早期的其他引人注目的景点是位于leksuri村庄的Svanetian塔。
 
 
-Discover a natural wonderland of mountains, glaciers, rivers and lakes in this region.
-An outdoor paradise, it is the perfect destination for travellers wanting to try
-rafting, mountain biking, horse riding, mountaineering and 4x4 adventuring. It also
-offers exceptional trout fishing, birdwatching and walking.
+为了体验这个地区的文化宝藏，去拜访一下奥尼，Lado Museliani和察蓋里当地的博物馆.博物馆收藏了从石器时代到中世纪晚期的迷人的考古收藏，包括武器，陶瓷，手稿以及20世纪的著名格鲁吉亚艺术家的画作。
 
-After working up an appetite, be sure to try some of the rich booming dishes and
-wine from the area including a well\-known dish called “Shkmeruli” (chicken in garlic
-sauce) and the smoked ham of the region which is famous throughout Georgia. The
-most popular wine is Khvanchkara, liquid rubies and made from grapes that can only
-grow on the rich lands of Khvanchkara village.
-
-Racha is also known for its exceptional wood craftsmanship and there are opportunities
-for tourists to watch and learn about making the traditional crafts.
-
-Racha\-Lechkhumi has numerous churches and monasteries dating back to the middle
-ages. Some sites worth particular interest include the Nikortsminda and Barakoni
-temples, Mravaldzali St. George Church, and 19th century Tsageri Cathedral, as well
-as the medieval Khotevi, Sori, Krikhi, Bugeuli and Labechini churches. Other remarkable
-early medieval attractions are the Svanetian towers such as those in the village
-of Leksuri.
-
-For a taste of the region's cultural treasures, a visit to the Oni, Lado and Tsageri
-Local Museums is worthwhile. They house fascinating archaeological collections from
-the Stone Age up to late medieval times, including weapons, ceramics, manuscripts
-and paintings by 20th century well\-known Georgian artists.
 
 </div>
 
 </div>
+

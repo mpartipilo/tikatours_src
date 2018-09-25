@@ -1,13 +1,13 @@
----
+﻿---
 language: zh
 url: regions/svaneti
-heading: Svaneti
-title: Svaneti | Tika Tours
+heading: 斯瓦涅季
+title: 斯瓦涅季 | Tika Tours
 country_id: 1
 imggrp_id: 19
 gallery_id: 19
 template: regions
-name: Svaneti
+name: 斯瓦涅季
 ---
 <div class="row content-row"><!-- 1192 (1)-->
 
@@ -16,19 +16,12 @@ name: Svaneti
 <div class="row content-row"><!-- 1193 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1586 -->
 
-Svaneti, one of the most ancient historical provinces of Georgia, is located on the
-southern slopes of the Caucasus. Surrounded by white\-capped peaks, Svaneti is one
-of the most remarkable regions of Georgia, a hotpot of history steeped amidst timeless
-unwavering mountains.
-
+斯瓦涅季是格鲁吉亚历史最悠久的省份之一，位于高加索山脉南坡的一个偏远地区。山顶周围覆盖着白皑皑的积雪。斯瓦涅季是格鲁吉亚最显著的地区。
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1587 -->
 
-Svaneti is particularly known for its tower settlements, their cuisine, their unique
-musical instruments and tradition of woodcarving. Carpenters still make incredible
-furniture using the same traditional decorative ornaments.
-
+斯瓦涅季以其独特的塔居点，他们的美食，他们的独特乐器和木雕的传统而闻名。木匠们还是用同样的传统装饰品来制作令人难以置信的家具。
 </div>
 
 </div>
@@ -45,65 +38,38 @@ furniture using the same traditional decorative ornaments.
 <div class="row content-row"><!-- 1195 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1589 -->
 
-### History
+### 历史
 
 
-In ancient times, Svaneti was part of the Colchis Kingdom. The myth of the Greek
-Argonauts' voyage to Colchis is thought to be connected to the gold of Svaneti.
-Svans used sheep wool to capture the gold from the rivers \- the wool was fixed
-to a board that was placed into water, wool side up. Once removed from the water
-and dried, the gold would fall from the dry wool.
+古代的时候，斯瓦涅季是科尔奇王国的一部分。希腊神话阿尔戈英雄之旅被认为与斯瓦涅季的黄金有关.
+斯瓦涅季的人用羊毛从河里捕获金子。羊毛被固定在一个放在水里的木板上，把羊毛放在上面， 以后吧羊毛拿出来一旦离开水干了，金子就会从干的羊毛里掉下来。
 
-Svaneti periodically gained independence and had its own ruler and tribal councils.
-Settlements grew out of large family farms and brotherhoods were created as big
-families divided.
-
-Svan religious beliefs and traditions were tied intimately to the fields. They have
-great respect for rituals which often feature deities protecting cattle and people,
-and granting fertility.
-
-### Geography and climate
+斯瓦涅季定期获得独立，并拥有自己的统治者和部落委员会。斯瓦涅季的人有特殊的宗教信仰和传统他们非常尊重通常以保护牛和人为特色的仪式。
 
 
-Svaneti is divided into two parts, Upper Svaneti and Lower Svaneti, separated by
-the Svaneti Mountain Range and running between the Enguri and Tskhenistskali Rivers.
-The region boasts several 4000\-5000m high peaks.
 
-At 2000 meters above sea level, the climate of Upper Svaneti is humid and cold. Temperatures
-in January average approximately \-6 °C and16 °C in July.
+###地理和气候
+
+
+在历史上,斯瓦涅季可以分为上斯瓦涅季和下斯瓦涅季该地区拥有几座4000-5000米的高峰。
+在海拔2000米之上。上斯瓦涅季的气候潮湿而寒冷。1月份的平均温度约为-6°C 左右，7月份平均约为16 c。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1590 -->
 
-### What to see and do
+### 看到和能做什么？
 
 
-The tower settlements and fortresses in Svaneti are one of its most notable attractions.
-Originating in the early middle ages, they mirror the austere, natural ramparts
-of the near impregnable terrain,erupting from the rock and cliffs around them.
+斯瓦涅季的塔楼和堡垒是它最引人注目的景点之一。它们起源于中世纪早期。
 
-Ushguli is home to the remnants of one of the most ancient fortresses of Svaneti,
-dating from the reign of Queen Tamar. Ushguli itself is one of the highest settlements
-in Europe and like the towers and churches of Svaneti, is under the protection of
-UNESCO.
-
-Tourists interested in religious culture will find fine examples of wall paintings
-and icons from the Middle Ages in the churches around Mestia. The Church of Christ
-in Lagami is a good example of traditional basilica style architecture and is well
-known for its frescoes. Etseri and its surrounding villages are also known for their
-churches including one of the most dazzling, the 10th century Pkhutreri Church of
-the Archangels.
-
-Most of the treasures of Svaneti can be enjoyed in the Historic and Ethnographic
-Museum of Mestia. Highlights include icons from the Middle Ages and late 19th century
-photographs of Svaneti's landscapes and settlements that documented the daily lives
-of the local inhabitants.
-
-The Latali region has earned a reputation for its talented musicians and during festivities,
-as well as during mourning, visitors may have the opportunity to listen to these
-spine\-tingling polyphonic songs.
+乌斯古里在王后塔玛丽以来治时期是斯瓦涅季最古老的堡垒之一的遗迹。乌树故里是欧洲最高的一直有人居住的定居点之。就像Svaneti的塔楼和教堂一样，受到了保护
+联合国教科文组织。
+在梅斯蒂亚周围的教堂里对宗教文化感兴趣的游客会发现一些精美的壁画， 还有中世纪的圣像。位于lagamie农村的基督教堂是是传统的长方形教堂建筑的典范， 以壁画也闻名。Etseri及其周边村庄也因其教堂而闻名其中包括10世纪建的的Pkhutreri-令人眼花缭乱的大天使大教堂.
+斯瓦涅季的大部分宝藏都可以在梅斯蒂亚历史民族博物馆看到。博物馆的亮点包括中世纪和19世纪晚期的图标斯瓦涅季的风景和定居点的照-表示当地居民的日常生活。
+Latali 地区因其才华横溢的音乐家动而闻名，庆祝活动以及哀悼中的时候游客可能有机会听这些令人激动的多音的歌曲。
 
 </div>
 
 </div>
+

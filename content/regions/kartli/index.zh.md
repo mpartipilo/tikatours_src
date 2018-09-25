@@ -1,13 +1,13 @@
----
+﻿---
 language: zh
 url: regions/kartli
-heading: Kartli
-title: Kartli | Tika Tours
+heading: 卡特利
+title: 卡特利 | Tika Tours
 country_id: 1
 imggrp_id: 12
 gallery_id: 12
 template: regions
-name: Kartli
+name: 卡特利
 ---
 <div class="row content-row"><!-- 1188 (1)-->
 
@@ -16,18 +16,16 @@ name: Kartli
 <div class="row content-row"><!-- 1189 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1581 -->
 
-Kartli is the historical heart of Georgia, cut through by the river Mtkvari and known
-for its scenic beauty and historic monuments. Its boundaries, which were never strictly
-defined, have significantly fluctuated over the course of history.
+卡特利是格鲁吉亚的历史中心，以其美丽的风景和历史古迹而闻名. 它的边界从未严格定义，在历史进程中有很大的波动。
+.
 
-</div>
+</div>0
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1582 -->
 
-Today, the area is divided into two administrative regions, Shida (inner) Kartli
-and Kvemo (lower) Kartli.
+现今该地区分为两个行政区域：Shida (内) 卡特利以及 Kvemo (降低) 卡特利.
 
-Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.
+哥里是什达-卡特利州的中心，鲁斯塔维是克维莫-卡特利州的首都。
 
 </div>
 
@@ -45,61 +43,43 @@ Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.
 <div class="row content-row"><!-- 1191 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1584 -->
 
-### History
+### 历史
 
 
-Located on the ancient Silk Route, Kartli is considered the cradle of Georgian civilization,
-steeped, marinated and glazed in layers of historyIn Georgian, the country is called
-Sakartvelo, a name derived from this province and the tribe, the Karts, that settled
-there. By the late 4th\-early 3rd centuries BC, the Kartli Kingdom had emerged as
-a powerful force and created a single Georgian civilization.
+卡特利位于丝绸之路上，被认为是格鲁吉亚文明的摇篮。这个国家被称为Sakartvelo（格鲁吉亚），名称来源于这个省，Karts部落的人住在这里。公元前4世纪晚期-公元前3世纪早期卡特利王国王国以一股强大的力量创造了单一的格鲁吉亚文明。
 
-### Geography and climate
+### 地理和气候
 
 
-This large historical area is located in central\-eastern Georgia and is filled with
-gorgeous hidden valleys, plains, orchards and significant cultural treasures.
+这个巨大的历史区域位于格鲁吉亚中东部，到处都是华丽的隐藏山谷，平原，果园和重要的文化宝藏。
 
-Separated from the west by low mountain ranges, Shida Kartli occupies a high plateau
-that extends along the Mtkvari River and its tributaries. Lower Kartli to the south
-consists largely of steppes and a number of volcanic lakes.
+Shida Kartli占据沿着库拉河的一个高原。南边是kvemo卡尔特利, 它要由大干草原和一些火山湖组成。
 
-The climate of the Kartli region is quite distinct from the climate of West Georgia.
-It is dry and continental, with temperatures ranging through the year from \-1C°
-in January to 23C° in August.
+卡尔特里地区的气候与西格鲁吉亚的气候截然不同。它有干燥的大陆气候温度范围今年1月从1°c到8月23°c。
+
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1585 -->
+<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1585 -->O
 
-### What to see and do
+###看到和能做什么？
 
 
-The historic monuments peppered throughout Kartli are a profoundly memorable attraction
-for travellers.
+卡特利周围遍布的历史古迹对旅行者来说是一个难忘的景点。
 
-Those based in the city of Gori must visit the city's fortress. According to the
-legend, it was built by Byzantine, Caesar Heraclius when he fought against Persians
-in the 7th century. The fortress was invaded many times and numerous important treasuries
-have been discovered here.
+哥里市要塞是必看之地。根据传说在7世纪它是由拜占庭人凯撒赫拉克里乌斯在与波斯人作战时建造的。该要塞被入侵了好多次，这里发现了许多重要的宝藏。
 
-For a contrasting historical experience, Gori's museum of Joseph Stalin is certainly
-worth a visit. One of Georgia's most interesting museums, it follows Stalin's life
-from his church school in Gori to a bronze copy of his eerie death mask.
+哥里斯大林的博物馆是值得一游的地方。它是格鲁吉亚最有趣的博物馆之一，它讲述了斯大林从哥里的教会学校到他怪异的死亡面具的铜制复制品的一生. 
 
-The Ateni Sioni domed church, the Rkoni monastic complex and the Kintsvisi monastery
-are all notable historic attractions in the wider region.
+Ateni Sionii圆顶大，Rkoni修道院和Kintsvisi修道院都是这个广泛地区的重要历史景点。
 
-Uplistsikhe is located on the river Mtkvari in Inner Kartli and is one of Georgia's
-most significant tourist attractions. The complex of caves was a very important
-cultural centre for pagan worship in the Kartli region.
+Uplistsikhe位于内卡特里的库拉河上，是格鲁吉亚的一个最重要的旅游景点。复杂的洞穴系统以前是卡特里地区的非常重要异教崇拜文化中心。
 
-For travellers looking to relax away from hectic city lives, take a break at the
-popular mountain resort of Surami. Soak up the scenery, gulp lungful of fresh alpine
-air and drink the cocktail of mineral waters. While there, be sure to have a look
-around the great Surami fortress that overlooks the town, a monumental reminder
-of ancient times.
+对于那些想要从繁忙的城市生活中放松下来的旅行者来说，请休息一下受欢迎的Surami山区度假胜地。欣赏风景，大口呼吸新鲜的高山呼吸着空气，喝着矿泉水的鸡尾酒。在那里的时候，一定要去看一下在俯瞰全镇的surami要塞-提醒上古时期的标志。
+
+
 
 </div>
 
 </div>
+

@@ -1,13 +1,13 @@
----
+﻿---
 language: zh
 url: regions/dmanisi
-heading: Dmanisi
-title: Dmanisi | Tika Tours
+heading: 德马尼西
+title: 德马尼西 | Tika Tours
 country_id: 1
 imggrp_id: 8
 gallery_id: 8
 template: regions
-name: Dmanisi
+name: 德马尼西
 ---
 <div class="row content-row"><!-- 1168 (1)-->
 
@@ -16,10 +16,9 @@ name: Dmanisi
 <div class="row content-row"><!-- 1169 (2)-->
 <div class="col-xs-12"><!-- 1558 -->
 
-Dmanisi is a town in Kvemo (lower) Kartli in eastern Georgia that has become famous
-for the ancient human skull fragments that have been found nearby.
+德马尼西是格鲁吉亚东部的镇克維莫-卡特利州的一个小镇. 现在已经出名了,在附近发现的古代人类头骨碎片. 
 
-The wider region is well known for its tradition of handcrafts, especially metalwork.
+更广泛的地区以其手工制作的传统而闻名,尤其是金属加工. 
 
 </div>
 
@@ -37,70 +36,42 @@ The wider region is well known for its tradition of handcrafts, especially metal
 <div class="row content-row"><!-- 1171 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1560 -->
 
-### History
+###历史
 
 
-Lower Kartli was settled by eastern Georgian tribes during the pre\-Hellenic time.
-Significant archeological excavations have taken place in the region, especially
-in Dmanisi. Specialists believe that the skulls found in Dmanisi belonged to a people
-which lived here approximately 1.8 million years ago. The discoveries have forced
-scientists to reconsider some existing theories about the movements of prehistoric
-peoples and it is now thought that the human remains discovered in Dmanisi may be
-from the oldest known human being in Europe and Asia. The skulls are currently kept
-in the Simon Janashia Museum in Tbilisi.
+在前希腊时期的时候一些格鲁吉亚东部部落的部落開始在克维莫-卡特利州定居.
+该地区， 特别是在德马尼西进行了大量的考古发掘工作。专家认为在中世纪村落德马尼西挖掘的骨骼化石年代可追溯到大约180万年前，使格鲁吉亚的德马尼西成为欧洲和亚洲人类的"起源"或者"来源"地。类人头骨送到Simon Janashia国家博物馆保存下来。
 
-This region was also one of the first parts of Georgia to convert to Christianity
-which explains the large number of churches and monastery complexes throughout its
-territory.
+这个地区也是格鲁吉亚最早皈依基督教的地区之一，这也解释了为什么大量的教堂和修道院。
 
-### Geography and climate
+### 地理和气候
 
+德马尼西位于第比利斯西南约85公里处的马沙维拉河谷。克維莫-卡特利州被Trialeti, Javakheti, and Bambak-Erevani山脉所包围。
 
-Dmanisi is located about 85 km south\-west of Tbilisi in the Mashavera River Valley.
-The river disgorges the Javakheti volcanic chain to the west. The region of Kvemo
-Kartli is surrounded by the triangle of Trialeti, Javakheti, and Bambak\-Erevani
-Mountain ranges.
+德马尼西最温暖的月份是七月份，平均温度为18°C。一月份的时候平均气温为零下4摄氏度。
 
-The warmest month of the year in Dmanisi is July, with an average temperature of
-18°C. In January, the average temperature drops to around \-4 °C.
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1561 -->
 
-### What to see and do
+### 看到和能做什么？
 
 
-Dmanisi and lower Kartli are ideal destinations for those interested in everything
-from bird watching to archeological, architectural and botanical tours.
+德马尼西和克维莫-卡特利对一切感兴趣的人来说是理想的目的地从观鸟到考古、建筑和废墟仍然存在。
 
-Dmanisi was once the largest fortified fortress\-town of Lower Kartli and referred
-to as the ‘town of kings'. A medieval tower and citadel, a tunnel, cellars, baths,
-halls, jails, and ruins of households and other buildings still exist.
+德马尼西曾经是下卡尔特利最大的要塞要塞作为“国王之城”。中世纪的塔和城堡，隧道，地窖，浴室，大厅、监狱、住宅和其他建筑卻仍然存在。
 
-Birtvisi Fortress is located in the Algeti gorge of Tetritskaro district, incredibly
-located between inaccessible cliffs, surrounded by walls covering a total area of
-1 km2.
+Birtvisi城堡位于泰特里茨卡罗地区的Algeti峡谷里，位于难以接近的悬崖之间。周围有一平方公里的城墙。
+Khuluti城堡是格鲁吉亚城堡建筑的杰出典范, 城堡的五个塔位于一个狭窄的河谷。
 
-The Khuluti Fortress is an excellent example of Georgian architecture, its five towers
-strategically located in a narrow river gorge.
+Bolnisi Sioni 大教堂是仅存的三个过道的教堂。它是用雕刻的石头建造的，寺庙用不同寻常的绿色绿松石装饰。
 
-The Bolnisi Sioni church is the only remaining three aisled basilica in Georgia.
-It was constructed using carved stones, with its primary layer being different from
-the layer of bricks and river stones. The temple is decorated with unusual green\-turquoise
-hued stones.
+位于Pitareti修道院内的上帝之母的教堂是最重要的格鲁吉亚建筑的例子。它包含了各种各样的高质量的艺术作品，包括复杂的雕刻以及人类和动物的装饰描绘。
 
-The Church of the Mother of God, located within the Monastery of Pitareti is one
-of the most significant examples of Georgian architecture. It contains diverse pieces
-of high quality art work including intricate engravings and decorative depictions
-of humans and animals.
-
-For travellers seeking an outdoors experience, Algeti National Park in the Trialeti
-region is especially interesting. Mountainous with a great number of small rivers
-and ravines it is often referred to as Floral Junction, since it supports an incredible
-array of 1664 species of plants. The park is rich in fauna as well, from bears and
-wolves to more than 80 species of birds including the Imperial Eagle.
+为了旅客喜欢体验到户外的活动，位于Trialeti 地区Algeti 国家公园是特别有趣的。多山的国家公园有许多小河流和沟峡谷。它经常被称为植物结合处，因为它支持着1664种植。该公园也有丰富的动物，从熊和狼到80多种鸟类，包括帝王鹰。
 
 </div>
 
 </div>
+

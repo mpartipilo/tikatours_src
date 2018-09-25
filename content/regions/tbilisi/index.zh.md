@@ -1,13 +1,13 @@
----
+﻿---
 language: zh
 url: regions/tbilisi
-heading: Tbilisi
-title: Tbilisi | Tika Tours
+heading: 第比利斯
+title: 第比利斯 | Tika Tours
 country_id: 1
 imggrp_id: 20
 gallery_id: 20
 template: regions
-name: Tbilisi
+name: 第比利斯
 ---
 <div class="row content-row"><!-- 1160 (1)-->
 
@@ -16,22 +16,15 @@ name: Tbilisi
 <div class="row content-row"><!-- 1161 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1548 -->
 
-Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree\-lined
-boulevards, charming lanes, towering churches and pastel\-painted houses, Tbilisi
-is unexpectedly lovely.
+被群山环绕，市内有一条库拉河,把第比利斯市区切成两半，林荫大道, 迷人的小路，高耸的教堂，粉彩色的房屋，第比利斯是可爱与出乎意料。
 
-Like a lovely lost kingdom, Georgia's capital city lies deep in the country's heartland,
-watched over by ancient towers and churches. The central city unfurls along Rustaveli
-Avenue, the intriguingly eclectic architecture reflecting Georgia's dynamic history.
+就像一个美丽的失落的王国，格鲁吉亚的首都位于国家的中心地带，被古老的塔楼和教堂所监视。这个中心城市沿着鲁斯塔维里大道展开，这是一个兼收并蓄的建筑风格，反映了格鲁吉亚的动态历史。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1549 -->
 
-Broad and leafy streets, grand neo classical buildings and space\-age modern designs
-sit alongside ancient churches, mosques, synagogues and a teasing maze of twisting,
-balconied side streets. Here and there, honeysuckle blossom and mulberry trees give
-shade to surprising courtyards.
+宽阔而叶茂盛的的街道，新古典和太空时代式建筑坐落在古老的教堂，清真寺，犹太教堂和有阳台的小巷。到处忍冬花和桑树给令人惊讶的庭院以荫凉。
 
 </div>
 
@@ -49,48 +42,28 @@ shade to surprising courtyards.
 <div class="row content-row"><!-- 1163 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1551 -->
 
-### History
+###历史
 
 
-Founded in the 5th century, the city has always attracted people from around the
-world, illustrating Georgia's ancient role as a merging point of cultures along
-the Silk Road. Today, most trips to Georgia start in Tbilisi, often striking travellers
-as both reassuringly familiar and genuinely exotic. The name Tbilisi derives from
-the Old Georgian word "Tpili", meaning warm and was given to the city because of
-the area's numerous sulphuric hot springs.
+这座城市建于公元5世纪，一直吸引着来自世界各地的游客。 这个说明格鲁吉亚作为丝绸之路文化融合点的古老角色。今天大多数前往格鲁吉亚的旅行都是在第比利斯开始.第比利斯就源自于格鲁吉亚语Tbili一词，是温暖的意思。这个名字是给这个城市的因为这个地区有大量的硫磺温泉。
 
-### Geography and climate
+###地理和气候
 
 
-Located in East Georgia, this city of approximately 1.5 million people sits within
-a large basin surrounded by hills. The Mtkvari River slips purposefully through
-its streets.
+位于格鲁吉亚东部的第比利斯市拥有约150万口人，坐落在一个被群山环绕的大盆地内。
 
-The summer months in Tbilisi are long, dry and hot and the winters are relatively
-cold. July is the hottest month with an average temperature of 24 °C. January is
-the coldest month with an average temperature of approximately 1 °C and snow falls
-on average 15\-25 days of the year.
+第比利斯的夏季是漫长、干燥和炎热的，而冬天冬天比较冷。7月份是最热的一个月，平均气温为24摄氏度。一月是最冷的月份，平均温度大约为1摄氏度。一年的平均降雪时间为15-25天。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1552 -->
 
-### What to see and do
+### 看到和能做什么？
 
+坐新缆车上去17世纪的纳里卡拉城堡能俯瞰整个城市。探索古老城镇的蜘蛛式小巷，里面有华丽的有装饰的阳台的房子和拜占庭式的教堂或者在这座城市古老的浴室里的美丽的瓷砖环境中度过一个轻松的下午，享受温泉浴池。漫步在第比利斯的历史中心广场，那里有露天的咖啡馆和酒吧。在鲁斯塔维里大街的Kashveti教堂里呼吸着浓郁香气的焚香，参观格鲁吉亚国家美术馆和艺术装饰风格的建筑-Marjanishvili剧院。
 
-Take the new cable car up to the 17th\-century Narikala citadel for a bird's\-eye
-vantage over the city and a close\-up of the oversized Mother Georgia statue and
-her gaze of steely self\-assurance. Explore the spidery lanes of the old town with
-its ornate balconied houses and Byzantine churches or spend a relaxing afternoon
-in the beautiful tiled surroundings of one of the city's ancient bath houses, immersed
-in the hot springs that bubble up beneath the city.
-
-Stroll through Maidan Square, Tbilisi's historic center, with its outdoor cafés and
-bars. Breathe in the thick sweet smell of incense at Kashveti Church on Rustaveli
-Avenue. Visit the shiny trappings in the National Gallery of Georgia next door and
-indulge in a night of luxuriant dreams at the Marjanishvili Theatre, housed in a
-curvaceous Art Deco building.
 
 </div>
 
 </div>
+

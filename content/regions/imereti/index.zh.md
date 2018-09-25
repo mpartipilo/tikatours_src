@@ -1,13 +1,13 @@
 ---
 language: zh
 url: regions/imereti
-heading: Imereti
-title: Imereti | Tika Tours
+heading: "��÷�м�"
+title: "��÷�м� | Tika Tours"
 country_id: 1
 imggrp_id: 10
 gallery_id: 10
 template: regions
-name: Imereti
+name: "��÷�м�"
 ---
 <div class="row content-row"><!-- 1207 (1)-->
 
@@ -16,16 +16,13 @@ name: Imereti
 <div class="row content-row"><!-- 1208 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1604 -->
 
-The region of Imereti is situated on the beautiful Rioni River. The main city of
-the region is Kutaisi, the second biggest city in Georgia and Tbilisi's traditional
-rival.
+��÷�м�λ��������Rioni���ϡ���÷���ݵ���Ҫ���нп������������Ǹ�³���ǵڶ�����У�Ҳ�ǵڱ���˹�Ĵ�ͳ���֡�
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1605 -->
 
-Besides its rich cultural heritage, Imereti is known for its viticulture, dairy products
-and orchards.
+������ḻ���Ļ��Ų�����÷�м������������࣬����Ʒ�͹�԰��������
 
 </div>
 
@@ -43,66 +40,34 @@ and orchards.
 <div class="row content-row"><!-- 1210 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1607 -->
 
-### History
+###��ʷ
 
 
-The region's history dates back to ancient times. 3500 years ago the powerful and
-well\-known Colchis Kingdom was established in western Georgia with its unique culture,
-education, political and military system. Archaeological excavations have exposed
-many valuable objects including stunning gold jewellery, agricultural tools and
-weapons from this period which can be seen at a special archaeological museum in
-Vani.
+�õ�������ʷ����׷�ݵ��Ŵ���3500��ǰ��³��������������ǿ��������ÿƶ���˹����������ӵ�е��Ļ������������Σ������ƶȷǳ����ء����ŷ�����������������������˾�̾�Ļƽ����Ρ�ũ�ߺ��������ڷ����һ�����⿼�Ų���ݿ��Կ�����
 
-### Geography and climate
+### ���������
 
 
-This central western region of Georgia borders the Likhi Mountain Range to the east,
-Tskhenistskali River to the west, the mountainous region of Racha\-Lechkheumi to
-the north and Meskheti or Persati Mountains to the south. The forests and meadows
-in this region teem with wildlife.
+��³����������������÷�м�������Likhiɽ��������������Tskhenistskali�ӣ���������ǡ-�������ɽ�أ��ϱ���÷˹�ռ�ɽ�������������ɭ�ֺͲݵس�����Ұ����ֲ�
 
-The Imereti lowland is part of the Kolkheti Valley and enjoys a sub\-tropical sea
-climate. Winter here is mild, while the summer is hot. The average annual temperature
-is 11\-15 degrees Celsius. Upper Imereti has colder winters with more rain.
+��÷�м��͵��ǿƶ���˹�ӹȵ�һ���֣�ӵ�����ȴ�����������Ķ�����º͵ģ���������ȡ�ȫ��ƽ������11-15 ���϶����ҡ�����÷����Ķ�����䣬��ˮ����.
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1608 -->
 
-### What to see and do
+### ����������ʲô��
 
+��÷�м��������������³���ǵĽ��ý����ļ��硣�͸��������ú͸������޵�Ժ�����������ö�����¼�����Ϲ��̿�����֯�����Ų���¼����³���ǵ��οͲ�Ӧ�ô��������Щ�ط����͸����ٴ���ÿ����������Ŀ������ǣ��Թ��������ǿƶ�������Ĺ��硣�������޵�Ժ�Ǹ�³���ǵ������ڽ̣���������ѧ����ѧ����֮һ��
 
-Imeteti is home to two of the most unique masterpieces of Georgian architecture,
-the Bagrati Cathedral and Gelati Monastery Complex, both of which are protected
-by UNESCO and shouldn't be missed by visitors to Georgia. Bagrati Cathedral, now
-in partial ruins, stands watch over the attractive city of Kutaisi and has been
-the home of Colchis kings since antiquity. The Gelati Academy and Monastery was
-one of the biggest religious, educational, scientific and philosophical centers
-of Georgia.
+��÷�м�Ҳ�кܶ಻Ϊ��֪�ĵ�����ʷ�Ļ������ĵر��Խ�����Ubisa������Ի滭������Ҫ������֮һ������עĿ��Mgvimevi�޵�Ժ�� katskha Sveti�����������صĽ��ý���4000�׸ߵ�����֮�ϡ�����Ϊ�������ж��ļľ�ɮ�µļң�����ֻ��ͨ������¥�ݲ��ܵ�� 
+��÷�м���ɫ�ʰ�쵵Ĵ�ׯҲ��һ���������������ÿһ�ֶ�������ص��ص㣬������ҵ������͸�³���Ǹ��ء�
 
-There are also numerous lesser known but intriguing historic and cultural landmarks
-dotted throughout Imereti. The Ubisa Temple is one of the most important examples
-of Georgian monumental painting while the striking Mgvimevi Monastery appears sculpted
-from the side of a cliff by butter knives. At Katskhis Sveti there are two mysterious
-churches built above a 40m high cliff. Thought to have been the home of hermit monks
-who came from the Middle East, they can only be reached by a testing climb up hanging
-stairs,
+Borjomi-Kharagauli���ҹ�԰��һ���������ΰ����߱ؿ���Ŀ�ĵء����ҹ�԰��ŷ�������Ļ�Ұ���������˳���76000�������Ȼ���Լ��Ǹ�ɽ�͸�ɽ�ݵ飬���ϡ�ж�ֲ��ļ�԰��������ͽ�ӥ
 
-The colourful villages of Imereti also have a special charm, each with their unique
-characteristics to explore, from cool chambers of aging wine to the homes of pottery
-and Georgian cognac.
-
-The Borjomi\-Kharagauli National Park is a must see for outdoor enthusiasts. One
-of Europe's true wildernesses, it covers more than 76,000 hectares of native forest
-and sub\-alpine and alpine meadows, and is home to rare species of flora and fauna
-including lynx and golden eagle.
-
-Sataplia Reserve is an example of Georgia's karstic landscapes and the magic that
-happens when water meets limestone \- grottos and caverns with the most gorgeous
-display of stalactites, stalagmites and mineral rock curtains. Over 200 footprints
-from dinosaurs have been discovered here. When you go, be sure to check out the
-local museum.
+Sataplia��Ѩ����������Ҫ��ԭʼ��˹�����ܵ�ò��Ѩ�����Ҹ�������ʯ��ʯ��. �����Ѩ֮���Գ����������Թ��͵�����200�������㼣����Sataplia��Ѩ���ֲ���¼����һ�������㼣����������200��. ����ȥ��ʱ��һ��Ҫ�ι�һ�µ��ز���ݡ�
 
 </div>
 
 </div>
+

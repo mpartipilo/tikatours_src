@@ -1,13 +1,13 @@
 ---
 language: zh
 url: regions/guria
-heading: Guria
-title: Guria | Tika Tours
+heading: "������"
+title: "������ | Tika Tours"
 country_id: 1
 imggrp_id: 9
 gallery_id: 9
 template: regions
-name: Guria
+name: "������"
 ---
 <div class="row content-row"><!-- 1215 (1)-->
 
@@ -16,18 +16,13 @@ name: Guria
 <div class="row content-row"><!-- 1216 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1613 -->
 
-Guria is located in the western part of Georgia, bordered by the Black Sea. Famous
-for its music and polyphonic singing, Guria is a region rich in cultural traditions
-and natural beauty. The countryside is a fetching mosaic of perfumed citrus groves,
-tea plantations, orchards, grape vines and cornfields.
+�����ǵ���λ�ڸ�³���ǹ������������ںں��������������������ֺ͸�����ֶ���������һ���Ļ���ͳ�ḻ�ĵ�������Ȼ����������Ƿ���ĸ���԰����԰����԰�������� ������������˵��������㡣
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1614 -->
 
-Social relationships are strictly defined in Guria and they are known for their politeness
-and respect for the elderly. Gurians are also known for their building skills and
-handcrafts including leatherwork, saddle making and basket making.
+�����ǵ�����һ����Ϊ�����˵���ᡣ��������Ҳ�����ǵĽ������ɶ������ֹ���Ʒ����Ƥ����Ʒ���ư�������������
 
 </div>
 
@@ -45,67 +40,41 @@ handcrafts including leatherwork, saddle making and basket making.
 <div class="row content-row"><!-- 1218 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1616 -->
 
-### History
+### ��ʷ
 
 
-As with much of western Georgia, Guria was once part of the legendary Kingdom of
-the Colchis tribe. Roman coins from the 3rd\-4th centuries have been found here
-and the remains of ancient burial mounds have also been found in the dunes along
-the Black Sea. During the Middle Ages this part of Georgia was an independent principality
-governed by the Gurielis.
+�����³���������Ĵ󲿷ֵ���һ���������������Ǵ���ƶ���˹������һ���֡������﷢�ֹ����������͵Ĵ���������ʱ��Ӳ�ҡ��ںں�ɳ����Ҳ�����˹Ŵ�Ĺ����ż����������ͣ���³���ǵ���һ������һ���������˹����µĶ����Ĺ�����
 
-Gurian people were very good horse\-riders and participated in Buffalo Bill's Wild
-West Show. They traveled to Europe and America numerous times, starting their performances
-with Georgian songs and dances,
+�������˷ǳ��ó��������ǲμ���Ұţ�ȶ�������ı��ݡ����Ǻö��ǰ��ŷ�޺���������ʼ���ǵı����ø�³���Ǹ������赸��
 
-### Geography and climate
+### ���������
 
+��������������÷�����޽�����������ķ�ĺ�-���ߺռ��ݣ��ϽӰ�������÷˹�ռ�ɽ�������ֺں����������ݵ��׸��а�����ǵ١�
 
-Guria is bordered by Samegrelo to the north\-west, Imereti to the north, Samtskhe\-
-Javakheti to the east, Adjara and the Meskheti Mountain range to the south, and
-the Black Sea to the west. It's capital is the town of Ozurgeti.
+�����Ƕ����͵صĴ󲿷ֵ�������ʪ�غ�����ɭ�ְ������˵Ŀƶ���˹���ҹ�԰. ɽë�, ��������ɼ��ï�ܵ�ɭ�ֺ�����ɽ����
 
-Much of the eastern lowlands of Guria are awash in wetlands and swamp forests including
-the enchanting Kolkheti National Park. Thick beech, pine and fir forests cloak the
-mountains.
-
-Winter in Guria is mild, while the summer is hot. This region is also characterised
-by high winds.
+�����ǵĶ������º͵ģ������������ȵġ��������������ص��Ǵ�硣
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1617 -->
 
-### What to see and do
+### ����������ʲô��
+
+̽�������Ĺ����������һ�ּ򵥵���Ȥ�����ܹ�����ũ��Ķ�������-Сľ��ȸ�������ɫ����ɫ�ķ羰�����������Ϲ�����������̫��
+
+�Ŀƶ���˹���ҹ�԰��������˹���׺��������ο���Ϊ���д��������ࡣ��԰���Ѿ������˳���190�����ְ������������ɣ��ٺ�ѥ��
+
+Niko �Ͱ�����ǵٲ����صĲ����Ҳ��ֵ��һȥ. ����ݰ�����ʯ��ʱ������ͭʱ���ĸ����ղ�Ʒ���ӿƶ���˹���ͳ��������Լ����ʣ� ���ĺͷ��������Ʒ���ۺϳ���⡣
 
 
-It is hard to beat the simple pleasure of exploring the pretty Gurian countryside.
-Discover the unique charms of the Gurian villages, their little wooden houses nestle
-into the gold and green landscape, corn kernels and pumpkins outside drying in the
-sun.
+������ʷ��ʤ����Gurieli���ú͹��Khoreti�� Gaguri�˹���Ѩ��Bukistsikhe�Ǳ���Goraberejouli�Ǳ��ͽ���,Erketi���ã�Udabno ��Shemokmedi�޵�Ժ-�õ��������Ļ���������֮һ��
 
-Lake Paliastomi, in Kolkheti National Park is of great interest to visitors thanks
-to its large bird population. More than 190 species have been sighted in the park
-including rare pelicans, storks and booted eagles.
+Ϊ�ο�Ѱ��һ�����ɵط��������к��ܻ�ӭ�Ľ����ȼٴ塣�ر���Nabeglavi������ˮ�ø�ʢ�����ں�̲�ں������׻�����ʤ������΢���Ե�ɳ̲������÷˹�ռ�ɽ����Сũ��аͿ˺������Ǹ�³������õ�ɽ������ʤ��֮һ������2000�׵İͿ˺����޾��ж��ص�ɽ������������
 
-Local museums such as the Niko and Ozurgeti Museums are also well worth a visit.
-They contain diverse collections from the Neolithic period and Bronze Ages, from
-Colchian axes and hoes to currency and a comprehensive library of Georgian, Russian,
-French books and writings.
 
-Other historic places of interest include the Gurieli Church and Palace, the artificial
-caves of Khoreti and Gaguri, Bukistsikhe Castle, Goraberejouli Castle and Church,
-Upper Erketi Church, and the Udabno Monastery Complex and the Shemokmedi Monastery,
-one of the biggest cultural\-educational centers in the region.
-
-For tourists seeking a place to relax and unwind, Guria has a number of popular health
-resorts, perfect for a rejuvenating break away. Nabeghlavi resort is particularly
-known for its mineral waters while Ureki is a health resort on the beaches of the
-Black Sea, famous for its magnetic sand beaches. One of the best mountain resorts
-in Georgia is in Guria, in the village of Bakhmaro on the Meskheti Mountain range.
-Located 2,000 meters above sea level, it's known for its unique climate of sea and
-mountain air.
 
 </div>
 
 </div>
+
