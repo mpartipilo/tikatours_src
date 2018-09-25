@@ -21,25 +21,30 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `general_pages`,
-        path: `${__dirname}/content`
+        path: `${__dirname}/content/content`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tour`,
-        path: `${__dirname}/tour`
+        path: `${__dirname}/content/tour`
       }
     },
-    /*
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog/blog`
+        name: `tour`,
+        path: `${__dirname}/content/blog`
       }
     },
-    */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tour`,
+        path: `${__dirname}/content/regions`
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",

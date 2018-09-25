@@ -3,8 +3,8 @@ language: zh
 url: blog/georgia/post-4
 template: blog_post
 post_id: 4
-title: 
-name: Georgia's giant dumplings: A recipe
+title: "Georgia's giant dumplings: A recipe"
+name: "Georgia's giant dumplings: A recipe"
 category_id: 1
 ---
 Run to your local supermarket.  The ingredients we need for this Georgian treat are
