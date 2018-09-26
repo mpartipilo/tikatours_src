@@ -3,6 +3,7 @@ language: zh
 url: multi-country-tours/asia/siem-reap
 template: tour
 heading: 暹粒市
+name: Cambodia, Siem Reap
 title: "暹粒市 | Tika Tours"
 tour_id: 32
 short_descr: 

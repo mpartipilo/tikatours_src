@@ -3,6 +3,7 @@ language: en
 url: multi-country-tours/europe/germany-austria
 template: tour
 heading: Christmas season in Germany and Austria
+name: Christmas season in Germany and Austria
 title: ""
 tour_id: 33
 short_descr: Get settled into the Christmas season in a special way with 9 days and 8 nights in Germany and Austria. Get the chance to have dinner with the Prince and Princess from Schaumburg-Lippe in Hannover as
@@ -14,6 +15,7 @@ country_id: 0
 main_category_id: 2
 sub_category_id: 22
 ---
+
 Get settled into the Christmas season in a special way with 9 days and 8 nights in
 Germany and Austria. Get the chance to have dinner with the Prince and Princess
 from Schaumburg\-Lippe in Hannover as well as a tour of their palace! Then survey

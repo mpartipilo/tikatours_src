@@ -3,6 +3,7 @@ language: en
 url: multi-country-tours/asia/siem-reap
 template: tour
 heading: Siem Reap
+name: Cambodia, Siem Reap
 title: "Siem Reap | Tika Tours"
 tour_id: 32
 short_descr: 

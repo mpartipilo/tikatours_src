@@ -3,6 +3,7 @@ language: en
 url: multi-country-tours/asia/imperial-japan
 template: tour
 heading: Imperial Japan
+name: Imperial Japan
 title: "Imperial Japan | Tika Tours"
 tour_id: 30
 short_descr: Take 11 days and 10 nights out of your spring to come to the beautifully preserved Temples and Palaces from japans imperial past! Experience the beauty and care in the workmanship at practically every
@@ -14,6 +15,7 @@ country_id: 16
 main_category_id: 2
 sub_category_id: 20
 ---
+
 Take 11 days and 10 nights out of your spring to come to the beautifully preserved
 Temples and Palaces from japans imperial past! Experience the beauty and care in
 the workmanship at practically every turn. Be ready to fall in love with Japanese

@@ -2,8 +2,9 @@
 language: en
 url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
 template: tour
-heading: 
-title: ""
+heading: Grand Caucasus
+name: Grand Caucasus
+title: "Grand Caucasus | Tika tours"
 tour_id: 27
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning strip of snow-capped mountains wedged between Black and Caspian seas. The Caucasus region holds a wealth of views
 price_from: 0
@@ -16,6 +17,7 @@ main_category_id: 2
 sub_category_id: 16
 imggrp_id: 26
 ---
+
 Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning
 strip of snow\-capped mountains wedged between Black and Caspian seas. The Caucasus
 region holds a wealth of views and warm hospitality from its inhabitants. Experience
