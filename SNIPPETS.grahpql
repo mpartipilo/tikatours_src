@@ -1,0 +1,70 @@
+  tours: allMarkdownRemark(
+    filter: {  
+      frontmatter: { 
+        template: { 
+          eq: "tour" 
+        },
+        name: {
+          ne: null
+        }
+      }
+    }) { 
+    edges {
+      node {
+        id
+        frontmatter {
+          name
+          tour_id
+          language
+        }
+      }
+    }
+  }
+
+  tourSubCategories: allMarkdownRemark(
+    filter: {  
+      frontmatter: { 
+        template: { 
+          eq: "toursubcategory" 
+        }
+      }
+    }) { 
+    edges {
+      node {
+        id
+        frontmatter {
+          language
+          url
+          heading
+          title
+          imggrp_id
+          country_id
+          main_category_id
+          sub_category_id
+        }
+      }
+    }
+  }
+
+  tourCategories: allMarkdownRemark(
+    filter: {  
+      frontmatter: { 
+        template: { 
+          eq: "tourcategory" 
+        }
+      }
+    }) { 
+    edges {
+      node {
+        id
+        frontmatter {
+          language
+          url
+          heading
+          title
+          country_id
+          main_category_id
+        }
+      }
+    }
+  }
