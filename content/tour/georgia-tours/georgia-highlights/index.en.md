@@ -2,8 +2,9 @@
 language: en
 url: georgia-tours/georgia-highlights
 template: tour
-heading: 
-title: ""
+heading: Georgia Highlights
+name: Georgia Highlights
+title: "Georgia Highlights | Tika Tours"
 tour_id: 35
 short_descr: A glimpse into the amazing contrast of Georgian nature and warm hospitality of the Georgian people can be found on the 8-day journey. Begin in cosmopolitan Tbilisi, continue on a scenic and
 price_from: 0
@@ -14,6 +15,7 @@ country_id: 1
 main_category_id: 1
 sub_category_id: 0
 ---
+
 A glimpse into the amazing contrast of Georgian nature and warm hospitality of the
 Georgian people can be found on the 8\-day journey. Begin in cosmopolitan Tbilisi,
 continue on a scenic and exhilarating journey through the uninterrupted panorama
@@ -22,9 +24,7 @@ amazes people from all over the world. Finish in Signagi \- one of the world\`s
 most romantic towns perched high on a hill with stunning vistas of Alazany valley
 (known as cradle of wine).
 
-Tour Dates 
------------
-
+## Tour Dates
 
 July 28 \- Aug 4, 2018
 Oct 06 \- 13, 2018

@@ -3,6 +3,7 @@ language: zh
 url: georgia-tours/group-tours/the-tales-of-svaneti
 template: tour
 heading: The Tales of Svaneti
+name: The Tales of Svaneti
 title: ""
 tour_id: 40
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped craggy peaks, wine and dancing.
@@ -15,6 +16,7 @@ main_category_id: 1
 sub_category_id: 32
 imggrp_id: 30
 ---
+
 Welcome to Svaneti, an extraordinarily beautiful land of towers, snow\-topped craggy
 peaks, wine and dancing. It is a place where time has not merely stopped, but rather
 simply never existed. The entire region is a UNESCO heritage site, so remote that

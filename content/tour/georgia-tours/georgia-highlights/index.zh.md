@@ -2,8 +2,9 @@
 language: zh
 url: georgia-tours/georgia-highlights
 template: tour
-heading: 
-title: ""
+heading: Georgia Highlights
+name: Georgia Highlights
+title: "Georgia Highlights | Tika Tours"
 tour_id: 35
 short_descr: 
 price_from: 0
@@ -14,13 +15,14 @@ country_id: 1
 main_category_id: 1
 sub_category_id: 0
 ---
-在豪华旅行车中依靠不超过14位客人的亲密团体。
 
-**旅游日期 \- 最多14位客人**
+在豪华旅行车中依靠不超过 14 位客人的亲密团体。
 
-*   3月19日至25日
-*   4月20日至26日
-*   7月19日至35日
-*   8月25日至30日
-*   9月5日至10日
-*   10月10日至15日
+**旅游日期 \- 最多 14 位客人**
+
+- 3 月 19 日至 25 日
+- 4 月 20 日至 26 日
+- 7 月 19 日至 35 日
+- 8 月 25 日至 30 日
+- 9 月 5 日至 10 日
+- 10 月 10 日至 15 日

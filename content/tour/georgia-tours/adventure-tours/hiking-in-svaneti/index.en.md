@@ -3,6 +3,7 @@ language: en
 url: georgia-tours/adventure-tours/hiking-in-svaneti
 template: tour
 heading: Hiking in Svaneti
+name: Hiking in Svaneti
 title: "Georgia Tours: Hiking in Svaneti | Tika Tours"
 tour_id: 5
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped craggy peaks, wine and dancing.
@@ -16,6 +17,7 @@ main_category_id: 1
 sub_category_id: 8
 imggrp_id: 30
 ---
+
 Welcome to Svaneti, an extraordinarily beautiful land of towers, snow\-topped craggy
 peaks, wine and dancing. It is a place where time has not merely stopped, but rather
 simply never existed. The entire region is a UNESCO heritage site, so remote that

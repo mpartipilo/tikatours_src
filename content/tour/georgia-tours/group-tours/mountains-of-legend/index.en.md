@@ -3,6 +3,7 @@ language: en
 url: georgia-tours/group-tours/mountains-of-legend
 template: tour
 heading: Mountains of Legend
+name: Mountains of Legend
 title: ""
 tour_id: 38
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.
@@ -15,6 +16,7 @@ main_category_id: 1
 sub_category_id: 32
 imggrp_id: 24
 ---
+
 Georgia \- the undiscovered travel destination with immensely diverse array of landscapes
 offers one of the world\`s most jaw dropping panoramic views on the planet. Begin
 in cosmopolitan capital of Georgia – Tbilisi, continue on a scenic and exhilarating

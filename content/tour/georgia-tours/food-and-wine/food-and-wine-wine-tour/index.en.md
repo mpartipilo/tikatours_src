@@ -3,6 +3,7 @@ language: en
 url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 template: tour
 heading: In a State of Wine Mind
+name: Wine Tour
 title: ""
 tour_id: 28
 short_descr: Located at the convergence of Western Asia and Eastern Europe in the South Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has recently shown up on the radars of wine lovers
@@ -15,6 +16,7 @@ main_category_id: 1
 sub_category_id: 10
 imggrp_id: 27
 ---
+
 You have already sampled Italian, French and Spanish wines, but where next on your
 wine journey? And, did you ask yourself about the origins of wine? Venture off the
 beaten wine path to the crossroads of Europe and Asia.
