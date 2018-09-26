@@ -1,3 +1,4 @@
+/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
 import { Route, Redirect } from "react-router-dom"
@@ -8,13 +9,17 @@ import PageWrapper from "../../components/page-wrapper"
 class ContactPage extends React.Component {
   constructor(props) {
     super(props)
-    const { location, pathContext } = props
+    const { location, pathContext, data } = props
     const { strings } = contentData[pathContext.locale]
+    const { edges } = data.allMarkdownRemark
 
     this.state = {
       location,
       pathContext,
       strings,
+      options: edges
+        .map(o => o.node.frontmatter)
+        .filter(o => o.language == pathContext.locale),
       error: {
         tname: "",
         tname_class: "",
@@ -186,8 +191,11 @@ class ContactPage extends React.Component {
                               defaultValue={tour_code}
                             >
                               <option value="">Please select tour name</option>
-                              <option value="1">Tour 1</option>
-                              <option value="2">Tour 2</option>
+                              {this.state.options.map(o => (
+                                <option key={o.tour_id} value={o.tour_id}>
+                                  {o.name}
+                                </option>
+                              ))}
                             </select>
                           )}
                         />
@@ -321,7 +329,27 @@ class ContactPage extends React.Component {
 
 ContactPage.propTypes = {
   location: PropTypes.object,
-  pathContext: PropTypes.object.isRequired
+  pathContext: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default ContactPage
+
+export const query = graphql`
+  query BookingsQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "tour" }, name: { ne: null } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            tour_id
+            language
+          }
+        }
+      }
+    }
+  }
+`

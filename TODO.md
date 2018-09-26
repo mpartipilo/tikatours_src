@@ -2,6 +2,7 @@
 
 ## Pending
 
+- Finish bookings page
 - Show map when country_id is available
 - Recaptcha in contact/bookings form
 - Bookings form
