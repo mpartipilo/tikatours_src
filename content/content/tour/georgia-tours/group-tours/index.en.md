@@ -2,7 +2,7 @@
 language: en
 url: georgia-tours/group-tours
 heading: Group Tours
-title: 
+title: Group Tours | Tika Tours
 imggrp_id: 5
 template: toursubcategory
 main_category_id: 1

@@ -1,8 +1,8 @@
----
+﻿---
 language: zh
 url: georgia-tours/food-and-wine
-heading: 食物和酒
-title: 食物和酒| Tika Tours
+heading: 美食美酒
+title: 美食美酒| Tika Tours
 imggrp_id: 29
 template: toursubcategory
 main_category_id: 1
@@ -11,16 +11,15 @@ sub_category_id: 10
 <div class="row content-row"><!-- 1553 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2090 -->
 
-格鲁吉亚人民与食物和葡萄酒有着充满激情和根深蒂固的关系。 凭借其精湛的美食，令人兴奋的葡萄酒和无与伦比的热情好客，您一定不会感到饥饿 \- 或者在格鲁吉亚度假时口渴。
-参加Supra并享用当地特色美食，如无处不在的khachapuri（填馅扁面包），shashlik（烤肉串）和badrijani nigvzit（带胡桃酱的茄子）。
+格鲁吉亚人与他们的美味佳肴酒有充满激情和根深蒂固的关系。他们的美味佳肴，令人陶醉的美酒，无与伦比的热情好客，您在格鲁吉亚度假的时候肯定不会饿肚子 - 或口渴。参加以下格鲁吉亚传统宴席Supra。享用当地特产比如随处可见的khachapuri，烧烤（烤肉串）badrijani nigvzit核桃酱茄子卷.
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2091 -->
 
-在传统的Supra中，您不仅可以享受健康的饮食机会，而且还可以品尝到葡萄酒世界。 作为葡萄种植的发源地，佐治亚州拥有世界上最古老的酿酒传统，传承了8000年的秘密。
-几乎每个房子外面都有藤蔓覆盖的格子，葡萄等待压榨和发酵，以制作出色的有机葡萄酒。
+参加传统宴席supra的时候你不仅会享受健康的饮食机会而且还会正式进入葡萄酒的世界了。格鲁吉亚被公认为葡萄栽培的诞生地，是世界上最古老的葡萄酒生产国。有8000多年的酿酒历史. 几乎所有的房子外面都有一个葡萄覆盖的棚架，葡萄等待着被压着，创造有魅力的有机葡萄酒。
 
 </div>
 
 </div>
+
