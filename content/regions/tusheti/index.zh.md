@@ -1,13 +1,13 @@
 ---
 language: zh
 url: regions/tusheti
-heading: Tusheti
-title: Tusheti | Tika Tours
+heading: 特塞季
+title: 特塞季 | Tika Tours
 country_id: 1
 imggrp_id: 21
 gallery_id: 21
 template: regions
-name: Tusheti
+name: 特塞季
 ---
 <div class="row content-row"><!-- 1180 (1)-->
 

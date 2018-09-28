@@ -1,13 +1,13 @@
 ---
 language: zh
 url: regions/mtskheta-mtianeti
-heading: ~{D74D:UK~~}-~{D7<>0"Dy<>~}
-title: Mtskheta-Mtianeti | Tika Tours
+heading: 姆茨赫塔-姆季阿涅季
+title: 姆茨赫塔-姆季阿涅季 | Tika Tours
 country_id: 1
 imggrp_id: 15
 gallery_id: 15
 template: regions
-name: Mtskheta-Mtianeti
+name: 姆茨赫塔-姆季阿涅季
 ---
 <div class="row content-row"><!-- 1497 (1)-->
 
@@ -16,13 +16,13 @@ name: Mtskheta-Mtianeti
 <div class="row content-row"><!-- 1498 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1997 -->
 
-~{D74D:UK~~}-~{D7<>0"Dy<>V]JG8qB3<*QGWnC@@v5D5XGxV.R;#,~} ~{>MOqR;8vMjC@5DSI;f;-!#K|VwR*JGR;8vE)R5Gx5+;9SP8qB3<*QG5DVwR*;,Q)J$5X9E5@@o!#~}
+姆茨赫塔-姆季阿涅季州是格鲁吉亚最美丽的地区之一， 就像一个完美的由绘画。它主要是一个农业区但还有格鲁吉亚的主要滑雪胜地古道里。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1998 -->
 
-~{D74D:UK~JPJG8C5XGx5DPPU~JW6<R2JG8qB3<*QG9E4z5DJW6<!#~}
+姆茨赫塔市是该地区的行政首都也是格鲁吉亚古代的首都。
 
 </div>
 
@@ -40,38 +40,37 @@ name: Mtskheta-Mtianeti
 <div class="row content-row"><!-- 1500 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2000 -->
 
-###~{@zJ7~}
+###历史
 
 
-~{7g>0Hg;-5DD74D:UK~JPJGHK@`Wn9E@O5D6(>S5cV.R;!#4S9+T*G0~}3~{J@<M5=9+T*~}5~{J@<M#,K|R;V1JG8qB3<*QG6+2?4s2?7V5XGx5DJW6<~}, ~{RT:s9z6<G(VAAK5Z~}~{1H@{K9!#H;6x#,D74D:UK~HTH;JGUb8v9z<R5D>+IqJW6<!#D74D:UK~V\N'5DVZ6`>_SPND;/RbRe5D<MDn1.993IAKA*:O9z=L?FNDWiV/5DJ@=gRE2z!#~}
+风景如画的姆茨赫塔市是人类最古老的定居点之一。从公元前3世纪到公元5世纪，它一直是格鲁吉亚东部大部分地区的首都, 以后国都迁至了第比利斯。然而，姆茨赫塔仍然是这个国家的精神首都。姆茨赫塔周围的众多具有文化意义的纪念碑构成了联合国教科文组织的世界遗产。
 
 
-### ~{5X@m:MFx:r~}
+### 地理和气候
 
 
-~{Ub8v5X@mIO2;M,5D5XGx4z1mWE8qB3<*QG5DR;F,8JC@5DMA5X!#K|QSIl~} ~{4S~}3500~{VA~}-5000~{CW8_5DQ)7e:M4s8_<SKw5D1y4(M(9}4sO?9H1_T5:MR~1N5D:~24#,~} ~{DO1_SPStSt4P4P5D:S9H:M5M5XF=T-!#~}
+这个地理上不同的地区代表着格鲁吉亚的一片甘美的土地。它延伸 从3500至-5000米高的雪峰和大高加索的冰川通过大峡谷边缘和隐蔽的湖泊， 南边有郁郁葱葱的河谷和低地平原。
 
 
-~{D74D:UK~JPN;SZ8C5XGxDO2?5DR;8vCTHK5D5X7=#,~} ~{TZ0"@-8qN,:S:M?b@-:S5D;c:O4&!#~}
+姆茨赫塔市位于该地区南部的一个迷人的地方， 在阿拉格维河和库拉河的汇合处。
 
-~{4S115=DO5DFx:r1d;/:\4s#,5+W\5D@4K56,LlTZUb8v5XGx:\@d#,SP:\6`Q)!#5M5X5DOD<>O`6TNBE/#,6x~}~{112?I=GxH+DjA9K,!#~}
+从北到南的气候变化很大，但总的来说冬天在这个地区很冷，有很多雪。低地的夏季相对温暖，而北部山区全年凉爽。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2001 -->
 
-###~{?45=:MD\WvJ2C4#?~}
+###看到和能做什么？
 
 
-~{D74D:UK~~}-~{D7<>0"Dy<>V]JGC0OUU_@mOk5DD?5D5X!#8C5XGxWnJ\;6S-5D;n6/0|@(;,OhI!#,;,Q)BCPP#,Q)5X9[9b#,M=2=BCPP#,~} ~{IMDq#,FoBm#,I=5XWTPP35#,F/Aw#,5vSc#,5GI=#,EJQR#,B6S*5H5H!#~}
+姆茨赫塔-姆季阿涅季州是冒险者理想的目的地。该地区最受欢迎的活动包括滑翔伞，滑雪旅行，雪地观光，徒步旅行， 赏鸟，骑马，山地自行车，漂流，钓鱼，登山，攀岩，露营等等。
 
-~{9E5@@oJG8qB3<*QGVwR*5DQ)6H<Y4eR2JGWn:C5D;'MbSN@V3!S5SP~}50~{9+@o5D;,Q)5@!#6H<Y4eLa9)KDVV;,Q)5@#:UO0-;,Q)#,4s;XW*#,3,>^4s#,KY=5;,Q)!#6H<Y4eS5SP4S~}~{3uQ'U_5=W(R5;,Q)U_PhR*5D5DR;GP!#;,Q)<>=Z4S~}12~{TB5=~}4~{TB!#5=~}Khada~{P!N]OmJ\R;6YC@N65D79#,TZSQ:C5D;6S-P]O"5DFx7U~}.
+古道里是格鲁吉亚主要的雪度假村也是最好的户外游乐场拥有50公里的滑雪道。度假村提供四种滑雪道：障碍滑雪，大回转，超巨大，速降滑雪。度假村拥有从初学者到专业滑雪者需要的的一切。滑雪季节从12月到4月。到Khada小屋享受一顿美味的饭，在友好的欢迎休息的气氛.
 
- ~{Ub8v5XGxJGUb8v9z<R5D>+IqVPPD#,R2JGA=8vWnN04s=LLC~}-~{IzC|V.VyVw=LWyLC:M<>M_@o5DKyTZ5X!#<>M_@o=LLC9BAcAc5D4#A"TZT64&5DI=M7IO#,8)n+U{8vD74D:UK~P!Ur!#9+T*~}4~{J@<MJ1#,J%DaE55=8qB3<*QG4+=L!#J%DaE5TZ<>M_@oOVTZ5D5XV7JzFpAKR;8vD>VFJ.WV<\~} ~{#(!0<>M_@o!1JGJ.WV<\5DRbK<#)!#~}
+ 这个地区是这个国家的精神中心，也是两个最伟大教堂-生命之柱主教座堂和季瓦里的所在地。季瓦里教堂孤零零的矗立在远处的山头上，俯瞰整个姆茨赫塔小镇。公元4世纪时，圣尼诺到格鲁吉亚传教。圣尼诺在季瓦里现在的地址竖起了一个木制十字架 （“季瓦里”是十字架的意思）。
 
-~{IzC|V.VyVw=LWyLCJG8qB3<*QG5D;J<R4s=LLC#,<88vJ@<MRT@4R;V1SCSZ8qB3<*QG>}Vw5D<SCa:MBqTa!#2;T64&#,JGR;LuOAU-5DJ/;RQRO?9HJG~}shio- mgvime~{P^5@T:5D84TS~}, ~{K|JGSI~}6~{J@<MPp@{QGIq88@444A"5DUb~}13~{N;Pp@{QGIq88@45DR;N;#,~} ~{=P~} Shio ~{#,~}Mgvimeli. ~{K{TZ:Z055D64Q(@oR~>SAK~}20~{Dj#,R;V1Fm5;Bz;3<$Gi5XOWImSZIO5[!#~}
-
-</div>
+生命之柱主教座堂是格鲁吉亚的皇家大教堂，几个世纪以来一直用于格鲁吉亚君主的加冕和埋葬。不远处，是一条狭窄的石灰岩峡谷是shio- mgvime修道院的复杂, 它是由6世纪叙利亚神父来创立的这13位叙利亚神父来的一位， 叫 Shio ，Mgvimeli. 他在黑暗的洞穴里隐居了20年，一直祈祷满怀激情地献身于上帝。
 
 </div>
 
+</div>
