@@ -1,8 +1,8 @@
 ---
 language: zh
 url: georgia-tours/group-tours
-heading: Group Tours
-title: Group Tours
+heading: 参团旅游
+title: 参团旅游
 imggrp_id: 5
 template: toursubcategory
 main_category_id: 1
