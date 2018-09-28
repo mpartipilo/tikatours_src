@@ -4,7 +4,7 @@ url: blog/georgia/post-4
 template: blog_post
 post_id: 4
 title: 格鲁吉亚的大饺子：食谱
-名称: 格鲁吉亚的大饺子：食谱
+name: 格鲁吉亚的大饺子：食谱
 category_id: 1
 ---
 跑到你当地的超市。我们需要的原料是：

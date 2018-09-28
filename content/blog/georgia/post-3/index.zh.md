@@ -4,7 +4,7 @@ url: blog/georgia/post-3
 template: blog_post
 post_id: 3
 title: 当旧世界遇到新世界
-名称: 当旧世界遇到新世界(一名”马拉尼” 餐馆的客人在博客上发表文章)
+name: 当旧世界遇到新世界(一名”马拉尼” 餐馆的客人在博客上发表文章)
 category_id: 1
 ---
 在Abanotubani(老第比利斯的一个地区，到处都是传统的硫磺浴)散步半个小时后，
