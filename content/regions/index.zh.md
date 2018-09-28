@@ -1,7 +1,7 @@
 ﻿---
 language: zh
 url: regions
-heading: "格鲁吉亚地区"
+heading: 格鲁吉亚地区
 title: "格鲁吉亚地区 | Tika Tours"
 country_id: 1
 template: regions
