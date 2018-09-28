@@ -1,8 +1,8 @@
----
+﻿---
 language: zh
-url: testimonials
+url: testimonials 
 heading: 我们的客人对我们的评价
-title: 褒奖 | Tika Tours
+title: 我们的客人对我们的评价 | Tika Tours
 ---
 <div class="row content-row"><!-- 1848 (0)-->
 
@@ -11,77 +11,43 @@ title: 褒奖 | Tika Tours
 <div class="row content-row"><!-- 1849 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2476 -->
 
-And Tika and George \- \- \- nothing can compare to your marvelous hospitality! Where
-can I start? Your many kindnesses during our trip to the Republic of Georgia brought
-an overwhelming feeling of appreciation to our hearts. You welcomed us like long\-not\-seen
-family members into your own country home and gave us a lovely experience to be
-long remembered \- \- \- and you sent us off with a farewell dinner as a lifetime
-experience to be cherished \- \- \- the company, the dinner, the singers, the setting
-\- \- \- incomparable. We are deeply grateful. I must tell you that we can not stop
-singing Georgia's praises \- \- \- and we are startled at the lack of perception
-of your marvelous country by so many of our friends and colleagues. If they only
-knew first hand! We are urging them to go and experience Georgia for themselves.
-With hearts full of appreciation for your kindnesses and your open arms,
+亲爱的帝卡和乔治...没有什么可比你们的热情招待！从哪里开始？在我们访问格鲁吉亚共和国期间你们的许多善意给我们的心带来了一种强烈的感激之情。你欢迎我们像久别的家人来到你自己的家乡，给了我们一段美好的回忆...你送我们去送别晚餐，作为一生的宝贵经验...晚餐，歌手，布景...无与伦比。我们深表感激。我必须告诉你我们继续赞颂格鲁吉亚...我们敦促我们朋友们和同事们自己去体验格鲁吉亚。我对你们充满感激。
 
-Barbara and Alden Smith
+芭芭拉和奥尔登史密斯
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2477 -->
 
-Dear Eka and George,
+亲爱的埃卡和乔治
 
-First, let me apologize for the lateness of this email. I want to express my very
-BIG THANK YOU!!!! Our trip in April visiting your beautiful country of Georgia was
-just a fabulous experience!!! You exemplify the warm hospitality of the people and
-country and I enjoyed every moment!! Each day there was something special to see/taste/experience
-and the true highlight was meeting you and spending time together on our last day.
-Thank you so much for the opportunity, the care, the attention, the view into yourculture…I
-will never forget it. Since my return, I've been showing my photos and talking about
-Georgia nonstop! I hope that I will be able to send you clients in the futurewho
-will share in the adventure of Georgia! Thank you very, very much!! I wish you all
-the very best!!
+首先让我道歉为这封邮件的迟到...我想表达非常感谢!!!!我们在四月访问你们美丽的格鲁吉亚，这真是一次美妙的经历!!!你是人民和国家热情好客的典范，我享受着每一刻!!每天都有特别的事情要看/品尝/体验，真正的亮点是在最后一天和你见面，一起共度时光。非常感谢你给我这个机会，照顾，关心，关注，对您文化的看法…我永远不会忘记.自从我回去之后，我一直在展示我的照片，不停地谈论格鲁吉亚!  我希望在未来我们推荐访问格鲁吉亚的客人也会喜欢在格鲁吉亚旅游!非常,非常感谢你们！祝你一切顺利！
 
-Beryl
-
-</div>
+贝丽尔</div>
 
 </div>
 
 <div class="row content-row"><!-- 1850 (3)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2478 -->
 
-Dear Tika, George and Eka
 
-we are in flight from Tbilisi to Barcelona we have a 4.40 hour flight and we will
-be home. to rest, relax, exercise and a little lenten behaviour valeria and i have
-found a new set of unique people we are pleased and honored to call our friends.
-you are our guests when you come to the Philippines we have found a unique country
-with so much content of all sorts from people, hospitality, history, food, wine,
-dance and beauty both internal and external thank you to all of you would be so
-lacking that I dare not use the words…the only correct word is revenge...We will
-make you gain weight in manila…again, our dear friends, thank you We will see you
-soon and hopefully we can do something together
 
+亲爱的帝卡，乔治和埃卡
+
+我们正在从第比利斯飞往巴塞罗那，我们有4.40小时的飞行，就回家。休息、放松...瓦莱里娅和我发现了一群独特之人民，我们很高兴也很荣幸地叫你们我们的朋友。当你来菲律宾的时候，你是我们的客人. 我们发现了一个独特的国家，独特之人民、好客、历史、食物、美酒、舞蹈-美丽的国家内在的和外在的都是。谢谢你们所有的人都... 欢迎到马尼拉。再一次， 感谢你们所有的人。我们亲爱的朋友们，谢谢你们，我们很快就能见到你们，我希望我们能一起做些好事.
 mabuhay.....
 
-Endika and Valeria
-
+Endika ，瓦莱里娅
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2479 -->
 
-Tika \- I just wanted to drop a quick note to say "thank you" for the lovely time
-that was planned for me while I visited Georgia last week. Every aspect of my visit
-was wonderful \- from the sites, fine food, and perfect guiding.I also enjoyed my
-visit to neighboring Armenia, where everything was also nicely done.I look forward
-to another visit in the near future \- perhaps after the new Kempinski opens in
-Tbilisi \- which I will intend to supplement with a visit to Azerbaijan.Until then,
-best wishes and thanks again for the hospitable welcome.
+蒂卡 -我只是想简单地说一下“谢谢”为了上周我访问格鲁吉亚时安排的美好时光。我这次访问的每一个方面都很精彩的—从名胜古迹，美食，以及完美的指导。我也很喜欢访问邻国亚美尼亚，那里也是都做得很好。我期待着再次访问格鲁吉亚-可能在第比利斯开业新的凯宾斯基饭店之后，那时我打算访问阿塞拜疆。在此之前，祝您一切顺利，再次感谢您的热情款待。
 
-Best Regards\-
 
-Brian Brown
+致敬，
+
+布莱恩布朗
 
 </div>
 
@@ -90,50 +56,19 @@ Brian Brown
 <div class="row content-row"><!-- 1851 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2480 -->
 
-Thank you so much for the invitation to visit explore a new destination for us; GEORGIA!
-What a lovely country. There was so much to see and experience. We loved Merab for
-his patience and his touring expertise on the history, culture, sights and economy
-of his homeland. The Marriott was spacious, comfortable and they have the most luxurious
-sheets. The staff was very accommodating. The Caucasus mountain trip was an adventure!
-The Rooms hotel is very fun. We loved the library, the great lobby, the bar and
-music, the antique rugs, the interesting furniture, the meals and the accommodations
-were very fine. The view is glorious! and to meet the “Tica” family on their personal
-turf was very special! What a fabulous day walking the olive orchard, making Georgian
-Snickers and dumplings. The feast was beautiful, plentiful and delicious! Thank
-you for the Georgian Svanidze Wine! We shared it with family and friends for Easter.
-It was so nice to meet George and Eka and dine at their wonderful restaurant and
-at their home. What a great venue you planned for us.Thanks for all your hard work
-in planning a very fine and interesting itinerary for us.
+非常感谢您邀请我们参观我们的新目的地。格鲁吉亚!很可爱的国家！有那么多的东西要看和经验。我们热爱Merab的耐心和他在历史、文化， 景观和经济方面的巡回经验. 万豪酒店宽敞舒适，拥有最豪华的床单, 所有的工作人员都非常的友善，乐于助人. 高加索山之旅有一次冒险的经历! 客房酒店很好玩. 我们喜欢图书馆，大厅，酒吧，音乐，古董地毯，有趣的家具，用餐和住宿都很好。山区景色非常壮丽的! 对我，在他们个人地盘上见面"帝卡"家庭成员的那一天是非常特别的！多么美好的一天漫步在橄榄园,使格鲁吉亚士力架和饺子. 盛宴是美丽的，丰富的，美味的！感谢您的格鲁吉亚斯瓦尼泽葡萄酒! 我们和家人和朋友一起分享了. 很高兴认识乔治和埃卡,在他们家的餐馆还有他们的家里吃了一个美妙的晚餐.感谢您他们给我们提供了一个非常灵活，非常好的、有趣的旅游计划. 
 
-Until next time!
-
-Sincerely,
+致敬,
 
 bo
-
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2481 -->
 
-Hi Tika, I would like to thank you for the perfect and professional organization
-of my trip.Georgia is a marvelous country. I was deeply impressed by its beauty,
-especially the stunning variety of landscapes and its richness of tradition. Georgia
-has a great potential as a holiday destination for Europeans, especially for a target
-group interested in mountains and outdoor activities (hiking & biking), maybe in
-combination with a stay at the Black Sea. At present Georgia is rather an insider
-tipp and thus hardly known as a holiday destination in Europe. The country needs
-to be promoted via important tourism fairs throughout Europe and cooperations with
-tour operators. However, I will share my positive experience with your country and
-with your agency with people in the tourism industry and by doing so I hope to contribute
-to its promotion. And last but not least I would like you to extend my sincere thanks
-to Levan. He is a fantastic guide with a broad knowledge of your country's history
-and tradition. He does his job very professionally, conscientiously and with a lot
-of passion and dedication. I appreciated his company very much!I thank you also
-for the warm welcome and the delicious lunch at your house! A very special treat
-I shall never forget. It was a great pity I couldn't meet you personally.I wish
-you all the best and hope to be in contact with you soon again.
+帝卡你好, 我想感谢你们为了完美和专业的旅程计划. 格鲁吉亚是一个非常奇妙的国家! 我对它的美丽，特别是令人惊叹的各种风景和丰富的传统印象深刻.. . 作为欧洲人度假的目的地，格鲁吉亚有很大的潜力, 特别是对于一个对山地和户外活动感兴趣的目标群体(远足和骑自行车),也许和在黑海的逗留相结合.格鲁吉亚需要通过欧洲的重要旅游博览会来推广, 与旅行社合作. 然而, 我将与旅游行业的人们分享我的积极经验, 我希望为它的推广做出贡献. 并且最后但并非不重要的是想请你向levan致以诚挚的谢意. 他是一个非常捧的向导，对你们国家的历史和传统有着广泛的了解. 他是一个对工作非常专业,认真,热情和奉献精神地人. 我非常感激他! 谢谢你们的热情欢迎以及你们家的美味午餐. 我很享受我们在一起的时光并且我永远不会忘记的. 这真遗憾我不能亲自见到你, 祝你一切顺利, 我希望能尽快与你取得联系.
 
-Angelo
+安吉洛
+
 
 </div>
 
@@ -142,40 +77,28 @@ Angelo
 <div class="row content-row"><!-- 1852 (5)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2482 -->
 
-Dear Tika,
 
-Next time I hope to meet you ...unexpected surprise for a traveller like us ..who
-have been to almost 70 countries ...we know how to travel....trust me.
-What your guys did for us was amazing … no words to thank you ...yes there is a word
-.....you Tika and friends are most welcome to Abu Dhabi at anytime...Eka is a lovely
-person that I really would like to meet her again with George. Bela is an amazing
-cook …we are looking forward to try the Kachapuri at our place...I will check if
-Georgia send the Cheese to Dubai...I will contact some Georgia people living there.
-David is amazing friend Goderzi is top !!! All kind and professionals. Tika if we
-have had an amazing time in Georgia be assured that was with the help of my colleagues
-from Tika......Amazing....Thanksssssss. We have just arrived safe at Baku and already
-missing Georgia.
+亲爱的帝卡,
 
-Eduardo
+下次我希望有机会见面你... 对像我们这样的旅行者来说，意想不到的惊喜... 我们已经去过将近70个国家... 我们知道如何旅行... 相信我..
+ 你们为我们所做的是令人惊奇的... 我没有话要感谢你.. 是的，有一个词...帝卡, 朋友们，随时欢迎来到阿布扎比... 埃卡是一个可爱的人,我真的很想和她跟乔治再次见面... Bela是个神奇的厨师... 我们想试着做一些哈恰普哩... 我要查一下格鲁吉亚是否把奶酪送到迪拜。我将联系住在那里的一些格鲁吉亚人. 大卫是惊人最好朋友，goderdzi是最重要的!!!他们都是善良和专业地人. 如果我们在格鲁吉亚过得很好，那就是帝卡的同事的帮助下... 令人惊异的...感谢..... 我们刚刚到巴库, 已经开始有点想念格鲁吉亚了.
+
+爱德华多
+
+
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2483 -->
 
-Dear Tika, George and Eka,
+亲爱的埃卡，乔治和帝卡, 
 
-A very big thank\-you for all that you did to make my visit to Georgia so interesting
-and so successful. Although it was just six days long we managed to cover 1200 km
-and fit in all that I hoped \- and more. Throughout I felt safe, well guided and
-the recipient of wonderful hospitality. None of that will surprise anyone who knows
-Georgia of course, but it is an important discovery to convey to readers. Also the
-availability of comfortable hotels to stay in.Now the hard, but enjoyable work of
-writing begins, and I may possibly trouble you with some questions. In the mean
-time renewed thanks for all your support and help.
+非常感谢你为我做的一切！我对格鲁吉亚的访问如此有趣和如此成功. 虽然只有六天的时间, 我们覆盖了1200公里的范围. 在整个过程中，我感到安全，受到良好的引导，我们受到了盛情的款待。这些都不会让那些了解格鲁吉亚的人感到惊讶，但这是向读者传达的一个重要发现。还有舒适的酒店可以入住。现在，艰难而又令人愉快的写作开始了，我可能会问你一些问题。在这段时间里，再次感谢你的支持和帮助.
 
-My best,
+良好祝愿，
+朱利安
 
-Julian
+
 
 </div>
 
@@ -184,34 +107,28 @@ Julian
 <div class="row content-row"><!-- 1853 (6)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2484 -->
 
-Dear David,
+亲爱的大卫, 
 
-We have arrived Bangkok. Flight delayed 1 hour but it is ok. First of all i have
-to say thank you to all of you and of course you are the most important one who
-i have to give big thank. Pls. Sent my regards to Tika and tell her thank you for
-nice wine which she gave to me.
+我们已经到达曼谷. 航班延误了1个小时但没关系.首先,我必须对你们所有人说声谢谢, 当然，你是最重要的人。我要感谢你！ 请把我的亲切的问候捎给帝卡，谢谢她给我的非常好的格鲁吉亚的葡萄酒.
 
-Best regards,
 
-Parichat
+Parichat 
+
+
+
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2485 -->
 
-How wonderful to receive your email, George, while we were in New York City for a
-family Christmas trip. It brought back so many happy memories of you, your sister,
-and your wonderful family and our most memorable trip to the Republic of Georgia
-\- \- \- what an experience for us. We are still singing Georgia's praises to all
-of our friends and business colleagues \- \- \-in fact, Travel & Leisure magazine
-named Georgia one of the best places to have visited in 2015 and one to visit in
-2016. Your country has truly gained a worldwide, marvelous reputation \- \- \- and
-it is most certainly based on the outstanding hospitality that Georgians offer their
-visitors.
+乔治,当我们在纽约市参加家庭圣诞之旅时,收到您的电子邮件真是太棒了. 它给我带来了对你，你的妹妹，你的家人，以及我们最难忘的格鲁吉亚和国之旅的许多美好的回忆... 对我们这真是个令人惊叹不已的经历。
+事实上, 旅游和休闲杂志称格鲁吉亚是2015年访问的最佳地点之一,以及2016年必须要访问的目的地. 你们的国家确实获得了世界范围内的良好声誉—当然，这是基于格鲁吉亚人对他们的客人所提供的热情好客的基础上的。
 
-Alden and I send all best wishes back to you all,
+我祝你们所有的人一切都好.
+芭芭拉
 
-Barbara
+
+
 
 </div>
 
@@ -220,38 +137,32 @@ Barbara
 <div class="row content-row"><!-- 1854 (7)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2486 -->
 
-Dear David and Tika\-
+亲爱的帝卡和大卫, 
 
-Thank you for a fantastic holiday in your beautiful country. We were truly amazed
-at your side of the world. It was everything you promised us. The tour guide was
-patent, knowledgeable and a beautiful person inside and out. The driver was seriously
-the sweetest driver we have ever had on any of our trips. He was safe, courteous
-and went above and beyond every chance he got. They were a great team and we believe
-truly highlighted the Georgian people well.
 
-The highlights of our trip include the first hotel, being able to wake up to the
-Tbilisi city view was spectacular. They had a great breakfast with a beautiful view.
-We loved Rooms hotel and the Mountain. Wow, was that impressive. We do not have
-that in the US. We loved seeing the Georgian dancing. And all the food. So much
-delicious food. The dinner with Katlino was also lovely. We really enjoyed a smaller
-gathering and understanding more of a local view.
+  谢谢你在美丽的国家里过了一个美妙的假期. 我们对你的世界感到非常惊奇。这是你向我们承诺的一切. 导游是专利的，知识渊博的, 美丽的人. 司机也是, 他是我们旅行中见过的最好的司机之一. 他是安全的，有礼貌的 。你们是一个伟大的团队，我们相信他们真正地突出了格鲁吉亚人民的好性格。
+我们此行的亮点包括第一家酒店，能够在第比利斯市景上醒来是很壮观的。旅馆的早餐很不错，景色很美。我们喜欢旅馆和山脉。哇，令人印象深刻啊！我们在美国没有这种的。我们喜欢看到格鲁吉亚的舞蹈和所有的食物。那么多好吃的美食。与Katlino的晚餐很好吃。我们真的很喜欢一个更小的聚会，更了解当地的观点。
+这些只是我们的一些特殊时刻。感谢你们做的一切。
 
-Those are just a few of the special moments we had. Thank you for everything.
+劳拉
 
-Laura
+
+
+
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2487 -->
 
-Levan, were you and Merab with the Casendino party? They just wrote to their agent
-that no trip could top this \- they had the BEST time!!! Just wanted to thank you
-all for your fantastic work!!
+Levan, 你和Merab  是不是参加了casendino聚会刚刚写信给他们的经纪人说，没有任何旅行可以做到这一点----他们度过了一段美好的时光”!!! 我想说: “我想要再次感谢你所做的出色的工作。
 
-All the best,
+万事如意，
 
-Nicole
+尼科尔
+
+
+
+</div>
 
 </div>
 
-</div>

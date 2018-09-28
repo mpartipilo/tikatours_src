@@ -1,8 +1,8 @@
----
+﻿---
 language: zh
 url: georgia-travel-guide
-heading: 佐治亚旅游指南
-title: 佐治亚旅游指南 | Tika Tours
+heading: 格鲁吉亚旅游指导手册
+title: 格鲁吉亚旅游指导手册 | Tika Tours
 imggrp_id: 25
 ---
 <div class="row content-row"><!-- 1221 (0)-->
@@ -25,3 +25,4 @@ imggrp_id: 25
 </div>
 
 </div>
+

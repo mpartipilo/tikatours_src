@@ -1,57 +1,23 @@
 ---
 language: zh
 url: getting-to-georgia
-heading: Getting to Georgia
-title: Getting to Georgia | Tika Tours
+heading: 去格鲁吉亚
+title: 去格鲁吉亚 | Tika Tours
 ---
 <div class="row content-row"><!-- 1014 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1371 -->
 
-Georgia has long formed a strategic cultural and geographic bridge connecting Europe
-and Asia. It's part of a network of trade routes known as the Silk Road that travellers
-and traders have been using for centuries \- Patara Dminisi for example, was once
-a major caravan stop and is the site of the oldest human remains found outside Africa.
-
-The Silk Road evokes a romantic era associated with caravans of camels tackling difficult
-journeys through wild landscapes. Nowadays, Georgia still offers myth\-laden journeys
-through a staggeringly beautiful land \- but getting to and around Georgia is much
-easier.
-
-There are entry points by road, sea and air. There are international airports at
-Tbilisi, Batumi and Kutaisi. There are direct flights to Tbilisi from many cities
-in Europe, the Middle East and Russia, and from a few Central Asian cities. A few
-international flights also go to Batumi and Kutaisi. Batumi serves Georgia's western
-regions while the airport at the capital, Tbilisi provides the main gateway to eastern
-Georgia. Georgian Airways is the country's privately owned flag carrier.
-
-Several Turkish bus companies connect Turkey to Georgia, running from Istanbul, Ankara,
-Trabzon and other Turkish cities to Batumi, Kutaisi and Tbilisi.
+格鲁吉亚长期以来形成了连接欧洲和亚洲的战略文化和地理桥梁。这是一个名为“丝绸之路”的贸易线路网络的一部分，而旅行者和商人已经使用了几个世纪。例如PataraDminisi曾经是一个主要的商队站，也是在非洲以外发现的最古老的人类遗骸的遗址。丝绸之路时代与骆驼的大篷车相关，通过野外景观解决艰难的旅程。如今，格鲁吉亚穿过一片美丽的土地仍然提供神话的旅程-访问格鲁吉亚及其周边地区更容易。格鲁吉亚有道路、海上和空中的入口点。第比利斯、巴统和库太西有国际机场。从许多欧洲的国家， 中东， 俄罗斯， 还有从中亚的几个国家到第比利斯有直飞航班。一些国际航班也会去巴统和库塔伊西。巴统服务于格鲁吉亚西部地区，而首都第比利斯则是通往东乔治亚州的主要门户。格鲁吉亚航空公司是该国的私有旗舰航空公司。几家土耳其巴士公司将土耳其与格鲁吉亚连接起来，从伊斯坦布尔、安卡拉、特拉布松和其他土耳其城市前往巴统、库塔伊西和第比利斯。
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1372 -->
 
-For those travellers looking for something a little different, ferry trips may be
-possible to the ports of Batumi or Poti from some countries in the Black Sea region.
+对于旅行者在寻找一些不同的东西来说，渡轮旅行可能会在巴统或Poti的港口，来自黑海地区的一些国家。
+无论你到那里，你永远不会忘记你第一次进入格鲁吉亚，在高加索山脉，该国的花岗岩脊梁将其宏伟的山峰像古老的脊梁骨一样向天空延伸。在他们的阴影中，在你皱巴巴的天鹅绒山丘之前散布着山顶的修道院，还有森林，果园和庄稼. 这个地方的美令人陶醉。
+当你到达格鲁吉亚的时候，你可以选择乘飞机、火车、公共汽车或小型巴士、出租车和租车。第比利斯也有一个便宜的，易于使用的地铁系统。在主要城镇和城市之间旅行很简单，但深入偏远的村庄需要一些规划。
+格鲁吉亚两个占领地区适用特殊的法律制度-阿布哈兹自治共和国领土和茨欣瓦利地区领土（前南奥塞梯自治区）-包括限制入境点。在前往格鲁吉亚这些地区以及在格鲁吉亚的其他地方之前，建议你在格鲁吉亚外交部网站上查看现行信息。
 
-However you arrive, you'll never forget your first approach into Georgia. The Caucasus,
-the country's granite backbone spread their majestic peaks against the sky like
-an ancient spine. In their shadows, spread out before you are crumpled velvet hills
-peppered with hilltop monasteries and a patchwork of woods, orchards and crops.
-The beauty of this place is intoxicating and the potential adventure it offers,
-thrilling.
-
-When you get to Georgia, there are options for travelling around by air, rail, public
-bus or minibus, taxi and rental car. Tbilisi also has a cheap, easy to use metro
-system. Travel is simple between the main towns and cities but getting further out
-into the remote villages can require some planning.
-
-A special legal regime applies to the two occupied regions of Georgia \- the territory
-of the Autonomous Republic of Abkhazia and the territory of the Tskhinvali region
-(the former South Ossetia Autonomous District) \- including restricted points of
-entry. Before considering travels to these areas and to elsewhere in Georgia it
-is recommended that you check current information on the website of the Ministry
-of Foreign Affairs of Georgia.
 
 </div>
 

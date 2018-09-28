@@ -1,19 +1,20 @@
----
+﻿---
 language: zh
 url: foreign-missions-in-georgia
-heading: 格鲁吉亚的外国使团
-title: 格鲁吉亚的外国使团 | Tika Tours
+heading: 格鲁吉亚外交使团
+title: 格鲁吉亚外交使团 | Tika Tours
 ---
 <div class="row content-row"><!-- 902 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->
 
-世界上许多国家都设有位于佐治亚州的大使馆和领事馆，通过网站或电话提供服务。 外国大使馆和领事馆可以提供一系列服务，包括格鲁吉亚的旅行建议，以及任何新闻和更新，以确保您在国外旅行时保持安全，避免问题并做出明智的决定。
+世界上很多国家都有驻格鲁吉亚的大使馆和领事馆通过网站或电话提供服务，外国使馆和领事馆可以提供一系列服务，包括对格鲁吉亚的旅行建议，以及任何新闻和更新，以确保你在国外旅行时保持安全，避免问题。
+
 
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1250 -->
 
-大使馆也可以协助其国民签发紧急护照，提供有关转移资金的信息，如果您是犯罪受害者，提供适当的帮助，或在医院，提供当地律师，口译员和医生的详细信息并提供 在一系列其他案件中提供支持和帮助，例如内乱或自然灾害。
+各国使馆也可以协助本国公民办理紧急护照，提供有关转移资金的信息，提供适当的帮助，如果你是犯罪的受害者，或者在医院，提供当地律师、翻译和医生的详细信息，并在其他的案例中提供支持和帮助，比如内乱或自然灾害。
 
 </div>
 
@@ -22,7 +23,7 @@ title: 格鲁吉亚的外国使团 | Tika Tours
 <div class="row content-row"><!-- 903 (2)-->
 <div class="col-xs-12"><!-- 1251 -->
 
-以下是格鲁吉亚的外国大使馆和领事馆名单。 欲了解更多信息，请访问格鲁吉亚外交部领事司网站。
+以下是在格鲁吉亚的外国大使馆和领事馆名单。欲了解更多信息，请访问格鲁吉亚外交部领事网站。
 
 </div>
 
@@ -37,13 +38,14 @@ title: 格鲁吉亚的外国使团 | Tika Tours
 电子邮件：ambasada@caucasus.net
 
 
-**大不列颠及北爱尔兰联合王国**
+**不列颠及北爱尔兰联合王国，英国**
 大使： H.E. Mr. Donald Maclaren of MacLaren
 电话：(995 32)27 47 47; 传真：27 47 92;
 电子邮件：british.embassy.tbilisi@fco.gov.uk
 
 
-**SWISS CONFEDERATION**
+
+**瑞士联邦**
 大使： H.E. Mr. Stephan Speck
 电话：(995 32) 75 30 01/02; 传真：75 30 06;
 电子邮件：Tbilisi@sdc.net
@@ -70,8 +72,8 @@ title: 格鲁吉亚的外国使团 | Tika Tours
 电子邮件：tbi@minbuza.nl
 
 
-**圣洁的看见**
-Ambassador of Vatican\-Nuncio: Archbishop Monsignor Claudio Gugerotti
+**罗马教廷**
+Vatican-Nuncio的大使: Mr. Archbishop Monsignor Claudio Gugerotti
 电话：(995 32)94 13 05; 53 76 01/04 传真：29 39 44;
 电子邮件：nuntius@access.sanet.ge
 
@@ -83,14 +85,14 @@ Ambassador of Vatican\-Nuncio: Archbishop Monsignor Claudio Gugerotti
 领事馆：电话：25 39 61; Fax 93 61 89
 
 
-**美国**
+**美利坚合众国**
 大使： H.E. Mr. John Francis Tefft
 电话：(995 32)27 77 00; 53 23 34;
 电子邮件：consulate\-tbilisi@state.gov
 网站：www.usembassy.ge
 
 
-**HELLENIC REPUBLIC**
+**希腊共和国**
 大使： H.E. Mr. Eleftherios Anghelopoulos
 电话：(995 32) 94 24 55, 44 56 00; 传真：44 10 39;
 电子邮件：grembgeo@access.sanet.ge
@@ -129,14 +131,14 @@ Ambassador of Vatican\-Nuncio: Archbishop Monsignor Claudio Gugerotti
 电子邮件：ukraina@access.sanet.ge
 
 
-**阿塞拜疆共和国**
-Ch. d'Affaires: Mr. Surkhay Akhper ogli Aliyev
+*阿塞拜疆共和国**
+代办: Mr. Surkhay Akhper ogli Aliyev
 电话：(995 32) 25\-35\-26/27/28, 25\-26\-39; 传真：25 00 13;
 电子邮件：secretariat@azembassy.ge
 网站：www.azembassy.ge
 
 
-**法国共和国**
+**法兰西共和国**
 大使： Mr.Philippe Lefort
 电话：(995 32)99\-99\-76; 传真：95\-33\-75;
 电子邮件：ambafrance@diplomatie.gouv.fr
@@ -146,6 +148,7 @@ Ch. d'Affaires: Mr. Surkhay Akhper ogli Aliyev
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1253 -->
 
 **捷克共和国**
+
 大使： Mr. Jozef Vrabec
 电话：(995 32)91 67 40/41/42; 传真：91 67 44;
 电子邮件：czechembassy@gol.ge; or tbilisi@embassy.mzv.cz
@@ -159,7 +162,7 @@ Ch. d'Affaires: Mr. Surkhay Akhper ogli Aliyev
 
 
 **保加利亚共和国**
-Charge d'Affairs: Mr. Ivailo Brazitsov
+代办: Mr. Ivailo Brazitsov
 电话：(995 32)91\-01\-94/95, 91\-01\-04; 传真：91 02 70;
 电子邮件：bgembassy.georgia@gol.ge
 
@@ -177,7 +180,7 @@ Charge d'Affairs: Mr. Ivailo Brazitsov
 
 
 **哈萨克斯坦共和国**
-Charge d'Affairs: Mr. Nurlan Zhalgasbayev
+代办: Mr. Nurlan Zhalgasbayev
 电话：(995 32) 99 76 84; 传真：92\-04\-48;
 电子邮件：dmkazaida@inbox.ru
 
@@ -223,7 +226,7 @@ Tel/传真：(995 32)99 51 97; 94 01 10;
 电子邮件：phconsul@gol.ge
 
 
-**匈牙利共和国**
+**匈牙利第二共和国**
 匈牙利共和国名誉领事: Mr. Zaza Charkviani
 电话/传真：(995 32)37 10 57;
 电子邮件：geohung@internet.ge
@@ -245,8 +248,8 @@ Tel/传真：(995 32)99 51 97; 94 01 10;
 电话：(995 32)24 46 04
 
 
-**联合墨西哥州**
-墨西哥名誉领事: Mr. Teimuraz Tchkonia
+**墨西哥合众国**
+墨西哥合众国名誉领事: Mr. Teimuraz Tchkonia
 电话：(995 32)94 26 09; 传真：99 79 15;
 电子邮件：consulmex@caucasus.net
 
@@ -255,6 +258,9 @@ Tel/传真：(995 32)99 51 97; 94 01 10;
 挪威名誉领事: Ms. Liana Sigua
 电话：(995 32) 29 09 79
 
+
+
 </div>
 
 </div>
+
