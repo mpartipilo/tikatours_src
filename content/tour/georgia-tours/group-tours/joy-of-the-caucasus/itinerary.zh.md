@@ -4,238 +4,114 @@ template: "tour_itinerary"
 ---
 ### Departure Options:
 
-*   Aug 5 \- 18, 2019
+*   2019年5日到18日
 
-### DAY ONE (Aug 5): ARRIVE
+### 第一天 (8月5日): 到达
 
 
 \- / \- / \-
 
-Upon arrival at Baku Heydar Aliyev International Airport we meet you to take you
-to your hotel where you can relax after your flight.
+第一天:到达
+抵达巴库海达利耶夫国际机场后，我们接您然后带您去酒店，航班之后您可以休息一会儿。
 
-### DAY TWO (Aug 6): BAKU
-
-
-BREAKFAST / LUNCH / DINNER
-
-After breakfast at the hotel, we embark on a city tour of Baku. We take you along
-the central streets and green parks of the city, pointing out the main attractions
-along the way. In the afternoon, enjoy an excursion in Old Town, Icheri Sheher.
-This UNESCO\-recognized area of Baku hosts fascinating structures dating back as
-far as the seventh century. Visit the Palace of the Shirvans’ Shahs, the most striking
-example of the medieval palace structures in Azerbaijan, dating to the middle of
-the 15th century.
-
-Next, leave for a tour of the Absheron Peninsula. The Caspian Sea is well within
-reach in Baku, and a drive around the Absheron Peninsula offers an unforgettable
-view of this hidden Eurasian treasure. Visit the well\-preserved ancient castles
-of the Absheron Peninsula, dated from the 12th century and situated farther from
-Baku. There are several fine medieval castles, in the surrounding towns, all having
-been built for defense by the Shirvan’s Shahs.Return to the hotel to for an evening
-at your leisure.
-
-### DAY THREE (Aug 7): BAKU
+### 第二天 (8月6日): 巴库
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-To truly experience the historical beauty of Azerbaijan, today we set off on a trip
-to Gobustan National Park. Found south of Baku, Gobustan is an open\-air museum
-with some 4,000 Neolithic rock drawings dated from as many as 12,000 years ago.
-Find drawings made in the Stone Age, all reflecting activities like hunting and
-dancing. Their dances are thought to have been accompanied by the Gaval\-Dashy or
-Tambourine Stone, a rock that has a deep, resonating tone when struck.
+享用早餐后我们开始巴库之旅。我们带你去市中心的街道和绿色的公园。下午，在老城区叫Icherisheher享受一次短途旅。联合国教科文组织认可的巴库地区拥有令人着迷的建筑可以追溯到公元七世纪。参观“希尔万沙”宫殿。这是阿塞拜疆中世纪宫殿建筑最引人注目的例子，宫殿可以追溯到15世纪中叶。
+接下来，去参观阿普歇伦半岛、阿普歇伦半岛提供隐藏的欧亚宝藏令人难忘的景色。参观保养很好的阿普歇伦半岛古老城，位于远离巴库更远，建于12世纪。周围有好几个中世纪的城堡建造城镇。您可以悠闲地度過傍晚。
 
-Next, take an excursion to the natural phenomenon of Yanar Dag, an incessant natural
-fire which blazes continuously on a hillside. Many historians claim that this place
-gave Azerbaijan its name of “fire country.” Return to Baku this evening and prepare
-to head to Georgia in the morning.
-
-### DAY FOUR (Aug 8): BAKU TO TBILISI
+### 第三天 (8月7日): 巴库
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-This morning you will be transferred to the airport for your flight to Tbilisi, the
-capital of Georgia and the country’s largest city. Check in to your hotel, enjoy
-dinner at a traditional Georgian restaurant with folklore show, followed by a one
-hour massage and body scrub in one of the region’s famous sulfur baths.
+为了真正体验阿塞拜疆的历史美景，这一天出发旅行巴库南部的戈布斯坦国家公园，它是戈布斯坦是一个露天博物馆有1200年之前的大约4000新石器时代远古岩石绘画。发现过石器时代的绘画。绘画反映打猎和跳舞的活动。他们的舞蹈被认为是伴随着Gaval-Dashy 或铃鼓。接下来，去看一看阿塞拜疆的自然现象-Yanar Dag, 不断的自然火灾在山坡上持续燃烧. 许多历史学家声称，这个地方给了阿塞拜疆一个“火国”的名字。晚上回到巴库，准备第二天早上去格鲁吉亚。
 
-### DAY FIVE (Aug 9): TBILISI
+### 第四天 (8月 8日): 巴库-第比利斯
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-Tbilisi is a vibrant example of the mix of nationalities, cultures, religions, and
-ethnic groups found in Georgia. Tbilisi was founded in the 5th century AD by Vakhtang
-Gorgasali, the Georgian King of Kartli (Iberia) and made into a capital in the 6th
-century.
+坐车到机场，飞往第比利斯-格鲁吉亚首都和最大的城市。入住酒店，在格鲁吉亚传统的餐馆届时可尽情享用格鲁吉亚美食及当地民俗音乐。接下来的一个小时在地区著名的硫磺浴场做按摩和身体擦洗。
 
-Today, get acquainted with the city on a walking tour, passing through the old quarters
-and the center, with its famous sulphur springs along the Mtkvari River. Visit the
-Metekhi Church, pass across the Metekhi bridge, the first bridge built to connect
-the Mtkvari River’s left and right banks, stand in Sioni church, where St. Nino’s
-cross from 337 AD is kept, and stop at Anchiskhati church, the most ancient church
-in Tbilisi. Traditional houses with balconies and grape vines accompany your stroll
-towards Narikhala, the 4th century fort overlooking the city. The fort provides
-an exquisite view of the city and region.
-
-After lunch at a local restaurant, you will visit the Georgian State Museum, known
-for its collection of gold and silver artifacts and jewelry from the pre\-Christian
-period from various regions of the country. If time permits, take a stroll along
-Rustaveli Avenue, where notorious architectural and historical buildings such as
-the Palace of Youth, Parliament of Georgia, Kashveti Church, Rustaveli Theater,
-National Picture Gallery, and the Academy of Sciences reside. The evening is free
-for dinner and relaxation at your leisure.
-
-### DAY SIX (Aug 10): TBILISI TO KAZBEGI
+### 第五天 (8月9日): 第比利斯  
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
+第比利斯是在格鲁吉亚发现的民族，文化，和宗教群体的一个充满活力的例子。第比利斯始建于公元5世纪Vakhtang Gorgasali国王时代，他是格鲁吉亚的卡尔特利 (伊比利亚) 国王。第比利斯在6世纪时成为格鲁吉亚的首都。
+今天为了解这个城市是徒步旅行的一天。我们带您从让人惊异的小路上穿过老城区和建筑物，在Mtkvari河沿岸有著名的硫磺浴. 参观一下“metekhi教堂”,穿过“metekhi”大桥-连接左右两岸，同时也是在库拉河上建造的第一座大桥。参观Sioni教堂, 从公元337年到今天圣尼诺的十字架是在这里被保存的.并停留在第比利斯最古老的教堂Anchiskhati教堂。传统的房子里有阳台和葡萄树。你漫步在纳里卡拉要塞的身边, 4世纪的城堡俯瞰全城，这座堡垒提供了城市和地区的精美视野。在当地餐馆吃午饭后你将参观格鲁吉亚国家博物馆。馆内藏有基督之前格鲁吉亚不同的地区的的各种珍贵历史文物-金银古物和珠宝。如果时间允许在鲁斯塔韦利大街上散步。最声名历史得建筑都在那里，比如:“青年之宫”,“格鲁吉亚议会”,“ 卡什韋蒂教堂”、“拉斯塔维利国家剧院”,“国家图库”和格鲁吉亚科学院”等。晚餐后，您可以悠闲地度過傍晚。
 
-After breakfast check out of your hotel and drive via Mtskheta to Kazbegi. Mtskheta
-is the ancient capital of eastern Georgia. The country's conversion to Christianity
-occurred in Mtskheta in 337 AD, and it is considered one of Georgia's most important
-religious centers. While in Mtskheta, visit the Svetitskoveli Catheral and the beautiful
-Jvari Monastery, situated on the edge of a cliff. Continue your drive along the
-stunning Caucasus Mountains to Kazbegi. The drive to Kazbegi is as exciting as Kazbegi
-itself. Check into your hotel Rooms Kazbegi, a modern, cozy resort with breathtaking
-mountainous views and consistently friendly service. The first of its kind in Georgia,
-this luxurious escape boasts a simple, open design that allows guests to feel right
-at home. There is much to see and do in and around the Rooms Hotel Kazbegi. You
-can take a short, exciting hike to the historic Gergeti Trinity Church, visit the
-nearby Alexander Kazbegi Museum, or even climb Mount Kazbek. Dine in style and sample
-a variety of Georgian cuisine from the informal buffet and a la carte menu, and
-pair it with a notable bottle of wine.
-
-### DAY SEVEN  (Aug 11): KAZBEGI
+### 第六天 (8月10日): 第比利斯-卡兹别吉
 
 
-BREAKFAST / LUNCH / DINNER
-
-Enjoy breakfast this morning before visit to the Gergeti Tsminda Sameba Trinity Church,
-built in the 14th century and situated nearly 7,000 feet up on the hill. From this
-spot you have an unforgettable view of Mount Kazbek, rising over 16,500 feet and
-covered with glaciers and permafrost. According to the legend, the titan Prometheus
-who brought fire to men was chained on Mount Kazbek. Afterwards drive to Sno Gorge,
-an area rich in natural mineral water springs and dotted with old towers, and the
-beautiful Gveleti waterfall, one of the highest waterfalls in Georgia. Return to
-the hotel this evening for dinner.
-
-### DAY EIGHT (Aug 12): KAZBEGI TO SIGNAGI
+早餐/午餐/晚餐
 
 
-BREAKFAST / LUNCH / DINNER
+早餐后，从旅馆出发，开车经过第比利斯到姆茨赫塔，姆茨赫塔是前往东格鲁吉亚的古都。格鲁吉亚的基督化即开始于公元337年的姆兹赫塔塔，因而此地也被认为是格鲁吉亚最重要的宗教中心地之一。在姆茨赫塔的时候拜访斯维特特斯克维里大教堂和坐落在山顶上的季瓦里修道院。
+继续你的驱动到令人惊叹的高加索山脉到卡兹别克。开车去卡兹别克，就像卡兹别克一样令人兴奋的。入住卡兹别吉客房酒店，这是一个现代，舒适而美妙的度假胜地，有着令人叹为观止的山景。酒店提供友好的服务，拥有温馨舒适的整体环境。这种豪华建筑拥有简单而开放的设计，让客人感觉宾至如归。卡兹别吉客房酒店周围有很多看到和做的事情。你可以做一个令人兴奋的远足到有历史意义的Gergeti 圣三一教堂。参观附近的Alexandre Kazbegi博物馆或者攀爬卡兹别克山。您可以享受各种各样的格鲁吉亚菜自助餐式的非正式餐或品尝以点菜方式提供的美味特色菜肴，配上一瓶著名的葡萄酒。
 
-After a leisurely breakfast drive to the very eastern part of Georgia. The region
-is known for its exquisite wines, warm hospitality, scenic landscapes and generous
-people. En route visit to wine museum “Qvevri” Check in to your hotel, located in
-the heart of Signagi.
-
-### DAY NINE (Aug 13): SINGAGI \- TSINANDALI\- KVARELI \- SIGNAGI
+### 第七天(8 月11日): 卡兹别吉
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-After breakfast, take a guided city tour of Signagi. Meaning “shelter,” Signagi is
-one of the smallest towns in the country with one of the richest histories. The
-city is sits on a hill surrounded by a fortified wall. A large variety of languages
-and nationalities mingle with the unique mountain landscape to make Signagi one
-of the most breathtaking places on the planet.
+享受早餐后访问Gergeti 圣三一教堂。Gergeti 圣三一教堂建于十四世纪并坐落在山上近7000英尺的地方。从这里你可以看到超过16,500英尺高，覆盖着冰川和永冻土的卡兹别克山的美景。据传说，为人类带来火种的普罗米修斯就被铁链锁在卡兹别克山。之后开车到Sno峡谷。这个地区富含天然矿泉水和古老的塔。看看美丽的Gveleti瀑布-格鲁吉亚最高瀑布之一。返回酒店享用晚餐并休息.
 
-Explore multiple architectural monuments and learn about the traditions of local
-people, all while enjoying the splendid views that open up on the gorgeous Alazani
-Valley, known as the cradle of Georgian wines.Next visit Tsinandali museum the former
-residence of the 18th century Kakhetian prince and poet, Alexander Chachavadze,
-who turned the residence into a centre for Georgian intellectual life.
-
-Enjoy wine tasting. Afterwards drive to the longest wine tunnel in Georgia in Kvareli.
-Overnight in Signagi.
-
-### DAY TEN (Aug 14): BAGRATASHEN – HAGHPAT – SANAHIN – DILIJAN
+### 第八天 (8月12日): 卡兹别克-西格纳吉
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-Meet at Armenia\-Georgia border Bagratashen and start the tour in Armenia \- a country
-rich with culture, located in the highlands surrounding the mountains of Ararat
-in the South Caucasus. With strong ties to the Christian religion, ancient churches
-and monasteries dot the landscape in Northern and Southern Armenia, while many of
-the country’s museums are found in Central Armenia, a flat and dry region in the
-Ararat valley.
+享用完早餐后开车前往格鲁吉亚的东部,这个地区是格鲁吉亚著名的产酒区，生产种类丰富的葡萄酒,格鲁吉亚人民热情好客,风景优美的风景，十分慷慨人民的地区。参观“kvevri”葡萄酒博物馆。入住位于西格纳吉中心的酒店。
 
-Stop at the monasteries of Sanahin and Haghpat, both dating from the tenth century
-and inscribed as UNESCO World Heritage Sites. For 300 years Sanahin was an important
-center of learning, where humanitarian sciences and medicine were taught. Continue
-on to Dilijan, the “Switzerland of Armenia”. Overnight at the hotel in Dilijan.
+### 第九天 (8月13日): 西格纳吉 \- 茨南达利\- 克瓦雷利\- 西格纳吉
 
-### DAY ELEVEN (Aug 15): DZORAGET TO YEREVAN
+早餐/午餐/晚餐
+
+西格纳吉享受早餐后带着导游的参观西格纳吉。西格纳吉的意思是“避难所”。西格纳吉是最小的城镇之一，还有西格纳吉是数百年来仍完整保存其历史名城特色的罕例。这座城市坐落在一座被坚固的城墙环绕的山上.各种各样的语言和民族与独特的山景相融合让西格纳吉成为这个星球上最激动人心的地方之一。探索建筑纪念碑和了解当地人的传统。所有的人都在享受着美丽的阿拉扎尼山谷的美景，这个地方被称为格鲁吉亚葡萄酒的摇篮。
+以后去参观茨南达利博物馆。 这个地方以前是18世纪卡赫季著名诗人亚历山大·查查瓦泽王子的故居。他把这个个美丽的地方变成了格鲁吉亚知识分子生活的中心。
+享受品酒的乐趣. 之后，驱车前往卡赫季州克瓦雷利最长的葡萄酒隧道。在西格纳吉过一夜。
+
+### 帝释天 (8月14日): BAGRATASHEN – 哈格帕特 – SANAHIN – 迪利然
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-After breakfast at the hotel, we drive to the pearl of Armenia, Lake Sevan. Being
-one of the greatest freshwater high mountain lakes of Eurasia, Lake Sevan has a
-unique combination of great size, high mountain location, and comparatively “soft
-water”. Here you will have an opportunity to taste the fish from the lake and explore
-the Sevanavank Monastery, the summer residence of the Favorite Armenian King Ashot
-the Iron.
+驱车往格鲁吉亚和亚美尼亚边界. 到达sadakhlo，进入镇叫Bagratashen。亚美尼亚是一个文化丰富的国家。位于南高加索山脉的亚拉拉特山周围的高地。基督教的紧密联系古代的教堂和修道院遍布亚美尼亚北部和南部。许多国家的博物馆都是在亚美尼亚中部发现的，亚拉腊山谷该地区平坦而干燥. 
 
-Explore Armenia’s treasure, Garni Temple, a wonderful piece of Hellenistic architecture
-and the only surviving pagan temple in Armenia. Afterwards proceed to the magnificent
-monastic complex of Geghard, which is inscribed in UNESCO World Heritage Site. One
-of the relics housed at the monastery is the spear that wounded Christ on the cross,
-presumably brought there by Apostle Thaddeus. Overnight at the hotel in Yerevan.
+停在修道院Sanahin和Haghpat, 这两个修道院都可追溯到公元10世纪，是联合国教科文组织世界遗产。三百年Sanahin是一个重要的学习中心.这里被教导人道主义科学和医学。往前迪利然” 亚美尼亚的瑞士”。 在迪利然酒店过一夜。
+
+### 第11 天 （8月 15日): DZORAGET-埃里温
+
+早餐/午餐/晚餐
+
+在饭店吃过早餐后我们开车去亚美尼亚的珍珠-塞凡湖。这是世界上海拔最高的淡水湖之一。 塞万湖具有大小，高山位置和相对“软水”的独特组合。你将有机会从湖中品尝鱼并探索SEVANAVANK修道院-亚美尼亚王ASHOT二世的最喜欢的避暑居住。
+
+在酒店吃完早餐后继续游览亚美尼亚的宝藏，加尼神庙-美妙的希腊风格的建筑也是在亚美尼亚只有幸存的异教徒神殿。后来又去了GEGHARD的宏伟的修道院这是联合国教科文组织世界遗产地。在修道院的一个遗物是在十字架上伤害基督的矛，大概是由使徒THADDEUS带到那里。
+在埃里温的旅馆过夜。
+
 
 ###   
-DAY TWELVE (Aug 16): YEREVAN  SIGHTSEEING (MATENADARAN, EREBUNI MUSEUM, TSITSERNAKABERED)
+第十二2 天 (八月16日): 埃里温城市观光(玛坦纳达兰， EREBUNI博物馆, TSITSERNAKABERED)
 
 
-BREAKFAST / LUNCH / DINNER
+早餐/午餐/晚餐
 
-After breakfast at the hotel, embark on a walking tour of the Pink City. With a history
-surpassing even Rome, this ancient and cheerful city welcomes all its visitors with
-modesty and luxury. Situated on the main trade routes between the East and the West,
-Yerevan was constantly fought over and underwent at least four settlement periods
-between 4000 and 2000 BC. Take in the fascinating fall weather of sunny Yerevan
-while walking around the Cascade Monument. If you are able to walk up the huge staircase,
-you will enjoy a beautiful panorama of the entire city.
+在酒店吃完早餐后，在粉红城市开始徒步旅行，历史甚至超过了罗马，这座古老而又欢乐的城市以谦逊和奢华的态度欢迎所有的游客。位于东西方的主要贸易路线上，在公元前4000年到2000年之间，埃里温一直在战斗，欣赏阳光明媚的埃里温的天气，漫步在级联纪念碑。如果你能爬上巨大的楼梯，你会欣赏整个城市的美丽的全景。
+参观玛坦纳达兰，这是一座古老的手稿储存库，保存着世界上最丰富的中世纪手稿和书籍一研究和保存古代文献的主要研究中心。目前，该机构保护了约16477件幸存材料和30万份档案文件，在这些档案中至少有2500个碎片收集在保管处。开车去城堡博物馆Erebuni，TSITSERNAKABERD.后来，亚美尼亚种族灭绝博物馆。届时可尽情享用亚美尼亚美食及当地民乐. 在埃里温的旅馆过夜。
 
-Next, pay a visit to Matenadaran, a major center for study and preservation of Armenian
-works of ancient literature. The institution now protects about 16,477 surviving
-materials and 300,000 archival documents. Among these archives is at least 2,500
-fragments collected in the depository. Later, drive to the castle museum Erebuni,
-Tsitsernakaberd Hill, and the museum of the Armenian Genocide. Enjoy dinner at a
-traditional restaurant featuring a folk show.
+### 第十三天 （八月 17日):  埃里温 – 霍瑞维拉– 埃奇米阿 –阿勒山工厂–埃里温
 
-Overnight at the hotel in Yerevan.
+早餐/午餐/晚餐
 
-### DAY THIRTEEN (Aug 17):  YEREVAN – KHOR VIRAP – ECHMIADZIN – ARARAT FACTORY – YEREVAN
+在酒店吃完早餐后然后坐车去驱车到17世纪的霍瑞维拉修道院, 有著名的深深的地牢, 亚美尼亚基督教会的创造者启蒙者格列高利曾在此地度过了十三年的牢狱时光，格列高利则成为亚美尼亚使徒教会的首位宗主教。这个亚洲国家在公元301年使基督教成为其官方宗教。在土耳其边界欣赏最佳景色的-正是中诺亚方舟的最终停泊地—亚拉拉特山。停在“VERNISSAGE”露天艺术和工艺市场，你可以买到不同的纪念品。
+
+### 第十四天 (8月 18日): 离开
 
 
-BREAKFAST / LUNCH / DINNER
+早餐 / \- / \-
 
-After breakfast at the hotel, drive to the 17th century Khor Virap monastery, which
-is famous for its deep dungeon where Saint Gregory the Illuminator was imprisoned
-for 13 years. Saint Gregory was the first head of the Armenian Apostolic Church
-and is credited with converting Armenia to Christianity in the year 301, making
-it the first nation to name Christianity as its official religion. In this historic
-atmosphere, you will enjoy the best view of Mount Ararat over the border with Turkey,
-where it is said that Noah’s Ark rested after the famous flood. Embark for Etchmiadzin,
-the holy city of Armenia. This is the site of the Mother See of Holy Etchmiadzin
-complex which is comprised of cathedrals dating from the fourth, seventh, and 17th
-centuries, all of them included in the UNESCO World Heritage Site. Explore the cathedrals,
-museums, libraries, residences, and other buildings in this fascinating place with
-your guide. Return to Yerevan with a stop at the open\-air art and craft market
-called Vernissage (open only on weekends). In Vernissage, you can buy different
-souvenirs to take a piece of Armenia with you. Have a cognac degustation at the
-Ararat Brandy Factory and Enjoy dinner in Yerevan.
+早晨带你去机场回家。
 
-### DAY FOURTEEN (Aug 18): DEPARTURE
-
-
-BREAKFAST / \- / \-
-
-This morning, you will be transferred to the airport in time to check in for your
-international departing flight from Yerevan

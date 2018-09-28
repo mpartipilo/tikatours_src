@@ -4,89 +4,51 @@ template: "tour_itinerary"
 ---
 ### Departure Options:
 
-
-June 15 \- 24, 2019
-
-### DAY ONE (June 15): ARRIVE
+第一天：到达
 
 
-Upon your arrival into Tbilisi Airport (Georgia’s main international airport), we
-meet you to take you to your hotel where you can relax after your flight.
+当你抵达第比利斯国际机场（格鲁吉亚的主要国际机场）我们在一家格鲁吉亚传统的餐厅吃饭之前，带你去酒店休息一下。
 
-### DAY TWO (June 16): TBILISI TO MESTIA
-
-
-After an early breakfast at the hotel, we depart for Svaneti. It is a drive of 420km
-but we break up the journey with two stops. The first is Mtskheta, the ancient capital
-of Georgia and one of the country’s oldest cities. Remains of buildings here have
-been dated to earlier than the year 1000 BC and its 6th Century Jvari church is
-a UNESCO heritage site. Our second stop Kutaisi, the historic capital of the Kingdom
-of Colchi, where we have lunch and visit the Gelati and Bagrati Cathedrals (both
-UNESCO world heritage sites). We arrive into Svaneti, located in the Northwest of
-Georgia, and travel to Mestia in its very centre, in time for dinner. Accommodation
-is at Hotel Tetnuldi.
-
-### DAY THREE (June 17): CHALADI GLACIER TREK
+### 第二天：第比利斯到梅斯蒂亚
 
 
-Today is our first day of walking; a half day trekking tour to the Chaladi Glacier
-with lunch en route. This is an easy hike for all standards of hiking experience.
-You have free time in the afternoon to relax and visit the Mestia Museum, before
-enjoying dinner at the hotel.
+在酒店吃完早餐后，我们出发去斯瓦涅季。这是一个420公里的车程但是在旅途中我们将在两个地方停。第一个是姆茨赫塔-格鲁吉亚的古首都，也是该国最古老的城市之一。这里的建筑遗迹是比公元前1000年还早的，建于6世纪的季瓦里教堂（世界文化遗产）。第二个停在库泰西-科尔喀斯(Colchis)王国的历史首都。我们在那里吃午饭，参观巴格拉特大教堂和Gelati修道院（两个都是联合国教科文组织世界遗产地）我们到达位于格鲁吉亚西北部-斯瓦涅季，吃晚饭的时候到梅斯蒂亚的中心去，住宿在塔特努尔蒂酒店。
 
-### DAY FOUR (June 18): MESTIA TO ADHISHI
+### 第三天：CHALADI冰川
 
 
-A 45 minute drive takes us to Mulakhi (Zhabeshi), where the people dwell in the gorge
-of the Mulakhura River, famous for its multitude of towers. From here we take a
-trekking tour to Adhishi, a highland village 2040 metres above sea level and 27km
-from Mestia. You are surrounded by a breath\-taking view of the Greater Caucasus
-Mountains, with the landscaped dominated by medieval monuments. Your accommodation
-is a choice of a local guest house or in the nearby camping grounds.
+今天是我们徒步旅行的第一天；半天徒步旅行到Chaladi Glacier，在路上吃午饭。这是一个简单的徒步旅行。下午你有空的时候可以放松一下，去参观梅斯蒂亚博物馆，然后在酒店享受晚餐。
 
-### DAY FIVE (June 19): ADHISHI TO KALA
+### 第四天：梅斯蒂亚到ADHISHI
 
+45分钟开车把我们带去Mulakhi（zabeshi）,那里的人们住在以其众多的塔而闻名的穆拉克胡拉河的峡谷里,从这里我们到开始Adhishi的徒步旅行-在海拔2040米的高地村庄，Adhishi距离梅斯蒂亚只有27公里.周围环绕着大高加索山脉的令人叹为观止的景色，由中世纪的纪念碑所主导的景观.你可以选择当地的宾馆或附近的露营地过夜。
 
-After breakfast at the camp, we set off on a 5\-6 hour (7\-10km) walking tour to
-the mountain community of Kala (Iprari), with lunch on the way. Again, your accommodation
-is a choice of a local guest house or in the nearby camping grounds.
-
-### DAY SIX (June 20): KALA TO USHGULI
+### 第五天：Adhishi-Kala
 
 
-Our trek (7\-9km) takes us to Ushguli, a UNESCO World Heritage Site and a collection
-of villages famous for an abundance of watchtowers with the view of Georgia’s highest
-mountain, Mt Shkhara (5,068km).
+在营地吃完早餐后，我们开始5-6个小时(7-10公里)的徒步旅行前往Kala(Iprari)的山区社区.
+在路上吃午餐, 再一次, 你可以选择当地的宾馆或附近的露营地过夜。
 
-### DAY SEVEN (June 21): USHGULI TO BATUMI
-
-
-We return to the town of Mestia before heading down the Batumi Black Sea coast, with
-lunch in the city of Zugdidi. In contrast to the region’s ancient communities, Batumi
-developed in the late 19th Century as the western terminus of a railway from Baku
-(Azerbaijan) that at the time carried one\-fifth of the world’s oil production.
-Batumi gained free\-port status with over 20 foreign consulates set up here, and
-the town has developed into a fashionable resort at the southern tip of the Russian
-empire and a crossroads between Europe and Asia. We stay overnight here.
-
-### DAY EIGHT (June 22): BATUMI TO TBILISI
+### 第六天：Kala到乌什古里
 
 
-The first half of our day is spent relaxing, with the opportunity to spend time on
-the beach. Then we depart for Tbilisi, where we arrive before dinner.
+我们的长途跋涉(7-9公里)带我们去乌什古里-欧洲最高的永久村庄——海拔2200米的乌什古里。乌什古里闻名于世的是村内随处可见的瞭望塔和格鲁吉亚第一高峰什卡拉（5068m）的风景。
 
-### DAY NINE (June 23): TBILISI
-
-
-Tbilisi is the capital and largest city of Georgia. Founded in the 5th century by
-Vakhtang Gorgasali, the Georgian King of Kartli (Iberia), the city is a significant
-industrial, social, and cultural center. We take a half day walking tour where you
-will visit highlights of Old Tbilisi: Bath Quarter, Metekhi Church, Anchiskhati
-basilica (VI c), Narikala Fortress, and a walk over the new glass bridge. In the
-evening we celebrate our time together with a farewell dinner in a traditional Georgian
-restaurant.
-
-### DAY TEN (June 24): DEPARTURE
+### 第七天：乌什古里-巴统
 
 
-An early morning transfer takes you to the airport for your journey home.
+我们回到梅斯蒂亚，之后去黑海海岸.巴统城作为巴库铁路的西端的终点站发迹于十九世纪晚期，这条铁路运送了当时世界上五分之一的原油产量.巴统获得了自由港口的地位，年巴统成为自由港，超过二十个国家在此设立领事馆。从此巴统渐渐发展成为俄罗斯帝国南端的度假胜地和欧亚十字路口。我们在这里过夜。
+### 第八天：巴统-第比利斯
+
+
+这一天的您可以在海滩上放松身心，海滩上消磨时光。然后开往第比利斯，晚饭之前达到。
+
+### 第九天：第比利斯
+
+
+第比利斯是格鲁吉亚首都，也是格鲁吉亚最大的城市。公元五世纪由古卡特利王国的格鲁吉亚王瓦克坦格一世在此建都，第比利斯从此成为格鲁吉亚的工业和社会文化枢纽。上午，我们将步行品味这座古城，穿过古老的城区和市中心，这里有库拉河畔著名的古硫磺浴池区,Metekhi教堂，Anchiskhati大教堂(VI),纳瑞卡拉城堡，在新玻璃桥上漫步。晚上，我们在一家传统的格鲁吉亚餐馆庆祝我们的时光。
+
+### 第十天：离开
+
+
+早晨带你去机场回家。

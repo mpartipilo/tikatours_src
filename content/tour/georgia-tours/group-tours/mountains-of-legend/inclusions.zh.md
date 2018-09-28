@@ -2,26 +2,31 @@
 tour_id: 38
 template: "tour_inclusions"
 ---
-●       All accommodation at 4 Star Hotels
+包含物:
 
-●       Full board breakfasts, 5 lunches, 6 dinners
+*       4星级酒店的住宿
 
-●       English speaking guide
+*       所有的早饭, 5顿午餐,6顿晚餐
 
-●       Entry tickets as per itinerary
+*       英语导游
 
-●       Bottle of water a day
+*       门票价格
+
+*       每天一瓶水
 
 
-### EXCLUSIONS:
+不包括:
+
+*       飞机票价
+
+*       小费
+
+*       个人费用
+
+*       酒精饮料
+
+*       早期入住酒店
 
 
-●       Airfare
 
-●       Tips
 
-●       Personal Expenses
-
-●       Alcoholic Beverages
-
-●       Early Check\-Ins

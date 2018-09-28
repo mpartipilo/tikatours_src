@@ -2,25 +2,24 @@
 tour_id: 39
 template: "tour_inclusions"
 ---
-*   3 nights in Grand Hotel Europa, or Sapphire Hotel or Rich Hotel in Baku
-*   2 nights in Rooms Tbilisi or Holiday Inn hotel or similar hotel in Tbilisi
-*   2 nights in Rooms Hotel hotel in Kazbegi
-*   2 nights in Kabadoni Boutique hotel in Signagi
-*   1 Night in Best Western Dilijan hotel
-*   3 nights in Double Tree by Hilton hotel in Yerevan
-*   Transportation during tours and transfers
-*   4 wheel drive in Kazbegi
-*   Meals: FB as per itinerary (including one folk show dinner in Georgia and Armenia)
-*   Visit to Georgian sulphur bath house
-*   Wine tasting in Georgia
-*   Cognac tasting in Armenia
-*   Professional English speaking guide
-*   Entrance tickets to museums
-*   Bottled water per person a day
+• * 在巴库的欧洲大酒店，蓝宝石大酒店或者巴库丰富的酒店住三夜。
+*   在第比利斯客房酒店，第比利斯假日酒店或类似酒店住两夜。
+*   在卡兹别吉客房酒店住两夜
+*   在西格纳吉卡巴都尼精品酒店住两夜
+*   在迪利然最佳西方酒店住一夜.
+*   在亚美尼亚希尔顿逸林酒店住三夜。
+*   在旅游和转移期间的运输
+*   卡兹别吉的四轮驱动
+*   饭菜: FB按行程(包括在格鲁吉亚和亚美尼亚的一场民间表演晚宴)
+*   参观格鲁吉亚硫磺浴 
+*   品尝格鲁吉亚葡萄酒
+*   品尝亚美尼亚白兰地
+*   专业英语导游
+*   博物馆的门票
+*   一天一瓶矿泉水
 
+**不包括:**
 
-**Exclusions:**
-
-*   Domestic and international tickets
-*   Travel Insurance
-*   Tips
+*   国内、国际机票
+*   旅行保险
+*   小费

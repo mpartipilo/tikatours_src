@@ -2,13 +2,13 @@
 language: zh
 url: georgia-tours/group-tours/mountains-of-legend
 template: tour
-heading: Mountains of Legend
-name: Mountains of Legend
-title: ""
+heading: 山上的传说
+name: 山上的传说
+title: 山上的传说 | Tika Tours
 tour_id: 38
-short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.
+short_descr: 欢迎来到格鲁吉亚！格鲁吉亚是未被发现的旅游目的地。风景极其多样提供世界上最令人吃惊的全景图之一。
 price_from: 0
-duration: 7 Days / 6 Nights
+duration: 7 天 / 6 晚
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
 country_id: 0
@@ -16,17 +16,4 @@ main_category_id: 1
 sub_category_id: 32
 imggrp_id: 24
 ---
-
-Georgia \- the undiscovered travel destination with immensely diverse array of landscapes
-offers one of the world\`s most jaw dropping panoramic views on the planet. Begin
-in cosmopolitan capital of Georgia – Tbilisi, continue on a scenic and exhilarating
-journey through the uninterrupted panorama of the Great Caucasus range, and touch
-the skies by walking up to one of the most stunningly located churches in the background
-of the dazzling snowy peaks of the Caucasus Mountains. Finish in Signagi \- one
-of the world\`s most romantic towns perched high on a hill with stunning vistas
-of Allazany valley (known as cradle of wine).
-
-Relax in a luxurious terrace accommodation, sip Georgia\`s finest wine, enjoy enchanting
-views of Allazany valley, and watch the Caucasus Mountains glowing in the warm colors
-of sunset. A glimpse into the amazing contrast of Georgian nature and warm hospitality
-of the Georgian people can be found on the 7\-day luxury journey.
+从格鲁吉亚首都第比利斯开始，欣赏到优美的旅行穿过伟大的高加索山脉的全景，在高加索山脉耀眼的雪峰的背景下触摸天空。在西格纳吉结束-世界上最浪漫的小镇之一。坐落在一座山上，那里有着令人叹为观止的阿拉赞山谷美景(被称为葡萄酒的摇篮)。您可以在豪华的露台上放松身心，小口喝格鲁吉亚最好的葡萄酒，欣赏阿拉兹山谷的迷人景色，观看高加索山脉以暖和的日落色调发光。格鲁吉亚七天的奢华之旅中，可以看到格鲁吉亚人的热情好客和本性。

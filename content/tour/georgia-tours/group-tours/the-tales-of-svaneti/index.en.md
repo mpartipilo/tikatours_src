@@ -4,7 +4,7 @@ url: georgia-tours/group-tours/the-tales-of-svaneti
 template: tour
 heading: The Tales of Svaneti
 name: The Tales of Svaneti
-title: ""
+title: The Tales of Svaneti | Tika Tours
 tour_id: 40
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped craggy peaks, wine and dancing.
 price_from: 0

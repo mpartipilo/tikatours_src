@@ -4,7 +4,7 @@ url: georgia-tours/group-tours/mountains-of-legend
 template: tour
 heading: Mountains of Legend
 name: Mountains of Legend
-title: ""
+title: Mountains of Legend | Tika Tours
 tour_id: 38
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely diverse landscapes Georgia offers one of the world`s most jaw dropping panoramic views on the planet.
 price_from: 0

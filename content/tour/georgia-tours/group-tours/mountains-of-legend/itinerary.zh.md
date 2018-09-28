@@ -4,107 +4,65 @@ template: "tour_itinerary"
 ---
 ### Departure Options:
 
-*   Apr 5 \- 11, 2019
-*   May 2 \- 8, 2019
-*   Aug 26 \- Sep 1, 2019
-*   Sep 28 \- Oct 4, 2019
+*   2019年4月5号到11号
+*   2019年5月2号到8号
+*   2019年8月26号到9月1号
+*   2019年9月28号到10月4号
 
-### DAY ONE: ARRIVE 
-
-
-\-/\-/ DINNER
-Upon arrival at Tbilisi international airport we meet you to transfer to your hotel
-where you can relax. This evening enjoy dinner at a traditional Georgian restaurant
-with folklore show.
-
-### DAY TWO: TBILISI TO MTSKHETA
+###第一天:到达
 
 
-BREAKFAST/ LUNCH / DINNER
-Tbilisi is a vibrant example of the mix of nationalities, cultures, religions, and
-ethnic groups found in Georgia. Tbilisi was founded in the 5th century AD by Vakhtang
-Gorgasali, the Georgian King of Kartli (Iberia) and made into a capital in the 6th
-century.
-
-Today, get acquainted with the city on a walking tour, passing through the old quarters
-and the center, with its famous sulphur springs along the Mtkvari River. Visit the
-Metekhi Church, pass across the Metekhi bridge, the first bridge built to connect
-the Mtkvari River’s left and right banks, stand in Sioni church, where St. Nino’s
-cross from 337 AD is kept, and stop at Anchiskhati church, the most ancient church
-in Tbilisi. Traditional houses with balconies and grape vines accompany your stroll
-towards Narikhala, the 4th century fort overlooking the city. The fort provides
-an exquisite view of the city and region.
-
-After lunch at a local restaurant, you will visit the Georgian State Museum, known
-for its collection of gold and silver artifacts and jewelry from the pre\-Christian
-period from various regions of the country. If time permits, take a stroll along
-Rustaveli Avenue, where notorious architectural and historical buildings such as
-the Palace of Youth, Parliament of Georgia, Kashveti Church, Rustaveli Theater,
-National Picture Gallery, and the Academy of Sciences reside. The evening is free
-for dinner and relaxation at your leisure.
-
-### DAY THREE: TBILISI TO KAZBEGI
+\-/\-/晚餐
+抵达格鲁吉亚首都第比利斯并下榻酒店。晚间于当地传统格调的餐厅享用丰盛的欢迎晚宴。
 
 
-BREAKFAST/ LUNCH / DINNER
-After breakfast check out of your hotel and drive via Mtskheta to Kazbegi. Mtskheta
-is the ancient capital of eastern Georgia. The country's conversion to Christianity
-occurred in Mtskheta in 337 AD, and it is considered one of Georgia's most important
-religious centers. While in Mtskheta, visit the Svetitskoveli Catheral and the beautiful
-Jvari Monastery, situated on the edge of a cliff.
 
-Continue your drive along the stunning Caucasus Mountains to Kazbegi. The drive to
-Kazbegi is as exciting as Kazbegi itself. Check into your hotel Rooms Kazbegi, a
-modern, cozy resort with breathtaking mountainous views and consistently friendly
-service. The first of its kind in Georgia, this luxurious escape boasts a simple,
-open design that allows guests to feel right at home. There is much to see and do
-in and around the Rooms Hotel Kazbegi. You can take a short, exciting hike to the
-historic Gergeti Trinity Church, visit the nearby Alexander Kazbegi Museum, or even
-climb Mount Kazbek. Dine in style and sample a variety of Georgian cuisine from
-the informal buffet and a la carte menu, and pair it with a notable bottle of wine.
+### 第二天就: 第比利斯-姆茨赫塔
 
-### DAY FOUR: KAZBEGI
+早餐/午餐/晚餐
+
+第比利斯是在格鲁吉亚发现的民族，文化，和宗教群体的一个充满活力的例子。第比利斯始建于公元5世纪Vakhtang Gorgasali国王时代，他是格鲁吉亚的卡尔特利 (伊比利亚) 国王。第比利斯在6世纪时成为格鲁吉亚的首都。
+今天为了解这个城市是徒步旅行的一天。我们带您从让人惊异的小路上穿过老城区和建筑物，在库拉河沿岸有著名的硫磺浴. 参观一下“metekhi教堂”,穿过“metekhi”大桥-连接左右两岸，同时也是在库拉河上建造的第一座大桥。参观Sioni教堂,从公元337年到今天圣尼诺的十字架是在这里被保存的.并停留在第比利斯最古老的教堂Anchiskhati教堂。传统的房子里有阳台和葡萄树。你漫步在纳里卡拉要塞的身边,4世纪的城堡俯瞰全城，这座堡垒提供了城市和地区的精美视野。在当地餐馆吃午饭后你将参观格鲁吉亚国家博物馆。馆内藏有基督之前格鲁吉亚不同的地区的的各种珍贵历史文物-金银古物和珠宝。如果时间允许在鲁斯塔韦利大街上散步。最声名历史得建筑都在那里，比如:“青年之宫”,“格鲁吉亚议会”,“ 卡什韋蒂教堂教堂”、“拉斯塔维利国家剧院”,“国家图库”和格鲁吉亚科学院”等。晚餐后，你可以好好享受一个闲暇且放松的晚上。
+
+### 第三天: 第比利斯-卡兹别克
 
 
-BREAKFAST/ LUNCH / DINNER
-Enjoy breakfast this morning before visit to the Gergeti Tsminda Sameba Trinity Church,
-built in the 14th century and situated nearly 7,000 feet up on the hill. From this
-spot you have an unforgettable view of Mount Kazbek, rising over 16,500 feet and
-covered with glaciers and permafrost. According to the legend, the titan Prometheus
-who brought fire to men was chained on Mount Kazbek. Afterwards drive to Sno Gorge,
-an area rich in natural mineral water springs and dotted with old towers, and the
-beautiful Gveleti waterfall, one of the highest waterfalls in Georgia. Return to
-the hotel this evening for dinner.
-
-### DAY FIVE: KAZBEGI TO SIGNAGI
+早餐/午餐/晚餐
 
 
-BREAKFAST/ LUNCH / DINNER
-After a leisurely breakfast drive to the very eastern part of Georgia. The region
-is known for its exquisite wines, warm hospitality, scenic landscapes and generous
-people. En route visit to wine museum “Qvevri” Check in to your hotel, located in
-the heart of Signagi
-
-### DAY SIX: SIGNAGI
+早餐后，从旅馆出发，开车经过第比利斯到姆茨赫塔，姆茨赫塔是前往东格鲁吉亚的古都。格鲁吉亚的基督化即开始于公元337年的姆兹赫塔塔，因而此地也被认为是格鲁吉亚最重要的宗教中心地之一。在姆茨赫塔的时候拜访斯维特特斯克维里大教堂和坐落在山顶上的季瓦里修道院。
+继续你的驱动到令人惊叹的高加索山脉到卡兹别克。开车去卡兹别克，就像卡兹别克一样令人兴奋的。入住卡兹别吉客房酒店，这是一个现代，舒适而美妙的度假胜地，有着令人叹为观止的山景。酒店提供友好的服务，拥有温馨舒适的整体环境。这种豪华建筑拥有简单而开放的设计，让客人感觉宾至如归。卡兹别吉客房酒店周围有很多看到和做的事情。你可以做一个令人兴奋的远足到有历史意义的格节塔圣三一教堂。参观附近的Alexandre Kazbegi博物馆或者攀爬卡兹别克山。您可以享受各种各样的格鲁吉亚菜自助餐式的非正式餐或品尝以点菜方式提供的美味特色菜肴，配上一瓶著名的葡萄酒.
 
 
-BREAKFAST/ LUNCH / DINNER
-After breakfast, take a guided city tour of Signagi. Meaning “shelter,” Signagi is
-one of the smallest towns in the country with one of the richest histories. The
-city is sits on a hill surrounded by a fortified wall, considered to be the second
-longest wall after the Great Wall of China. A large variety of languages and nationalities
-mingle with the unique mountain landscape to make Signagi one of the most breathtaking
-places on the planet.
-
-Explore multiple architectural monuments and learn about the traditions of local
-people, all while enjoying the splendid views that open up on the gorgeous Alazani
-Valley, known as the cradle of Georgian wines. Next visit Tsinandali museum the
-former residence of the 18th century Kakhetian prince and poet, Alexander Chachavadze,
-who turned the residence into a centre for Georgian intellectual life. Enjoy wine
-tasting. Afterwards drive to the longest wine tunnel in Georgia in Kvareli. Overnight
-in Signagi.
-
-### DAY SEVEN: DEPARTURE
 
 
-After breakfast transfer to airport for your journey home.
+### 第四天：卡兹别克
+
+早餐/午餐/晚餐
+
+享受早餐后请访格节塔圣三一教堂。格节塔圣三一教堂建于十四世纪并坐落在山上近7000英尺的地方。从这里你可以看到超过16,500英尺高，覆盖着冰川和永冻土的卡兹别克山的美景。据传说，为人类带来火种的普罗米修斯就被铁链锁在卡兹别克山。之后开车到Sno峡谷。这个地区富含天然矿泉水和古老的塔。看看美丽的Gveleti瀑布-格鲁吉亚最高瀑布之一。返回酒店享用晚餐并休息。
+
+
+
+### 第五天: 卡兹别克-西格纳吉
+
+
+早餐/午餐/晚餐
+
+享用悠闲早餐后开车前往格鲁吉亚的东部,这个地区是格鲁吉亚著名的产酒区，生产种类丰富的葡萄酒,格鲁吉亚人民热情好客,风景优美的风景，十分慷慨人民的地区。参观“kvevri”葡萄酒博物馆。入住位于西格纳吉中心的酒店。
+
+
+### 第六天: 西格纳吉
+
+
+早餐/午餐/晚餐
+
+西格纳吉享受早餐后带着导游的参观西格纳吉。西格纳吉的意思是“避难所”。西格纳吉是最小的城镇之一，还有西格纳吉是数百年来仍完整保存其历史名城特色的罕例。这座城市坐落在一座被坚固的城墙环绕的山上.各种各样的语言和民族与独特的山景相融合让西格纳吉成为这个星球上最激动人心的地方之一。探索建筑纪念碑和了解当地人的传统。所有的人都在享受着美丽的阿拉扎尼山谷的美景，这个地方被称为格鲁吉亚葡萄酒的摇篮。
+以后去参观茨南达利博物馆。 这个地方以前是18世纪卡赫季著名诗人亚历山大•查查瓦泽王子的故居。他把这个个美丽的地方变成了格鲁吉亚知识分子生活的中心。
+享受品酒的乐趣. 之后，驱车前往卡赫季州克瓦雷利最长的葡萄酒隧道。在西格纳吉过一夜。
+
+
+### 第七天:离开
+
+
+早餐后转到机场回家。

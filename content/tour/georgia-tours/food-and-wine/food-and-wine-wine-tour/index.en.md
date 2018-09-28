@@ -1,10 +1,10 @@
----
+﻿---
 language: en
 url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 template: tour
 heading: In a State of Wine Mind
 name: Wine Tour
-title: ""
+title: "In a State of Wine Mind | Tika Tours"
 tour_id: 28
 short_descr: Located at the convergence of Western Asia and Eastern Europe in the South Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has recently shown up on the radars of wine lovers
 price_from: 0

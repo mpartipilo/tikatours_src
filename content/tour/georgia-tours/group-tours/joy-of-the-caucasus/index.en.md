@@ -4,7 +4,7 @@ url: georgia-tours/group-tours/joy-of-the-caucasus
 template: tour
 heading: Joy of the Caucasus
 name: Joy of the Caucasus
-title: ""
+title: Joy of the Caucasus | Tika Tours
 tour_id: 39
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning strip of snow-capped mountains wedged between Black and Caspian seas. The Caucasus region holds a wealth of views
 price_from: 0
