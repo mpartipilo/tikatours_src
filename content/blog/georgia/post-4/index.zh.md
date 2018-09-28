@@ -1,55 +1,47 @@
----
+﻿---
 language: zh
 url: blog/georgia/post-4
 template: blog_post
 post_id: 4
-title: "Georgia's giant dumplings: A recipe"
-name: "Georgia's giant dumplings: A recipe"
+title: 格鲁吉亚的大饺子：食谱
+名称: 格鲁吉亚的大饺子：食谱
 category_id: 1
 ---
-Run to your local supermarket.  The ingredients we need for this Georgian treat are
-listed below:
+跑到你当地的超市。我们需要的原料是：
 
-4 cups all\-purpose flour
-350 grams of ground beef
-350 grams of ground pork
-1 small onion \- do mince
-¹⁄³ cup minced fresh flat\-leaf parsley
-¼ teaspoon chili powder, rounded
-Salt and freshly ground black pepper
+列表如下:
 
-With this mishmash, you can make up to 40 dumplings. Note that an average person
-eats up to 8 dumplings.
+4杯通用面粉
+350克绞碎牛肉
+350克绞碎猪肉
+1个小的洋葱\- 切碎
+¹⁄³ 切碎的新鲜欧芹
+¹⁄4 茶匙辣椒粉,盐和现磨黑胡椒
+
+有了这种混杂物，你可以做40个饺子.请注意，一个普通人可以吃8个饺子。
 
 ![](/library/blog/khinkali-part-4.jpg)
 
-**How to prep**
+**如何准备**
 
-**1\. The dough**
-Place the flour in a large mixing bowl. Gradually add up to 1¼ cups of warm water,
-working with your hands until you have a rather stiff dough. Place on a floured
-surface and knead the dough for 5 to 6 minutes, until it is smooth. Place the dough
-in a bowl and cover with plastic wrap. Set aside to rest for 30 to 40 minutes.
+**1\生面团**
+把面粉放在一个大碗里. 加到1¼ 杯温水，用你的手工作，直到你有一个相当硬的面团。将面团放在撒有面粉的面上，揉5到6分钟. 将面团放入碗中，可以盖上保鲜膜再让面团休息30-40分钟。
 
-Next
+**2\肉**
+在一个大碗里把碎牛肉和猪肉混合在一起.加入洋葱、欧芹、辣椒粉、一茶匙盐和少许的胡椒粉. 
 
-**2\. The meat**
-In a large bowl, combine the ground beef and pork. Add the onion, parsley, chili
-powder, 1 teaspoon of salt, and a dash of pepper. Set aside.
 
-Working on a lightly floured sur¬face, roll the dough into a thin layer (about 3mm
-thick) and cut it into rounds with a diameter of 7,5cm. Roll each round into a paper\-thin
-disk, about 14cm in diameter. Dust the rounds with flour and lay them on a board,
-slightly overlapping.
+
+把干面粉洒在案板上，接管蔓延面团成约3毫米的片状，把它切成直径7.5厘米的圆形，获得直径14厘米的极薄磁盘。面团轮放在木板上.
 
 ![](/library/blog/khinkali-part-1.jpg)
 
-Working on a flat surface, place 2 tablespoons of the meat filling in the center
-of each round. Bring the dough up around the filling, pleating the dough with your
-fingers and then twisting it into a knob to seal it.
+每一轮中间放2大汤匙的肉。捏包子。
 
 ![](/library/blog/khinkali-part-2.jpg)
-Bring a large pot of salted water to a boil and cook the dumplings in batches for
-18 to 20 minutes.
+
+把一大锅盐水烧开，煮饺子18至20分钟。
 ![](/library/blog/khinkali-part-3.jpg)
-Serve hot and enjoy.
+
+ 用餐愉快！ 
+

@@ -1,55 +1,41 @@
----
+﻿---
 language: zh
 url: blog/georgia/a-day-in-tbilisi
 template: blog_post
 post_id: 2
-title: How To Spend A Day in Tbilisi Georgia | Tika Tours
-name: A Day in Tbilisi
+title: 一天在第比利斯| 帝卡旅行社
+name: 一天在第比利斯
 category_id: 1
 ---
-Georgia’s ancient capital [Tbilisi](/regions/tbilisi) is its largest city and straddles
-the banks of the Mtkvari River. It is a city where old meets new, with the cobbled
-maze of streets in Old Town contrasting heavily with the contemporary architecture
-that has arisen in the 21st century. We start many of our [Georgia Tours](http://www.tikatours.com/georgia-tours)
-by spending a day exploring Tbilisi before setting off for Signagi and the Kakheti
-wine region.
+格鲁吉亚首都第比利斯是其最大的古城,横跨库拉河畔。这是一个古老的城市。它是一个城市,满足新老,与老城区的鹅卵石街道错综复杂的对比出现了严重的当代建筑在21世纪。我们开始了许多我们的格鲁吉亚旅游， [格鲁吉亚旅游](http://www.tikatours.com/格鲁吉亚旅游)
+花了一天的时间探索第比利斯，然后开始了西格纳吉和卡赫季葡萄酒产区的旅行。 
 
-Our Tbilisi day tour starts with the Old Town, with its leafy piazzas and charming
-old houses of light pink and green shades. “Tbilisi” gets its name from its natural
-hot springs (“Tbsili” means “warm”) and Abanotubanui is the Bath District – a whole
-street of public bathhouses that use the sulphurous waters. We pay a visit to the
-Queen’s Bathhouse to experience the ultimate in relaxation.
+我们的第比利斯一天旅行始于旧城区，有绿化广场和迷人的浅粉红色和绿色的老房子。”第比利斯”因天然含硫矿物温泉而得名(“Tbili”一词，是温暖的意思) Abanotubanui是一个洗浴区——一个使用硫磺水域的公共澡堂的整条街。在”女王沐浴地”发掘终极的放松之感。
 
 
-From here we visit the Narikala fortress, sitting above the Old Town, which dates
-back to the 4th century when it was a Persian citadel known as Shuris\-tsikhe ("Invidious
-Fort"). Close to Narikala are the Botanical Gardens. It’s easy to lose yourself
-here for a couple of hours, wandering among the many waterfalls, trees and flowers.
+
+从这里我们将参观坐落于古老的城镇之上的纳里卡拉要塞。这座城堡可以追溯到公元4世纪，当时它是一个被称为shuri-tsikhe的波斯城堡("引起反感的堡垒").
+纳里卡拉要塞附近有第比利斯植物园。你很容易迷失自我在这里呆上几个小时，在众多的瀑布、树木和花朵中漫步。
+
 
 ![](/library/blog/tbilisi-630.jpg)
 
-We recommend lunch at the Bohema restaurant, where you will be treated to Georgian
-gourmet cuisine made only from organic fresh ingredients. The restaurant boasts
-a fabulous terrace with spectacular views of Old Tbilisi.
+我们建议在”马拉尼” 餐馆吃午餐, 在那里您将享受到仅由有机新鲜食材烹制的格鲁吉亚美食。这家餐馆拥有一个室外大型露台，从这里可以享受老第比利斯的壮观景色。
 
 ![](/library/content/bohema-restaurant.png)
 
-As a side note, Indonesian celebrity chef Farah Quinn recently paid a visit to the
-restaurant to sample the local cuisine.
+作为附注, 印度尼西亚名厨Farah Quinn最近拜访了这家餐馆，品尝当地的美食。
 
 ![](/library/blog/bohema-faran-quin.jpg)
 
-After lunch we would suggest a visit to the Janashia State Museum. Among other artefacts,
-the museum contains the prehistoric human re\-parents found in Dmanisi which date
-back to 1.8 million years \- the oldest sign of human existence outside of Africa.
+午饭后，我们建议参观一下Janashia国家博物馆. 在其他的文物中，博物馆里有在德马尼西发现的史前人类父母，这是在非洲以外最古老的人类生存迹象。
+博物馆坐落在鲁斯塔韦利大街. 鲁斯塔韦利大街以格鲁吉亚12世纪著名诗人绍塔·鲁斯塔韦利命名.
+ 
+这条大道有许多标志性建筑，包括自由广场，第比利斯的前议会建筑, 鲁斯塔韦利剧院, 卡什韋蒂教堂, 第比利斯歌剧和芭蕾剧院.
 
-The museum is situated on Rustaveli Avenue, named after 12th century poet Shota Rustaveli.
-The avenue has many landmarks including Freedom Square, Tbilisi’s ex parliament
-building, the Rustaveli Theatre, Kashveti Church and the Tbilisi Opera and Ballet
-Theatre House – so it’s well worth an afternoon stroll.
-
-For this evening’s accommodation, we recommend the [Rooms Tbilisi Hotel](http://roomshotels.com/tbilisi).
+为了今晚的住宿，我们推荐 [第比利斯客房酒店](http://roomshotels.com/第比利斯).
 
 ![](/library/blog/rooms-tbilisi---signature-king-2.jpg)
 
-**Find a [tour of Georgia](/georgia-tours) with Tika Tours today!**
+**今天与帝卡旅游公司一起探索 [格鲁吉亚之旅](/georgia-tours)!**
+

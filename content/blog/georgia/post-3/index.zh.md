@@ -1,71 +1,53 @@
----
+﻿---
 language: zh
 url: blog/georgia/post-3
 template: blog_post
 post_id: 3
-title: 
-name: Old world meets new world (blogpost by a visitor of Marani)
+title: 当旧世界遇到新世界
+名称: 当旧世界遇到新世界(一名”马拉尼” 餐馆的客人在博客上发表文章)
 category_id: 1
 ---
-After strolling the Abanotubani (an area in Old Tbilisi full of traditional Sulphur
-baths) for half an hour, we met a Dutch couple that recommended us the bath on Grishashvili
-Street 11.
-Gasping for breath (you had to go up\-hill), we made it to the address. Anna and
-I both chuckled a bit. There was a restaurant (hooray) just next to the bath.
-We weren’t hungry, but the ambiance was so seductive that we immediately decided
-to change plans. The space itself \- and the views – won us over. We decided to
-write about it.
+在Abanotubani(老第比利斯的一个地区，到处都是传统的硫磺浴)散步半个小时后，
+我遇到了一对荷夫妇.它们推荐我们去Grishashvili街11号的硫磺浴。
+
+喘着气（你必须上坡）安娜和我达到这个地址之后发现在硫磺浴旁边有一家餐馆。我们不饿，但气氛唯美温馨很诱人我们马上决定改变计划。
+令人惊奇的空间以及观点。我们决定写。
 
 ![](/library/blog/entrance-marani.jpg)
 
-Small disclaimer; we’re no food or wine experts, nor writers but we do have a self\-proclaimed
-good taste and Marani was something that belonged on our we\-got\-a\-good\-taste\-list.
+小免责声明： 我们不是食物或葡萄酒专家，也不是作家，但我们自称
+好品味 。马拉尼酒店属于我们的 “好品味列表”.
 
-Upon entry, the hostess of the night friendly welcomed us. I’d describe the vibe
-as chilled and hip. The restaurant’s luxurious setting wasn’t dissuasive and we
-immediately felt at place. Not many restaurants in Tbilisi (trust us, we’ve been
-to plenty) have an open kitchen and this was something that caught our eye.
-Since it was early, the restaurant was not crowded and we were fortunate to choose
-our own place. We decided to settle down for a table that gave us a magical panoramic
-view of old Tbilisi.
+一进门一位友好的女主人欢迎我们. 我描述的氛围是非常时尚的。这家餐厅的奢华环境并没有阻止我们， 我们立刻感觉好了.
+第比利斯没有多少家餐厅（相信我们，我们已经去过很多地方）有一个开放式的厨房。 这个环境引起我们的注。因为还早，餐厅并不拥挤，我们很幸运地选择了我们自己的地方。我们决定找一张桌子，从这里我们可以看到古老第比利斯的神奇全景。
 
 ![](/library/blog/marani-interior.jpg)
 
-**At the table**
-Our server was Sergo; a blue\-eyed, cute tall guy. He introduced himself, handed
-over the menu, and gave us all the details we needed for the night. The table was
-decorated simple, yet luxurious.
+**吃饭时**
+我们的服务员叫Sergo; 蓝眼睛、高个子的男人。他介绍了自己，给了我们名单。桌子上装饰品很简单然而豪华。
 
-**Wine & Dine**
-Looking at the menu, the restaurant served a wide range of diverse dishes including
-authentic Georgian and European meals.
+**葡萄酒与进餐**
+我们看了菜单，这家餐馆提供各式各样的菜肴，包括正宗的格鲁吉亚和欧洲菜。
+我们开始吃饭品尝Pkhali. Pkhali是用切碎的蔬菜的一种传统的格鲁吉亚菜. 用白菜，茄子，菠菜，豆类，甜菜再加上核桃、醋、洋葱、大蒜和新鲜香草。这个菜在格鲁吉亚的所有酒店可以找到，但是”马拉尼” 餐馆的Pkhali菜是不寻常的。
+ 
 
-We kicked the evening off with Pkhali. Pkhali is a traditional Georgian dish of chopped
-and minced vegetables, made of cabbage, eggplant, spinach, beans, beets and combined
-with ground walnuts, vinegar, onions, garlic, and herbs and can be found in any
-Georgian restaurant. However, Marani's version was something out of the ordinary.
-Something that really aroused our taste buds. The mood was set.
 
 ![](/library/blog/phkali.jpg)
 
-For the main course, we went with the ''mango/beef salad'' and '' calf's cheeks''.
-Sorry for the not\-so\-beautiful\-pic. I couldn’t wait Sergo recommended us a bottle
-of red wine (Château Svanidze's Mukuzani) that would compliment the food.  According
-to him, and later confirmed by Google, Château Svanidze's wine is organic, award\-winning,
-and produced in small quantities. The combination of the main course and the wine
-was phenomenal. I just couldn’t find no other word for it.
+在主菜中，我们搭配了“芒果/牛肉沙拉”和“小牛的脸颊”。
+对不起，这张不太漂亮的照片。
+Sergo推荐我们喝一瓶红酒 (″斯瓦尼泽酒庄″Mukuzani)根据他的说法，后来被谷歌证实，”斯瓦尼泽”的葡萄酒是有机的，获奖的，而且产量很小. 主菜和酒的结合是惊人的。我只是找不到其他词来形容它!
 
-![](/library/blog/wine-and-food.jpg)
+[](/library/blog/wine-and-food.jpg)
 
-We ended our evening with a lovely dessert. If you love chocolate, Marani’s smooth,
-delicate and delicious lava cake is something you should definitely try. This gloriously
-gooey chocolate cake was served with ice cream. Totally worth the calories.
+如果你喜欢巧克力，”马拉尼” 餐馆的光滑，精致而美味的熔岩蛋糕是你绝对应该尝试的. 巧克力熔岩蛋糕上有冰淇淋。
 
 ![](/library/blog/lava-cake.jpg)
 
-**Lo\-ve\-ly**
-Compared to other restaurants in town, Marani isn’t cheap, but then again, ‘'cheap’’
-and ‘’brain surgeon’’ do not go together either. Service was so lovely, prompt and
-non\-intrusive, and the dishes so relentlessly excellent, that it’s hard to quibble.
-So lovely that we repeated the whole process the next day, and the day after, and
-the day after.
+**可爱的**
+和镇上的其他餐馆相比，”马拉尼” 餐馆并不便宜，话又说回来,“便宜”
+而“脑外科医生”也不会走到一起. 服务是及时和可爱的，这些菜非常棒。
+
+很可爱, 我们第二天重复了整个过程，在那之后的第二天，
+后的第二天也是。
+

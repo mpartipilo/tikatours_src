@@ -1,4 +1,4 @@
----
+﻿---
 language: en
 url: blog/georgia/post-4
 template: blog_post
@@ -53,3 +53,4 @@ Bring a large pot of salted water to a boil and cook the dumplings in batches fo
 18 to 20 minutes.
 ![](/library/blog/khinkali-part-3.jpg)
 Serve hot and enjoy.
+
