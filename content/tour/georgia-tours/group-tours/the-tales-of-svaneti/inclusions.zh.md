@@ -2,8 +2,8 @@
 tour_id: 40
 template: "tour_inclusions"
 ---
-*   All accommodation
-*   Full board breakfasts, 8 lunches, 9 dinners
-*   Bottle of water a day
-*   English speaking guide
-*   Entry tickets as per itinerary
+* 所有住宿
+* 所有的早饭, 8顿午餐,9顿晚餐
+* 每天一瓶水
+* 英语导游
+* 门票价格
