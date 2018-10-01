@@ -3,11 +3,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die();
 }
 
-$captcha_secret = "";
-$db_host = "";
-$db_user = "";
-$db_password = "";
-$db_name = "";
+require("tourdata.php");
+
+$captcha_secret = "6Lf5wHIUAAAAAF0UTlUi5gbQm_IYHn9noIPjJwLq";
+
+$db_host      = 'mysql05.webhosting.nl';
+$db_user      = 'tikatoursufywxjz';
+$db_password  = 'AcoveDopu|73';
+$db_name      = 'tikatoursocahhvm';
+
 $company_email   = 'info@tikatours.com';
 
 function getRealIpAddr()
@@ -32,7 +36,7 @@ function getRealIpAddr()
 $post_data = http_build_query(
     array(
         'secret' => $captcha_secret,
-        'response' => $_POST['g-recaptcha-response'],
+        'response' => $_POST['captcha'],
         'remoteip' => $_SERVER['REMOTE_ADDR']
     )
 );
@@ -52,6 +56,7 @@ $form_response = ['success' => $result->success];
 header('Content-type: application/json');
 
 if (!$result->success) {
+    $form_response['message'] = "captcha verification failed";
     echo json_encode($form_response);
     return;
 }
@@ -61,11 +66,13 @@ $link = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 if($link === false) {
     $form_response['success'] = false;
     $form_response['error'] = true;
+    $form_response['message'] = "database connection failed";
     echo json_encode($form_response);
     return;
 }
 
 // Escape user inputs for security
+$tour_id = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['tname'])));
 $fname = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['fname'])));
 $lname = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['lname'])));
 $email = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['email'])));
@@ -73,6 +80,7 @@ $mobile = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['mobile']))
 $comments = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['comments'])));
 $status = "A";
 $ip = getRealIpAddr();
+$is_booking = true;
 
 $sql = "INSERT INTO enquiry (fname, lname, email, mobile, comments, status, ip, tour_id, is_booking) VALUES ('$fname', '$lname', '$email', '$mobile', '$comments', '$status', '$ip', '$tour_id', '$is_booking')";
 
@@ -86,6 +94,7 @@ if ($insert_result = mysqli_query($link, $sql)) {
 } else {
     $form_response['success'] = false;
     $form_response['error'] = true;
+    $form_response['message'] = "error inserting enquiry entry";
     echo json_encode($form_response);
 }
 
@@ -110,11 +119,9 @@ mysqli_free_result($contact_details_result);
 
 $t_id = $contact_details['tour_id'];
 //Get tour name
-$tour_name_result = mysqli_query($link, "SELECT `name` FROM `tour` WHERE `id` = '$t_id' LIMIT 1");
-$tour_name = mysqli_fetch_assoc($tour_name_result)["name"];
+$tour_name = $tours[$t_id];
 $contact_details['tour_name'] = $tour_name;
 
-mysqli_free_result($tour_name_result);
 
 // get email template file
 $etemplate_path = "email_template.php";

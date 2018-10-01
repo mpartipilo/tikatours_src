@@ -8,6 +8,7 @@
     "url": "git+ssh://gogs@git.thebrandingplug.com:2222/TheBrandingPlug/tikatours.com.git"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "browser-lang": "0.0.1",
     "font-awesome": "^4.7.0",
@@ -16,6 +17,7 @@
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-json": "^1.0.20",
@@ -55,6 +57,8 @@
   "devDependencies": {
     "babel-eslint": "^8.2.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "eslint": "^5.0.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",

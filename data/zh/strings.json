@@ -16,6 +16,7 @@
   "captcha": "验证码",
   "submit": "登录",
   "enter_text_you_see_above": "请输入你在上面看到的文本",
+  "required_tname": "ZH: Tour name is required",
   "required_fname": "名字是必须的",
   "required_lname": "姓是必须的",
   "required_email": "电子邮件地址是必须的",
@@ -33,5 +34,6 @@
   "posted on": "发布关于 ",
   " in ": " 在 ",
   "tour gallery": "旅行画廊",
-  " Gallery": "画廊"
+  " Gallery": "画廊",
+  "Thank you": "ZH: Thank you"
 }

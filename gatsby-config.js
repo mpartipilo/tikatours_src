@@ -45,6 +45,7 @@ module.exports = {
         path: `${__dirname}/content/regions`
       }
     },
+    "gatsby-plugin-recaptcha",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
