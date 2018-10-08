@@ -72,7 +72,17 @@ if($link === false) {
 }
 
 // Escape user inputs for security
-$tour_id = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['tname'])));
+$is_booking = (isset($_POST['tname']) && !empty($_POST['tname']));
+
+if ($is_booking)
+{
+    $tour_id = "'" . mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['tname']))) . "'";
+}
+else
+{
+    $tour_id = "NULL";
+}
+
 $fname = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['fname'])));
 $lname = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['lname'])));
 $email = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['email'])));
@@ -80,9 +90,10 @@ $mobile = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['mobile']))
 $comments = mysqli_real_escape_string($link, strip_tags(trim($_REQUEST['comments'])));
 $status = "A";
 $ip = getRealIpAddr();
-$is_booking = true;
 
-$sql = "INSERT INTO enquiry (fname, lname, email, mobile, comments, status, ip, tour_id, is_booking) VALUES ('$fname', '$lname', '$email', '$mobile', '$comments', '$status', '$ip', '$tour_id', '$is_booking')";
+$is_booking = $is_booking ? "1" : "0";
+
+$sql = "INSERT INTO enquiry (fname, lname, email, mobile, comments, status, ip, tour_id, is_booking) VALUES ('$fname', '$lname', '$email', '$mobile', '$comments', '$status', '$ip', $tour_id, '$is_booking')";
 
 $new_enquiry = 0;
 

@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^tikatours.com [NC] 
+RewriteRule ^(.*)$ http://www.tikatours.com/tika-cms/$1 [L,R=301]
+
+RewriteRule requests/service \/tika-cms\/includes\/inc_files\/datamanager\/core\/system\.php [PT,L]
