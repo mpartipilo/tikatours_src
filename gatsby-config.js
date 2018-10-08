@@ -45,6 +45,12 @@ module.exports = {
         path: `${__dirname}/content/regions`
       }
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-67419912-1"
+      }
+    },
     "gatsby-plugin-recaptcha",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
