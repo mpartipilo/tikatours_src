@@ -29,6 +29,7 @@ const SocialLinks = () => (
         <span>Facebook</span>
       </a>
     </li>
+    {/*
     <li>
       <a title="Share this page" target="_blank" href="">
         <span>
@@ -38,6 +39,7 @@ const SocialLinks = () => (
         <i className="fa fa-plus" />
       </a>
     </li>
+      */}
     <li>
       <a href="mailto:info@tikatours.com">
         <span>
