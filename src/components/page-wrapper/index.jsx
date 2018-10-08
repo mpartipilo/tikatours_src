@@ -6,7 +6,6 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import md5 from "md5"
 
-import Analytics from "../analytics"
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
 import Blog from "../blog"
 import CatList from "../cat-list"
@@ -24,16 +23,6 @@ import SocialPanel from "../social-panel"
 import SubNav from "../sub-nav"
 import TourDetails from "../tour-details"
 import TourList from "../tour-list"
-
-import {
-  Home,
-  Region,
-  MainCategory,
-  SubCategory,
-  Tour,
-  Contact,
-  GeneralPage
-} from "./templates"
 
 import contentData from "../i18n-data"
 
@@ -519,7 +508,6 @@ class PageWrapper extends React.Component {
           <span dangerouslySetInnerHTML={{ __html: videos_html }} />
         )}
         {/* ==scripts-load-top== */}
-        {analytics && <Analytics {...analytics} />}
       </React.Fragment>
     )
   }

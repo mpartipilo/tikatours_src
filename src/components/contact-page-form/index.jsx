@@ -149,7 +149,10 @@ class ContactPageForm extends React.Component {
     if (!hasErrors) {
       var formData = new FormData()
 
-      formData.append("tname", form.tname)
+      if (this.state.options && this.state.options.length >= 1) {
+        formData.append("tname", form.tname)
+      }
+
       formData.append("fname", form.fname)
       formData.append("lname", form.lname)
       formData.append("email", form.email)
@@ -163,6 +166,7 @@ class ContactPageForm extends React.Component {
           if (response.data.success == false) {
             error.general = response.data.message
           }
+          this.setState({ error: error, submitted: response.data.success })
         })
         .catch(err => {
           error.general = err

@@ -3,7 +3,6 @@
 ## Pending
 
 - South African Tours
-- Contact form submission
 - Region sub-nav in chinese
 - Put breadcrumbs back in tour/sub/category pages
 - Show map when country_id is available
