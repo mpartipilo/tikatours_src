@@ -121,7 +121,6 @@ class PageWrapper extends React.Component {
 
   render() {
     var {
-      analytics,
       blog,
       bodyTagClasses,
       children,
@@ -148,7 +147,6 @@ class PageWrapper extends React.Component {
       general_pages,
       blog_category,
       blog_post,
-      tourData,
       tourCategoryData,
       homeOverlayData,
       imagesSlides,
@@ -212,61 +210,61 @@ class PageWrapper extends React.Component {
         }
       }
 
-      if (tourListDetails && isHome) {
-        tourListHeading = strings.feature_tour_list_heading
-        var tourListTag = strings.featured_tour
-        tourList = tourData
-          .filter(t => t.is_featured == "1")
-          .sort((a, b) => a.rank - b.rank)
-      }
+      // if (tourListDetails && isHome) {
+      //   tourListHeading = strings.feature_tour_list_heading
+      //   var tourListTag = strings.featured_tour
+      //   tourList = tourData
+      //     .filter(t => t.is_featured == "1")
+      //     .sort((a, b) => a.rank - b.rank)
+      // }
 
-      if (tourListDetails && !isHome) {
-        const subCategoryFound =
-          tourListDetails.sub_category_id &&
-          tourCategoryData.find(c => c.id == tourListDetails.sub_category_id)
+      // if (tourListDetails && !isHome) {
+      //   const subCategoryFound =
+      //     tourListDetails.sub_category_id &&
+      //     tourCategoryData.find(c => c.id == tourListDetails.sub_category_id)
 
-        const mainCategoryFound =
-          tourListDetails.main_category_id &&
-          tourCategoryData.find(c => c.id == tourListDetails.main_category_id)
+      //   const mainCategoryFound =
+      //     tourListDetails.main_category_id &&
+      //     tourCategoryData.find(c => c.id == tourListDetails.main_category_id)
 
-        if (mainCategoryFound) {
-          catListHeading = mainCategoryFound.sub_heading
-          catList = tourCategoryData
-            .filter(
-              t =>
-                t.parent_id == tourListDetails.main_category_id &&
-                t.status === "A" &&
-                t.rank >= 0
-            )
-            .sort((a, b) => a.rank - b.rank)
+      //   if (mainCategoryFound) {
+      //     catListHeading = mainCategoryFound.sub_heading
+      //     catList = tourCategoryData
+      //       .filter(
+      //         t =>
+      //           t.parent_id == tourListDetails.main_category_id &&
+      //           t.status === "A" &&
+      //           t.rank >= 0
+      //       )
+      //       .sort((a, b) => a.rank - b.rank)
 
-          tourListHeading = mainCategoryFound.name
-          tourList = tourData
-            .filter(
-              t =>
-                t.status === "A" &&
-                t.main_category_id == tourListDetails.main_category_id
-            )
-            .sort((a, b) => a.rank - b.rank)
-        }
+      //     tourListHeading = mainCategoryFound.name
+      //     tourList = tourData
+      //       .filter(
+      //         t =>
+      //           t.status === "A" &&
+      //           t.main_category_id == tourListDetails.main_category_id
+      //       )
+      //       .sort((a, b) => a.rank - b.rank)
+      //   }
 
-        if (subCategoryFound) {
-          imgGroup = subCategoryFound.slideshow_id
-          tourListHeading = subCategoryFound.label
-          tourList = tourData
-            .filter(
-              t =>
-                t.status === "A" &&
-                t.sub_category_id == tourListDetails.sub_category_id
-            )
-            .sort((a, b) => a.rank - b.rank)
-        }
+      //   if (subCategoryFound) {
+      //     imgGroup = subCategoryFound.slideshow_id
+      //     tourListHeading = subCategoryFound.label
+      //     tourList = tourData
+      //       .filter(
+      //         t =>
+      //           t.status === "A" &&
+      //           t.sub_category_id == tourListDetails.sub_category_id
+      //       )
+      //       .sort((a, b) => a.rank - b.rank)
+      //   }
 
-        autoHeading =
-          autoHeading ||
-          (subCategoryFound && subCategoryFound.heading) ||
-          (mainCategoryFound && mainCategoryFound.heading)
-      }
+      //   autoHeading =
+      //     autoHeading ||
+      //     (subCategoryFound && subCategoryFound.heading) ||
+      //     (mainCategoryFound && mainCategoryFound.heading)
+      // }
     }
 
     if (isRegion) {
@@ -304,39 +302,39 @@ class PageWrapper extends React.Component {
       }
     }
 
-    if (isTourDetails) {
-      const data = tourData.find(t => {
-        const tourUrl = fullUrl(
-          currentLanguage,
-          tourCategoryData,
-          t.main_category_id,
-          t.sub_category_id,
-          t.url
-        )
-        return tourUrl === location.pathname.replace(/\/?$/i, "")
-      })
-      tour = data
-      const subCategoryFound =
-        data &&
-        data.sub_category_id &&
-        tourCategoryData.find(c => c.id == data.sub_category_id)
-      imgGroup = data && data.slideshow_id
-      tourListHeading = subCategoryFound
-        ? strings.otherTours + subCategoryFound.label
-        : ""
-      if (tour) {
-        tourList = tourData
-          .filter(
-            t =>
-              t.status === "A" &&
-              t.sub_category_id == tour.sub_category_id &&
-              t.id != data.id
-          )
-          .sort((a, b) => a.rank - b.rank)
-      }
+    // if (isTourDetails) {
+    //   const data = tourData.find(t => {
+    //     const tourUrl = fullUrl(
+    //       currentLanguage,
+    //       tourCategoryData,
+    //       t.main_category_id,
+    //       t.sub_category_id,
+    //       t.url
+    //     )
+    //     return tourUrl === location.pathname.replace(/\/?$/i, "")
+    //   })
+    //   tour = data
+    //   const subCategoryFound =
+    //     data &&
+    //     data.sub_category_id &&
+    //     tourCategoryData.find(c => c.id == data.sub_category_id)
+    //   imgGroup = data && data.slideshow_id
+    //   tourListHeading = subCategoryFound
+    //     ? strings.otherTours + subCategoryFound.label
+    //     : ""
+    //   if (tour) {
+    //     tourList = tourData
+    //       .filter(
+    //         t =>
+    //           t.status === "A" &&
+    //           t.sub_category_id == tour.sub_category_id &&
+    //           t.id != data.id
+    //       )
+    //       .sort((a, b) => a.rank - b.rank)
+    //   }
 
-      autoHeading = data && data.heading
-    }
+    //   autoHeading = data && data.heading
+    // }
 
     if (isGalleryIndex) {
       var galleryGroups = imagesGroups
@@ -440,7 +438,7 @@ class PageWrapper extends React.Component {
             {subNav && <SubNav {...subNav} />}
             <div className="content">
               {children}
-              {!content &&
+              {/*!content &&
                 isTourDetails && (
                   <TourDetails
                     language={currentLanguage}
@@ -450,7 +448,7 @@ class PageWrapper extends React.Component {
                     tourData={tourData}
                     tour={tour}
                   />
-                )}
+                )*/}
               {content && <Content language={currentLanguage} {...content} />}
               {isBlog && <Blog language={currentLanguage} {...blog} />}
               {regionGallery && (

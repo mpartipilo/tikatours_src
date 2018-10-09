@@ -146,12 +146,9 @@ class TourSubCategoryPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
 
-    const {
-      sitemetadata,
-      imagesSlides,
-      tourCategoryData,
-      tourData
-    } = contentData[data.markdownRemark.frontmatter.language]
+    const { sitemetadata, imagesSlides, tourCategoryData } = contentData[
+      data.markdownRemark.frontmatter.language
+    ]
     const defaultLanguage = "en"
     const currentLanguage =
       data.markdownRemark.frontmatter.language || defaultLanguage
@@ -167,10 +164,11 @@ class TourSubCategoryPageTemplate extends React.Component {
       sub_category_id && tourCategoryData.find(c => c.id == sub_category_id)
 
     var tourListHeading = subCategoryFound.name
+
+    var tourData = data.tours.edges.map(t => t.node.frontmatter)
     var tourList = tourData
       .filter(
         t =>
-          t.status === "A" &&
           t.main_category_id == main_category_id &&
           t.sub_category_id == sub_category_id
       )
@@ -210,7 +208,7 @@ TourSubCategoryPageTemplate.propTypes = {
 export default TourSubCategoryPageTemplate
 
 export const pageQuery = graphql`
-  query TourSubCategoryById($id: String!) {
+  query TourSubCategoryById($id: String!, $language: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -221,6 +219,35 @@ export const pageQuery = graphql`
         imggrp_id
         main_category_id
         sub_category_id
+      }
+    }
+
+    tours: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          template: { eq: "tour" }
+          language: { eq: $language }
+          name: { ne: null }
+        }
+      }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            tour_id
+            language
+            short_descr
+            url
+            rank
+            duration
+            price_from
+            main_category_id
+            sub_category_id
+            image_path
+          }
+        }
       }
     }
   }

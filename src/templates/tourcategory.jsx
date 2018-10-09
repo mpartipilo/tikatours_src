@@ -96,7 +96,7 @@ class GeneralPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const { sitemetadata, tourCategoryData, tourData } = contentData[
+    const { sitemetadata, tourCategoryData } = contentData[
       data.markdownRemark.frontmatter.language
     ]
     const defaultLanguage = "en"
@@ -118,9 +118,11 @@ class GeneralPageTemplate extends React.Component {
         .sort((a, b) => a.rank - b.rank)
 
       var tourListHeading = mainCategoryFound.name
+      var tourData = data.tours.edges.map(t => t.node.frontmatter)
       var tourList = tourData
-        .filter(t => t.status === "A" && t.main_category_id == main_category_id)
+        .filter(t => t.main_category_id == main_category_id)
         .sort((a, b) => a.rank - b.rank)
+      console.log(JSON.stringify(tourList))
     }
 
     const props = {
@@ -157,7 +159,7 @@ GeneralPageTemplate.propTypes = {
 export default GeneralPageTemplate
 
 export const pageQuery = graphql`
-  query TourCategoryById($id: String!) {
+  query TourCategoryById($id: String!, $language: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -167,6 +169,35 @@ export const pageQuery = graphql`
         url
         imggrp_id
         main_category_id
+      }
+    }
+
+    tours: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          template: { eq: "tour" }
+          language: { eq: $language }
+          name: { ne: null }
+        }
+      }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            tour_id
+            language
+            short_descr
+            url
+            rank
+            duration
+            price_from
+            main_category_id
+            sub_category_id
+            image_path
+          }
+        }
       }
     }
   }
