@@ -122,7 +122,6 @@ class GeneralPageTemplate extends React.Component {
       var tourList = tourData
         .filter(t => t.main_category_id == main_category_id)
         .sort((a, b) => a.rank - b.rank)
-      console.log(JSON.stringify(tourList))
     }
 
     const props = {
