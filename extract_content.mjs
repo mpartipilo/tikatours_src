@@ -254,7 +254,7 @@ ${turndownService.turndown(c.content)}
           )
           .join("\r\n")
 
-      const targetDir = `./content/${cm.url}`
+      const targetDir = `./extracted/content/${cm.url}`
       mkdirp.sync(targetDir)
 
       const targetFile = `${targetDir}/index.${language}.md`
@@ -329,7 +329,7 @@ ${frontmatter.map(f => `${f.key}: ${f.value}`).join("\r\n")}
 ${turndownService.turndown(data.long_description)}
 `
 
-    const targetDir = `./blog/${cm.url}`
+    const targetDir = `./extracted/${cm.url}`
     mkdirp.sync(targetDir)
 
     const targetFileBlogPost = `${targetDir}/index.${language}.md`
@@ -377,44 +377,36 @@ languages.forEach(language => {
         value: language
       },
       {
-        key: "url",
-        value: cm.url
-      },
-      {
-        key: "template",
-        value: cm.template
-      },
-      {
-        key: "heading",
-        value: data.heading
-      },
-      {
-        key: "title",
-        value: `"${data.title}"`
-      },
-      {
-        key: "tour_id",
-        value: data.id
-      },
-      {
-        key: "short_descr",
-        value: data.short_descr
-      },
-      {
-        key: "price_from",
-        value: data.price_from
-      },
-      {
-        key: "duration",
-        value: data.duration
-      },
-      {
         key: "itinerary",
         value: `./itinerary.${language}.md`
       },
       {
         key: "inclusions",
         value: `./inclusions.${language}.md`
+      },
+      {
+        key: "template",
+        value: cm.template
+      },
+      {
+        key: "url",
+        value: cm.url
+      },
+      {
+        key: "tour_id",
+        value: data.id
+      },
+      {
+        key: "rank",
+        value: data.rank
+      },
+      {
+        key: "price_from",
+        value: data.price_from
+      },
+      {
+        key: "image_path",
+        value: data.image_path
       }
     ]
 
@@ -460,6 +452,25 @@ languages.forEach(language => {
       })
     }
 
+    frontmatter.push(
+      {
+        key: "heading",
+        value: data.heading
+      },
+      {
+        key: "title",
+        value: `"${data.title}"`
+      },
+      {
+        key: "short_descr",
+        value: data.short_descr
+      },
+      {
+        key: "duration",
+        value: data.duration
+      }
+    )
+
     var output = `---
 ${frontmatter.map(f => `${f.key}: ${f.value}`).join("\r\n")}
 ---
@@ -476,7 +487,7 @@ template: "tour_inclusions"
 ---
 ${turndownService.turndown(data.inclusions)}`
 
-    const targetDir = `./tour/${cm.url}`
+    const targetDir = `./extracted/tour/${cm.url}`
     mkdirp.sync(targetDir)
 
     const targetFileOverview = `${targetDir}/index.${language}.md`

@@ -2,6 +2,13 @@ const languages = ["en", "zh"]
 
 const contentMap = [
   {
+    url: "",
+    content: {
+      page_id: 1,
+      module_id: 1
+    }
+  },
+  {
     url: "georgia-travel-guide",
     content: {
       page_id: 5,
@@ -548,6 +555,10 @@ const tourMap = [
   },
   {
     url: "multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus",
+    template: "tour"
+  },
+  {
+    url: "multi-country-tours/southern-africa/south-african-honeymoon",
     template: "tour"
   }
 ]
