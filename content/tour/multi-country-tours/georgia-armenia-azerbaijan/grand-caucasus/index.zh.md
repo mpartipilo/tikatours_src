@@ -1,21 +1,23 @@
 ---
 language: zh
-url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
-template: tour
-heading: Grand Caucasus
-name: Grand Caucasus
-title: "Grand Caucasus | Tika tours"
-tour_id: 27
-short_descr: 欢迎来到高加索!高加索山脉的三个高地国家位于黑海与里海之间。环视白雪皑皑的大高加索群山。高加索地区拥有丰富的全景和当地居民热情好客。
-price_from: 0
-duration: 14天/13晚
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
+template: tour
+url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
+tour_id: 27
+rank: 2
+price_from: 0
+image_path: /library/slides/caucasus.jpg
 country_id: 1
 is_featured: true
 main_category_id: 2
 sub_category_id: 16
 imggrp_id: 26
+heading: Grand Caucasus
+name: Grand Caucasus
+title: "Grand Caucasus | Tika tours"
+short_descr: 欢迎来到高加索!高加索山脉的三个高地国家位于黑海与里海之间。环视白雪皑皑的大高加索群山。高加索地区拥有丰富的全景和当地居民热情好客。
+duration: 14天/13晚
 ---
 
 

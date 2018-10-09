@@ -1,20 +1,22 @@
 ---
 language: zh
-url: georgia-tours/group-tours/joy-of-the-caucasus
-template: tour
-heading: 高加索地区
-name: 高加索地区
-title: 高加索地区 | Tika Tours
-tour_id: 39
-short_descr: 欢迎来到高加索!高加索山脉的三个高地国家位于黑海与里海之间。环视白雪皑皑的大高加索群山。高加索地区拥有丰富的全景和当地居民热情好客。
-price_from: 0
-duration: 14 天 / 13 晚
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
+template: tour
+url: georgia-tours/group-tours/joy-of-the-caucasus
+tour_id: 39
+rank: 0
+price_from: 0
+image_path: /library/content/signagi.jpg
 country_id: 0
 main_category_id: 1
 sub_category_id: 32
 imggrp_id: 26
+heading: 高加索地区
+name: 高加索地区
+title: 高加索地区 | Tika Tours
+short_descr: 欢迎来到高加索!高加索山脉的三个高地国家位于黑海与里海之间。环视白雪皑皑的大高加索群山。高加索地区拥有丰富的全景和当地居民热情好客。
+duration: 14 天 / 13 晚
 ---
 
 欢迎来到高加索! 高加索山脉的三个高地国家位于黑海与里海之间。环视白雪皑皑的大高加索群山。高加索地区拥有丰富的全景和当地居民热情好客。去访问你以前读书所知道的那些地方。

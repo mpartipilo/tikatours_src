@@ -1,20 +1,21 @@
 ---
 language: zh
-url: georgia-tours/georgia-highlights
-template: tour
-heading: Georgia Highlights
-name: Georgia Highlights
-title: "Georgia Highlights | Tika Tours"
-tour_id: 35
-short_descr: 
-price_from: 0
-duration: 
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
+template: tour
+url: georgia-tours/georgia-highlights
+tour_id: 35
+rank: 0
+price_from: 0
+image_path: /library/content/group-sub-tour.jpg
 country_id: 1
 main_category_id: 1
 sub_category_id: 0
----
+heading: Georgia Highlights
+name: Georgia Highlights
+title: "Georgia Highlights | Tika Tours"
+short_descr: 
+duration: 
 ---
 在八天的旅程中可以找到格鲁吉亚性质和人的格鲁吉亚人的热情好客.旅行在第比利斯开始，令人兴奋的旅程继续一段大高加索山脉风景优美。
 

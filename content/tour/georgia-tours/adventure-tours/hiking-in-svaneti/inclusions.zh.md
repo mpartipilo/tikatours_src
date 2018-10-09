@@ -1,4 +1,4 @@
-﻿---
+---
 tour_id: 5
 template: "tour_inclusions"
 ---

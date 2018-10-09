@@ -1,21 +1,23 @@
-﻿---
+---
 language: zh
-url: georgia-tours/adventure-tours/hiking-in-svaneti
+itinerary: ./itinerary.zh.md
+inclusions: ./inclusions.zh.md
 template: tour
-heading: 斯瓦涅季徒步旅行
-name: 斯瓦涅季徒步旅行
-title: "格鲁吉亚之旅：在斯瓦涅季徒步旅行 | Tika Tours"
+url: georgia-tours/adventure-tours/hiking-in-svaneti
 tour_id: 5
-short_descr: 欢迎来到斯瓦涅季！非常美丽的塔，白雪覆盖的山峰，美酒和舞蹈。
+rank: 3
 price_from: 0
-duration: 10天/ 9晚
+image_path: /library/tours/hiking-svaneti.jpg
 country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
 imggrp_id: 30
-itinerary: ./itinerary.zh.md
-inclusions: ./inclusions.zh.md
+heading: 斯瓦涅季徒步旅行
+name: 斯瓦涅季徒步旅行
+title: "格鲁吉亚之旅：在斯瓦涅季徒步旅行 | Tika Tours"
+short_descr: 欢迎来到斯瓦涅季！非常美丽的塔，白雪覆盖的山峰，美酒和舞蹈。
+duration: 10天/ 9晚
 ---
 欢迎来到斯瓦涅季！非常美丽的塔，白雪覆盖的山峰，美酒和舞蹈。整个地区都是联合国教科文组织的遗产，在这个遥远的地方从来没有被外国侵略者占领，谁可以掠夺其宝藏。
 

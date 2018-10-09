@@ -1,20 +1,22 @@
 ---
 language: zh
-url: georgia-tours/food-and-wine/food-and-wine-wine-tour
-template: tour
-heading: 葡萄酒之乡
-name: 葡萄酒之乡
-title: "葡萄酒之乡 | Tika Tours"
-tour_id: 28
-short_descr: 格鲁吉亚位于南部高加索地区，坐落于西亚及东欧的交接点。惊人美景的国家格鲁吉亚对于葡萄酒爱好者来说是葡萄酒最极具吸引力的地方。
-price_from: 0
-duration: 9天/ 8晚
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
+template: tour
+url: georgia-tours/food-and-wine/food-and-wine-wine-tour
+tour_id: 28
+rank: 0
+price_from: 0
+image_path: /library/slides/wine.jpg
 country_id: 1
 main_category_id: 1
 sub_category_id: 10
 imggrp_id: 27
+heading: 葡萄酒之乡
+name: 葡萄酒之乡
+title: "葡萄酒之乡 | Tika Tours"
+short_descr: 格鲁吉亚位于南部高加索地区，坐落于西亚及东欧的交接点。惊人美景的国家格鲁吉亚对于葡萄酒爱好者来说是葡萄酒最极具吸引力的地方。
+duration: 9天/ 8晚
 ---
 你已经品尝过意大利、法国和西班牙的葡萄酒， 但你的下一个葡萄酒之旅在哪里?你问过自己关于葡萄酒的起源吗？最古老的葡萄酒之路可以在欧洲和亚洲的十字路口探探险。
 
