@@ -11,3 +11,4 @@ static/includes/error_log
 static/tika-cms/_login_logs
 static/tika-cms/error_log
 static/tika-cms/ajax/error_log
+/extracted
