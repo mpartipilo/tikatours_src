@@ -34,14 +34,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `tour`,
+        name: `blog`,
         path: `${__dirname}/content/blog`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `tour`,
+        name: `region`,
         path: `${__dirname}/content/regions`
       }
     },
@@ -49,17 +49,6 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-67419912-1"
-      }
-    },
-    {
-      resolve: "gatsby-plugin-purify-css",
-      options: {
-        /* Defaults */
-        styleId: "gatsby-inlined-css",
-        purifyOptions: {
-          info: true,
-          minify: true
-        }
       }
     },
     "gatsby-plugin-recaptcha",

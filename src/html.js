@@ -1,4 +1,5 @@
 import React from "react"
+import path from "path"
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -11,9 +12,14 @@ if (process.env.NODE_ENV === `production`) {
 
 module.exports = class HTML extends React.Component {
   render() {
+    let cssInline
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
+        <style 
+          dangerouslySetInnerHTML={{ __html: '@import url("/styles.css")' }}/>
+      )
+      cssInline = (
         <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
