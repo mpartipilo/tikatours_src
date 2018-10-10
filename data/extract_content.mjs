@@ -2,7 +2,7 @@ import fs from "fs"
 import mkdirp from "mkdirp"
 import TurndownService from "turndown"
 
-import contentData from "./src/components/i18n-data"
+import contentData from "./i18n-data.js"
 
 import { languages, contentMap, tourMap, blogMap } from "./extract_content_map"
 

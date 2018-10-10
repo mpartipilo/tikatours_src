@@ -51,6 +51,17 @@ module.exports = {
         trackingId: "UA-67419912-1"
       }
     },
+    {
+      resolve: "gatsby-plugin-purify-css",
+      options: {
+        /* Defaults */
+        styleId: "gatsby-inlined-css",
+        purifyOptions: {
+          info: true,
+          minify: true
+        }
+      }
+    },
     "gatsby-plugin-recaptcha",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
