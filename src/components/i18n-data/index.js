@@ -23,9 +23,6 @@ import imagesSlides_zh from "../../../data/json/zh/images/slides.json"
 import countryHighlights_en from "../../../data/json/en/country/highlights.json"
 import countryHighlights_zh from "../../../data/json/zh/country/highlights.json"
 
-import regionData_en from "../../../data/json/en/region/region.json"
-import regionData_zh from "../../../data/json/zh/region/region.json"
-
 import navigation_en from "../../../data/json/en/navigation/navigation.json"
 import navigation_zh from "../../../data/json/zh/navigation/navigation.json"
 
@@ -56,7 +53,6 @@ export default {
     homeOverlayData: homeOverlayData_en,
     imagesSlides: imagesSlides_en,
     countryHighlights: countryHighlights_en,
-    regionData: regionData_en,
     contact_data: contact_data_en,
     strings: strings_en
   },
@@ -74,7 +70,6 @@ export default {
     homeOverlayData: homeOverlayData_zh,
     imagesSlides: imagesSlides_zh,
     countryHighlights: countryHighlights_zh,
-    regionData: regionData_zh,
     contact_data: contact_data_zh,
     strings: strings_zh
   }

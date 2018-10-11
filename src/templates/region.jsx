@@ -120,7 +120,7 @@ function getSlideshowData(imagesSlides, groupId) {
 }
 
 const RegionPageTemplate = ({ location, data, pathContext }) => {
-  const { sitemetadata, imagesSlides, regionData, strings } = contentData[
+  const { sitemetadata, imagesSlides, strings } = contentData[
     data.markdownRemark.frontmatter.language
   ]
   const defaultLanguage = "en"
@@ -131,19 +131,19 @@ const RegionPageTemplate = ({ location, data, pathContext }) => {
 
   const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
 
+  const regionData = data.regions.edges.map(e => e.node.frontmatter)
   var subNav = {
     list: regionData
-      .filter(
-        t =>
-          t.status === "A" &&
-          t.country_id == data.markdownRemark.frontmatter.country_id
-      )
+      .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
       .sort((a, b) => a.rank - b.rank)
       .map(r => {
-        const full_url = `/${currentLanguage}/regions/${r.url}`
+        const full_url = `/${currentLanguage}/${r.url}`
         return {
+          id: r.name,
           active: location.pathname.replace(/\/?$/i, "") === full_url,
           full_url,
+          label: r.name,
+          title: r.name,
           ...r
         }
       })
@@ -193,7 +193,7 @@ RegionPageTemplate.propTypes = {
 export default RegionPageTemplate
 
 export const pageQuery = graphql`
-  query RegionPageById($id: String!) {
+  query RegionPageById($id: String!, $language: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -205,6 +205,32 @@ export const pageQuery = graphql`
         gallery_id
         country_id
         name
+      }
+    }
+
+    regions: allMarkdownRemarkRegion(
+      filter: {
+        frontmatter: {
+          template: { eq: "regions" }
+          language: { eq: $language }
+          name: { ne: null }
+        }
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            language
+            url
+            heading
+            country_id
+            template
+            imggrp_id
+            gallery_id
+            name
+          }
+        }
       }
     }
   }
