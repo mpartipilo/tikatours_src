@@ -72,9 +72,11 @@ const Footer = props => {
               />
             </a>
             <div>
-              <small>
-                {contact_data.copyright} {contact_data.credits}
-              </small>
+              <small
+                dangerouslySetInnerHTML={{
+                  __html: `${contact_data.copyright} ${contact_data.credits}`
+                }}
+              />
             </div>
           </div>
         </div>
