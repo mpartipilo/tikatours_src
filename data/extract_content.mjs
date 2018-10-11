@@ -2,7 +2,7 @@ import fs from "fs"
 import mkdirp from "mkdirp"
 import TurndownService from "turndown"
 
-import contentData from "./i18n-data.js"
+import contentData from "./i18-data"
 
 import { languages, contentMap, tourMap, blogMap } from "./extract_content_map"
 
@@ -47,7 +47,8 @@ function getPageData(
       country_id: data.country_id,
       imggrp_id: data.slideshow_id,
       gallery_id: data.gallery_id,
-      region_name: data.name
+      region_name: data.name,
+      data
     }
   }
 
@@ -207,10 +208,36 @@ languages.forEach(language => {
 
       if (cm.content.module_id == 36) {
         if (page.region_name) {
-          frontmatter.push({
-            key: "name",
-            value: page.region_name
-          })
+          frontmatter.push(
+            {
+              key: "name",
+              value: page.region_name
+            },
+            {
+              key: "rank",
+              value: page.data.rank
+            },
+            {
+              key: "short_descr",
+              value: page.data.short_descr
+            },
+            {
+              key: "latitude",
+              value: page.data.latitude
+            },
+            {
+              key: "longitude",
+              value: page.data.longitude
+            },
+            {
+              key: "formatted_address",
+              value: page.data.formatted_address
+            },
+            {
+              key: "image_path",
+              value: page.data.image_path
+            }
+          )
         }
       }
 
