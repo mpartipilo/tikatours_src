@@ -229,6 +229,7 @@ export const pageQuery = graphql`
             imggrp_id
             gallery_id
             name
+            rank
           }
         }
       }
