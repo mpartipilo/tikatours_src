@@ -8,6 +8,12 @@ imggrp_id: 17
 gallery_id: 17
 template: regions
 name: 萨梅格列罗
+rank: 4
+short_descr: Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in Western Georgia on the Black Sea.
+latitude: 42.51261083145823
+longitude: 41.959897794726544
+formatted_address: Samegrelo, Georgia
+image_path: /library/regions/samegrelo.jpg
 ---
 <div class="row content-row"><!-- 1211 (1)-->
 

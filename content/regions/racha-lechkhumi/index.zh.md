@@ -8,6 +8,12 @@ imggrp_id: 16
 gallery_id: 16
 template: regions
 name: 拉恰-列其呼米
+rank: 8
+short_descr: The region of Racha-Lechkhumi also officially includes Kvemo (lower) Svaneti. This northwestern region is the most sparsely populated in Georgia, situated in the midst of the awe-inspiring Caucasus.
+latitude: 42.6718873
+longitude: 43.0562836
+formatted_address: Racha-Lechkhumi and Lower Svaneti, Georgia
+image_path: /library/regions/racha.jpg
 ---
 <div class="row content-row"><!-- 1199 (1)-->
 

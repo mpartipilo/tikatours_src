@@ -8,6 +8,12 @@ imggrp_id: 15
 gallery_id: 15
 template: regions
 name: 姆茨赫塔-姆季阿涅季
+rank: 2
+short_descr: Mtskheta-Mtianeti is one of the most scenic regions in Georgia like a perfectly composed painting brought vividly to life.
+latitude: 42.1682185
+longitude: 44.6506057
+formatted_address: Mtskheta-Mtianeti, Georgia
+image_path: /library/regions/mtskheta.jpg
 ---
 <div class="row content-row"><!-- 1497 (1)-->
 

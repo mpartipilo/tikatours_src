@@ -1,4 +1,4 @@
-﻿---
+---
 language: zh
 url: regions
 heading: 格鲁吉亚地区

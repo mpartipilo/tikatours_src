@@ -8,6 +8,12 @@ imggrp_id: 9
 gallery_id: 9
 template: regions
 name: 古里亚
+rank: 10
+short_descr: Guria is located in the western part of Georgia, bordered by the Black Sea. Famous for its music and polyphonic singing, Guria is a region rich in cultural traditions and natural beauty.
+latitude: 41.9442736
+longitude: 42.0458091
+formatted_address: Guria, Georgia
+image_path: /library/regions/guria.jpg
 ---
 <div class="row content-row"><!-- 1215 (1)-->
 

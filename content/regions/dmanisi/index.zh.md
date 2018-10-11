@@ -8,6 +8,12 @@ imggrp_id: 8
 gallery_id: 8
 template: regions
 name: 德马尼西
+rank: 6
+short_descr: Dmanisi is a town in Kvemo (lower) Kartli in eastern Georgia that has become famous for the ancient human skull fragments that have been found nearby.
+latitude: 41.3298054
+longitude: 44.2073125
+formatted_address: Dmanisi, Georgia
+image_path: /library/regions/dmanisi.jpg
 ---
 <div class="row content-row"><!-- 1168 (1)-->
 

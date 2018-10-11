@@ -8,7 +8,12 @@ imggrp_id: 10
 gallery_id: 10
 template: regions
 name: 伊梅列季
-
+rank: 9
+short_descr: 
+latitude: 42.230108
+longitude: 42.9008665
+formatted_address: Imereti, Georgia
+image_path: /library/regions/sataplia.jpg
 ---
 <div class="row content-row"><!-- 1207 (1)-->
 

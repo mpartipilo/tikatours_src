@@ -8,6 +8,12 @@ imggrp_id: 21
 gallery_id: 21
 template: regions
 name: 特塞季
+rank: 14
+short_descr: 
+latitude: 42.3859494
+longitude: 45.3950238
+formatted_address: Tusheti National Park, Georgia
+image_path: /library/regions/tusheti.jpg
 ---
 <div class="row content-row"><!-- 1180 (1)-->
 

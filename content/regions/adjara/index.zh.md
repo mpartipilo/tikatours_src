@@ -1,4 +1,4 @@
-﻿---
+---
 language: zh
 url: regions/adjara
 heading: "阿扎尔"
@@ -8,6 +8,12 @@ imggrp_id: 7
 gallery_id: 7
 template: regions
 name: "阿扎尔"
+rank: 11
+short_descr: 
+latitude: 41.6005626
+longitude: 42.0688383
+formatted_address: Adjara, Georgia
+image_path: /library/regions/batumi1.jpg
 ---
 <div class="row content-row"><!-- 1203 (1)-->
 

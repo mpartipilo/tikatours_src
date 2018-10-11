@@ -8,6 +8,12 @@ imggrp_id: 13
 gallery_id: 13
 template: regions
 name: Khevi
+rank: 12
+short_descr: Khevi is a small historical-geographic area in north-eastern Georgia. High in the pristine and wild Caucasus, visitors will discover proud communities and raw, powerful landscapes.
+latitude: 42.639842923064016
+longitude: 44.41095172031248
+formatted_address: Khevi, Georgia
+image_path: /library/regions/khevi.jpg
 ---
 <div class="row content-row"><!-- 1196 (1)-->
 
