@@ -8,6 +8,12 @@ imggrp_id: 12
 gallery_id: 12
 template: regions
 name: Kartli
+rank: 5
+short_descr: Kartli is the historical heart of Georgia, cut through by the river Mtkvari and known for its scenic beauty and historic monuments.
+latitude: 41.99301146478792
+longitude: 44.13218738496096
+formatted_address: Kartli Street, Georgia
+image_path: /library/regions/uplistsikhe.jpg
 ---
 <div class="row content-row"><!-- 1188 (1)-->
 

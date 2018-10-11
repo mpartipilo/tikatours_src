@@ -8,6 +8,12 @@ imggrp_id: 20
 gallery_id: 20
 template: regions
 name: Tbilisi
+rank: 1
+short_descr: Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly lovely.
+latitude: 41.716667
+longitude: 44.783333
+formatted_address: Tbilisi, Georgia
+image_path: /library/regions/tbilisi1.jpg
 ---
 <div class="row content-row"><!-- 1160 (1)-->
 

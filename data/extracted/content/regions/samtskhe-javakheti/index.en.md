@@ -8,6 +8,12 @@ imggrp_id: 18
 gallery_id: 18
 template: regions
 name: Samtskhe-Javakheti
+rank: 7
+short_descr: The river Jobiskhevi, a tributary of the Mtkvari, threads through this jaw-droppingly beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
+latitude: 41.5479296
+longitude: 43.2776399
+formatted_address: Samtskhe-Javakheti, Georgia
+image_path: /library/regions/vardzia1.jpg
 ---
 <div class="row content-row"><!-- 1184 (1)-->
 
