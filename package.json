@@ -74,6 +74,7 @@
     "lodash": "^4.17.10",
     "mkdirp": "^0.5.1",
     "prettier": "1.13.7",
-    "turndown": "^5.0.0"
+    "turndown": "^5.0.0",
+    "yaml": "^1.0.0"
   }
 }

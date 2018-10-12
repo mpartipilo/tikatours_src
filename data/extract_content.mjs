@@ -1,294 +1,307 @@
 import fs from "fs"
 import mkdirp from "mkdirp"
-import TurndownService from "turndown"
+import yaml from "yaml"
 
 import contentData from "./i18-data"
 
 import { languages, contentMap, tourMap, blogMap } from "./extract_content_map"
+import turndown from "./process_common"
 
-const turndownService = new TurndownService()
+languages.forEach(language => {
+  // General pages, tour categories and tour subcategories
+  contentMap.forEach(cm => {
+    const frontmatter = getFrontMatter(language, cm, contentData[language])
 
-const regexSplitLongParagraph = /(.{1,80}[^\s]*)/gi
-
-turndownService.addRule("paragraphLength", {
-  filter: ["p"],
-  replacement: function(text) {
-    return (
-      "\r\n" +
-      text
-        .match(regexSplitLongParagraph)
-        .map(t => t.trim())
-        .join("\r\n") +
-      "\r\n"
+    Object.keys(frontmatter).forEach(
+      key => frontmatter[key] == null && delete frontmatter[key]
     )
-  }
+
+    const content = getPageContent(cm, contentData[language])
+
+    if (frontmatter.template === "temp") {
+      return
+    }
+
+    const output = "---\n" + yaml.stringify(frontmatter) + "---\n" + content
+
+    const url = cm.url || "homepage"
+    const template = cm.template || "pages"
+    const targetDir = `./extracted/content/${template}/${url}`
+    mkdirp.sync(targetDir)
+
+    const targetFile = `${targetDir}/index.${language}.md`
+    fs.writeFileSync(targetFile, output)
+  })
+
+  // Tours
+  tourMap.forEach(cm => {
+    const { tourCategoryData, tourData } = contentData[language]
+    const data = tourData.find(t => {
+      const tourUrl = fullUrl(
+        tourCategoryData,
+        t.main_category_id,
+        t.sub_category_id,
+        t.url
+      )
+      return tourUrl === cm.url
+    })
+
+    if (!data) {
+      console.log(`No data found for url ${cm.url}`)
+      process.exit(1)
+    }
+
+    const frontmatter = getFrontMatter(language, cm, data)
+
+    Object.keys(frontmatter).forEach(
+      key => frontmatter[key] == null && delete frontmatter[key]
+    )
+
+    const content = getTourContent(cm, data)
+
+    const frontmatterItinerary = {
+      language: language,
+      template: "tour_itinerary",
+      tour_id: +data.id
+    }
+
+    const frontmatterInclusions = {
+      language: language,
+      template: "tour_inclusions",
+      tour_id: +data.id
+    }
+
+    const outputOverview =
+      "---\n" + yaml.stringify(frontmatter) + "---\n" + content.overview
+    const outputItinerary =
+      "---\n" +
+      yaml.stringify(frontmatterItinerary) +
+      "---\n" +
+      content.itinerary
+    const outputInclusions =
+      "---\n" +
+      yaml.stringify(frontmatterInclusions) +
+      "---\n" +
+      content.inclusions
+
+    const targetDir = `./extracted/content/${cm.template}/${cm.url}`
+    mkdirp.sync(targetDir)
+
+    const targetFileOverview = `${targetDir}/index.${language}.md`
+    const targetFileItinerary = `${targetDir}/itinerary.${language}.md`
+    const targetFileInclusions = `${targetDir}/inclusions.${language}.md`
+
+    fs.writeFileSync(targetFileOverview, outputOverview)
+    fs.writeFileSync(targetFileItinerary, outputItinerary)
+    fs.writeFileSync(targetFileInclusions, outputInclusions)
+  })
 })
 
-function getPageData(
-  cmap,
-  {
-    strings,
-    general_pages,
-    regionData,
-    blog_category,
-    blog_post,
-    tourCategoryData
-  }
-) {
-  if (cmap.content.module_id == 1)
-    return general_pages.find(p => p.page_id == cmap.content.page_id)
+function getFrontMatterGeneralPage(language, map, { general_pages }) {
+  const data = general_pages.find(p => p.page_id == map.content.page_id)
 
-  if (cmap.content.module_id == 36) {
-    var data = regionData.find(r => r.id == cmap.content.page_id)
-
-    return {
-      page_heading: data.heading,
-      page_title: data.title,
-      country_id: data.country_id,
-      imggrp_id: data.slideshow_id,
-      gallery_id: data.gallery_id,
-      region_name: data.name,
-      data
-    }
+  var result = {
+    heading: data.page_heading,
+    title: data.page_title
   }
 
-  if (cmap.content.module_id == 23) {
-    const page = general_pages.find(p => p.page_id == cmap.content.page_id)
-    var result = {
-      page_heading: page.page_heading
-    }
-    if (cmap.blog && cmap.blog.category_id) {
-      const current_blog_category = blog_category.find(
-        b => b.id == cmap.blog.category_id
-      )
-      result = {
-        page_heading: `${strings.category_archives}: ${
-          current_blog_category.label
-        }`
-      }
-      if (cmap.blog.post_id) {
-        var current_blog_post = blog_post.find(p => p.id == cmap.blog.post_id)
-        result = {
-          page_heading: current_blog_post.name
-        }
-      }
-    }
-    return result
+  if (data.country_id != 0) {
+    result.country_id = +data.country_id
   }
 
-  if (cmap.content.module_id == 100) {
-    const tourListDetails = { sub_category_id: cmap.content.page_id }
+  if (data.imggrp_id != 0) {
+    result.imggrp_id = +data.imggrp_id
+  }
 
-    const subCategoryFound = tourCategoryData.find(
-      c => c.id == tourListDetails.sub_category_id
-    )
+  if (data.page_rank != 0) {
+    result.rank = +data.page_rank
+  }
 
-    const mainCategoryFound =
-      subCategoryFound &&
-      tourCategoryData.find(c => c.id == subCategoryFound.parent_id)
+  return result
+}
 
-    return {
-      page_heading: subCategoryFound && subCategoryFound.heading,
-      page_title: subCategoryFound && subCategoryFound.title,
-      main_category_id: (mainCategoryFound && mainCategoryFound.id) || null,
-      sub_category_id: subCategoryFound.id,
-      imggrp_id: subCategoryFound.slideshow_id
-    }
+function getFrontMatterRegions(language, map, contentData) {
+  if (map.content.module_id == 1) {
+    return getFrontMatterGeneralPage(language, map, contentData)
+  }
+
+  const { regionData } = contentData
+  var data = regionData.find(r => r.id == map.content.page_id)
+
+  return (({
+    heading,
+    title,
+    country_id,
+    slideshow_id,
+    gallery_id,
+    name,
+    rank,
+    short_descr,
+    latitude,
+    longitude,
+    formatted_address,
+    image_path
+  }) => ({
+    heading,
+    title,
+    country_id: +country_id,
+    imggrp_id: +slideshow_id,
+    gallery_id: +gallery_id,
+    name,
+    rank: +rank,
+    short_descr,
+    latitude: parseFloat(latitude),
+    longitude: parseFloat(longitude),
+    formatted_address,
+    image_path
+  }))(data)
+}
+
+function getFrontMatterTourCategory(language, map, data) {
+  const pageFrontMatter = getFrontMatterGeneralPage(language, map, data)
+
+  return {
+    ...pageFrontMatter,
+    main_category_id: map.tourDetails.main_category_id
   }
 }
 
-////
-// GENERAL PAGES
-////
-languages.forEach(language => {
-  contentMap.forEach(cm => {
-    const {
-      general_pages,
-      regionData,
-      tourCategoryData,
-      content,
-      content_row,
-      content_column,
-      blog_category,
-      blog_post,
-      strings
-    } = contentData[language]
+function getFrontMatterTourSubCategory(language, map, { tourCategoryData }) {
+  const tourListDetails = { sub_category_id: map.content.page_id }
 
-    const page = getPageData(cm, {
-      general_pages,
-      tourCategoryData,
-      regionData,
-      blog_category,
-      blog_post,
-      strings
-    })
+  const subCategoryFound = tourCategoryData.find(
+    c => c.id == tourListDetails.sub_category_id
+  )
 
-    const content_index = content.find(
-      c =>
-        c.page_id == cm.content.page_id && c.module_id == cm.content.module_id
-    )
+  const mainCategoryFound =
+    subCategoryFound &&
+    tourCategoryData.find(c => c.id == subCategoryFound.parent_id)
 
-    if (content_index) {
-      const rows = content_row
-        .filter(row => row.content_id == content_index.id)
-        .sort((a, b) => parseInt(a.rank, 10) - parseInt(b.rank, 10))
-        .map(r => ({
-          id: r.id,
-          rank: r.rank,
-          columns: content_column
-            .filter(c => c.content_row_id == r.id)
-            .sort((a, b) => parseInt(a.rank, 10) - parseInt(b.rank, 10))
-            .map(c => ({
-              id: c.id,
-              content: c.content,
-              css_class: c.css_class
-            }))
-        }))
+  return {
+    heading: subCategoryFound.heading,
+    title: subCategoryFound.title,
+    imggrp_id: +subCategoryFound.slideshow_id,
+    main_category_id: (mainCategoryFound && +mainCategoryFound.id) || null,
+    sub_category_id: +subCategoryFound.id
+  }
+}
 
-      const frontmatter = [
-        {
-          key: "language",
-          value: language
-        },
-        {
-          key: "url",
-          value: cm.url
-        },
-        {
-          key: "heading",
-          value: page.page_heading
-        },
-        {
-          key: "title",
-          value: page.page_title
-        }
-      ]
+function getFrontMatterTour(language, map, tour) {
+  return {
+    itinerary: `./itinerary.${language}.md`,
+    inclusions: `./inclusions.${language}.md`,
+    tour_id: +tour.id,
+    rank: +tour.rank,
+    price_from: +tour.price_from,
+    image_path: tour.image_path,
+    country_id: +tour.country_id,
+    is_featured: tour.is_featured == "1" ? true : null,
+    main_category_id: +tour.main_category_id,
+    sub_category_id: +tour.sub_category_id,
+    gallery_id: +tour.gallery_id,
+    imggrp_id: +tour.slideshow_id,
+    heading: tour.heading,
+    title: tour.title,
+    short_descr: tour.short_descr,
+    duration: tour.duration
+  }
+}
 
-      if (cm.subNav) {
-        frontmatter.push({
-          key: "subnav",
-          value: "\r\n" + cm.subNav.map(n => `    - ${n}`).join("\r\n")
-        })
-      }
+function getFrontMatter(language, map, contentData) {
+  const templates = {
+    gallery: getFrontMatterGeneralPage,
+    regions: getFrontMatterRegions,
+    tourcategory: getFrontMatterTourCategory,
+    toursubcategory: getFrontMatterTourSubCategory,
+    tour: getFrontMatterTour
+  }
 
-      if (page.country_id > 0) {
-        frontmatter.push({
-          key: "country_id",
-          value: page.country_id
-        })
-      }
+  const frontmatterExtractor =
+    templates[map.template] || getFrontMatterGeneralPage
 
-      if (page.imggrp_id > 0) {
-        frontmatter.push({
-          key: "imggrp_id",
-          value: page.imggrp_id
-        })
-      }
-
-      if (page.gallery_id && page.gallery_id > 0) {
-        frontmatter.push({
-          key: "gallery_id",
-          value: page.gallery_id
-        })
-      }
-
-      if (cm.template) {
-        frontmatter.push({
-          key: "template",
-          value: cm.template
-        })
-      }
-
-      if (cm.tourDetails) {
-        frontmatter.push({
-          key: "main_category_id",
-          value: cm.tourDetails.main_category_id
-        })
-      }
-
-      if (cm.content.module_id == 36) {
-        if (page.region_name) {
-          frontmatter.push(
-            {
-              key: "name",
-              value: page.region_name
-            },
-            {
-              key: "rank",
-              value: page.data.rank
-            },
-            {
-              key: "short_descr",
-              value: page.data.short_descr
-            },
-            {
-              key: "latitude",
-              value: page.data.latitude
-            },
-            {
-              key: "longitude",
-              value: page.data.longitude
-            },
-            {
-              key: "formatted_address",
-              value: page.data.formatted_address
-            },
-            {
-              key: "image_path",
-              value: page.data.image_path
-            }
-          )
-        }
-      }
-
-      if (cm.content.module_id == 100) {
-        if (page.main_category_id) {
-          frontmatter.push({
-            key: "main_category_id",
-            value: page.main_category_id
-          })
-        }
-
-        if (page.sub_category_id) {
-          frontmatter.push({
-            key: "sub_category_id",
-            value: page.sub_category_id
-          })
-        }
-      }
-
-      var output = `---
-${frontmatter.map(f => `${f.key}: ${f.value}`).join("\r\n")}
----
-`
-      output =
-        output +
-        rows
-          .map(
-            r => `<div class="row content-row"><!-- ${r.id} (${r.rank})-->
-${r.columns
-              .map(
-                c => `<div class="${c.css_class}"><!-- ${c.id} -->
-
-${turndownService.turndown(c.content)}
-
-</div>
-`
-              )
-              .join("\r\n")}
-</div>
-`
-          )
-          .join("\r\n")
-
-      const targetDir = `./extracted/content/${cm.url}`
-      mkdirp.sync(targetDir)
-
-      const targetFile = `${targetDir}/index.${language}.md`
-      fs.writeFileSync(targetFile, output)
+  if (!templates[map.template]) {
+    return {
+      template: "temp"
     }
-  })
-})
+  }
+
+  var commonProps = {
+    language,
+    url: map.url
+  }
+
+  if (map.template) {
+    commonProps.template = map.template
+  }
+
+  return {
+    ...commonProps,
+    ...frontmatterExtractor(language, map, contentData)
+  }
+}
+
+function getPageContent(map, { content, content_row, content_column }) {
+  const content_index = content.find(
+    c =>
+      c.page_id == map.content.page_id && c.module_id == map.content.module_id
+  )
+
+  const rows = content_row
+    .filter(row => row.content_id == content_index.id)
+    .sort((a, b) => parseInt(a.rank, 10) - parseInt(b.rank, 10))
+    .map(r => ({
+      id: r.id,
+      rank: r.rank,
+      columns: content_column
+        .filter(c => c.content_row_id == r.id)
+        .sort((a, b) => parseInt(a.rank, 10) - parseInt(b.rank, 10))
+        .map(c => ({
+          id: c.id,
+          content: c.content,
+          css_class: c.css_class
+        }))
+    }))
+
+  return rows
+    .map(
+      r => `<div class="row content-row"><!-- ${r.id} (${r.rank})-->
+${r.columns
+        .map(
+          c => `<div class="${c.css_class}"><!-- ${c.id} -->
+
+${turndown.turndown(c.content)}
+
+</div>
+`
+        )
+        .join("\r\n")}
+</div>
+`
+    )
+    .join("\r\n")
+}
+
+function getTourContent(map, tourData) {
+  return {
+    overview: turndown.turndown(tourData.long_descr),
+    itinerary: turndown.turndown(tourData.itinerary),
+    inclusions: turndown.turndown(tourData.inclusions)
+  }
+}
+
+function fullUrl(tourCategoryData, main_category_id, sub_category_id, url) {
+  var main_category = tourCategoryData.find(c => c.id == main_category_id)
+  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
+
+  if (main_category && sub_category)
+    return `${main_category.url}/${sub_category.url}/${url}`
+
+  if (main_category) return `${main_category.url}/${url}`
+
+  return null
+}
+
+process.exit()
 
 ////
 // BLOG PAGES
@@ -353,7 +366,7 @@ languages.forEach(language => {
     var outputBlog = `---
 ${frontmatter.map(f => `${f.key}: ${f.value}`).join("\r\n")}
 ---
-${turndownService.turndown(data.long_description)}
+${turndown.turndown(data.long_description)}
 `
 
     const targetDir = `./extracted/${cm.url}`
@@ -362,167 +375,5 @@ ${turndownService.turndown(data.long_description)}
     const targetFileBlogPost = `${targetDir}/index.${language}.md`
 
     fs.writeFileSync(targetFileBlogPost, outputBlog)
-  })
-})
-
-////
-// TOUR PAGES
-////
-const fullUrl = (tourCategoryData, main_category_id, sub_category_id, url) => {
-  var main_category = tourCategoryData.find(c => c.id == main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
-
-  if (main_category && sub_category)
-    return `${main_category.url}/${sub_category.url}/${url}`
-
-  if (main_category) return `${main_category.url}/${url}`
-
-  return null
-}
-
-languages.forEach(language => {
-  tourMap.forEach(cm => {
-    const { tourCategoryData, tourData } = contentData[language]
-
-    const data = tourData.find(t => {
-      const tourUrl = fullUrl(
-        tourCategoryData,
-        t.main_category_id,
-        t.sub_category_id,
-        t.url
-      )
-      return tourUrl === cm.url
-    })
-
-    if (!data) {
-      console.log(`No data found for url ${cm.url}`)
-    }
-
-    const frontmatter = [
-      {
-        key: "language",
-        value: language
-      },
-      {
-        key: "itinerary",
-        value: `./itinerary.${language}.md`
-      },
-      {
-        key: "inclusions",
-        value: `./inclusions.${language}.md`
-      },
-      {
-        key: "template",
-        value: cm.template
-      },
-      {
-        key: "url",
-        value: cm.url
-      },
-      {
-        key: "tour_id",
-        value: data.id
-      },
-      {
-        key: "rank",
-        value: data.rank
-      },
-      {
-        key: "price_from",
-        value: data.price_from
-      },
-      {
-        key: "image_path",
-        value: data.image_path
-      }
-    ]
-
-    if (data.country_id) {
-      frontmatter.push({
-        key: "country_id",
-        value: data.country_id
-      })
-    }
-
-    if (data.is_featured) {
-      frontmatter.push({
-        key: "is_featured",
-        value: true
-      })
-    }
-
-    if (data.main_category_id) {
-      frontmatter.push({
-        key: "main_category_id",
-        value: data.main_category_id
-      })
-    }
-
-    if (data.sub_category_id) {
-      frontmatter.push({
-        key: "sub_category_id",
-        value: data.sub_category_id
-      })
-    }
-
-    if (data.gallery_id && data.gallery_id > 0) {
-      frontmatter.push({
-        key: "gallery_id",
-        value: data.gallery_id
-      })
-    }
-
-    if (data.slideshow_id && data.slideshow_id > 0) {
-      frontmatter.push({
-        key: "imggrp_id",
-        value: data.slideshow_id
-      })
-    }
-
-    frontmatter.push(
-      {
-        key: "heading",
-        value: data.heading
-      },
-      {
-        key: "title",
-        value: `"${data.title}"`
-      },
-      {
-        key: "short_descr",
-        value: data.short_descr
-      },
-      {
-        key: "duration",
-        value: data.duration
-      }
-    )
-
-    var output = `---
-${frontmatter.map(f => `${f.key}: ${f.value}`).join("\r\n")}
----
-`
-    var outputOverview = `${output}${turndownService.turndown(data.long_descr)}`
-    var outputItinerary = `---
-tour_id: ${data.id}
-template: "tour_itinerary"
----
-${turndownService.turndown(data.itinerary)}`
-    var outputInclusions = `---
-tour_id: ${data.id}
-template: "tour_inclusions"
----
-${turndownService.turndown(data.inclusions)}`
-
-    const targetDir = `./extracted/tour/${cm.url}`
-    mkdirp.sync(targetDir)
-
-    const targetFileOverview = `${targetDir}/index.${language}.md`
-    const targetFileItinerary = `${targetDir}/itinerary.${language}.md`
-    const targetFileInclusions = `${targetDir}/inclusions.${language}.md`
-
-    fs.writeFileSync(targetFileOverview, outputOverview)
-    fs.writeFileSync(targetFileItinerary, outputItinerary)
-    fs.writeFileSync(targetFileInclusions, outputInclusions)
   })
 })
