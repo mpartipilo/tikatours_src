@@ -1,10 +1,11 @@
 ---
 language: zh
 url: regions
+template: regions
 heading: 格鲁吉亚地区
 title: 格鲁吉亚地区 | Tika Tours
 country_id: 1
-template: regions
+page_rank: 2
 ---
 <div class="row content-row"><!-- 1528 (0)-->
 

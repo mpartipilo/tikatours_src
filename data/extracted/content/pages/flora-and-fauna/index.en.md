@@ -3,7 +3,7 @@ language: en
 url: flora-and-fauna
 heading: Flora & Fauna
 title: Flora & Fauna | Tika Tours
-page_rank: "2"
+page_rank: 2
 ---
 <div class="row content-row"><!-- 871 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1194 -->

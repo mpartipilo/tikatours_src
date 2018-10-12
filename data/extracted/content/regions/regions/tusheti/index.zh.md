@@ -1,15 +1,15 @@
 ---
 language: zh
 url: regions/tusheti
+template: regions
 heading: Tusheti
 title: Tusheti | Tika Tours
 country_id: 1
 imggrp_id: 21
 gallery_id: 21
-template: regions
 name: Tusheti
 rank: 14
-short_descr: 
+short_descr: ""
 latitude: 42.3859494
 longitude: 45.3950238
 formatted_address: Tusheti National Park, Georgia

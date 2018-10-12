@@ -3,7 +3,7 @@ language: en
 url: language-and-script
 heading: Language & Script
 title: Language & Script | Tika Tours
-page_rank: "7"
+page_rank: 7
 ---
 <div class="row content-row"><!-- 891 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->

@@ -3,8 +3,8 @@ language: zh
 url: georgia-travel-guide
 heading: 佐治亚旅游指南
 title: 佐治亚旅游指南 | Tika Tours
-imggrp_id: "25"
-page_rank: "4"
+imggrp_id: 25
+page_rank: 4
 ---
 <div class="row content-row"><!-- 1221 (0)-->
 

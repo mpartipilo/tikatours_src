@@ -3,9 +3,9 @@ language: zh
 url: ""
 heading: 欢迎来到 Tika Tours
 title: Tika Tours | 格鲁吉亚，亚美尼亚和阿塞拜疆之旅
-country_id: "1"
-imggrp_id: "1"
-page_rank: "1"
+country_id: 1
+imggrp_id: 1
+page_rank: 1
 ---
 <div class="row content-row"><!-- 2225 (0)-->
 

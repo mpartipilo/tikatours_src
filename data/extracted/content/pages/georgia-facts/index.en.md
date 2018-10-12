@@ -3,7 +3,7 @@ language: en
 url: georgia-facts
 heading: Georgia Facts
 title: Georgia Facts | Tika Tours
-page_rank: "3"
+page_rank: 3
 ---
 <div class="row content-row"><!-- 866 (0)-->
 

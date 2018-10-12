@@ -1,15 +1,16 @@
 ---
 language: en
 url: regions/samegrelo
+template: regions
 heading: Samegrelo
 title: Samegrelo | Tika Tours
 country_id: 1
 imggrp_id: 17
 gallery_id: 17
-template: regions
 name: Samegrelo
 rank: 4
-short_descr: Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in Western Georgia on the Black Sea.
+short_descr: Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in
+  Western Georgia on the Black Sea.
 latitude: 42.51261083145823
 longitude: 41.959897794726544
 formatted_address: Samegrelo, Georgia

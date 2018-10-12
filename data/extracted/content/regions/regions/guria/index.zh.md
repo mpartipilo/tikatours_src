@@ -1,15 +1,17 @@
 ---
 language: zh
 url: regions/guria
+template: regions
 heading: Guria
 title: Guria | Tika Tours
 country_id: 1
 imggrp_id: 9
 gallery_id: 9
-template: regions
 name: Guria
 rank: 10
-short_descr: Guria is located in the western part of Georgia, bordered by the Black Sea. Famous for its music and polyphonic singing, Guria is a region rich in cultural traditions and natural beauty.
+short_descr: Guria is located in the western part of Georgia, bordered by the Black Sea.
+  Famous for its music and polyphonic singing, Guria is a region rich in
+  cultural traditions and natural beauty.
 latitude: 41.9442736
 longitude: 42.0458091
 formatted_address: Guria, Georgia

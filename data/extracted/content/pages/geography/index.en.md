@@ -3,7 +3,7 @@ language: en
 url: geography
 heading: Geography
 title: Geography | Tika Tours
-page_rank: "1"
+page_rank: 1
 ---
 <div class="row content-row"><!-- 868 (1)-->
 

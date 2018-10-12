@@ -3,7 +3,7 @@ language: zh
 url: geography
 heading: 地理
 title: 地理 | Tika Tours
-page_rank: "1"
+page_rank: 1
 ---
 <div class="row content-row"><!-- 868 (1)-->
 

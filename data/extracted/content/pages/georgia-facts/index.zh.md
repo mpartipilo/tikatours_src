@@ -3,7 +3,7 @@ language: zh
 url: georgia-facts
 heading: 格鲁吉亚事实
 title: 格鲁吉亚事实 | Tika Tours
-page_rank: "3"
+page_rank: 3
 ---
 <div class="row content-row"><!-- 866 (0)-->
 

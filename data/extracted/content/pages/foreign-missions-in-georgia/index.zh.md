@@ -3,7 +3,7 @@ language: zh
 url: foreign-missions-in-georgia
 heading: 格鲁吉亚的外国使团
 title: 格鲁吉亚的外国使团 | Tika Tours
-page_rank: "4"
+page_rank: 4
 ---
 <div class="row content-row"><!-- 902 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->

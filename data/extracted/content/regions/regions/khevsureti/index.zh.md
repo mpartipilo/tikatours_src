@@ -1,15 +1,17 @@
 ---
 language: zh
 url: regions/khevsureti
+template: regions
 heading: Khevsureti
 title: Khevsureti | Tika Tours
 country_id: 1
 imggrp_id: 14
 gallery_id: 14
-template: regions
 name: Khevsureti
 rank: 15
-short_descr: The historic province of Khevsureti is like a gulp of old fashioned fresh air and one of the most beautiful and mysterious parts of Georgia. The largest villages are Barisakho and Shatili.
+short_descr: The historic province of Khevsureti is like a gulp of old fashioned fresh air
+  and one of the most beautiful and mysterious parts of Georgia. The largest
+  villages are Barisakho and Shatili.
 latitude: 42.66651145306842
 longitude: 45.09914787050775
 formatted_address: Khevsureti, Georgia

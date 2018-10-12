@@ -1,15 +1,17 @@
 ---
 language: zh
 url: regions/tbilisi
+template: regions
 heading: Tbilisi
 title: Tbilisi | Tika Tours
 country_id: 1
 imggrp_id: 20
 gallery_id: 20
-template: regions
 name: Tbilisi
 rank: 1
-short_descr: Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly lovely.
+short_descr: Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with
+  tree-lined boulevards, charming lanes, towering churches and pastel-painted
+  houses, Tbilisi is unexpectedly lovely.
 latitude: 41.716667
 longitude: 44.783333
 formatted_address: Tbilisi, Georgia

@@ -1,15 +1,16 @@
 ---
 language: zh
 url: regions/kakheti
+template: regions
 heading: Kakheti
 title: Kakheti | Tika Tours
 country_id: 1
 imggrp_id: 11
 gallery_id: 11
-template: regions
 name: Kakheti
 rank: 3
-short_descr: Kakheti is the largest region in Georgia and particularly famous for its luminous wines, postcard-perfect scenery and friendly people.
+short_descr: Kakheti is the largest region in Georgia and particularly famous for its
+  luminous wines, postcard-perfect scenery and friendly people.
 latitude: 41.6481602
 longitude: 45.6905554
 formatted_address: Kakheti, Georgia

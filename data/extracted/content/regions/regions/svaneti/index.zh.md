@@ -1,15 +1,16 @@
 ---
 language: zh
 url: regions/svaneti
+template: regions
 heading: Svaneti
 title: Svaneti | Tika Tours
 country_id: 1
 imggrp_id: 19
 gallery_id: 19
-template: regions
 name: Svaneti
 rank: 13
-short_descr: Svaneti, one of the most ancient historical provinces of Georgia, is located on the southern slopes of the Caucasus.
+short_descr: Svaneti, one of the most ancient historical provinces of Georgia, is located
+  on the southern slopes of the Caucasus.
 latitude: 43.12715938060467
 longitude: 42.47387004238283
 formatted_address: Svaneti, Georgia
