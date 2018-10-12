@@ -1,9 +1,10 @@
 ---
-language: en
+language: zh
 url: gallery
-heading: Gallery
-title: Gallery | Tika Tours
 template: gallery
+heading: 画廊
+title: 画廊 | Tika Tours
+rank: 5
 ---
 <div class="row content-row"><!-- 907 (0)-->
 
