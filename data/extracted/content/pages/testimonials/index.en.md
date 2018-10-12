@@ -3,7 +3,7 @@ language: en
 url: testimonials
 heading: What Our Guests Say About Us
 title: Testimonials | Tika Tours
-page_rank: 4
+rank: 4
 ---
 <div class="row content-row"><!-- 1848 (0)-->
 

@@ -4,7 +4,7 @@ url: georgia-travel-guide
 heading: Georgia Travel Guide
 title: Georgia Travel Guide | Tika Tours
 imggrp_id: 25
-page_rank: 4
+rank: 4
 ---
 <div class="row content-row"><!-- 1221 (0)-->
 

@@ -1,10 +1,11 @@
 ---
 language: zh
 url: georgia-tours
+template: tourcategory
 heading: 格鲁吉亚之旅
 title: 格鲁吉亚之旅 | Tika Tours
 country_id: 1
-template: tourcategory
+rank: 2
 main_category_id: 1
 ---
 <div class="row content-row"><!-- 1151 (0)-->

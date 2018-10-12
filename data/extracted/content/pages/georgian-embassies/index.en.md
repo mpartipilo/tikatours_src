@@ -3,7 +3,7 @@ language: en
 url: georgian-embassies
 heading: Georgian Embassies and General Consulates
 title: Georgian Embassies and General Consulates | Tika Tours
-page_rank: 3
+rank: 3
 ---
 <div class="row content-row"><!-- 897 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1241 -->

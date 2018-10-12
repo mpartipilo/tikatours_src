@@ -3,7 +3,7 @@ language: en
 url: history
 heading: History
 title: History | Tika Tours
-page_rank: 1
+rank: 1
 ---
 <div class="row content-row"><!-- 1542 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2072 -->

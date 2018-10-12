@@ -1,9 +1,10 @@
 ---
 language: en
 url: multi-country-tours
+template: tourcategory
 heading: Multi-Country Tours
 title: Multi-Country Tours | Tika Tours
-template: tourcategory
+rank: 3
 main_category_id: 2
 ---
 <div class="row content-row"><!-- 1505 (0)-->

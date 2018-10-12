@@ -3,7 +3,7 @@ language: zh
 url: testimonials
 heading: 我们的客人对我们的评价
 title: 褒奖 | Tika Tours
-page_rank: 4
+rank: 4
 ---
 <div class="row content-row"><!-- 1848 (0)-->
 

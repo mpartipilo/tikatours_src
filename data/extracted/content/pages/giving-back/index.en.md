@@ -4,7 +4,7 @@ url: giving-back
 heading: Giving Back
 title: Giving Back | Tika Tours
 imggrp_id: 34
-page_rank: 3
+rank: 3
 ---
 <div class="row content-row"><!-- 1509 (1)-->
 

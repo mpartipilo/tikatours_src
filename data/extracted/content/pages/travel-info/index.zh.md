@@ -3,7 +3,7 @@ language: zh
 url: travel-info
 heading: 旅游信息
 title: 旅游信息 | Tika Tours
-page_rank: 5
+rank: 5
 ---
 <div class="row content-row"><!-- 893 (0)-->
 

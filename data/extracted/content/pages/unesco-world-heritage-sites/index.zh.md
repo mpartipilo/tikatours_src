@@ -3,7 +3,7 @@ language: zh
 url: unesco-world-heritage-sites
 heading: 教科文组织世界遗产
 title: 教科文组织世界遗产 | Tika Tours
-page_rank: 3
+rank: 3
 ---
 <div class="row content-row"><!-- 873 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1198 -->

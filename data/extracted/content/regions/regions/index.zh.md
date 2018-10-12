@@ -5,7 +5,7 @@ template: regions
 heading: 格鲁吉亚地区
 title: 格鲁吉亚地区 | Tika Tours
 country_id: 1
-page_rank: 2
+rank: 2
 ---
 <div class="row content-row"><!-- 1528 (0)-->
 
