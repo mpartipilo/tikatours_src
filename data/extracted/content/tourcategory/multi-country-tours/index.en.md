@@ -6,6 +6,7 @@ heading: Multi-Country Tours
 title: Multi-Country Tours | Tika Tours
 rank: 3
 main_category_id: 2
+sub_heading: Choose your tour destination
 ---
 <div class="row content-row"><!-- 1505 (0)-->
 
