@@ -1,10 +1,11 @@
 ---
 language: en
-url: 
+url: ""
 heading: Welcome to Tika Tours
 title: Tika Tours | Tours of Georgia, Armenia and Azerbaijan
-country_id: 1
-imggrp_id: 1
+country_id: "1"
+imggrp_id: "1"
+page_rank: "1"
 ---
 <div class="row content-row"><!-- 2225 (0)-->
 

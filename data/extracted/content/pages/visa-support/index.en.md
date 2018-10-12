@@ -3,6 +3,7 @@ language: en
 url: visa-support
 heading: Visa Support
 title: Visa Support | Tika Tours
+page_rank: "2"
 ---
 <div class="row content-row"><!-- 896 (1)-->
 <div class="col-xs-12"><!-- 1240 -->

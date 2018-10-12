@@ -3,6 +3,7 @@ language: en
 url: travel-info
 heading: Travel Info
 title: Travel Info | Tika Tours
+page_rank: "5"
 ---
 <div class="row content-row"><!-- 893 (0)-->
 

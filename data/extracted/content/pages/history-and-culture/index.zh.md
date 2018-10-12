@@ -3,6 +3,7 @@ language: zh
 url: history-and-culture
 heading: 历史与文化
 title: 历史与文化 | Tika Tours
+page_rank: "4"
 ---
 <div class="row content-row"><!-- 877 (0)-->
 

@@ -3,6 +3,7 @@ language: en
 url: folk-dance
 heading: Folk Dance
 title: Folk Dance | Tika Tours
+page_rank: "5"
 ---
 <div class="row content-row"><!-- 1525 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2040 -->

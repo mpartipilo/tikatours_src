@@ -3,7 +3,8 @@ language: zh
 url: giving-back
 heading: 回馈
 title: 回馈 | Tika Tours
-imggrp_id: 34
+imggrp_id: "34"
+page_rank: "3"
 ---
 <div class="row content-row"><!-- 1509 (1)-->
 

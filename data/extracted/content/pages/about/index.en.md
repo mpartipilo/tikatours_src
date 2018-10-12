@@ -3,6 +3,7 @@ language: en
 url: about
 heading: Our Difference
 title: About | Tika Tours
+page_rank: "6"
 ---
 <div class="row content-row"><!-- 2201 (1)-->
 
