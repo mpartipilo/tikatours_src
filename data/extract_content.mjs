@@ -160,9 +160,16 @@ function getFrontMatterRegions(language, map, contentData) {
 function getFrontMatterTourCategory(language, map, data) {
   const pageFrontMatter = getFrontMatterGeneralPage(language, map, data)
 
+  const { tourCategoryData } = data
+
+  const mainCategoryFound = tourCategoryData.find(
+    c => c.id == map.tourDetails.main_category_id
+  )
+
   return {
     ...pageFrontMatter,
-    main_category_id: map.tourDetails.main_category_id
+    main_category_id: map.tourDetails.main_category_id,
+    sub_heading: mainCategoryFound.sub_heading
   }
 }
 
