@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/group-tours/joy-of-the-caucasus
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/group-tours/joy-of-the-caucasus
 tour_id: 39
 rank: 0
 price_from: 0
@@ -11,6 +11,7 @@ image_path: /library/content/signagi.jpg
 country_id: 0
 main_category_id: 1
 sub_category_id: 32
+gallery_id: 0
 imggrp_id: 26
 heading: 高加索地区
 name: 高加索地区

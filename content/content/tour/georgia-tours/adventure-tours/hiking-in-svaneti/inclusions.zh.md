@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 5
-template: "tour_inclusions"
 ---
 *   所有的住宿
 *   全面的早餐，8顿午餐，9顿晚餐

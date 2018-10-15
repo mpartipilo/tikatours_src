@@ -1,9 +1,10 @@
-﻿---
+---
 language: zh
 url: giving-back
 heading: 我们为当地社区所做的一切
 title: 我们为当地社区所做的一切 | Tika Tours
 imggrp_id: 34
+rank: 3
 ---
 <div class="row content-row"><!-- 1509 (1)-->
 

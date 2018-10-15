@@ -1,9 +1,9 @@
 ---
 language: en
+url: georgia-tours/food-and-wine/food-and-wine-wine-tour
+template: tour
 itinerary: ./itinerary.en.md
 inclusions: ./inclusions.en.md
-template: tour
-url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 tour_id: 28
 rank: 0
 price_from: 0
@@ -11,11 +11,14 @@ image_path: /library/slides/wine.jpg
 country_id: 1
 main_category_id: 1
 sub_category_id: 10
+gallery_id: 0
 imggrp_id: 27
 heading: In a State of Wine Mind
 name: Wine Tour
 title: "In a State of Wine Mind | Tika Tours"
-short_descr: Located at the convergence of Western Asia and Eastern Europe in the South Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has recently shown up on the radars of wine lovers
+short_descr: Located at the convergence of Western Asia and Eastern Europe in the South
+  Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has
+  recently shown up on the radars of wine lovers
 duration: 9 DAYS/8 NIGHTS
 ---
 You have already sampled Italian, French and Spanish wines, but where next on your

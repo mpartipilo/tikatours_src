@@ -14,8 +14,9 @@ main_category_id: 2
 sub_category_id: 16
 gallery_id: 0
 imggrp_id: 26
-heading: ""
-title: ""
+heading: Grand Caucasus
+name: Grand Caucasus
+title: "Grand Caucasus | Tika tours"
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a
   stunning strip of snow-capped mountains wedged between Black and Caspian seas.
   The Caucasus region holds a wealth of views

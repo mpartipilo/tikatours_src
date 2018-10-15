@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 35
-template: "tour_inclusions"
 ---
 包含物:
 

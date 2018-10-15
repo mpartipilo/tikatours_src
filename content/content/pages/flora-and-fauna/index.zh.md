@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: flora-and-fauna
 heading: 植物群和动物群
 title: 植物群和动物群 | Tika Tours
+rank: 2
 ---
 <div class="row content-row"><!-- 871 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1194 -->

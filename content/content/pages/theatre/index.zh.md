@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: theatre
 heading: 戏院
 title: 戏院 | Tika Tours
+rank: 4
 ---
 <div class="row content-row"><!-- 885 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1220 -->

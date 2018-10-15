@@ -14,6 +14,7 @@ sub_category_id: 25
 gallery_id: 0
 imggrp_id: 0
 heading: South African Honeymoon
+name: South African Honeymoon
 title: South African Honeymoon | Tika Tours
 short_descr: 10 days and 9 luxury nights divided in the wilderness of South Africa and the
   untouched islands in Mozambique. This tour has been carefully designed to give

@@ -7,6 +7,7 @@ title: 探险之旅 | Tika Tours
 imggrp_id: 28
 main_category_id: 1
 sub_category_id: 8
+rank: 1
 ---
 <div class="row content-row"><!-- 1483 (0)-->
 

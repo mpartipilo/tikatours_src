@@ -15,6 +15,7 @@ sub_category_id: 16
 gallery_id: 0
 imggrp_id: 26
 heading: ""
+name: 大高加索
 title: ""
 short_descr: 欢迎来到高加索！ 高加索地区的三个高地国家跨越了黑色和里海之间蜿蜒的白雪皑皑的山脉。 高加索地区拥有丰富的景观
 duration: 14天/13晚

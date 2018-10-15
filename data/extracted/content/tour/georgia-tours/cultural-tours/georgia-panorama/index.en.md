@@ -14,7 +14,8 @@ main_category_id: 1
 sub_category_id: 9
 gallery_id: 41
 imggrp_id: 24
-heading: ""
+heading: Georgian Panorama
+name: Georgian Panorama
 title: Georgian Panorama | Tika Tours
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely
   diverse landscapes Georgia offers one of the world`s most jaw dropping

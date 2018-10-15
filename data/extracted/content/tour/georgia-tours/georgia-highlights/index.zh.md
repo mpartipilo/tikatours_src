@@ -14,6 +14,7 @@ sub_category_id: 0
 gallery_id: 0
 imggrp_id: 0
 heading: ""
+name: 佐治亚州亮点
 title: ""
 short_descr: ""
 duration: ""

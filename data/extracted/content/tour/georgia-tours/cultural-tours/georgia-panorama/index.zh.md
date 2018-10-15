@@ -15,6 +15,7 @@ sub_category_id: 9
 gallery_id: 41
 imggrp_id: 24
 heading: ""
+name: 格鲁吉亚全景
 title: 格鲁吉亚全景 | Tika Tours
 short_descr: 欢迎来到格鲁吉亚 这个未被发现的旅游目的地，拥有极其多样化的景观格鲁吉亚提供了世界上最令人惊叹的地球全景。
 duration: 7天/ 6晚

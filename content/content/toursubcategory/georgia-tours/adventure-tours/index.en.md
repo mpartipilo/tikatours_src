@@ -1,12 +1,13 @@
 ---
 language: en
 url: georgia-tours/adventure-tours
+template: toursubcategory
 heading: Adventure Tours
 title: Adventure Tours | Tika Tours
 imggrp_id: 28
-template: toursubcategory
 main_category_id: 1
 sub_category_id: 8
+rank: 1
 ---
 <div class="row content-row"><!-- 1483 (0)-->
 

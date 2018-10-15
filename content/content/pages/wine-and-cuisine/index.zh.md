@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: wine-and-cuisine
 heading: 葡萄酒与美食
 title: 葡萄酒与美食 | Tika Tours
+rank: 2
 ---
 <div class="row content-row"><!-- 881 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1212 -->

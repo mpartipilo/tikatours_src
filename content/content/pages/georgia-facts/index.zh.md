@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: georgia-facts
 heading: 关于格鲁吉亚
 title: 关于格鲁吉亚 | Tika Tours
+rank: 3
 ---
 <div class="row content-row"><!-- 866 (0)-->
 

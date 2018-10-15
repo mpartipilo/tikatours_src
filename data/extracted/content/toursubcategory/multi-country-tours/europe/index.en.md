@@ -7,6 +7,7 @@ title: Europe | Tika Tours
 imggrp_id: 0
 main_category_id: 2
 sub_category_id: 22
+rank: 13
 ---
 <div class="row content-row"><!-- 1413 (0)-->
 

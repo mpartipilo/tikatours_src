@@ -1,9 +1,9 @@
 ---
 language: en
+url: georgia-tours/adventure-tours/winter-escape
+template: tour
 itinerary: ./itinerary.en.md
 inclusions: ./inclusions.en.md
-template: tour
-url: georgia-tours/adventure-tours/winter-escape
 tour_id: 29
 rank: 4
 price_from: 0
@@ -12,11 +12,13 @@ country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
+gallery_id: 0
 imggrp_id: 39
 heading: Winter Escape
 name: Winter Escape
 title: Winter Escape
-short_descr: Supremely located on the southern slopes of the Greater Caucasus Mountain Range, Gudauri is a unique and luxurious winter Georgian escape.
+short_descr: Supremely located on the southern slopes of the Greater Caucasus Mountain
+  Range, Gudauri is a unique and luxurious winter Georgian escape.
 duration: 10 DAYS/9 NIGHTS
 ---
 Supremely located on the southern slopes of the Greater Caucasus Mountain Range,

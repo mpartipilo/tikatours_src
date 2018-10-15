@@ -1,9 +1,9 @@
 ---
 language: en
+url: multi-country-tours/europe/germany-austria
+template: tour
 itinerary: ./itinerary.en.md
 inclusions: ./inclusions.en.md
-template: tour
-url: multi-country-tours/europe/germany-austria
 tour_id: 33
 rank: 0
 price_from: 0
@@ -11,10 +11,14 @@ image_path: /library/tourcategories/sub-categories/austria_beautiful-view-of-the
 country_id: 0
 main_category_id: 2
 sub_category_id: 22
+gallery_id: 0
+imggrp_id: 0
 heading: Christmas season in Germany and Austria
 name: Christmas season in Germany and Austria
 title: Christmas season in Germany and Austria | Tika Tours
-short_descr: Get settled into the Christmas season in a special way with 9 days and 8 nights in Germany and Austria. Get the chance to have dinner with the Prince and Princess from Schaumburg-Lippe in Hannover as
+short_descr: Get settled into the Christmas season in a special way with 9 days and 8
+  nights in Germany and Austria. Get the chance to have dinner with the Prince
+  and Princess from Schaumburg-Lippe in Hannover as
 duration: 9 DAYS/8 NIGHTS
 ---
 Get settled into the Christmas season in a special way with 9 days and 8 nights in

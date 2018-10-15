@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: language-and-script
 heading: 语言与文字
 title: 语言与文字 | Tika Tours
+rank: 7
 ---
 <div class="row content-row"><!-- 891 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->

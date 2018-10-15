@@ -1,12 +1,13 @@
-﻿---
+---
 language: zh
 url: georgia-tours/romance
+template: toursubcategory
 heading: 浪漫旅游
 title: 浪漫旅游 | Tika Tours
 imggrp_id: 33
-template: toursubcategory
 main_category_id: 1
 sub_category_id: 12
+rank: 6
 ---
 <div class="row content-row"><!-- 1298 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1728 -->

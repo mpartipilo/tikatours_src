@@ -1,9 +1,9 @@
 ---
 language: zh
+url: multi-country-tours/asia/imperial-japan
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: multi-country-tours/asia/imperial-japan
 tour_id: 30
 rank: 0
 price_from: 0
@@ -11,6 +11,8 @@ image_path: /library/tourcategories/sub-categories/jp_mt.-fuji-with-fall-colors-
 country_id: 16
 main_category_id: 2
 sub_category_id: 20
+gallery_id: 0
+imggrp_id: 0
 heading: 大日本帝国
 name: 大日本帝国
 title: "大日本帝国 | Tika Tours"

@@ -1,15 +1,18 @@
 ---
 language: zh
+url: multi-country-tours/europe/germany-austria
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: multi-country-tours/europe/germany-austria
 tour_id: 33
 rank: 0
 price_from: 0
 image_path: /library/tourcategories/sub-categories/austria_beautiful-view-of-the-historic-city-of-salzburg-with-festung-hohensalzburg-in-winter%2C-salzburger-land%2C-austria_600.480.jpg
+country_id: 0
 main_category_id: 2
 sub_category_id: 22
+gallery_id: 0
+imggrp_id: 0
 heading: 德国和奥地利的圣诞季节
 name: 德国和奥地利的圣诞季节
 title: 德国和奥地利的圣诞季节 | Tika Tours

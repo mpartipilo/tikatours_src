@@ -14,7 +14,8 @@ sub_category_id: 32
 gallery_id: 0
 imggrp_id: 30
 heading: The Tales of Svaneti
-title: ""
+name: The Tales of Svaneti
+title: The Tales of Svaneti | Tika Tours
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped
   craggy peaks, wine and dancing.
 duration: 10 Days / 9 Nights

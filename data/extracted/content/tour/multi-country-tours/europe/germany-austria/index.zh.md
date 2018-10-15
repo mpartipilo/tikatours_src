@@ -14,6 +14,7 @@ sub_category_id: 22
 gallery_id: 0
 imggrp_id: 0
 heading: 德国和奥地利的圣诞季节
+name: 德国和奥地利的圣诞季节
 title: ""
 short_descr: 在德国和奥地利以9天8夜的特殊方式进入圣诞节。 有机会与汉诺威Schaumburg-Lippe的王子和公主共进晚餐，并参观他们的宫殿！
 duration: 9天/ 8晚

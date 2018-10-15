@@ -14,6 +14,7 @@ sub_category_id: 20
 gallery_id: 0
 imggrp_id: 0
 heading: Siem Reap
+name: Cambodia, Siem Reap
 title: Siem Reap | Tika Tours
 short_descr: ""
 duration: 4 DAYS/3 NIGHTS

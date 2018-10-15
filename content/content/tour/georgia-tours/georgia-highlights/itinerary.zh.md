@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_itinerary
 tour_id: 35
-template: "tour_itinerary"
 ---
 ###第一天: 达到
 

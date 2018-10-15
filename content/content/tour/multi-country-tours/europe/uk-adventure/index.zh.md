@@ -1,15 +1,18 @@
 ---
 language: zh
+url: multi-country-tours/europe/uk-adventure
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: multi-country-tours/europe/uk-adventure
 tour_id: 31
 rank: 0
 price_from: 4925
 image_path: /library/tourcategories/sub-categories/the_uk.jpg
+country_id: 0
 main_category_id: 2
 sub_category_id: 22
+gallery_id: 0
+imggrp_id: 0
 heading: 英国冒险
 name: 英国冒险
 title: "英国冒险 | Tika Tours"

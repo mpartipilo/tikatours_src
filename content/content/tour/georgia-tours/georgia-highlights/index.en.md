@@ -1,9 +1,9 @@
 ---
 language: en
+url: georgia-tours/georgia-highlights
+template: tour
 itinerary: ./itinerary.en.md
 inclusions: ./inclusions.en.md
-template: tour
-url: georgia-tours/georgia-highlights
 tour_id: 35
 rank: 0
 price_from: 0
@@ -11,10 +11,14 @@ image_path: /library/content/group-sub-tour.jpg
 country_id: 1
 main_category_id: 1
 sub_category_id: 0
+gallery_id: 0
+imggrp_id: 0
 heading: Georgia Highlights
 name: Georgia Highlights
 title: "Georgia Highlights | Tika Tours"
-short_descr: A glimpse into the amazing contrast of Georgian nature and warm hospitality of the Georgian people can be found on the 8-day journey. Begin in cosmopolitan Tbilisi, continue on a scenic and
+short_descr: A glimpse into the amazing contrast of Georgian nature and warm hospitality of
+  the Georgian people can be found on the 8-day journey. Begin in cosmopolitan
+  Tbilisi, continue on a scenic and
 duration: ""
 ---
 A glimpse into the amazing contrast of Georgian nature and warm hospitality of the

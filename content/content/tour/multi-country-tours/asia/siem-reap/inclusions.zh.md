@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 32
-template: "tour_inclusions"
 ---
 * 在机场“护送”服务
 * 所有转移(宝马7系)中所描述的行程

@@ -14,6 +14,7 @@ sub_category_id: 20
 gallery_id: 0
 imggrp_id: 0
 heading: 帝国日本
+name: 帝国日本
 title: 帝国日本 | Tika Tours
 short_descr: 从春天开始，您需要11天10夜才能从日本帝国过去来到保存完好的寺庙和宫殿！ 几乎每一个人都体验到美丽和做工的关怀
 duration: 11天/ 10晚

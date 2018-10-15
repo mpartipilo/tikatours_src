@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: art-and-architecture
 heading: 艺术与建筑学
 title: 艺术与建筑学 | Tika Tours
+rank: 6
 ---
 <div class="row content-row"><!-- 889 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1228 -->

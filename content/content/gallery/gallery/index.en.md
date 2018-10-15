@@ -1,9 +1,10 @@
 ---
 language: en
 url: gallery
+template: gallery
 heading: Gallery
 title: Gallery | Tika Tours
-template: gallery
+rank: 5
 ---
 <div class="row content-row"><!-- 907 (0)-->
 

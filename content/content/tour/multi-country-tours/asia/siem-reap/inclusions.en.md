@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 32
-template: "tour_inclusions"
 ---
 *   VIP meet\-and\-greets airport escorts.
 *   All transfers (BMW 7 Series) described in the itinerary

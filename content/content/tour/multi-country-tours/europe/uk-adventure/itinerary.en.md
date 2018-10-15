@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 31
-template: "tour_itinerary"
 ---
 ### DAYS 1—5 | | LONDON @ HILTON ON PARK LANE
 

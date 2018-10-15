@@ -1,12 +1,13 @@
-﻿---
+---
 language: zh
 url: georgia-tours/cultural-tours
+template: toursubcategory
 heading: 文化之旅
 title: 文化之旅 | Tika Tours
 imggrp_id: 38
-template: toursubcategory
 main_category_id: 1
 sub_category_id: 9
+rank: 2
 ---
 <div class="row content-row"><!-- 1486 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1982 -->

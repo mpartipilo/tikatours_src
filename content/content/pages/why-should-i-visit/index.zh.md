@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: why-should-i-visit
 heading: 为什么要去格鲁吉亚?
 title: 为什么要去格鲁吉亚? | Tika Tours
+rank: 1
 ---
 <div class="row content-row"><!-- 1053 (1)-->
 

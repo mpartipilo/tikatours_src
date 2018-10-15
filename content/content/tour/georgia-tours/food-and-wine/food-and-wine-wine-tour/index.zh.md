@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/food-and-wine/food-and-wine-wine-tour
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/food-and-wine/food-and-wine-wine-tour
 tour_id: 28
 rank: 0
 price_from: 0
@@ -11,6 +11,7 @@ image_path: /library/slides/wine.jpg
 country_id: 1
 main_category_id: 1
 sub_category_id: 10
+gallery_id: 0
 imggrp_id: 27
 heading: 葡萄酒之乡
 name: 葡萄酒之乡

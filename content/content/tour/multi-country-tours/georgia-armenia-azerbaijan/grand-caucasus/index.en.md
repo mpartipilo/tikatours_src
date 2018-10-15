@@ -1,9 +1,9 @@
 ---
 language: en
+url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
+template: tour
 itinerary: ./itinerary.en.md
 inclusions: ./inclusions.en.md
-template: tour
-url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
 tour_id: 27
 rank: 2
 price_from: 0
@@ -12,11 +12,14 @@ country_id: 1
 is_featured: true
 main_category_id: 2
 sub_category_id: 16
+gallery_id: 0
 imggrp_id: 26
 heading: Grand Caucasus
 name: Grand Caucasus
 title: "Grand Caucasus | Tika tours"
-short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning strip of snow-capped mountains wedged between Black and Caspian seas. The Caucasus region holds a wealth of views
+short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a
+  stunning strip of snow-capped mountains wedged between Black and Caspian seas.
+  The Caucasus region holds a wealth of views
 duration: 14 DAYS/13 NIGHTS
 ---
 Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning

@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 38
-template: "tour_inclusions"
 ---
 ●       All accommodation at 4 Star Hotels
 

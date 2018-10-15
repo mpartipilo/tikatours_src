@@ -1,5 +1,5 @@
 ---
+language: zh
+template: tour_itinerary
 tour_id: 33
-template: "tour_itinerary"
 ---
-

@@ -14,6 +14,7 @@ sub_category_id: 22
 gallery_id: 0
 imggrp_id: 0
 heading: Explore Historical Rome
+name: Explore Historical Rome
 title: Explore Historical Rome | Tika Tours
 short_descr: There is so much to discover about Rome. So many layers of history that can
   easily be forgotten in the public eye. Thereâ€™s thousands of years of history

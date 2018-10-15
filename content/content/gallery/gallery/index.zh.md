@@ -1,9 +1,10 @@
 ---
 language: zh
 url: gallery
+template: gallery
 heading: 画廊
 title: 画廊 | Tika Tours
-template: gallery
+rank: 5
 ---
 <div class="row content-row"><!-- 907 (0)-->
 

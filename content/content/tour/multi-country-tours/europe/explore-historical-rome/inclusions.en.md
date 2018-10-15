@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 14
-template: "tour_inclusions"
 ---
 *   All meet\-and\-greets and transfers described in the itinerary
 *   7\-nights accommodation @ Hotel Romantico in Rome

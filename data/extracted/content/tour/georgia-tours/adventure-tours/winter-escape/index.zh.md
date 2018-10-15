@@ -15,6 +15,7 @@ sub_category_id: 8
 gallery_id: 0
 imggrp_id: 39
 heading: 冬季逃生
+name: 冬季逃生
 title: ""
 short_descr: Gudauri酒店位于大高加索山脉的南坡，地理位置优越，是一个独特而豪华的格鲁吉亚冬季度假胜地。
 duration: 10天/ 9晚

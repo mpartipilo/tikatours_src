@@ -1,12 +1,13 @@
 ---
 language: en
 url: georgia-tours/business
+template: toursubcategory
 heading: Business
 title: Business | Tika Tours
 imggrp_id: 37
-template: toursubcategory
 main_category_id: 1
 sub_category_id: 14
+rank: 8
 ---
 <div class="row content-row"><!-- 1479 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1972 -->

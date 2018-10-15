@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 39
-template: "tour_inclusions"
 ---
 • * 在巴库的欧洲大酒店，蓝宝石大酒店或者巴库丰富的酒店住三夜。
 *   在第比利斯客房酒店，第比利斯假日酒店或类似酒店住两夜。

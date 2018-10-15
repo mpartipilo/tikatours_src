@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 38
-template: "tour_itinerary"
 ---
 ### Departure Options:
 

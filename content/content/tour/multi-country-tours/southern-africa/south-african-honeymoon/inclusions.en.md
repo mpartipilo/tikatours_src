@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 21
-template: "tour_inclusions"
 ---
 *   All meet\-and\-greets and transfers described in the itinerary
 *   All meals and beverages as described in the itinerary

@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 39
-template: "tour_inclusions"
 ---
 *   3 nights in Grand Hotel Europa, or Sapphire Hotel or Rich Hotel in Baku
 *   2 nights in Rooms Tbilisi or Holiday Inn hotel or similar hotel in Tbilisi

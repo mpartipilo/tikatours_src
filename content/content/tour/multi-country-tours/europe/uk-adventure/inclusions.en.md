@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 31
-template: "tour_inclusions"
 ---
 *   VIP meet\-and\-greets services at LHR, LCY, and DUB
 *   Private transfers as described in the itinerary

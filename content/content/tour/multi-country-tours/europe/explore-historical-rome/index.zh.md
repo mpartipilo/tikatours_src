@@ -1,9 +1,9 @@
 ---
 language: zh
+url: multi-country-tours/europe/explore-historical-rome
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: multi-country-tours/europe/explore-historical-rome
 tour_id: 14
 rank: 0
 price_from: 4200
@@ -11,6 +11,8 @@ image_path: /library/tourcategories/sub-categories/italy_roman-forum%2C-rome%2C-
 country_id: 8
 main_category_id: 2
 sub_category_id: 22
+gallery_id: 0
+imggrp_id: 0
 heading: 深入探索历史名镇罗马
 name: 深入探索历史名镇罗马
 title: "深入探索历史名镇罗马 | Tika Tours"

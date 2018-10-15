@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 40
-template: "tour_inclusions"
 ---
 *   All accommodation
 *   Full board breakfasts, 8 lunches, 9 dinners

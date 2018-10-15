@@ -1,12 +1,13 @@
-﻿---
+---
 language: zh
 url: georgia-tours/business
+template: toursubcategory
 heading: 商业旅行
 title: 商业旅行 | Tika Tours
 imggrp_id: 37
-template: toursubcategory
 main_category_id: 1
 sub_category_id: 14
+rank: 8
 ---
 <div class="row content-row"><!-- 1479 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1972 -->

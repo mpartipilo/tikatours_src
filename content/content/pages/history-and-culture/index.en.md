@@ -3,6 +3,7 @@ language: en
 url: history-and-culture
 heading: History & Culture
 title: History & Culture | Tika Tours
+rank: 4
 ---
 <div class="row content-row"><!-- 877 (0)-->
 

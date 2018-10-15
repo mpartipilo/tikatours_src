@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 14
-template: "tour_itinerary"
 ---
 WELCOME TO ROME!
 

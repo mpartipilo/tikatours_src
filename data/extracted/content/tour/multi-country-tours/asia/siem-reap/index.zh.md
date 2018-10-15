@@ -14,6 +14,7 @@ sub_category_id: 20
 gallery_id: 0
 imggrp_id: 0
 heading: 暹粒市
+name: 柬埔寨，暹粒
 title: 暹粒市 | Tika Tours
 short_descr: ""
 duration: 4天/ 3晚

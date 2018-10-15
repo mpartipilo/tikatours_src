@@ -5,6 +5,7 @@ heading: Our Properties
 title: Our Properties | Tika Tours
 country_id: 1
 imggrp_id: 44
+rank: 1
 ---
 <div class="row content-row"><!-- 1708 (0)-->
 

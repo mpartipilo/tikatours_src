@@ -3,6 +3,7 @@ language: zh
 url: georgian-embassies
 heading: 格鲁吉亚大使馆和总领事馆
 title: 格鲁吉亚大使馆和总领事馆 | Tika Tours
+rank: 3
 ---
 <div class="row content-row"><!-- 897 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1241 -->

@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/adventure-tours/hiking-in-svaneti
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/adventure-tours/hiking-in-svaneti
 tour_id: 5
 rank: 3
 price_from: 0
@@ -12,6 +12,7 @@ country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
+gallery_id: 0
 imggrp_id: 30
 heading: 斯瓦涅季徒步旅行
 name: 斯瓦涅季徒步旅行

@@ -14,6 +14,7 @@ sub_category_id: 22
 gallery_id: 0
 imggrp_id: 0
 heading: 探索历史罗马
+name: 探索历史罗马
 title: 探索历史罗马 | Tika Tours
 short_descr: 罗马有很多值得探索的地方。 如此多的历史层面很容易在公众眼中被遗忘。 在一个地方有数千年的历史，而罗马是其中一个主要原因
 duration: 8天/ 7晚

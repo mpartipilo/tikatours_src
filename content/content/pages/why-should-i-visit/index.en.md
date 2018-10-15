@@ -3,6 +3,7 @@ language: en
 url: why-should-i-visit
 heading: Why Should I Visit?
 title: Why Should I Visit? | Tika Tours
+rank: 1
 ---
 <div class="row content-row"><!-- 1053 (1)-->
 

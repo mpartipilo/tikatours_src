@@ -1,4 +1,5 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 29
-template: "tour_inclusions"
 ---

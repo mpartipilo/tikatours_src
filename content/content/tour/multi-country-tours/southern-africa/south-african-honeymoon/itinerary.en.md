@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 21
-template: "tour_itinerary"
 ---
 ### DAY ONE | Johannesburg @ Intercontinental Johannesburg
 

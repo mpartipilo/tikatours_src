@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/cultural-tours/georgia-panorama
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/cultural-tours/georgia-panorama
 tour_id: 7
 rank: 1
 price_from: 0

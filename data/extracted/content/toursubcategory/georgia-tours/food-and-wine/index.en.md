@@ -7,6 +7,7 @@ title: Food and Wine | Tika Tours
 imggrp_id: 29
 main_category_id: 1
 sub_category_id: 10
+rank: 3
 ---
 <div class="row content-row"><!-- 1553 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2090 -->

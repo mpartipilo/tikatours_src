@@ -14,6 +14,7 @@ sub_category_id: 25
 gallery_id: 0
 imggrp_id: 0
 heading: 南非蜜月
+name: 南非蜜月
 title: 南非蜜月 | Tika Tours
 short_descr: 10天和9个豪华之夜分布在南非的荒野和莫桑比克的未受破坏的岛屿。 这次旅行经过精心设计，让您体验到令人兴奋的，无尽的
 duration: 10天/ 9晚

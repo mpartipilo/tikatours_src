@@ -1,9 +1,9 @@
 ---
 language: zh
+url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: multi-country-tours/georgia-armenia-azerbaijan/grand-caucasus
 tour_id: 27
 rank: 2
 price_from: 0
@@ -12,6 +12,7 @@ country_id: 1
 is_featured: true
 main_category_id: 2
 sub_category_id: 16
+gallery_id: 0
 imggrp_id: 26
 heading: Grand Caucasus
 name: Grand Caucasus

@@ -1,11 +1,13 @@
 ---
 language: en
 url: multi-country-tours/europe
+template: toursubcategory
 heading: Europe
 title: Europe | Tika Tours
-template: toursubcategory
+imggrp_id: 0
 main_category_id: 2
 sub_category_id: 22
+rank: 13
 ---
 <div class="row content-row"><!-- 1413 (0)-->
 

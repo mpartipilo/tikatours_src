@@ -14,6 +14,7 @@ sub_category_id: 32
 gallery_id: 0
 imggrp_id: 30
 heading: The Tales of Svaneti
+name: The Tales of Svaneti
 title: ""
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped
   craggy peaks, wine and dancing.

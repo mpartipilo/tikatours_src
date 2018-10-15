@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_inclusions
 tour_id: 35
-template: "tour_inclusions"
 ---
 INCLUSIONS:
 

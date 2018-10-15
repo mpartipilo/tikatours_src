@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
-url: testimonials 
+url: testimonials
 heading: 我们的客人对我们的评价
 title: 我们的客人对我们的评价 | Tika Tours
+rank: 4
 ---
 <div class="row content-row"><!-- 1848 (0)-->
 

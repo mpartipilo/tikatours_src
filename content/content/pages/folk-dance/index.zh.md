@@ -1,8 +1,9 @@
-﻿---
+---
 language: zh
 url: folk-dance
 heading: 格鲁吉亚民间舞蹈
 title: 格鲁吉亚民间舞蹈 | Tika Tours
+rank: 5
 ---
 <div class="row content-row"><!-- 1525 (1)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 2040 -->

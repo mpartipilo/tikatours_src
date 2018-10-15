@@ -13,8 +13,9 @@ main_category_id: 1
 sub_category_id: 0
 gallery_id: 0
 imggrp_id: 0
-heading: ""
-title: ""
+heading: Georgia Highlights
+name: Georgia Highlights
+title: "Georgia Highlights | Tika Tours"
 short_descr: A glimpse into the amazing contrast of Georgian nature and warm hospitality of
   the Georgian people can be found on the 8-day journey. Begin in cosmopolitan
   Tbilisi, continue on a scenic and

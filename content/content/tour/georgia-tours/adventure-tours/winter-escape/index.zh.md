@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/adventure-tours/winter-escape
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/adventure-tours/winter-escape
 tour_id: 29
 rank: 4
 price_from: 0
@@ -12,6 +12,7 @@ country_id: 1
 is_featured: true
 main_category_id: 1
 sub_category_id: 8
+gallery_id: 0
 imggrp_id: 39
 heading: 冬季的逃脱
 name: 冬季的逃脱

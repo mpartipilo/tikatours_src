@@ -6,7 +6,7 @@ heading: 多国之旅
 title: 多国之旅 | Tika Tours
 rank: 3
 main_category_id: 2
-sub_heading: Choose your tour destination
+sub_heading: 选择您的旅游目的地
 ---
 <div class="row content-row"><!-- 1505 (0)-->
 

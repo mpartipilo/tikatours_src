@@ -7,6 +7,7 @@ title: Romance | Tika Tours
 imggrp_id: 33
 main_category_id: 1
 sub_category_id: 12
+rank: 6
 ---
 <div class="row content-row"><!-- 1298 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1728 -->

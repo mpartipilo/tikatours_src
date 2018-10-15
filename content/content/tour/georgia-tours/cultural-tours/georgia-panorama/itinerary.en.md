@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 7
-template: "tour_itinerary"
 ---
 ### Day One: ARRIVE  
 

@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_itinerary
 tour_id: 14
-template: "tour_itinerary"
 ---
 欢迎来到罗马！
 

@@ -1,9 +1,10 @@
-﻿---
+---
 language: zh
 url: georgia-travel-guide
 heading: 格鲁吉亚旅游指导手册
 title: 格鲁吉亚旅游指导手册 | Tika Tours
 imggrp_id: 25
+rank: 4
 ---
 <div class="row content-row"><!-- 1221 (0)-->
 
@@ -25,4 +26,3 @@ imggrp_id: 25
 </div>
 
 </div>
-

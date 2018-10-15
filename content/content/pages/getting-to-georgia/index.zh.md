@@ -3,6 +3,7 @@ language: zh
 url: getting-to-georgia
 heading: 去格鲁吉亚
 title: 去格鲁吉亚 | Tika Tours
+rank: 1
 ---
 <div class="row content-row"><!-- 1014 (2)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 1371 -->

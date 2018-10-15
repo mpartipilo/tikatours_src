@@ -15,6 +15,7 @@ sub_category_id: 8
 gallery_id: 0
 imggrp_id: 30
 heading: 在斯瓦涅季徒步旅行
+name: 在斯瓦涅季徒步旅行
 title: 格鲁吉亚之旅：在斯瓦涅季徒步旅行 | Tika Tours
 short_descr: 欢迎来到斯瓦涅季（Svaneti），这是一片非常美丽的塔楼，白雪皑皑的山峰，葡萄酒和舞蹈。
 duration: 10天/ 9晚

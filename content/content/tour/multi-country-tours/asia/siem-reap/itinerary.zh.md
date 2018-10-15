@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_itinerary
 tour_id: 32
-template: "tour_itinerary"
 ---
 ###第一天|2017年3月13日|暹粒市|吴哥苏哈度假村
 

@@ -14,6 +14,7 @@ sub_category_id: 32
 gallery_id: 0
 imggrp_id: 26
 heading: Joy of the Caucasus
+name: Joy of the Caucasus
 title: ""
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a
   stunning strip of snow-capped mountains wedged between Black and Caspian seas.

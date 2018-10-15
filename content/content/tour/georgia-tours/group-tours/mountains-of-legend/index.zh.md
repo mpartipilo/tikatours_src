@@ -1,9 +1,9 @@
 ---
 language: zh
+url: georgia-tours/group-tours/mountains-of-legend
+template: tour
 itinerary: ./itinerary.zh.md
 inclusions: ./inclusions.zh.md
-template: tour
-url: georgia-tours/group-tours/mountains-of-legend
 tour_id: 38
 rank: 0
 price_from: 0
@@ -11,6 +11,7 @@ image_path: /library/content/img22.jpg
 country_id: 0
 main_category_id: 1
 sub_category_id: 32
+gallery_id: 0
 imggrp_id: 24
 heading: 山上的传说
 name: 山上的传说

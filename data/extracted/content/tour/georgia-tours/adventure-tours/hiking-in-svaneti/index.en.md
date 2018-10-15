@@ -15,6 +15,7 @@ sub_category_id: 8
 gallery_id: 0
 imggrp_id: 30
 heading: Hiking in Svaneti
+name: Hiking in Svaneti
 title: "Georgia Tours: Hiking in Svaneti | Tika Tours"
 short_descr: Welcome to Svaneti, an extraordinarily beautiful land of towers, snow-topped
   craggy peaks, wine and dancing.

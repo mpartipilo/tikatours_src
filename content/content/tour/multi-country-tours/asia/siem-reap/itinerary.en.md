@@ -1,6 +1,7 @@
 ---
+language: en
+template: tour_itinerary
 tour_id: 32
-template: "tour_itinerary"
 ---
 ### DAY ONE | March 13th, 2017 | Siem Reap @ Sokha Angkor Resort
 

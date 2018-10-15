@@ -14,6 +14,7 @@ sub_category_id: 32
 gallery_id: 0
 imggrp_id: 24
 heading: Mountains of Legend
+name: Mountains of Legend
 title: ""
 short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely
   diverse landscapes Georgia offers one of the world`s most jaw dropping

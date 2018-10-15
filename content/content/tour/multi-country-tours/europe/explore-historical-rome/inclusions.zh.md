@@ -1,6 +1,7 @@
 ---
+language: zh
+template: tour_inclusions
 tour_id: 14
-template: "tour_inclusions"
 ---
 * 旅程中描述的所有接送服务和转移
 * 罗马尼克宫殿酒店7个晚上住宿在

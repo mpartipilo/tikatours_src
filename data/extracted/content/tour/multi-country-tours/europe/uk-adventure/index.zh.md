@@ -14,6 +14,7 @@ sub_category_id: 22
 gallery_id: 0
 imggrp_id: 0
 heading: 英国冒险
+name: 英国冒险
 title: 英国冒险 | Tika Tours
 short_descr: 体验伦敦和爱尔兰8天7夜。 深入了解伦敦作为最独特和多样化的文化中心之一的深刻历史和世界意义！ 来自世界各地的人们
 duration: 8天/ 7晚

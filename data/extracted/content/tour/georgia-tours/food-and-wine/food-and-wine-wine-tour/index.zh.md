@@ -14,6 +14,7 @@ sub_category_id: 10
 gallery_id: 0
 imggrp_id: 27
 heading: 在葡萄酒心态
+name: 葡萄酒之旅
 title: ""
 short_descr: 佐治亚州位于南高加索的西亚和东欧汇合处，这个拥有令人惊叹的壮丽景色的国家最近出现在葡萄酒爱好者的雷达上
 duration: 9天/ 8晚

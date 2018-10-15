@@ -1,10 +1,11 @@
-﻿---
+---
 language: zh
 url: our-properties
 heading: 我们公司的财产
 title: 我们公司的财产 | Tika Tours
 country_id: 1
 imggrp_id: 44
+rank: 1
 ---
 <div class="row content-row"><!-- 1708 (0)-->
 
