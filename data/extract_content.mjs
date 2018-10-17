@@ -168,6 +168,8 @@ function getFrontMatterTourCategory(language, map, data) {
 
   return {
     ...pageFrontMatter,
+    name: mainCategoryFound.name,
+    image_path: mainCategoryFound.image_path,
     main_category_id: map.tourDetails.main_category_id,
     sub_heading: mainCategoryFound.sub_heading
   }
@@ -187,6 +189,8 @@ function getFrontMatterTourSubCategory(language, map, { tourCategoryData }) {
   return {
     heading: subCategoryFound.heading,
     title: subCategoryFound.title,
+    name: subCategoryFound.name,
+    image_path: subCategoryFound.image_path,
     imggrp_id: +subCategoryFound.slideshow_id,
     main_category_id: (mainCategoryFound && +mainCategoryFound.id) || null,
     sub_category_id: +subCategoryFound.id,
