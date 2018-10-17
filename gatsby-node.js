@@ -64,6 +64,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const redirect = path.resolve("src/i18n/redirect.js")
+    const homePage = path.resolve("src/templates/index.jsx")
     const generalPage = path.resolve("src/templates/page.jsx")
     const galleryPage = path.resolve("src/templates/gallery.jsx")
     const regionPage = path.resolve("src/templates/region.jsx")
@@ -75,7 +76,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(`
         {
-          allMarkdownRemark(filter: { frontmatter: { url: { ne: null } } }) {
+          allPages: allMarkdownRemark(
+            filter: { frontmatter: { url: { ne: null } } }
+          ) {
             edges {
               node {
                 id
@@ -115,7 +118,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        const pages = result.data.allMarkdownRemark.edges
+        const pages = result.data.allPages.edges
 
         const allUrl = _.uniqBy(pages, p => p.node.frontmatter.url).map(
           p => p.node.frontmatter.url
@@ -123,7 +126,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         _.each(allUrl, page => {
           const redirectPage = {
-            path: page,
+            path: page || "/",
             component: redirect,
             context: {
               languages,
@@ -136,13 +139,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
 
         _.each(pages, (page, index) => {
-          /*
-          const previous =
-            index === pages.length - 1 ? null : pages[index + 1].node
-          const next = index === 0 ? null : pages[index - 1].node
-          */
-
           var component = generalPage
+
+          if (
+            page.node.frontmatter.url == "" ||
+            page.node.frontmatter.url == "/"
+          ) {
+            component = homePage
+          }
 
           if (page.node.frontmatter.template == "gallery") {
             component = galleryPage
@@ -174,10 +178,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               slug: page.node.frontmatter.url,
               title: page.node.frontmatter.title,
               url: page.node.frontmatter.url,
-              language: page.node.frontmatter.language
-              /*,
-              previous,
-              next*/
+              language: page.node.frontmatter.language,
+              languages
             }
           })
         })
