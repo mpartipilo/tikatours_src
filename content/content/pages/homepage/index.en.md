@@ -5,6 +5,7 @@ heading: Welcome to Tika Tours
 title: Tika Tours | Tours of Georgia, Armenia and Azerbaijan
 country_id: 1
 imggrp_id: 1
+imggrp_id_gallery: 5
 rank: 1
 ---
 <div class="row content-row"><!-- 2225 (0)-->
