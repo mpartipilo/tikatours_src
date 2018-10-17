@@ -3,7 +3,9 @@ language: zh
 url: georgia-tours/romance
 template: toursubcategory
 heading: 浪漫旅游
+name: 浪漫
 title: 浪漫旅游 | Tika Tours
+image_path: /library/tourcategories/tika-tours-tbilisi.jpg
 imggrp_id: 33
 main_category_id: 1
 sub_category_id: 12

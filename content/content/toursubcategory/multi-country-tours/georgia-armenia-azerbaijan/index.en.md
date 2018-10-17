@@ -3,7 +3,9 @@ language: en
 url: multi-country-tours/georgia-armenia-azerbaijan
 template: toursubcategory
 heading: Georgia, Armenia & Azerbaijan Tours
+name: Georgia, Armenia & Azerbaijan
 title: Georgia, Armenia & Azerbaijan Tours | Tika Tours
+image_path: /library/tourcategories/azerbaijan-flame-tower-in-baku-sunset-buildings_230514868.jpg
 imggrp_id: 0
 main_category_id: 2
 sub_category_id: 16

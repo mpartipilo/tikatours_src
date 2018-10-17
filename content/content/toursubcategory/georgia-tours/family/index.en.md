@@ -3,7 +3,9 @@ language: en
 url: georgia-tours/family
 template: toursubcategory
 heading: Family
+name: Family
 title: Family | Tika Tours
+image_path: /library/tours/family-subcategory.jpg
 imggrp_id: 32
 main_category_id: 1
 sub_category_id: 13
