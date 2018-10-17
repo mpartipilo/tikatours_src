@@ -2,9 +2,10 @@
 language: zh
 url: georgia-tours/group-tours
 template: toursubcategory
-heading: Group Tours
-name: Group Tours
-title: Group Tours | Tika Tours
+heading: 参团旅游
+title: 参团旅游 | Tika Tours
+label: 参团旅游
+name: 参团旅游
 image_path: /library/content/svaneti569.jpg
 imggrp_id: 5
 main_category_id: 1

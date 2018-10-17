@@ -3,8 +3,9 @@ language: en
 url: georgia-tours/food-and-wine
 template: toursubcategory
 heading: Food and Wine
-name: Food and Wine
 title: Food and Wine | Tika Tours
+label: Food and Wine
+name: Food and Wine
 image_path: /library/tourcategories/satsivi.jpg
 imggrp_id: 29
 main_category_id: 1

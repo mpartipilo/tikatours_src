@@ -3,8 +3,9 @@ language: zh
 url: georgia-tours/business
 template: toursubcategory
 heading: 商业旅行
-name: 商业
 title: 商业旅行 | Tika Tours
+label: 商业旅行
+name: 商业
 image_path: /library/tours/business1.jpg
 imggrp_id: 37
 main_category_id: 1

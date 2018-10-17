@@ -3,8 +3,9 @@ language: en
 url: multi-country-tours/georgia-and-armenia
 template: toursubcategory
 heading: Georgia & Armenia Tours
-name: Georgia & Armenia
 title: Georgia & Armenia Tours | Tika Tours
+label: Georgia & Armenia
+name: Georgia & Armenia
 image_path: /library/tourcategories/armenia-garni-pagan-temple-the-hellenistic-temple-in-republic-of-armenia_245764552.jpg
 imggrp_id: 0
 main_category_id: 2

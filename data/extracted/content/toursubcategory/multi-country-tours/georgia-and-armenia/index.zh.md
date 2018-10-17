@@ -3,8 +3,9 @@ language: zh
 url: multi-country-tours/georgia-and-armenia
 template: toursubcategory
 heading: 格鲁吉亚和亚美尼亚之旅
-name: 格鲁吉亚和亚美尼亚
 title: 格鲁吉亚和亚美尼亚之旅 | Tika Tours
+label: 格鲁吉亚和亚美尼亚
+name: 格鲁吉亚和亚美尼亚
 image_path: /library/tourcategories/armenia-garni-pagan-temple-the-hellenistic-temple-in-republic-of-armenia_245764552.jpg
 imggrp_id: 0
 main_category_id: 2

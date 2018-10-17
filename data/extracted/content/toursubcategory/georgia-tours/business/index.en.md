@@ -3,8 +3,9 @@ language: en
 url: georgia-tours/business
 template: toursubcategory
 heading: Business
-name: Business
 title: Business | Tika Tours
+label: Business
+name: Business
 image_path: /library/tours/business1.jpg
 imggrp_id: 37
 main_category_id: 1

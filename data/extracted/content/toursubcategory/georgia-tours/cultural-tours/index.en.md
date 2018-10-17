@@ -3,8 +3,9 @@ language: en
 url: georgia-tours/cultural-tours
 template: toursubcategory
 heading: Cultural Tours
-name: Cultural Tours
 title: Cultural Tours | Tika Tours
+label: Cultural Tours
+name: Cultural Tours
 image_path: /library/tourcategories/tika-tours-alaverdi.jpg
 imggrp_id: 38
 main_category_id: 1

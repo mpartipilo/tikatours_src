@@ -3,8 +3,9 @@ language: zh
 url: georgia-tours/cultural-tours
 template: toursubcategory
 heading: 文化之旅
-name: 文化之旅
 title: 文化之旅 | Tika Tours
+label: 文化之旅
+name: 文化之旅
 image_path: /library/tourcategories/tika-tours-alaverdi.jpg
 imggrp_id: 38
 main_category_id: 1

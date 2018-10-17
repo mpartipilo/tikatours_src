@@ -2,9 +2,10 @@
 language: zh
 url: georgia-tours/food-and-wine
 template: toursubcategory
-heading: 食物和酒
+heading: 美食美酒
+title: 美食美酒| Tika Tours
+label: 美食美酒
 name: 食物和酒
-title: 食物和酒| Tika Tours
 image_path: /library/tourcategories/satsivi.jpg
 imggrp_id: 29
 main_category_id: 1

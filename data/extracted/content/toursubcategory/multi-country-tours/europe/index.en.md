@@ -3,8 +3,9 @@ language: en
 url: multi-country-tours/europe
 template: toursubcategory
 heading: Europe
-name: Europe
 title: Europe | Tika Tours
+label: Europe
+name: Europe
 image_path: /library/tourcategories/sub-categories/europe.jpg
 imggrp_id: 0
 main_category_id: 2

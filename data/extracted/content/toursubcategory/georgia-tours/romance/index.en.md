@@ -3,8 +3,9 @@ language: en
 url: georgia-tours/romance
 template: toursubcategory
 heading: Romance
-name: Romance
 title: Romance | Tika Tours
+label: Romance
+name: Romance
 image_path: /library/tourcategories/tika-tours-tbilisi.jpg
 imggrp_id: 33
 main_category_id: 1
