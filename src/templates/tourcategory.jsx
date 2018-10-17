@@ -9,15 +9,15 @@ import Footer from "../components/footer"
 import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
 
-import contentData from "../components/i18n-data"
+import { contentData } from "../components/i18n-data"
 
 const GeneralPage = ({
   location,
   page,
   data,
   sitemetadata,
+  languages,
   currentLanguage,
-  defaultLanguage,
   catListHeading,
   catList,
   tourListHeading,
@@ -27,10 +27,9 @@ const GeneralPage = ({
   <React.Fragment>
     <Header
       location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={sitemetadata.languages}
+      siteTitle={data.title}
+      languages={languages}
       currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
       contact={sitemetadata.contact}
     />
     <div className="push" />
@@ -50,14 +49,7 @@ const GeneralPage = ({
             <div className="divider" />
           </div>
         </div>
-        {catList && (
-          <CatList
-            location={location}
-            language={currentLanguage}
-            list={catList}
-            heading={catListHeading}
-          />
-        )}
+        {catList && <CatList list={catList} heading={catListHeading} />}
       </div>
       {tourList && (
         <TourList
@@ -96,38 +88,31 @@ class GeneralPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const { sitemetadata, tourCategoryData } = contentData[
-      data.markdownRemark.frontmatter.language
-    ]
-    const defaultLanguage = "en"
-    const currentLanguage =
-      data.markdownRemark.frontmatter.language || defaultLanguage
+    const currentLanguage = pathContext.language
+    const { sitemetadata } = contentData[currentLanguage]
 
-    const main_category_id = data.markdownRemark.frontmatter.main_category_id
+    const mainCategoryFound = data.markdownRemark.frontmatter
+    const main_category_id = mainCategoryFound.main_category_id
 
-    const mainCategoryFound =
-      main_category_id && tourCategoryData.find(c => c.id == main_category_id)
+    const tourCategoryData = data.tourSubCategories.edges.map(
+      e => e.node.frontmatter
+    )
 
-    if (mainCategoryFound) {
-      var catListHeading = mainCategoryFound.sub_heading
-      var catList = tourCategoryData
-        .filter(
-          t =>
-            t.parent_id == main_category_id && t.status === "A" && t.rank >= 0
-        )
-        .sort((a, b) => a.rank - b.rank)
+    var catListHeading = mainCategoryFound.sub_heading
+    var catList = tourCategoryData
+      .filter(t => t.main_category_id == main_category_id && t.rank >= 0)
+      .sort((a, b) => a.rank - b.rank)
 
-      var tourListHeading = mainCategoryFound.name
-      var tourData = data.tours.edges.map(t => t.node.frontmatter)
-      var tourList = tourData
-        .filter(t => t.main_category_id == main_category_id)
-        .sort((a, b) => a.rank - b.rank)
-    }
+    var tourListHeading = mainCategoryFound.name
+    var tourData = data.tours.edges.map(t => t.node.frontmatter)
+    var tourList = tourData
+      .filter(t => t.main_category_id == main_category_id)
+      .sort((a, b) => a.rank - b.rank)
 
     const props = {
       sitemetadata,
+      languages: pathContext.languages,
       currentLanguage,
-      defaultLanguage,
       catListHeading,
       catList,
       tourListHeading,
@@ -164,10 +149,33 @@ export const pageQuery = graphql`
       html
       frontmatter {
         heading
+        name
         language
         url
         imggrp_id
         main_category_id
+        sub_heading
+      }
+    }
+
+    tourSubCategories: allMarkdownRemarkToursubcategory(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            language
+            url
+            template
+            heading
+            name
+            imggrp_id
+            main_category_id
+            sub_category_id
+            rank
+          }
+        }
       }
     }
 

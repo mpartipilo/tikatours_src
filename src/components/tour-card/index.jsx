@@ -1,29 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import ContentI18N from "../i18n-data"
-
-const fullUrl = (
-  language,
-  tourCategoryData,
-  main_category_id,
-  sub_category_id,
-  url
-) => {
-  var main_category = tourCategoryData.find(c => c.id == main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
-
-  if (main_category && sub_category)
-    return `/${language}/${main_category.url}/${sub_category.url}/${url}`
-
-  if (main_category) return `/${language}/${main_category.url}/${url}`
-
-  return null
-}
+import { contentData } from "../i18n-data"
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
-  var mainCategory = tourCategoryData.find(c => c.id == tour.main_category_id)
-  var subCategory = tourCategoryData.find(c => c.id == tour.sub_category_id)
+  const mainCategory = tourCategoryData.find(
+    c => c.main_category_id == tour.main_category_id
+  )
+  const subCategory = tourCategoryData.find(
+    c => c.sub_category_id == tour.sub_category_id
+  )
+  const { strings } = contentData[language]
 
   return (
     <div className="col-xs-12 col-md-6 t-item">
@@ -46,17 +33,7 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
         <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
           <div className="t-info">
             <h3>
-              <a
-                href={fullUrl(
-                  language,
-                  tourCategoryData,
-                  tour.main_category_id,
-                  tour.sub_category_id,
-                  tour.url
-                )}
-              >
-                {tour.name}
-              </a>
+              <a href={tour.url}>{tour.name}</a>
             </h3>
             <div className="duration">
               {tour.flag ? tour.flag : null}
@@ -65,32 +42,21 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
             <p>{tour.short_descr}</p>
             {tour.price_from > 0 && (
               <p>
-                {ContentI18N[language].strings.from_euro}
+                {strings.from_euro}
                 <span className="price">{tour.price_from}</span>
-                {ContentI18N[language].strings["per person"]}
+                {strings["per person"]}
               </p>
             )}
             <div>
-              <a
-                href={fullUrl(
-                  language,
-                  tourCategoryData,
-                  tour.main_category_id,
-                  tour.sub_category_id,
-                  tour.url
-                )}
-                className="btn"
-              >
-                {ContentI18N[language].strings.more_info}
+              <a href={tour.url} className="btn">
+                {strings.more_info}
               </a>
               <form
                 className="book-btn-form"
                 method="GET"
-                action={`/${language}/bookings/${tour.id}`}
+                action={`/${language}/bookings/${tour.tour_id}`}
               >
-                <button className="btn">
-                  {ContentI18N[language].strings.book_tour}
-                </button>
+                <button className="btn">{strings.book_tour}</button>
               </form>
             </div>
           </div>
@@ -104,6 +70,13 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
       </div>
     </div>
   )
+}
+
+TourCard.propTypes = {
+  tour: PropTypes.object.isRequired,
+  tag: PropTypes.string,
+  language: PropTypes.string.isRequired,
+  tourCategoryData: PropTypes.array.isRequired
 }
 
 export default TourCard

@@ -15,7 +15,7 @@ const TourList = ({ language, heading, list, tag, tourCategoryData }) => {
           {list.map(t => (
             <TourCard
               language={language}
-              key={t.id}
+              key={t.tour_id}
               tour={t}
               tag={tag}
               tourCategoryData={tourCategoryData}

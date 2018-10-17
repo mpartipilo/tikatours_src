@@ -4,7 +4,6 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import md5 from "md5"
 
 import { BreadcrumbsNavigation, BreadcrumbsTour } from "../breadcrumbs"
 import Blog from "../blog"
@@ -12,7 +11,6 @@ import CatList from "../cat-list"
 import Content from "../content"
 import Footer from "../footer"
 import Gallery from "../gallery"
-import GalleryIndex from "../gallery-index"
 import Header from "../header"
 import HomeGallery from "../home-gallery"
 import HomeOverlay from "../home-overlay"
@@ -59,7 +57,6 @@ class PageWrapper extends React.Component {
       heading,
       homeGallery,
       homeOverlay,
-      isGalleryIndex,
       isTourDetails,
       isRegion,
       mapCanvasCountry,
@@ -73,7 +70,6 @@ class PageWrapper extends React.Component {
     var currentLanguage = locale
 
     const {
-      imagesGroups,
       general_pages,
       blog_category,
       blog_post,
@@ -173,26 +169,6 @@ class PageWrapper extends React.Component {
             return l.imgslide_rank - r.imgslide_rank
           })
       }
-    }
-
-    if (isGalleryIndex) {
-      var galleryGroups = imagesGroups
-        .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
-        .map(g => ({
-          ...g,
-          gallery_id: md5(g.imggrp_id)
-        }))
-
-      var galleryIndexPhotos = imagesSlides
-        .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
-        .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
-        .map(p => ({
-          ...p,
-          gallery_id: md5(p.imggrp_id),
-          srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
-            p.imgslide_path
-          )}`
-        }))
     }
 
     if (imgGroup) {
@@ -300,13 +276,6 @@ class PageWrapper extends React.Component {
               />
             )}
           </div>
-          {galleryGroups &&
-            galleryIndexPhotos && (
-              <GalleryIndex
-                groups={galleryGroups}
-                photos={galleryIndexPhotos}
-              />
-            )}
           {tourList && (
             <TourList
               language={currentLanguage}
