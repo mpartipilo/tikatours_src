@@ -3,7 +3,9 @@ language: zh
 url: georgia-tours/adventure-tours
 template: toursubcategory
 heading: 探险之旅
+name: 探险之旅
 title: 探险之旅 | Tika Tours
+image_path: /library/tourcategories/adventure.jpg
 imggrp_id: 28
 main_category_id: 1
 sub_category_id: 8

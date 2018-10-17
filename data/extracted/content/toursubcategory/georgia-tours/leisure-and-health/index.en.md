@@ -3,7 +3,9 @@ language: en
 url: georgia-tours/leisure-and-health
 template: toursubcategory
 heading: Leisure and Health
+name: Leisure and Health
 title: Leisure and Health | Tika Tours
+image_path: /library/tourcategories/leisure.jpg
 imggrp_id: 31
 main_category_id: 1
 sub_category_id: 11

@@ -3,7 +3,9 @@ language: zh
 url: multi-country-tours/georgia-armenia-azerbaijan
 template: toursubcategory
 heading: 格鲁吉亚，亚美尼亚和阿塞拜疆之旅
+name: 格鲁吉亚，亚美尼亚和阿塞拜疆
 title: 格鲁吉亚，亚美尼亚和阿塞拜疆之旅 | Tika Tours
+image_path: /library/tourcategories/azerbaijan-flame-tower-in-baku-sunset-buildings_230514868.jpg
 imggrp_id: 0
 main_category_id: 2
 sub_category_id: 16

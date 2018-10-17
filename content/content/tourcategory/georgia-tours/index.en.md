@@ -3,6 +3,7 @@ language: en
 url: georgia-tours
 template: tourcategory
 heading: Georgia Tours
+name: Georgia Tours
 title: Georgia Tours | Tika Tours
 country_id: 1
 rank: 2

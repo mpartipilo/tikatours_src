@@ -6,6 +6,7 @@ heading: Georgia Tours
 title: Georgia Tours | Tika Tours
 country_id: 1
 rank: 2
+name: Georgia Tours
 main_category_id: 1
 sub_heading: Choose your tour style
 ---

@@ -6,6 +6,7 @@ heading: 格鲁吉亚之旅
 title: 格鲁吉亚之旅 | Tika Tours
 country_id: 1
 rank: 2
+name: 格鲁吉亚之旅
 main_category_id: 1
 sub_heading: 选择你的旅游风格
 ---

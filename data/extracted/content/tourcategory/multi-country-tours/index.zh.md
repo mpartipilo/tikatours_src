@@ -5,6 +5,7 @@ template: tourcategory
 heading: 多国之旅
 title: 多国之旅 | Tika Tours
 rank: 3
+name: 多国之旅
 main_category_id: 2
 sub_heading: 选择您的旅游目的地
 ---
