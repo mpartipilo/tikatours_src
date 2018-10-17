@@ -21,14 +21,42 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `general_pages`,
-        path: `${__dirname}/content/content`
+        path: `${__dirname}/content/content/pages`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `general_pages`,
+        path: `${__dirname}/content/content/gallery`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tour`,
-        path: `${__dirname}/content/tour`
+        path: `${__dirname}/content/content/tour`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tourcategory`,
+        path: `${__dirname}/content/content/tourcategory`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `toursubcategory`,
+        path: `${__dirname}/content/content/toursubcategory`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `region`,
+        path: `${__dirname}/content/content/regions`
       }
     },
     {
@@ -36,13 +64,6 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/content/blog`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `region`,
-        path: `${__dirname}/content/regions`
       }
     },
     {
@@ -56,6 +77,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     "gatsby-transformer-remark",
+    "gatsby-transformer-remark-typed",
     "gatsby-remark-source-name"
   ]
 }
