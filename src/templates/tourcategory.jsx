@@ -149,6 +149,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         heading
+        label
         name
         language
         url
@@ -170,6 +171,8 @@ export const pageQuery = graphql`
             template
             heading
             name
+            label
+            image_path
             imggrp_id
             main_category_id
             sub_category_id
