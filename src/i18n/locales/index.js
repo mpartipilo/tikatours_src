@@ -8,7 +8,7 @@ const localeData = [
 module.exports = {
   localeData,
   languages: [
-    { value: "en", text: "English" },
-    { value: "zh", text: "Chinese" }
+    { value: "en", text: "English", flag: "US" },
+    { value: "zh", text: "Chinese", flag: "CN" }
   ]
 }
