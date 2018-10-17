@@ -21,81 +21,11 @@ import ReasonsSlider from "../reasons"
 import Slideshow from "../slideshow"
 import SocialPanel from "../social-panel"
 import SubNav from "../sub-nav"
-import TourDetails from "../tour-details"
 import TourList from "../tour-list"
 
-import contentData from "../i18n-data"
+import { getSlideshowData, contentData } from "../i18n-data"
 
 import "../../../assets/sass/main.scss"
-
-function createSlide(m) {
-  var src = m.imgslide_path
-  var cap = m.imgslide_caption
-  var cap_heading = m.caption_heading
-  //var alt = m.imgslide_alt
-  var button = m.button_label
-  var button_url = m.button_url
-  var youtube_id = m.youtube_id
-  var id = m.imgslide_id
-
-  var button_view = ""
-
-  if (button && button_url) {
-    button_view = `<div><a class="btn" href="${button_url}">${button}</a></div>`
-  }
-
-  var video_button = ""
-  var video_html = ""
-  if (youtube_id) {
-    video_button = `<div><a href="#" data-href="#slide-${id}" class="btn video-link"><i class="fa fa-youtube-play"></i>watch video</a></div>`
-    video_html = `<div class="video-wrap" id="slide-${id}"><span>loading video...</span><div class="text-right"><i class="fa fa-times"></i></div><iframe width="100%" height="95%" data-src="https://www.youtube.com/embed/${youtube_id}?rel=0&autoplay=1&showinfo=1" frameborder="0" allowfullscreen></iframe></div>`
-  }
-
-  var capHTML = ""
-  if (cap_heading) {
-    if (youtube_id) {
-      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${video_button}`
-    } else {
-      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${button_view}`
-    }
-  }
-
-  return {
-    slide: { image: src, title: capHTML },
-    video_html
-  }
-}
-
-function getSlideshowData(imagesSlides, groupId) {
-  var slides = imagesSlides
-    .filter(f => f.imggrp_id == groupId)
-    .sort((a, b) => a.rank - b.rank)
-
-  var slideData = slides.map(createSlide)
-
-  return {
-    slides: slideData.map(s => s.slide),
-    videos_html: slideData.map(s => s.video_html).join("\r\n")
-  }
-}
-
-const fullUrl = (
-  language,
-  tourCategoryData,
-  main_category_id,
-  sub_category_id,
-  url
-) => {
-  var main_category = tourCategoryData.find(c => c.id == main_category_id)
-  var sub_category = tourCategoryData.find(c => c.id == sub_category_id)
-
-  if (main_category && sub_category)
-    return `/${language}/${main_category.url}/${sub_category.url}/${url}`
-
-  if (main_category) return `/${language}/${main_category.url}/${url}`
-
-  return null
-}
 
 class PageWrapper extends React.Component {
   constructor(props) {
@@ -134,13 +64,13 @@ class PageWrapper extends React.Component {
       isRegion,
       mapCanvasCountry,
       locale,
+      languages,
       location,
       socialPanel,
       tourListDetails
     } = this.props
 
-    const defaultLanguage = "en"
-    var currentLanguage = locale || defaultLanguage
+    var currentLanguage = locale
 
     const {
       imagesGroups,
@@ -161,7 +91,6 @@ class PageWrapper extends React.Component {
     var tourListHeading = null
     var catList = null
     var catListHeading = null
-    var tour = null
 
     if (content) {
       var page = general_pages.find(p => p.page_id == content.page_id)
@@ -209,62 +138,6 @@ class PageWrapper extends React.Component {
           }
         }
       }
-
-      // if (tourListDetails && isHome) {
-      //   tourListHeading = strings.feature_tour_list_heading
-      //   var tourListTag = strings.featured_tour
-      //   tourList = tourData
-      //     .filter(t => t.is_featured == "1")
-      //     .sort((a, b) => a.rank - b.rank)
-      // }
-
-      // if (tourListDetails && !isHome) {
-      //   const subCategoryFound =
-      //     tourListDetails.sub_category_id &&
-      //     tourCategoryData.find(c => c.id == tourListDetails.sub_category_id)
-
-      //   const mainCategoryFound =
-      //     tourListDetails.main_category_id &&
-      //     tourCategoryData.find(c => c.id == tourListDetails.main_category_id)
-
-      //   if (mainCategoryFound) {
-      //     catListHeading = mainCategoryFound.sub_heading
-      //     catList = tourCategoryData
-      //       .filter(
-      //         t =>
-      //           t.parent_id == tourListDetails.main_category_id &&
-      //           t.status === "A" &&
-      //           t.rank >= 0
-      //       )
-      //       .sort((a, b) => a.rank - b.rank)
-
-      //     tourListHeading = mainCategoryFound.name
-      //     tourList = tourData
-      //       .filter(
-      //         t =>
-      //           t.status === "A" &&
-      //           t.main_category_id == tourListDetails.main_category_id
-      //       )
-      //       .sort((a, b) => a.rank - b.rank)
-      //   }
-
-      //   if (subCategoryFound) {
-      //     imgGroup = subCategoryFound.slideshow_id
-      //     tourListHeading = subCategoryFound.label
-      //     tourList = tourData
-      //       .filter(
-      //         t =>
-      //           t.status === "A" &&
-      //           t.sub_category_id == tourListDetails.sub_category_id
-      //       )
-      //       .sort((a, b) => a.rank - b.rank)
-      //   }
-
-      //   autoHeading =
-      //     autoHeading ||
-      //     (subCategoryFound && subCategoryFound.heading) ||
-      //     (mainCategoryFound && mainCategoryFound.heading)
-      // }
     }
 
     if (isRegion) {
@@ -301,40 +174,6 @@ class PageWrapper extends React.Component {
           })
       }
     }
-
-    // if (isTourDetails) {
-    //   const data = tourData.find(t => {
-    //     const tourUrl = fullUrl(
-    //       currentLanguage,
-    //       tourCategoryData,
-    //       t.main_category_id,
-    //       t.sub_category_id,
-    //       t.url
-    //     )
-    //     return tourUrl === location.pathname.replace(/\/?$/i, "")
-    //   })
-    //   tour = data
-    //   const subCategoryFound =
-    //     data &&
-    //     data.sub_category_id &&
-    //     tourCategoryData.find(c => c.id == data.sub_category_id)
-    //   imgGroup = data && data.slideshow_id
-    //   tourListHeading = subCategoryFound
-    //     ? strings.otherTours + subCategoryFound.label
-    //     : ""
-    //   if (tour) {
-    //     tourList = tourData
-    //       .filter(
-    //         t =>
-    //           t.status === "A" &&
-    //           t.sub_category_id == tour.sub_category_id &&
-    //           t.id != data.id
-    //       )
-    //       .sort((a, b) => a.rank - b.rank)
-    //   }
-
-    //   autoHeading = data && data.heading
-    // }
 
     if (isGalleryIndex) {
       var galleryGroups = imagesGroups
@@ -396,9 +235,8 @@ class PageWrapper extends React.Component {
         <Header
           location={location.pathname}
           siteTitle={sitemetadata.title}
-          languages={sitemetadata.languages}
+          languages={languages}
           currentLanguage={currentLanguage}
-          defaultLanguage={defaultLanguage}
           contact={sitemetadata.contact}
         />
         <div />
@@ -438,18 +276,8 @@ class PageWrapper extends React.Component {
             {subNav && <SubNav {...subNav} />}
             <div className="content">
               {children}
-              {/*!content &&
-                isTourDetails && (
-                  <TourDetails
-                    language={currentLanguage}
-                    url={location.pathname}
-                    imagesSlidesData={imagesSlides}
-                    tourCategoryData={tourCategoryData}
-                    tourData={tourData}
-                    tour={tour}
-                  />
-                )*/}
-              {content && <Content language={currentLanguage} {...content} />}
+              {!children &&
+                content && <Content language={currentLanguage} {...content} />}
               {isBlog && <Blog language={currentLanguage} {...blog} />}
               {regionGallery && (
                 <Gallery
@@ -525,6 +353,7 @@ PageWrapper.propTypes = {
   isTourDetails: PropTypes.bool,
   isRegion: PropTypes.bool,
   locale: PropTypes.string.isRequired,
+  languages: PropTypes.array.isRequired,
   location: PropTypes.object.isRequired,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,

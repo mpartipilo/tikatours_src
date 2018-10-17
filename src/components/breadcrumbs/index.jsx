@@ -1,6 +1,6 @@
 import React from "react"
 
-import contentData from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 function flatten(data, results, parent) {
   results[data.path] = {

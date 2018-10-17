@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import data from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 const FooterNav = props => (
   <div className="row">
@@ -21,7 +21,9 @@ const FooterNav = props => (
 
 const Footer = props => {
   const { language } = props
-  const { contact_data, strings } = data[language]
+  const { contact_data, strings } = contentData[language]
+
+  const credits = `${contact_data.copyright}<br/>${contact_data.credits}`
 
   return (
     <footer>
@@ -74,7 +76,7 @@ const Footer = props => {
             <div>
               <small
                 dangerouslySetInnerHTML={{
-                  __html: `${contact_data.copyright}<br/>${contact_data.credits}`
+                  __html: credits
                 }}
               />
             </div>
@@ -88,6 +90,10 @@ const Footer = props => {
       </div>
     </footer>
   )
+}
+
+Footer.propTypes = {
+  language: PropTypes.string.isRequired
 }
 
 FooterNav.propTypes = {

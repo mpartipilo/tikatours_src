@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import data from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 function truncate(n, useWordBoundary) {
   if (this.length <= n) {
@@ -54,7 +54,7 @@ class Blog extends React.Component {
   constructor(props) {
     super(props)
 
-    const { blog_category, blog_post, strings } = data[props.language]
+    const { blog_category, blog_post, strings } = contentData[props.language]
 
     var posts = blog_post
       .sort((a, b) => b.date_posted.localeCompare(a.date_posted))

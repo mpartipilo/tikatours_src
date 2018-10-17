@@ -38,39 +38,93 @@ import contact_data_zh from "../../../data/json/zh/contact/contact.json"
 import strings_en from "../../../data/json/en/strings.json"
 import strings_zh from "../../../data/json/zh/strings.json"
 
+function createSlide(m) {
+  var src = m.imgslide_path
+  var cap = m.imgslide_caption
+  var cap_heading = m.caption_heading
+  //var alt = m.imgslide_alt
+  var button = m.button_label
+  var button_url = m.button_url
+  var youtube_id = m.youtube_id
+  var id = m.imgslide_id
+
+  var button_view = ""
+
+  if (button && button_url) {
+    button_view = `<div><a class="btn" href="${button_url}">${button}</a></div>`
+  }
+
+  var video_button = ""
+  var video_html = ""
+  if (youtube_id) {
+    video_button = `<div><a href="#" data-href="#slide-${id}" class="btn video-link"><i class="fa fa-youtube-play"></i>watch video</a></div>`
+    video_html = `<div class="video-wrap" id="slide-${id}"><span>loading video...</span><div class="text-right"><i class="fa fa-times"></i></div><iframe width="100%" height="95%" data-src="https://www.youtube.com/embed/${youtube_id}?rel=0&autoplay=1&showinfo=1" frameborder="0" allowfullscreen></iframe></div>`
+  }
+
+  var capHTML = ""
+  if (cap_heading) {
+    if (youtube_id) {
+      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${video_button}`
+    } else {
+      capHTML = `<span>${cap_heading}</span><span class="caption">${cap}</span>${button_view}`
+    }
+  }
+
+  return {
+    slide: { image: src, title: capHTML },
+    video_html
+  }
+}
+
+const getSlideshowData = (imagesSlides, groupId) => {
+  var slides = imagesSlides
+    .filter(f => f.imggrp_id == groupId)
+    .sort((a, b) => a.rank - b.rank)
+
+  var slideData = slides.map(createSlide)
+
+  return {
+    slides: slideData.map(s => s.slide),
+    videos_html: slideData.map(s => s.video_html).join("\r\n")
+  }
+}
+
 export default {
-  en: {
-    imagesGroups: imagesGroups,
-    sitemetadata: sitemetadata,
-    content: contentData,
-    content_row: contentRowData,
-    blog_category: blog_category_en,
-    blog_post: blog_post_en,
-    content_column: content_column_en,
-    navigation: navigation_en,
-    general_pages: general_pages_en,
-    tourCategoryData: tourCategoryData_en,
-    homeOverlayData: homeOverlayData_en,
-    imagesSlides: imagesSlides_en,
-    countryHighlights: countryHighlights_en,
-    contact_data: contact_data_en,
-    strings: strings_en
-  },
-  zh: {
-    imagesGroups: imagesGroups,
-    sitemetadata: sitemetadata,
-    content: contentData,
-    content_row: contentRowData,
-    blog_category: blog_category_zh,
-    blog_post: blog_post_zh,
-    content_column: content_column_zh,
-    navigation: navigation_zh,
-    general_pages: general_pages_zh,
-    tourCategoryData: tourCategoryData_zh,
-    homeOverlayData: homeOverlayData_zh,
-    imagesSlides: imagesSlides_zh,
-    countryHighlights: countryHighlights_zh,
-    contact_data: contact_data_zh,
-    strings: strings_zh
+  getSlideshowData,
+  contentData: {
+    en: {
+      imagesGroups: imagesGroups,
+      sitemetadata: sitemetadata,
+      content: contentData,
+      content_row: contentRowData,
+      blog_category: blog_category_en,
+      blog_post: blog_post_en,
+      content_column: content_column_en,
+      navigation: navigation_en,
+      general_pages: general_pages_en,
+      tourCategoryData: tourCategoryData_en,
+      homeOverlayData: homeOverlayData_en,
+      imagesSlides: imagesSlides_en,
+      countryHighlights: countryHighlights_en,
+      contact_data: contact_data_en,
+      strings: strings_en
+    },
+    zh: {
+      imagesGroups: imagesGroups,
+      sitemetadata: sitemetadata,
+      content: contentData,
+      content_row: contentRowData,
+      blog_category: blog_category_zh,
+      blog_post: blog_post_zh,
+      content_column: content_column_zh,
+      navigation: navigation_zh,
+      general_pages: general_pages_zh,
+      tourCategoryData: tourCategoryData_zh,
+      homeOverlayData: homeOverlayData_zh,
+      imagesSlides: imagesSlides_zh,
+      countryHighlights: countryHighlights_zh,
+      contact_data: contact_data_zh,
+      strings: strings_zh
+    }
   }
 }

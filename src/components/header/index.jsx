@@ -5,15 +5,14 @@ import FontAwesome from "react-fontawesome"
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
-import data from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 const NavigationMenu = ({
   menu,
   level,
   location,
   languages,
-  currentLanguage,
-  defaultLanguage
+  currentLanguage
 }) => (
   <ul>
     {menu.pages.map(p => (
@@ -30,6 +29,7 @@ const NavigationMenu = ({
         </a>
         {p.pages && (
           <NavigationMenu
+            languages={languages}
             currentLanguage={currentLanguage}
             menu={p}
             level={level + 1}
@@ -43,7 +43,6 @@ const NavigationMenu = ({
           language={currentLanguage}
           location={location}
           languages={languages}
-          defaultLanguage={defaultLanguage}
         />
       </li>
     )}
@@ -68,15 +67,9 @@ class Header extends React.Component {
   }
 
   render() {
-    const {
-      location,
-      languages,
-      currentLanguage,
-      defaultLanguage,
-      contact
-    } = this.props
+    const { location, languages, currentLanguage, contact } = this.props
 
-    const { navigation } = data[currentLanguage]
+    const { navigation } = contentData[currentLanguage]
 
     return (
       <header>
@@ -97,7 +90,6 @@ class Header extends React.Component {
             level={0}
             location={location}
             languages={languages}
-            defaultLanguage={defaultLanguage}
             currentLanguage={currentLanguage}
           />
         </nav>
@@ -108,9 +100,8 @@ class Header extends React.Component {
 
 Header.propTypes = {
   location: PropTypes.string.isRequired,
-  languages: PropTypes.array,
-  currentLanguage: PropTypes.string,
-  defaultLanguage: PropTypes.string,
+  languages: PropTypes.array.isRequired,
+  currentLanguage: PropTypes.string.isRequired,
   contact: PropTypes.object
 }
 
@@ -118,9 +109,8 @@ NavigationMenu.propTypes = {
   menu: PropTypes.object,
   level: PropTypes.number,
   location: PropTypes.string,
-  languages: PropTypes.array,
-  currentLanguage: PropTypes.string,
-  defaultLanguage: PropTypes.string
+  languages: PropTypes.array.isRequired,
+  currentLanguage: PropTypes.string.isRequired
 }
 
 export default Header

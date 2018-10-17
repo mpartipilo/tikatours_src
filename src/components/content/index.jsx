@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import data from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 class Content extends React.Component {
   constructor(props) {
     super(props)
 
-    const { content, content_row, content_column } = data[props.language]
+    const { content, content_row, content_column } = contentData[props.language]
 
     var content_index = content.find(
       c => c.page_id == props.page_id && c.module_id == props.module_id
