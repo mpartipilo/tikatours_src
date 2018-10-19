@@ -13,9 +13,9 @@ main_category_id: 1
 sub_category_id: 0
 gallery_id: 0
 imggrp_id: 0
-heading: Georgia Highlights
-name: Georgia Highlights
-title: "Georgia Highlights | Tika Tours"
+heading: 格鲁吉亚亮点
+name: 格鲁吉亚亮点
+title: 格鲁吉亚亮点|帝卡旅行社
 short_descr: 
 duration: 
 ---
