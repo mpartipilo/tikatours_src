@@ -17,11 +17,11 @@ class TourDetails extends React.Component {
 
     if (tour) {
       const subCategoryFound = tourCategoryData.find(
-        c => c.id == tour.sub_category_id
+        c => c.sub_category_id === tour.sub_category_id
       )
 
       const mainCategoryFound = tourCategoryData.find(
-        c => c.id == tour.main_category_id
+        c => c.main_category_id === tour.main_category_id
       )
 
       tag =

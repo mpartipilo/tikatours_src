@@ -2,11 +2,10 @@
 
 ## Pending
 
-- South African Tours
-- Region sub-nav in chinese
+- Wrong category shown for tours without a sub-category
+- Blog from markdown
 - Put breadcrumbs back in tour/sub/category pages
 - Show map when country_id is available
-- Blog from markdown
 - Region map details
 - SEO optimizations
 - Active page indicator in menu
