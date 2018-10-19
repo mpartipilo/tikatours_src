@@ -2,6 +2,9 @@
 
 ## Pending
 
+- Blog post needs work
+- Gallery not showing modal pictures
+- Region galleries don't show on modal box
 - Wrong category shown for tours without a sub-category
 - Blog from markdown
 - Put breadcrumbs back in tour/sub/category pages

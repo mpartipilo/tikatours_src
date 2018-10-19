@@ -6,6 +6,7 @@ import PageWrapper from "../../../components/page-wrapper"
 const Page = ({ location, pathContext }) => (
   <PageWrapper
     location={location}
+    languages={pathContext.languages}
     locale={pathContext.locale}
     content={{
       page_id: 16,

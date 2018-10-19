@@ -14,6 +14,7 @@ const GeneralPage = ({
   page,
   data,
   sitemetadata,
+  languages,
   currentLanguage,
   defaultLanguage,
   slideshowData
@@ -22,9 +23,8 @@ const GeneralPage = ({
     <Header
       location={location.pathname}
       siteTitle={sitemetadata.title}
-      languages={sitemetadata.languages}
+      languages={languages}
       currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
       contact={sitemetadata.contact}
     />
     <div className="push" />
@@ -57,9 +57,7 @@ const GeneralPage = ({
 const GeneralPageTemplate = props => {
   const { location, data, pathContext } = props
 
-  const defaultLanguage = "en"
-  const currentLanguage =
-    data.markdownRemark.frontmatter.language || defaultLanguage
+  const currentLanguage = pathContext.language
 
   if (!data.markdownRemark.frontmatter.language) {
     console.log(`language not set on ${location.pathname}`)
@@ -79,8 +77,8 @@ const GeneralPageTemplate = props => {
         page={data.markdownRemark}
         data={data.markdownRemark.frontmatter}
         sitemetadata={sitemetadata}
+        languages={pathContext.languages}
         currentLanguage={currentLanguage}
-        defaultLanguage={defaultLanguage}
         slideshowData={slides}
       />
     </React.Fragment>
@@ -89,7 +87,7 @@ const GeneralPageTemplate = props => {
 
 GeneralPageTemplate.propTypes = {
   location: PropTypes.object,
-  pathContxt: PropTypes.object,
+  pathContext: PropTypes.object.isRequired,
   data: PropTypes.object
 }
 

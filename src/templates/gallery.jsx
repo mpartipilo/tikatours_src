@@ -8,7 +8,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import GalleryIndex from "../components/gallery-index"
 
-import contentData from "../components/i18n-data"
+import { contentData } from "../components/i18n-data"
 
 const GalleryPage = ({
   location,
@@ -16,7 +16,7 @@ const GalleryPage = ({
   data,
   sitemetadata,
   currentLanguage,
-  defaultLanguage,
+  languages,
   galleryGroups,
   galleryIndexPhotos
 }) => (
@@ -24,9 +24,8 @@ const GalleryPage = ({
     <Header
       location={location.pathname}
       siteTitle={sitemetadata.title}
-      languages={sitemetadata.languages}
+      languages={languages}
       currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
       contact={sitemetadata.contact}
     />
     <div className="push" />
@@ -53,7 +52,7 @@ const GalleryPage = ({
   </React.Fragment>
 )
 
-const GalleryPageTemplate = ({ location, data }) => {
+const GalleryPageTemplate = ({ location, data, pathContext }) => {
   const { sitemetadata, imagesSlides, imagesGroups } = contentData[
     data.markdownRemark.frontmatter.language
   ]
@@ -86,7 +85,7 @@ const GalleryPageTemplate = ({ location, data }) => {
       data={data.markdownRemark.frontmatter}
       sitemetadata={sitemetadata}
       currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
+      languages={pathContext.languages}
       galleryGroups={galleryGroups}
       galleryIndexPhotos={galleryIndexPhotos}
     />
@@ -95,6 +94,7 @@ const GalleryPageTemplate = ({ location, data }) => {
 
 GalleryPageTemplate.propTypes = {
   location: PropTypes.object,
+  pathContext: PropTypes.object.isRequired,
   data: PropTypes.object
 }
 
