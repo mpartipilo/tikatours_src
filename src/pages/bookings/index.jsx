@@ -3,7 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Route } from "react-router-dom"
 
-import contentData from "../../components/i18n-data"
+import { contentData } from "../../components/i18n-data"
 import PageWrapper from "../../components/page-wrapper"
 import ContactPageForm from "../../components/contact-page-form"
 
@@ -28,6 +28,7 @@ class ContactPage extends React.Component {
     return (
       <PageWrapper
         location={this.state.location}
+        languages={this.state.pathContext.languages}
         locale={this.state.pathContext.locale}
         content={{
           page_id: 15,
