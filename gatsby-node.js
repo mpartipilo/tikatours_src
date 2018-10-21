@@ -139,6 +139,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
 
         _.each(pages, (page, index) => {
+          if (!page.node.frontmatter.language) {
+            console.log("Page without language: " + page.node.id)
+            return
+          }
+
           var component = generalPage
 
           if (
@@ -146,6 +151,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             page.node.frontmatter.url == "/"
           ) {
             component = homePage
+          }
+
+          if (page.node.frontmatter.template == "blog") {
+            return
+          }
+
+          if (page.node.frontmatter.template == "blogcategory") {
+            return
           }
 
           if (page.node.frontmatter.template == "gallery") {
