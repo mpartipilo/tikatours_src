@@ -59,7 +59,7 @@ const GeneralPageTemplate = props => {
 
   const currentLanguage = pathContext.language
 
-  if (!data.markdownRemark.frontmatter.language) {
+  if (!currentLanguage) {
     console.log(`language not set on ${location.pathname}`)
   }
 
