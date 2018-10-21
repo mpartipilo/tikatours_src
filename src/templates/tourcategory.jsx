@@ -102,12 +102,14 @@ class GeneralPageTemplate extends React.Component {
     var catList = tourCategoryData
       .filter(t => t.main_category_id == main_category_id && t.rank >= 0)
       .sort((a, b) => a.rank - b.rank)
+      .map(c => ({ ...c, url: `/${currentLanguage}/${c.url}` }))
 
     var tourListHeading = mainCategoryFound.name
     var tourData = data.tours.edges.map(t => t.node.frontmatter)
     var tourList = tourData
       .filter(t => t.main_category_id == main_category_id)
       .sort((a, b) => a.rank - b.rank)
+      .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
 
     const props = {
       sitemetadata,
