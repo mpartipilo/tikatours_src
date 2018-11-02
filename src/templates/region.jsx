@@ -1,4 +1,4 @@
-/* global graphql */
+/* global graphql, app, $ */
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -67,65 +67,90 @@ const RegionPage = ({
   </React.Fragment>
 )
 
-const RegionPageTemplate = ({ location, data, pathContext }) => {
-  const currentLanguage = pathContext.language
-  const { sitemetadata, imagesSlides, strings } = contentData[currentLanguage]
-
-  var imgGroup = data.markdownRemark.frontmatter.imggrp_id
-
-  const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
-
-  const regionData = data.regions.edges.map(e => e.node.frontmatter)
-  var subNav = {
-    list: regionData
-      .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
-      .sort((a, b) => a.rank - b.rank)
-      .map(r => {
-        const full_url = `/${currentLanguage}/${r.url}`
-        return {
-          id: r.name,
-          active: location.pathname.replace(/\/?$/i, "") === full_url,
-          full_url,
-          label: r.name,
-          title: r.name,
-          ...r
-        }
-      })
+class RegionPageTemplate extends React.Component {
+  constructor(props) {
+    super(props)
   }
 
-  const subnavData = data.markdownRemark.frontmatter
+  componentDidMount() {
+    app.init()
 
-  var regionGallery = subnavData.gallery_id
-  const thumbPath = `/thumbs/galleries/g${regionGallery}/`
-  var regionGalleryHeading = subnavData.name + strings[" Gallery"]
-  var regionGalleryPhotos = imagesSlides
-    .filter(i => i.imggrp_id == regionGallery)
-    .map(i => ({
-      ...i,
-      srcThumb: thumbPath + path.basename(i.imgslide_path)
-    }))
-    .sort((l, r) => {
-      return l.imgslide_rank - r.imgslide_rank
+    $(function() {
+      $(window).on("scroll", function() {
+        app.modifyHeader()
+        app.fadeOverlay()
+      })
+
+      $(window).on("resize", function() {
+        app.matchHeights($(".t-info"))
+      })
+
+      app.initGalleryShuffle("#gallery-shuffle")
     })
+  }
 
-  return (
-    <React.Fragment>
-      <Helmet title={pathContext.title || sitemetadata.title} />{" "}
-      <RegionPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        sitemetadata={sitemetadata}
-        currentLanguage={currentLanguage}
-        languages={pathContext.languages}
-        slideshowData={slides}
-        subnav={subNav}
-        subnavData={subnavData}
-        regionGalleryPhotos={regionGalleryPhotos}
-        regionGalleryHeading={regionGalleryHeading}
-      />
-    </React.Fragment>
-  )
+  render() {
+    const { location, data, pathContext } = this.props
+
+    const currentLanguage = pathContext.language
+    const { sitemetadata, imagesSlides, strings } = contentData[currentLanguage]
+
+    var imgGroup = data.markdownRemark.frontmatter.imggrp_id
+
+    const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+
+    const regionData = data.regions.edges.map(e => e.node.frontmatter)
+    var subNav = {
+      list: regionData
+        .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
+        .sort((a, b) => a.rank - b.rank)
+        .map(r => {
+          const full_url = `/${currentLanguage}/${r.url}`
+          return {
+            id: r.name,
+            active: location.pathname.replace(/\/?$/i, "") === full_url,
+            full_url,
+            label: r.name,
+            title: r.name,
+            ...r
+          }
+        })
+    }
+
+    const subnavData = data.markdownRemark.frontmatter
+
+    var regionGallery = subnavData.gallery_id
+    const thumbPath = `/thumbs/galleries/g${regionGallery}/`
+    var regionGalleryHeading = subnavData.name + strings[" Gallery"]
+    var regionGalleryPhotos = imagesSlides
+      .filter(i => i.imggrp_id == regionGallery)
+      .map(i => ({
+        ...i,
+        srcThumb: thumbPath + path.basename(i.imgslide_path)
+      }))
+      .sort((l, r) => {
+        return l.imgslide_rank - r.imgslide_rank
+      })
+
+    return (
+      <React.Fragment>
+        <Helmet title={pathContext.title || sitemetadata.title} />{" "}
+        <RegionPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          sitemetadata={sitemetadata}
+          currentLanguage={currentLanguage}
+          languages={pathContext.languages}
+          slideshowData={slides}
+          subnav={subNav}
+          subnavData={subnavData}
+          regionGalleryPhotos={regionGalleryPhotos}
+          regionGalleryHeading={regionGalleryHeading}
+        />
+      </React.Fragment>
+    )
+  }
 }
 
 RegionPageTemplate.propTypes = {

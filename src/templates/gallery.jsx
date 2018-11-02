@@ -1,4 +1,4 @@
-/* global graphql */
+/* global graphql, app, $ */
 import React from "react"
 import PropTypes from "prop-types"
 import path from "path"
@@ -52,44 +52,69 @@ const GalleryPage = ({
   </React.Fragment>
 )
 
-const GalleryPageTemplate = ({ location, data, pathContext }) => {
-  const { sitemetadata, imagesSlides, imagesGroups } = contentData[
-    data.markdownRemark.frontmatter.language
-  ]
-  const defaultLanguage = "en"
-  const currentLanguage =
-    data.markdownRemark.frontmatter.language || defaultLanguage
+class GalleryPageTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-  const galleryGroups = imagesGroups
-    .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
-    .map(g => ({
-      ...g,
-      gallery_id: md5(g.imggrp_id)
-    }))
+  componentDidMount() {
+    app.init()
 
-  var galleryIndexPhotos = imagesSlides
-    .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
-    .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
-    .map(p => ({
-      ...p,
-      gallery_id: md5(p.imggrp_id),
-      srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
-        p.imgslide_path
-      )}`
-    }))
+    $(function() {
+      $(window).on("scroll", function() {
+        app.modifyHeader()
+        app.fadeOverlay()
+      })
 
-  return (
-    <GalleryPage
-      location={location}
-      page={data.markdownRemark}
-      data={data.markdownRemark.frontmatter}
-      sitemetadata={sitemetadata}
-      currentLanguage={currentLanguage}
-      languages={pathContext.languages}
-      galleryGroups={galleryGroups}
-      galleryIndexPhotos={galleryIndexPhotos}
-    />
-  )
+      $(window).on("resize", function() {
+        app.matchHeights($(".t-info"))
+      })
+
+      app.initGalleryShuffle("#gallery-shuffle")
+    })
+  }
+
+  render() {
+    const { location, data, pathContext } = this.props
+
+    const { sitemetadata, imagesSlides, imagesGroups } = contentData[
+      data.markdownRemark.frontmatter.language
+    ]
+    const defaultLanguage = "en"
+    const currentLanguage =
+      data.markdownRemark.frontmatter.language || defaultLanguage
+
+    const galleryGroups = imagesGroups
+      .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
+      .map(g => ({
+        ...g,
+        gallery_id: md5(g.imggrp_id)
+      }))
+
+    var galleryIndexPhotos = imagesSlides
+      .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
+      .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
+      .map(p => ({
+        ...p,
+        gallery_id: md5(p.imggrp_id),
+        srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
+          p.imgslide_path
+        )}`
+      }))
+
+    return (
+      <GalleryPage
+        location={location}
+        page={data.markdownRemark}
+        data={data.markdownRemark.frontmatter}
+        sitemetadata={sitemetadata}
+        currentLanguage={currentLanguage}
+        languages={pathContext.languages}
+        galleryGroups={galleryGroups}
+        galleryIndexPhotos={galleryIndexPhotos}
+      />
+    )
+  }
 }
 
 GalleryPageTemplate.propTypes = {
