@@ -112,7 +112,7 @@ class TourDetails extends React.Component {
               </div>
             </div>
             <div className="col-xs-12 incl-wrap">
-              <h2>Inclusions</h2>
+              <h2>{this.state.strings["inclusions"]}</h2>
               <div
                 dangerouslySetInnerHTML={{
                   __html: inclusions
