@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const ReasonsSlider = ({ reasons, btnUrl, btnText }) => (
+const ReasonsSlider = ({ reasons, title, btnUrl, btnText }) => (
   <div className="r-wrap text-center">
     <div className="container">
       <div className="row">
         <div className="col-xs-12">
-          <h2>{reasons.length} Reasons to Visit Georgia</h2>
+          <h2>{title}</h2>
         </div>
       </div>
       <div className="row">
@@ -50,6 +50,7 @@ const ReasonsSlider = ({ reasons, btnUrl, btnText }) => (
 
 ReasonsSlider.propTypes = {
   reasons: PropTypes.array,
+  title: PropTypes.string,
   btnUrl: PropTypes.string,
   btnText: PropTypes.string
 }

@@ -4,12 +4,14 @@ import PropTypes from "prop-types"
 import { contentData } from "../i18n-data"
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
-  const mainCategory = tourCategoryData.find(
-    c => c.main_category_id == tour.main_category_id
-  )
-  const subCategory = tourCategoryData.find(
-    c => c.sub_category_id == tour.sub_category_id
-  )
+  if (!tag) {
+    var mainCategory = tourCategoryData.find(
+      c => c.main_category_id == tour.main_category_id
+    )
+    var subCategory = tourCategoryData.find(
+      c => c.sub_category_id == tour.sub_category_id
+    )
+  }
   const { strings } = contentData[language]
 
   return (

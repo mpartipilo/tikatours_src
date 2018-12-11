@@ -4,8 +4,11 @@ url: multi-country-tours
 template: tourcategory
 heading: Multi-Country Tours
 title: Multi-Country Tours | Tika Tours
-rank: 3
+label: Multi-Country Tours
 name: Multi Country Tours
+image_path: ""
+imggrp_id: 0
+rank: 3
 main_category_id: 2
 sub_heading: Choose your tour destination
 ---

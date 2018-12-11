@@ -15,7 +15,7 @@ rank: 1
 <div class="row content-row"><!-- 2226 (4)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 3036 -->
 
-Tika Tours is your specialist in luxury journeys to places less traveled. We welcome
+Tika Tours is your specialist in luxury journeys to places less traveled. We welcome
 you to Georgia, a seductive secret jewel set between Europe and Asia with a staggeringly
 beautiful landscape and deep rooted traditions. Georgia weaves a warm embrace around
 its visitors, thrilling adventure seekers and enthralling history hounds.

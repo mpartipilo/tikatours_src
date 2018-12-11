@@ -4,9 +4,12 @@ url: georgia-tours
 template: tourcategory
 heading: 格鲁吉亚旅游
 title: 格鲁吉亚旅游 | Tika Tours
+label: 格鲁吉亚旅游
+name: 格鲁吉亚旅游
+image_path: ""
+imggrp_id: 0
 country_id: 1
 rank: 2
-name: 格鲁吉亚旅游
 main_category_id: 1
 sub_heading: 选择你的旅游方式
 ---

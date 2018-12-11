@@ -11,9 +11,6 @@ import blog_post_zh from "../../../data/json/zh/blog/blog_post.json"
 import general_pages_en from "../../../data/json/en/page/general.json"
 import general_pages_zh from "../../../data/json/zh/page/general.json"
 
-import tourCategoryData_en from "../../../data/json/en/tourcategory/category.json"
-import tourCategoryData_zh from "../../../data/json/zh/tourcategory/category.json"
-
 import homeOverlayData_en from "../../../data/json/en/general/home-overlay.json"
 import homeOverlayData_zh from "../../../data/json/zh/general/home-overlay.json"
 
@@ -102,7 +99,6 @@ export default {
       content_column: content_column_en,
       navigation: navigation_en,
       general_pages: general_pages_en,
-      tourCategoryData: tourCategoryData_en,
       homeOverlayData: homeOverlayData_en,
       imagesSlides: imagesSlides_en,
       countryHighlights: countryHighlights_en,
@@ -119,7 +115,6 @@ export default {
       content_column: content_column_zh,
       navigation: navigation_zh,
       general_pages: general_pages_zh,
-      tourCategoryData: tourCategoryData_zh,
       homeOverlayData: homeOverlayData_zh,
       imagesSlides: imagesSlides_zh,
       countryHighlights: countryHighlights_zh,

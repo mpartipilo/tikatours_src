@@ -64,7 +64,11 @@ class PageWrapper extends React.Component {
       languages,
       location,
       socialPanel,
-      tourListDetails
+      tourListDetails,
+      tourList,
+      tourListHeading,
+      tourListTag,
+      tourCategoryData
     } = this.props
 
     var currentLanguage = locale
@@ -73,7 +77,6 @@ class PageWrapper extends React.Component {
       general_pages,
       blog_category,
       blog_post,
-      tourCategoryData,
       homeOverlayData,
       imagesSlides,
       countryHighlights,
@@ -326,7 +329,11 @@ PageWrapper.propTypes = {
   location: PropTypes.object.isRequired,
   mapCanvasCountry: PropTypes.string,
   socialPanel: PropTypes.bool,
-  tourListDetails: PropTypes.object
+  tourListDetails: PropTypes.object,
+  tourList: PropTypes.array,
+  tourListHeading: PropTypes.string,
+  tourListTag: PropTypes.string,
+  tourCategoryData: PropTypes.array
 }
 
 export default PageWrapper
