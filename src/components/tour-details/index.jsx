@@ -100,15 +100,13 @@ class TourDetails extends React.Component {
                 </p>
               )}
               <div>
-                <form
-                  className="book-btn-form"
-                  method="GET"
-                  action={`/${this.props.language}/bookings/${tour.id}`}
+                <a
+                  href="https://form.jotform.com/TikaTours/bookings"
+                  target="_blank"
+                  className="btn"
                 >
-                  <button className="btn">
-                    {this.state.strings.book_tour}
-                  </button>
-                </form>
+                  {this.state.strings.book_tour}
+                </a>
               </div>
             </div>
             <div className="col-xs-12 incl-wrap">

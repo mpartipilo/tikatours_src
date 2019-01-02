@@ -50,16 +50,17 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
               </p>
             )}
             <div>
-              <a href={tour.url} className="btn">
+              <a href={tour.url} className="btn" style={{ width: "48%" }}>
                 {strings.more_info}
               </a>
-              <form
-                className="book-btn-form"
-                method="GET"
-                action={`/${language}/bookings/${tour.tour_id}`}
+              <a
+                href="https://form.jotform.com/TikaTours/bookings"
+                className="btn"
+                style={{ width: "48%" }}
+                target="_blank"
               >
-                <button className="btn">{strings.book_tour}</button>
-              </form>
+                {strings.book_tour}
+              </a>
             </div>
           </div>
           <div className="blur-img">
