@@ -8,10 +8,14 @@
 
 /* ==| IMPORTED STYLES ==================================================== */
 
+// @import "~normalize-scss/sass/normalize";
 @import "normalize";
 @import "variables";
 @import "functions";
 @import "mixins";
+// $fa-font-path: "~font-awesome/fonts/";
+// @import "~font-awesome/scss/font-awesome.scss";
+// @import "~bootstrap/scss/bootstrap.scss";
 @import "bootstrap";
 @import "font_awesome";
 @import "fonts";

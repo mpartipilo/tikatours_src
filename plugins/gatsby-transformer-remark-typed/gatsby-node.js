@@ -1,8 +1,8 @@
 const crypto = require(`crypto`)
 const Case = require(`case`)
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNode, createParentChildLink } = boundActionCreators
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNode, createParentChildLink } = actions
 
   // We only care about MarkdownRemark content.
   if (node.internal.type !== "MarkdownRemark") {

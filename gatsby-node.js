@@ -1,15 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
 const _ = require("lodash")
 const path = require("path")
 const { languages } = require("./src/i18n/locales")
 
-exports.onCreatePage = ({ page, boundActionCreators }) => {
-  const { createPage, deletePage } = boundActionCreators
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
 
   if (page.path.includes("404")) {
     return Promise.resolve()
@@ -59,8 +53,8 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
   })
 }
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     const redirect = path.resolve("src/i18n/redirect.js")
@@ -200,11 +194,3 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     )
   })
 }
-
-exports.modifyBabelrc = ({ babelrc }) => ({
-  ...babelrc,
-  plugins: babelrc.plugins.concat(
-    ["transform-regenerator"],
-    ["transform-runtime"]
-  )
-})

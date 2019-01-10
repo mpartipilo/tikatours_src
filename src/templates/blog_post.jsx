@@ -1,6 +1,6 @@
-/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
+import { graphql } from "gatsby"
 import path from "path"
 import md5 from "md5"
 

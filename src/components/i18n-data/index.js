@@ -23,7 +23,7 @@ import countryHighlights_zh from "../../../data/json/zh/country/highlights.json"
 import navigation_en from "../../../data/json/en/navigation/navigation.json"
 import navigation_zh from "../../../data/json/zh/navigation/navigation.json"
 
-import contentData from "../../../data/json/common/content/content.json"
+import contentPageData from "../../../data/json/common/content/content.json"
 import contentRowData from "../../../data/json/common/content/row.json"
 
 import content_column_en from "../../../data/json/en/content/column.json"
@@ -86,40 +86,39 @@ const getSlideshowData = (imagesSlides, groupId) => {
   }
 }
 
-export default {
-  getSlideshowData,
-  contentData: {
-    en: {
-      imagesGroups: imagesGroups,
-      sitemetadata: sitemetadata,
-      content: contentData,
-      content_row: contentRowData,
-      blog_category: blog_category_en,
-      blog_post: blog_post_en,
-      content_column: content_column_en,
-      navigation: navigation_en,
-      general_pages: general_pages_en,
-      homeOverlayData: homeOverlayData_en,
-      imagesSlides: imagesSlides_en,
-      countryHighlights: countryHighlights_en,
-      contact_data: contact_data_en,
-      strings: strings_en
-    },
-    zh: {
-      imagesGroups: imagesGroups,
-      sitemetadata: sitemetadata,
-      content: contentData,
-      content_row: contentRowData,
-      blog_category: blog_category_zh,
-      blog_post: blog_post_zh,
-      content_column: content_column_zh,
-      navigation: navigation_zh,
-      general_pages: general_pages_zh,
-      homeOverlayData: homeOverlayData_zh,
-      imagesSlides: imagesSlides_zh,
-      countryHighlights: countryHighlights_zh,
-      contact_data: contact_data_zh,
-      strings: strings_zh
-    }
+const contentData = {
+  en: {
+    imagesGroups: imagesGroups,
+    sitemetadata: sitemetadata,
+    content: contentPageData,
+    content_row: contentRowData,
+    blog_category: blog_category_en,
+    blog_post: blog_post_en,
+    content_column: content_column_en,
+    navigation: navigation_en,
+    general_pages: general_pages_en,
+    homeOverlayData: homeOverlayData_en,
+    imagesSlides: imagesSlides_en,
+    countryHighlights: countryHighlights_en,
+    contact_data: contact_data_en,
+    strings: strings_en
+  },
+  zh: {
+    imagesGroups: imagesGroups,
+    sitemetadata: sitemetadata,
+    content: contentPageData,
+    content_row: contentRowData,
+    blog_category: blog_category_zh,
+    blog_post: blog_post_zh,
+    content_column: content_column_zh,
+    navigation: navigation_zh,
+    general_pages: general_pages_zh,
+    homeOverlayData: homeOverlayData_zh,
+    imagesSlides: imagesSlides_zh,
+    countryHighlights: countryHighlights_zh,
+    contact_data: contact_data_zh,
+    strings: strings_zh
   }
 }
+
+export { getSlideshowData, contentData }

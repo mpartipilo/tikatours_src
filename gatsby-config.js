@@ -1,12 +1,19 @@
+const path = require("path")
 const pixrem = require("pixrem")
 const cssnext = require("postcss-cssnext")
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-react-next",
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-postcss-sass`,
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        precision: 8,
+        includePaths: [path.resolve(__dirname, "node_modules")]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
           pixrem(),

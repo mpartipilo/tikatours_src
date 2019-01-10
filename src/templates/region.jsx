@@ -1,8 +1,9 @@
-/* global graphql, app, $ */
+/* global app, $ */
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import path from "path"
+import { graphql } from "gatsby"
 
 import Header from "../components/header"
 import Footer from "../components/footer"

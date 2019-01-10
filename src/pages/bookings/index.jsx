@@ -1,11 +1,15 @@
-/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
-import { Route } from "react-router-dom"
+import { Router } from "@reach/router"
+import { graphql } from "gatsby"
 
 import { contentData } from "../../components/i18n-data"
 import PageWrapper from "../../components/page-wrapper"
 import ContactPageForm from "../../components/contact-page-form"
+
+const ContactPageFormWrapper = ({ options, strings, tour_code }) => (
+  <ContactPageForm tours={options} selectedTour={tour_code} strings={strings} />
+)
 
 class ContactPage extends React.Component {
   constructor(props) {
@@ -35,26 +39,13 @@ class ContactPage extends React.Component {
           module_id: 1
         }}
       >
-        <Route
-          render={({ location }) => (
-            <Route
-              location={location}
-              key={location.key}
-              path="/:language/:page/:tour_code?"
-              render={({
-                match: {
-                  params: { tour_code }
-                }
-              }) => (
-                <ContactPageForm
-                  tours={this.state.options}
-                  selectedTour={tour_code}
-                  strings={this.state.strings}
-                />
-              )}
-            />
-          )}
-        />
+        <Router>
+          <ContactPageFormWrapper
+            path={`${location}/:language/:page/:tour_code?`}
+            options={this.state.options}
+            strings={this.state.strings}
+          />
+        </Router>
       </PageWrapper>
     )
   }
