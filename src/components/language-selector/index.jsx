@@ -1,5 +1,6 @@
 import React from "react"
 import ReactCountryFlag from "react-country-flag"
+import { Link } from "gatsby"
 import ISO6391 from "iso-639-1"
 
 class LanguageSelector extends React.Component {
@@ -31,7 +32,7 @@ class LanguageSelector extends React.Component {
       <React.Fragment>
         <i className="fa fa-bars" />
         <a href="#">
-          <ReactCountryFlag code={this.state.currentLanguage.countryCode} />{" "}
+          <ReactCountryFlag code={this.state.currentLanguage.countryCode} svg />{" "}
           {this.state.currentLanguage.languageName}
           <i className="fa fa-caret-down" />
           <i className="fa fa-caret-right" />
@@ -39,9 +40,9 @@ class LanguageSelector extends React.Component {
         <ul>
           {this.state.languages.map(l => (
             <li key={l.languageCode}>
-              <a href={l.url}>
-                <ReactCountryFlag code={l.countryCode} /> {l.languageName}
-              </a>
+              <Link to={l.url}>
+                <ReactCountryFlag code={l.countryCode} svg /> {l.languageName}
+              </Link>
             </li>
           ))}
         </ul>

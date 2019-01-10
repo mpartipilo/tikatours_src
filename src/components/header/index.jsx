@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import FontAwesome from "react-fontawesome"
+import { Link } from "gatsby"
 
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
@@ -18,7 +19,7 @@ const NavigationMenu = ({
     {menu.pages.map(p => (
       <li key={p.path}>
         <i className="fa fa-bars" />
-        <a href={p.path}>
+        <Link to={p.path}>
           {p.title}
           {p.pages && (
             <React.Fragment>
@@ -26,7 +27,7 @@ const NavigationMenu = ({
               <i className="fa fa-caret-right" />
             </React.Fragment>
           )}
-        </a>
+        </Link>
         {p.pages && (
           <NavigationMenu
             languages={languages}
@@ -74,9 +75,9 @@ class Header extends React.Component {
     return (
       <header>
         <div className="top">
-          <a href={navigation.path} className="logo">
+          <Link to={navigation.path} className="logo">
             <img src={logo} alt={navigation.title} />
-          </a>
+          </Link>
           <i className="fa fa-bars hidden-lg" onClick={this.toggleNavbar} />
           {contact.telephone && (
             <a className="visible-xs" href={`tel:${contact.telephone}`}>
