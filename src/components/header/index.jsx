@@ -23,8 +23,8 @@ const NavigationMenu = ({
           {p.title}
           {p.pages && (
             <React.Fragment>
-              <i className="fa fa-caret-down" />
-              <i className="fa fa-caret-right" />
+              <FontAwesome name="caret-down" />
+              <FontAwesome name="caret-right" />
             </React.Fragment>
           )}
         </Link>

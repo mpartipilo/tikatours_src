@@ -8,8 +8,8 @@
 
 /* ==| IMPORTED STYLES ==================================================== */
 
-// @import "~normalize-scss/sass/normalize";
-@import "normalize";
+@import "~normalize-scss/sass/normalize";
+// @import "normalize";
 @import "variables";
 @import "functions";
 @import "mixins";
@@ -2224,4 +2224,8 @@ footer {
 
 #___gatsby {
   display: inline;
+}
+
+#___gatsby > * {
+  height: 100%;
 }
