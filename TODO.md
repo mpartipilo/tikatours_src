@@ -2,6 +2,7 @@
 
 ## Pending
 
+- Video from slideshow not playing
 - Untranslated image slides
 - Untranslated buttons on image slides
     - "Watch video"

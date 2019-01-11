@@ -77,6 +77,7 @@ const getSlideshowData = (imagesSlides, groupId) => {
   var slides = imagesSlides
     .filter(f => f.imggrp_id == groupId)
     .sort((a, b) => a.rank - b.rank)
+    .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
 
   var slideData = slides.map(createSlide)
 
