@@ -14,8 +14,6 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    app.init()
-
     $(function() {
       $(window).on("scroll", function() {
         app.modifyHeader()

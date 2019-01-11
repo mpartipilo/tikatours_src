@@ -1,65 +1,61 @@
-/* global api, Hammer, $ */
-
 import React from "react"
 import PropTypes from "prop-types"
+import Swiper from "react-id-swiper"
 
 class Slideshow extends React.Component {
   constructor(props) {
     super(props)
 
-    this.supersized = React.createRef()
-
-    this.state = {
-      params: {
-        slide_interval: 5000,
-        transition_speed: 800,
-        performance: 0,
-        slide_links: "blank",
-        slides: props.slides || []
-      }
-    }
-  }
-
-  componentDidMount() {
-    const { params } = this.state
-    $(this.supersized).supersized(params)
-
-    $(".prev").click(function() {
-      api.prevSlide()
-    })
-    $(".next").click(function() {
-      api.nextSlide()
-    })
-    var hammertime = new Hammer($(".ss-wrap")[0])
-    hammertime.on("swipeleft", function(ev) {
-      api.prevSlide()
-    })
-    hammertime.on("swiperight", function(ev) {
-      api.nextSlide()
-    })
-  }
-
-  componentWillUnmount() {
-    // Clean up the mess when the component unmounts
-    $(this.supersized).supersized("destroy")
-  }
-
-  render() {
-    return (
-      <div
-        ref={this.supersized}
-        className={`ss-wrap ${this.props.fixed ? "fixed" : ""}`}
-      >
-        <div className="ss-cap" />
+    const params = {
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev"
+      },
+      renderPrevButton: () => (
         <div className="prev">
           <i className="fa fa-angle-left" />
         </div>
+      ),
+      renderNextButton: () => (
         <div className="next">
           <i className="fa fa-angle-right" />
         </div>
-        <div id="slide-list" />
-        <div id="supersized-loader" />
-        <ul id="supersized" />
+      )
+    }
+
+    const slides = props.slides.map(s => (
+      <div key={s.image}>
+        <img src={s.image} className="slideshow" />
+        {s.title.length && (
+          <div
+            className="ss-cap"
+            dangerouslySetInnerHTML={{ __html: s.title }}
+          />
+        )}
+      </div>
+    ))
+
+    this.state = {
+      slides,
+      params
+    }
+  }
+
+  render() {
+    const params = this.state.slides.length > 1 ? this.state.params : {}
+    return (
+      <div className={this.props.fixed ? "ss-wrap fixed" : "ss-wrap"}>
+        <Swiper {...params}>{this.state.slides}</Swiper>
       </div>
     )
   }

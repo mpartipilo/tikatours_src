@@ -14,8 +14,12 @@ export default class HTML extends React.Component {
           />
           <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
           <script type="text/javascript" src="/assets/js/libs/jquery.min.js" />
-          <script type="text/javascript" src="/assets/js/libs/supersized.js" />
-          <script src="/assets/js/libs/vendor.js" />
+          <script type="text/javascript" src="/assets/js/libs/bootstrap.js" />
+          <script type="text/javascript" src="/assets/js/libs/fancybox.js" />
+          <script type="text/javascript" src="/assets/js/libs/hammer.js" />
+          <script type="text/javascript" src="/assets/js/libs/mousewheel.js" />
+          <script type="text/javascript" src="/assets/js/libs/owl.js" />
+          <script type="text/javascript" src="/assets/js/libs/shuffle.js" />
           <script src="/assets/js/main.js" />
           {this.props.headComponents}
         </head>
@@ -30,7 +34,6 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script>{`window.jsVars = {}`}</script>
         </body>
       </html>
     )
