@@ -1,8 +1,11 @@
 # Todo
 
-## Pending
+## Done
 
 - Video from slideshow not playing
+
+## Pending
+
 - Untranslated image slides
 - Untranslated buttons on image slides
     - "Watch video"

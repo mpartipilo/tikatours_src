@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 const HomeOverlay = ({ heading, subheading, intro, btn_text, btn_url }) => (
   <div className="overlay">
@@ -27,9 +28,9 @@ const HomeOverlay = ({ heading, subheading, intro, btn_text, btn_url }) => (
             {btn_text &&
               btn_url && (
                 <p>
-                  <a href={btn_url} className="btn">
+                  <Link to={btn_url} className="btn">
                     {btn_text}
-                  </a>
+                  </Link>
                 </p>
               )}
           </div>

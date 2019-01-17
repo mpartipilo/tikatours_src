@@ -22,7 +22,7 @@ const GeneralPage = ({
   sitemetadata,
   languages,
   currentLanguage,
-  slideshowData,
+  slides,
   imagesSlides,
   homeOverlayData,
   countryHighlights,
@@ -43,49 +43,47 @@ const GeneralPage = ({
   >
     <div className="push" />
     <HomeOverlay {...homeOverlayData} />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={true} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
+    <Slideshow fixed slides={slides}>
+      <div className="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 text-center">
+              <h1>{data.heading}</h1>
+            </div>
+          </div>
+          <div className="content">
+            <div dangerouslySetInnerHTML={{ __html: page.html }} />
+          </div>
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="divider" />
+            </div>
           </div>
         </div>
-        <div className="content">
-          <div dangerouslySetInnerHTML={{ __html: page.html }} />
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
+        <TourList
+          language={currentLanguage}
+          heading={tourListHeading}
+          list={tourList}
+          tourCategoryData={tourCategoryData}
+          tag={tourListTag}
+        />
+        <ReasonsSlider
+          reasons={countryHighlights}
+          title={format(
+            strings["Reasons to Visit Georgia"],
+            countryHighlights.length
+          )}
+          btnUrl={"/" + currentLanguage + "/georgia-tours"}
+          btnText={strings["View Georgia Tours"]}
+        />
+        <MapCanvasView countryName="Georgia" />
+        <SocialPanel />
+        <HomeGallery
+          imageSlides={imagesSlides}
+          galleryId={data.imggrp_id_gallery}
+        />
       </div>
-      <TourList
-        language={currentLanguage}
-        heading={tourListHeading}
-        list={tourList}
-        tourCategoryData={tourCategoryData}
-        tag={tourListTag}
-      />
-      <ReasonsSlider
-        reasons={countryHighlights}
-        title={format(
-          strings["Reasons to Visit Georgia"],
-          countryHighlights.length
-        )}
-        btnUrl={"/" + currentLanguage + "/georgia-tours"}
-        btnText={strings["View Georgia Tours"]}
-      />
-      <MapCanvasView countryName="Georgia" />
-      <SocialPanel />
-      <HomeGallery
-        imageSlides={imagesSlides}
-        galleryId={data.imggrp_id_gallery}
-      />
-    </div>
+    </Slideshow>
   </Layout>
 )
 
@@ -109,7 +107,7 @@ const IndexPage = ({ location, data, pathContext }) => {
     .sort((a, b) => a.rank - b.rank)
     .map(t => ({ ...t, url: `/${language}/${t.url}` }))
 
-  const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+  const slides = getSlideshowData(imagesSlides, imgGroup)
 
   return (
     <React.Fragment>
@@ -146,10 +144,10 @@ const IndexPage = ({ location, data, pathContext }) => {
         sitemetadata={sitemetadata}
         languages={pathContext.languages}
         currentLanguage={language}
-        slideshowData={slides}
         tourListHeading={strings["feature_tour_list_heading"]}
         tourListTag={strings["featured_tour"]}
         {...{
+          slides,
           homeOverlayData,
           imagesSlides,
           countryHighlights,

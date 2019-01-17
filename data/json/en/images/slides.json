@@ -31,7 +31,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "3",
     "button_label": "view food and wine",
-    "button_url": "/georgia-tours/food-and-wine",
+    "button_url": "/en/georgia-tours/food-and-wine",
     "imggrp_id": "1",
     "youtube_id": ""
   },
@@ -43,7 +43,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "1",
     "button_label": "view tours",
-    "button_url": "/georgia-tours",
+    "button_url": "/en/georgia-tours",
     "imggrp_id": "1",
     "youtube_id": "hRwDp3cRGT8"
   },
@@ -55,7 +55,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "2",
     "button_label": "view culture",
-    "button_url": "/history-and-culture",
+    "button_url": "/en/history-and-culture",
     "imggrp_id": "1",
     "youtube_id": "2BgiEduy6EA"
   },
@@ -67,7 +67,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "8",
     "button_label": "view romance",
-    "button_url": "/georgia-tours/romance",
+    "button_url": "/en/georgia-tours/romance",
     "imggrp_id": "1",
     "youtube_id": ""
   },
@@ -79,7 +79,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "9",
     "button_label": "view leisure and health",
-    "button_url": "/georgia-tours/leisure-and-health",
+    "button_url": "/en/georgia-tours/leisure-and-health",
     "imggrp_id": "1",
     "youtube_id": "8iKNRS3iElk"
   },
@@ -91,7 +91,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "5",
     "button_label": "view adventure",
-    "button_url": "/georgia-tours/adventure-tours",
+    "button_url": "/en/georgia-tours/adventure-tours",
     "imggrp_id": "1",
     "youtube_id": ""
   },
@@ -103,7 +103,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "6",
     "button_label": "view wine tour",
-    "button_url": "/georgia-tours/food-and-wine",
+    "button_url": "/en/georgia-tours/food-and-wine",
     "imggrp_id": "1",
     "youtube_id": "qqt7cUZti8Y"
   },
@@ -115,7 +115,7 @@
     "imgslide_alt": "test alt",
     "imgslide_rank": "7",
     "button_label": "",
-    "button_url": "/georgia-tours/family",
+    "button_url": "/en/georgia-tours/family",
     "imggrp_id": "1",
     "youtube_id": "WZQdcICKnPo"
   },
