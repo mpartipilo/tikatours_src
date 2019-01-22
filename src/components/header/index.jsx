@@ -8,47 +8,79 @@ import { logo } from "../logos"
 
 import { contentData } from "../i18n-data"
 
-const NavigationMenu = ({
-  menu,
-  level,
-  location,
-  languages,
-  currentLanguage
-}) => (
-  <ul>
-    {menu.pages.map(p => (
-      <li key={p.path}>
-        <i className="fa fa-bars" />
-        <Link to={p.path}>
-          {p.title}
-          {p.pages && (
+class NavigationItem extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      expanded: false
+    }
+  }
+
+  render() {
+    const { languages, currentLanguage, level, item } = this.props
+    const { path, title, pages } = item
+    return (
+      <li key={path}>
+        <i
+          className={`fa ${
+            pages && this.state.expanded ? "fa-times" : "fa-bars"
+          }`}
+          onClick={() => {
+            this.setState({
+              expanded: !this.state.expanded
+            })
+          }}
+        />
+        <Link to={path}>
+          {title}
+          {pages && (
             <React.Fragment>
               <FontAwesome name="caret-down" />
               <FontAwesome name="caret-right" />
             </React.Fragment>
           )}
         </Link>
-        {p.pages && (
+        {pages && (
           <NavigationMenu
             languages={languages}
             currentLanguage={currentLanguage}
-            menu={p}
+            menu={item}
             level={level + 1}
+            expanded={this.state.expanded}
           />
         )}
       </li>
-    ))}
-    {level === 0 && (
-      <li>
+    )
+  }
+}
+
+const NavigationMenu = ({
+  menu,
+  level,
+  location,
+  languages,
+  currentLanguage,
+  expanded = true
+}) => {
+  return (
+    <ul style={{ display: expanded ? "block" : "none" }}>
+      {menu.pages.map(p => (
+        <NavigationItem
+          key={p.path}
+          item={p}
+          {...{ languages, currentLanguage, level }}
+        />
+      ))}
+      {level === 0 && (
         <LanguageSelector
           language={currentLanguage}
           location={location}
           languages={languages}
         />
-      </li>
-    )}
-  </ul>
-)
+      )}
+    </ul>
+  )
+}
 
 class Header extends React.Component {
   constructor(props) {
@@ -58,10 +90,12 @@ class Header extends React.Component {
       isOpen: false
     }
 
+    this.setCollapsibleElement = React.createRef()
     this.toggleNavbar = this.toggleNavbar.bind(this)
   }
 
   toggleNavbar() {
+    window.scrollTo({ top: 0, behavior: "smooth" })
     this.setState(prevState => ({
       isOpen: !prevState.isOpen
     }))
@@ -85,7 +119,10 @@ class Header extends React.Component {
             </a>
           )}
         </div>
-        <nav style={{ display: this.state.isOpen ? "block" : "none" }}>
+        <nav
+          ref={this.setCollapsibleElement}
+          style={{ display: this.state.isOpen ? "block" : "none" }}
+        >
           <NavigationMenu
             menu={navigation}
             level={0}
@@ -107,7 +144,15 @@ Header.propTypes = {
 }
 
 NavigationMenu.propTypes = {
+  expanded: PropTypes.bool,
   menu: PropTypes.object,
+  level: PropTypes.number,
+  location: PropTypes.string,
+  languages: PropTypes.array.isRequired,
+  currentLanguage: PropTypes.string.isRequired
+}
+
+NavigationItem.propTypes = {
   level: PropTypes.number,
   location: PropTypes.string,
   languages: PropTypes.array.isRequired,

@@ -4,13 +4,9 @@ var app = {
   },
   init: function(p) {
     this.config = $.extend(true, this.config, jsVars, p)
-    this.initNavigation()
     this.initGallery(".fancybox")
     this.modifyHeader()
-    this.matchHeights($(".t-info"))
-    this.openVideo()
     this.toggleFootSlides()
-    this.initCarousel()
 
     if ($(".posted").length) {
       $(window).scrollTop($(document).height())
@@ -54,74 +50,6 @@ var app = {
         }
       }
     })
-  },
-  openVideo: function() {
-    $(document).on("click", ".video-link", function(e) {
-      e.preventDefault()
-
-      var targetHref = $(this).data("href"),
-        target = $(targetHref),
-        iframe = target.children("iframe"),
-        iframeSrc = iframe.data("src")
-
-      iframe.attr("src", iframeSrc)
-      target.addClass("show")
-    })
-
-    var close = $(".video-wrap .fa-times")
-    close.on("click", function() {
-      $(".video-wrap").removeClass("show")
-      $(".video-wrap")
-        .children("iframe")
-        .attr("src", "")
-    })
-  },
-  initCarousel: function() {
-    var owl = $(".slides")
-
-    if (owl) {
-      owl.owlCarousel({
-        singleItem: true,
-        pagination: false,
-        addClassActive: true,
-        slideSpeed: 500,
-        afterMove: function() {
-          var target = $(".count span")
-          var currentIndex = $(".owl-item.active").index() + 1
-          target.html(currentIndex)
-        }
-      })
-
-      $(".r-next").click(function() {
-        owl.trigger("owl.next")
-      })
-      $(".r-prev").click(function() {
-        owl.trigger("owl.prev")
-      })
-    }
-  },
-  matchHeights: function(eml) {
-    var groupedArray = []
-    eml.each(function(index, item) {
-      if ($.inArray($(item).attr("class"), groupedArray) < 0)
-        groupedArray.push($(item).attr("class"))
-    })
-
-    if (groupedArray.length > 0) {
-      $(groupedArray).each(function(ind, column) {
-        column = $("." + column.replace(new RegExp(" ", "g"), "."))
-        column.css("height", "auto")
-        var maxHeight = Math.max.apply(
-          null,
-          column
-            .map(function() {
-              return $(this).height()
-            })
-            .get()
-        )
-        column.height(maxHeight)
-      })
-    }
   },
   modifyHeader: function() {
     var w = $(window),
@@ -238,31 +166,6 @@ var app = {
             .remove()
         })
       }
-    })
-  },
-  initNavigation: function() {
-    if ($("li .fa").length) {
-      $("li .fa").on("click", function(e) {
-        e.preventDefault()
-        var self = $(this),
-          target = self.siblings("ul")
-
-        if (target.length) {
-          if (target.is(":hidden")) {
-            target.slideDown("300", function() {
-              self.removeClass("fa-bars").addClass("fa-times")
-            })
-          } else if (target.is(":visible")) {
-            target.slideUp("300", function() {
-              self.removeClass("fa-times").addClass("fa-bars")
-            })
-          }
-        }
-      })
-    }
-    $(".top .fa-bars").on("click", function() {
-      $("nav").slideToggle()
-      $(window).scrollTop(0)
     })
   },
   getConfigItem: function(prop) {
