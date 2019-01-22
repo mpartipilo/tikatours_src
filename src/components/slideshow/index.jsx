@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
 import { Link } from "gatsby"
 
+// TODO Transition opacity when mounting .ss-cap, .next and .prev
+
 class Slideshow extends React.Component {
   constructor(props) {
     super(props)
@@ -24,12 +26,18 @@ class Slideshow extends React.Component {
       },
       renderPrevButton: () => (
         <div className="prev">
-          <i className="fa fa-angle-left" />
+          <i
+            className="fa fa-angle-left"
+            style={{ display: this.state.showCap ? "block" : "none" }}
+          />
         </div>
       ),
       renderNextButton: () => (
         <div className="next">
-          <i className="fa fa-angle-right" />
+          <i
+            className="fa fa-angle-right"
+            style={{ display: this.state.showCap ? "block" : "none" }}
+          />
         </div>
       )
     }
@@ -42,8 +50,39 @@ class Slideshow extends React.Component {
       slides,
       params,
       showVideo: false,
-      videoId: ""
+      videoId: "",
+      showCap: false
     }
+
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll(event) {
+    const el = document.scrollingElement || document.documentElement
+    const scrollTop = el.scrollTop
+    const height = event.srcElement.body.clientHeight
+    const wWidth = event.srcElement.body.clientWidth
+
+    if (wWidth < 768) {
+      var triggerPoint = height / 2
+    } else {
+      var triggerPoint = height / 2
+      //   var triggerPoint = height / 2 + capHeight * 1.5
+    }
+
+    const showCap = scrollTop > triggerPoint
+
+    this.setState({
+      showCap
+    })
   }
 
   watchVideo(videoId) {
@@ -68,29 +107,31 @@ class Slideshow extends React.Component {
     return (
       <div key={src}>
         <img src={src} className="slideshow" />
-        <div className="ss-cap">
-          <span>{cap_heading}</span>
-          <span className="caption">{cap}</span>
-          {button && (
-            <div>
-              <Link className="btn" to={button_url}>
-                {button}
-              </Link>
-            </div>
-          )}
-          {youtube_id && (
-            <div>
-              <a
-                href="#"
-                className="btn video-link"
-                onClick={() => this.watchVideo(youtube_id)}
-              >
-                <i className="fa fa-youtube-play" />
-                watch video
-              </a>
-            </div>
-          )}
-        </div>
+        {this.state.showCap && (
+          <div className="ss-cap">
+            <span>{cap_heading}</span>
+            <span className="caption">{cap}</span>
+            {button && (
+              <div>
+                <Link className="btn" to={button_url}>
+                  {button}
+                </Link>
+              </div>
+            )}
+            {youtube_id && (
+              <div>
+                <a
+                  href="#"
+                  className="btn video-link"
+                  onClick={() => this.watchVideo(youtube_id)}
+                >
+                  <i className="fa fa-youtube-play" />
+                  watch video
+                </a>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     )
   }

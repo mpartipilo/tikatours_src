@@ -92,29 +92,6 @@ var app = {
       }
     }
   },
-  fadeOverlay: function() {
-    if ($(".overlay").length) {
-      var scrollTop = $(window).scrollTop(),
-        height = $(window).height(),
-        capHeight = $(".ss-cap").height(),
-        wWidth = $(window).width()
-      if (wWidth < 768) {
-        triggerPoint = height / 2
-      } else {
-        triggerPoint = height / 2 + capHeight * 1.5
-      }
-
-      $(".overlay").css({
-        opacity: (height - scrollTop) / height
-      })
-
-      if (scrollTop > triggerPoint) {
-        $(".ss-cap,.ss-wrap .prev,.ss-wrap .next").fadeIn("slow")
-      } else {
-        $(".ss-cap,.ss-wrap .prev,.ss-wrap .next").fadeOut("fast")
-      }
-    }
-  },
   toggleFootSlides: function() {
     var trigger = $(".social-links a[data-widget]")
 

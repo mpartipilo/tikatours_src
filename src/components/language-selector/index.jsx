@@ -56,7 +56,6 @@ class LanguageSelector extends React.Component {
             </li>
           ))}
         </ul>
-        )
       </li>
     )
   }

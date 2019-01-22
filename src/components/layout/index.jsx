@@ -19,7 +19,6 @@ class Layout extends React.Component {
     $(function() {
       $(window).on("scroll", function() {
         app.modifyHeader()
-        app.fadeOverlay()
       })
 
       app.initGalleryShuffle("#gallery-shuffle")

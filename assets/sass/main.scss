@@ -341,7 +341,7 @@ header {
   .ss-wrap {
     height: 100%;
     .ss-cap {
-      display: none;
+      // display: none;
     }
   }
 }
@@ -1349,14 +1349,14 @@ footer {
       left: auto;
     }
   }
-  .home {
-    .ss-wrap {
-      .prev,
-      .next {
-        display: none;
-      }
-    }
-  }
+  // .home {
+  //   .ss-wrap {
+  //     .prev,
+  //     .next {
+  //       display: none;
+  //     }
+  //   }
+  // }
   .r-wrap {
     .carousel {
       margin-bottom: 50px;
