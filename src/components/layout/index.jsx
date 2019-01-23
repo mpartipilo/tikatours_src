@@ -2,6 +2,7 @@
 /* global WhWidgetSendButton */
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 import Header from "../header"
 import Footer from "../footer"
@@ -16,12 +17,8 @@ class Layout extends React.Component {
   componentDidMount() {
     app.init()
 
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
+    $(window).on("scroll", function() {
+      app.modifyHeader()
     })
 
     var options = {
@@ -63,9 +60,10 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children, language, languages, sitemetadata, data } = this.props
+    const { children, language, languages, sitemetadata, data, siteTitle } = this.props
     return (
       <>
+        <Helmet title={siteTitle} />
         <Header
           location={location.pathname}
           siteTitle={data.title}

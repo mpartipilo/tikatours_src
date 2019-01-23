@@ -32,15 +32,7 @@ const GeneralPage = ({
   tourListHeading,
   tourListTag
 }) => (
-  <Layout
-    location={location.pathname}
-    siteTitle={data.title}
-    languages={languages}
-    language={currentLanguage}
-    contact={sitemetadata.contact}
-    data={data}
-    sitemetadata={sitemetadata}
-  >
+  <>
     <div className="push" />
     <HomeOverlay {...homeOverlayData} />
     <Slideshow fixed slides={slides}>
@@ -84,7 +76,7 @@ const GeneralPage = ({
         />
       </div>
     </Slideshow>
-  </Layout>
+  </>
 )
 
 const IndexPage = ({ location, data, pathContext }) => {
@@ -112,7 +104,6 @@ const IndexPage = ({ location, data, pathContext }) => {
   return (
     <React.Fragment>
       <Helmet
-        title={pathContext.title}
         meta={[
           {
             name: "description",
@@ -137,24 +128,34 @@ const IndexPage = ({ location, data, pathContext }) => {
         {/* -- ==ex_meta_taga== -- */}
         <link rel="shortcut icon" href="/favicon.ico" />
       </Helmet>
-      <GeneralPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        sitemetadata={sitemetadata}
+      <Layout
+        location={location.pathname}
+        siteTitle={pathContext.title}
         languages={pathContext.languages}
-        currentLanguage={language}
-        tourListHeading={strings["feature_tour_list_heading"]}
-        tourListTag={strings["featured_tour"]}
-        {...{
-          slides,
-          homeOverlayData,
-          imagesSlides,
-          countryHighlights,
-          tourList,
-          strings
-        }}
-      />
+        language={language}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+      >
+        <GeneralPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          sitemetadata={sitemetadata}
+          languages={pathContext.languages}
+          currentLanguage={language}
+          tourListHeading={strings["feature_tour_list_heading"]}
+          tourListTag={strings["featured_tour"]}
+          {...{
+            slides,
+            homeOverlayData,
+            imagesSlides,
+            countryHighlights,
+            tourList,
+            strings
+          }}
+        />
+      </Layout>
     </React.Fragment>
   )
 }

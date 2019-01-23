@@ -1,3 +1,4 @@
+/* global app */
 import React from "react"
 import PropTypes from "prop-types"
 
@@ -38,51 +39,60 @@ GalleryIndexTabs.propTypes = {
   groups: PropTypes.array
 }
 
-const GalleryIndex = ({ groups, photos }) => (
+class GalleryIndex extends React.Component {
+  componentDidMount() {
+    setTimeout(() => app.initGalleryShuffle("#gallery-shuffle"), 500)
+  }
+
+  render() {
+    return GalleryIndexRender(this.props)
+  }
+}
+
+const GalleryIndexRender = ({ groups, photos }) => (
   <React.Fragment>
-    {groups &&
-      groups.length >= 0 && (
-        <div className="container-fluid gallery-index">
-          <GalleryIndexTabs groups={groups} />
-          <div className="row">
-            <div className="col-xs-12">
-              <ul id="gallery-shuffle" className="gallery">
-                {photos &&
-                  photos.map(p => (
-                    <li
-                      key={p.imgslide_id}
-                      className="gallery-item"
-                      data-groups={`["all","${p.gallery_id}"]`}
+    {groups && groups.length >= 0 && (
+      <div className="container-fluid gallery-index">
+        <GalleryIndexTabs groups={groups} />
+        <div className="row">
+          <div className="col-xs-12">
+            <ul id="gallery-shuffle" className="gallery">
+              {photos &&
+                photos.map(p => (
+                  <li
+                    key={p.imgslide_id}
+                    className="gallery-item"
+                    data-groups={`["all","${p.gallery_id}"]`}
+                  >
+                    <a
+                      href={p.imgslide_path}
+                      data-main-group={p.gallery_id}
+                      data-fancybox-group="all"
+                      className="fancybox"
+                      title={p.imgslide_caption}
                     >
-                      <a
-                        href={p.imgslide_path}
-                        data-main-group={p.gallery_id}
-                        data-fancybox-group="all"
-                        className="fancybox"
+                      <img
+                        src={p.srcThumb}
+                        alt={p.imgslide_alt}
                         title={p.imgslide_caption}
-                      >
-                        <img
-                          src={p.srcThumb}
-                          alt={p.imgslide_alt}
-                          title={p.imgslide_caption}
-                        />
-                        {p.imgslide_caption && (
-                          <span>
-                            <p>{p.imgslide_caption}</p>
-                          </span>
-                        )}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
+                      />
+                      {p.imgslide_caption && (
+                        <span>
+                          <p>{p.imgslide_caption}</p>
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
-      )}
+      </div>
+    )}
   </React.Fragment>
 )
 
-GalleryIndex.propTypes = {
+GalleryIndexRender.propTypes = {
   groups: PropTypes.array,
   photos: PropTypes.array
 }
