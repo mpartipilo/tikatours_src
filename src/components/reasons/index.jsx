@@ -36,7 +36,7 @@ class ReasonsSlider extends React.Component {
       return null
     }
 
-    const sortedReasons = reasons.sort((a, b) => b.rank - a.rank)
+    const sortedReasons = reasons.sort((a, b) => a.rank - b.rank)
 
     const params = {
       loop: true,
