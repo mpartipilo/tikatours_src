@@ -92,8 +92,11 @@ class GeneralPage extends React.Component {
               btnUrl={"/" + currentLanguage + "/georgia-tours"}
               btnText={strings["View Georgia Tours"]}
             />
-            <MapCanvasView countryName="Georgia" />
-            <SocialPanel />
+            <MapCanvasView
+              countryName="Georgia"
+              currentLanguage={currentLanguage}
+            />
+            <SocialPanel currentLanguage={currentLanguage} />
             <HomeGallery
               imageSlides={imagesSlides}
               galleryId={data.imggrp_id_gallery}

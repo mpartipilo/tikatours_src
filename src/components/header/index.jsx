@@ -21,16 +21,18 @@ class NavigationItem extends React.Component {
     const { path, title, pages } = item
     return (
       <li key={path}>
-        <i
-          className={`fa ${
-            pages && this.state.expanded ? "fa-times" : "fa-bars"
-          }`}
-          onClick={() => {
-            this.setState({
-              expanded: !this.state.expanded
-            })
-          }}
-        />
+        {pages && (
+          <i
+            className={`fa ${
+              pages && this.state.expanded ? "fa-times" : "fa-bars"
+            }`}
+            onClick={() => {
+              this.setState({
+                expanded: !this.state.expanded
+              })
+            }}
+          />
+        )}
         <Link to={path}>
           {title}
           {pages && (
@@ -88,7 +90,6 @@ class Header extends React.Component {
 
     this.state = {
       isOpen: false,
-      height: 0,
       thresholdCrossed: false
     }
 
@@ -99,9 +100,6 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    const height = this.divTopHeader.clientHeight
-    this.setState({ height })
-
     window.addEventListener("scroll", this.handleScroll)
   }
 
@@ -119,10 +117,11 @@ class Header extends React.Component {
   handleScroll(event) {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
+    const height = this.divTopHeader.clientHeight
 
-    const scrollPoint = scrollTop - this.state.height * 1.5
+    const scrollPoint = scrollTop - height * 1.5
 
-    if (scrollPoint < this.state.height) {
+    if (scrollPoint < height) {
       this.setState({ thresholdCrossed: false })
     } else {
       this.setState({ thresholdCrossed: true })
