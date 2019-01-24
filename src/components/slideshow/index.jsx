@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
 import { Link } from "gatsby"
 
+import { contentData } from "../i18n-data"
+
 // TODO Transition opacity when mounting .ss-cap, .next and .prev
 
 class Slideshow extends React.Component {
@@ -46,7 +48,12 @@ class Slideshow extends React.Component {
 
     const { slides } = props
 
+    const contentDataLoc = contentData[props.currentLanguage]
+    const { strings } = contentDataLoc
+
     this.state = {
+      labelWatchVideo: strings["watch video"],
+      labelLoadingVideo: strings["loading video"],
       slides,
       params,
       showVideo: false,
@@ -126,7 +133,7 @@ class Slideshow extends React.Component {
                   onClick={() => this.watchVideo(youtube_id)}
                 >
                   <i className="fa fa-youtube-play" />
-                  watch video
+                  {this.state.labelWatchVideo}
                 </a>
               </div>
             )}
@@ -151,7 +158,7 @@ class Slideshow extends React.Component {
         {this.props.children}
         {this.state.showVideo && (
           <div className="video-wrap" style={{ display: "block" }}>
-            <span>loading video...</span>
+            <span>{this.state.labelLoadingVideo}...</span>
             <div className="text-right">
               <i
                 className="fa fa-times"
@@ -175,6 +182,7 @@ class Slideshow extends React.Component {
 }
 
 Slideshow.propTypes = {
+  currentLanguage: PropTypes.string.isRequired,
   fixed: PropTypes.bool,
   slides: PropTypes.array.isRequired,
   children: PropTypes.any.isRequired

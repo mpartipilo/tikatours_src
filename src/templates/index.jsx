@@ -52,7 +52,11 @@ class GeneralPage extends React.Component {
             this.setState({ overlayVisible: visible })
           }
         />
-        <Slideshow fixed={this.state.overlayVisible} slides={slides}>
+        <Slideshow
+          fixed={this.state.overlayVisible}
+          slides={slides}
+          currentLanguage={currentLanguage}
+        >
           <div
             className="main"
             style={{ top: this.state.overlayVisible ? "100%" : "auto" }}
