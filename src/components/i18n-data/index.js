@@ -1,7 +1,5 @@
 import sitemetadata from "../../../data/json/common/sitemetadata.json"
 
-import imagesGroups from "../../../data/json/common/content/images_groups.json"
-
 import blog_category_en from "../../../data/json/en/blog/category.json"
 import blog_category_zh from "../../../data/json/zh/blog/category.json"
 
@@ -13,6 +11,9 @@ import general_pages_zh from "../../../data/json/zh/page/general.json"
 
 import homeOverlayData_en from "../../../data/json/en/general/home-overlay.json"
 import homeOverlayData_zh from "../../../data/json/zh/general/home-overlay.json"
+
+import imagesGroups_en from "../../../data/json/en/images/groups.json"
+import imagesGroups_zh from "../../../data/json/zh/images/groups.json"
 
 import imagesSlides_en from "../../../data/json/en/images/slides.json"
 import imagesSlides_zh from "../../../data/json/zh/images/slides.json"
@@ -44,7 +45,6 @@ const getSlideshowData = (imagesSlides, groupId) => {
 
 const contentData = {
   en: {
-    imagesGroups: imagesGroups,
     sitemetadata: sitemetadata,
     content: contentPageData,
     content_row: contentRowData,
@@ -54,13 +54,13 @@ const contentData = {
     navigation: navigation_en,
     general_pages: general_pages_en,
     homeOverlayData: homeOverlayData_en,
+    imagesGroups: imagesGroups_en,
     imagesSlides: imagesSlides_en,
     countryHighlights: countryHighlights_en,
     contact_data: contact_data_en,
     strings: strings_en
   },
   zh: {
-    imagesGroups: imagesGroups,
     sitemetadata: sitemetadata,
     content: contentPageData,
     content_row: contentRowData,
@@ -70,6 +70,7 @@ const contentData = {
     navigation: navigation_zh,
     general_pages: general_pages_zh,
     homeOverlayData: homeOverlayData_zh,
+    imagesGroups: imagesGroups_zh,
     imagesSlides: imagesSlides_zh,
     countryHighlights: countryHighlights_zh,
     contact_data: contact_data_zh,

@@ -2,7 +2,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const GalleryIndexTabs = ({ groups }) => (
+import { contentData } from "../i18n-data"
+
+const GalleryIndexTabs = ({ groups, allImagesLabel }) => (
   <React.Fragment>
     <div className="row hidden-xs">
       <div className="col-xs-12">
@@ -10,11 +12,11 @@ const GalleryIndexTabs = ({ groups }) => (
           <li>
             <a
               className="btn shuffle-btn shuffle-active"
-              title="All gallery images"
+              title={allImagesLabel}
               data-group="all"
               href=""
             >
-              All images
+              {allImagesLabel}
             </a>
           </li>
           {groups.map(g => (
@@ -36,63 +38,81 @@ const GalleryIndexTabs = ({ groups }) => (
 )
 
 GalleryIndexTabs.propTypes = {
-  groups: PropTypes.array
+  groups: PropTypes.array,
+  allImagesLabel: PropTypes.string.isRequired
 }
 
 class GalleryIndex extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const contentDataLoc = contentData[props.currentLanguage]
+    const { strings } = contentDataLoc
+
+    this.state = {
+      allImagesLabel: strings["All images"]
+    }
+  }
+
   componentDidMount() {
     setTimeout(() => app.initGalleryShuffle("#gallery-shuffle"), 500)
   }
 
   render() {
-    return GalleryIndexRender(this.props)
+    return this.GalleryIndexRender(this.props)
+  }
+
+  GalleryIndexRender({ groups, photos }) {
+    return (
+      <React.Fragment>
+        {groups && groups.length >= 0 && (
+          <div className="container-fluid gallery-index">
+            <GalleryIndexTabs
+              groups={groups}
+              allImagesLabel={this.state.allImagesLabel}
+            />
+            <div className="row">
+              <div className="col-xs-12">
+                <ul id="gallery-shuffle" className="gallery">
+                  {photos &&
+                    photos.map(p => (
+                      <li
+                        key={p.imgslide_id}
+                        className="gallery-item"
+                        data-groups={`["all","${p.gallery_id}"]`}
+                      >
+                        <a
+                          href={p.imgslide_path}
+                          data-main-group={p.gallery_id}
+                          data-fancybox-group="all"
+                          className="fancybox"
+                          title={p.imgslide_caption}
+                        >
+                          <img
+                            src={p.srcThumb}
+                            alt={p.imgslide_alt}
+                            title={p.imgslide_caption}
+                          />
+                          {p.imgslide_caption && (
+                            <span>
+                              <p>{p.imgslide_caption}</p>
+                            </span>
+                          )}
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
+      </React.Fragment>
+    )
   }
 }
 
-const GalleryIndexRender = ({ groups, photos }) => (
-  <React.Fragment>
-    {groups && groups.length >= 0 && (
-      <div className="container-fluid gallery-index">
-        <GalleryIndexTabs groups={groups} />
-        <div className="row">
-          <div className="col-xs-12">
-            <ul id="gallery-shuffle" className="gallery">
-              {photos &&
-                photos.map(p => (
-                  <li
-                    key={p.imgslide_id}
-                    className="gallery-item"
-                    data-groups={`["all","${p.gallery_id}"]`}
-                  >
-                    <a
-                      href={p.imgslide_path}
-                      data-main-group={p.gallery_id}
-                      data-fancybox-group="all"
-                      className="fancybox"
-                      title={p.imgslide_caption}
-                    >
-                      <img
-                        src={p.srcThumb}
-                        alt={p.imgslide_alt}
-                        title={p.imgslide_caption}
-                      />
-                      {p.imgslide_caption && (
-                        <span>
-                          <p>{p.imgslide_caption}</p>
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    )}
-  </React.Fragment>
-)
-
-GalleryIndexRender.propTypes = {
+GalleryIndex.propTypes = {
+  currentLanguage: PropTypes.string.isRequired,
   groups: PropTypes.array,
   photos: PropTypes.array
 }

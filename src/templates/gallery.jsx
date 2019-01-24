@@ -38,7 +38,11 @@ const GalleryPage = ({
           </div>
         </div>
       </div>
-      <GalleryIndex groups={galleryGroups} photos={galleryIndexPhotos} />
+      <GalleryIndex
+        groups={galleryGroups}
+        photos={galleryIndexPhotos}
+        currentLanguage={currentLanguage}
+      />
     </div>
   </React.Fragment>
 )
