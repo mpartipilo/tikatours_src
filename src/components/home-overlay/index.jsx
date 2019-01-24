@@ -5,9 +5,12 @@ import { Link } from "gatsby"
 class HomeOverlay extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { opacity: 1 }
+    this.state = { opacity: 1, visible: true }
+
+    this.refOverlay = null
 
     this.handleScroll = this.handleScroll.bind(this)
+    this.scrollOverlayUp = this.scrollOverlayUp.bind(this)
   }
 
   componentDidMount() {
@@ -18,21 +21,37 @@ class HomeOverlay extends React.Component {
     window.removeEventListener("scroll", this.handleScroll)
   }
 
+  scrollOverlayUp() {
+    const height = this.refOverlay.clientHeight
+    window.scrollTo({ top: height, behavior: "smooth" })
+  }
+
   handleScroll(event) {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
     const height = event.srcElement.body.clientHeight
     const opacity = (height - scrollTop) / height
 
+    const overlayHeight = this.refOverlay.clientHeight
+    const visible = scrollTop <= overlayHeight
+
+    if (this.state.visible != visible) {
+      this.props.onOverlayVisibleChanged(visible)
+    }
     this.setState({
-      opacity
+      opacity,
+      visible
     })
   }
 
   render() {
     const { heading, subheading, intro, btn_text, btn_url } = this.props
     return (
-      <div className="overlay" style={{ opacity: this.state.opacity || 0 }}>
+      <div
+        className="overlay"
+        style={{ opacity: this.state.opacity || 0 }}
+        ref={refOverlay => (this.refOverlay = refOverlay)}
+      >
         <div className="container-fluid">
           <section className="row t-row" />
           <section className="row m-row">
@@ -75,7 +94,10 @@ class HomeOverlay extends React.Component {
                 {subheading && <h2>{subheading}</h2>}
               </div>
               <div className="text-center">
-                <i className="fa fa-angle-double-down" />
+                <i
+                  className="fa fa-angle-double-down"
+                  onClick={() => this.scrollOverlayUp()}
+                />
               </div>
             </div>
           </section>
@@ -90,7 +112,8 @@ HomeOverlay.propTypes = {
   subheading: PropTypes.string,
   intro: PropTypes.string,
   btn_text: PropTypes.string,
-  btn_url: PropTypes.string
+  btn_url: PropTypes.string,
+  onOverlayVisibleChanged: PropTypes.func
 }
 
 export default HomeOverlay

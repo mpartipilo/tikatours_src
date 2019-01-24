@@ -5,7 +5,6 @@ var app = {
   init: function(p) {
     this.config = $.extend(true, this.config, jsVars, p)
     this.initGallery(".fancybox")
-    this.modifyHeader()
     this.toggleFootSlides()
 
     if ($(".posted").length) {
@@ -14,18 +13,6 @@ var app = {
       $("#widget-99").show()
       $("#news-link").addClass("active")
       $("#news-link .fa-plus").addClass("fa-minus")
-    }
-
-    if ($(".overlay .fa-angle-double-down").length) {
-      $(".overlay .fa-angle-double-down").on("click", function() {
-        var windowHeight = $(window).height()
-        $("html, body").animate(
-          {
-            scrollTop: windowHeight
-          },
-          500
-        )
-      })
     }
 
     $("#map-upper").on("click", function() {
@@ -50,47 +37,6 @@ var app = {
         }
       }
     })
-  },
-  modifyHeader: function() {
-    var w = $(window),
-      header = $("header .top"),
-      headerHeight = header.height(),
-      logoImg = $(".logo img"),
-      logoSrc = logoImg.data("orig-src"),
-      logoAltSrc = logoImg.data("alt-src"),
-      windowWidth = $(window).width()
-    scrollPoint = w.scrollTop() - headerHeight * 1.5
-
-    if (scrollPoint < headerHeight) {
-      header.removeClass("fade-in fixed").dequeue()
-      logoImg.attr("src", logoSrc)
-    } else {
-      header
-        .addClass("fixed")
-        .delay(150)
-        .queue(function() {
-          $("header .top")
-            .addClass("fade-in")
-            .dequeue()
-        })
-
-      if (windowWidth < 1200) {
-        logoImg.attr("src", logoAltSrc)
-      }
-    }
-
-    var overlay = $(".overlay"),
-      overlayHeight = overlay.height()
-
-    if (overlay.length) {
-      if (w.scrollTop() > overlayHeight) {
-        $(".ss-wrap").removeClass("fixed")
-        $(".main").css("top", "auto")
-      } else {
-        $(".ss-wrap").addClass("fixed")
-        $(".main").css("top", "100%")
-      }
-    }
   },
   toggleFootSlides: function() {
     var trigger = $(".social-links a[data-widget]")

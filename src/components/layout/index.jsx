@@ -17,10 +17,6 @@ class Layout extends React.Component {
   componentDidMount() {
     app.init()
 
-    $(window).on("scroll", function() {
-      app.modifyHeader()
-    })
-
     var options = {
       facebook: "290339974371704", // Facebook page ID
       whatsapp: "+31627468794", // WhatsApp number
@@ -60,7 +56,14 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children, language, languages, sitemetadata, data, siteTitle } = this.props
+    const {
+      children,
+      language,
+      languages,
+      sitemetadata,
+      data,
+      siteTitle
+    } = this.props
     return (
       <>
         <Helmet title={siteTitle} />

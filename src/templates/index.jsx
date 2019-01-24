@@ -15,69 +15,91 @@ import TourList from "../components/tour-list"
 
 import { getSlideshowData, contentData } from "../components/i18n-data"
 
-const GeneralPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  languages,
-  currentLanguage,
-  slides,
-  imagesSlides,
-  homeOverlayData,
-  countryHighlights,
-  strings,
-  tourCategoryData,
-  tourList,
-  tourListHeading,
-  tourListTag
-}) => (
-  <>
-    <div className="push" />
-    <HomeOverlay {...homeOverlayData} />
-    <Slideshow fixed slides={slides}>
-      <div className="main">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 text-center">
-              <h1>{data.heading}</h1>
+class GeneralPage extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      overlayVisible: true
+    }
+  }
+
+  render() {
+    const {
+      location,
+      page,
+      data,
+      sitemetadata,
+      languages,
+      currentLanguage,
+      slides,
+      imagesSlides,
+      homeOverlayData,
+      countryHighlights,
+      strings,
+      tourCategoryData,
+      tourList,
+      tourListHeading,
+      tourListTag
+    } = this.props
+
+    return (
+      <>
+        <div className="push" />
+        <HomeOverlay
+          {...homeOverlayData}
+          onOverlayVisibleChanged={visible =>
+            this.setState({ overlayVisible: visible })
+          }
+        />
+        <Slideshow fixed={this.state.overlayVisible} slides={slides}>
+          <div
+            className="main"
+            style={{ top: this.state.overlayVisible ? "100%" : "auto" }}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-xs-12 text-center">
+                  <h1>{data.heading}</h1>
+                </div>
+              </div>
+              <div className="content">
+                <div dangerouslySetInnerHTML={{ __html: page.html }} />
+              </div>
+              <div className="row">
+                <div className="col-xs-12">
+                  <div className="divider" />
+                </div>
+              </div>
             </div>
+            <TourList
+              language={currentLanguage}
+              heading={tourListHeading}
+              list={tourList}
+              tourCategoryData={tourCategoryData}
+              tag={tourListTag}
+            />
+            <ReasonsSlider
+              reasons={countryHighlights}
+              title={format(
+                strings["Reasons to Visit Georgia"],
+                countryHighlights.length
+              )}
+              btnUrl={"/" + currentLanguage + "/georgia-tours"}
+              btnText={strings["View Georgia Tours"]}
+            />
+            <MapCanvasView countryName="Georgia" />
+            <SocialPanel />
+            <HomeGallery
+              imageSlides={imagesSlides}
+              galleryId={data.imggrp_id_gallery}
+            />
           </div>
-          <div className="content">
-            <div dangerouslySetInnerHTML={{ __html: page.html }} />
-          </div>
-          <div className="row">
-            <div className="col-xs-12">
-              <div className="divider" />
-            </div>
-          </div>
-        </div>
-        <TourList
-          language={currentLanguage}
-          heading={tourListHeading}
-          list={tourList}
-          tourCategoryData={tourCategoryData}
-          tag={tourListTag}
-        />
-        <ReasonsSlider
-          reasons={countryHighlights}
-          title={format(
-            strings["Reasons to Visit Georgia"],
-            countryHighlights.length
-          )}
-          btnUrl={"/" + currentLanguage + "/georgia-tours"}
-          btnText={strings["View Georgia Tours"]}
-        />
-        <MapCanvasView countryName="Georgia" />
-        <SocialPanel />
-        <HomeGallery
-          imageSlides={imagesSlides}
-          galleryId={data.imggrp_id_gallery}
-        />
-      </div>
-    </Slideshow>
-  </>
-)
+        </Slideshow>
+      </>
+    )
+  }
+}
 
 const IndexPage = ({ location, data, pathContext }) => {
   const { language, imggrp_id: imgGroup } = data.markdownRemark.frontmatter

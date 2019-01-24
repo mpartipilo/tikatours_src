@@ -87,11 +87,26 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      isOpen: false
+      isOpen: false,
+      height: 0,
+      thresholdCrossed: false
     }
 
     this.setCollapsibleElement = React.createRef()
+    this.divTopHeader = null
     this.toggleNavbar = this.toggleNavbar.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    const height = this.divTopHeader.clientHeight
+    this.setState({ height })
+
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
   }
 
   toggleNavbar() {
@@ -101,6 +116,19 @@ class Header extends React.Component {
     }))
   }
 
+  handleScroll(event) {
+    const el = document.scrollingElement || document.documentElement
+    const scrollTop = el.scrollTop
+
+    const scrollPoint = scrollTop - this.state.height * 1.5
+
+    if (scrollPoint < this.state.height) {
+      this.setState({ thresholdCrossed: false })
+    } else {
+      this.setState({ thresholdCrossed: true })
+    }
+  }
+
   render() {
     const { location, languages, currentLanguage, contact } = this.props
 
@@ -108,7 +136,12 @@ class Header extends React.Component {
 
     return (
       <header>
-        <div className="top">
+        <div
+          className={
+            "top " + (this.state.thresholdCrossed ? "fixed fade-in" : "")
+          }
+          ref={divTopHeader => (this.divTopHeader = divTopHeader)}
+        >
           <Link to={navigation.path} className="logo">
             <img src={logo} alt={navigation.title} />
           </Link>
