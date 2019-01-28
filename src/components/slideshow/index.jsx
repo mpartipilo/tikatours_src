@@ -30,7 +30,10 @@ class Slideshow extends React.Component {
         <div className="prev">
           <i
             className="fa fa-angle-left"
-            style={{ display: this.state.showCap ? "block" : "none" }}
+            style={{
+              display:
+                this.state.showCap || !this.props.fixed ? "block" : "none"
+            }}
           />
         </div>
       ),
@@ -38,7 +41,10 @@ class Slideshow extends React.Component {
         <div className="next">
           <i
             className="fa fa-angle-right"
-            style={{ display: this.state.showCap ? "block" : "none" }}
+            style={{
+              display:
+                this.state.showCap || !this.props.fixed ? "block" : "none"
+            }}
           />
         </div>
       )
@@ -58,7 +64,7 @@ class Slideshow extends React.Component {
       params,
       showVideo: false,
       videoId: "",
-      showCap: false
+      showCap: !props.fixed
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -179,6 +185,10 @@ class Slideshow extends React.Component {
       </>
     )
   }
+}
+
+Slideshow.defaultProps = {
+  slides: []
 }
 
 Slideshow.propTypes = {

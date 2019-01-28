@@ -1,12 +1,9 @@
-/* global app, $ */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import path from "path"
 import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 import Slideshow from "../components/slideshow"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
@@ -26,68 +23,45 @@ const RegionPage = ({
   regionGalleryHeading
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
     <div className="push" />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={false} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        {subnav && <SubNav {...subnav} />}
-        <div className="content">
-          <span dangerouslySetInnerHTML={{ __html: page.html }} />
+    <Slideshow
+      fixed={false}
+      slides={slideshowData}
+      currentLanguage={currentLanguage}
+    >
+      <div className="main">
+        <div className="container">
           <div className="row">
-            {regionGalleryPhotos && (
-              <Gallery
-                heading={regionGalleryHeading}
-                photos={regionGalleryPhotos}
-              />
-            )}
+            <div className="col-xs-12 text-center">
+              <h1>{data.heading}</h1>
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
+          {subnav && <SubNav {...subnav} />}
+          <div className="content">
+            <span dangerouslySetInnerHTML={{ __html: page.html }} />
+            <div className="row">
+              {regionGalleryPhotos && (
+                <Gallery
+                  heading={regionGalleryHeading}
+                  photos={regionGalleryPhotos}
+                />
+              )}
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="divider" />
+            </div>
           </div>
         </div>
       </div>
-      <Footer language={currentLanguage} />
-    </div>
+    </Slideshow>
   </React.Fragment>
 )
 
 class RegionPageTemplate extends React.Component {
   constructor(props) {
     super(props)
-  }
-
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
   }
 
   render() {
@@ -98,7 +72,9 @@ class RegionPageTemplate extends React.Component {
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
-    const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+    const slides = getSlideshowData(imagesSlides, imgGroup)
+
+    console.log(slides)
 
     const regionData = data.regions.edges.map(e => e.node.frontmatter)
     var subNav = {
@@ -134,8 +110,15 @@ class RegionPageTemplate extends React.Component {
       })
 
     return (
-      <React.Fragment>
-        <Helmet title={pathContext.title || sitemetadata.title} />{" "}
+      <Layout
+        location={location.pathname}
+        siteTitle={pathContext.title || sitemetadata.title}
+        languages={pathContext.languages}
+        language={currentLanguage}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+      >
         <RegionPage
           location={location}
           page={data.markdownRemark}
@@ -149,7 +132,7 @@ class RegionPageTemplate extends React.Component {
           regionGalleryPhotos={regionGalleryPhotos}
           regionGalleryHeading={regionGalleryHeading}
         />
-      </React.Fragment>
+      </Layout>
     )
   }
 }

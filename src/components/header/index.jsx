@@ -1,12 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import FontAwesome from "react-fontawesome"
+import { Match } from "@reach/router"
 import { Link } from "gatsby"
 
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
-import { contentData } from "../i18n-data"
+import { contentData, findInTree } from "../i18n-data"
 
 class NavigationItem extends React.Component {
   constructor(props) {
@@ -17,10 +18,10 @@ class NavigationItem extends React.Component {
   }
 
   render() {
-    const { languages, currentLanguage, level, item } = this.props
+    const { languages, currentLanguage, level, item, active } = this.props
     const { path, title, pages } = item
     return (
-      <li key={path}>
+      <li key={path} className={active ? "active" : undefined}>
         {pages && (
           <i
             className={`fa ${
@@ -49,6 +50,7 @@ class NavigationItem extends React.Component {
             menu={item}
             level={level + 1}
             expanded={this.state.expanded}
+            activeRootPath=""
           />
         )}
       </li>
@@ -64,15 +66,26 @@ const NavigationMenu = ({
   currentLanguage,
   expanded = true
 }) => {
+  const locationRootPath = findInTree(location, menu)
+
   return (
     <ul style={{ display: expanded ? "block" : "none" }}>
-      {menu.pages.map(p => (
-        <NavigationItem
-          key={p.path}
-          item={p}
-          {...{ languages, currentLanguage, level }}
-        />
-      ))}
+      {menu.pages.map(p => {
+        const menuItemRootPath = findInTree(p.path, menu)
+        const match =
+          level === 0 &&
+          locationRootPath &&
+          menuItemRootPath &&
+          locationRootPath.path[1] === menuItemRootPath.path[1]
+        return (
+          <NavigationItem
+            key={p.path}
+            item={p}
+            active={match}
+            {...{ languages, currentLanguage, level }}
+          />
+        )
+      })}
       {level === 0 && (
         <LanguageSelector
           language={currentLanguage}
@@ -181,7 +194,8 @@ NavigationMenu.propTypes = {
   level: PropTypes.number,
   location: PropTypes.string,
   languages: PropTypes.array.isRequired,
-  currentLanguage: PropTypes.string.isRequired
+  currentLanguage: PropTypes.string.isRequired,
+  activeRootPath: PropTypes.string.isRequired
 }
 
 NavigationItem.propTypes = {

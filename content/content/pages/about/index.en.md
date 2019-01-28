@@ -149,7 +149,7 @@ Dutch, Georgian and Russian.
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 3024 -->
 
 #### David Arutinyan  
-Product Manager
+Senior Product Manager
 
 
 Humorous, curious, and creative with a broad vision and excellent intuition for introducing

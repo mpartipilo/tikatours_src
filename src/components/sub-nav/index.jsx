@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 const SubNav = ({ list }) => (
   <div className="row">
@@ -7,13 +8,13 @@ const SubNav = ({ list }) => (
       <ul className="sub-nav">
         {list.map(l => (
           <li key={l.id}>
-            <a
+            <Link
               className={`btn ${l.active && "active"}`}
               title={l.title}
-              href={l.full_url}
+              to={l.full_url}
             >
               {l.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

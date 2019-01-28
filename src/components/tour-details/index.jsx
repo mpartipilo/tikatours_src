@@ -2,7 +2,7 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-import { getSlideshowData, contentData } from "../i18n-data"
+import { contentData } from "../i18n-data"
 
 import Gallery from "../gallery"
 

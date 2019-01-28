@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 const CatList = ({ heading, list }) => (
   <div className="row sub-wrap">
@@ -7,7 +8,7 @@ const CatList = ({ heading, list }) => (
     {list &&
       list.map(c => (
         <div className="col-xs-12 col-sm-6" key={c.url}>
-          <a href={`${c.url}`}>
+          <Link to={`${c.url}`}>
             <div
               className="sub-cat"
               style={{ backgroundImage: `url(${c.image_path})` }}
@@ -16,7 +17,7 @@ const CatList = ({ heading, list }) => (
               <p>{c.short_descr}</p>
               <div className="bg" />
             </div>
-          </a>
+          </Link>
         </div>
       ))}
   </div>

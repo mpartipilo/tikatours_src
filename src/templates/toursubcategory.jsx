@@ -1,11 +1,8 @@
-/* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourList from "../components/tour-list"
 
@@ -20,74 +17,48 @@ const TourSubCategoryPage = ({
   sitemetadata,
   languages,
   currentLanguage,
+  slides,
   slideshowData,
   tourCategoryData,
   tourList,
   tourListHeading
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
     <div className="push" />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={false} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
+    <Slideshow fixed={false} slides={slides} currentLanguage={currentLanguage}>
+      <div className="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 text-center">
+              <h1>{data.heading}</h1>
+            </div>
+          </div>
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: page.html }}
+          />
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="divider" />
+            </div>
           </div>
         </div>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: page.html }}
-        />
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
+        {tourList && (
+          <TourList
+            language={currentLanguage}
+            list={tourList}
+            heading={tourListHeading}
+            tourCategoryData={tourCategoryData}
+          />
+        )}
       </div>
-      {tourList && (
-        <TourList
-          language={currentLanguage}
-          list={tourList}
-          heading={tourListHeading}
-          tourCategoryData={tourCategoryData}
-        />
-      )}
-      <Footer language={currentLanguage} />
-    </div>
+    </Slideshow>
   </React.Fragment>
 )
 
 class TourSubCategoryPageTemplate extends React.Component {
   constructor(props) {
     super(props)
-  }
-
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
   }
 
   render() {
@@ -97,7 +68,7 @@ class TourSubCategoryPageTemplate extends React.Component {
 
     const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
-    const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+    const slides = getSlideshowData(imagesSlides, imgGroup)
 
     const tourCategoryData = data.tourSubCategories.edges.map(
       e => e.node.frontmatter
@@ -134,16 +105,23 @@ class TourSubCategoryPageTemplate extends React.Component {
     }
 
     return (
-      <React.Fragment>
-        <Helmet title={pathContext.title || sitemetadata.title} />
-        <base href={`/${currentLanguage}`} />
+      <Layout
+        location={location.pathname}
+        siteTitle={pathContext.title || sitemetadata.title}
+        languages={pathContext.languages}
+        language={currentLanguage}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+      >
         <TourSubCategoryPage
           location={location}
           page={data.markdownRemark}
           data={data.markdownRemark.frontmatter}
+          slides={slides}
           {...props}
         />
-      </React.Fragment>
+      </Layout>
     )
   }
 }

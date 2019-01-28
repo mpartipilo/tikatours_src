@@ -1,3 +1,5 @@
+import _ from "lodash"
+
 import sitemetadata from "../../../data/json/common/sitemetadata.json"
 
 import blog_category_en from "../../../data/json/en/blog/category.json"
@@ -39,8 +41,25 @@ import strings_zh from "../../../data/json/zh/strings.json"
 const getSlideshowData = (imagesSlides, groupId) => {
   return imagesSlides
     .filter(f => f.imggrp_id == groupId)
-    .sort((a, b) => a.rank - b.rank)
     .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
+}
+
+const findInTree = (id, tree) => {
+  if (tree.path === id) {
+    let path = [tree.path]
+    return { result: tree, path }
+  } else {
+    if (tree.pages) {
+      for (let child of tree.pages) {
+        let tmp = findInTree(id, child)
+        if (tmp && !_.isEmpty(tmp)) {
+          tmp.path.unshift(tree.path)
+          return tmp
+        }
+      }
+    }
+    return null
+  }
 }
 
 const contentData = {
@@ -78,4 +97,4 @@ const contentData = {
   }
 }
 
-export { getSlideshowData, contentData }
+export { findInTree, getSlideshowData, contentData }
