@@ -74,8 +74,6 @@ class RegionPageTemplate extends React.Component {
 
     const slides = getSlideshowData(imagesSlides, imgGroup)
 
-    console.log(slides)
-
     const regionData = data.regions.edges.map(e => e.node.frontmatter)
     var subNav = {
       list: regionData

@@ -195,13 +195,17 @@ NavigationMenu.propTypes = {
   currentLanguage: PropTypes.string.isRequired
 }
 
+NavigationItem.defaultProps = {
+  active: false
+}
+
 NavigationItem.propTypes = {
   level: PropTypes.number,
   location: PropTypes.string,
   languages: PropTypes.array.isRequired,
   currentLanguage: PropTypes.string.isRequired,
   item: PropTypes.object.isRequired,
-  active: PropTypes.bool.isRequired
+  active: PropTypes.bool
 }
 
 export default Header

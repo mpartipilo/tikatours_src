@@ -12,7 +12,6 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
           <script type="text/javascript" src="/assets/js/libs/jquery.min.js" />
           <script type="text/javascript" src="/assets/js/libs/bootstrap.js" />
           <script type="text/javascript" src="/assets/js/libs/fancybox.js" />
