@@ -30,19 +30,6 @@ class PageWrapper extends React.Component {
 
   componentDidMount() {
     app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
   }
 
   render() {

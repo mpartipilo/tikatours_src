@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import FontAwesome from "react-fontawesome"
-import { Match } from "@reach/router"
 import { Link } from "gatsby"
 
 import LanguageSelector from "../language-selector"
@@ -50,7 +49,6 @@ class NavigationItem extends React.Component {
             menu={item}
             level={level + 1}
             expanded={this.state.expanded}
-            activeRootPath=""
           />
         )}
       </li>
@@ -194,15 +192,16 @@ NavigationMenu.propTypes = {
   level: PropTypes.number,
   location: PropTypes.string,
   languages: PropTypes.array.isRequired,
-  currentLanguage: PropTypes.string.isRequired,
-  activeRootPath: PropTypes.string.isRequired
+  currentLanguage: PropTypes.string.isRequired
 }
 
 NavigationItem.propTypes = {
   level: PropTypes.number,
   location: PropTypes.string,
   languages: PropTypes.array.isRequired,
-  currentLanguage: PropTypes.string.isRequired
+  currentLanguage: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
+  active: PropTypes.bool.isRequired
 }
 
 export default Header

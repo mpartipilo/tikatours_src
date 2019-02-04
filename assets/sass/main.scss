@@ -9,13 +9,11 @@
 /* ==| IMPORTED STYLES ==================================================== */
 
 @import "~normalize-scss/sass/normalize";
-// @import "normalize";
 @import "variables";
 @import "functions";
 @import "mixins";
 // @import "~bootstrap/scss/bootstrap.scss";
 @import "bootstrap";
-//@import "font_awesome";
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome.scss";
 @import "~react-id-swiper/src/styles/scss/swiper.scss";
@@ -2251,4 +2249,8 @@ footer {
       border: 2px solid $red;
     }
   }
+}
+
+.shuffle-active {
+  color: #333;
 }

@@ -10,6 +10,7 @@
 - Untranslated (Instagram, Facebook, Send us an email)
 - Untranslated "All Images", "Landscape", "Regions"
 - Active page indicator in menu
+- Untranslated Be Social
 
 ## Pending
 
@@ -17,7 +18,6 @@
 - Untranslated Where in the world is Georgia?
 - Untranslated Click to see map
 - Untranslated Click to hide map
-- Untranslated Be Social
 - Untranslated Website by
 - Blog post needs work
 - Blog from markdown

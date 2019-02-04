@@ -105,42 +105,6 @@ var app = {
 
     return false
   },
-  initGalleryShuffle: function(elm) {
-    var jElm = $(elm)
-    if (jElm.length) {
-      jElm.shuffle({
-        group: "all",
-        itemSelector: ".gallery-item",
-        speed: 450
-      })
-
-      $(".shuffle-btn").on("click", function(e) {
-        e.preventDefault()
-
-        jElm.shuffle("shuffle", $(this).attr("data-group"))
-
-        $(".shuffle-btn").removeClass("shuffle-active")
-        $(this).addClass("shuffle-active")
-      })
-
-      jElm
-        .on("done.shuffle", function() {
-          app.initGallery(".fancybox")
-        })
-        .on("layout.shuffle", function(a) {
-          var self = $(this),
-            selectedGroup = $(".shuffle-btn.shuffle-active").data("group")
-
-          if (selectedGroup == "all") {
-            self.find(".fancybox").attr("data-fancybox-group", "all")
-          } else {
-            self
-              .find('.fancybox[data-main-group="' + selectedGroup + '"]')
-              .attr("data-fancybox-group", selectedGroup)
-          }
-        })
-    }
-  },
   initGallery: function(elm, opts) {
     var jElm = $(elm)
 
