@@ -6,6 +6,8 @@ post_id: 1
 title: 13 Breathtaking Images That Will Make You Visit Georgia
 name: 13 Breathtaking Images That Will Make You Visit Georgia
 category_id: 1
+date_created: "2014-08-13 09:22:15"
+date_posted: "2014-08-13 09:22:15"
 ---
 Situated between the West and East, Georgia is fast becoming one of the must\-see
 destinations of our generation. Ancient churches and watchtowers rest in striking

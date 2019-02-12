@@ -6,21 +6,25 @@ post_id: 4
 title: 格鲁吉亚的大饺子：食谱
 name: 格鲁吉亚的大饺子：食谱
 category_id: 1
+date_created: "2018-05-14 18:53:53"
+date_posted: "2018-05-14 18:53:53"
 ---
 跑到你当地的超市。我们需要的原料是：
 
 列表如下:
 
-4杯通用面粉
-350克绞碎牛肉
-350克绞碎猪肉
-1个小的洋葱\- 切碎
-¹⁄³ 切碎的新鲜欧芹
-¹⁄4 茶匙辣椒粉,盐和现磨黑胡椒
+* 4杯通用面粉
+* 350克绞碎牛肉
+* 350克绞碎猪肉
+* 1个小的洋葱\- 切碎
+* 1⁄3 切碎的新鲜欧芹
+* 1⁄4 茶匙辣椒粉,盐和现磨黑胡椒
 
 有了这种混杂物，你可以做40个饺子.请注意，一个普通人可以吃8个饺子。
 
-![](/library/blog/khinkali-part-4.jpg)
+<p style="text-align: center">
+<img alt="" src="/library/blog/khinkali-part-4.jpg" style="width: 530px; height: 354px;">
+</p>
 
 **如何准备**
 
@@ -34,14 +38,21 @@ category_id: 1
 
 把干面粉洒在案板上，接管蔓延面团成约3毫米的片状，把它切成直径7.5厘米的圆形，获得直径14厘米的极薄磁盘。面团轮放在木板上.
 
-![](/library/blog/khinkali-part-1.jpg)
+<p style="text-align: center">
+<img alt="" src="/library/blog/khinkali-part-1.jpg" style="width: 530px; height: 354px;">
+</p>
 
 每一轮中间放2大汤匙的肉。捏包子。
 
-![](/library/blog/khinkali-part-2.jpg)
+<p style="text-align: center">
+<img alt="" src="/library/blog/khinkali-part-2.jpg" style="width: 530px; height: 354px;">
+</p>
 
 把一大锅盐水烧开，煮饺子18至20分钟。
-![](/library/blog/khinkali-part-3.jpg)
+
+<p style="text-align: center">
+<img alt="" src="/library/blog/khinkali-part-3.jpg" style="width: 530px; height: 354px;">
+</p>
 
  用餐愉快！ 
 
