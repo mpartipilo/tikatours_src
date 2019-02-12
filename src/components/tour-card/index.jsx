@@ -36,7 +36,7 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
         <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
           <div className="t-info">
             <h3>
-              <a href={tour.url}>{tour.name}</a>
+              <Link to={tour.url}>{tour.name}</Link>
             </h3>
             <div className="duration">
               {tour.flag ? tour.flag : null}
