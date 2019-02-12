@@ -79,7 +79,14 @@ module.exports = {
         trackingId: "UA-67419912-1"
       }
     },
-    "gatsby-plugin-recaptcha",
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+        async: false,
+        defer: true,
+        args: `?render=explicit`
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
