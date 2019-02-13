@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourList from "../components/tour-list"
 
@@ -11,21 +11,17 @@ import { contentData, getSlideshowData } from "../components/i18n-data"
 // Use this template for tour sub-categories
 
 const TourSubCategoryPage = ({
-  location,
   page,
   data,
-  sitemetadata,
-  languages,
-  currentLanguage,
+  language,
   slides,
-  slideshowData,
   tourCategoryData,
   tourList,
   tourListHeading
 }) => (
   <React.Fragment>
     <div className="push" />
-    <Slideshow fixed={false} slides={slides} currentLanguage={currentLanguage}>
+    <Slideshow fixed={false} slides={slides} language={language}>
       <div className="main">
         <div className="container">
           <div className="row">
@@ -45,7 +41,7 @@ const TourSubCategoryPage = ({
         </div>
         {tourList && (
           <TourList
-            language={currentLanguage}
+            language={language}
             list={tourList}
             heading={tourListHeading}
             tourCategoryData={tourCategoryData}
@@ -63,8 +59,8 @@ class TourSubCategoryPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const currentLanguage = pathContext.language
-    const { sitemetadata, imagesSlides } = contentData[currentLanguage]
+    const language = pathContext.language
+    const { sitemetadata, imagesSlides } = contentData[language]
 
     const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
@@ -91,12 +87,12 @@ class TourSubCategoryPageTemplate extends React.Component {
           t.sub_category_id == sub_category_id
       )
       .sort((a, b) => a.rank - b.rank)
-      .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
+      .map(t => ({ ...t, url: `/${language}/${t.url}` }))
 
     const props = {
       sitemetadata,
       languages: pathContext.languages,
-      currentLanguage,
+      language,
       slideshowData: slides,
       tourCategoryData,
       tourData,
@@ -109,7 +105,8 @@ class TourSubCategoryPageTemplate extends React.Component {
         location={location.pathname}
         siteTitle={pathContext.title || sitemetadata.title}
         languages={pathContext.languages}
-        language={currentLanguage}
+        navigation={pathContext.navigation}
+        language={language}
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}

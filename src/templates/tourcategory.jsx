@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
 
@@ -93,6 +93,7 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
       location={location.pathname}
       siteTitle={pathContext.title}
       languages={pathContext.languages}
+      navigation={pathContext.navigation}
       language={currentLanguage}
       contact={sitemetadata.contact}
       data={data}

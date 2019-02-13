@@ -56,28 +56,61 @@ class GalleryIndex extends React.Component {
 
     this.state = {
       allImagesLabel: strings["All images"],
-      currentGallery: -1
+      columnWidth: 145,
+      currentGallery: -1,
+      Grid: makeResponsive(SpringGrid, {
+        maxWidth: 1920,
+        minPadding: 10,
+        defaultColumns: 6
+      })
     }
 
-    this.GalleryIndexRender = this.GalleryIndexRender.bind(this)
     this.FilterGallery = this.FilterGallery.bind(this)
+    this.measureFirstImage = this.measureFirstImage.bind(this)
+    this.ImageRefs = []
+  }
 
-    this.Grid = makeResponsive(SpringGrid, {
-      maxWidth: 1920,
-      minPadding: 100
+  componentDidMount() {
+    window.addEventListener("resize", this.measureFirstImage)
+    setTimeout(this.measureFirstImage, 500)
+  }
+
+  componentDidUpdate() {
+    this.measureFirstImage()
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.measureFirstImage)
+  }
+
+  measureFirstImage() {
+    if (this.ImageRefs.length == 0) {
+      return
+    }
+
+    if (!this.ImageRefs[0]) {
+      return
+    }
+
+    const columnWidth = this.ImageRefs[0].clientWidth
+
+    if (columnWidth == this.state.columnWidth) {
+      return
+    }
+
+    this.setState({
+      columnWidth,
+      Grid: makeResponsive(SpringGrid, {
+        maxWidth: 1920,
+        minPadding: 10,
+        defaultColumns: 6
+      })
     })
   }
 
   render() {
-    return this.GalleryIndexRender(this.props)
-  }
-
-  FilterGallery(event, gallery_id) {
-    this.setState({ currentGallery: gallery_id })
-  }
-
-  GalleryIndexRender({ groups, photos }) {
-    const { Grid } = this
+    const { groups, photos } = this.props
+    const { columnWidth, Grid } = this.state
 
     const items = photos
       .filter(
@@ -85,7 +118,7 @@ class GalleryIndex extends React.Component {
           this.state.currentGallery === -1 ||
           p.gallery_id == this.state.currentGallery
       )
-      .map(p => (
+      .map((p, idx) => (
         <li
           key={p.imgslide_id}
           className="gallery-item"
@@ -102,6 +135,9 @@ class GalleryIndex extends React.Component {
               src={p.srcThumb}
               alt={p.imgslide_alt}
               title={p.imgslide_caption}
+              ref={ref => {
+                this.ImageRefs[idx] = ref
+              }}
             />
             {p.imgslide_caption && (
               <span>
@@ -129,10 +165,10 @@ class GalleryIndex extends React.Component {
                   className="gallery"
                   component="ul"
                   columns={5}
-                  columnWidth={220}
-                  gutterWidth={3}
-                  gutterHeight={3}
-                  itemHeight={220}
+                  gutterWidth={2}
+                  gutterHeight={2}
+                  columnWidth={columnWidth}
+                  itemHeight={columnWidth}
                   layout={layout.simple}
                   easing={easings.cubicOut}
                   springConfig={{ stiffness: 170, damping: 26 }}
@@ -148,6 +184,10 @@ class GalleryIndex extends React.Component {
         )}
       </React.Fragment>
     )
+  }
+
+  FilterGallery(event, gallery_id) {
+    this.setState({ currentGallery: gallery_id })
   }
 }
 

@@ -1,76 +1,57 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
-import path from "path"
-import md5 from "md5"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { LayoutPage } from "../components/layout"
 import Blog from "../components/blog"
 
-import contentData from "../components/i18n-data"
+import { contentData } from "../components/i18n-data"
 
-const BlogPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  currentLanguage,
-  defaultLanguage,
-  blog
-}) => (
-  <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={sitemetadata.languages}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-      contact={sitemetadata.contact}
-    />
-    <div className="push" />
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        <div className="content">
-          <Blog language={currentLanguage} {...blog} />
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
-      </div>
-      <Footer language={currentLanguage} />
-    </div>
-  </React.Fragment>
-)
-
-const BlogPageTemplate = ({ location, data }) => {
-  const { sitemetadata } = contentData[data.markdownRemark.frontmatter.language]
+const BlogPageTemplate = ({ pathContext, location, data }) => {
   const defaultLanguage = "en"
-  const currentLanguage =
-    data.markdownRemark.frontmatter.language || defaultLanguage
+  const language = data.markdownRemark.frontmatter.language || defaultLanguage
+  const { strings, sitemetadata } = contentData[language]
+
+  const { blog_post, blog_category } = pathContext
+
+  const blog_post_filtered = blog_post.filter(
+    p => p.category_id == data.markdownRemark.frontmatter.id
+  )
+
+  var { heading, ...frontmatter } = data.markdownRemark.frontmatter
+  frontmatter = {
+    heading: `${strings["category_archives"]}: ${heading}`,
+    ...frontmatter
+  }
 
   return (
-    <BlogPage
-      location={location}
-      page={data.markdownRemark}
-      data={data.markdownRemark.frontmatter}
+    <LayoutPage
+      location={location.pathname}
+      siteTitle={pathContext.title || sitemetadata.title}
+      languages={pathContext.languages}
+      navigation={pathContext.navigation}
+      language={language}
+      contact={sitemetadata.contact}
+      data={{ markdownRemark: { frontmatter } }}
       sitemetadata={sitemetadata}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-    />
+      fixed={false}
+    >
+      <div className="content">
+        <Blog
+          language={language}
+          blog_post={blog_post_filtered}
+          blog_category={blog_category}
+          category_id={data.markdownRemark.frontmatter.id}
+        />
+      </div>
+    </LayoutPage>
   )
 }
 
 BlogPageTemplate.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
+  pathContext: PropTypes.object
 }
 
 export default BlogPageTemplate
@@ -81,7 +62,8 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        heading
+        id
+        heading: label
         language
         url
       }

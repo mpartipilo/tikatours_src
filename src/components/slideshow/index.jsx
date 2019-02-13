@@ -52,9 +52,8 @@ class Slideshow extends React.Component {
 
     this.createSlideFromRaw = this.createSlideFromRaw.bind(this)
 
-    const { slides } = props
-
-    const contentDataLoc = contentData[props.currentLanguage]
+    const { slides, language } = props
+    const contentDataLoc = contentData[language]
     const { strings } = contentDataLoc
 
     this.state = {
@@ -192,7 +191,7 @@ Slideshow.defaultProps = {
 }
 
 Slideshow.propTypes = {
-  currentLanguage: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
   fixed: PropTypes.bool,
   slides: PropTypes.array.isRequired,
   children: PropTypes.any.isRequired

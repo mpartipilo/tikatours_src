@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 
 import { contentData } from "../i18n-data"
 
-const SocialLinks = ({ currentLanguage }) => {
-  const contentDataLoc = contentData[currentLanguage]
+const SocialLinks = ({ language }) => {
+  const contentDataLoc = contentData[language]
   const { strings } = contentDataLoc
   return (
     <ul className="social-links">
@@ -57,8 +57,8 @@ const SocialLinks = ({ currentLanguage }) => {
   )
 }
 
-const SocialPanel = ({ currentLanguage }) => {
-  const contentDataLoc = contentData[currentLanguage]
+const SocialPanel = ({ language }) => {
+  const contentDataLoc = contentData[language]
   const { strings } = contentDataLoc
   return (
     <div className="container-fluid social-panel">
@@ -70,7 +70,7 @@ const SocialPanel = ({ currentLanguage }) => {
           </h2>
         </div>
         <div className="col-xs-12 col-md-9">
-          <SocialLinks currentLanguage={currentLanguage} />
+          <SocialLinks language={language} />
         </div>
       </div>
     </div>

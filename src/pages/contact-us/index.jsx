@@ -1,38 +1,39 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { contentData } from "../../components/i18n-data"
-import PageWrapper from "../../components/page-wrapper"
+import { contentData, GeneralPageData } from "../../components/i18n-data"
+import { LayoutPage } from "../../components/layout"
 import ContactPageForm from "../../components/contact-page-form"
 
-class ContactPage extends React.Component {
-  constructor(props) {
-    super(props)
-    const { location, pathContext } = props
-    const { strings } = contentData[pathContext.locale]
+const ContactPage = ({ location, pathContext }) => {
+  const { language } = pathContext
+  const { sitemetadata, strings } = contentData[language]
 
-    this.state = {
-      location,
-      pathContext,
-      strings
-    }
-  }
-
-  render() {
-    return (
-      <PageWrapper
-        location={this.state.location}
-        languages={this.state.pathContext.languages}
-        locale={this.state.pathContext.locale}
-        content={{
-          page_id: 8,
-          module_id: 3
-        }}
-      >
-        <ContactPageForm strings={this.state.strings} />
-      </PageWrapper>
-    )
-  }
+  return (
+    <GeneralPageData pageId={8} moduleId={3} language={language}>
+      {({ data }) => (
+        <LayoutPage
+          location={location.pathname}
+          siteTitle={pathContext.title || sitemetadata.title}
+          languages={pathContext.languages}
+          navigation={pathContext.navigation}
+          language={language}
+          contact={sitemetadata.contact}
+          data={{
+            markdownRemark: {
+              frontmatter: {
+                title: data.page_title,
+                heading: data.page_heading
+              }
+            }
+          }}
+          sitemetadata={sitemetadata}
+        >
+          <ContactPageForm strings={strings} />
+        </LayoutPage>
+      )}
+    </GeneralPageData>
+  )
 }
 
 ContactPage.propTypes = {

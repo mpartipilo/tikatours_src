@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourDetails from "../components/tour-details"
 
@@ -14,7 +14,7 @@ const GeneralPage = ({
   data,
   sitemetadata,
   languages,
-  currentLanguage,
+  language,
   slideshowData,
   imagesSlides,
   tourCategoryData,
@@ -26,7 +26,7 @@ const GeneralPage = ({
     <Slideshow
       fixed={false}
       slides={slideshowData}
-      currentLanguage={currentLanguage}
+      language={language}
     >
       <div className="main">
         <div className="container">
@@ -37,7 +37,7 @@ const GeneralPage = ({
           </div>
           <div className="content">
             <TourDetails
-              language={currentLanguage}
+              language={language}
               url={location.pathname}
               imagesSlidesData={imagesSlides}
               tourCategoryData={tourCategoryData}
@@ -63,8 +63,8 @@ class TourDetailPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const currentLanguage = pathContext.language
-    const { imagesSlides, sitemetadata } = contentData[currentLanguage]
+    const language = pathContext.language
+    const { imagesSlides, sitemetadata } = contentData[language]
 
     const imgGroup = data.tour.frontmatter.imggrp_id
 
@@ -79,7 +79,7 @@ class TourDetailPageTemplate extends React.Component {
     const props = {
       sitemetadata,
       languages: pathContext.languages,
-      currentLanguage,
+      language,
       imagesSlides,
       tourCategoryData,
       tourData,
@@ -113,7 +113,8 @@ class TourDetailPageTemplate extends React.Component {
         location={location.pathname}
         siteTitle={pathContext.title || sitemetadata.title}
         languages={pathContext.languages}
-        language={currentLanguage}
+        navigation={pathContext.navigation}
+        language={language}
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}

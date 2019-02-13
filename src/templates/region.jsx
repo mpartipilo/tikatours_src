@@ -3,59 +3,31 @@ import PropTypes from "prop-types"
 import path from "path"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Slideshow from "../components/slideshow"
+import { LayoutPage } from "../components/layout"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
 
 import { contentData, getSlideshowData } from "../components/i18n-data"
 
 const RegionPage = ({
-  location,
   page,
-  data,
-  sitemetadata,
-  currentLanguage,
-  languages,
-  slideshowData,
   subnav,
   regionGalleryPhotos,
   regionGalleryHeading
 }) => (
   <React.Fragment>
-    <div className="push" />
-    <Slideshow
-      fixed={false}
-      slides={slideshowData}
-      currentLanguage={currentLanguage}
-    >
-      <div className="main">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 text-center">
-              <h1>{data.heading}</h1>
-            </div>
-          </div>
-          {subnav && <SubNav {...subnav} />}
-          <div className="content">
-            <span dangerouslySetInnerHTML={{ __html: page.html }} />
-            <div className="row">
-              {regionGalleryPhotos && (
-                <Gallery
-                  heading={regionGalleryHeading}
-                  photos={regionGalleryPhotos}
-                />
-              )}
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xs-12">
-              <div className="divider" />
-            </div>
-          </div>
-        </div>
+    {subnav && <SubNav {...subnav} />}
+    <div className="content">
+      <span dangerouslySetInnerHTML={{ __html: page.html }} />
+      <div className="row">
+        {regionGalleryPhotos && (
+          <Gallery
+            heading={regionGalleryHeading}
+            photos={regionGalleryPhotos}
+          />
+        )}
       </div>
-    </Slideshow>
+    </div>
   </React.Fragment>
 )
 
@@ -67,8 +39,8 @@ class RegionPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
 
-    const currentLanguage = pathContext.language
-    const { sitemetadata, imagesSlides, strings } = contentData[currentLanguage]
+    const language = pathContext.language
+    const { sitemetadata, imagesSlides, strings } = contentData[language]
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
@@ -80,7 +52,7 @@ class RegionPageTemplate extends React.Component {
         .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
         .sort((a, b) => a.rank - b.rank)
         .map(r => {
-          const full_url = `/${currentLanguage}/${r.url}`
+          const full_url = `/${language}/${r.url}`
           return {
             id: r.name,
             active: location.pathname.replace(/\/?$/i, "") === full_url,
@@ -108,21 +80,24 @@ class RegionPageTemplate extends React.Component {
       })
 
     return (
-      <Layout
+      <LayoutPage
         location={location.pathname}
         siteTitle={pathContext.title || sitemetadata.title}
         languages={pathContext.languages}
-        language={currentLanguage}
+        navigation={pathContext.navigation}
+        language={language}
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}
+        slides={slides}
+        fixed={false}
       >
         <RegionPage
           location={location}
           page={data.markdownRemark}
           data={data.markdownRemark.frontmatter}
           sitemetadata={sitemetadata}
-          currentLanguage={currentLanguage}
+          language={language}
           languages={pathContext.languages}
           slideshowData={slides}
           subnav={subNav}
@@ -130,7 +105,7 @@ class RegionPageTemplate extends React.Component {
           regionGalleryPhotos={regionGalleryPhotos}
           regionGalleryHeading={regionGalleryHeading}
         />
-      </Layout>
+      </LayoutPage>
     )
   }
 }

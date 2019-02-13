@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import path from "path"
 import md5 from "md5"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import GalleryIndex from "../components/gallery-index"
 
 import { contentData } from "../components/i18n-data"
@@ -78,6 +78,7 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
       location={location.pathname}
       siteTitle={pathContext.title}
       languages={pathContext.languages}
+      navigation={pathContext.navigation}
       language={currentLanguage}
       contact={sitemetadata.contact}
       data={data}

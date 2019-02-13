@@ -1,6 +1,10 @@
 const _ = require("lodash")
 const path = require("path")
 const { languages } = require("./src/i18n/locales")
+const globalNavigation = {
+  en: require("./data/json/en/navigation/navigation.json"),
+  zh: require("./data/json/zh/navigation/navigation.json")
+}
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
@@ -32,9 +36,10 @@ exports.onCreatePage = ({ page, actions }) => {
         path: `/${value}${page.path}`,
         context: {
           languages,
-          locale: value,
+          language: value,
           routed: true,
-          originalPath: page.path
+          originalPath: page.path,
+          navigation: globalNavigation[value]
         }
       }
 
@@ -56,17 +61,22 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
+  const templates = {
+    blog: path.resolve("src/templates/blog.jsx"),
+    blog_post: path.resolve("src/templates/blog_post.jsx"),
+    blogcategory: path.resolve("src/templates/blog_category.jsx"),
+    gallery: path.resolve("src/templates/gallery.jsx"),
+    regions: path.resolve("src/templates/region.jsx"),
+    tourcategory: path.resolve("src/templates/tourcategory.jsx"),
+    toursubcategory: path.resolve("src/templates/toursubcategory.jsx"),
+    tour: path.resolve("src/templates/tour.jsx"),
+    home: path.resolve("src/templates/index.jsx"),
+    page: path.resolve("src/templates/page.jsx")
+  }
+
   return new Promise((resolve, reject) => {
     const redirect = path.resolve("src/i18n/redirect.js")
-    const homePage = path.resolve("src/templates/index.jsx")
-    const generalPage = path.resolve("src/templates/page.jsx")
-    const galleryPage = path.resolve("src/templates/gallery.jsx")
-    const regionPage = path.resolve("src/templates/region.jsx")
-    const tourCategoryPage = path.resolve("src/templates/tourcategory.jsx")
-    const tourSubCategoryPage = path.resolve(
-      "src/templates/toursubcategory.jsx"
-    )
-    const tourDetailPage = path.resolve("src/templates/tour.jsx")
+
     resolve(
       graphql(`
         {
@@ -81,6 +91,48 @@ exports.createPages = ({ graphql, actions }) => {
                   language
                   url
                   template
+                }
+                html
+              }
+            }
+          }
+
+          allBlogCategories: allMarkdownRemark(
+            filter: { frontmatter: { template: { eq: "blogcategory" } } }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  id
+                  template
+                  label
+                  url
+                  title
+                  meta_keywords
+                  meta_description
+                  status
+                  rank
+                  language
+                }
+                id
+              }
+            }
+          }
+
+          allBlogPosts: allMarkdownRemark(
+            filter: { frontmatter: { template: { eq: "blog_post" } } }
+          ) {
+            edges {
+              node {
+                id
+                frontmatter {
+                  language
+                  url
+                  post_id
+                  title
+                  name
+                  category_id
+                  date_posted
                 }
                 html
               }
@@ -138,41 +190,45 @@ exports.createPages = ({ graphql, actions }) => {
             return
           }
 
-          var component = generalPage
+          var component = templates.page
 
           if (
             page.node.frontmatter.url == "" ||
             page.node.frontmatter.url == "/"
           ) {
-            component = homePage
+            component = templates.home
           }
 
-          if (page.node.frontmatter.template == "blog") {
-            return
+          if (templates[page.node.frontmatter.template]) {
+            component = templates[page.node.frontmatter.template]
           }
 
-          if (page.node.frontmatter.template == "blogcategory") {
-            return
+          const context = {
+            id: page.node.id,
+            slug: page.node.frontmatter.url,
+            title: page.node.frontmatter.title,
+            url: page.node.frontmatter.url,
+            language: page.node.frontmatter.language,
+            languages,
+            navigation: globalNavigation[page.node.frontmatter.language]
           }
 
-          if (page.node.frontmatter.template == "gallery") {
-            component = galleryPage
-          }
+          if (
+            page.node.frontmatter.template === "blog" ||
+            page.node.frontmatter.template == "blogcategory" ||
+            page.node.frontmatter.template == "blog_post"
+          ) {
+            context.blog_post = result.data.allBlogPosts.edges
+              .filter(e => e.node.frontmatter.language == context.language)
+              .map(e => ({
+                id: e.node.id,
+                long_description: e.node.html,
+                ...e.node.frontmatter
+              }))
 
-          if (page.node.frontmatter.template == "regions") {
-            component = regionPage
-          }
-
-          if (page.node.frontmatter.template == "tourcategory") {
-            component = tourCategoryPage
-          }
-
-          if (page.node.frontmatter.template == "toursubcategory") {
-            component = tourSubCategoryPage
-          }
-
-          if (page.node.frontmatter.template == "tour") {
-            component = tourDetailPage
+            context.blog_category = result.data.allBlogCategories.edges
+              .filter(e => e.node.frontmatter.language == context.language)
+              .map(e => e.node.frontmatter)
           }
 
           createPage({
@@ -180,14 +236,7 @@ exports.createPages = ({ graphql, actions }) => {
               page.node.frontmatter.url
             }`,
             component: component,
-            context: {
-              id: page.node.id,
-              slug: page.node.frontmatter.url,
-              title: page.node.frontmatter.title,
-              url: page.node.frontmatter.url,
-              language: page.node.frontmatter.language,
-              languages
-            }
+            context
           })
         })
       })

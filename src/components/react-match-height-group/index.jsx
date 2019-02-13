@@ -12,7 +12,7 @@ class HeightMatchingGroup extends Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.matchHeights)
-    setTimeout(this.matchHeights, 1000)
+    setTimeout(this.matchHeights, 500)
   }
 
   componentDidUpdate() {
@@ -30,6 +30,10 @@ class HeightMatchingGroup extends Component {
   }
 
   matchHeights() {
+    if (this.props.containerRef.current == null) {
+      return
+    }
+
     const els = this.props.containerRef.current.querySelectorAll(
       this.props.selector
     )

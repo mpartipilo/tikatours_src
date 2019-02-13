@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import format from "string-format"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import HomeGallery from "../components/home-gallery"
 import HomeOverlay from "../components/home-overlay"
 import MapCanvasView from "../components/map-canvas"
@@ -26,12 +26,9 @@ class GeneralPage extends React.Component {
 
   render() {
     const {
-      location,
       page,
       data,
-      sitemetadata,
-      languages,
-      currentLanguage,
+      language,
       slides,
       imagesSlides,
       homeOverlayData,
@@ -55,7 +52,7 @@ class GeneralPage extends React.Component {
         <Slideshow
           fixed={this.state.overlayVisible}
           slides={slides}
-          currentLanguage={currentLanguage}
+          language={language}
         >
           <div
             className="main"
@@ -77,7 +74,7 @@ class GeneralPage extends React.Component {
               </div>
             </div>
             <TourList
-              language={currentLanguage}
+              language={language}
               heading={tourListHeading}
               list={tourList}
               tourCategoryData={tourCategoryData}
@@ -89,14 +86,11 @@ class GeneralPage extends React.Component {
                 strings["Reasons to Visit Georgia"],
                 countryHighlights.length
               )}
-              btnUrl={"/" + currentLanguage + "/georgia-tours"}
+              btnUrl={"/" + language + "/georgia-tours"}
               btnText={strings["View Georgia Tours"]}
             />
-            <MapCanvasView
-              countryName="Georgia"
-              currentLanguage={currentLanguage}
-            />
-            <SocialPanel currentLanguage={currentLanguage} />
+            <MapCanvasView countryName="Georgia" language={language} />
+            <SocialPanel language={language} />
             <HomeGallery
               imageSlides={imagesSlides}
               galleryId={data.imggrp_id_gallery}
@@ -130,6 +124,10 @@ const IndexPage = ({ location, data, pathContext }) => {
 
   const slides = getSlideshowData(imagesSlides, imgGroup)
 
+  if (!pathContext.navigation) {
+    return <pre>No navigation</pre>
+  }
+
   return (
     <React.Fragment>
       <Helmet
@@ -161,6 +159,7 @@ const IndexPage = ({ location, data, pathContext }) => {
         location={location.pathname}
         siteTitle={pathContext.title}
         languages={pathContext.languages}
+        navigation={pathContext.navigation}
         language={language}
         contact={sitemetadata.contact}
         data={data}
@@ -172,7 +171,7 @@ const IndexPage = ({ location, data, pathContext }) => {
           data={data.markdownRemark.frontmatter}
           sitemetadata={sitemetadata}
           languages={pathContext.languages}
-          currentLanguage={language}
+          language={language}
           tourListHeading={strings["feature_tour_list_heading"]}
           tourListTag={strings["featured_tour"]}
           {...{

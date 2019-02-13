@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import LanguageSelector from "../language-selector"
 import { logo } from "../logos"
 
-import { contentData, findInTree } from "../i18n-data"
+import { findInTree } from "../i18n-data"
 
 class NavigationItem extends React.Component {
   constructor(props) {
@@ -126,6 +126,10 @@ class Header extends React.Component {
   }
 
   handleScroll(event) {
+    if (this.divTopHeader == null) {
+      return
+    }
+
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
     const height = this.divTopHeader.clientHeight
@@ -140,9 +144,13 @@ class Header extends React.Component {
   }
 
   render() {
-    const { location, languages, currentLanguage, contact } = this.props
-
-    const { navigation } = contentData[currentLanguage]
+    const {
+      location,
+      languages,
+      currentLanguage,
+      contact,
+      navigation
+    } = this.props
 
     return (
       <header>
@@ -183,7 +191,8 @@ Header.propTypes = {
   location: PropTypes.string.isRequired,
   languages: PropTypes.array.isRequired,
   currentLanguage: PropTypes.string.isRequired,
-  contact: PropTypes.object
+  contact: PropTypes.object,
+  navigation: PropTypes.object.isRequired
 }
 
 NavigationMenu.propTypes = {
