@@ -1,31 +1,37 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
 
-const GalleryIndexTabs = ({ groups }) => (
+import { contentData } from "../i18n-data"
+
+const GalleryIndexTabs = ({ groups, allImagesLabel, onTabClicked, active }) => (
   <React.Fragment>
     <div className="row hidden-xs">
       <div className="col-xs-12">
         <ul className="tabs">
           <li>
-            <a
-              className="btn shuffle-btn shuffle-active"
-              title="All gallery images"
-              data-group="all"
-              href=""
+            <div
+              className={`btn shuffle-btn${
+                active === -1 ? " shuffle-active" : ""
+              }`}
+              title={allImagesLabel}
+              onClick={e => onTabClicked(e, -1)}
             >
-              All images
-            </a>
+              {allImagesLabel}
+            </div>
           </li>
           {groups.map(g => (
             <li key={g.imggrp_id}>
-              <a
-                className="btn shuffle-btn"
+              <div
+                className={`btn shuffle-btn${
+                  active === g.gallery_id ? " shuffle-active" : ""
+                }`}
                 title={g.imggrp_name + " gallery"}
                 data-group={g.gallery_id}
-                href=""
+                onClick={e => onTabClicked(e, g.gallery_id)}
               >
                 {g.imggrp_name}
-              </a>
+              </div>
             </li>
           ))}
         </ul>
@@ -35,54 +41,158 @@ const GalleryIndexTabs = ({ groups }) => (
 )
 
 GalleryIndexTabs.propTypes = {
-  groups: PropTypes.array
+  groups: PropTypes.array,
+  allImagesLabel: PropTypes.string.isRequired,
+  onTabClicked: PropTypes.func.isRequired,
+  active: PropTypes.any.isRequired
 }
 
-const GalleryIndex = ({ groups, photos }) => (
-  <React.Fragment>
-    {groups &&
-      groups.length >= 0 && (
-        <div className="container-fluid gallery-index">
-          <GalleryIndexTabs groups={groups} />
-          <div className="row">
-            <div className="col-xs-12">
-              <ul id="gallery-shuffle" className="gallery">
-                {photos &&
-                  photos.map(p => (
-                    <li
-                      key={p.imgslide_id}
-                      className="gallery-item"
-                      data-groups={`["all","${p.gallery_id}"]`}
-                    >
-                      <a
-                        href={p.imgslide_path}
-                        data-main-group={p.gallery_id}
-                        data-fancybox-group="all"
-                        className="fancybox"
-                        title={p.imgslide_caption}
-                      >
-                        <img
-                          src={p.srcThumb}
-                          alt={p.imgslide_alt}
-                          title={p.imgslide_caption}
-                        />
-                        {p.imgslide_caption && (
-                          <span>
-                            <p>{p.imgslide_caption}</p>
-                          </span>
-                        )}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
+class GalleryIndex extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const contentDataLoc = contentData[props.currentLanguage]
+    const { strings } = contentDataLoc
+
+    this.state = {
+      allImagesLabel: strings["All images"],
+      columnWidth: 145,
+      currentGallery: -1,
+      Grid: makeResponsive(SpringGrid, {
+        maxWidth: 1920,
+        minPadding: 10,
+        defaultColumns: 6
+      })
+    }
+
+    this.FilterGallery = this.FilterGallery.bind(this)
+    this.measureFirstImage = this.measureFirstImage.bind(this)
+    this.ImageRefs = []
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.measureFirstImage)
+    setTimeout(this.measureFirstImage, 500)
+  }
+
+  componentDidUpdate() {
+    this.measureFirstImage()
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.measureFirstImage)
+  }
+
+  measureFirstImage() {
+    if (this.ImageRefs.length == 0) {
+      return
+    }
+
+    if (!this.ImageRefs[0]) {
+      return
+    }
+
+    const columnWidth = this.ImageRefs[0].clientWidth
+
+    if (columnWidth == this.state.columnWidth) {
+      return
+    }
+
+    this.setState({
+      columnWidth,
+      Grid: makeResponsive(SpringGrid, {
+        maxWidth: 1920,
+        minPadding: 10,
+        defaultColumns: 6
+      })
+    })
+  }
+
+  render() {
+    const { groups, photos } = this.props
+    const { columnWidth, Grid } = this.state
+
+    const items = photos
+      .filter(
+        p =>
+          this.state.currentGallery === -1 ||
+          p.gallery_id == this.state.currentGallery
+      )
+      .map((p, idx) => (
+        <li
+          key={p.imgslide_id}
+          className="gallery-item"
+          data-groups={`["all","${p.gallery_id}"]`}
+        >
+          <a
+            href={p.imgslide_path}
+            data-main-group={p.gallery_id}
+            data-fancybox-group="all"
+            className="fancybox"
+            title={p.imgslide_caption}
+          >
+            <img
+              src={p.srcThumb}
+              alt={p.imgslide_alt}
+              title={p.imgslide_caption}
+              ref={ref => {
+                this.ImageRefs[idx] = ref
+              }}
+            />
+            {p.imgslide_caption && (
+              <span>
+                <p>{p.imgslide_caption}</p>
+              </span>
+            )}
+          </a>
+        </li>
+      ))
+
+    return (
+      <React.Fragment>
+        {groups && groups.length >= 0 && (
+          <div className="container-fluid gallery-index">
+            <GalleryIndexTabs
+              groups={groups}
+              allImagesLabel={this.state.allImagesLabel}
+              onTabClicked={this.FilterGallery}
+              active={this.state.currentGallery}
+            />
+            <div className="row">
+              <div className="col-xs-12">
+                <Grid
+                  id="gallery-shuffle"
+                  className="gallery"
+                  component="ul"
+                  columns={5}
+                  gutterWidth={2}
+                  gutterHeight={2}
+                  columnWidth={columnWidth}
+                  itemHeight={columnWidth}
+                  layout={layout.simple}
+                  easing={easings.cubicOut}
+                  springConfig={{ stiffness: 170, damping: 26 }}
+                  enter={() => ({ scale: 0, opacity: 0 })}
+                  entered={() => ({ scale: 1, opacity: 1 })}
+                  exit={() => ({ scale: 0, opacity: 0 })}
+                >
+                  {items}
+                </Grid>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-  </React.Fragment>
-)
+        )}
+      </React.Fragment>
+    )
+  }
+
+  FilterGallery(event, gallery_id) {
+    this.setState({ currentGallery: gallery_id })
+  }
+}
 
 GalleryIndex.propTypes = {
+  currentLanguage: PropTypes.string.isRequired,
   groups: PropTypes.array,
   photos: PropTypes.array
 }

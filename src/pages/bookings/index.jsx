@@ -1,63 +1,56 @@
-/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
-import { Route } from "react-router-dom"
+import { Router } from "@reach/router"
+import { graphql } from "gatsby"
 
-import { contentData } from "../../components/i18n-data"
-import PageWrapper from "../../components/page-wrapper"
+import { contentData, GeneralPageData } from "../../components/i18n-data"
+import { LayoutPage } from "../../components/layout"
 import ContactPageForm from "../../components/contact-page-form"
 
-class ContactPage extends React.Component {
-  constructor(props) {
-    super(props)
-    const { location, pathContext, data } = props
-    const { strings } = contentData[pathContext.locale]
-    const { edges } = data.allMarkdownRemark
+const ContactPageFormWrapper = ({ options, strings, tour_code }) => (
+  <ContactPageForm tours={options} selectedTour={tour_code} strings={strings} />
+)
 
-    this.state = {
-      location,
-      pathContext,
-      strings,
-      options: edges
-        .map(o => o.node.frontmatter)
-        .filter(o => o.language == pathContext.locale)
-    }
-  }
+const ContactPage = ({ location, data, pathContext }) => {
+  const { language } = pathContext
+  const { sitemetadata, strings } = contentData[language]
+  const { edges } = data.allMarkdownRemark
 
-  render() {
-    return (
-      <PageWrapper
-        location={this.state.location}
-        languages={this.state.pathContext.languages}
-        locale={this.state.pathContext.locale}
-        content={{
-          page_id: 15,
-          module_id: 1
-        }}
-      >
-        <Route
-          render={({ location }) => (
-            <Route
-              location={location}
-              key={location.key}
-              path="/:language/:page/:tour_code?"
-              render={({
-                match: {
-                  params: { tour_code }
-                }
-              }) => (
-                <ContactPageForm
-                  tours={this.state.options}
-                  selectedTour={tour_code}
-                  strings={this.state.strings}
-                />
-              )}
+  const options = edges
+    .map(o => o.node.frontmatter)
+    .filter(o => o.language == pathContext.locale)
+
+  return (
+    <GeneralPageData pageId={15} moduleId={1} language={language}>
+      {({ data: gpdata }) => (
+        <LayoutPage
+          location={location.pathname}
+          siteTitle={pathContext.title || sitemetadata.title}
+          languages={pathContext.languages}
+          navigation={pathContext.navigation}
+          language={language}
+          contact={sitemetadata.contact}
+          data={{
+            markdownRemark: {
+              frontmatter: {
+                title: gpdata.page_title,
+                heading: gpdata.page_heading
+              }
+            }
+          }}
+          sitemetadata={sitemetadata}
+        >
+          <Router>
+            <ContactPageFormWrapper
+              path={`${location}/:language/:page/:tour_code?`}
+              options={options}
+              strings={strings}
             />
-          )}
-        />
-      </PageWrapper>
-    )
-  }
+          </Router>
+        </LayoutPage>
+      )}
+    </GeneralPageData>
+  )
 }
 
 ContactPage.propTypes = {

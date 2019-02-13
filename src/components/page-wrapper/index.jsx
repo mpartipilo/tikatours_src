@@ -23,8 +23,6 @@ import TourList from "../tour-list"
 
 import { getSlideshowData, contentData } from "../i18n-data"
 
-import "../../../assets/sass/main.scss"
-
 class PageWrapper extends React.Component {
   constructor(props) {
     super(props)
@@ -32,19 +30,6 @@ class PageWrapper extends React.Component {
 
   componentDidMount() {
     app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
   }
 
   render() {

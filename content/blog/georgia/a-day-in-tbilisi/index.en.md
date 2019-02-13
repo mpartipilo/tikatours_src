@@ -6,6 +6,8 @@ post_id: 2
 title: How To Spend A Day in Tbilisi Georgia | Tika Tours
 name: A Day in Tbilisi
 category_id: 1
+date_created: "2016-01-26 09:04:24"
+date_posted: "2016-01-26 09:04:24"
 ---
 Georgia’s ancient capital [Tbilisi](/regions/tbilisi) is its largest city and straddles
 the banks of the Mtkvari River. It is a city where old meets new, with the cobbled

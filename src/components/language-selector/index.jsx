@@ -1,6 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
 import ReactCountryFlag from "react-country-flag"
 import ISO6391 from "iso-639-1"
+import FontAwesome from "react-fontawesome"
+import { Link } from "gatsby"
 
 class LanguageSelector extends React.Component {
   constructor(props) {
@@ -22,32 +25,46 @@ class LanguageSelector extends React.Component {
         l => l.languageCode == props.language
       ),
       languages: languagesLocal.filter(l => l.languageCode != props.language),
-      urlNoLang
+      urlNoLang,
+      expanded: false
     }
   }
 
   render() {
     return (
-      <React.Fragment>
-        <i className="fa fa-bars" />
+      <li>
+        <i
+          className={`fa ${this.state.expanded ? "fa-times" : "fa-bars"}`}
+          onClick={() => {
+            this.setState({
+              expanded: !this.state.expanded
+            })
+          }}
+        />
         <a href="#">
-          <ReactCountryFlag code={this.state.currentLanguage.countryCode} />{" "}
+          <ReactCountryFlag code={this.state.currentLanguage.countryCode} svg />{" "}
           {this.state.currentLanguage.languageName}
-          <i className="fa fa-caret-down" />
-          <i className="fa fa-caret-right" />
+          <FontAwesome name="caret-down" />
+          <FontAwesome name="caret-right" />
         </a>
-        <ul>
+        <ul style={{ display: this.state.expanded ? "block" : "none" }}>
           {this.state.languages.map(l => (
             <li key={l.languageCode}>
-              <a href={l.url}>
-                <ReactCountryFlag code={l.countryCode} /> {l.languageName}
-              </a>
+              <Link to={l.url}>
+                <ReactCountryFlag code={l.countryCode} svg /> {l.languageName}
+              </Link>
             </li>
           ))}
         </ul>
-      </React.Fragment>
+      </li>
     )
   }
+}
+
+LanguageSelector.propTypes = {
+  language: PropTypes.string,
+  location: PropTypes.string,
+  languages: PropTypes.array
 }
 
 export default LanguageSelector

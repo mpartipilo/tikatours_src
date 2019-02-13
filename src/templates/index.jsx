@@ -1,12 +1,10 @@
-/* global graphql */
-/* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import format from "string-format"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Layout } from "../components/layout"
 import HomeGallery from "../components/home-gallery"
 import HomeOverlay from "../components/home-overlay"
 import MapCanvasView from "../components/map-canvas"
@@ -20,34 +18,18 @@ import { getSlideshowData, contentData } from "../components/i18n-data"
 class GeneralPage extends React.Component {
   constructor(props) {
     super(props)
-  }
 
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
+    this.state = {
+      overlayVisible: true
+    }
   }
 
   render() {
     const {
-      location,
       page,
       data,
-      sitemetadata,
-      languages,
-      currentLanguage,
-      slideshowData,
+      language,
+      slides,
       imagesSlides,
       homeOverlayData,
       countryHighlights,
@@ -57,62 +39,65 @@ class GeneralPage extends React.Component {
       tourListHeading,
       tourListTag
     } = this.props
+
     return (
-      <React.Fragment>
-        <Header
-          location={location.pathname}
-          siteTitle={data.title}
-          languages={languages}
-          currentLanguage={currentLanguage}
-          contact={sitemetadata.contact}
-        />
+      <>
         <div className="push" />
-        <HomeOverlay {...homeOverlayData} />
-        {slideshowData &&
-          slideshowData.length > 0 && (
-            <Slideshow fixed={true} slides={slideshowData} />
-          )}
-        <div className="main">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 text-center">
-                <h1>{data.heading}</h1>
+        <HomeOverlay
+          {...homeOverlayData}
+          onOverlayVisibleChanged={visible =>
+            this.setState({ overlayVisible: visible })
+          }
+        />
+        <Slideshow
+          fixed={this.state.overlayVisible}
+          slides={slides}
+          language={language}
+        >
+          <div
+            className="main"
+            style={{ top: this.state.overlayVisible ? "100%" : "auto" }}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-xs-12 text-center">
+                  <h1>{data.heading}</h1>
+                </div>
+              </div>
+              <div className="content">
+                <div dangerouslySetInnerHTML={{ __html: page.html }} />
+              </div>
+              <div className="row">
+                <div className="col-xs-12">
+                  <div className="divider" />
+                </div>
               </div>
             </div>
-            <div className="content">
-              <div dangerouslySetInnerHTML={{ __html: page.html }} />
-            </div>
-            <div className="row">
-              <div className="col-xs-12">
-                <div className="divider" />
-              </div>
-            </div>
+            <TourList
+              language={language}
+              heading={tourListHeading}
+              list={tourList}
+              tourCategoryData={tourCategoryData}
+              tag={tourListTag}
+            />
+            <ReasonsSlider
+              reasons={countryHighlights}
+              title={format(
+                strings["Reasons to Visit Georgia"],
+                countryHighlights.length
+              )}
+              btnUrl={"/" + language + "/georgia-tours"}
+              btnText={strings["View Georgia Tours"]}
+            />
+            <MapCanvasView countryName="Georgia" language={language} />
+            <SocialPanel language={language} />
+            <HomeGallery
+              imageSlides={imagesSlides}
+              galleryId={data.imggrp_id_gallery}
+            />
           </div>
-          <TourList
-            language={currentLanguage}
-            heading={tourListHeading}
-            list={tourList}
-            tourCategoryData={tourCategoryData}
-            tag={tourListTag}
-          />
-          <ReasonsSlider
-            reasons={countryHighlights}
-            title={format(
-              strings["Reasons to Visit Georgia"],
-              countryHighlights.length
-            )}
-            btnUrl={"/" + currentLanguage + "/georgia-tours"}
-            btnText={strings["View Georgia Tours"]}
-          />
-          <MapCanvasView countryName="Georgia" />
-          <SocialPanel />
-          <HomeGallery
-            imageSlides={imagesSlides}
-            galleryId={data.imggrp_id_gallery}
-          />
-          <Footer language={currentLanguage} />
-        </div>
-      </React.Fragment>
+        </Slideshow>
+      </>
     )
   }
 }
@@ -137,12 +122,15 @@ const IndexPage = ({ location, data, pathContext }) => {
     .sort((a, b) => a.rank - b.rank)
     .map(t => ({ ...t, url: `/${language}/${t.url}` }))
 
-  const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+  const slides = getSlideshowData(imagesSlides, imgGroup)
+
+  if (!pathContext.navigation) {
+    return <pre>No navigation</pre>
+  }
 
   return (
     <React.Fragment>
       <Helmet
-        title={pathContext.title}
         meta={[
           {
             name: "description",
@@ -167,31 +155,42 @@ const IndexPage = ({ location, data, pathContext }) => {
         {/* -- ==ex_meta_taga== -- */}
         <link rel="shortcut icon" href="/favicon.ico" />
       </Helmet>
-      <GeneralPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        sitemetadata={sitemetadata}
+      <Layout
+        location={location.pathname}
+        siteTitle={pathContext.title}
         languages={pathContext.languages}
-        currentLanguage={language}
-        slideshowData={slides}
-        tourListHeading={strings["feature_tour_list_heading"]}
-        tourListTag={strings["featured_tour"]}
-        {...{
-          homeOverlayData,
-          imagesSlides,
-          countryHighlights,
-          tourList,
-          strings
-        }}
-      />
+        navigation={pathContext.navigation}
+        language={language}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+      >
+        <GeneralPage
+          location={location}
+          page={data.markdownRemark}
+          data={data.markdownRemark.frontmatter}
+          sitemetadata={sitemetadata}
+          languages={pathContext.languages}
+          language={language}
+          tourListHeading={strings["feature_tour_list_heading"]}
+          tourListTag={strings["featured_tour"]}
+          {...{
+            slides,
+            homeOverlayData,
+            imagesSlides,
+            countryHighlights,
+            tourList,
+            strings
+          }}
+        />
+      </Layout>
     </React.Fragment>
   )
 }
 
 IndexPage.propTypes = {
   location: PropTypes.object,
-  pathContxt: PropTypes.object,
+  pathContext: PropTypes.object,
   data: PropTypes.object
 }
 

@@ -1,11 +1,8 @@
-/* global graphql */
-/* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Layout } from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourDetails from "../components/tour-details"
 
@@ -17,7 +14,7 @@ const GeneralPage = ({
   data,
   sitemetadata,
   languages,
-  currentLanguage,
+  language,
   slideshowData,
   imagesSlides,
   tourCategoryData,
@@ -25,43 +22,37 @@ const GeneralPage = ({
   tour
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
     <div className="push" />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={false} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
+    <Slideshow
+      fixed={false}
+      slides={slideshowData}
+      language={language}
+    >
+      <div className="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 text-center">
+              <h1>{data.heading}</h1>
+            </div>
           </div>
-        </div>
-        <div className="content">
-          <TourDetails
-            language={currentLanguage}
-            url={location.pathname}
-            imagesSlidesData={imagesSlides}
-            tourCategoryData={tourCategoryData}
-            tourData={tourData}
-            tour={tour}
-          />
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
+          <div className="content">
+            <TourDetails
+              language={language}
+              url={location.pathname}
+              imagesSlidesData={imagesSlides}
+              tourCategoryData={tourCategoryData}
+              tourData={tourData}
+              tour={tour}
+            />
+          </div>
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="divider" />
+            </div>
           </div>
         </div>
       </div>
-      <Footer language={currentLanguage} />
-    </div>
+    </Slideshow>
   </React.Fragment>
 )
 
@@ -70,31 +61,14 @@ class TourDetailPageTemplate extends React.Component {
     super(props)
   }
 
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
-  }
-
   render() {
     const { location, data, pathContext } = this.props
-    const currentLanguage = pathContext.language
-    const { imagesSlides, sitemetadata } = contentData[currentLanguage]
+    const language = pathContext.language
+    const { imagesSlides, sitemetadata } = contentData[language]
 
     const imgGroup = data.tour.frontmatter.imggrp_id
 
-    const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+    const slides = getSlideshowData(imagesSlides, imgGroup)
 
     const tourCategoryData = data.tourSubCategories.edges.map(
       e => e.node.frontmatter
@@ -105,7 +79,7 @@ class TourDetailPageTemplate extends React.Component {
     const props = {
       sitemetadata,
       languages: pathContext.languages,
-      currentLanguage,
+      language,
       imagesSlides,
       tourCategoryData,
       tourData,
@@ -135,8 +109,16 @@ class TourDetailPageTemplate extends React.Component {
     }
 
     return (
-      <React.Fragment>
-        <Helmet title={pathContext.title || sitemetadata.title} />
+      <Layout
+        location={location.pathname}
+        siteTitle={pathContext.title || sitemetadata.title}
+        languages={pathContext.languages}
+        navigation={pathContext.navigation}
+        language={language}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+      >
         <GeneralPage
           location={location}
           page={data.tour}
@@ -144,7 +126,7 @@ class TourDetailPageTemplate extends React.Component {
           {...props}
           tour={tour}
         />
-      </React.Fragment>
+      </Layout>
     )
   }
 }

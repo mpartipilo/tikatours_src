@@ -17,7 +17,7 @@ heading: UK Adventure
 name: UK Adventure
 title: UK Adventure | Tika Tours
 short_descr: Experience London and Ireland for 8 days and 7 nights. Delve deep into
-  Londonâ€™s deep history and world significance as one of the most unique and
+  London's deep history and world significance as one of the most unique and
   diverse cultural epicenters! People from all over
 duration: 8 DAYS/ 7 NIGHTS
 ---

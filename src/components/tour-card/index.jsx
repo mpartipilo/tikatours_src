@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
 
@@ -35,7 +36,7 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
         <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
           <div className="t-info">
             <h3>
-              <a href={tour.url}>{tour.name}</a>
+              <Link to={tour.url}>{tour.name}</Link>
             </h3>
             <div className="duration">
               {tour.flag ? tour.flag : null}
@@ -50,9 +51,9 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
               </p>
             )}
             <div>
-              <a href={tour.url} className="btn" style={{ width: "48%" }}>
+              <Link to={tour.url} className="btn" style={{ width: "48%" }}>
                 {strings.more_info}
-              </a>
+              </Link>
               <a
                 href="https://form.jotform.com/TikaTours/bookings"
                 className="btn"
@@ -79,7 +80,7 @@ TourCard.propTypes = {
   tour: PropTypes.object.isRequired,
   tag: PropTypes.string,
   language: PropTypes.string.isRequired,
-  tourCategoryData: PropTypes.array.isRequired
+  tourCategoryData: PropTypes.array
 }
 
 export default TourCard

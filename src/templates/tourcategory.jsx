@@ -1,17 +1,14 @@
-/* global graphql */
-/* global app, window, $ */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Layout } from "../components/layout"
 import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
 
 import { contentData } from "../components/i18n-data"
 
-const GeneralPage = ({
+const TourCategoryPage = ({
   location,
   page,
   data,
@@ -25,13 +22,6 @@ const GeneralPage = ({
   tourCategoryData
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={data.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
     <div className="push" />
     <div className="main">
       <div className="container">
@@ -59,81 +49,64 @@ const GeneralPage = ({
           tourCategoryData={tourCategoryData}
         />
       )}
-      <Footer language={currentLanguage} />
     </div>
   </React.Fragment>
 )
 
-class GeneralPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
+const GeneralPageTemplate = ({ location, data, pathContext }) => {
+  const currentLanguage = pathContext.language
+  const { sitemetadata } = contentData[currentLanguage]
+
+  const mainCategoryFound = data.markdownRemark.frontmatter
+  const main_category_id = mainCategoryFound.main_category_id
+
+  const tourCategoryData = data.tourSubCategories.edges.map(
+    e => e.node.frontmatter
+  )
+
+  var catListHeading = mainCategoryFound.sub_heading
+  var catList = tourCategoryData
+    .filter(t => t.main_category_id == main_category_id && t.rank >= 0)
+    .sort((a, b) => a.rank - b.rank)
+    .map(c => ({ ...c, url: `/${currentLanguage}/${c.url}` }))
+
+  var tourListHeading = mainCategoryFound.name
+  var tourData = data.tours.edges.map(t => t.node.frontmatter)
+  var tourList = tourData
+    .filter(t => t.main_category_id == main_category_id)
+    .sort((a, b) => a.rank - b.rank)
+    .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
+
+  const props = {
+    sitemetadata,
+    languages: pathContext.languages,
+    currentLanguage,
+    catListHeading,
+    catList,
+    tourListHeading,
+    tourList,
+    tourCategoryData
   }
 
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
-  }
-
-  render() {
-    const { location, data, pathContext } = this.props
-    const currentLanguage = pathContext.language
-    const { sitemetadata } = contentData[currentLanguage]
-
-    const mainCategoryFound = data.markdownRemark.frontmatter
-    const main_category_id = mainCategoryFound.main_category_id
-
-    const tourCategoryData = data.tourSubCategories.edges.map(
-      e => e.node.frontmatter
-    )
-
-    var catListHeading = mainCategoryFound.sub_heading
-    var catList = tourCategoryData
-      .filter(t => t.main_category_id == main_category_id && t.rank >= 0)
-      .sort((a, b) => a.rank - b.rank)
-      .map(c => ({ ...c, url: `/${currentLanguage}/${c.url}` }))
-
-    var tourListHeading = mainCategoryFound.name
-    var tourData = data.tours.edges.map(t => t.node.frontmatter)
-    var tourList = tourData
-      .filter(t => t.main_category_id == main_category_id)
-      .sort((a, b) => a.rank - b.rank)
-      .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
-
-    const props = {
-      sitemetadata,
-      languages: pathContext.languages,
-      currentLanguage,
-      catListHeading,
-      catList,
-      tourListHeading,
-      tourList,
-      tourCategoryData
-    }
-
-    return (
-      <React.Fragment>
-        <Helmet title={pathContext.title} />
-        <GeneralPage
-          location={location}
-          page={data.markdownRemark}
-          data={data.markdownRemark.frontmatter}
-          {...props}
-        />
-      </React.Fragment>
-    )
-  }
+  return (
+    <Layout
+      location={location.pathname}
+      siteTitle={pathContext.title}
+      languages={pathContext.languages}
+      navigation={pathContext.navigation}
+      language={currentLanguage}
+      contact={sitemetadata.contact}
+      data={data}
+      sitemetadata={sitemetadata}
+    >
+      <TourCategoryPage
+        location={location}
+        page={data.markdownRemark}
+        data={data.markdownRemark.frontmatter}
+        {...props}
+      />
+    </Layout>
+  )
 }
 
 GeneralPageTemplate.propTypes = {

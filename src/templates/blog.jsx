@@ -1,74 +1,44 @@
-/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
-import path from "path"
-import md5 from "md5"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { LayoutPage } from "../components/layout"
 import Blog from "../components/blog"
 
-import contentData from "../components/i18n-data"
+import { contentData } from "../components/i18n-data"
 
-const BlogPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  currentLanguage,
-  defaultLanguage,
-  blog
-}) => (
-  <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={sitemetadata.languages}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-      contact={sitemetadata.contact}
-    />
-    <div className="push" />
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        <div className="content">
-          <Blog language={currentLanguage} {...blog} />
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
-      </div>
-      <Footer language={currentLanguage} />
-    </div>
-  </React.Fragment>
-)
-
-const BlogPageTemplate = ({ location, data }) => {
+const BlogPageTemplate = ({ pathContext, location, data }) => {
   const { sitemetadata } = contentData[data.markdownRemark.frontmatter.language]
   const defaultLanguage = "en"
-  const currentLanguage =
-    data.markdownRemark.frontmatter.language || defaultLanguage
+  const language = data.markdownRemark.frontmatter.language || defaultLanguage
+
+  const { blog_post, blog_category } = pathContext
 
   return (
-    <BlogPage
-      location={location}
-      page={data.markdownRemark}
-      data={data.markdownRemark.frontmatter}
+    <LayoutPage
+      location={location.pathname}
+      siteTitle={pathContext.title || sitemetadata.title}
+      languages={pathContext.languages}
+      navigation={pathContext.navigation}
+      language={language}
+      contact={sitemetadata.contact}
+      data={data}
       sitemetadata={sitemetadata}
-      currentLanguage={currentLanguage}
-      defaultLanguage={defaultLanguage}
-    />
+      fixed={false}
+    >
+      <div className="content">
+        <Blog
+          language={language}
+          blog_post={blog_post}
+          blog_category={blog_category}
+        />
+      </div>
+    </LayoutPage>
   )
 }
 
 BlogPageTemplate.propTypes = {
+  pathContext: PropTypes.object,
   location: PropTypes.object,
   data: PropTypes.object
 }
@@ -81,6 +51,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        title
         heading
         language
         url

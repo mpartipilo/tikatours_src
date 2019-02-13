@@ -1,68 +1,32 @@
-/* global graphql, app, $ */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import path from "path"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Slideshow from "../components/slideshow"
+import { LayoutPage } from "../components/layout"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
 
 import { contentData, getSlideshowData } from "../components/i18n-data"
 
 const RegionPage = ({
-  location,
   page,
-  data,
-  sitemetadata,
-  currentLanguage,
-  languages,
-  slideshowData,
   subnav,
   regionGalleryPhotos,
   regionGalleryHeading
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
-    <div className="push" />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={false} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        {subnav && <SubNav {...subnav} />}
-        <div className="content">
-          <span dangerouslySetInnerHTML={{ __html: page.html }} />
-          <div className="row">
-            {regionGalleryPhotos && (
-              <Gallery
-                heading={regionGalleryHeading}
-                photos={regionGalleryPhotos}
-              />
-            )}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
+    {subnav && <SubNav {...subnav} />}
+    <div className="content">
+      <span dangerouslySetInnerHTML={{ __html: page.html }} />
+      <div className="row">
+        {regionGalleryPhotos && (
+          <Gallery
+            heading={regionGalleryHeading}
+            photos={regionGalleryPhotos}
+          />
+        )}
       </div>
-      <Footer language={currentLanguage} />
     </div>
   </React.Fragment>
 )
@@ -72,32 +36,15 @@ class RegionPageTemplate extends React.Component {
     super(props)
   }
 
-  componentDidMount() {
-    app.init()
-
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
-
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
-  }
-
   render() {
     const { location, data, pathContext } = this.props
 
-    const currentLanguage = pathContext.language
-    const { sitemetadata, imagesSlides, strings } = contentData[currentLanguage]
+    const language = pathContext.language
+    const { sitemetadata, imagesSlides, strings } = contentData[language]
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
-    const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+    const slides = getSlideshowData(imagesSlides, imgGroup)
 
     const regionData = data.regions.edges.map(e => e.node.frontmatter)
     var subNav = {
@@ -105,7 +52,7 @@ class RegionPageTemplate extends React.Component {
         .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
         .sort((a, b) => a.rank - b.rank)
         .map(r => {
-          const full_url = `/${currentLanguage}/${r.url}`
+          const full_url = `/${language}/${r.url}`
           return {
             id: r.name,
             active: location.pathname.replace(/\/?$/i, "") === full_url,
@@ -133,14 +80,24 @@ class RegionPageTemplate extends React.Component {
       })
 
     return (
-      <React.Fragment>
-        <Helmet title={pathContext.title || sitemetadata.title} />{" "}
+      <LayoutPage
+        location={location.pathname}
+        siteTitle={pathContext.title || sitemetadata.title}
+        languages={pathContext.languages}
+        navigation={pathContext.navigation}
+        language={language}
+        contact={sitemetadata.contact}
+        data={data}
+        sitemetadata={sitemetadata}
+        slides={slides}
+        fixed={false}
+      >
         <RegionPage
           location={location}
           page={data.markdownRemark}
           data={data.markdownRemark.frontmatter}
           sitemetadata={sitemetadata}
-          currentLanguage={currentLanguage}
+          language={language}
           languages={pathContext.languages}
           slideshowData={slides}
           subnav={subNav}
@@ -148,7 +105,7 @@ class RegionPageTemplate extends React.Component {
           regionGalleryPhotos={regionGalleryPhotos}
           regionGalleryHeading={regionGalleryHeading}
         />
-      </React.Fragment>
+      </LayoutPage>
     )
   }
 }

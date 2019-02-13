@@ -1,87 +1,43 @@
-/* global graphql */
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Slideshow from "../components/slideshow"
+import { LayoutPage } from "../components/layout"
 
 import { getSlideshowData, contentData } from "../components/i18n-data"
 
-const GeneralPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  languages,
-  currentLanguage,
-  defaultLanguage,
-  slideshowData
-}) => (
-  <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
-    <div className="push" />
-    {slideshowData &&
-      slideshowData.length > 0 && (
-        <Slideshow fixed={false} slides={slideshowData} />
-      )}
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: page.html }}
-        />
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="divider" />
-          </div>
-        </div>
-      </div>
-      <Footer language={currentLanguage} />
-    </div>
-  </React.Fragment>
-)
-
 const GeneralPageTemplate = props => {
   const { location, data, pathContext } = props
+  const { language } = pathContext
 
-  const currentLanguage = pathContext.language
-
-  if (!currentLanguage) {
+  if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { sitemetadata, imagesSlides } = contentData[currentLanguage]
+  const { sitemetadata, imagesSlides } = contentData[language]
 
   const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
-  const { slides, videos_html } = getSlideshowData(imagesSlides, imgGroup)
+  const slides = getSlideshowData(imagesSlides, imgGroup)
 
   return (
-    <React.Fragment>
-      <Helmet title={pathContext.title} />
-      <GeneralPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        sitemetadata={sitemetadata}
-        languages={pathContext.languages}
-        currentLanguage={currentLanguage}
-        slideshowData={slides}
+    <LayoutPage
+      location={location.pathname}
+      siteTitle={pathContext.title || sitemetadata.title}
+      languages={pathContext.languages}
+      navigation={pathContext.navigation}
+      language={language}
+      contact={sitemetadata.contact}
+      data={data}
+      sitemetadata={sitemetadata}
+      slides={slides}
+      fixed={false}
+    >
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
-    </React.Fragment>
+    </LayoutPage>
   )
 }
 
@@ -100,6 +56,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         heading
+        title
         language
         url
         imggrp_id

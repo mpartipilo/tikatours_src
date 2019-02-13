@@ -21,7 +21,7 @@
   "required_lname": "Last name is required",
   "required_email": "Email name is required",
   "required_captcha": "Captcha is required",
-  "from_euro": "from ¤",
+  "from_euro": "from â‚¬",
   "per person": " per person",
   "phone": "phone",
   "address": "address",
@@ -39,5 +39,9 @@
   "Thank you": "Thank you",
   "Reasons to Visit Georgia": "{} Reasons to Visit Georgia",
   "View Georgia Tours": "View Georgia Tours",
-  "watch video": "watch video"
+  "watch video": "watch video",
+  "loading video": "loading video",
+  "All images": "All images",
+  "Send us an email": "Send us an email",
+  "Be Social": "Be social"
 }

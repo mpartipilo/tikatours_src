@@ -6,6 +6,8 @@ post_id: 3
 title: 
 name: Old world meets new world (blogpost by a visitor of Marani)
 category_id: 1
+date_created: "2018-05-04 02:42:22"
+date_posted: "2018-05-04 02:42:22"
 ---
 After strolling the Abanotubani (an area in Old Tbilisi full of traditional Sulphur
 baths) for half an hour, we met a Dutch couple that recommended us the bath on Grishashvili

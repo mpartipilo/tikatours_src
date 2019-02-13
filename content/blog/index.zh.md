@@ -1,6 +1,7 @@
 ---
 template: "blog"
 url: "blog"
-title: "Blog | Tika Tours"
+title: "博客 | Tika Tours"
+heading: "博客"
 language: "zh"
 ---

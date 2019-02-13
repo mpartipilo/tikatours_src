@@ -1,9 +1,9 @@
 ---
 id: 1
 template: "blogcategory"
-label: "Georgia"
+label: "格鲁吉亚"
 url: "blog/georgia"
-title: "Georgia | Tika Tours Blog"
+title: "格鲁吉亚 | Tika Tours Blog"
 meta_keywords: ""
 meta_description: ""
 status: "A"

@@ -1,11 +1,10 @@
-/* global graphql, app, $ */
 import React from "react"
 import PropTypes from "prop-types"
+import { graphql } from "gatsby"
 import path from "path"
 import md5 from "md5"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Layout } from "../components/layout"
 import GalleryIndex from "../components/gallery-index"
 
 import { contentData } from "../components/i18n-data"
@@ -21,13 +20,6 @@ const GalleryPage = ({
   galleryIndexPhotos
 }) => (
   <React.Fragment>
-    <Header
-      location={location.pathname}
-      siteTitle={sitemetadata.title}
-      languages={languages}
-      currentLanguage={currentLanguage}
-      contact={sitemetadata.contact}
-    />
     <div className="push" />
     <div className="main">
       <div className="container">
@@ -46,63 +38,52 @@ const GalleryPage = ({
           </div>
         </div>
       </div>
-      <GalleryIndex groups={galleryGroups} photos={galleryIndexPhotos} />
-      <Footer language={currentLanguage} />
+      <GalleryIndex
+        groups={galleryGroups}
+        photos={galleryIndexPhotos}
+        currentLanguage={currentLanguage}
+      />
     </div>
   </React.Fragment>
 )
 
-class GalleryPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+const GalleryPageTemplate = ({ location, data, pathContext }) => {
+  const { sitemetadata, imagesSlides, imagesGroups } = contentData[
+    data.markdownRemark.frontmatter.language
+  ]
+  const defaultLanguage = "en"
+  const currentLanguage =
+    data.markdownRemark.frontmatter.language || defaultLanguage
 
-  componentDidMount() {
-    app.init()
+  const galleryGroups = imagesGroups
+    .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
+    .map(g => ({
+      ...g,
+      gallery_id: md5(g.imggrp_id)
+    }))
 
-    $(function() {
-      $(window).on("scroll", function() {
-        app.modifyHeader()
-        app.fadeOverlay()
-      })
+  var galleryIndexPhotos = imagesSlides
+    .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
+    .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
+    .map(p => ({
+      ...p,
+      gallery_id: md5(p.imggrp_id),
+      srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
+        p.imgslide_path
+      )}`
+    }))
 
-      $(window).on("resize", function() {
-        app.matchHeights($(".t-info"))
-      })
-
-      app.initGalleryShuffle("#gallery-shuffle")
-    })
-  }
-
-  render() {
-    const { location, data, pathContext } = this.props
-
-    const { sitemetadata, imagesSlides, imagesGroups } = contentData[
-      data.markdownRemark.frontmatter.language
-    ]
-    const defaultLanguage = "en"
-    const currentLanguage =
-      data.markdownRemark.frontmatter.language || defaultLanguage
-
-    const galleryGroups = imagesGroups
-      .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
-      .map(g => ({
-        ...g,
-        gallery_id: md5(g.imggrp_id)
-      }))
-
-    var galleryIndexPhotos = imagesSlides
-      .filter(f => galleryGroups.find(g => g.imggrp_id == f.imggrp_id))
-      .sort((a, b) => a.imgslide_rank - b.imgslide_rank)
-      .map(p => ({
-        ...p,
-        gallery_id: md5(p.imggrp_id),
-        srcThumb: `/thumbs/galleries/g${p.imggrp_id}/${path.basename(
-          p.imgslide_path
-        )}`
-      }))
-
-    return (
+  return (
+    <Layout
+      location={location.pathname}
+      siteTitle={pathContext.title}
+      languages={pathContext.languages}
+      navigation={pathContext.navigation}
+      language={currentLanguage}
+      contact={sitemetadata.contact}
+      data={data}
+      sitemetadata={sitemetadata}
+    >
       <GalleryPage
         location={location}
         page={data.markdownRemark}
@@ -113,8 +94,8 @@ class GalleryPageTemplate extends React.Component {
         galleryGroups={galleryGroups}
         galleryIndexPhotos={galleryIndexPhotos}
       />
-    )
-  }
+    </Layout>
+  )
 }
 
 GalleryPageTemplate.propTypes = {

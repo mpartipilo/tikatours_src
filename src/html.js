@@ -1,31 +1,8 @@
 import React from "react"
-import path from "path"
+import PropTypes from "prop-types"
 
-let stylesStr
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
-  }
-}
-
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
-    let cssInline
-    let css
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style 
-          dangerouslySetInnerHTML={{ __html: '@import url("/styles.css")' }}/>
-      )
-      cssInline = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      )
-    }
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -35,30 +12,34 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          {this.props.headComponents}
-          {css}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';`
-            }}
-          />
-          <script src="/assets/js/libs/modernizr-2.8.3.min.js" />
           <script type="text/javascript" src="/assets/js/libs/jquery.min.js" />
-          <script type="text/javascript" src="/assets/js/libs/supersized.js" />
-          <script src="/assets/js/libs/vendor.js" />
+          <script type="text/javascript" src="/assets/js/libs/bootstrap.js" />
+          <script type="text/javascript" src="/assets/js/libs/fancybox.js" />
           <script src="/assets/js/main.js" />
+          {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
+          <noscript key="noscript" id="gatsby-noscript">
+            This app works best with JavaScript enabled.
+          </noscript>
           <div
             key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script>{`window.jsVars = {}`}</script>
         </body>
       </html>
     )
   }
+}
+
+HTML.propTypes = {
+  htmlAttributes: PropTypes.object,
+  headComponents: PropTypes.array,
+  bodyAttributes: PropTypes.object,
+  preBodyComponents: PropTypes.array,
+  body: PropTypes.string,
+  postBodyComponents: PropTypes.array,
 }

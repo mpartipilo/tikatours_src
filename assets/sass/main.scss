@@ -8,14 +8,16 @@
 
 /* ==| IMPORTED STYLES ==================================================== */
 
-@import "normalize";
+@import "~normalize-scss/sass/normalize";
 @import "variables";
 @import "functions";
 @import "mixins";
+// @import "~bootstrap/scss/bootstrap.scss";
 @import "bootstrap";
-@import "font_awesome";
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome.scss";
+@import "~react-id-swiper/src/styles/scss/swiper.scss";
 @import "fonts";
-@import "supersized";
 @import "fancybox";
 @import "owl";
 
@@ -273,9 +275,20 @@ header {
   left: 0;
   z-index: 10;
   position: relative;
-  #slide-list {
-    display: none;
+  .swiper-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
   }
+  img.slideshow {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .ss-cap {
     position: absolute;
     bottom: 15px;
@@ -326,7 +339,7 @@ header {
   .ss-wrap {
     height: 100%;
     .ss-cap {
-      display: none;
+      // display: none;
     }
   }
 }
@@ -1312,17 +1325,10 @@ footer {
       display: block;
       position: absolute;
       top: 50%;
-      -moz-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       @include opacity(0.75);
-      -webkit-transition: all 100ms ease-in-out;
-      -moz-transition: all 100ms ease-in-out;
-      -ms-transition: all 100ms ease-in-out;
-      -o-transition: all 100ms ease-in-out;
       transition: all 100ms ease-in-out;
+      z-index: 1;
       .fa {
         color: $offwhite;
         font-size: 70px;
@@ -1334,19 +1340,21 @@ footer {
     }
     .prev {
       left: 15px;
+      right: auto;
     }
     .next {
       right: 15px;
+      left: auto;
     }
   }
-  .home {
-    .ss-wrap {
-      .prev,
-      .next {
-        display: none;
-      }
-    }
-  }
+  // .home {
+  //   .ss-wrap {
+  //     .prev,
+  //     .next {
+  //       display: none;
+  //     }
+  //   }
+  // }
   .r-wrap {
     .carousel {
       margin-bottom: 50px;
@@ -2220,4 +2228,29 @@ footer {
 
 #___gatsby {
   display: inline;
+}
+
+#___gatsby > * {
+  height: 100%;
+}
+
+.swiper-pagination {
+  &-bullet {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    margin: 3px;
+    @include rounded-borders(50%);
+    &:hover {
+      cursor: pointer;
+    }
+    &-active {
+      background: $red;
+      border: 2px solid $red;
+    }
+  }
+}
+
+.shuffle-active {
+  color: #333;
 }

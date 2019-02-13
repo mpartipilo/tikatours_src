@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
 
@@ -29,9 +30,9 @@ const BlogPost = ({ post, linkTitle, strings }) => (
   <div className="col-lg-12 blog-entry">
     {linkTitle && (
       <h2>
-        <a href={post.post_url} title={post.title}>
+        <Link to={post.post_url} title={post.title}>
           {post.name}
-        </a>
+        </Link>
       </h2>
     )}
     <hr />
@@ -40,7 +41,7 @@ const BlogPost = ({ post, linkTitle, strings }) => (
       {strings["posted on"]}
       {post.date_posted}
       {strings[" in "]}
-      <a href={post.category.url}>{post.category.label}</a>
+      <Link to={post.category.url}>{post.category.label}</Link>
     </p>
     <div className="description">
       <hr />
@@ -54,9 +55,10 @@ class Blog extends React.Component {
   constructor(props) {
     super(props)
 
-    const { blog_category, blog_post, strings } = contentData[props.language]
+    const { strings } = contentData[props.language]
+    const { blog_post, blog_category } = props
 
-    var posts = blog_post
+    var posts = (blog_post || [])
       .sort((a, b) => b.date_posted.localeCompare(a.date_posted))
       .reduce((result, post) => {
         const category = blog_category.find(c => c.id == post.category_id)
@@ -64,7 +66,7 @@ class Blog extends React.Component {
           {
             ...post,
             category,
-            post_url: `/${props.language}/blog/${category.url}/${post.url}`
+            post_url: `/${props.language}/${post.url}`
           }
         ])
       }, [])
@@ -77,7 +79,7 @@ class Blog extends React.Component {
     }
 
     if (props.post_id) {
-      posts = posts.filter(b => b.id == props.post_id)
+      posts = posts.filter(b => b.post_id == props.post_id)
     }
 
     this.state = {
@@ -106,29 +108,28 @@ class Blog extends React.Component {
           <div className="col-lg-4">
             <div className="well well-small">
               <h3>{this.state.strings["categories"]}</h3>
-              {this.state.category_list &&
-                this.state.category_list.length > 0 && (
-                  <ul className="list-unstyled">
-                    {this.state.category_list.map(c => (
-                      <li
-                        key={c.id}
-                        className={
-                          (this.state.category &&
-                            this.state.category.id == c.id &&
-                            "active") ||
-                          ""
-                        }
+              {this.state.category_list && this.state.category_list.length > 0 && (
+                <ul className="list-unstyled">
+                  {this.state.category_list.map(c => (
+                    <li
+                      key={c.id}
+                      className={
+                        (this.state.category &&
+                          this.state.category.id == c.id &&
+                          "active") ||
+                        ""
+                      }
+                    >
+                      <Link
+                        to={`/${this.props.language}/${c.url}`}
+                        title={c.title}
                       >
-                        <a
-                          href={`/${this.props.language}/blog/${c.url}`}
-                          title={c.title}
-                        >
-                          {c.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                        {c.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div className="well well-small">
               <h3>{this.state.strings["recent posts"]}</h3>
@@ -143,10 +144,8 @@ class Blog extends React.Component {
                       ""
                     }
                   >
-                    <a
-                      href={`/${this.props.language}/blog/${p.category.url}/${
-                        p.url
-                      }`}
+                    <Link
+                      to={`/${this.props.language}/${p.url}`}
                       title={p.title}
                     >
                       <span
@@ -154,7 +153,7 @@ class Blog extends React.Component {
                           __html: truncate.apply(p.name, [45, true])
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -173,7 +172,9 @@ Blog.propTypes = {
   module_id: PropTypes.number,
   category_id: PropTypes.number,
   post_id: PropTypes.number,
-  language: PropTypes.string.isRequired
+  language: PropTypes.string.isRequired,
+  blog_post: PropTypes.array.isRequired,
+  blog_category: PropTypes.array.isRequired
 }
 
 export default Blog
