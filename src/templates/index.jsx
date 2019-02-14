@@ -43,60 +43,58 @@ class GeneralPage extends React.Component {
     return (
       <>
         <div className="push" />
-        <HomeOverlay
-          {...homeOverlayData}
-          onOverlayVisibleChanged={visible =>
-            this.setState({ overlayVisible: visible })
-          }
-        />
-        <Slideshow
-          fixed={this.state.overlayVisible}
-          slides={slides}
-          language={language}
-        >
-          <div
-            className="main"
-            style={{ top: this.state.overlayVisible ? "100%" : "auto" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-xs-12 text-center">
-                  <h1>{data.heading}</h1>
-                </div>
-              </div>
-              <div className="content">
-                <div dangerouslySetInnerHTML={{ __html: page.html }} />
-              </div>
-              <div className="row">
-                <div className="col-xs-12">
-                  <div className="divider" />
-                </div>
-              </div>
-            </div>
-            <TourList
+        <HomeOverlay {...homeOverlayData}>
+          {overlayVisible => (
+            <Slideshow
+              fixed={overlayVisible}
+              slides={slides}
               language={language}
-              heading={tourListHeading}
-              list={tourList}
-              tourCategoryData={tourCategoryData}
-              tag={tourListTag}
-            />
-            <ReasonsSlider
-              reasons={countryHighlights}
-              title={format(
-                strings["Reasons to Visit Georgia"],
-                countryHighlights.length
-              )}
-              btnUrl={"/" + language + "/georgia-tours"}
-              btnText={strings["View Georgia Tours"]}
-            />
-            <MapCanvasView countryName="Georgia" language={language} />
-            <SocialPanel language={language} />
-            <HomeGallery
-              imageSlides={imagesSlides}
-              galleryId={data.imggrp_id_gallery}
-            />
-          </div>
-        </Slideshow>
+            >
+              <div
+                className="main"
+                style={{ top: overlayVisible ? "100%" : "auto" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-xs-12 text-center">
+                      <h1>{data.heading}</h1>
+                    </div>
+                  </div>
+                  <div className="content">
+                    <div dangerouslySetInnerHTML={{ __html: page.html }} />
+                  </div>
+                  <div className="row">
+                    <div className="col-xs-12">
+                      <div className="divider" />
+                    </div>
+                  </div>
+                </div>
+                <TourList
+                  language={language}
+                  heading={tourListHeading}
+                  list={tourList}
+                  tourCategoryData={tourCategoryData}
+                  tag={tourListTag}
+                />
+                <ReasonsSlider
+                  reasons={countryHighlights}
+                  title={format(
+                    strings["Reasons to Visit Georgia"],
+                    countryHighlights.length
+                  )}
+                  btnUrl={"/" + language + "/georgia-tours"}
+                  btnText={strings["View Georgia Tours"]}
+                />
+                <MapCanvasView countryName="Georgia" language={language} />
+                <SocialPanel language={language} />
+                <HomeGallery
+                  imageSlides={imagesSlides}
+                  galleryId={data.imggrp_id_gallery}
+                />
+              </div>
+            </Slideshow>
+          )}
+        </HomeOverlay>
       </>
     )
   }

@@ -41,7 +41,7 @@ class ReasonsSlider extends React.Component {
     const params = {
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 15000,
         disableOnInteraction: false
       },
       on: {
