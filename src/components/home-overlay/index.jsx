@@ -35,18 +35,17 @@ class HomeOverlay extends React.Component {
     const overlayHeight = this.refOverlay.clientHeight
     const visible = scrollTop <= overlayHeight
 
-    if (this.state.visible != visible) {
-      this.props.onOverlayVisibleChanged(visible)
-    }
-
     if (this.state.opacity == opacity && this.state.visible == visible) {
       return
     }
 
-    this.setState({
-      opacity,
-      visible
-    })
+    this.setState(
+      {
+        opacity,
+        visible
+      },
+      () => this.props.onOverlayVisibleChanged(visible)
+    )
   }
 
   render() {
