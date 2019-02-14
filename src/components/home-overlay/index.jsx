@@ -30,7 +30,7 @@ class HomeOverlay extends React.Component {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
     const height = event.srcElement.body.clientHeight
-    const opacity = (height - scrollTop) / height
+    const opacity = Math.max((height - scrollTop) / height, 0)
 
     const overlayHeight = this.refOverlay.clientHeight
     const visible = scrollTop <= overlayHeight
@@ -38,6 +38,11 @@ class HomeOverlay extends React.Component {
     if (this.state.visible != visible) {
       this.props.onOverlayVisibleChanged(visible)
     }
+
+    if (this.state.opacity == opacity && this.state.visible == visible) {
+      return
+    }
+
     this.setState({
       opacity,
       visible

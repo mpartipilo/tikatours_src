@@ -67,6 +67,8 @@ class Slideshow extends React.Component {
     }
 
     this.handleScroll = this.handleScroll.bind(this)
+
+    this.capRef = null
   }
 
   componentDidMount() {
@@ -83,14 +85,21 @@ class Slideshow extends React.Component {
     const height = event.srcElement.body.clientHeight
     const wWidth = event.srcElement.body.clientWidth
 
-    if (wWidth < 768) {
-      var triggerPoint = height / 2
-    } else {
-      var triggerPoint = height / 2
-      //   var triggerPoint = height / 2 + capHeight * 1.5
+    var triggerPoint = height / 2
+
+    if (wWidth >= 768) {
+      var capHeight = 0
+      if (this.capRef) {
+        capHeight = this.capRef.clientHeight
+      }
+      triggerPoint = height / 2 + capHeight * 1.5
     }
 
     const showCap = scrollTop > triggerPoint
+
+    if (this.state.showCap == showCap) {
+      return
+    }
 
     this.setState({
       showCap
@@ -119,31 +128,35 @@ class Slideshow extends React.Component {
     return (
       <div key={src}>
         <img src={src} className="slideshow" />
-        {this.state.showCap && (
-          <div className="ss-cap">
-            <span>{cap_heading}</span>
-            <span className="caption">{cap}</span>
-            {button && (
-              <div>
-                <Link className="btn" to={button_url}>
-                  {button}
-                </Link>
-              </div>
-            )}
-            {youtube_id && (
-              <div>
-                <a
-                  href="#"
-                  className="btn video-link"
-                  onClick={() => this.watchVideo(youtube_id)}
-                >
-                  <i className="fa fa-youtube-play" />
-                  {this.state.labelWatchVideo}
-                </a>
-              </div>
-            )}
-          </div>
-        )}
+        <div
+          className="ss-cap"
+          style={{ visibility: this.state.showCap ? "visible" : "hidden" }}
+          ref={ref => {
+            this.capRef = ref
+          }}
+        >
+          <span>{cap_heading}</span>
+          <span className="caption">{cap}</span>
+          {button && (
+            <div>
+              <Link className="btn" to={button_url}>
+                {button}
+              </Link>
+            </div>
+          )}
+          {youtube_id && (
+            <div>
+              <a
+                href="#"
+                className="btn video-link"
+                onClick={() => this.watchVideo(youtube_id)}
+              >
+                <i className="fa fa-youtube-play" />
+                {this.state.labelWatchVideo}
+              </a>
+            </div>
+          )}
+        </div>
       </div>
     )
   }

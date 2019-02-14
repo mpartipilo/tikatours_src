@@ -136,11 +136,13 @@ class Header extends React.Component {
 
     const scrollPoint = scrollTop - height * 1.5
 
-    if (scrollPoint < height) {
-      this.setState({ thresholdCrossed: false })
-    } else {
-      this.setState({ thresholdCrossed: true })
+    const thresholdCrossed = scrollPoint >= height
+
+    if (this.state.thresholdCrossed == thresholdCrossed) {
+      return
     }
+
+    this.setState({ thresholdCrossed })
   }
 
   render() {
