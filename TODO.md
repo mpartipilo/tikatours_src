@@ -14,6 +14,7 @@
 - Blog post needs work
 - Blog from markdown
 - Kill PageWrapper
+- Kill jQuery by changing fancybox for custom lightbox with react-id-swiper
 
 ## Pending
 
@@ -23,7 +24,6 @@
 - Untranslated Website by
 - Put breadcrumbs back in tour/sub/category pages
 - In the tour details, show other tours in same subcategory
-- Kill jQuery by changing fancybox for custom lightbox with react-id-swiper
 - SEO optimizations
 - Wrong category shown for tours without a sub-category
 - Show map when country_id is available
