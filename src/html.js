@@ -14,8 +14,6 @@ export default class HTML extends React.Component {
           />
           <script type="text/javascript" src="/assets/js/libs/jquery.min.js" />
           <script type="text/javascript" src="/assets/js/libs/bootstrap.js" />
-          <script type="text/javascript" src="/assets/js/libs/fancybox.js" />
-          <script src="/assets/js/main.js" />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "react-id-swiper"
+import Swiper from "@mootzy/react-id-swiper"
 import { Link } from "gatsby"
 
 // TODO The slides are getting a width that overflows the container. This fixes itself with a window resize.

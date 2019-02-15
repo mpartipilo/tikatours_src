@@ -16,10 +16,8 @@
 @import "bootstrap";
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome.scss";
-@import "~react-id-swiper/src/styles/scss/swiper.scss";
+@import "~@mootzy/react-id-swiper/src/styles/scss/swiper.scss";
 @import "fonts";
-@import "fancybox";
-@import "owl";
 
 /* ==| PRIMARY STYLES ===================================================== */
 
@@ -1116,6 +1114,82 @@ footer {
   margin: 0 10px 3px 0;
 }
 
+.gallery {
+  li,img {
+    &:hover {
+      cursor: pointer;
+      @include opacity(1);
+    }
+  }
+}
+
+.ttlightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 16000161;
+
+  .swiper-slide {
+    img {
+      transition-property: opacity;
+      transition-duration: 100ms;
+      transition-delay: 0ms;
+      transition-timing-function: ease-in;
+      opacity: 0;
+    }
+  }
+
+  .swiper-slide-active {
+    img {
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-delay: 100ms;
+      transition-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+
+  .prev,
+  .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include opacity(0.75);
+    transition: all 100ms ease-in-out;
+    z-index: 1;
+    .fa {
+      color: $offwhite;
+      font-size: 70px;
+    }
+    &:hover {
+      cursor: pointer;
+      @include opacity(1);
+    }
+  }
+  .prev {
+    left: 15px;
+    right: auto;
+  }
+  .next {
+    right: 15px;
+    left: auto;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 30px;
+    margin: 7px 10px;
+    &:hover {
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
+
 .video-wrap {
   position: fixed;
   top: 0;
@@ -1297,6 +1371,7 @@ footer {
       height: 30%;
     }
   }
+
   .ss-wrap {
     .ss-cap {
       position: absolute;
@@ -1347,14 +1422,6 @@ footer {
       left: auto;
     }
   }
-  // .home {
-  //   .ss-wrap {
-  //     .prev,
-  //     .next {
-  //       display: none;
-  //     }
-  //   }
-  // }
   .r-wrap {
     .carousel {
       margin-bottom: 50px;

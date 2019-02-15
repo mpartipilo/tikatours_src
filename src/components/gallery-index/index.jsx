@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
+import Swiper from "@mootzy/react-id-swiper"
 
 import { contentData } from "../i18n-data"
 
@@ -58,11 +59,30 @@ class GalleryIndex extends React.Component {
       allImagesLabel: strings["All images"],
       columnWidth: 145,
       currentGallery: -1,
+      isOpen: false,
+      activeSlideKey: 0,
       Grid: makeResponsive(SpringGrid, {
         maxWidth: 1920,
         minPadding: 10,
         defaultColumns: 6
-      })
+      }),
+      swiperParams: {
+        loop: false,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev"
+        },
+        renderPrevButton: () => (
+          <div className="prev">
+            <i className="fa fa-angle-left" />
+          </div>
+        ),
+        renderNextButton: () => (
+          <div className="next">
+            <i className="fa fa-angle-right" />
+          </div>
+        )
+      }
     }
 
     this.FilterGallery = this.FilterGallery.bind(this)
@@ -112,41 +132,40 @@ class GalleryIndex extends React.Component {
     const { groups, photos } = this.props
     const { columnWidth, Grid } = this.state
 
-    const items = photos
-      .filter(
-        p =>
-          this.state.currentGallery === -1 ||
-          p.gallery_id == this.state.currentGallery
-      )
-      .map((p, idx) => (
-        <li
-          key={p.imgslide_id}
-          className="gallery-item"
-          data-groups={`["all","${p.gallery_id}"]`}
+    const photosFiltered = photos.filter(
+      p =>
+        this.state.currentGallery === -1 ||
+        p.gallery_id == this.state.currentGallery
+    )
+
+    const items = photosFiltered.map((p, idx) => (
+      <li
+        key={p.imgslide_id}
+        className="gallery-item"
+        data-groups={`["all","${p.gallery_id}"]`}
+      >
+        <div
+          onClick={() =>
+            this.setState({ isOpen: true, activeSlideKey: p.imgslide_id })
+          }
+          title={p.imgslide_caption}
         >
-          <a
-            href={p.imgslide_path}
-            data-main-group={p.gallery_id}
-            data-fancybox-group="all"
-            className="fancybox"
+          <img
+            src={p.srcThumb}
+            alt={p.imgslide_alt}
             title={p.imgslide_caption}
-          >
-            <img
-              src={p.srcThumb}
-              alt={p.imgslide_alt}
-              title={p.imgslide_caption}
-              ref={ref => {
-                this.ImageRefs[idx] = ref
-              }}
-            />
-            {p.imgslide_caption && (
-              <span>
-                <p>{p.imgslide_caption}</p>
-              </span>
-            )}
-          </a>
-        </li>
-      ))
+            ref={ref => {
+              this.ImageRefs[idx] = ref
+            }}
+          />
+          {p.imgslide_caption && (
+            <span>
+              <p>{p.imgslide_caption}</p>
+            </span>
+          )}
+        </div>
+      </li>
+    ))
 
     return (
       <React.Fragment>
@@ -179,6 +198,38 @@ class GalleryIndex extends React.Component {
                   {items}
                 </Grid>
               </div>
+            </div>
+          </div>
+        )}
+        {this.state.isOpen && (
+          <div className="ttlightbox">
+            <div className="text-right">
+              <i
+                className="fa fa-times"
+                onClick={() => this.setState({ isOpen: false })}
+              />
+            </div>
+            <div style={{ bottom: 0 }}>
+              <Swiper
+                {...this.state.swiperParams}
+                activeSlideKey={this.state.activeSlideKey}
+              >
+                {photosFiltered.map(({ imgslide_id, imgslide_path }) => (
+                  <div
+                    key={imgslide_id}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <img
+                      src={imgslide_path}
+                      style={{
+                        display: "block",
+                        objectFit: "contain",
+                        maxHeight: "90vh"
+                      }}
+                    />
+                  </div>
+                )) || []}
+              </Swiper>
             </div>
           </div>
         )}

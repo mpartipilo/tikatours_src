@@ -2,53 +2,6 @@ var app = {
   config: {
     serviceUrl: "/requests/service"
   },
-  init: function(p) {
-    this.config = $.extend(true, this.config, jsVars, p)
-    this.initGallery(".fancybox")
-  },
-  getConfigItem: function(prop) {
-    return this.getVar(prop, this.config)
-  },
-  getVar: function(property, obj) {
-    if (obj.hasOwnProperty(property)) return obj[property]
-
-    for (var prop in obj) {
-      if (obj[prop].hasOwnProperty(property)) {
-        return obj[prop][property]
-      }
-    }
-
-    return false
-  },
-  initGallery: function(elm, opts) {
-    var jElm = $(elm)
-
-    if (jElm.length) {
-      var defaults = {
-        helpers: {
-          overlay: {
-            locked: false
-          }
-        },
-        padding: 5,
-        afterShow: function() {
-          var hammertime = new Hammer($(".fancybox-wrap")[0])
-
-          hammertime.on("swipeleft", function(ev) {
-            $.fancybox.next()
-          })
-
-          hammertime.on("swiperight", function(ev) {
-            $.fancybox.prev()
-          })
-        }
-      }
-
-      var opts = $.extend(true, defaults, opts)
-
-      jElm.fancybox(opts)
-    }
-  },
   initMap: function(canvas, params, mapOpts) {
     canvas = document.getElementById(canvas)
     var ind = app.getConfigItem("globals")

@@ -1,4 +1,3 @@
-/* global app */
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -19,10 +18,6 @@ import "../../../assets/sass/main.scss"
 class Layout extends React.Component {
   constructor(props) {
     super(props)
-  }
-
-  componentDidMount() {
-    app.init()
   }
 
   render() {

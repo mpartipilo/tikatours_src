@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "react-id-swiper"
+import Swiper from "@mootzy/react-id-swiper"
 import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
