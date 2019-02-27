@@ -82,8 +82,8 @@ class Slideshow extends React.Component {
   handleScroll(event) {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
-    const height = event.srcElement.body.clientHeight
-    const wWidth = event.srcElement.body.clientWidth
+    const height = document.body.clientHeight
+    const wWidth = document.body.clientWidth
 
     var triggerPoint = height / 2
 

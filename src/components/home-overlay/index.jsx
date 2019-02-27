@@ -29,7 +29,7 @@ class HomeOverlay extends React.Component {
   handleScroll(event) {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
-    const height = event.srcElement.body.clientHeight
+    const height = document.body.clientHeight
     const opacity = Math.max((height - scrollTop) / height, 0)
 
     if (!this.refOverlay) {
