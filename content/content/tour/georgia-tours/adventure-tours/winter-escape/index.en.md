@@ -24,5 +24,5 @@ duration: 10 DAYS/9 NIGHTS
 Supremely located on the southern slopes of the Greater Caucasus Mountain Range,
 Gudauri is a unique and luxurious winter Georgian escape. Renowned for its excellent
 skiing opportunities, this modern resort boasts year\-round activities for every
-kind of traveler. On this adventure you’ll ski untouched backcountry, experience
-the rugged mountains, sample delicious cuisine, and enjoy Georgian legendary hospitality.
+kind of traveler. On this adventure you'll ski untouched backcountry, experience
+the rugged mountains, sample delicious cuisine, and enjoy Georgian legendary hospitality.

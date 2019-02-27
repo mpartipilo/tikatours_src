@@ -165,33 +165,6 @@ marketing and speaks French, English, German, Georgian and Russian.
 
 </div>
 
-<div class="row content-row"><!-- 2209 (10)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3025 -->
-
-![](/library/tours/headshot-for-tika_cr.jpg)
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3026 -->
-
-#### Joyce Graves  
-Asia Marketing Manager
-
-
-Those who know Joyce would say she loves life, and she loves people.  Add to this
-a natural sense of adventure and passion for Georgia, and you can see why Joyce
-is an appreciated part of the Tika Tours team.  A Chinese raised in Hong Kong but
-married to an American (with seven children), Joyce has lived in numerous countries,
-building bridges of friendship among people from many backgrounds, races, and cultures.
-Since one of her love languages is food, she not only enjoys all kinds of cuisine,
-a visit to Joyce’s kitchen means that you will have the privilege of smelling and
-tasting dishes from many different parts of the world. Joyce speaks English, Mandarin,
-and Cantonese, and resides in Singapore from where she frequently travels to destinations
-around Asia.
-
-</div>
-
-</div>
 
 <div class="row content-row"><!-- 2210 (11)-->
 <div class="col-xs-12 col-sm-6 col-md-6"><!-- 3027 -->

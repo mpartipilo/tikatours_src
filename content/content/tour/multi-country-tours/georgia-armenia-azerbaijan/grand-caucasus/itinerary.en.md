@@ -191,8 +191,7 @@ fragments collected in the depository. Later, drive to the castle museum Erebuni
 Tsitsernakaberd Hill, and the museum of the Armenian Genocide. Enjoy dinner at a
 traditional restaurant featuring a folk show.
 
-###   
-Day Thirteen: Yerevan
+### Day Thirteen: Yerevan
 
 
 After breakfast at the hotel, explore Armenia’s treasure, Garni Temple, a wonderful
@@ -211,8 +210,7 @@ where it is said that Noah’s Ark rested after the famous flood. Return to Yer
 with a stop at the open\-air art and craft market called Vernissage. In Vernissage
 you can buy different souvenirs to take a piece of Armenia with you.
 
-###   
-Day Fourteen: Departure
+### Day Fourteen: Departure
 
 
 This morning, you will be transferred to the airport in time to check in for your
