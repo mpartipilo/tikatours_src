@@ -1,5 +1,4 @@
 {
-    "files.autoGuessEncoding": true,
     "files.exclude": {
         "./public": true
     }
