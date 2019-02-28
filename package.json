@@ -8,7 +8,7 @@
     "url": "git+ssh://gogs@git.thebrandingplug.com:2222/TheBrandingPlug/tikatours.com.git"
   },
   "dependencies": {
-    "@mootzy/react-id-swiper": "^1.6.8",
+    "react-id-swiper": "^1.6.9",
     "@types/googlemaps": "^3.30.16",
     "@types/markerclustererplus": "^2.1.33",
     "axios": "^0.18.0",

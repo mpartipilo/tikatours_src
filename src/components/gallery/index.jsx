@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "@mootzy/react-id-swiper"
+import Swiper from "react-id-swiper"
 
 class Gallery extends React.Component {
   constructor(props) {

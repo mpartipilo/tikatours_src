@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "@mootzy/react-id-swiper"
+import Swiper from "react-id-swiper"
 import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
@@ -15,7 +15,7 @@ class Slideshow extends React.Component {
       effect: "fade",
       loop: true,
       autoplay: {
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: false
       },
       pagination: {
@@ -68,7 +68,10 @@ class Slideshow extends React.Component {
 
     this.handleScroll = this.handleScroll.bind(this)
 
+    this.fixed = props.fixed
+    this.ssRef = null
     this.capRef = null
+    this.ssInitialClassName = props.fixed ? "ss-wrap fixed" : "ss-wrap"
   }
 
   componentDidMount() {
@@ -77,6 +80,20 @@ class Slideshow extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  componentDidUpdate() {
+    if (this.fixed !== this.props.fixed) {
+      this.fixed = this.props.fixed
+
+      if (this.ssRef) {
+        if (this.fixed) {
+          this.ssRef.classList.add("fixed")
+        } else {
+          this.ssRef.classList.remove("fixed")
+        }
+      }
+    }
   }
 
   handleScroll(event) {
@@ -167,7 +184,7 @@ class Slideshow extends React.Component {
     return (
       <>
         {slides && slides.length > 0 && (
-          <div className={this.props.fixed ? "ss-wrap fixed" : "ss-wrap"}>
+          <div className={this.ssInitialClassName} ref={r => (this.ssRef = r)}>
             <Swiper {...params}>
               {slides.map(this.createSlideFromRaw) || []}
             </Swiper>

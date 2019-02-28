@@ -1,7 +1,7 @@
 import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "@mootzy/react-id-swiper"
+import Swiper from "react-id-swiper"
 
 class HomeGallery extends React.Component {
   constructor(props) {

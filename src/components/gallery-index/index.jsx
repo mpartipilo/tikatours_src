@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
-import Swiper from "@mootzy/react-id-swiper"
+import Swiper from "react-id-swiper"
 
 import { contentData } from "../i18n-data"
 
