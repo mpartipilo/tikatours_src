@@ -21,16 +21,16 @@ image_path: /library/regions/svaneti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1193 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1586 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1586 -->
 
 Svaneti, one of the most ancient historical provinces of Georgia, is located on the
-southern slopes of the Caucasus. Surrounded by white\-capped peaks, Svaneti is one
+southern slopes of the Caucasus. Surrounded by white-capped peaks, Svaneti is one
 of the most remarkable regions of Georgia, a hotpot of history steeped amidst timeless
 unwavering mountains.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1587 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1587 -->
 
 Svaneti is particularly known for its tower settlements, their cuisine, their unique
 musical instruments and tradition of woodcarving. Carpenters still make incredible
@@ -41,7 +41,7 @@ furniture using the same traditional decorative ornaments.
 </div>
 
 <div class="row content-row"><!-- 1194 (3)-->
-<div class="col-xs-12"><!-- 1588 -->
+<div class="col-12"><!-- 1588 -->
 
 * * *
 
@@ -50,16 +50,16 @@ furniture using the same traditional decorative ornaments.
 </div>
 
 <div class="row content-row"><!-- 1195 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1589 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1589 -->
 
 ### History
 
 
 In ancient times, Svaneti was part of the Colchis Kingdom. The myth of the Greek
 Argonauts’ voyage to Colchis is thought to be connected to the gold of Svaneti.
-Svans used sheep wool to capture the gold from the rivers \- the wool was fixed
-to a board that was placed into water, wool side up. Once removed from the water
-and dried, the gold would fall from the dry wool.
+Svans used sheep wool to capture the gold from the rivers - the wool was fixed to
+a board that was placed into water, wool side up. Once removed from the water and
+dried, the gold would fall from the dry wool.
 
 Svaneti periodically gained independence and had its own ruler and tribal councils.
 Settlements grew out of large family farms and brotherhoods were created as big
@@ -74,14 +74,14 @@ and granting fertility.
 
 Svaneti is divided into two parts, Upper Svaneti and Lower Svaneti, separated by
 the Svaneti Mountain Range and running between the Enguri and Tskhenistskali Rivers.
-The region boasts several 4000\-5000m high peaks.
+The region boasts several 4000-5000m high peaks.
 
 At 2000 meters above sea level, the climate of Upper Svaneti is humid and cold.
-Temperatures in January average approximately \-6 °C and16 °C in July.
+Temperatures in January average approximately -6 °C and16 °C in July.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1590 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1590 -->
 
 ### What to see and do
 
@@ -109,7 +109,7 @@ of the local inhabitants.
 
 The Latali region has earned a reputation for its talented musicians and during festivities,
 as well as during mourning, visitors may have the opportunity to listen to these
-spine\-tingling polyphonic songs.
+spine-tingling polyphonic songs.
 
 </div>
 

@@ -6,7 +6,7 @@ title: 音乐 | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 883 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1216 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1216 -->
 
 
 格鲁吉亚的复调者有一种令人难以忘怀的、共鸣的音质和惊人的和声，与欧洲音乐中的任何事物都不一样。
@@ -14,7 +14,7 @@ rank: 3
 格鲁吉亚的每个地区都有自己独特的方言音乐和表演风格，但他们有相似的语调和谐波特性。格鲁吉亚乐器可以盖过了这个国家丰富的声乐传统,但他们也很重要，复调音乐和乐器经常结合起来运用。
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1217 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1217 -->
 
 最受欢迎的乐器是larchemi（格鲁吉亚牧羊神之笛），stviri (长笛), gudastviri (风笛)，changi (竖琴), chonguri (附有弦马的四弦长颈琵琶)，chuniri（弦乐器），还有各种鼓.宣布基督教为格鲁吉亚国教之后，发展了教堂音乐的一种新样式，成立了音乐学校，特别是在Gelati和Ikalto的修道院取得了巨大的进步。格鲁吉亚语言和复音歌唱传统早在七，八世纪就已经在教会生活中使用，并且在10 - 11世纪在礼拜仪式上已建立良好。
 
@@ -23,7 +23,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 884 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1218 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1218 -->
 
 ![](/library/content/img5.jpg)
 
@@ -33,7 +33,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1219 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1219 -->
 
 ![](/library/content/img6.jpg)
 

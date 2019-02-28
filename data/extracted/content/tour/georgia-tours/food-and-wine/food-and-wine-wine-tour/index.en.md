@@ -15,7 +15,7 @@ gallery_id: 0
 imggrp_id: 27
 heading: In a State of Wine Mind
 name: Wine Tour
-title: "In a State of Wine Mind | Tika Tours"
+title: ""
 short_descr: Located at the convergence of Western Asia and Eastern Europe in the South
   Caucasus, Georgia - a country blessed with breathtakingly stunning vistas, has
   recently shown up on the radars of wine lovers
@@ -26,16 +26,15 @@ wine journey? And, did you ask yourself about the origins of wine? Venture off t
 beaten wine path to the crossroads of Europe and Asia.
 
 Located at the convergence of Western Asia and Eastern Europe in the South Caucasus,
-Georgia \- a country blessed with breathtakingly stunning vistas, has recently shown
+Georgia - a country blessed with breathtakingly stunning vistas, has recently shown
 up on the radars of wine lovers. A source of pride and sign of hospitality, wine
 is an integral part of everyday life in Georgia, with traces of wine production
 dating back to 8,000 B.C. Even the delicate looping shapes of the Georgian alphabet
 resemble the curled shoots of a grapevine.
 
 The trip begins in the enigmatic capital Tbilisi, before we head into Kakheti dotted
-with rolling vineyards and the snow\-clad Caucasus rising in the distance.
+with rolling vineyards and the snow-clad Caucasus rising in the distance.
 
-The ground\-breaking 9\-day tour with TikaTours enables you to get under the skin
-of the oldest continuous, unbroken tradition of Georgian wine\-making, soak in the
-natural splendor of Georgia, and experience the lavish hospitality of the Georgian
-people.
+The ground-breaking 9-day tour with TikaTours enables you to get under the skin of
+the oldest continuous, unbroken tradition of Georgian wine-making, soak in the natural
+splendor of Georgia, and experience the lavish hospitality of the Georgian people.

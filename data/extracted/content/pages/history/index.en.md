@@ -6,7 +6,7 @@ title: History | Tika Tours
 rank: 1
 ---
 <div class="row content-row"><!-- 1542 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2072 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2072 -->
 
 Georgia is an ancient place, long braised and glazed in many layers of dark and sticky
 history, with much still written across its landscape for visitors to see.
@@ -22,7 +22,7 @@ the skull of an ancient human ancestor unearthed near the capital, Tbilisi.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2073 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2073 -->
 
 Georgian history also stretches back beyond time to the stories of Greek mythology
 when the Caucasus were said to be one of the pillars holding up the world. In the
@@ -39,7 +39,7 @@ kingdom was a Roman client state and ally for nearly 400 years.
 </div>
 
 <div class="row content-row"><!-- 1543 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2074 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2074 -->
 
 ![](/library/content/img16.jpg)
 
@@ -50,7 +50,7 @@ astronomy, mathematics, rhetoric, and music.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2075 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2075 -->
 
 ![](/library/content/img15.jpg)
 

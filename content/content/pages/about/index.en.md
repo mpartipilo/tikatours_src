@@ -10,7 +10,7 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 2202 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3013 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3013 -->
 
 TikaTours is a Georgian luxury tour operator for discerning travellers seeking life\-changing
 travel experiences. Established in 2001, we pioneered the concept of luxury travel
@@ -25,7 +25,7 @@ experienced before.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3014 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3014 -->
 
 Our bespoke journeys range from the lavish to the adventurous \- and no TikaTours
 passage is complete without that pleasant unpredictability, which inevitably makes
@@ -39,7 +39,7 @@ to detail established by Tika Svanidze Vancko – founder and president.
 </div>
 
 <div class="row content-row"><!-- 2203 (3)-->
-<div class="col-xs-12"><!-- 3015 -->
+<div class="col-12"><!-- 3015 -->
 
 Our Team
 --------
@@ -49,7 +49,7 @@ Our Team
 </div>
 
 <div class="row content-row"><!-- 2204 (4)-->
-<div class="col-xs-12"><!-- 3016 -->
+<div class="col-12"><!-- 3016 -->
 
 _We are passionate about what we do. Our team of highly skilled professionals knows
 what it takes to create a life changing travel experience_
@@ -59,13 +59,13 @@ what it takes to create a life changing travel experience_
 </div>
 
 <div class="row content-row"><!-- 2205 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3017 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3017 -->
 
 ![](/library/content/tika--svanidze-vancko---founder.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3018 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3018 -->
 
 #### Tika Svanidze Vancko   
 Founder and President
@@ -87,13 +87,13 @@ and Russian.
 </div>
 
 <div class="row content-row"><!-- 2206 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3019 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3019 -->
 
 ![](/library/content/eka-svanidze---gm.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3020 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3020 -->
 
 #### Eka Svanidze  
 General Manager
@@ -113,13 +113,13 @@ Russian
 </div>
 
 <div class="row content-row"><!-- 2207 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3021 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3021 -->
 
 ![](/library/content/giorgi.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3022 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3022 -->
 
 #### George Svanidze  
 Investment Adviser
@@ -140,13 +140,13 @@ Dutch, Georgian and Russian.
 </div>
 
 <div class="row content-row"><!-- 2208 (9)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3023 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3023 -->
 
 ![](/library/tours/dato.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3024 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3024 -->
 
 #### David Arutinyan  
 Senior Product Manager
@@ -167,13 +167,13 @@ marketing and speaks French, English, German, Georgian and Russian.
 
 
 <div class="row content-row"><!-- 2210 (11)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3027 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3027 -->
 
 ![](/library/content/tamar-gzirishvili_image.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3028 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3028 -->
 
 #### Tamar Gzirishvili   
 ​Product Manager Chinese
@@ -195,7 +195,7 @@ time with her daughter and traveling to different parts of Georgia and China.
 </div>
 
 <div class="row content-row"><!-- 2211 (11)-->
-<div class="col-xs-12"><!-- 3029 -->
+<div class="col-12"><!-- 3029 -->
 
 
 
@@ -204,13 +204,13 @@ time with her daughter and traveling to different parts of Georgia and China.
 </div>
 
 <div class="row content-row"><!-- 2212 (12)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3030 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3030 -->
 
 ![](/library/content/nino-ubilauwa-profile1.jpeg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3031 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3031 -->
 
 #### Nino Ubilauwa  
 Marketing & PR Manager
@@ -233,13 +233,13 @@ with her in Russian and Vietnamese.
 </div>
 
 <div class="row content-row"><!-- 2213 (13)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3032 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3032 -->
 
 ![](/library/content/sandro-magradze---tika-tours.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3033 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3033 -->
 
 #### Sandro Magradze   
 USA Sales Manager
@@ -266,13 +266,13 @@ has to offer.
 </div>
 
 <div class="row content-row"><!-- 2214 (14)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3034 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3034 -->
 
 ![](/library/content/anna_sharia_tikatours_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3035 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3035 -->
 
 #### Ana Sharia  
 Operations Manager

@@ -13,7 +13,7 @@ sub_category_id: 12
 rank: 6
 ---
 <div class="row content-row"><!-- 1298 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1728 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1728 -->
 
 Georgia is destination Romance. A fairy tale tapestry of sublime stone churches and
 watchtowers, glacial alpine peaks, summer meadows and the caramelised vineyards
@@ -24,7 +24,7 @@ atmosphere of a genuine Georgian wedding, with traditional dancing, music and cu
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1729 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1729 -->
 
 Why not combine your special day with a tour of Georgia. Walk hand in hand through
 the bewitching web of old city lanes. Visit the most beautiful churches in Georgia,

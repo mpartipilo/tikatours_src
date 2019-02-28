@@ -13,7 +13,7 @@ sub_category_id: 13
 rank: 7
 ---
 <div class="row content-row"><!-- 1480 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1974 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1974 -->
 
 Fling yourselves into a holiday to enthral the whole family. There's easy access
 to the sea and the mountains, river valleys for rafting and cave cities for exploring.
@@ -24,7 +24,7 @@ and curiosities.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1975 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1975 -->
 
 Explore vineyards and villages on short hikes or hire bikes and take the family for
 a pedal around the hills \- and bakeries. They will love the famous cheese pies,

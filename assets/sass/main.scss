@@ -10,10 +10,7 @@
 
 @import "~normalize-scss/sass/normalize";
 @import "variables";
-@import "functions";
-@import "mixins";
-// @import "~bootstrap/scss/bootstrap.scss";
-@import "bootstrap";
+@import "~bootstrap/scss/bootstrap.scss";
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome.scss";
 @import "~@mootzy/react-id-swiper/src/styles/scss/swiper.scss";
@@ -129,12 +126,12 @@ header {
     }
   }
   .top.fixed {
-    @include opacity(0);
+    opacity: 0;
     visibility: hidden;
     top: -44px;
   }
   .top.fade-in {
-    @include opacity(1);
+    opacity: 1;
     visibility: visible;
     top: 0 !important;
   }
@@ -348,7 +345,7 @@ header {
   border: 1px solid $red;
   color: $red;
   background: none;
-  @include rounded-borders(0);
+  border-radius: 0;
   padding: 7px 25px;
   margin: 10px 0;
   font-size: 15px;
@@ -406,8 +403,7 @@ header {
   margin-bottom: 4px;
   .row {
     height: 100%;
-    .col-xs-12 {
-      height: 100%;
+    .col-12 {
       background-size: cover;
       background-position: center center;
       .tag {
@@ -473,8 +469,12 @@ header {
             color: $gold !important;
           }
         }
-        .book-btn-form {
+        .btn.bookNow {
           width: 58%;
+          background-color: $gold;
+          &:hover {
+            color: $gold !important;
+          }
         }
       }
       .blur-img {
@@ -570,7 +570,7 @@ header {
       margin-left: -25px;
       background-color: $darkred;
       border: 1px solid $offwhite;
-      @include rounded-borders(50%);
+      border-radius: 50%;
       span {
         font-size: 30px;
         line-height: 50px;
@@ -697,7 +697,7 @@ footer {
             color: green;
           }
           .form-control {
-            @include rounded-borders(0);
+            border-radius: 0;
             height: 50px;
           }
           .form-group {
@@ -746,7 +746,7 @@ footer {
   }
   .bg,
   p {
-    @include opacity(0);
+    opacity: 0;
     visibility: hidden;
   }
   .bg {
@@ -908,11 +908,11 @@ footer {
     background: none;
     box-shadow: none;
     border-color: $gold;
-    @include rounded-borders(0);
+    border-radius: 0;
   }
 }
 .form-control {
-  @include rounded-borders(0);
+  border-radius: 0;
   box-shadow: none;
 }
 .home-grid {
@@ -1118,7 +1118,7 @@ footer {
   li,img {
     &:hover {
       cursor: pointer;
-      @include opacity(1);
+      opacity: 1;
     }
   }
 }
@@ -1158,7 +1158,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    @include opacity(0.75);
+    opacity: 0.75;
     transition: all 100ms ease-in-out;
     z-index: 1;
     .fa {
@@ -1167,7 +1167,7 @@ footer {
     }
     &:hover {
       cursor: pointer;
-      @include opacity(1);
+      opacity: 1;
     }
   }
   .prev {
@@ -1401,7 +1401,7 @@ footer {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      @include opacity(0.75);
+      opacity: 0.75;
       transition: all 100ms ease-in-out;
       z-index: 1;
       .fa {
@@ -1410,7 +1410,7 @@ footer {
       }
       &:hover {
         cursor: pointer;
-        @include opacity(1);
+        opacity: 1;
       }
     }
     .prev {
@@ -1466,12 +1466,12 @@ footer {
         padding: 5px 10px;
       }
     }
-    .col-xs-12:nth-child(even) {
+    .col-12:nth-child(even) {
       .sub-cat {
         margin-right: -12.5px;
       }
     }
-    .col-xs-12:nth-child(odd) {
+    .col-12:nth-child(odd) {
       .sub-cat {
         margin-left: -12.5px;
       }
@@ -1580,7 +1580,7 @@ footer {
           height: 16px;
           border: 2px solid #fff;
           margin: 3px;
-          @include rounded-borders(50%);
+          border-radius: 50%;
           &:hover {
             cursor: pointer;
           }
@@ -1602,7 +1602,7 @@ footer {
   }
   .t-item {
     .row {
-      .col-xs-12 {
+      .col-12 {
         .t-info {
           h3 {
             font-size: 30px;
@@ -1737,7 +1737,7 @@ footer {
       &:hover {
         .bg,
         p {
-          @include opacity(1);
+          opacity: 1;
           visibility: visible;
         }
         p {
@@ -1763,7 +1763,7 @@ footer {
       span {
         display: block;
         visibility: hidden;
-        @include opacity(0);
+        opacity: 0;
         -webkit-transition: opacity 250ms ease-in-out;
         -moz-transition: opacity 250ms ease-in-out;
         -ms-transition: opacity 250ms ease-in-out;
@@ -1773,7 +1773,7 @@ footer {
       &:hover {
         span {
           visibility: visible;
-          @include opacity(1);
+          opacity: 1;
         }
       }
     }
@@ -1812,7 +1812,7 @@ footer {
       }
     }
     .top.fixed {
-      @include opacity(1);
+      opacity: 1;
       visibility: visible;
       top: 0;
       background: rgba($red, 1);
@@ -1863,7 +1863,7 @@ footer {
             -o-transition: all 250ms ease-in-out;
             transition: all 250ms ease-in-out;
             visibility: hidden;
-            @include opacity(0);
+            opacity: 0;
             li {
               display: block;
               padding: 5px 10px;
@@ -1893,7 +1893,7 @@ footer {
               > ul {
                 visibility: visible;
                 top: 0;
-                @include opacity(1);
+                opacity: 1;
               }
             }
             li.active {
@@ -1918,7 +1918,7 @@ footer {
           > ul {
             visibility: visible;
             top: 100%;
-            @include opacity(1);
+            opacity: 1;
           }
         }
         li.active {
@@ -2081,7 +2081,7 @@ footer {
   }
   .t-item {
     .row {
-      .col-xs-12 {
+      .col-12 {
         .t-info {
           padding: 15px 30px 30px 30px;
         }
@@ -2307,7 +2307,7 @@ footer {
     height: 16px;
     border: 2px solid #fff;
     margin: 3px;
-    @include rounded-borders(50%);
+    border-radius: 50%;
     &:hover {
       cursor: pointer;
     }

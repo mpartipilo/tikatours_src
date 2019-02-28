@@ -24,7 +24,7 @@ const GalleryPage = ({
     <div className="main">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 text-center">
+          <div className="col-12 text-center">
             <h1>{data.heading}</h1>
           </div>
         </div>
@@ -33,7 +33,7 @@ const GalleryPage = ({
           dangerouslySetInnerHTML={{ __html: page.html }}
         />
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-12">
             <div className="divider" />
           </div>
         </div>

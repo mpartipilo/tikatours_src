@@ -25,7 +25,7 @@ design infused with fresh modern features and 5 star facilities creating a uniqu
 space. The resort is conveniently walking distance to the near famous Pub Street,
 popular local handicrafts and Old Market, 10 minute drive from the majestic Angkor
 Wat temples, and 15 minutes to the International and domestic airport. Your room
-features a King size bed with a view of a man\-made waterfall cascading into Siem
+features a King size bed with a view of a man-made waterfall cascading into Siem
 Reap’s largest salt water swimming pool from the comfort of your own private balcony.
 
 ### DAY TWO  | March 14th, 2017 | Siem Reap @ Sokha Angkor Resort  
@@ -35,13 +35,13 @@ Reap’s largest salt water swimming pool from the comfort of your own private b
 **Angkor Wat Tour**
 
 You will be picked up from your hotel and taken the historic temples of Angkor Wat.
-Unlike any other tour, you will have a unique opportunity to go behind\-the\-scenes
+Unlike any other tour, you will have a unique opportunity to go behind-the-scenes
 in Angkor with one of its lead stone conservation experts working in Angkor for
-over 25 years. During an exclusive 2.5\-hour master class, learn the little\-known
+over 25 years. During an exclusive 2.5-hour master class, learn the little-known
 secrets to how ancient people carved, moved and designed these spectacular religious
 structures.
-After a historical primer, get a hands\-on crash course in the conservation methods
-employed by experts like your guide, and continue on your full\- day temple tour
+After a historical primer, get a hands-on crash course in the conservation methods
+employed by experts like your guide, and continue on your full- day temple tour
 to explore the complex’s best temple relics. Breakfast and Lunch included.
 
 **Quiet Sunset Gondola Cruise**
@@ -58,7 +58,7 @@ majestic temples of Angkor.
 Then, once the sun has set, enjoy an evening under the bigtop in downtown Siem Reap
 with an evening show at Phare, the Cambodian Circus. Run by the NGO of the same
 name which supports the futures of Khmer youth with art and performance training,
-Phare is a lively show combining elements of high flying, tight\-rope walking, juggling,
+Phare is a lively show combining elements of high flying, tight-rope walking, juggling,
 contortion, music and theatre circus arts in one energetic showcase of Cambodian
 culture. Enjoy a jaw dropping
 
@@ -95,12 +95,12 @@ to Fullerton Bay Hotel.
 
 The Fullerton Bay Hotel is a modern hotel that pays tribute to a bygone era. Infused
 with a sense of refinement and a style that is both contemporary and international,
-the 100\-room waterfront jewel is a spectacular addition to Singapore’s vibrant
-heritage precinct. The spacious rooms at Hotel Fullerton Bay feature classy rosewood
-and chrome textures and floor\-to\-ceiling windows. Each room is fitted with an
-iPod dock and Nespresso coffee machine. En\-suite bathrooms offer a bathtub and
-feature Molton Brown toiletries. You can laze in the hotel's hot tub or work out
-at the fitness center while enjoying views of Singapore’s skyscape.
+the 100-room waterfront jewel is a spectacular addition to Singapore’s vibrant heritage
+precinct. The spacious rooms at Hotel Fullerton Bay feature classy rosewood and
+chrome textures and floor-to-ceiling windows. Each room is fitted with an iPod dock
+and Nespresso coffee machine. En-suite bathrooms offer a bathtub and feature Molton
+Brown toiletries. You can laze in the hotel's hot tub or work out at the fitness
+center while enjoying views of Singapore’s skyscape.
 
 ###   
 DAY FOUR | March 16th, 2017 | Goodbye Singapore

@@ -22,7 +22,7 @@ image_path: /library/regions/vardzia1.jpg
 </div>
 
 <div class="row content-row"><!-- 1185 (2)-->
-<div class="col-xs-12"><!-- 1577 -->
+<div class="col-12"><!-- 1577 -->
 
 Jobiskhevi河流河是库拉河的一条支流，将萨姆茨赫-扎瓦赫季划分为两个区域-将萨姆茨赫和扎瓦赫季的。
 </div>
@@ -30,7 +30,7 @@ Jobiskhevi河流河是库拉河的一条支流，将萨姆茨赫-扎瓦赫季划
 </div>
 
 <div class="row content-row"><!-- 1186 (3)-->
-<div class="col-xs-12"><!-- 1578 -->
+<div class="col-12"><!-- 1578 -->
 
 * * *
 
@@ -39,7 +39,7 @@ Jobiskhevi河流河是库拉河的一条支流，将萨姆茨赫-扎瓦赫季划
 </div>
 
 <div class="row content-row"><!-- 1187 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1579 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1579 -->
 
 ### 历史
 
@@ -56,7 +56,7 @@ Tao-Klarjeti从十五世纪五十年代到十七世纪七十年代一直处于�
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1580 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1580 -->
 
 ### 看到和能做什么？
 

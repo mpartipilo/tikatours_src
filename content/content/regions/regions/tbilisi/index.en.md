@@ -22,7 +22,7 @@ image_path: /library/regions/tbilisi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1161 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1548 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1548 -->
 
 Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree\-lined
 boulevards, charming lanes, towering churches and pastel\-painted houses, Tbilisi
@@ -34,7 +34,7 @@ Avenue, the intriguingly eclectic architecture reflecting Georgia's dynamic hist
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1549 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1549 -->
 
 Broad and leafy streets, grand neo classical buildings and space\-age modern designs
 sit alongside ancient churches, mosques, synagogues and a teasing maze of twisting,
@@ -46,7 +46,7 @@ shade to surprising courtyards.
 </div>
 
 <div class="row content-row"><!-- 1162 (3)-->
-<div class="col-xs-12"><!-- 1550 -->
+<div class="col-12"><!-- 1550 -->
 
 * * *
 
@@ -55,7 +55,7 @@ shade to surprising courtyards.
 </div>
 
 <div class="row content-row"><!-- 1163 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1551 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1551 -->
 
 ### History
 
@@ -81,7 +81,7 @@ on average 15–25 days of the year.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1552 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1552 -->
 
 ### What to see and do
 

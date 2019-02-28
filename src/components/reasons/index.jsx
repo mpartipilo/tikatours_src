@@ -53,15 +53,15 @@ class ReasonsSlider extends React.Component {
       <div className="r-wrap text-center">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               <h2>{title}</h2>
             </div>
           </div>
           <div className="row">
-            <div className="col-xs-12 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+            <div className="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2">
               <div className="carousel">
                 <div className="row">
-                  <div className="col-xs-12 col-sm-8 col-sm-push-2">
+                  <div className="col-12 col-md-8 order-md-2">
                     <div className="slides">
                       <Swiper
                         {...params}
@@ -77,13 +77,13 @@ class ReasonsSlider extends React.Component {
                       </Swiper>
                     </div>
                   </div>
-                  <div className="col-xs-6 col-sm-2 col-sm-pull-8 reasons-prev">
+                  <div className="col-6 col-md-2 order-md-first reasons-prev">
                     <i
                       className="fa fa-angle-left r-prev"
                       onClick={() => this.goPrev()}
                     />
                   </div>
-                  <div className="col-xs-6 col-sm-2 reasons-next">
+                  <div className="col-6 col-md-2 order-md-last reasons-next">
                     <i
                       className="fa fa-angle-right r-next"
                       onClick={() => this.goNext()}
@@ -97,7 +97,7 @@ class ReasonsSlider extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               {btnUrl && btnText ? (
                 <Link to={btnUrl} className="btn">
                   {btnText}

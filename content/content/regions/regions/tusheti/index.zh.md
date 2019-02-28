@@ -20,14 +20,14 @@ image_path: /library/regions/tusheti.jpg
 </div>
 
 <div class="row content-row"><!-- 1181 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1572 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1572 -->
 
 特塞季是格鲁吉亚的一个历史悠久的多山区，今天是格鲁吉亚东部的地区卡赫季的一部分。特塞季最大的村庄是Omalo。
 
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1573 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1573 -->
 
 在过去的时候特塞季产的奶酪和它的高质量羊毛都很有名，出口到欧洲和俄罗斯。即使在今天绵羊和牛的饲养是国民经济的主导部门。
 
@@ -36,7 +36,7 @@ image_path: /library/regions/tusheti.jpg
 </div>
 
 <div class="row content-row"><!-- 1182 (3)-->
-<div class="col-xs-12"><!-- 1574 -->
+<div class="col-12"><!-- 1574 -->
 
 * * *
 
@@ -45,7 +45,7 @@ image_path: /library/regions/tusheti.jpg
 </div>
 
 <div class="row content-row"><!-- 1183 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1575 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1575 -->
 
 ### 历史
 
@@ -62,7 +62,7 @@ image_path: /library/regions/tusheti.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1576 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1576 -->
 
 ###看到和能做什么？
 

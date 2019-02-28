@@ -21,7 +21,7 @@ image_path: /library/regions/mtskheta.jpg
 </div>
 
 <div class="row content-row"><!-- 1498 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1997 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1997 -->
 
 Mtskheta\-Mtianeti is one of the most scenic regions in Georgia like a perfectly
 composed painting brought vividly to life. It is mainly an agricultural region but
@@ -29,7 +29,7 @@ also contains Georgia's main skiing resort, Gudauri.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1998 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1998 -->
 
 The city of Mtskheta is the administrative capital of the region and was once the
 ancient capital of the country.
@@ -39,7 +39,7 @@ ancient capital of the country.
 </div>
 
 <div class="row content-row"><!-- 1499 (3)-->
-<div class="col-xs-12"><!-- 1999 -->
+<div class="col-12"><!-- 1999 -->
 
 
 
@@ -48,7 +48,7 @@ ancient capital of the country.
 </div>
 
 <div class="row content-row"><!-- 1500 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2000 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2000 -->
 
 ### History
 
@@ -78,7 +78,7 @@ warm while mountainous northern areas stay cool all year round.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2001 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2001 -->
 
 ### What to see and do
 

@@ -17,7 +17,7 @@ sub_heading: Choose your tour destination
 </div>
 
 <div class="row content-row"><!-- 1506 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2006 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2006 -->
 
 The Caucasus region of Azerbaijan, Georgia and Armenia is a well\-kept secret, a
 feast for the eyes, a thrill for the adventurous and paradise for culture buffs.
@@ -28,7 +28,7 @@ as old and resolute as the land.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2007 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2007 -->
 
 Armenia and Georgia are the two oldest Christian countries, while in the Islamic
 Azerbaijan, the culture reflects Iranian as well as European influences. Fortresses,

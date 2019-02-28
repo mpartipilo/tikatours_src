@@ -31,7 +31,7 @@ const GeneralPage = ({
       <div className="main">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 text-center">
+            <div className="col-12 text-center">
               <h1>{data.heading}</h1>
             </div>
           </div>
@@ -46,7 +46,7 @@ const GeneralPage = ({
             />
           </div>
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               <div className="divider" />
             </div>
           </div>

@@ -20,13 +20,13 @@ image_path: /library/regions/sataplia.jpg
 </div>
 
 <div class="row content-row"><!-- 1208 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1604 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1604 -->
 
 伊梅列季位于美丽的里奥尼河上。伊梅列州的主要城市叫库塔伊西。它是格鲁吉亚第二大城市，也是第比利斯的传统对手。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1605 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1605 -->
 
 除了其丰富的文化遗产，伊梅列季以其葡萄栽培，乳制品和果园而闻名。
 
@@ -35,7 +35,7 @@ image_path: /library/regions/sataplia.jpg
 </div>
 
 <div class="row content-row"><!-- 1209 (3)-->
-<div class="col-xs-12"><!-- 1606 -->
+<div class="col-12"><!-- 1606 -->
 
 * * *
 
@@ -44,7 +44,7 @@ image_path: /library/regions/sataplia.jpg
 </div>
 
 <div class="row content-row"><!-- 1210 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1607 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1607 -->
 
 ###历史
 
@@ -60,7 +60,7 @@ image_path: /library/regions/sataplia.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1608 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1608 -->
 
 ### 看到和能做什么？
 

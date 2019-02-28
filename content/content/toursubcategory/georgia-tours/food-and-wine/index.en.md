@@ -13,7 +13,7 @@ sub_category_id: 10
 rank: 3
 ---
 <div class="row content-row"><!-- 1553 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2090 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2090 -->
 
 The people of Georgia have a passionate and deeply rooted relationship with food
 and wine. With their superb cuisine, heady, molten wines and unmatched hospitality,
@@ -23,7 +23,7 @@ flatbreads), shashlik (kebabs), and badrijani nigvzit (aubergines with walnut pa
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2091 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2091 -->
 
 During a traditional Supra, not only will you enjoy the salubrious eating opportunity,
 but you will be expected to sample a world of wine. The birthplace of viticulture,

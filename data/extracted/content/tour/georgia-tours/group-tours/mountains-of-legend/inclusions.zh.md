@@ -25,4 +25,4 @@ tour_id: 38
 
 ●       Alcoholic Beverages
 
-●       Early Check\-Ins
+●       Early Check-Ins

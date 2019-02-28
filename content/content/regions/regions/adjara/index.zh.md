@@ -20,13 +20,13 @@ image_path: /library/regions/batumi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1204 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1599 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1599 -->
 
 阿扎尔是格鲁吉亚的一个自治共和国， 也是最重要的夏季旅游目的地。没有什么地方能像巴统温暖的夜晚一样。海边的悬崖上有摇曳的竹林和茶园。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1600 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1600 -->
 
 是阿扎尔自治共和国的首都-港口城市巴统是充满活力和自信的异国情调的度假胜地。
 
@@ -35,7 +35,7 @@ image_path: /library/regions/batumi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1205 (3)-->
-<div class="col-xs-12"><!-- 1601 -->
+<div class="col-12"><!-- 1601 -->
 
 * * *
 
@@ -44,7 +44,7 @@ image_path: /library/regions/batumi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1206 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1602 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1602 -->
 
 ### History
 
@@ -62,7 +62,7 @@ image_path: /library/regions/batumi1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1603 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1603 -->
 
 ### 看到和能做什么？
 

@@ -6,13 +6,13 @@ title: Georgian Embassies and General Consulates | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 897 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1241 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1241 -->
 
 格鲁吉亚在国外有很多代表，大使馆和领事馆位于许多国家，可以帮助您办理所有签证和领事。 他们通常提供一系列服务，包括签证支持，有关格鲁吉亚旅行的最新信息和建议，有关格鲁吉亚海外的信息，以及关于格鲁吉亚的一般事实，信息和新闻。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1242 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1242 -->
 
 以下是位于海外的格鲁吉亚大使馆和总领事馆名单，包括他们的地址和联系方式。 有关详细信息和确认信息，请尽可能访问各自的网站或格鲁吉亚外交部网站，以帮助您制定明智的旅行计划。
 
@@ -21,7 +21,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 898 (2)-->
-<div class="col-xs-12"><!-- 1243 -->
+<div class="col-12"><!-- 1243 -->
 
 格鲁吉亚大使馆
 -------
@@ -31,7 +31,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 899 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1244 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1244 -->
 
 **亚美尼亚共和国**
 Address: #42, Aramis St., Yerevan, Armenia
@@ -95,7 +95,7 @@ Address: #20, Piazza di Spagna, Plazzo Pierret, Roma 00187, Italy
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1245 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1245 -->
 
 **哈萨克斯坦共和国**
 Address: 8g, Tsentralnaia str. taugul. 480092 Ama at. Kazakhstan
@@ -163,7 +163,7 @@ Tel:( 99 312) 34 48 38; Fax:(99 312) 34 32 48
 </div>
 
 <div class="row content-row"><!-- 900 (4)-->
-<div class="col-xs-12"><!-- 1246 -->
+<div class="col-12"><!-- 1246 -->
 
 一般领事馆
 -----
@@ -173,7 +173,7 @@ Tel:( 99 312) 34 48 38; Fax:(99 312) 34 32 48
 </div>
 
 <div class="row content-row"><!-- 901 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1247 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1247 -->
 
 **Athens, Greece**
 Address: 24, Agiou Dimitrious str. 154 52 PALEO PSYCHIKO. Athens. Greece
@@ -193,7 +193,7 @@ Address: 30, Tolstoy str. 65045 Odessa. Ukraine
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1248 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1248 -->
 
 **Istanbul, Turkey**
 Address: Inonu cad.55, Marmara apartamenti, D.2, Gumususuyu/Taksim, Istanbul, Turkey

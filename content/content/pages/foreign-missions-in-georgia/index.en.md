@@ -6,7 +6,7 @@ title: Foreign Missions in Georgia | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 902 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1249 -->
 
 Many countries in the world have Embassies and Consulates located in Georgia and
 offer services through websites or over the phone. Foreign embassies and consulates
@@ -16,7 +16,7 @@ when travelling abroad.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1250 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1250 -->
 
 Embassies may also be able to assist their nationals with the issue of emergency
 passports, provide information about transferring funds, provide appropriate help
@@ -29,7 +29,7 @@ as civil disturbances or natural disasters.
 </div>
 
 <div class="row content-row"><!-- 903 (2)-->
-<div class="col-xs-12"><!-- 1251 -->
+<div class="col-12"><!-- 1251 -->
 
 Following is a list of Foreign Embassies and Consulates in Georgia. For more information
 please visit the website of the Consular Department of the Ministry of Foreign Affairs
@@ -40,7 +40,7 @@ of Georgia.
 </div>
 
 <div class="row content-row"><!-- 904 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1252 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1252 -->
 
 **Romania**
 Ambassador: H.E. Mr. Constantin Girbea
@@ -154,7 +154,7 @@ E\-mail: ambafrance@diplomatie.gouv.fr
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1253 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1253 -->
 
 **CZECH REPUBLIC**
 Ambassador: Mr. Jozef Vrabec

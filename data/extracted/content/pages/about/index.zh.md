@@ -10,7 +10,7 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 2202 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3013 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3013 -->
 
 TikaTours是一家格鲁吉亚豪华旅游运营商，为挑剔的旅行者提供改变生活的旅行体验。 成立于2001年，我们在佐治亚州和高加索地区开创了豪华旅行的概念。 我们的豪华酒店使我们能够以无与伦比的价值创造私人超豪华假期。
 我们很荣幸能够接待一位着名的美国足球运动员 \- 印度尼西亚名厨Larry Darnell Fitzgerald Jr.，Farah Quinn和一位受欢迎的美国网球运动员Barbara
@@ -19,7 +19,7 @@ Smith。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3014 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3014 -->
 
 我们的定制旅程从奢华到冒险 \- 没有TikaTours通道是完整的，没有令人愉快的不可预测性，这不可避免地使您的旅行体验改变生活。 我们提供注意从早茶喜好到枕头喜好的最小细节。
 TikaTours建立在Tika Svanidze Vancko（创始人兼总裁）的高品质服务和对细节的关注之上。
@@ -29,7 +29,7 @@ TikaTours建立在Tika Svanidze Vancko（创始人兼总裁）的高品质服务
 </div>
 
 <div class="row content-row"><!-- 2203 (3)-->
-<div class="col-xs-12"><!-- 3015 -->
+<div class="col-12"><!-- 3015 -->
 
 我们的队伍
 -----
@@ -39,7 +39,7 @@ TikaTours建立在Tika Svanidze Vancko（创始人兼总裁）的高品质服务
 </div>
 
 <div class="row content-row"><!-- 2204 (4)-->
-<div class="col-xs-12"><!-- 3016 -->
+<div class="col-12"><!-- 3016 -->
 
 _我们对自己的工作充满热情。 我们的高技能专业团队知道如何创造改变生活的旅行体验_
 
@@ -48,13 +48,13 @@ _我们对自己的工作充满热情。 我们的高技能专业团队知道如
 </div>
 
 <div class="row content-row"><!-- 2205 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3017 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3017 -->
 
 ![](/library/content/tika--svanidze-vancko---founder.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3018 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3018 -->
 
 #### Tika Svanidze Vancko  
 创始人兼总裁
@@ -69,13 +69,13 @@ Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然
 </div>
 
 <div class="row content-row"><!-- 2206 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3019 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3019 -->
 
 ![](/library/content/eka-svanidze---gm.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3020 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3020 -->
 
 #### Eka Svanidze  
 总经理
@@ -89,13 +89,13 @@ Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然
 </div>
 
 <div class="row content-row"><!-- 2207 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3021 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3021 -->
 
 ![](/library/content/giorgi.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3022 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3022 -->
 
 #### George Svanidze  
 投资顾问
@@ -110,13 +110,13 @@ Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然
 </div>
 
 <div class="row content-row"><!-- 2208 (9)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3023 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3023 -->
 
 ![](/library/tours/dato.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3024 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3024 -->
 
 #### David Arutinyan  
 产品经理
@@ -131,13 +131,13 @@ Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然
 </div>
 
 <div class="row content-row"><!-- 2209 (10)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3025 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3025 -->
 
 ![](/library/tours/headshot-for-tika_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3026 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3026 -->
 
 #### Joyce Graves  
 亚洲市场经理
@@ -151,13 +151,13 @@ Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然
 </div>
 
 <div class="row content-row"><!-- 2210 (11)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3027 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3027 -->
 
 ![](/library/content/tamar-gzirishvili_image.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3028 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3028 -->
 
 #### Tamar Gzirishvili  
 ​产品经理中文
@@ -172,7 +172,7 @@ Tamar专注于中国，致力于提供真实的旅行体验。 添马舰的旅�
 </div>
 
 <div class="row content-row"><!-- 2211 (11)-->
-<div class="col-xs-12"><!-- 3029 -->
+<div class="col-12"><!-- 3029 -->
 
 
 
@@ -181,13 +181,13 @@ Tamar专注于中国，致力于提供真实的旅行体验。 添马舰的旅�
 </div>
 
 <div class="row content-row"><!-- 2212 (12)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3030 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3030 -->
 
 ![](/library/content/nino-ubilauwa-profile1.jpeg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3031 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3031 -->
 
 #### Nino Ubilauwa  
 Marketing & PR Manager
@@ -210,13 +210,13 @@ with her in Russian and Vietnamese.
 </div>
 
 <div class="row content-row"><!-- 2213 (13)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3032 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3032 -->
 
 ![](/library/content/sandro-magradze---tika-tours.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3033 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3033 -->
 
 #### Sandro Magradze   
 USA Sales Manager
@@ -243,13 +243,13 @@ has to offer.
 </div>
 
 <div class="row content-row"><!-- 2214 (14)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3034 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3034 -->
 
 ![](/library/content/anna_sharia_tikatours_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3035 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3035 -->
 
 #### Ana Sharia  
 Operations Manager

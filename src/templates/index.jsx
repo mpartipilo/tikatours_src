@@ -56,7 +56,7 @@ class GeneralPage extends React.Component {
               >
                 <div className="container">
                   <div className="row">
-                    <div className="col-xs-12 text-center">
+                    <div className="col-12 text-center">
                       <h1>{data.heading}</h1>
                     </div>
                   </div>
@@ -64,7 +64,7 @@ class GeneralPage extends React.Component {
                     <div dangerouslySetInnerHTML={{ __html: page.html }} />
                   </div>
                   <div className="row">
-                    <div className="col-xs-12">
+                    <div className="col-12">
                       <div className="divider" />
                     </div>
                   </div>

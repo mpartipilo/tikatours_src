@@ -21,7 +21,7 @@ image_path: /library/regions/uplistsikhe.jpg
 </div>
 
 <div class="row content-row"><!-- 1189 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1581 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1581 -->
 
 Kartli is the historical heart of Georgia, cut through by the river Mtkvari and known
 for its scenic beauty and historic monuments. Its boundaries, which were never strictly
@@ -29,7 +29,7 @@ defined, have significantly fluctuated over the course of history.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1582 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1582 -->
 
 Today, the area is divided into two administrative regions, Shida (inner) Kartli
 and Kvemo (lower) Kartli.
@@ -41,7 +41,7 @@ Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.
 </div>
 
 <div class="row content-row"><!-- 1190 (3)-->
-<div class="col-xs-12"><!-- 1583 -->
+<div class="col-12"><!-- 1583 -->
 
 * * *
 
@@ -50,7 +50,7 @@ Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.
 </div>
 
 <div class="row content-row"><!-- 1191 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1584 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1584 -->
 
 ### History
 
@@ -58,13 +58,13 @@ Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.
 Located on the ancient Silk Route, Kartli is considered the cradle of Georgian civilization,
 steeped, marinated and glazed in layers of historyIn Georgian, the country is called
 Sakartvelo, a name derived from this province and the tribe, the Karts, that settled
-there. By the late 4th\-early 3rd centuries BC, the Kartli Kingdom had emerged as
+there. By the late 4th-early 3rd centuries BC, the Kartli Kingdom had emerged as
 a powerful force and created a single Georgian civilization.
 
 ### Geography and climate
 
 
-This large historical area is located in central\-eastern Georgia and is filled with
+This large historical area is located in central-eastern Georgia and is filled with
 gorgeous hidden valleys, plains, orchards and significant cultural treasures.
 
 Separated from the west by low mountain ranges, Shida Kartli occupies a high plateau
@@ -72,12 +72,12 @@ that extends along the Mtkvari River and its tributaries. Lower Kartli to the so
 consists largely of steppes and a number of volcanic lakes.
 
 The climate of the Kartli region is quite distinct from the climate of West Georgia.
-It is dry and continental, with temperatures ranging through the year from \-1C°
+It is dry and continental, with temperatures ranging through the year from -1C°
 in January to 23C° in August.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1585 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1585 -->
 
 ### What to see and do
 

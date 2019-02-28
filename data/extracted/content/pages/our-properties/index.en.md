@@ -12,7 +12,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1709 (2)-->
-<div class="col-xs-12"><!-- 2274 -->
+<div class="col-12"><!-- 2274 -->
 
 Whether you want a corporate retreat, a special celebration, a luxury family holiday,
 or a spa break, our properties offer an environment for your holiday that is exclusive
@@ -23,7 +23,7 @@ and private.
 </div>
 
 <div class="row content-row"><!-- 1710 (3)-->
-<div class="col-xs-12"><!-- 2275 -->
+<div class="col-12"><!-- 2275 -->
 
 ### Bohema restaurant
 
@@ -32,13 +32,13 @@ and private.
 </div>
 
 <div class="row content-row"><!-- 1711 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2276 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2276 -->
 
 ![](/library/content/bohema-restaurant.png)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2277 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2277 -->
 
 Indulge and be luxuriously treated to the Georgian gourmet cuisine accompanied by
 sumptuous dishes and succulent wines at an award\-wining Bohema restaurant. Our
@@ -60,7 +60,7 @@ or folklore show concert can be organized and tailored specifically to your wish
 </div>
 
 <div class="row content-row"><!-- 1712 (5)-->
-<div class="col-xs-12"><!-- 2278 -->
+<div class="col-12"><!-- 2278 -->
 
 ### Château Svanidze
 
@@ -69,13 +69,13 @@ or folklore show concert can be organized and tailored specifically to your wish
 </div>
 
 <div class="row content-row"><!-- 1713 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2279 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2279 -->
 
 ![](/library/content/chateau.png)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2280 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2280 -->
 
 Georgia is the birthplace of wine country, where winemaking began around the fifth
 millennium BC. From the Georgian language, the word “wine” spread to other European
@@ -107,7 +107,7 @@ best on a private guided tour.
 </div>
 
 <div class="row content-row"><!-- 1714 (7)-->
-<div class="col-xs-12"><!-- 2281 -->
+<div class="col-12"><!-- 2281 -->
 
 ### The Queen\`s sulphur bath–house
 
@@ -116,13 +116,13 @@ best on a private guided tour.
 </div>
 
 <div class="row content-row"><!-- 1715 (8)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2282 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2282 -->
 
 ![](/library/content/queens-bath.png)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2283 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2283 -->
 
 Tbilisi – means “city of warm springs” in Georgian, and is famous for its sulphur
 baths.Georgian spas enjoyed enormous popularity across Europe and Russia\`s famous

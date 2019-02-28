@@ -6,7 +6,7 @@ title: Getting to Georgia | Tika Tours
 rank: 1
 ---
 <div class="row content-row"><!-- 1014 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1371 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1371 -->
 
 Georgia has long formed a strategic cultural and geographic bridge connecting Europe
 and Asia. It's part of a network of trade routes known as the Silk Road that travellers
@@ -30,7 +30,7 @@ Trabzon and other Turkish cities to Batumi, Kutaisi and Tbilisi.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1372 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1372 -->
 
 For those travellers looking for something a little different, ferry trips may be
 possible to the ports of Batumi or Poti from some countries in the Black Sea region.

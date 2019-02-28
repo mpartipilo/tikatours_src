@@ -13,7 +13,7 @@ sub_category_id: 9
 rank: 2
 ---
 <div class="row content-row"><!-- 1486 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1982 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1982 -->
 
 Not quite Asian, but not fully European either, Georgia is an intoxicating combination
 of eastern and western influences and ancient beginnings. One of the earliest places
@@ -24,7 +24,7 @@ human ancestors, their remains dating back nearly 2 million years.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1983 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1983 -->
 
 Explore Georgia’s intriguing history and vibrant culture. Follow the allure of the
 Silk Road, a journey which has beguiled travelers for centuries. Discover charming

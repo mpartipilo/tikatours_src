@@ -26,7 +26,7 @@ const TourCategoryPage = ({
     <div className="main">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 text-center">
+          <div className="col-12 text-center">
             <h1>{data.heading}</h1>
           </div>
         </div>
@@ -35,7 +35,7 @@ const TourCategoryPage = ({
           dangerouslySetInnerHTML={{ __html: page.html }}
         />
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-12">
             <div className="divider" />
           </div>
         </div>
@@ -151,6 +151,7 @@ export const pageQuery = graphql`
             imggrp_id
             main_category_id
             sub_category_id
+            short_descr
             rank
           }
         }

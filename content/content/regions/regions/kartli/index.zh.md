@@ -21,14 +21,14 @@ image_path: /library/regions/uplistsikhe.jpg
 </div>
 
 <div class="row content-row"><!-- 1189 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1581 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1581 -->
 
 卡特利是格鲁吉亚的历史中心，以其美丽的风景和历史古迹而闻名. 它的边界从未严格定义，在历史进程中有很大的波动。
 .
 
 </div>0
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1582 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1582 -->
 
 现今该地区分为两个行政区域：Shida (内) 卡特利以及 Kvemo (降低) 卡特利.
 
@@ -39,7 +39,7 @@ image_path: /library/regions/uplistsikhe.jpg
 </div>
 
 <div class="row content-row"><!-- 1190 (3)-->
-<div class="col-xs-12"><!-- 1583 -->
+<div class="col-12"><!-- 1583 -->
 
 * * *
 
@@ -48,7 +48,7 @@ image_path: /library/regions/uplistsikhe.jpg
 </div>
 
 <div class="row content-row"><!-- 1191 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1584 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1584 -->
 
 ### 历史
 
@@ -67,7 +67,7 @@ Shida Kartli占据沿着库拉河的一个高原。南边是kvemo卡尔特利, �
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1585 -->O
+<div class="col-12 col-sm-6 col-md-6"><!-- 1585 -->O
 
 ###看到和能做什么？
 

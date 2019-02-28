@@ -6,14 +6,14 @@ title: 格鲁吉亚外交使团 | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 902 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1249 -->
 
 世界上很多国家都有驻格鲁吉亚的大使馆和领事馆通过网站或电话提供服务，外国使馆和领事馆可以提供一系列服务，包括对格鲁吉亚的旅行建议，以及任何新闻和更新，以确保你在国外旅行时保持安全，避免问题。
 
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1250 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1250 -->
 
 各国使馆也可以协助本国公民办理紧急护照，提供有关转移资金的信息，提供适当的帮助，如果你是犯罪的受害者，或者在医院，提供当地律师、翻译和医生的详细信息，并在其他的案例中提供支持和帮助，比如内乱或自然灾害。
 
@@ -22,7 +22,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 903 (2)-->
-<div class="col-xs-12"><!-- 1251 -->
+<div class="col-12"><!-- 1251 -->
 
 以下是在格鲁吉亚的外国大使馆和领事馆名单。欲了解更多信息，请访问格鲁吉亚外交部领事网站。
 
@@ -31,7 +31,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 904 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1252 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1252 -->
 
 **罗马尼亚**
 大使： H.E. Mr. Constantin Girbea
@@ -146,7 +146,7 @@ Vatican-Nuncio的大使: Mr. Archbishop Monsignor Claudio Gugerotti
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1253 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1253 -->
 
 **捷克共和国**
 

@@ -15,11 +15,11 @@
 - Blog from markdown
 - Kill PageWrapper
 - Kill jQuery by changing fancybox for custom lightbox with react-id-swiper
+- Migrate to latest Bootstrap
+- In Main Category, hovering over subcategory does not show short description.
 
 ## Pending
 
-- Migrate to latest Bootstrap
-- In Main Category, hovering over subcategory does not show short description.
 - In the tour details, show other tours in same subcategory
 - Wrong category shown for tours without a sub-category
 - Put breadcrumbs back in tour/sub/category pages

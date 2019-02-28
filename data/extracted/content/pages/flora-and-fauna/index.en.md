@@ -6,7 +6,7 @@ title: Flora & Fauna | Tika Tours
 rank: 2
 ---
 <div class="row content-row"><!-- 871 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1194 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1194 -->
 
 Georgia is a paradise for nature lovers, botanists, birdwatchers and wildlife enthusiasts.
 The country still has many truly wild areas where nature continues to reign. They
@@ -16,7 +16,7 @@ species.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1195 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1195 -->
 
 Georgia is a biodiversity hotspot. While 6,350 different plant species have been
 recorded in the wider Caucasus regions, Georgia contains more than 4,100 of them
@@ -28,7 +28,7 @@ grain and fruit.
 </div>
 
 <div class="row content-row"><!-- 872 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1196 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1196 -->
 
 ![](/library/content/img8.jpg)
 
@@ -51,7 +51,7 @@ but critically endangered animal had been considered long extinct in Georgia.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1197 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1197 -->
 
 ![](/library/content/img7.jpg)
 

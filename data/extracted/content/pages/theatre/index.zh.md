@@ -6,7 +6,7 @@ title: Theatre | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 885 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1220 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1220 -->
 
 格鲁吉亚拥有悠久而自豪的电影和戏剧历史，从古老的民间传说和戏剧仪式到青铜器时代的宗教神秘剧版。
 
@@ -15,7 +15,7 @@ rank: 4
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1221 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1221 -->
 
 格鲁吉亚国家剧院于1790年代在第比利斯成立。 专业的格鲁吉亚剧院成立于1850年，随后是着名的Rustaveli国家剧院。1921年，格鲁吉亚最大的剧院位于第比利斯，坐落在一座华丽的洛可可式建筑中，并以乔治亚国家诗人的名字命名。
 国际巡回演出使其获得全球认可。 成功的Kote Marjanishvili国家戏剧剧院成立于1928年，在现代格鲁吉亚戏剧生活的发展中也发挥了至关重要的作用。
@@ -26,7 +26,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 886 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1222 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1222 -->
 
 ![](/library/content/img13.jpg)
 
@@ -36,7 +36,7 @@ Kalatozov），他的杰作“飞人起飞”（The Cranes Are Flying）成为19
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1223 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1223 -->
 
 ![](/library/content/img14.jpg)
 

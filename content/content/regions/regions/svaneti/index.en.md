@@ -21,7 +21,7 @@ image_path: /library/regions/svaneti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1193 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1586 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1586 -->
 
 Svaneti, one of the most ancient historical provinces of Georgia, is located on the
 southern slopes of the Caucasus. Surrounded by white\-capped peaks, Svaneti is one
@@ -30,7 +30,7 @@ unwavering mountains.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1587 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1587 -->
 
 Svaneti is particularly known for its tower settlements, their cuisine, their unique
 musical instruments and tradition of woodcarving. Carpenters still make incredible
@@ -41,7 +41,7 @@ furniture using the same traditional decorative ornaments.
 </div>
 
 <div class="row content-row"><!-- 1194 (3)-->
-<div class="col-xs-12"><!-- 1588 -->
+<div class="col-12"><!-- 1588 -->
 
 * * *
 
@@ -50,7 +50,7 @@ furniture using the same traditional decorative ornaments.
 </div>
 
 <div class="row content-row"><!-- 1195 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1589 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1589 -->
 
 ### History
 
@@ -81,7 +81,7 @@ Temperatures in January average approximately \-6 °C and16 °C in July.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1590 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1590 -->
 
 ### What to see and do
 

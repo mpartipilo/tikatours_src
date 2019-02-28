@@ -22,7 +22,7 @@ image_path: /library/regions/khevi.jpg
 </div>
 
 <div class="row content-row"><!-- 1197 (2)-->
-<div class="col-xs-12"><!-- 1591 -->
+<div class="col-12"><!-- 1591 -->
 
 Khevi是格鲁吉亚北东位于的一个很小的历史和地理区域。 在高原始的野生高加索上游客将会发现骄傲的人们和非常强大的风景。
 
@@ -31,7 +31,7 @@ Khevi是格鲁吉亚北东位于的一个很小的历史和地理区域。 在�
 </div>
 
 <div class="row content-row"><!-- 1198 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1592 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1592 -->
 
 ###历史
 
@@ -48,7 +48,7 @@ Khevi位于姆茨赫塔-姆季阿涅季州地区的卡兹别吉区. 坐落在大
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1593 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1593 -->
 
 
 ###看到和能做什么？	

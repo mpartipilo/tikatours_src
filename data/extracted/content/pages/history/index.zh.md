@@ -6,7 +6,7 @@ title: 历史 | Tika Tours
 rank: 1
 ---
 <div class="row content-row"><!-- 1542 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2072 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2072 -->
 
 格鲁吉亚是一个古老的地方，经过长时间的钎焊和釉面，有许多层次的黑暗和粘性历史，还有很多景观可供游客观赏。
 
@@ -16,7 +16,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2073 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2073 -->
 
 格鲁吉亚的历史也可以追溯到希腊神话中的故事，当时高加索被认为是支撑世界的支柱之一。 根据希腊神话，在青铜器时代，格鲁吉亚是Colchis王国的所在地，这是一片令人难以置信的富裕土地，Jason和Argonauts在那里寻找金羊毛。
 现今黑海的Kolkheti地区是这个传奇王国的继承者。
@@ -28,7 +28,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1543 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2074 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2074 -->
 
 ![](/library/content/img16.jpg)
 
@@ -36,7 +36,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2075 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2075 -->
 
 ![](/library/content/img15.jpg)
 

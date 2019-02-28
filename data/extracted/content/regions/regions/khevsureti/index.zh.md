@@ -22,7 +22,7 @@ image_path: /library/regions/khevsureti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1173 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1562 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1562 -->
 
 The historic province of Khevsureti is like a gulp of old fashioned fresh air and
 one of the most beautiful and mysterious parts of Georgia. The largest villages
@@ -30,9 +30,9 @@ are Barisakho and Shatili.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1563 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1563 -->
 
-Khevsureti is famed for its living ancient traditions \- the medieval ballads, folk
+Khevsureti is famed for its living ancient traditions - the medieval ballads, folk
 music and folklore, the medieval fortress villages that guard secret valleys, and
 the unforgettable landscape.
 
@@ -41,7 +41,7 @@ the unforgettable landscape.
 </div>
 
 <div class="row content-row"><!-- 1174 (3)-->
-<div class="col-xs-12"><!-- 1564 -->
+<div class="col-12"><!-- 1564 -->
 
 * * *
 
@@ -50,7 +50,7 @@ the unforgettable landscape.
 </div>
 
 <div class="row content-row"><!-- 1175 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1565 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1565 -->
 
 ### History
 
@@ -60,18 +60,18 @@ communities of Khevsureti and the neighbouring areas enjoyed a degree of autonom
 from the royal authorities. Considered Georgia's best warriors, they defended the
 borders and provided crack troops for the royal guards.
 
-Their well\-preserved ancient traditions are a mix of Christian, Muslim, spiritualist,
+Their well-preserved ancient traditions are a mix of Christian, Muslim, spiritualist,
 and pagan beliefs. The Khevsur men dressed in chain mail, armed with broadswords
 and wore garments decorated with crosses. They considered themselves members of
 the army of the sacred flags and guards of Georgian kings and had a strict system
-of physical training in martial arts \- that can still be seen in performances today
+of physical training in martial arts - that can still be seen in performances today
 as the warrior dance, Khevsuruli.
 
 ### Geography and climate
 
 
 Marooned in the mountains of the High Caucasus, Khevsureti borders Chechnya and is
-included in the present day Mtskheta\-Mtianeti region.
+included in the present day Mtskheta-Mtianeti region.
 
 It is a land of narrow mountain passes, remote valleys, emerald mountainsides emblazoned
 with wild mountain flowers and glacial rivers. In winter, snow makes many of the
@@ -79,7 +79,7 @@ valleys inaccessible.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1566 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1566 -->
 
 ### What to see and do
 
@@ -101,7 +101,7 @@ the 1960s and ‘80s.
 
 The ruined fortress village of Mutso is straight out of a fantasy movie. Located
 on rocky hill at 1880 m above sea level, it is a warren of about thirty towers and
-bone\-laden stone crypts.
+bone-laden stone crypts.
 
 At Korsha, 2km past the village of Barisakho, there's a small but interesting museum
 of Khevsur life, with armour, weapons, traditional clothing and photos and well

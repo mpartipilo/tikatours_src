@@ -18,7 +18,7 @@ function flatten(data, results, parent) {
 
 const Breadcrumbs = props => (
   <div className="row hidden-xs">
-    <div className="col-xs-12">
+    <div className="col-12">
       <ul className="breadcrumbs text-center">
         <li>
           <a href={"/" + props.language} title="home" />

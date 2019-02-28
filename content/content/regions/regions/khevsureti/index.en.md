@@ -22,7 +22,7 @@ image_path: /library/regions/khevsureti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1173 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1562 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1562 -->
 
 The historic province of Khevsureti is like a gulp of old fashioned fresh air and
 one of the most beautiful and mysterious parts of Georgia. The largest villages
@@ -30,7 +30,7 @@ are Barisakho and Shatili.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1563 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1563 -->
 
 Khevsureti is famed for its living ancient traditions \- the medieval ballads, folk
 music and folklore, the medieval fortress villages that guard secret valleys, and
@@ -41,7 +41,7 @@ the unforgettable landscape.
 </div>
 
 <div class="row content-row"><!-- 1174 (3)-->
-<div class="col-xs-12"><!-- 1564 -->
+<div class="col-12"><!-- 1564 -->
 
 * * *
 
@@ -50,7 +50,7 @@ the unforgettable landscape.
 </div>
 
 <div class="row content-row"><!-- 1175 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1565 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1565 -->
 
 ### History
 
@@ -79,7 +79,7 @@ valleys inaccessible.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1566 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1566 -->
 
 ### What to see and do
 

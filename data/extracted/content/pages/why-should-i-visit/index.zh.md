@@ -10,13 +10,13 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1054 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1430 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1430 -->
 
 世界上很少有小国可以像格鲁吉亚一样为游客提供服务。 一旦经历过，这个国家将永远与你同在。 令人印象深刻的异国情调，令人惊叹的美丽背景，美味多产的葡萄酒文化，崇高的音乐和令人惊叹的建筑，从石头了望塔和丰富的壁画教堂到迷人雕刻的木制阳台和新艺术风格的宏伟建筑。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1431 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1431 -->
 
 格鲁吉亚是东西方交汇的地方，古代神话与现代生活相遇。 它在高加索山脉中肆虐俄罗斯，在那里拥有欧洲最高峰。 它优雅的首都让人想起巴黎。 它享有黑海的海滩度假胜地和地中海气候。
 而内陆，绿色平原和山谷则生产从苹果，鳄梨到核桃和葡萄酒的各种产品。
@@ -26,7 +26,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1055 (3)-->
-<div class="col-xs-12"><!-- 1432 -->
+<div class="col-12"><!-- 1432 -->
 
 * * *
 
@@ -35,7 +35,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1056 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1433 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1433 -->
 
 ### 希腊神话
 
@@ -44,7 +44,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1434 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1434 -->
 
 ### 第一欧洲的家园
 
@@ -56,7 +56,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1057 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1435 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1435 -->
 
 ### 葡萄酒的诞生地
 
@@ -67,7 +67,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1436 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1436 -->
 
 ### 洞穴建筑
 
@@ -81,7 +81,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1058 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1437 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1437 -->
 
 ### 表和Tamada
 
@@ -92,7 +92,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1438 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1438 -->
 
 ### 民间传说和舞蹈
 
@@ -106,7 +106,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1059 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1439 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1439 -->
 
 ### 教科文组织世界遗产
 
@@ -117,7 +117,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1440 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1440 -->
 
 ### 格鲁吉亚音乐
 

@@ -10,7 +10,7 @@ rank: 5
 </div>
 
 <div class="row content-row"><!-- 894 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1236 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1236 -->
 
 Georgia sits on the edge of Europe, semi\-shrouded in myth and legend. It is off
 the well trodden tourist trails but in recent years, international visitors have
@@ -21,7 +21,7 @@ fortresses, old vineyards and grand city boulevards.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1237 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1237 -->
 
 Getting to Georgia is easy. There are two international airports located at Batumi
 and Tbilisi that are served by many different airlines. Before you go, check the

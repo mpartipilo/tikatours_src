@@ -21,7 +21,7 @@ image_path: /library/regions/dmanisi.jpg
 </div>
 
 <div class="row content-row"><!-- 1169 (2)-->
-<div class="col-xs-12"><!-- 1558 -->
+<div class="col-12"><!-- 1558 -->
 
 德马尼西是格鲁吉亚东部的镇克維莫-卡特利州的一个小镇. 现在已经出名了,在附近发现的古代人类头骨碎片. 
 
@@ -32,7 +32,7 @@ image_path: /library/regions/dmanisi.jpg
 </div>
 
 <div class="row content-row"><!-- 1170 (3)-->
-<div class="col-xs-12"><!-- 1559 -->
+<div class="col-12"><!-- 1559 -->
 
 * * *
 
@@ -41,7 +41,7 @@ image_path: /library/regions/dmanisi.jpg
 </div>
 
 <div class="row content-row"><!-- 1171 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1560 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1560 -->
 
 ###历史
 
@@ -60,7 +60,7 @@ image_path: /library/regions/dmanisi.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1561 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1561 -->
 
 ### 看到和能做什么？
 

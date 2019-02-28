@@ -21,7 +21,7 @@ image_path: /library/regions/samegrelo.jpg
 </div>
 
 <div class="row content-row"><!-- 1212 (2)-->
-<div class="col-xs-12"><!-- 1609 -->
+<div class="col-12"><!-- 1609 -->
 
 位于格鲁吉亚西部的萨梅格列罗也被称为Mingrelia或Mengrelia。萨梅格列罗地处黑海沿岸这格鲁吉亚的片美丽富饶的土地充满了异国情调的农产品：橘子、茶叶， 辣椒和猕猴桃.
 
@@ -30,7 +30,7 @@ image_path: /library/regions/samegrelo.jpg
 </div>
 
 <div class="row content-row"><!-- 1213 (3)-->
-<div class="col-xs-12"><!-- 1610 -->
+<div class="col-12"><!-- 1610 -->
 
 * * *
 
@@ -39,7 +39,7 @@ image_path: /library/regions/samegrelo.jpg
 </div>
 
 <div class="row content-row"><!-- 1214 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1611 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1611 -->
 
 ###历史
 
@@ -62,7 +62,7 @@ of Poti
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1612 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1612 -->
 
 ### 看到和能做什么？
 

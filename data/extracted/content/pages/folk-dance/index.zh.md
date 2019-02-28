@@ -6,7 +6,7 @@ title: 民间舞蹈 | Tika Tours
 rank: 5
 ---
 <div class="row content-row"><!-- 1525 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2040 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2040 -->
 
 格鲁吉亚舞蹈精致，充满激情，极具娱乐性，是表达几个世纪以来格鲁吉亚艺术，文化和传统的国宝。
 
@@ -14,7 +14,7 @@ rank: 5
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2041 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2041 -->
 
 许多格鲁吉亚舞蹈都是基于竞争的观念。 他们经常代表婚礼，战争，季节性庆祝，爱情，勇气，男女关系，韧性，技巧和美丽的想法，将它们组合成令人难以置信的强大，令人难忘的表演。
 
@@ -26,13 +26,13 @@ rank: 5
 </div>
 
 <div class="row content-row"><!-- 1526 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2042 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2042 -->
 
 ### Acharuli![](/library/content/img11.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2043 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2043 -->
 
 ### Tbilisuri![](/library/content/img12.jpg)
 
@@ -41,13 +41,13 @@ rank: 5
 </div>
 
 <div class="row content-row"><!-- 1527 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2044 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2044 -->
 
 ### Samaia![](/library/content/samaia_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2045 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2045 -->
 
 ### Mtiuluri![](/library/content/mtiuluri_cr.jpg)
 

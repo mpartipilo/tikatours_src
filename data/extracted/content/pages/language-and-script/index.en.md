@@ -6,7 +6,7 @@ title: Language & Script | Tika Tours
 rank: 7
 ---
 <div class="row content-row"><!-- 891 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1232 -->
 
 Despite its situation wedged snugly between other countries, Georgian is like no
 other language you are likely to see or hear. It belongs to its own ancient linguistic
@@ -18,7 +18,7 @@ in that family that has its own ancient script. There are 3 dialects in the Geor
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1233 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1233 -->
 
 The Georgian alphabet is one of about 46 different alphabets used in the world. It
 consists of 33 symbols including 5 vowels and 28 consonants. It doesn't have upper
@@ -31,7 +31,7 @@ was derived from one of the Semitic alphabets around 6th – 5th century BC.
 </div>
 
 <div class="row content-row"><!-- 892 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1234 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1234 -->
 
 ![](/library/content/img19.jpg)
 
@@ -56,7 +56,7 @@ more recently, modern Europe.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1235 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1235 -->
 
 ![](/library/content/img21.jpg)
 

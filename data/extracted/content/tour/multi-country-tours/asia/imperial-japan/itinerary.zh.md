@@ -5,7 +5,7 @@ tour_id: 30
 ---
 ### 第一天|东京
 
-*   抵达@ Tokyo Naritya \- 欢迎来到日本！
+*   抵达@ Tokyo Naritya - 欢迎来到日本！
 *   私人接送到您的酒店
 *   自己吃晚餐
 *   隔夜@ Imperial Tokyo

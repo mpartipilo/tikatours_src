@@ -6,14 +6,14 @@ title: 联合国教科文组织世界遗产 | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 873 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1198 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1198 -->
 
 格鲁吉亚是一个美丽的景观，中世纪教堂，修道院和古老传统的国家。联合国教科文组织世界遗产名录是将一座地理景点已被选入联合国教育，科学及文化组织的国际世界遗产计划中。该计划旨在为全人类公认的具有突出意义和普遍价值之文物古迹，以及自然景观进行编录和保存
 
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1199 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1199 -->
 
 格鲁吉亚已有3个项目被列入世界遗产名录.还有2个项目代表作名录会提名列入《人类非物质文化遗产代表名录》。
 
@@ -23,7 +23,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 874 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1200 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1200 -->
 
 ### 葡萄酒酿造
 
@@ -34,7 +34,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1201 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1201 -->
 
 ### 格鲁吉亚音乐
 
@@ -49,7 +49,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 875 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1202 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1202 -->
 
 ### 巴格拉特主教座堂和格拉特修道院
 
@@ -61,7 +61,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1203 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1203 -->
 
 ### 姆茨赫塔古城
 
@@ -75,7 +75,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 876 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1204 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1204 -->
 
 ###上斯瓦涅季
 
@@ -86,7 +86,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1205 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1205 -->
 
 
 

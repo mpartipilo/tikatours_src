@@ -6,13 +6,13 @@ title: 语言与文字 | Tika Tours
 rank: 7
 ---
 <div class="row content-row"><!-- 891 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1232 -->
 
 格鲁吉亚语不像其他语言，你可能会看到或听到。它属于它自己古老的语言群有自己独特字母的语言。格鲁吉亚语属于高加索语系伊比利亚－高加索语族。格鲁吉亚语(卡特维尔语系有3种主要的方言:(格鲁吉亚语, 斯凡语, Mengrelo-Laz方言)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1233 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1233 -->
 
 格鲁吉亚字母表是世界上使用的46种不同的字母之一。现代格鲁吉亚字母有33个字母，格鲁吉亚语有5个基本元音，28个辅音。它没有大写和小写。字母的形状是独特的， 格鲁吉亚语属于印欧语系，字母的形状是独特的, 但排列来自印欧语系的影响。许多科学家认为，公元前6世纪至公元前5世纪，格鲁吉亚字母表是由一种符号学字母衍生而来的。
 
@@ -21,7 +21,7 @@ rank: 7
 </div>
 
 <div class="row content-row"><!-- 892 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1234 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1234 -->
 
 ![](/library/content/img19.jpg)
 
@@ -31,7 +31,7 @@ rank: 7
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1235 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1235 -->
 
 ![](/library/content/img21.jpg)
 

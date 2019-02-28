@@ -21,12 +21,12 @@ image_path: /library/regions/svaneti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1193 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1586 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1586 -->
 
 斯瓦涅季是格鲁吉亚历史最悠久的省份之一，位于高加索山脉南坡的一个偏远地区。山顶周围覆盖着白皑皑的积雪。斯瓦涅季是格鲁吉亚最显著的地区。
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1587 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1587 -->
 
 斯瓦涅季以其独特的塔居点，他们的美食，他们的独特乐器和木雕的传统而闻名。木匠们还是用同样的传统装饰品来制作令人难以置信的家具。
 </div>
@@ -34,7 +34,7 @@ image_path: /library/regions/svaneti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1194 (3)-->
-<div class="col-xs-12"><!-- 1588 -->
+<div class="col-12"><!-- 1588 -->
 
 * * *
 
@@ -43,7 +43,7 @@ image_path: /library/regions/svaneti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1195 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1589 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1589 -->
 
 ### 历史
 
@@ -63,7 +63,7 @@ image_path: /library/regions/svaneti1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1590 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1590 -->
 
 ### 看到和能做什么？
 

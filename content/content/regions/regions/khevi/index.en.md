@@ -22,7 +22,7 @@ image_path: /library/regions/khevi.jpg
 </div>
 
 <div class="row content-row"><!-- 1197 (2)-->
-<div class="col-xs-12"><!-- 1591 -->
+<div class="col-12"><!-- 1591 -->
 
 Khevi is a small historical\-geographic area in north\-eastern Georgia. High in the
 pristine and wild Caucasus, visitors will discover proud communities and raw, powerful
@@ -33,7 +33,7 @@ landscapes.
 </div>
 
 <div class="row content-row"><!-- 1198 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1592 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1592 -->
 
 ### History
 
@@ -67,7 +67,7 @@ covers the mountain peaks.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1593 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1593 -->
 
 ### What to see and do
 

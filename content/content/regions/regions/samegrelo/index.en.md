@@ -21,7 +21,7 @@ image_path: /library/regions/samegrelo.jpg
 </div>
 
 <div class="row content-row"><!-- 1212 (2)-->
-<div class="col-xs-12"><!-- 1609 -->
+<div class="col-12"><!-- 1609 -->
 
 Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in Western
 Georgia on the Black Sea. The pretty and fertile area overflows with exotic produce
@@ -32,7 +32,7 @@ from mandarin groves and tea plantations to chilies and kiwi fruit.
 </div>
 
 <div class="row content-row"><!-- 1213 (3)-->
-<div class="col-xs-12"><!-- 1610 -->
+<div class="col-12"><!-- 1610 -->
 
 * * *
 
@@ -41,7 +41,7 @@ from mandarin groves and tea plantations to chilies and kiwi fruit.
 </div>
 
 <div class="row content-row"><!-- 1214 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1611 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1611 -->
 
 ### History
 
@@ -72,7 +72,7 @@ commonly reaches 24C°.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1612 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1612 -->
 
 ### What to see and do
 

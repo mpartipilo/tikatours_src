@@ -165,9 +165,9 @@ class Header extends React.Component {
           <Link to={navigation.path} className="logo">
             <img src={logo} alt={navigation.title} />
           </Link>
-          <i className="fa fa-bars hidden-lg" onClick={this.toggleNavbar} />
+          <i className="fa fa-bars d-xl-none" onClick={this.toggleNavbar} />
           {contact.telephone && (
-            <a className="visible-xs" href={`tel:${contact.telephone}`}>
+            <a className="d-block d-sm-none" href={`tel:${contact.telephone}`}>
               <FontAwesome name="phone" />
             </a>
           )}

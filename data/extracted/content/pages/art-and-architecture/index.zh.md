@@ -6,13 +6,13 @@ title: 艺术与建筑学 | Tika Tours
 rank: 6
 ---
 <div class="row content-row"><!-- 889 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1228 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1228 -->
 
 格鲁吉亚历史悠久，地理位置优越，位于古老的欧亚十字路口，使建筑和艺术成为一种折衷的展示。 它在古代受到美索不达米亚，安纳托利亚，希腊，波斯，罗马和拜占庭传统的影响，然后在基督教被采用时受到宗教的影响。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1229 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1229 -->
 
 从19世纪开始，格鲁吉亚的艺术和建筑在欧洲和俄罗斯的背景下进化得更多，并从其自身深层次的根源中汲取灵感。
 
@@ -21,7 +21,7 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 890 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1230 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1230 -->
 
 ### 艺术
 
@@ -40,7 +40,7 @@ rank: 6
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1231 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1231 -->
 
 ### 建筑
 

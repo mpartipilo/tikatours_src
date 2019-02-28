@@ -5,12 +5,12 @@ tour_id: 39
 ---
 ### Departure Options:
 
-*   Aug 5 \- 18, 2019
+*   Aug 5 - 18, 2019
 
 ### DAY ONE (Aug 5): ARRIVE
 
 
-\- / \- / \-
+\- / - / -
 
 Upon arrival at Baku Heydar Aliyev International Airport we meet you to take you
 to your hotel where you can relax after your flight.
@@ -23,14 +23,14 @@ BREAKFAST / LUNCH / DINNER
 After breakfast at the hotel, we embark on a city tour of Baku. We take you along
 the central streets and green parks of the city, pointing out the main attractions
 along the way. In the afternoon, enjoy an excursion in Old Town, Icheri Sheher.
-This UNESCO\-recognized area of Baku hosts fascinating structures dating back as
+This UNESCO-recognized area of Baku hosts fascinating structures dating back as
 far as the seventh century. Visit the Palace of the Shirvans’ Shahs, the most striking
 example of the medieval palace structures in Azerbaijan, dating to the middle of
 the 15th century.
 
 Next, leave for a tour of the Absheron Peninsula. The Caspian Sea is well within
 reach in Baku, and a drive around the Absheron Peninsula offers an unforgettable
-view of this hidden Eurasian treasure. Visit the well\-preserved ancient castles
+view of this hidden Eurasian treasure. Visit the well-preserved ancient castles
 of the Absheron Peninsula, dated from the 12th century and situated farther from
 Baku. There are several fine medieval castles, in the surrounding towns, all having
 been built for defense by the Shirvan’s Shahs.Return to the hotel to for an evening
@@ -42,11 +42,11 @@ at your leisure.
 BREAKFAST / LUNCH / DINNER
 
 To truly experience the historical beauty of Azerbaijan, today we set off on a trip
-to Gobustan National Park. Found south of Baku, Gobustan is an open\-air museum
-with some 4,000 Neolithic rock drawings dated from as many as 12,000 years ago.
-Find drawings made in the Stone Age, all reflecting activities like hunting and
-dancing. Their dances are thought to have been accompanied by the Gaval\-Dashy or
-Tambourine Stone, a rock that has a deep, resonating tone when struck.
+to Gobustan National Park. Found south of Baku, Gobustan is an open-air museum with
+some 4,000 Neolithic rock drawings dated from as many as 12,000 years ago. Find
+drawings made in the Stone Age, all reflecting activities like hunting and dancing.
+Their dances are thought to have been accompanied by the Gaval-Dashy or Tambourine
+Stone, a rock that has a deep, resonating tone when struck.
 
 Next, take an excursion to the natural phenomenon of Yanar Dag, an incessant natural
 fire which blazes continuously on a hillside. Many historians claim that this place
@@ -83,7 +83,7 @@ towards Narikhala, the 4th century fort overlooking the city. The fort provid
 an exquisite view of the city and region.
 
 After lunch at a local restaurant, you will visit the Georgian State Museum, known
-for its collection of gold and silver artifacts and jewelry from the pre\-Christian
+for its collection of gold and silver artifacts and jewelry from the pre-Christian
 period from various regions of the country. If time permits, take a stroll along
 Rustaveli Avenue, where notorious architectural and historical buildings such as
 the Palace of Youth, Parliament of Georgia, Kashveti Church, Rustaveli Theater,
@@ -134,7 +134,7 @@ is known for its exquisite wines, warm hospitality, scenic landscapes and genero
 people. En route visit to wine museum “Qvevri” Check in to your hotel, located in
 the heart of Signagi.
 
-### DAY NINE (Aug 13): SINGAGI \- TSINANDALI\- KVARELI \- SIGNAGI
+### DAY NINE (Aug 13): SINGAGI - TSINANDALI- KVARELI - SIGNAGI
 
 
 BREAKFAST / LUNCH / DINNER
@@ -159,7 +159,7 @@ Overnight in Signagi.
 
 BREAKFAST / LUNCH / DINNER
 
-Meet at Armenia\-Georgia border Bagratashen and start the tour in Armenia \- a country
+Meet at Armenia-Georgia border Bagratashen and start the tour in Armenia - a country
 rich with culture, located in the highlands surrounding the mountains of Ararat
 in the South Caucasus. With strong ties to the Christian religion, ancient churches
 and monasteries dot the landscape in Northern and Southern Armenia, while many of
@@ -228,15 +228,15 @@ the holy city of Armenia. This is the site of the Mother See of Holy Etchmiadzi
 complex which is comprised of cathedrals dating from the fourth, seventh, and 17th
 centuries, all of them included in the UNESCO World Heritage Site. Explore the cathedrals,
 museums, libraries, residences, and other buildings in this fascinating place with
-your guide. Return to Yerevan with a stop at the open\-air art and craft market
-called Vernissage (open only on weekends). In Vernissage, you can buy different
-souvenirs to take a piece of Armenia with you. Have a cognac degustation at the
-Ararat Brandy Factory and Enjoy dinner in Yerevan.
+your guide. Return to Yerevan with a stop at the open-air art and craft market called
+Vernissage (open only on weekends). In Vernissage, you can buy different souvenirs
+to take a piece of Armenia with you. Have a cognac degustation at the Ararat Brandy
+Factory and Enjoy dinner in Yerevan.
 
 ### DAY FOURTEEN (Aug 18): DEPARTURE
 
 
-BREAKFAST / \- / \-
+BREAKFAST / - / -
 
 This morning, you will be transferred to the airport in time to check in for your
 international departing flight from Yerevan

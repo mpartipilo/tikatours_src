@@ -10,13 +10,13 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 2202 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3013 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3013 -->
 
 “帝卡旅行社”是一个格鲁吉亚的豪华旅游公司，为有有辨识能力的旅行者在寻找专属定制的旅行体验，公司成立于2001年，我们在格鲁吉亚和高加索地区开创了豪华旅游的概念。我们的豪华财产使我们能够以不可战胜的价值创造出私人的超豪华假日。我们很荣幸地接待了一位著名的美国足球运动员-拉里•菲茨杰拉德；一位印尼名厨—Farah Quinn还有美国著名的网球运动员-芭芭拉•史密斯。
 14年过去了，我们仍然是私有的，我们的经验、专业，知识和人际关系让我们结合“体验式服务”。例如，在高加索地区的私人定制旅行服务是你以前经历过的任何一种不一样的访问机会。
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3014 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3014 -->
 
 我们关注的是最微小的细节：从早上的茶偏好到晚上睡觉时的枕头偏好.帝卡旅行社建立在高质量服务的传统上并蒂卡•斯瓦妮茲•万茨果-创始人和总裁的细节注意。
 
@@ -25,7 +25,7 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 2203 (3)-->
-<div class="col-xs-12"><!-- 3015 -->
+<div class="col-12"><!-- 3015 -->
 
 我们的团队
 -----
@@ -35,7 +35,7 @@ rank: 6
 </div>
 
 <div class="row content-row"><!-- 2204 (4)-->
-<div class="col-xs-12"><!-- 3016 -->
+<div class="col-12"><!-- 3016 -->
 
 _我们能够对自己选择的工作充满激情。我们团队的高技能的专业人员知道如何创造一个生活改变的旅行经历。_
 
@@ -44,13 +44,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2205 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3017 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3017 -->
 
 ![](/library/content/tika--svanidze-vancko---founder.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3018 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3018 -->
 
 #### 蒂卡•斯瓦妮茲•万茨果
 创始人和总裁
@@ -63,13 +63,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2206 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3019 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3019 -->
 
 ![](/library/content/eka-svanidze---gm.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3020 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3020 -->
 
 #### 叶卡•斯瓦妮茲
 总经理
@@ -81,13 +81,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2207 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3021 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3021 -->
 
 ![](/library/content/giorgi.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3022 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3022 -->
 
 #### 乔治•斯瓦妮茲
 投资顾问
@@ -100,13 +100,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2208 (9)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3023 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3023 -->
 
 ![](/library/tours/dato.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3024 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3024 -->
 
 #### 大卫•阿鲁提尼亚
 高级产品经理
@@ -119,13 +119,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2210 (11)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3027 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3027 -->
 
 ![](/library/content/tamar-gzirishvili_image.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3028 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3028 -->
 
 #### 塔玛拉•戈兹里什维利
 中国产品经理
@@ -137,7 +137,7 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2211 (11)-->
-<div class="col-xs-12"><!-- 3029 -->
+<div class="col-12"><!-- 3029 -->
 
 
 
@@ -146,13 +146,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2212 (12)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3030 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3030 -->
 
 ![](/library/content/nino-ubilauwa-profile1.jpeg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3031 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3031 -->
 
 #### 尼诺•乌比拉瓦
 营销和公关经理
@@ -170,13 +170,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2213 (13)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3032 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3032 -->
 
 ![](/library/content/sandro-magradze---tika-tours.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3033 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3033 -->
 
 #### 桑德罗•玛格拉泽
 美国销售经理
@@ -192,13 +192,13 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 <div class="row content-row"><!-- 2214 (14)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3034 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3034 -->
 
 ![](/library/content/anna_sharia_tikatours_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 3035 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 3035 -->
 
 #### 安娜•纱利亚
 营运经理

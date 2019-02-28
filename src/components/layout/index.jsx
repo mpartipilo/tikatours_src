@@ -78,14 +78,14 @@ const LayoutMain = ({ heading, children }) => (
   <>
     <div className="main">
       <div className="container">
-        <div className="row">
-          <div className="col-xs-12 text-center">
+        <div className="row text-center">
+          <div className="col-12">
             <h1>{heading}</h1>
           </div>
         </div>
         {children}
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-12">
             <div className="divider" />
           </div>
         </div>

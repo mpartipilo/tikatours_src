@@ -10,10 +10,12 @@ image_path: /library/tourcategories/azerbaijan-flame-tower-in-baku-sunset-buildi
 imggrp_id: 0
 main_category_id: 2
 sub_category_id: 16
+short_descr: These three Caucasus countries boast a wealth of historical treasures,
+  breathtaking scenery and endless opportunities for adventure.
 rank: 9
 ---
 <div class="row content-row"><!-- 1400 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1860 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1860 -->
 
 Follow ancient footsteps, from the shores of the Caspian Sea to the soaring peaks
 of the Caucasus Mountains. Each country has a unique culture, history and traditions,
@@ -24,7 +26,7 @@ scenery and endless opportunities for adventure.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1861 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1861 -->
 
 The oil soaked land of Azerbaijan contains significant prehistoric rock carvings,
 mud volcanoes, pink salt lakes and palaces of glorious stained glass. Explore the

@@ -12,7 +12,7 @@ rank: 2
 </div>
 
 <div class="row content-row"><!-- 1529 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2046 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2046 -->
 
 Georgia is an ancient Christian land and former Soviet republic, uncrowded and unexplored,
 offering a mystery as ripe and familiar as late summer fruit. The country is divided
@@ -24,7 +24,7 @@ ancient civilisations.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2047 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2047 -->
 
 Spend a day wine tasting in Kakheti in the shadow of the Caucasus. Discover Tbilisi's
 flourishing cultural scene and the complex ancient history of Kartli. Dive into

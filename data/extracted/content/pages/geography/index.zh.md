@@ -10,7 +10,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 869 (2)-->
-<div class="col-xs-12"><!-- 1191 -->
+<div class="col-12"><!-- 1191 -->
 
 这个不可思议的美丽国家拥有多样化的地形构成。 亚热带沼泽，半沙漠，高山草甸和巨大的白雪覆盖的山峰都可以在一百公里之内找到，为游客提供从山脉到大海的令人难以忘怀的美丽景观。
 
@@ -19,7 +19,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 870 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1192 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1192 -->
 
 ### 山
 
@@ -40,7 +40,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1193 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1193 -->
 
 ### 里弗斯
 

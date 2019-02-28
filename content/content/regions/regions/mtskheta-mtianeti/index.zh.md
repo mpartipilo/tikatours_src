@@ -21,13 +21,13 @@ image_path: /library/regions/mtskheta.jpg
 </div>
 
 <div class="row content-row"><!-- 1498 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1997 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1997 -->
 
 姆茨赫塔-姆季阿涅季州是格鲁吉亚最美丽的地区之一， 就像一个完美的由绘画。它主要是一个农业区但还有格鲁吉亚的主要滑雪胜地古道里。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1998 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1998 -->
 
 姆茨赫塔市是该地区的行政首都也是格鲁吉亚古代的首都。
 
@@ -36,7 +36,7 @@ image_path: /library/regions/mtskheta.jpg
 </div>
 
 <div class="row content-row"><!-- 1499 (3)-->
-<div class="col-xs-12"><!-- 1999 -->
+<div class="col-12"><!-- 1999 -->
 
 
 
@@ -45,7 +45,7 @@ image_path: /library/regions/mtskheta.jpg
 </div>
 
 <div class="row content-row"><!-- 1500 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2000 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2000 -->
 
 ###历史
 
@@ -65,7 +65,7 @@ image_path: /library/regions/mtskheta.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2001 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2001 -->
 
 ###看到和能做什么？
 

@@ -21,13 +21,13 @@ image_path: /library/regions/signagi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1165 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1553 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1553 -->
 
 卡赫季是格鲁吉亚最大的地区特别以其发光的葡萄酒、完美的风景和友好的人而闻名。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1554 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1554 -->
 
 大雪山， 石榴果园和葡萄园，无论你去哪里，你都会被邀请去分享那些完全发酵的葡萄。
 
@@ -36,7 +36,7 @@ image_path: /library/regions/signagi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1166 (3)-->
-<div class="col-xs-12"><!-- 1555 -->
+<div class="col-12"><!-- 1555 -->
 
 * * *
 
@@ -45,7 +45,7 @@ image_path: /library/regions/signagi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1167 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1556 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1556 -->
 
 ###历史
 
@@ -63,7 +63,7 @@ image_path: /library/regions/signagi1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1557 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1557 -->
 
 ### 看到和能做什么？
 

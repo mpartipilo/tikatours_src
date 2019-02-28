@@ -6,7 +6,7 @@ title: Art & Architecture | Tika Tours
 rank: 6
 ---
 <div class="row content-row"><!-- 889 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1228 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1228 -->
 
 Georgia's complex history and location at an age\-old Eurasian crossroads has resulted
 in an eclectic display of architecture and art. It was influenced during antiquity
@@ -15,7 +15,7 @@ by religion when Christianity was adopted.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1229 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1229 -->
 
 From the 19th century onwards, Georgian art and architecture has evolved more within
 the context of Europe and Russia as well as drawing from in its own deeply held
@@ -26,7 +26,7 @@ roots.
 </div>
 
 <div class="row content-row"><!-- 890 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1230 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1230 -->
 
 ### Art
 
@@ -55,7 +55,7 @@ folk culture.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1231 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1231 -->
 
 ### Architecture
 

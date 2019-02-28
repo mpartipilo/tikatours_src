@@ -10,7 +10,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 1849 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2476 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2476 -->
 
 And Tika and George \- \- \- nothing can compare to your marvelous hospitality! Where
 can I start? Your many kindnesses during our trip to the Republic of Georgia brought
@@ -28,7 +28,7 @@ Barbara and Alden Smith
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2477 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2477 -->
 
 Dear Eka and George,
 
@@ -50,7 +50,7 @@ Beryl
 </div>
 
 <div class="row content-row"><!-- 1850 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2478 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2478 -->
 
 Dear Tika, George and Eka
 
@@ -70,7 +70,7 @@ Endika and Valeria
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2479 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2479 -->
 
 Tika \- I just wanted to drop a quick note to say "thank you" for the lovely time
 that was planned for me while I visited Georgia last week. Every aspect of my visit
@@ -89,7 +89,7 @@ Brian Brown
 </div>
 
 <div class="row content-row"><!-- 1851 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2480 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2480 -->
 
 Thank you so much for the invitation to visit explore a new destination for us; GEORGIA!
 What a lovely country. There was so much to see and experience. We loved Merab for
@@ -114,7 +114,7 @@ bo
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2481 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2481 -->
 
 Hi Tika, I would like to thank you for the perfect and professional organization
 of my trip.Georgia is a marvelous country. I was deeply impressed by its beauty,
@@ -141,7 +141,7 @@ Angelo
 </div>
 
 <div class="row content-row"><!-- 1852 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2482 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2482 -->
 
 Dear Tika,
 
@@ -161,7 +161,7 @@ Eduardo
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2483 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2483 -->
 
 Dear Tika, George and Eka,
 
@@ -183,7 +183,7 @@ Julian
 </div>
 
 <div class="row content-row"><!-- 1853 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2484 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2484 -->
 
 Dear David,
 
@@ -198,7 +198,7 @@ Parichat
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2485 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2485 -->
 
 How wonderful to receive your email, George, while we were in New York City for a
 family Christmas trip. It brought back so many happy memories of you, your sister,
@@ -219,7 +219,7 @@ Barbara
 </div>
 
 <div class="row content-row"><!-- 1854 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2486 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2486 -->
 
 Dear David and Tika\-
 
@@ -243,7 +243,7 @@ Laura
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2487 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2487 -->
 
 Levan, were you and Merab with the Casendino party? They just wrote to their agent
 that no trip could top this \- they had the BEST time!!! Just wanted to thank you

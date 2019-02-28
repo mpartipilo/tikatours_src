@@ -6,7 +6,7 @@ title: Folk Dance | Tika Tours
 rank: 5
 ---
 <div class="row content-row"><!-- 1525 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2040 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2040 -->
 
 Exquisite, passionate and highly entertaining, Georgian dance is a national treasure
 that expresses centuries of Georgian art, culture and tradition.
@@ -18,7 +18,7 @@ dance and resemble the clothing of the past from the different regions of Georgi
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2041 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2041 -->
 
 Many Georgian dances are based on the idea of competition. They often represent ideas
 of wedding, war, seasonal celebration, love, courage, the relationship between men
@@ -36,13 +36,13 @@ Parikaoba warrior dance.
 </div>
 
 <div class="row content-row"><!-- 1526 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2042 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2042 -->
 
 ### Acharuli![](/library/content/img11.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2043 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2043 -->
 
 ### Tbilisuri![](/library/content/img12.jpg)
 
@@ -51,13 +51,13 @@ Parikaoba warrior dance.
 </div>
 
 <div class="row content-row"><!-- 1527 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2044 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2044 -->
 
 ### Samaia![](/library/content/samaia_cr.jpg)
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2045 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2045 -->
 
 ### Mtiuluri![](/library/content/mtiuluri_cr.jpg)
 

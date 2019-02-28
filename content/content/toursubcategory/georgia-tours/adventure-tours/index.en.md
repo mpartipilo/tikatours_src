@@ -17,7 +17,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1484 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1978 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1978 -->
 
 For the ultimate thrill, immerse yourself in Georgia's phenomenal backyard begging
 for an outdoor adventure. Go wild. Head out on foot, soaking up the forested mountainsides.
@@ -28,7 +28,7 @@ of epic tracks all to yourself.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1979 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1979 -->
 
 Georgia is home to a prodigious array of formidable mountains, some of the highest
 in Europe, and the holy grail of mountaineering. Float down past the snowy peaks

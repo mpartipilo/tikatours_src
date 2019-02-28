@@ -21,7 +21,7 @@ image_path: /library/regions/samegrelo.jpg
 </div>
 
 <div class="row content-row"><!-- 1212 (2)-->
-<div class="col-xs-12"><!-- 1609 -->
+<div class="col-12"><!-- 1609 -->
 
 Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in Western
 Georgia on the Black Sea. The pretty and fertile area overflows with exotic produce
@@ -32,7 +32,7 @@ from mandarin groves and tea plantations to chilies and kiwi fruit.
 </div>
 
 <div class="row content-row"><!-- 1213 (3)-->
-<div class="col-xs-12"><!-- 1610 -->
+<div class="col-12"><!-- 1610 -->
 
 * * *
 
@@ -41,7 +41,7 @@ from mandarin groves and tea plantations to chilies and kiwi fruit.
 </div>
 
 <div class="row content-row"><!-- 1214 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1611 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1611 -->
 
 ### History
 
@@ -51,13 +51,13 @@ their own language and traditions. In ancient times Samegrelo was a large part o
 the Kingdom of Colchis, featuring in Greek mythology as the rim of the world and
 the mysterious country where the Argonauts sailed in pursuit of the Golden Fleece.
 It was also in Colchis that the first Georgian money was minted – the Colchian tetri.
-In the 16th century, Samegrelo was ruled by Georgian dynasty, Dadiani, their castle\-like
+In the 16th century, Samegrelo was ruled by Georgian dynasty, Dadiani, their castle-like
 palace can still be visited in Zugdidi.
 
 ### Geography and climate
 
 
-The region is divided into a low\-lying land to the west around the major seaport
+The region is divided into a low-lying land to the west around the major seaport
 of Poti and a hilly northern section bordering Svaneti. The main rivers are the
 Rioni, Enguri and Tskhenistskali. The Kolkheti National Park covers a large area
 of the coastal plain within the region, with more than half the park made up of
@@ -72,13 +72,13 @@ commonly reaches 24C°.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1612 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1612 -->
 
 ### What to see and do
 
 
 The palace of the Dadiani family, former dukes of Samegrelo, is now a museum complex
-located in Zugdidi. As well as 19th\-century paintings of the Caucasus region, fine
+located in Zugdidi. As well as 19th-century paintings of the Caucasus region, fine
 furniture, crockery and other historical flotsam, the showstopper is one of Napoleon
 Bonaparte’s three bronze death masks. The palace garden is planted with rare trees
 and bushes, brought from different parts of the world and well worth a stroll.

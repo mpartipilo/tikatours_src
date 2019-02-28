@@ -36,21 +36,21 @@ enjoying dinner at the hotel.
 A 45 minute drive takes us to Mulakhi (Zhabeshi), where the people dwell in the gorge
 of the Mulakhura River, famous for its multitude of towers. From here we take a
 trekking tour to Adhishi, a highland village 2040 metres above sea level and 27km
-from Mestia. You are surrounded by a breath\-taking view of the Greater Caucasus
+from Mestia. You are surrounded by a breath-taking view of the Greater Caucasus
 Mountains, with the landscaped dominated by medieval monuments. Your accommodation
 is a choice of a local guest house or in the nearby camping grounds.
 
 ### Day Five: Adhishi to Kala
 
 
-After breakfast at the camp, we set off on a 5\-6 hour (7\-10km) walking tour to
-the mountain community of Kala (Iprari), with lunch on the way. Again, your accommodation
+After breakfast at the camp, we set off on a 5-6 hour (7-10km) walking tour to the
+mountain community of Kala (Iprari), with lunch on the way. Again, your accommodation
 is a choice of a local guest house or in the nearby camping grounds.
 
 ### Day Six: Kala to Ushguli
 
 
-Our trek (7\-9km) takes us to Ushguli, a UNESCO World Heritage Site and a collection
+Our trek (7-9km) takes us to Ushguli, a UNESCO World Heritage Site and a collection
 of villages famous for an abundance of watchtowers with the view of Georgia’s highest
 mountain, Mt Shkhara (5,068km).
 
@@ -60,10 +60,10 @@ mountain, Mt Shkhara (5,068km).
 We return to the town of Mestia before heading down the Batumi Black Sea coast, with
 lunch in the city of Zugdidi. In contrast to the region’s ancient communities, Batumi
 developed in the late 19th Century as the western terminus of a railway from Baku
-(Azerbaijan) that at the time carried one\-fifth of the world’s oil production.
-Batumi gained free\-port status with over 20 foreign consulates set up here, and
-the town has developed into a fashionable resort at the southern tip of the Russian
-empire and a crossroads between Europe and Asia. We stay overnight here.
+(Azerbaijan) that at the time carried one-fifth of the world’s oil production. Batumi
+gained free-port status with over 20 foreign consulates set up here, and the town
+has developed into a fashionable resort at the southern tip of the Russian empire
+and a crossroads between Europe and Asia. We stay overnight here.
 
 ### Day Eight: Batumi to Tbilisi
 

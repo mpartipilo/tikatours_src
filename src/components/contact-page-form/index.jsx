@@ -180,7 +180,7 @@ class ContactPageForm extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col-xs-12 col-sm-6">
+        <div className="col-12 col-sm-6">
           {this.state.submitted ? (
             <div className="contact-submitted">
               <p>{this.state.strings["Thank you"]}</p>

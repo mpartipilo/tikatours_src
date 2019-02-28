@@ -196,6 +196,7 @@ function getFrontMatterTourSubCategory(language, map, { tourCategoryData }) {
     imggrp_id: +subCategoryFound.slideshow_id,
     main_category_id: (mainCategoryFound && +mainCategoryFound.id) || null,
     sub_category_id: +subCategoryFound.id,
+    short_descr: subCategoryFound.short_descr,
     rank: +subCategoryFound.rank
   }
 }

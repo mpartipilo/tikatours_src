@@ -6,7 +6,7 @@ title: Theatre | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 885 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1220 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1220 -->
 
 Georgia has a long and proud history of film and theatre, from ancient folklore and
 theatrical rituals to Bronze Age engravings of religious mystery plays.
@@ -22,7 +22,7 @@ music.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1221 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1221 -->
 
 The Georgian National Theatre was founded in Tbilisi in the 1790s. Professional Georgian
 theatre was established in 1850, followed by the acclaimed Rustaveli National Theatre
@@ -38,7 +38,7 @@ Soviet era made a huge impact at Edinburgh in the 1980s.
 </div>
 
 <div class="row content-row"><!-- 886 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1222 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1222 -->
 
 ![](/library/content/img13.jpg)
 
@@ -52,7 +52,7 @@ film studio was known as one of the top three studios in the Soviet Union.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1223 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1223 -->
 
 ![](/library/content/img14.jpg)
 

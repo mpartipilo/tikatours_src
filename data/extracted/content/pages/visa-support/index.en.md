@@ -6,7 +6,7 @@ title: Visa Support | Tika Tours
 rank: 2
 ---
 <div class="row content-row"><!-- 896 (1)-->
-<div class="col-xs-12"><!-- 1240 -->
+<div class="col-12"><!-- 1240 -->
 
 Passports are required for visitors of all nationalities, valid for at least 90 days
 following your departure date from Georgia. However, it's strongly recommended to

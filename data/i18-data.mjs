@@ -1,6 +1,6 @@
 import sitemetadata from "./json/common/sitemetadata.json"
 
-import imagesGroups from "./json/common/content/images_groups.json"
+//import imagesGroups from "./json/common/content/images_groups.json"
 
 import general_pages_en from "./json/en/page/general.json"
 import general_pages_zh from "./json/zh/page/general.json"
@@ -40,7 +40,7 @@ import strings_zh from "./json/zh/strings.json"
 
 export default {
   en: {
-    imagesGroups: imagesGroups,
+    imagesGroups: [],
     sitemetadata: sitemetadata,
     content: contentData,
     content_row: contentRowData,
@@ -57,7 +57,7 @@ export default {
     strings: strings_en
   },
   zh: {
-    imagesGroups: imagesGroups,
+    imagesGroups: [],
     sitemetadata: sitemetadata,
     content: contentData,
     content_row: contentRowData,

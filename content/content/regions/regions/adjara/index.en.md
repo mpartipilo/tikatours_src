@@ -20,7 +20,7 @@ image_path: /library/regions/batumi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1204 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1599 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1599 -->
 
 Adjara is an Autonomous Republic within Georgia and the country's premier summer
 holiday destination. There's nowhere quite like it on a luxuriously warm evening,
@@ -29,7 +29,7 @@ ablaze over the Black Sea.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1600 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1600 -->
 
 The port city of Batumi is the capital of Adjara, an exotic bustling resort town
 full of energy and self\-confidence.
@@ -39,7 +39,7 @@ full of energy and self\-confidence.
 </div>
 
 <div class="row content-row"><!-- 1205 (3)-->
-<div class="col-xs-12"><!-- 1601 -->
+<div class="col-12"><!-- 1601 -->
 
 * * *
 
@@ -48,7 +48,7 @@ full of energy and self\-confidence.
 </div>
 
 <div class="row content-row"><!-- 1206 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1602 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1602 -->
 
 ### History
 
@@ -80,7 +80,7 @@ is Batumi's coldest month, with an average of 7 °C. Summer temperatures hover b
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1603 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1603 -->
 
 ### What to see and do
 

@@ -6,7 +6,7 @@ title: Georgian Embassies and General Consulates | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 897 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1241 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1241 -->
 
 Georgia is well represented abroad with Embassies and Consulates located in a number
 of countries which can help with all your Visa and consular enquries. They generally
@@ -16,7 +16,7 @@ general facts, information and news about Georgia.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1242 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1242 -->
 
 Following is a list of the Georgian Embassies and General Consulates that are located
 overseas, including their addresses and contact details. For more details and to
@@ -29,7 +29,7 @@ travel plans.
 </div>
 
 <div class="row content-row"><!-- 898 (2)-->
-<div class="col-xs-12"><!-- 1243 -->
+<div class="col-12"><!-- 1243 -->
 
 Georgian Embassies
 ------------------
@@ -39,7 +39,7 @@ Georgian Embassies
 </div>
 
 <div class="row content-row"><!-- 899 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1244 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1244 -->
 
 **Republic of Armenia**
 Address: #42, Aramis St., Yerevan, Armenia
@@ -103,7 +103,7 @@ E\-mail: amgeorgia@libero.it
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1245 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1245 -->
 
 **Republic of Kazakhstan.**
 Address: 8g, Tsentralnaia str. taugul. 480092 Ama at. Kazakhstan
@@ -171,7 +171,7 @@ E\-mail: georgia@online.tm
 </div>
 
 <div class="row content-row"><!-- 900 (4)-->
-<div class="col-xs-12"><!-- 1246 -->
+<div class="col-12"><!-- 1246 -->
 
 General Consulates
 ------------------
@@ -181,7 +181,7 @@ General Consulates
 </div>
 
 <div class="row content-row"><!-- 901 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1247 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1247 -->
 
 **Athens, Greece**
 Address: 24, Agiou Dimitrious str. 154 52 PALEO PSYCHIKO. Athens. Greece
@@ -201,7 +201,7 @@ E\-mail: geoconsulate@paco.net Web\-site: www.avesol.ge
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1248 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1248 -->
 
 **Istanbul, Turkey**
 Address: Inonu cad.55, Marmara apartamenti, D.2, Gumususuyu/Taksim, Istanbul, Turkey

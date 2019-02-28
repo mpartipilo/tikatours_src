@@ -34,9 +34,9 @@ class Gallery extends React.Component {
     return (
       <React.Fragment>
         {photos && photos.length > 0 && (
-          <div className="col-xs-12">
+          <div className="col-12">
             <h3 className="text-center">{heading}</h3>
-            <ul className="gallery text-left">
+            <ul className="gallery text-center">
               {photos.map(m => (
                 <li key={m.imgslide_id}>
                   <div

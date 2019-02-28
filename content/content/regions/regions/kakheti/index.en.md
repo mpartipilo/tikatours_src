@@ -21,14 +21,14 @@ image_path: /library/regions/signagi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1165 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1553 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1553 -->
 
 Kakheti is the largest region in Georgia and particularly famous for its luminous
 wines, postcard\-perfect scenery and friendly people.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1554 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1554 -->
 
 Snowy mountains soar above plains of corn, pomegranate orchards and relentless vineyards,
 side by side in a wonderful tapestry \- and everywhere you go, you’ll be invited
@@ -39,7 +39,7 @@ to share the perfectly fermented grapes.
 </div>
 
 <div class="row content-row"><!-- 1166 (3)-->
-<div class="col-xs-12"><!-- 1555 -->
+<div class="col-12"><!-- 1555 -->
 
 * * *
 
@@ -48,7 +48,7 @@ to share the perfectly fermented grapes.
 </div>
 
 <div class="row content-row"><!-- 1167 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1556 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1556 -->
 
 ### History
 
@@ -77,7 +77,7 @@ at Alazani Valley is around 24 °C.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1557 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1557 -->
 
 ### What to see and do
 

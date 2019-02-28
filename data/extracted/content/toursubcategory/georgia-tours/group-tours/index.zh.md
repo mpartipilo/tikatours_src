@@ -2,14 +2,17 @@
 language: zh
 url: georgia-tours/group-tours
 template: toursubcategory
-heading: 参团旅游
-title: 参团旅游 | Tika Tours
-label: 参团旅游
-name: 参团旅游
+heading: Group Tours
+title: ""
+label: Group Tours
+name: Group Tours
 image_path: /library/content/svaneti569.jpg
 imggrp_id: 5
 main_category_id: 1
 sub_category_id: 32
+short_descr: Welcome to Georgia! The undiscovered travel destination, with immensely
+  diverse landscapes Georgia offers one of the world`s most jaw dropping
+  panoramic views on the planet.
 rank: 0
 ---
 <div class="row content-row"><!-- 2228 (0)-->

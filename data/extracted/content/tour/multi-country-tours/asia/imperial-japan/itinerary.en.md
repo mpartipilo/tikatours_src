@@ -12,7 +12,7 @@ tour_id: 30
 
 ### DAY TWO | TOKYO > KYOTO
 
-*   Luggage drop\-off @ 7:30AM (Front Desk)
+*   Luggage drop-off @ 7:30AM (Front Desk)
 *   Transfer to Tokyo Train Station
 *   Nozomi Bullet Train: Depart Tokyo @ 11:50AM > Arrive Kyoto @ 2:08PM
 *   Afternoon free to explore Kyoto
@@ -26,7 +26,7 @@ tour_id: 30
 *   Included Meals: B
 
 
-Recommended: Full\-Day Sightseeing Tour of Kyoto
+Recommended: Full-Day Sightseeing Tour of Kyoto
 
 ### DAY FOUR | KYOTO
 
@@ -35,7 +35,7 @@ Recommended: Full\-Day Sightseeing Tour of Kyoto
 *   Included Meals: B
 
 
-Recommended: Full\-Day Excursion to Osaka & Nara
+Recommended: Full-Day Excursion to Osaka & Nara
 
 ### DAY FIVE | KYOTO
 
@@ -45,7 +45,7 @@ Recommended: Full\-Day Excursion to Osaka & Nara
 
 ### DAY SIX | KYOTO > HAKONE
 
-*   Luggage drop\-off @ 7:30AM
+*   Luggage drop-off @ 7:30AM
 *   Transfer to Train Station
 *   Train: Depart Kyoto @ 12:33PM > Arrive Odawara (Hakone) @ 2:36PM
 *   Private transfer from Odaware Station to Gora Hanaougi
@@ -61,7 +61,7 @@ Recommended: Full\-Day Excursion to Osaka & Nara
 *   Included Meals: B
 
 
-Recommended: Full\-Day Sightseeing Tour of Hakone Area
+Recommended: Full-Day Sightseeing Tour of Hakone Area
 
 ### DAY EIGHT | TOKYO
 
@@ -70,7 +70,7 @@ Recommended: Full\-Day Sightseeing Tour of Hakone Area
 *   Included Meals: B
 
 
-Recommended: Full\-Day Sightseeing Tour of Tokyo or Nikko
+Recommended: Full-Day Sightseeing Tour of Tokyo or Nikko
 
 ### DAY NINE | TOKYO
 
@@ -79,7 +79,7 @@ Recommended: Full\-Day Sightseeing Tour of Tokyo or Nikko
 *   Included Meals: B
 
 
-Recommended: Full\-Day Sightseeing Tour of Tokyo or Nikko
+Recommended: Full-Day Sightseeing Tour of Tokyo or Nikko
 
 ### DAY TEN | TOKYO
 

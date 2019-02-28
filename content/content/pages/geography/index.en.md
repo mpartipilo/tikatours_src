@@ -10,7 +10,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 869 (2)-->
-<div class="col-xs-12"><!-- 1191 -->
+<div class="col-12"><!-- 1191 -->
 
 This improbably beautiful country has a diverse topographical makeup. Subtropical
 marshes, semi deserts, alpine meadows and colossal snow\-covered peaks can all be
@@ -22,7 +22,7 @@ landscapes from the mountains to the sea.
 </div>
 
 <div class="row content-row"><!-- 870 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1192 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1192 -->
 
 ### Mountains
 
@@ -58,7 +58,7 @@ lake, at 116 meters (382 feet).
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1193 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1193 -->
 
 ### Rivers
 

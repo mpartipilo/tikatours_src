@@ -3,7 +3,7 @@
     "id": "25",
     "content":
       "<p>Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is astonishingly beautiful.</p>\r\n\r\n<p>Like a lovely lost kingdom, Georgia's capital city lies deep in the country's heartland, watched over by ancient towers and churches. The central city unfurls along Rustaveli Avenue, the intriguingly eclectic architecture reflecting Georgia's dynamic history.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "53"
@@ -12,7 +12,7 @@
     "id": "26",
     "content":
       "<p>Broad and leafy streets, grand neo classical buildings and space-age modern designs sit alongside ancient churches, mosques, synagogues and a wonderful maze of twisting, balconied side streets. Here and there, honeysuckle blossom and mulberry trees give shade to unexpected courtyards.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "53"
@@ -21,7 +21,7 @@
     "id": "27",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Founded in the 5th century, the city has always attracted people from around the world, illustrating Georgia's ancient role as a merging point of cultures along the Silk Road. Today, most trips to Georgia start in Tbilisi, often striking travellers as both reassuringly familiar and genuinely exotic. The name Tbilisi derives from the Old Georgian word &quot;Tpili&quot;, meaning warm and was given to the city because of the area's numerous sulfuric hot springs. </p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Located in East Georgia, this city of approximately 1.5 million people sits within a large basin surrounded by hills. The tree-lined Mtkvari River winds through its streets.</p>\r\n\r\n<p>The summer months in Tbilisi are long, dry and hot and the winters are relatively cold. July is the hottest month with an average temperature of 24 &deg;C. January is the coldest month with an average temperature of approximately 1 &deg;C and snow falls on average 15-25 days of the year. </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "54"
@@ -30,7 +30,7 @@
     "id": "28",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Take the new cable car up to the 17th-century Narikala citadel for a bird's-eye view of the city and a close-up of the iconic Mother Georgia statue. Explore the twisting lanes of the old town with its ornate balconied houses and Byzantine churches or spend a relaxing afternoon in the beautiful tiled surroundings of one of the city's ancient bath houses, immersed in the hot springs that bubble up beneath the city.</p>\r\n\r\n<p>Stroll through Maidan Square, Tbilisi's historic center, with its outdoor caf&eacute;s and bars. Visit Kashveti Church on Rustaveli Avenue. Be sure to call in next door to the National Gallery of Georgia and don't miss a trip to the Marjanishvili Theatre, housed in a curvaceous Art Deco building.  </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "54"
@@ -39,7 +39,7 @@
     "id": "1189",
     "content":
       "<p>格鲁吉亚位于黑海东岸，位于欧洲和亚洲之间的十字路口，拥有70,000平方公里的壮观自然景观，珍稀多样的野生动物和杰出的文化和建筑遗产。 格鲁吉亚的高加索山脉包括超过5,000个masl的3座山峰，它拥有40多个受保护的自然区域，代表着该国丰富的生物多样性。 该国人口约400万，未受污染，拥挤不堪。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "867"
@@ -48,7 +48,7 @@
     "id": "1190",
     "content":
       "<p>佐治亚州历史悠久，历史悠久。 它是世界上最早正式采用基督教和葡萄栽培的国家之一，可以追溯到8000年前。 在格鲁吉亚发现了与非洲以外发现的现代人最古老的联系 - 这是一个180万年前原始人类的遗骸。 将所有这一切与地中海气候，超过2000个矿泉和传奇的格鲁吉亚热情好客相结合，您将拥有一个田园诗般的异国旅游目的地。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "867"
@@ -57,7 +57,7 @@
     "id": "1191",
     "content":
       "<p>这个不可思议的美丽国家拥有多样化的地形构成。 亚热带沼泽，半沙漠，高山草甸和巨大的白雪覆盖的山峰都可以在一百公里之内找到，为游客提供从山脉到大海的令人难以忘怀的美丽景观。</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "869"
@@ -66,7 +66,7 @@
     "id": "1192",
     "content":
       "<h3>山</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img22.jpg\" /></p>\r\n\r\n<p格鲁吉亚位于一片多山的土地上，舔着里海和黑海，蜿蜒在北部的高加索山脉和南部的小高加索之间。 格鲁吉亚的最高点是Mt. 什哈拉在5193米。 另外两座山峰高出5000米，10座格鲁吉亚山脉高度超过4000米，全年都被冰雪覆盖。</p>\r\n\r\n<h3>气候</h3>\r\n\r\n<p>山脉通过作为抵御北方冷空气的屏障来缓和当地气候。 他们将这个国家划分为两个对比鲜明的气候区：西部和东部格鲁吉亚。 在黑海西部海岸，气候特别潮湿和温暖。 即使在隆冬，平均温度为5°C（41°F），而沿海平均夏季温度为22°C（72°F）。 东部平原地区，苏拉姆山脉被海洋阻挡，气候更加大陆，夏季稍温暖，冬季较凉爽。</p>\r\n\r\n<h3>湖</h3>\r\n\r\n<p>格鲁吉亚的湖泊很少，但它们是闪闪发光的珠宝，许多位于山区，最大的是Paravani湖（37平方公里）和Paliastomi湖（17.3平方公里）。 Paliastomi是一个开放的咸水泻湖。 客人可以安排乘船游览体验令人惊叹的湖岸风光。 可以看到稀有的鸟类在泥炭地植被中眨眼。 位于高加索山脉的里察湖是全国最深的湖泊，海拔116米（382英尺）。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "870"
@@ -75,7 +75,7 @@
     "id": "1193",
     "content":
       "<h3>里弗斯</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img23.jpg\" /></p>\r\n\r\n<p>格鲁吉亚有大约25,000条河流流入西部的黑海或通过阿塞拜疆流入里海。 Mtkvari河是最大的河流，距离土耳其源头1500公里，在最终进入里海之前蜿蜒穿过第比利斯。</p>\r\n\r\n<p>里奥尼河是佐治亚州西部的主要河流。 在格鲁吉亚苏维埃时期，工程师通过拉直大部分河流并建立广泛的运河网络，将里奥尼河周围的低地改造成优质农业用地。</p>\r\n\r\n<h3>黑海</h3>\r\n\r\n<p>六个国家共享黑海沿岸，这是世界上最大的内陆水域之一。 格鲁吉亚310公里的海岸线形成了通往西部的窗口，是该国重要的战略，生态，农业和旅游中心。</p>\r\n\r\n<h3>地质特征</h3>\r\n\r\n<p>佐治亚州拥有令人难以置信的洞穴系统和石灰岩柱以及着名的地下矿泉水，这些矿泉水在全国各地肆虐。 Krubera洞穴位于西高加索的边缘，是世界上已知最深的洞穴，深度超过2000米。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "870"
@@ -84,7 +84,7 @@
     "id": "1194",
     "content":
       "<p>格鲁吉亚是大自然爱好者，植物学家，观鸟者和野生动物爱好者的天堂。 这个国家仍有许多真正野生的地区，大自然继续统治。 它们代表了逃离和冒险的地方，也为各种植物和动物提供栖息地，包括一些欧洲最稀有和标志性的物种。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "871"
@@ -93,7 +93,7 @@
     "id": "1195",
     "content":
       "<p>格鲁吉亚是生物多样性的热点地区。 虽然在更广泛的高加索地区记录了6,350种不同的植物物种，但乔治亚州有超过4,100种，其中约300种是该国特有种，包括许多品种的葡萄，谷物和水果。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "871"
@@ -102,7 +102,7 @@
     "id": "1196",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img8.jpg\" /></p>\r\n\r\n<p>在春季和夏季，斜坡上刻有野花波浪。 在这里可以找到十种牡丹和世界上十一种雪花莲中的五种。</p>\r\n\r\n<p>森林覆盖270万公顷，占格鲁吉亚领土的40％，包括未受破坏的原始森林，厚厚的山毛榉，枫树和山灰。 其亚热带，肥沃的绿色平原种植鳄梨，茄子和橄榄。</p>\r\n\r\n<p>格鲁吉亚是100多种哺乳动物的家园。 其中包括非凡的白种人北山羊，狼，熊，豺，狐狸，ly and和其他捕食者。 山区遇到许多有蹄类的动物，如鹿，羚羊，野猪，野山羊和独特的高加索tur，仍然存在于大高加索群岛的高处。</p>\r\n\r\n<p>2003年，当遥感相机在乔治亚州的Vashlovani国家公园捕获了一只成年雄性安纳托利亚豹时，发现了一个惊人的发现。 这种美丽但极度濒临灭绝的动物在格鲁吉亚被认为已经灭绝。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "872"
@@ -111,7 +111,7 @@
     "id": "1197",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img7.jpg\" /></p>\r\n\r\n<p>格鲁吉亚还有超过330种鸟类，包括11种鹰类，使其成为观鸟者的天堂。 高加索地区的特殊鸟类包括高加索雪橇，高加索黑松鸡，Güldenstadt的Redstart和Great Rosefinch。 山口也是移民的天然门户，当他们向北飞越山脉进入俄罗斯时，可以观看猛禽的壮观通道。.</p>\r\n\r\n<p>佐治亚州的保护区和国家公园是体验该国最好的景观和野生动物的理想场所，从Kolkheti国家公园内令人惊叹的湿地，水獭和海豚到Tusheti的杜鹃和野山羊，这是一个隐藏在高加索深处的令人惊叹的美丽公园山。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "872"
@@ -120,7 +120,7 @@
     "id": "1198",
     "content":
       "<p>格鲁吉亚是一个拥有真正优秀景观，中世纪教堂，修道院和古老传统的国家。 要被列入世界遗产名录，教科文组织必须评估遗址或非物质文化习俗具有突出的普遍价值。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "873"
@@ -129,7 +129,7 @@
     "id": "1199",
     "content":
       "<p>格鲁吉亚有3个具有世界遗产价值的遗址和2个在联合国教科文组织非物质文化遗产名录上登记的遗产。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "873"
@@ -138,7 +138,7 @@
     "id": "1200",
     "content":
       "<h3>酿酒</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img27.jpg\" /></p>\r\n\r\n<p>联合国教科文组织已经同意格鲁吉亚传统的葡萄酒酿造方法，即用陶器，称为qvevri的蛋形容器发酵葡萄，是人类非物质遗产的一部分。 使用qvevri的考古证据可以追溯到8000年前。 它们通常被埋在地窖或Marani的地板上，这是大多数格鲁吉亚人的半神圣之地，几乎在每个房子里都能找到。 这一传统在日常生活和庆祝活动中发挥着至关重要的作用，并成为格鲁吉亚社区文化特征不可分割的一部分。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "874"
@@ -147,7 +147,7 @@
     "id": "1201",
     "content":
       "<h3>格鲁吉亚音乐</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img28.jpg\" /></p>\r\n\r\n<p>格鲁吉亚文化为复调歌唱的魔力及其古老传统提供了骄人的地方。 这些歌曲传统上遍布日常生活的各个方面。 Chakrulo歌曲是最常见的歌曲之一，在仪式和节日上演唱。 其他歌曲与酿酒有关，可以追溯到八世纪。 Naduri涉及领域的工作，并将体力的声音融入音乐中。 这种歌唱，其层层的音符比冰融更清脆，更新鲜，今天格鲁吉亚仍然非常活跃。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "874"
@@ -156,7 +156,7 @@
     "id": "1202",
     "content":
       "<h3>巴格拉特大教堂和格拉蒂修道院</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img24.jpg\" /></p>\r\n\r\n<p>巴格拉特大教堂（Bagrati Cathedral）位于里奥尼河（Rioni River）上方的一座小山上，通过一条长而曲折的楼梯抵达。 虽然土耳其人在1691年被部分摧毁，但其废墟仍然存在。 在整个内部都可以看到装饰精美的大写字母以及码头和拱顶的碎片。</p>\r\n\r\n<p>格拉蒂修道院是中世纪格鲁吉亚“黄金时代”的代表。 它对建筑，马赛克，壁画及其珐琅和金属工作特别重要。 它不仅仅是一个修道院 - 它是一个科学和教育中心，学院在那里建立了古代格鲁吉亚最重要的文化中心之一。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "875"
@@ -165,7 +165,7 @@
     "id": "1203",
     "content":
       "<h3>姆茨赫塔的历史古迹</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img25.jpg\" /></p>\r\n\r\n<p>姆茨赫塔历史悠久的教堂是人类聪明才智的证明，是高加索中世纪宗教建筑的杰出典范。 姆茨赫塔是卡特里的古都，从公元前3世纪到公元5世纪的东格鲁吉亚王国，也是基督教在337年被宣布为格鲁吉亚官方宗教的地方。该物业由Jvari修道院组成， Svetitstkhoveli大教堂和Samtavro修道院。 这些教堂包含考古遗迹，讲述了这个山地王国四千年来的艺术和建筑以及社会，政治和经济演变的故事。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "875"
@@ -174,7 +174,7 @@
     "id": "1204",
     "content":
       "<h3>上斯瓦涅季</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img26.jpg\" /></p>\r\n\r\n<p>高加索地区的上斯瓦涅季（Svaneti）地区长期孤立，是中世纪型村庄和塔楼的绝佳山景。 Ushguli村是欧洲最高的定居点，海拔2300米，仍有超过200个非常不寻常且保存完好的房屋。 这些塔既被用作住宅，也被用作对曾经困扰该地区的入侵者的防御。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "876"
@@ -182,7 +182,7 @@
   {
     "id": "1205",
     "content": "",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "876"
@@ -191,7 +191,7 @@
     "id": "1206",
     "content":
       "<p>佐治亚州是东欧的一个前哨，融合到西亚，横跨历史，文化和地理的十字路口。 自历史诞生以来，文明在高加索地区相互碰撞，创造了一个如此美丽，如此诱人，如此有趣和令人激动的地方，没有其他地方喜欢它。 历史爱好者喜欢将传说中的希腊神话从令人痛心的现实中解放出来 - 从阿尔戈英雄和金羊毛到我们人类祖先的头骨。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "878"
@@ -200,7 +200,7 @@
     "id": "1207",
     "content":
       "<p>这些城市拥有令人着迷的博物馆，展现了惊人的秘密，庄严的音乐厅，以及精彩的舞蹈和戏剧之家。 当代艺术和建筑与新古典主义和古代建筑相得益彰。 这些地区展示了他们在田野中的生活文化和传统，众多美丽的教堂，精致的中世纪壁画和难以穿越的堡垒，以及宽敞的餐桌周围。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "878"
@@ -209,7 +209,7 @@
     "id": "1212",
     "content":
       "<p>这是在格鲁吉亚高加索山脉山麓的正午。 绿色的山坡在高山草甸和下面变薄，一个宽阔美丽的山谷与一排排的金色葡萄园交相辉映。 被许多人认为是葡萄酒的发源地，这里种植了500多种本土葡萄品种。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "881"
@@ -218,7 +218,7 @@
     "id": "1213",
     "content":
       "<p>格鲁吉亚已经酿造了8000年的葡萄酒 - 这是一种自豪感，热情好客的象征，深深植根于格鲁吉亚的民族身份。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "881"
@@ -227,7 +227,7 @@
     "id": "1214",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img3.jpg\" /></p>\r\n\r\n<p>格鲁吉亚葡萄酒仍采用独特而传统的qvevri风格酿制而成。 由红色粘土制成，巨大的容器形状像花瓶，宽肩向下朝向尖底逐渐变细。 收获，或Rtveli，在秋天完成。 将压榨的葡萄放入qvevri，埋在地下，只露出颈部。 不添加化学品或酵母。 当qvevri的封面最终从它的气密密封中被珍贵时，甜美的香气将充满空气，你的第一口啜饮奶油糖的味道，就像早晨的阳光一样明亮。</p>\r\n\r\n<p>没有什么比食物和葡萄酒更能告诉你一个国家的精神和文化了 - 格鲁吉亚是世界上最好的之一。 在格鲁吉亚生活的中心，宴会或Supra的饮食总是一种庆祝。 每当它发生时，将选择tamada或toastmaster来主持 - 你必须雄辩，有趣并且能够拿着你的饮料。</p>\r\n\r\n<p>在两种饮料之间，您可以品尝生动的美食，包括新鲜出炉的当地面包，番茄沙拉，格鲁吉亚烤肉串，有机猪肉和羊肉，坚果和茄子，蒜酱鸡肉，咸白奶酪，塞满奶酪的面包和 豆子和满满当地生产的石榴，梨和桃子的篮子。</p>\r\n\r\n<p>受东西方美食和烹饪风格的影响，每个历史悠久的省份都有自己独特的烹饪传统。 虽然肉类在格鲁吉亚菜肴中起着重要作用，但也会密切关注当地生产的沙拉，蔬菜，水果和蔬菜。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "882"
@@ -236,7 +236,7 @@
     "id": "1215",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img4.jpg\" /></p>\r\n\r\n<h4>部分传统菜肴包括：</h4>\r\n\r\n<p><strong>Khachapuri</strong>- 格鲁吉亚奶酪面包，以多种区域风格烹制而成。</p>\r\n\r\n<p><strong>Lobiani</strong>- 采用经过调味的豆馅和香料调制而成的面包。</p>\r\n\r\n<p><strong>Pkhaleuli</strong>- 来自各种五香植物的素食菜肴，通常配有核桃糊底。</p>\r\n\r\n<p><strong>Satsivi</strong>- 鸡肉或土耳其核桃酱，大蒜和香料。</p>\r\n\r\n<p><strong>Mtsvadi</strong>- 格鲁吉亚烧烤。 肉类在葡萄藤木火上烤，新鲜的石榴汁挤在它上面。</p>\r\n\r\n<p><strong>Khinkali</strong>- 格鲁吉亚国家菜：多汁的肉饺子，可以手工食用。 游客最终渴望这么做，他们会特别回来再去品尝一下。</p>\r\n\r\n<p><strong>Tkemali</strong>- 格鲁吉亚番茄酱，但还有更多......用tkemali树的果实制成的红色或绿色酸梅酱。 没有瓶子就没有人离开这个国家。没有瓶子就没有人。</p>\r\n\r\n<p><strong>Pelamushi</strong>- Pelamushi是一种格鲁吉亚美食，由葡萄汁提取物，糖和面粉混合而成。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "882"
@@ -245,7 +245,7 @@
     "id": "1216",
     "content":
       "<p>聆听格鲁吉亚声音所唱的令人叹为观止的和声的机会是一种神奇的体验。 格鲁吉亚复调音乐具有令人难以忘怀的共鸣声音，并且与欧洲音乐中的任何音乐都不同。</p>\r\n\r\n<p>复调音乐深深植根于格鲁吉亚文化。 被联合国教科文组织认可为世界珍贵的生活遗产的一部分，今天仍然可以在鹅卵石铺就的城市街道，葡萄园和餐桌周围听到独特的声音。</p>\r\n\r\n<p>佐治亚州的每个地区都有自己独特的音乐方言和表演风格，但它们都具有相同的语调和谐音特征。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "883"
@@ -254,7 +254,7 @@
     "id": "1217",
     "content":
       "<p>格鲁吉亚的乐器可能会被这个国家丰富的声乐传统所掩盖，但它们也很重要，经常伴随着复调歌曲。 其中最受欢迎的乐器是larchemi（格鲁吉亚排箫），stviri（长笛），gudastviri（风笛），changi（竖琴），chonguri（四弦无褶长颈琵琶），panduri（三弦长颈琵琶），弓形chuniri （一种无品的viol）和各种鼓。</p>\r\n\r\n<p>在格鲁吉亚宣布基督教之后，随着音乐学校的建立，特别是在格拉提和伊卡尔托的修道院，开发了一种新的教堂复调形式。 格鲁吉亚历史学家和音乐学家认为，早在公元7世纪或8世纪，格鲁吉亚语和复调歌唱传统就一直在教堂中使用，并且在10-11世纪的格鲁吉亚礼拜仪式中已经确立。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "883"
@@ -263,7 +263,7 @@
     "id": "1218",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img5.jpg\" /></p>\r\n\r\n<p>除了较古老的乡村传统复调和宗教复调外，最近还有城市音乐和城市复调的传统。 第比利斯位于亚洲和欧洲之间的十字路口，吸引了一群有着各种背景但主要来自中东民族的才华横溢的音乐家。 结果，东方的旋律开始出现在格鲁吉亚的城市。</p>\r\n\r\n<p>另一种城市歌唱风格出现得晚得多，受到第比利斯歌剧院开放的影响。 格鲁吉亚人对这种新音乐非常热衷，许多来自意大利歌剧的流行咏叹调被采用并重新排列成三部曲的城市无伴奏风格的格鲁吉亚歌词。 后来，格鲁吉亚的20世纪20年代至30年代以室内和交响音乐的发展为标志。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "884"
@@ -272,7 +272,7 @@
     "id": "1219",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img6.jpg\" /></p>\r\n\r\n<p>在过去的几十年里，流行音乐在格鲁吉亚变得非常受欢迎，但该国传统的民间声乐仍然非常受欢迎。</p>\r\n\r\n<p>Tbilisoba是一年一度的十月节，庆祝佐治亚州首府的多样性和历史，并举办传统音乐和舞蹈的露天音乐会以及各种文化活动。</p>\r\n\r\n<p>对于爵士爱好者来说，7月在港口城市巴统举行的黑海国际爵士音乐节是一年一度的亮点，吸引了来自世界各地的顶级音乐家。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "884"
@@ -281,7 +281,7 @@
     "id": "1220",
     "content":
       "<p>格鲁吉亚拥有悠久而自豪的电影和戏剧历史，从古老的民间传说和戏剧仪式到青铜器时代的宗教神秘剧版。</p>\r\n\r\n<p>旅行者仍然可以参观早期的格鲁吉亚剧院 在迷人且曾经繁华的洞穴城市Uplistsikhe。 这个城市有一个叫做剧院的洞穴，有自己的舞台，乐池和观众厅。 它被认为是公元1世纪或2世纪的宗教神秘戏剧。</p>\r\n从中世纪开始，由蒙面演员在皇家宫殿演出，伴随着音乐。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "885"
@@ -290,7 +290,7 @@
     "id": "1221",
     "content":
       "<p>格鲁吉亚国家剧院于1790年代在第比利斯成立。 专业的格鲁吉亚剧院成立于1850年，随后是着名的Rustaveli国家剧院。1921年，格鲁吉亚最大的剧院位于第比利斯，坐落在一座华丽的洛可可式建筑中，并以乔治亚国家诗人的名字命名。 国际巡回演出使其获得全球认可。 成功的Kote Marjanishvili国家戏剧剧院成立于1928年，在现代格鲁吉亚戏剧生活的发展中也发挥了至关重要的作用。 苏联时代富有想象力的莎士比亚作品在20世纪80年代对爱丁堡产生了巨大的影响。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "885"
@@ -299,7 +299,7 @@
     "id": "1222",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img13.jpg\" /></p>\r\n\r\n<p>这个国家也有丰富的电影遗产，可以追溯到1896年11月16日电影的第一次投影，早于许多西欧国家的首次放映。 格鲁吉亚电影摄影师崭露头角，如米哈伊尔·卡拉托佐夫（Mikheil Kalatozov），他的杰作“飞人起飞”（The Cranes Are Flying）成为1958年戛纳电影节的第一位苏联金棕榈奖获得者。几位格鲁吉亚电影制片人在此期间获得了国际认可，第比利斯的电影 工作室被称为苏联三大工作室之一。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "886"
@@ -308,7 +308,7 @@
     "id": "1223",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img14.jpg\" /></p>\r\n\r\n<p>如今，佐治亚州有马戏团，戏剧，音乐，哑剧，木偶，牵线木偶和电影院。 表演者和导演经常参加国际项目，节日和论坛，外国表演者也会访问格鲁吉亚。 每年10月举办的第比利斯国际戏剧节都有国际明星以及在Rustaveli舞台上表演的顶级国家公司，吸引了世界上一些最着名，最具挑衅性和创新性的戏剧作品的关注。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "886"
@@ -317,7 +317,7 @@
     "id": "1228",
     "content":
       "<p>格鲁吉亚历史悠久，地理位置优越，位于古老的欧亚十字路口，使建筑和艺术成为一种折衷的展示。 它在古代受到美索不达米亚，安纳托利亚，希腊，波斯，罗马和拜占庭传统的影响，然后在基督教被采用时受到宗教的影响。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "889"
@@ -326,7 +326,7 @@
     "id": "1229",
     "content":
       "<p>从19世纪开始，格鲁吉亚的艺术和建筑在欧洲和俄罗斯的背景下进化得更多，并从其自身深层次的根源中汲取灵感。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "889"
@@ -335,7 +335,7 @@
     "id": "1230",
     "content":
       "<h3>艺术</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img9.jpg\" /></p>\r\n\r\n<p>早期的格鲁吉亚艺术品包括可以在公元前5至4世纪在国家博物馆中看到的美丽巧妙制作的金银器物和珠宝的例子。</p>\r\n\r\n<p>格鲁吉亚还体育了一些欧洲最好的中世纪壁画。 Davit Gareji洞穴凿成的修道院建筑群的历史可以追溯到6世纪，曾经是一座曾经繁荣的壁画学校。</p>\r\n\r\n<p>在高加索地毯编织也可追溯到中世纪，美丽的手工制作景泰蓝珐琅艺术也是如此。 它仍然是格鲁吉亚非常流行的装饰形式，在美术博物馆可以看到令人惊叹的收藏品。</p>\r\n\r\n<p>在17世纪和18世纪，格鲁吉亚艺术经历了强烈的东方主义改造，直到18世纪后期意大利和俄罗斯的影响渗透。</p>\r\n\r\n<p>到了20世纪，格鲁吉亚艺术已经发展出自己的风格。 Niko Pirosmani，也许是最着名的格鲁吉亚艺术家，在巴黎学习并以其原始主义风格而闻名。 他的画作很明亮，幼稚的线条传达了植根于格鲁吉亚民间文化的主题。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "890"
@@ -344,7 +344,7 @@
     "id": "1231",
     "content":
       "<h3>建筑</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img10.jpg\" /></p>\r\n\r\n<p>格鲁吉亚是建筑师的梦想。 与其艺术一样，格鲁吉亚建筑受到许多文明的影响，这些文明在该国的城堡，塔楼，教堂和城市街道中都可见。</p>\r\n\r\n<p>格鲁吉亚建筑很容易吸引游客和上斯瓦涅季地区，其壮丽的山景和中世纪类型的村庄和防御工事，也不例外。 位于Khevsureti的偏远城堡小镇Shatili是另一个欣赏中世纪城堡建筑最佳典范的热门目的地。</p>\r\n\r\n<p>格鲁吉亚古老的洞穴城市Uplistsikhe也是一个珍贵的遗址，拥有铁器时代的迷人历史。 这座雕刻的城市发展成为前基督教卡特里的主要政治和宗教中心之一，寺庙主要供奉太阳女神。 在其最高点Uplistisk，他有20,000人。</p>\r\n\r\n<p>基督教的到来对格鲁吉亚建筑产生了至关重要的影响，这里有两种主要形式的教会建筑 - 中央圆顶建筑和大教堂。 Bolnisi的Sioni教堂和Mtskheta的Jvari修道院是格鲁吉亚早期中世纪教堂建筑的杰出典范 - 您将永远不会忘记踏入这些古老的神圣山顶教堂的金色马赛克。</p>\r\n\r\n<p>这座国家丰富的折衷主义建筑在格鲁吉亚首都第比利斯得到加强 - 从其标志性的老城区点缀着中世纪的教堂和画廊的房屋到宏伟的新艺术风格建筑，其中有弧形图案和铁艺装饰，苏联遗留下来的朴素结构 联盟，现在一些引人注目的未来派设计现代化的天际线。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "890"
@@ -353,7 +353,7 @@
     "id": "1232",
     "content":
       "<p>尽管格鲁吉亚的情况与其他国家的情况紧密相关，但格鲁吉亚语与您可能看不到或听到的其他语言不同。 它属于自己的古老语言群体，拥有自己独特的语言和字母</p>\r\n\r\n<p>格鲁吉亚语属于伊比利亚 - 高加索人的语言群体，是该家族中唯一拥有自己古老文字的语言。 格鲁吉亚语（Kartvelian）有三种方言（格鲁吉亚语，Svan语和Mengrelo-Laz语）。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "891"
@@ -362,7 +362,7 @@
     "id": "1233",
     "content":
       "<p>格鲁吉亚字母表是世界上使用的大约46种不同字母之一。 它由33个符号组成，包括5个元音和28个辅音。 它没有大小写的情况。 字母的形状是独特的，但它们的排列表明了印欧语言的影响。 许多科学家认为，格鲁吉亚字母表来源于公元前6世纪至5世纪的闪米特字母之一。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "891"
@@ -371,7 +371,7 @@
     "id": "1234",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img19.jpg\" /></p>\r\n\r\n<p>几个世纪以来，字母表已经过现代化改造，但保留了原有的根源和优雅的风格 - 尽管当许多符号看起来相同时很难学习！ 然而，即使不了解它，格鲁吉亚的写作也是美丽的，其无数的戏剧漩涡，蓬勃发展和圆润的曲线。</p>\r\n\r\n<p>格鲁吉亚语演变为书面语言被认为是该国在4世纪中期采用基督教的结果。 巴勒斯坦朱迪亚沙漠中的马赛克题词被称为有史以来最古老的格鲁吉亚题词，其历史可以追溯到公元433年。</p>\r\n\r\n<p>Bolnisi Sioni教堂位于第比利斯南部，也是格鲁吉亚最古老的（公元493年）铭文之一，而最古老的手稿（公元864年）则保存在西奈半岛的圣凯瑟琳修道院。</p>\r\n\r\n<p>格鲁吉亚文学是基督教世界文学中最古老，最富有的文学之一。 几个世纪以来，不同的影响影响了格鲁吉亚的文学 - 从高加索的民间传说到希腊，波斯和俄罗斯的影响，以及最近的现代欧洲。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "892"
@@ -380,7 +380,7 @@
     "id": "1235",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img21.jpg\" /></p>\r\n\r\n<p>从5世纪到现在，成千上万的原创文学作品都用格鲁吉亚国家字母书写并保存下来。 已知最古老的文学作品，“The Musirdom of Shushanik” 由Iakob Tsurtaveli在公元476 - 483年写成，但它是“黑豹皮革中的骑士”。 由Shota Rustaveli在12世纪末创建，成为格鲁吉亚文学中最着名的作品。 这首诗已被翻译成世界上许多语言。</p>\r\n\r\n<p>到17世纪初，罗马的天主教和格鲁吉亚传教士帮助向格鲁吉亚介绍了印刷书籍，并且到1709年，第一台格鲁吉亚印刷机在第比利斯开始运作。</p>\r\n\r\n<p>在19世纪和20世纪，欧洲学者对格鲁吉亚文学的研究越来越感兴趣，因为它已被公认为欧洲文明的重要组成部分。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "892"
@@ -389,7 +389,7 @@
     "id": "1236",
     "content":
       "<p>格鲁吉亚坐落在欧洲的边缘，半神秘的传说。 它是在经过良好践踏的旅游路线上，但近年来，国际游客急剧增加。 关于乔治亚提供的热情欢迎和独特的旅行机会，这个词正在传播。 无论您是来格鲁吉亚出色的远足，滑雪，音乐还是古迹，您都将体验到充满异国情调的未受破坏的山地堡垒，古老的葡萄园和宏伟的城市大道。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "894"
@@ -398,7 +398,7 @@
     "id": "1237",
     "content":
       "<p>前往格鲁吉亚很容易。 巴统和第比利斯有两个国际机场，由许多不同的航空公司提供服务。 出发前，请检查护照的有效性以及是否需要申请签证。 如果您在旅行计划或旅行期间需要帮助，格鲁吉亚在许多国家都有大使馆，许多外国代表团在格鲁吉亚有代表。 浏览我们的旅行信息以获取更多详细信息，并帮助您规划行程。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "894"
@@ -407,7 +407,7 @@
     "id": "1240",
     "content":
       "<p>所有国籍的游客都需要护照，在您离开佐治亚州后至少90天内有效。 但是，强烈建议您始终在护照上有效期为6个月。 您还必须确保您的护照上有空白的Visa页面。 包括格鲁吉亚在内的大多数目的地都要求您在护照上有足够的未使用页面，以便在抵达和离开时提供任何必要的邮票。</p>\r\n\r\n<p>最后，请与您的航空公司联系，以防您在前往格鲁吉亚的途中有海外转机航班。 您经过途中到达目的地的国家可能需要单独的过境签证。 格鲁吉亚拥有宽松的签证制度，其中包括对许多国家的公民进行短期访问的签证豁免（在任何180天期限内不超过90个日历日）。</p>\r\n\r\n<p>以下是其公民不需要签证进入和停留在格鲁吉亚境内90天的国家名单：</p>\r\n\r\n<p>欧盟的所有国家 - 美利坚合众国 - 加拿大 - 日本 - 瑞士 - 列支敦士登 - 挪威 - 以色列 - 罗马教廷 - 安道尔公国 - 圣马力诺 - 冰岛共和国 - 阿拉伯联合酋长国 - 科威特国 - 韩国 - 卡塔尔国 - 巴林王国 - 阿曼 - 文莱 - 新加坡 - 澳大利亚 - 摩纳哥 - 新西兰 - 巴哈马群岛 - 巴巴多斯 - 安提瓜和巴布达 - 特立尼达和多巴哥 - 塞舌尔群岛 - 博茨瓦纳 - 克罗地亚 - 智利 - 圣基茨和尼维斯 - 阿根廷 - 马来西亚 - 墨西哥 - 乌拉圭 - 毛里求斯 - 巴拿马 - 哥斯达黎加 - 南非 - 巴西 - 泰国 - 伯利兹 - 沙特阿拉伯 - 独联体国家国民（俄罗斯联邦和土库曼斯坦除外）。</p>\r\n\r\n<p>如果您不是来自上述国家之一，格鲁吉亚签证将在国外的外交使团或领事馆签发，在特殊情况下，可以在州边境签发。</p>\r\n\r\n<p>停留时间少于72小时的游轮上的乘客不需要签证。</p>\r\n\r\n<p>欲了解更多信息，请访问格鲁吉亚外交部网站上提供的领事信息。</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "896"
@@ -416,7 +416,7 @@
     "id": "1241",
     "content":
       "<p>格鲁吉亚在国外有很多代表，大使馆和领事馆位于许多国家，可以帮助您办理所有签证和领事。 他们通常提供一系列服务，包括签证支持，有关格鲁吉亚旅行的最新信息和建议，有关格鲁吉亚海外的信息，以及关于格鲁吉亚的一般事实，信息和新闻。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "897"
@@ -425,7 +425,7 @@
     "id": "1242",
     "content":
       "<p>以下是位于海外的格鲁吉亚大使馆和总领事馆名单，包括他们的地址和联系方式。 有关详细信息和确认信息，请尽可能访问各自的网站或格鲁吉亚外交部网站，以帮助您制定明智的旅行计划。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "897"
@@ -433,7 +433,7 @@
   {
     "id": "1243",
     "content": "<h2>格鲁吉亚大使馆</h2>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "898"
@@ -442,7 +442,7 @@
     "id": "1244",
     "content":
       "<p><strong>亚美尼亚共和国</strong><br />\r\nAddress: #42, Aramis St., Yerevan, Armenia<br />\r\n电话：(+374 1) 523674, 942785; 传真：(+374 1) 564183<br />\r\n电子邮件：geoemb@netsys.am</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Azerbaijani Republic</strong><br />\r\nAddress: #24, Asafa Zeinalli St., Icheri Shekher, Baku 1004, Azerbaijan<br />\r\n电话：(+994 12) 4974558/59, 4974557; 传真：(+994 12) 4974561<br />\r\n电子邮件：embeo@azeurotel.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Republics of Austria, Slovakia, Slovenia, Hungary and Chekh Republic</strong><br />\r\nAddress: A 1030, Marokkanergasse 16, Vena. Austria<br />\r\n电话：(+431) 7103611; 传真：(+431) 7103610<br />\r\n电子邮件：georgia@magnet.at</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Countries of Benelux and permanent mission to European Union</strong><br />\r\nAddress: Ave. #58, Orban Ave., Bruxelles 1150, Belgium<br />\r\n电话：(+322) 7611190, 7611191; 传真：(+322) 7611199<br />\r\n电子邮件：mdgadc@skynet.be</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Arab Republics of Egypt, Syria, Lebanon and Hashemite Kingdom of Jordan</strong><br />\r\nAddress: #28 Sad El Aali St., Dokki Cairo, Egypt<br />\r\n电话：(+202) 3359024; 3359034; 传真：(+202) 3366129<br />\r\n电子邮件：geoembeg@link.com.eg</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>French Republic, Kingdom of Spain and UNESCO.</strong><br />\r\nAddress: #104, Avenue Raymond Poincare,Paris 75116, France<br />\r\n电话：(+331) 45021616; 传真：(+331) 45021601<br />\r\n电子邮件：ambgeo@22noos.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>德意志联邦共和国和波兰共和国</strong><br />\r\nAddress: # 32, Heinrich Mann St., Berlin 13156, Bundesrepublic Deutchland <br />\r\n电话：(+493 0) 48490715; 传真：(+493 0) 48490720<br />\r\n电子邮件：info@botschaftvongeorgien.de</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Islamic Republic of Iran</strong><br />\r\nAddress: 9,8th Aley, Shahid Qalandari (Dastoor-e Jonoobi) str., Sadr Exp'way Teheran. Iran<br />\r\n电话：(+9821) 2609765; 传真：(+9821) 2604154<br />\r\n电子邮件：lia_ch2004@yahoo.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>State of Israel</strong><br />\r\nAddress: 74/5 Hei Be 'Iyar Kikar, Hamedina, Tel Aviv 62198, Israel<br />\r\n电话：(+9723) 6043232; 传真：(+9723) 6021542<br />\r\n电子邮件：geoemba@netvision.net.il</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Italian Republic</strong><br />\r\nAddress: #20, Piazza di Spagna, Plazzo Pierret, Roma 00187, Italy<br />\r\n电话：(+396) 69941972; 传真：(+396) 69941942<br />\r\n电子邮件：amgeorgia@libero.it</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "899"
@@ -451,7 +451,7 @@
     "id": "1245",
     "content":
       "<p><strong>哈萨克斯坦共和国</strong><br />\r\nAddress: 8g, Tsentralnaia str. taugul. 480092 Ama at. Kazakhstan<br />\r\nTel/传真：mailto:(+73272) 932210</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Russian Federation</strong><br />\r\nAddress: #6, Malii Rzhevskii, Moscow 121069, Russia<br />\r\n电话：(+7095) 921787, 921707, 921767; 传真：(+7095) 2912136<br />\r\n电子邮件：ineza@got.mmtel.ru</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Swiss Confederation Permanent Mission to the International Organizations at Geneva and the Holy Sea</strong><br />\r\nAddress: #1, Rue Richard Wagner, Geneve 1202, Switzerland<br />\r\n电话：(+41 22) 9191010; 传真：(+41 22) 7339033<br />\r\n电子邮件：geomission.geneva@bluewin.ch</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Republic of Turkey</strong><br />\r\nAddress: #15, Abdullah Cevdet sok, Cankaya, Ankara, Turkey<br />\r\n电话：(+90 312) 4426508, 4426509; 传真：(+90 312) 4426507<br />\r\n电子邮件：geoemb@ada.net.tr</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Ukraine, the Republic of Moldova and Rumania</strong><br />\r\nAddress: 83d, Melnikov str. 4 section, Kiev. Ukraine<br />\r\n电话：(+380 44) 4514353/55, 2461066/70; 传真：(+380 44) 4514356<br />\r\n电子邮件：f_nato@ukr.net</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>United Kingdom of Great Britain and Northern Ireland.</strong><br />\r\nAddress: 4, Russell Gardens, London W148EZ.<br />\r\n电话：(+44 207) 6037799; 传真：(+44 207) 6036682<br />\r\n电子邮件：embassy@geoemb.plus.com<br />\r\nWeb Page: www.geoemb.org.uk</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Turkmenistan and Afganistan</strong><br />\r\nAddress: 139a, Azadi str. Ashkhabad. Turkmenistan.<br />\r\nTel:( 99 312) 34 48 38; Fax:(99 312) 34 32 48<br />\r\n电子邮件：georgia@online.tm</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>United States of America, Canada and the United Mexican states</strong><br />\r\nAddress: 1511 1615 New Hampshire Ave. N. W. Suite 300, Washington D.C. 20009, USA<br />\r\n电话：(+202) 3879151; 传真：(+202) 3936060<br />\r\n电子邮件：73324-1007@compuserve.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Republics of Uzbekistan and Tadjikistan</strong><br />\r\nAddress: #16, Tarab St, Tashkent, Uzbekistan<br />\r\n电话：(+37 12) 541668; 545408; 传真：(+37 12) 546535<br />\r\n电子邮件：gruzemb@geo-embassy.co.uz</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Turkmenistan and Afganistan</strong><br />\r\nAddress: 139a, Azadi str. Ashkhabad. Turkmenistan.<br />\r\nTel:( 99 312) 34 48 38; Fax:(99 312) 34 32 48<br />\r\n电子邮件：georgia@online.tm</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "899"
@@ -459,7 +459,7 @@
   {
     "id": "1246",
     "content": "<h2>一般领事馆</h2>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "900"
@@ -468,7 +468,7 @@
     "id": "1247",
     "content":
       "<p><strong>Athens, Greece</strong><br />\r\nAddress: 24, Agiou Dimitrious str. 154 52 PALEO PSYCHIKO. Athens. Greece<br />\r\n电话：(+301) 6716737/6724271/6725182; 传真：(+301) 6716722<br />\r\n电子邮件：embassygeo@hol.gr</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Vilnius, Lithuania</strong><br />\r\nAddress: #13, Poshko St. Vilnius, Lithuania<br />\r\n电话：(+370 2) 227848; 传真：(+370 2) 723623</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Odessa, Ukraine</strong><br />\r\nAddress: 30, Tolstoy str. 65045 Odessa. Ukraine<br />\r\n电话：(+380 482) 264729; 传真：(+380 482) 264727<br />\r\n电子邮件：geoconsulate@paco.net Web-site: www.avesol.ge</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "901"
@@ -477,7 +477,7 @@
     "id": "1248",
     "content":
       "<p><strong>Istanbul, Turkey</strong><br />\r\nAddress: Inonu cad.55, Marmara apartamenti, D.2, Gumususuyu/Taksim, Istanbul, Turkey<br />\r\n电话：(+90 212) 2928111; 传真：(+90 212) 2928112</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>Trabzon, Turkey</strong><br />\r\nAddress: #20, Gazi Fasha Gadesi, Trabzon, Turkey<br />\r\n电话：(90 462) 3262226; 传真：(90 462) 3262296<br />\r\n电子邮件：trabzoncons@gul.net.tr</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "901"
@@ -486,7 +486,7 @@
     "id": "1249",
     "content":
       "<p>世界上许多国家都设有位于佐治亚州的大使馆和领事馆，通过网站或电话提供服务。 外国大使馆和领事馆可以提供一系列服务，包括格鲁吉亚的旅行建议，以及任何新闻和更新，以确保您在国外旅行时保持安全，避免问题并做出明智的决定。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "902"
@@ -495,7 +495,7 @@
     "id": "1250",
     "content":
       "<p>大使馆也可以协助其国民签发紧急护照，提供有关转移资金的信息，如果您是犯罪受害者，提供适当的帮助，或在医院，提供当地律师，口译员和医生的详细信息并提供 在一系列其他案件中提供支持和帮助，例如内乱或自然灾害。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "902"
@@ -504,7 +504,7 @@
     "id": "1251",
     "content":
       "<p>以下是格鲁吉亚的外国大使馆和领事馆名单。 欲了解更多信息，请访问格鲁吉亚外交部领事司网站。</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "903"
@@ -513,7 +513,7 @@
     "id": "1252",
     "content":
       "<p><strong>罗马尼亚</strong><br />\r\n大使： H.E. Mr. Constantin Girbea<br />\r\n电话：(995 32)25 00 98, 38 53 10; 传真：25 00 97<br />\r\n电子邮件：ambasada@caucasus.net</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>大不列颠及北爱尔兰联合王国</strong><br />\r\n大使： H.E. Mr. Donald Maclaren of MacLaren<br />\r\n电话：(995 32)27 47 47; 传真：27 47 92;<br />\r\n电子邮件：british.embassy.tbilisi@fco.gov.uk</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>SWISS CONFEDERATION</strong><br />\r\n大使： H.E. Mr. Stephan Speck<br />\r\n电话：(995 32) 75 30 01/02; 传真：75 30 06;<br />\r\n电子邮件：Tbilisi@sdc.net</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>德意志联邦共和国</strong><br />\r\n大使： H.E. Mr. Uwe Schramm<br />\r\n电话：(995 32) 44 73 00 传真：91 15 21;<br />\r\n电子邮件：info@tiflis.diplo.de<br />\r\n网站：www.tiflis.diplo.de<br />\r\n领事馆：电话：95 09 36, 91 14 58 传真：92 33 81, 91 1651</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>以色列国</strong><br />\r\n大使： H.E. Mr. Shabtay Tsur<br />\r\n电话：(995 32)95 17 09; 96 02 13; 传真：95 52 09;<br />\r\n电子邮件：press@tbilisi.mfa.gov.il<br />\r\n领事馆：(995 32) 94 27 05</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>荷兰王国</strong><br />\r\n大使： H.E. Mr. Onno Elderenbosch<br />\r\n电话：(995 32) 27 62 22, 77 45 04; 传真：27 62 33;<br />\r\n电子邮件：tbi@minbuza.nl</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>圣洁的看见</strong><br />\r\nAmbassador of Vatican-Nuncio: Archbishop Monsignor Claudio Gugerotti<br />\r\n电话：(995 32)94 13 05; 53 76 01/04 传真：29 39 44;<br />\r\n电子邮件：nuntius@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>中华人民共和国</strong><br />\r\n大使： H.E. Wang Kaiwen<br />\r\n电话：(995 32) 25 21 75; 25 26 70; 传真：25 22 83;<br />\r\n电子邮件：yfarm@access.sanet.ge<br />\r\n领事馆：电话：25 39 61; Fax 93 61 89</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>美国</strong><br />\r\n大使： H.E. Mr. John Francis Tefft<br />\r\n电话：(995 32)27 77 00; 53 23 34;<br />\r\n电子邮件：consulate-tbilisi@state.gov<br />\r\n网站：www.usembassy.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>HELLENIC REPUBLIC</strong><br />\r\n大使： H.E. Mr. Eleftherios Anghelopoulos<br />\r\n电话：(995 32) 94 24 55, 44 56 00; 传真：44 10 39;<br />\r\n电子邮件：grembgeo@access.sanet.ge<br />\r\n领事馆：电话：25 29 97</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>土耳其共和国</strong><br />\r\n大使： H.E. Mr.Ertan Tezgor<br />\r\n电话：(995 32) 25 20 72/73; 传真：22 06 66;<br />\r\n电子邮件：tiflisbe@yahoo.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>伊朗伊斯兰共和国</strong><br />\r\n大使： H.E. Mr. Hossein Aminian Tousi<br />\r\n电话：(995 32)37 42 19; 37 31 53; 传真：38 15 27;<br />\r\n电子邮件：iranemb@geo.net.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>俄罗斯联邦</strong><br />\r\n大使： H.E. Mr. Vladimir Chkhikvishvili<br />\r\n电话：(99532) 91 24 06, 91 26 45; 传真：91 27 38;<br />\r\n电子邮件：russianembassy@caucasus.net<br />\r\n网站：www.georgia.mid.ru<br />\r\n领事馆：电话：91 27 82; 传真：91 30 85</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>意大利共和国</strong><br />\r\n大使： H.E. Mr. Fabrizio Romano<br />\r\n电话：(995 32) 99-64-18, 92-18-54; 传真：99 64 15;<br />\r\n电子邮件：ambita.tbilisi@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>乌克兰</strong><br />\r\n大使： H.E. Mr. Mykola Spys<br />\r\n电话：(995 32)31-11-61, 31-12-02; 传真：31 11 81;<br />\r\n电子邮件：ukraina@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>阿塞拜疆共和国</strong><br />\r\nCh. d'Affaires: Mr. Surkhay Akhper ogli Aliyev<br />\r\n电话：(995 32) 25-35-26/27/28, 25-26-39; 传真：25 00 13;<br />\r\n电子邮件：secretariat@azembassy.ge<br />\r\n网站：www.azembassy.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>法国共和国</strong><br />\r\n大使： Mr.Philippe Lefort<br />\r\n电话：(995 32)99-99-76; 传真：95-33-75;<br />\r\n电子邮件：ambafrance@diplomatie.gouv.fr</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "904"
@@ -522,7 +522,7 @@
     "id": "1253",
     "content":
       "<p><strong>捷克共和国</strong><br />\r\n大使： Mr. Jozef Vrabec<br />\r\n电话：(995 32)91 67 40/41/42; 传真：91 67 44;<br />\r\n电子邮件：czechembassy@gol.ge; or tbilisi@embassy.mzv.cz<br />\r\n网站: www.mzv.cz</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>波兰共和国</strong><br />\r\n大使： Mr. Jacek Multanowski<br />\r\n电话：(995 32) 92-03-98; 传真：92 03 97;<br />\r\n电子邮件：ambpolgruzja@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>保加利亚共和国</strong><br />\r\nCharge d'Affairs: Mr. Ivailo Brazitsov<br />\r\n电话：(995 32)91-01-94/95, 91-01-04; 传真：91 02 70;<br />\r\n电子邮件：bgembassy.georgia@gol.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>立陶宛共和国</strong><br />\r\n大使： H.E. Mr. RiÄardas Degutis<br />\r\n电话：(995 32)91-29-33; 传真：22 17 93;<br />\r\n电子邮件：amb.ge@urm.it</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>亚美尼亚共和国</strong><br />\r\n大使： H.E. Mr. Hrach Silvanian<br />\r\n电话：(995 32) 95 17 23, 95 94 43; 传真：99 01 26;<br />\r\n电子邮件：armemb@caucasus.net</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>哈萨克斯坦共和国</strong><br />\r\nCharge d'Affairs: Mr. Nurlan Zhalgasbayev<br />\r\n电话：(995 32) 99 76 84; 传真：92-04-48;<br />\r\n电子邮件：dmkazaida@inbox.ru</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>拉脱维亚共和国</strong><br />\r\n拉脱维亚共和国名誉领事: Mrs. Regina Jakobidze<br />\r\nTel/传真：(995 32)99 51 97; 94 01 10;<br />\r\n电子邮件：avesol@gol.ge  Web-site: www.avesol.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>西班牙王国</strong><br />\r\n西班牙王国名誉领事: Ms. Mariam Bagrationi<br />\r\n电话：(995 32) 25 26 06; 传真：22 41 99</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>奥地利共和国</strong><br />\r\n奥地利共和国名誉领事: Ms. Eva Berger<br />\r\n电话：(995 32)25 02 99 传真：77 32 17;<br />\r\n电子邮件：eva.berger@aua.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>丹麦王国</strong><br />\r\n丹麦王国名誉领事: Mr. Esben Emborg<br />\r\n电话：(995 32) 92 33 79/80; 92 11 02/03; 传真：92 33 81;<br />\r\n电子邮件：Esben.emborg@nestle.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>瑞典王国</strong><br />\r\n瑞典王国名誉领事: Mr. Eric Johnson<br />\r\n电话：(99532)99 98 33; 传真：93 10 71;<br />\r\n电子邮件：svkonsul@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>比利时王国</strong><br />\r\n比利时王国名誉领事: Mr. Pierre Orloff<br />\r\n电话/传真：(995 32) 23 15 58;<br />\r\n电子邮件：pierre_orloff@access.sanet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>菲律宾共和国</strong><br />\r\n菲律宾共和国名誉领事: Mr. Teimuraz Chichinadze<br />\r\n电话：(995 32)22 45 44; 传真：29 25 49;<br />\r\n电子邮件：phconsul@gol.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>匈牙利共和国</strong><br />\r\n匈牙利共和国名誉领事: Mr. Zaza Charkviani<br />\r\n电话/传真：(995 32)37 10 57;<br />\r\n电子邮件：geohung@internet.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>圣马力诺共和国</strong><br />\r\n圣马力诺共和国名誉领事: Mr.Bidzina Ivanishvili<br />\r\n电话：(995 32)23 00 72; 29 41 30;<br />\r\n电子邮件：office@cartugroup.com</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>斯洛文尼亚共和国</strong><br />\r\n电话：(995 32) 25 35 33; 传真：25 35 68;<br />\r\n电子邮件：slovenia@consul.ge</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>利比里亚共和国</strong><br />\r\n利比里亚共和国名誉领事: Mr. Joseph Kay<br />\r\n电话：(995 32)24 46 04</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>联合墨西哥州</strong><br />\r\n墨西哥名誉领事: Mr. Teimuraz Tchkonia<br />\r\n电话：(995 32)94 26 09; 传真：99 79 15;<br />\r\n电子邮件：consulmex@caucasus.net</p>\r\n\r\n<p> </p>\r\n\r\n<p><strong>挪威王国</strong><br />\r\n挪威名誉领事: Ms. Liana Sigua<br />\r\n电话：(995 32) 29 09 79</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "904"
@@ -531,7 +531,7 @@
     "id": "1356",
     "content":
       "<p>格鲁吉亚和亚美尼亚是世界上最古老的基督教国家。 在佐治亚州迷人的首都，在古老的小巷和庭院中失去自己。 探索姆茨赫塔（Mtskheta）壮观的世界遗产，从宏伟的Jvari修道院到以砂岩雕刻的古老城市。 您热烈的白种人欢迎将在邻国亚美尼亚继续。 在蜷缩的房屋之间穿过四十块芳香的杏子，凝视着白雪皑皑的山峰上空的山脉。 亚美尼亚美丽的石头教堂与他们所在的粉红色锈色悬崖相匹配。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "993"
@@ -540,7 +540,7 @@
     "id": "1357",
     "content":
       "<p>格鲁吉亚和亚美尼亚提供无与伦比的文化宝藏和戏剧性景观组合，这些景观在很大程度上仍未被更广泛的世界所发现。 你去的每个地方都将充满过去的骄傲传统和慷慨的热情好客.TikaTours让你有机会呼吸这种强大的历史气息，让自己沉浸在诱人的乡村，滑过格鲁吉亚语 葡萄酒和亚美尼亚干邑的一脚，回归家园，留下难忘的回忆。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "993"
@@ -549,7 +549,7 @@
     "id": "1358",
     "content":
       "<p>格鲁吉亚位于欧洲和亚洲之间的中心位置，使其成为区域和国际会议，研讨会，团队建设和商务会议的理想场所。 企业客户将被吸引到佐治亚州，因为它拥有令人眼花缭乱的风景，丰富的异国文化遗产以及各种商务和休闲相结合的户外活动。 在Tika Tours，我们将让您和您的客户有宾至如归的感觉。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1002"
@@ -558,7 +558,7 @@
     "id": "1359",
     "content":
       "<p>Tika Tours将成为您身边的专业人士，确保您的计划的每个部分顺利运行。 我们可以提供完美的会议场地，全面的会议规划和设施以及令人难忘的团队建设和奖励计划 - 从山区登山和徒步旅行到漂流穿越令人难以置信的河谷，享受着名的格鲁吉亚热情好客，我们的专家拥有丰富的经验和当地知识。 确保您的成功。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1002"
@@ -567,7 +567,7 @@
     "id": "1371",
     "content":
       "<p>Georgia has long formed a strategic cultural and geographic bridge connecting Europe and Asia. It's part of a network of trade routes known as the Silk Road that travellers and traders have been using for centuries - Patara Dminisi for example, was once a major caravan stop and is the site of the oldest human remains found outside Africa.</p>\r\n\r\n<p>The Silk Road evokes a romantic era associated with caravans of camels tackling difficult journeys through wild landscapes. Nowadays, Georgia still offers myth-laden journeys through a staggeringly beautiful land - but getting to and around Georgia is much easier.</p>\r\n\r\n<p>There are entry points by road, sea and air. There are  international airports at Tbilisi, Batumi and Kutaisi. There are direct flights to Tbilisi from many cities in Europe, the Middle East and Russia, and from a few Central Asian cities. A few international flights also go to Batumi and Kutaisi. Batumi serves Georgia's western regions while the airport at the capital, Tbilisi provides the main gateway to eastern Georgia. Georgian Airways is the country's privately owned flag carrier.</p>\r\n\r\n<p>Several Turkish bus companies connect Turkey to Georgia, running from Istanbul, Ankara, Trabzon and other Turkish cities to Batumi, Kutaisi and Tbilisi.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1014"
@@ -576,7 +576,7 @@
     "id": "1372",
     "content":
       "<p>For those travellers looking for something a little different, ferry trips may be possible to the ports of Batumi or Poti from some countries in the Black Sea region.</p>\r\n\r\n<p>However you arrive, you'll never forget your first approach into Georgia. The Caucasus, the country's granite backbone spread their majestic peaks against the sky like an ancient spine. In their shadows, spread out before you are crumpled velvet hills peppered with hilltop monasteries and a patchwork of woods, orchards and crops. The beauty of this place is intoxicating and the potential adventure it offers, thrilling.</p>\r\n\r\n<p>When you get to Georgia, there are options for travelling around by air, rail, public bus or minibus, taxi and rental car. Tbilisi also has a cheap, easy to use metro system. Travel is simple between the main towns and cities but getting further out into the remote villages can require some planning.</p>\r\n\r\n<p>A special legal regime applies to the two occupied regions of Georgia - the territory of the Autonomous Republic of Abkhazia and the territory of the Tskhinvali region (the former South Ossetia Autonomous District) - including restricted points of entry. Before considering travels to these areas and to elsewhere in Georgia it is recommended that you check current information on the website of the Ministry of Foreign Affairs of Georgia.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1014"
@@ -585,7 +585,7 @@
     "id": "1430",
     "content":
       "<p>世界上很少有小国可以像格鲁吉亚一样为游客提供服务。 一旦经历过，这个国家将永远与你同在。 令人印象深刻的异国情调，令人惊叹的美丽背景，美味多产的葡萄酒文化，崇高的音乐和令人惊叹的建筑，从石头了望塔和丰富的壁画教堂到迷人雕刻的木制阳台和新艺术风格的宏伟建筑。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1054"
@@ -594,7 +594,7 @@
     "id": "1431",
     "content":
       "<p>格鲁吉亚是东西方交汇的地方，古代神话与现代生活相遇。 它在高加索山脉中肆虐俄罗斯，在那里拥有欧洲最高峰。 它优雅的首都让人想起巴黎。 它享有黑海的海滩度假胜地和地中海气候。 而内陆，绿色平原和山谷则生产从苹果，鳄梨到核桃和葡萄酒的各种产品。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1054"
@@ -602,7 +602,7 @@
   {
     "id": "1432",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1055"
@@ -611,7 +611,7 @@
     "id": "1433",
     "content":
       "<h3>希腊神话</h3>\r\n\r\n<p>参观一个充满神话和传说的土地。 在希腊神话中，阿尔戈英雄是一群英雄，他们陪伴杰森前往格鲁吉亚西部的科尔奇斯王国寻求金羊毛。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1056"
@@ -620,7 +620,7 @@
     "id": "1434",
     "content":
       "<h3>第一欧洲的家园</h3>\r\n\r\n<p>在德马尼考古发掘过程中发现的这个170万年前的头骨是欧洲人类居住的最古老的证据。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1056"
@@ -629,7 +629,7 @@
     "id": "1435",
     "content":
       "<h3>葡萄酒的诞生地</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img30.jpg\" /></p>\r\n\r\n<p>葡萄种植在格鲁吉亚有着悠久的传统。 没有它，想象日常生活是不可能的。 凭借500多种原始葡萄品种和强大的种植文化，格鲁吉亚葡萄酒将与世界上任何一种葡萄酒相媲美并不奇怪。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1057"
@@ -638,7 +638,7 @@
     "id": "1436",
     "content":
       "<h3>洞穴建筑</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img29.jpg\" /></ p>\r\n\n\r\n<p>格鲁吉亚提供了一个大杂烩的建筑，一些最独特的例子可以直接雕刻在岩石中。 参观历史悠久的丝绸之路上的古老城镇Uplistsikhe，雕刻成砂岩山丘或David-Gareji的大型壁画修道院。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1057"
@@ -647,7 +647,7 @@
     "id": "1437",
     "content":
       "<h3>表和Tamada</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img31.jpg\" /></p>\r\n\r\n<p>凭借丰富的食物和葡萄酒，格鲁吉亚已经形成了一种强烈欢呼的强烈传统 - 包括一句话说客人是上帝的礼物。 桌上仪式必不可少的是Tamada或吐司大师，在关键时刻引入雄辩的吐司，引导用餐的心情。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1058"
@@ -656,7 +656,7 @@
     "id": "1438",
     "content":
       "<h3>民间传说和舞蹈</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img33.jpg\" /></p>\r\n\r\n<p>格鲁吉亚在严峻的历史时期看到了相当的份额，但人们不断将它们重新组合在一起，在几个世纪中骄傲地坚定地传承着他们的文化，包括格鲁吉亚民间传说和舞蹈的强大生命力。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1058"
@@ -665,7 +665,7 @@
     "id": "1439",
     "content":
       "<h3>教科文组织世界遗产</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img34.jpg\" /></p>\r\n\r\n<p>参观格鲁吉亚最重要的遗产地，被联合国教科文组织认可，因为它们对世界的重要性 - 姆茨赫塔Svetitskhoveli大教堂和Jvari教堂，库塔伊西格拉蒂修道院和巴格拉蒂大教堂，以及上斯瓦涅季地区的中世纪村庄和塔楼。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1059"
@@ -674,7 +674,7 @@
     "id": "1440",
     "content":
       "<h3>格鲁吉亚音乐</h3>\r\n\r\n<p><img alt=\"\" src=\"/library/content/img32.jpg\" /></p>\r\n\r\n<p>当你听到这个巨大的分层声音墙，他们的声音融合了如此纯净，以至于你脖子后面的毛发会竖立起来。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1059"
@@ -683,7 +683,7 @@
     "id": "1542",
     "content":
       "<p>让Tika Tours揭开格鲁吉亚的许多魅力并揭露她的秘密。 前往美丽的高加索山脉村庄进行一生的奢华冒险，在树木繁茂的高山度假胜地放松身心，享受丰富的再生矿物鸡尾酒。 探索优雅的城市，不拘一格的艺术和建筑以及佐治亚州的世界级葡萄酒和美食。 令人瞩目的景观是浪漫爱情的完美场所，也是令人振奋的家庭假期。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1152"
@@ -692,7 +692,7 @@
     "id": "1543",
     "content":
       "<p>加入Tika Tours，亲自探索格鲁吉亚潜在的商业和投资机会，或相信我们丰富的经验，以促进您的会议，研讨会或团队建设冒险。 我们将向您展示真实的内部体验，不寻常的文化互动，令人难以忘怀的自然美景以及一系列非凡的时刻。 无论您的格鲁吉亚冒险之旅在哪里，我们都将确保您的旅程独一无二，富有创意，令人难以忘怀。 你不会想离开。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1152"
@@ -701,7 +701,7 @@
     "id": "1548",
     "content":
       "<p>Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards, charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly lovely.</p>\r\n\r\n<p>Like a lovely lost kingdom, Georgia's capital city lies deep in the country's heartland, watched over by ancient towers and churches. The central city unfurls along Rustaveli Avenue, the intriguingly eclectic architecture reflecting Georgia's dynamic history.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1161"
@@ -710,7 +710,7 @@
     "id": "1549",
     "content":
       "<p>Broad and leafy streets, grand neo classical buildings and space-age modern designs sit alongside ancient churches, mosques, synagogues and a teasing maze of twisting, balconied side streets. Here and there, honeysuckle blossom and mulberry trees give shade to surprising courtyards.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1161"
@@ -718,7 +718,7 @@
   {
     "id": "1550",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1162"
@@ -727,7 +727,7 @@
     "id": "1551",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Founded in the 5th century, the city has always attracted people from around the world, illustrating Georgia's ancient role as a merging point of cultures along the Silk Road. Today, most trips to Georgia start in Tbilisi, often striking travellers as both reassuringly familiar and genuinely exotic. The name Tbilisi derives from the Old Georgian word &quot;Tpili&quot;, meaning warm and was given to the city because of the area's numerous sulphuric hot springs.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Located in East Georgia, this city of approximately 1.5 million people sits within a large basin surrounded by hills. The Mtkvari River slips purposefully through its streets.</p>\r\n\r\n<p>The summer months in Tbilisi are long, dry and hot and the winters are relatively cold. July is the hottest month with an average temperature of 24 &deg;C. January is the coldest month with an average temperature of approximately 1 &deg;C and snow falls on average 15-25 days of the year. </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1163"
@@ -736,7 +736,7 @@
     "id": "1552",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Take the new cable car up to the 17th-century Narikala citadel for a bird's-eye vantage over the city and a close-up of the oversized Mother Georgia statue and her gaze of steely self-assurance. Explore the spidery lanes of the old town with its ornate balconied houses and Byzantine churches or spend a relaxing afternoon in the beautiful tiled surroundings of one of the city's ancient bath houses, immersed in the hot springs that bubble up beneath the city.</p>\r\n\r\n<p>Stroll through Maidan Square, Tbilisi's historic center, with its outdoor caf&eacute;s and bars. Breathe in the thick sweet smell of incense at Kashveti Church on Rustaveli Avenue. Visit the shiny trappings in the National Gallery of Georgia next door and indulge in a night of luxuriant dreams at the Marjanishvili Theatre, housed in a curvaceous Art Deco building.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1163"
@@ -745,7 +745,7 @@
     "id": "1553",
     "content":
       "<p>Kakheti is the largest region in Georgia and particularly famous for its luminous wines, postcard-perfect scenery and friendly people.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1165"
@@ -754,7 +754,7 @@
     "id": "1554",
     "content":
       "<p>Snowy mountains soar above plains of corn, pomegranate orchards and relentless vineyards, side by side in a wonderful tapestry - and everywhere you go, you'll be invited to share the perfectly fermented grapes.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1165"
@@ -762,7 +762,7 @@
   {
     "id": "1555",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1166"
@@ -771,7 +771,7 @@
     "id": "1556",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Kakheti is also rich in history. It was an independent or semi-independent kingdom for long periods and here you'll find the remarkable monastery complex of Davit Gareja as well as many other beautiful, ancient churches and castles.</p>\r\n\r\n<p>Of course, Kakheti has also played an important role in Georgia's history as the cradle of wine, viticulture here having been traced back to VI millennium BC. Scientists believe that the word Ghvino (wine, vin, vine) has Georgian origin.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Kakheti is bordered to the north by the small province of Tusheti and the majestic Greater Caucasus mountain range, to the east and south by Azerbaijan, and to the west by the province of Kartli. The incredibly diverse landscape of this eastern region alternates between mountains, valleys and semi-deserts. The pretty town of Telavi is the largest in the region with a population of around 30,000.</p>\r\n\r\n<p>The coldest months in Kakheti are January and February. On the plains, the lowest temperatures will hover from -2 &deg;C to 3 &deg;C, while in the mountains it can drop to -16 &deg;C. The hottest months are July and August when the average temperature at Alazani Valley is around 24 &deg;C.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1167"
@@ -780,7 +780,7 @@
     "id": "1557",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The town of Telavi is set in the vineyard-strewn Alazani Valley, at the foot of the Gombori Mountains. It's a great base for exploring Kakheti's historical, architectural and viticultural treasures.</p>\r\n\r\n<p>Immerse yourself in the outdoors - learn to fish for wild trout on the river Alazani, go rafting or horse riding. Bird and wildlife watching opportunities are also exceptional in the region's national parks, including some rare and threatened species.</p>\r\n\r\n<p>Sheltering in gladed cypress woods near Telavi are the ruins of the old academy, Ikalto. A religious and educational center during the middle ages, viticulture and wine making were among the subjects studied here and the winery and cellars make up a significant part of the complex.</p>\r\n\r\n<p>At the northern end of the Alazani Valley, the distinctive turret-shaped spire of the 11th-century Alaverdi Cathedral, soars 50 metres above the valley floor. The interior is just as celestial.</p>\r\n\r\n<p>Kakheti is also famous for the Davit Gareji monastery, a UNESCO World Heritage site founded in the 6th century and  skilfully sculpted from the skin of a mountain. It is one of Georgia's most significant historic sites.</p>\r\n\r\n<p>Sighnaghi is the prettiest town in Kakheti, sitting astride a hilltop, flush with   18th- and 19th-century architecture and wonderful views. And of course, it's the setting for one of the biggest autumn wine festivals - not to be missed.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1167"
@@ -789,7 +789,7 @@
     "id": "1558",
     "content":
       "<p>Dmanisi is a town in Kvemo (lower) Kartli in eastern Georgia that has become famous for the ancient human skull fragments that have been found nearby.</p>\r\n\r\n<p>The wider region is well known for its tradition of handcrafts, especially metalwork.</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1169"
@@ -797,7 +797,7 @@
   {
     "id": "1559",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1170"
@@ -806,7 +806,7 @@
     "id": "1560",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Lower Kartli was settled by eastern Georgian tribes during the pre-Hellenic time. Significant archeological excavations have taken place in the region, especially in Dmanisi. Specialists believe that the skulls found in Dmanisi belonged to a people which lived here approximately 1.8 million years ago. The discoveries have forced scientists to reconsider some existing theories about the movements of prehistoric peoples and it is now thought that the human remains discovered in Dmanisi may be from the oldest known human being in Europe and Asia. The skulls are currently kept in the Simon Janashia Museum in Tbilisi.</p>\r\n\r\n<p>This region was also one of the first parts of Georgia to convert to Christianity which explains the large number of churches and monastery complexes throughout its territory.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Dmanisi is located about 85 km south-west of Tbilisi in the Mashavera River Valley. The river disgorges the Javakheti volcanic chain to the west. The region of Kvemo Kartli is surrounded by the triangle of Trialeti, Javakheti, and Bambak-Erevani Mountain ranges.</p>\r\n\r\n<p>The warmest month of the year in Dmanisi is July, with an average temperature of 18&deg;C. In January, the average temperature drops to around -4 &deg;C.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1171"
@@ -815,7 +815,7 @@
     "id": "1561",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Dmanisi and lower Kartli are ideal destinations for those interested in everything from bird watching to archeological, architectural and botanical tours.</p>\r\n\r\n<p>Dmanisi was once the largest fortified fortress-town of Lower Kartli and referred to as the &lsquo;town of kings'. A medieval tower and citadel, a tunnel, cellars, baths, halls, jails, and ruins of households and other buildings still exist.</p>\r\n\r\n<p>Birtvisi Fortress is located in the Algeti gorge of Tetritskaro district, incredibly located between inaccessible cliffs, surrounded by walls covering a total area of 1 km2.</p>\r\n\r\n<p>The Khuluti Fortress is an excellent example of Georgian architecture, its five towers strategically located in a narrow river gorge.</p>\r\n\r\n<p>The Bolnisi Sioni church is the only remaining three aisled basilica in Georgia. It was constructed using carved stones, with its primary layer being different from the layer of bricks and river stones. The temple is decorated with unusual green-turquoise hued stones.</p>\r\n\r\n<p>The Church of the Mother of God, located within the Monastery of Pitareti is one of the most significant examples of Georgian architecture. It contains diverse pieces of high quality art work including intricate engravings and decorative depictions of humans and animals.</p>\r\n\r\n<p>For travellers seeking an outdoors experience, Algeti National Park in the Trialeti region is especially interesting. Mountainous with a great number of small rivers and ravines it is often referred to as Floral Junction, since it supports an incredible array of 1664 species of plants. The park is rich in fauna as well, from bears and wolves to more than 80 species of birds including the Imperial Eagle.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1171"
@@ -824,7 +824,7 @@
     "id": "1562",
     "content":
       "<p>The historic province of Khevsureti is like a gulp of old fashioned fresh air and one of the most beautiful and mysterious parts of Georgia. The largest villages are Barisakho and Shatili.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1173"
@@ -833,7 +833,7 @@
     "id": "1563",
     "content":
       "<p>Khevsureti is famed for its living ancient traditions - the medieval ballads, folk music and folklore, the medieval fortress villages that guard secret valleys, and the unforgettable landscape.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1173"
@@ -841,7 +841,7 @@
   {
     "id": "1564",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1174"
@@ -850,7 +850,7 @@
     "id": "1565",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Despite the sporadic invasions by the royal troops, historically, the highlander communities of Khevsureti and the neighbouring areas enjoyed a degree of autonomy from the royal authorities. Considered Georgia's best warriors, they defended the borders and provided crack troops for the royal guards. </p>\r\n\r\n<p>Their well-preserved ancient traditions are a mix of Christian, Muslim, spiritualist, and pagan beliefs. The Khevsur men dressed in chain mail, armed with broadswords and wore garments decorated with crosses. They considered themselves members of the army of the sacred flags and guards of Georgian kings and had a strict system of physical training in martial arts - that can still be seen in performances today as the warrior dance, Khevsuruli.  </p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Marooned in the mountains of the High Caucasus, Khevsureti borders Chechnya and is included in the present day Mtskheta-Mtianeti region.</p>\r\n\r\n<p>It is a land of narrow mountain passes, remote valleys, emerald mountainsides emblazoned with wild mountain flowers and glacial rivers. In winter, snow makes many of the valleys inaccessible.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1175"
@@ -859,7 +859,7 @@
     "id": "1566",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The Chaukhi massive is on the border of the Khevsureti region and is one of the most popular climbing and hiking areas in Georgia. Fit walkers must make the effort to get to the Abudelauri lakes. It's a challenging hike along narrow rocky paths to reach these three lakes, one blue, one green, one white, and well worth the effort.</p>\r\n\r\n<p>Dozens of fortifications, sanctuaries and churches are scattered across the province. The mountains are rich in slate, and these stone buildings blend naturally into the mountains. Chief of these are the Khakhmati fortress, Akhieli fortress, Lebaiskari fortress, Mutso fortress, Shatili fortifications, Gudani Cross, and the Anatori Cross.</p>\r\n\r\n<p>The village of Shatili has over 50 defensive koshkebi (towers) clinging together on a rocky outcrop. Built between the 7th and 13th centuries, it was abandoned between the 1960s and &lsquo;80s.</p>\r\n\r\n<p>The ruined fortress village of Mutso is straight out of a fantasy movie. Located on rocky hill at 1880 m above sea level, it is a warren of about thirty towers and bone-laden stone crypts.</p>\r\n\r\n<p>At Korsha, 2km past the village of Barisakho, there's a small but interesting museum of Khevsur life, with armour, weapons, traditional clothing and photos and well worth a stop.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1175"
@@ -868,7 +868,7 @@
     "id": "1572",
     "content":
       "<p>Tusheti is an historic mountainous region of Georgia which today forms part of Georgia's eastern region of Kakheti. The largest village in Tusheti is Omalo.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1181"
@@ -877,7 +877,7 @@
     "id": "1573",
     "content":
       "<p>In the past, Tushetian Gouda cheese and its high quality wool have been famous and were exported to Europe and Russia. Even today sheep and cattle breeding is the leading sector of the economy.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1181"
@@ -885,7 +885,7 @@
   {
     "id": "1574",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1182"
@@ -894,7 +894,7 @@
     "id": "1575",
     "content":
       "<h3>History</h3>\r\n\r\n<p>The first inhabitants of Tusheti were the pagan Georgians from Pkhovi who took refuge in the mountains during their rebellion against Christianisation in the 330s. Eventually however, they were forcibly converted to Christianity by the Georgian kings.</p>\r\n\r\n<p>After the collapse of the unified Georgian monarchy, Tusheti came under the rule of Kakhetian kings. When the North Caucasian Bats people (relatives of the Chechens and Ingushes) began settling in Tusheti in the sixteenth century, they were granted lands in the Alvani Valley in exchange for their military service.</p>\r\n\r\n<p>Known to the local Georgians as the Tsova-Tushs, they have a high degree of assimilation and are typically bilingual using both Georgian and their own Bats languages.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Located on the northern slopes of the Greater Caucasus Mountains, Tusheti is bordered by the Russian republics of Chechnya and Dagestan to the north and east, respectively. The Georgian historic provinces Kakheti and Pshav-Khevsureti lie to the south and west</p>\r\n\r\n<p>Tusheti is distinguished by deep river gorges that  slice forcefully through these mountains, and unlike the other regions of East Caucasus, the slopes of Tusheti are blanketed in aromatic, virgin pine forests.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1183"
@@ -903,7 +903,7 @@
     "id": "1576",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>One of the most ecologically pristine regions in the Caucasus, Tusheti is a popular and well established mountain-trekking venue.</p>\r\n\r\n<p>The area is also an idyllic setting for travellers interested in botany, birds and wildlife. The severe climate and giant massifs have resulted in unique varieties of vegetation and its endemic plants will be of great interest to the botanist. As the snows melt and the temperatures begin to thaw, the blossoming of the Caucasian rhododendron, huckleberry, crowberry and other plants carpeting Tusheti's hillsides is a magnificent sight.</p>\r\n\r\n<p>Tusheti has always been renowned for its biodiversity. Its thick forests and rocky peaks are the safe habitat for birds and animals from black grouse and ring-dove, to Caucasian goat and bear, and the rivers are full of wild trout.</p>\r\n\r\n<p>A tour around the delightful mountain villages in Tusheti, built in a traditional style of architecture, also makes for a lovely day of sightseeing.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1183"
@@ -912,7 +912,7 @@
     "id": "1577",
     "content":
       "<p>The river Jobiskhevi, a tributary of the Mtkvari, threads through this jaw-droppingly beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1185"
@@ -920,7 +920,7 @@
   {
     "id": "1578",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1186"
@@ -929,7 +929,7 @@
     "id": "1579",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Samtskhe-Javakheti was part of Tao-Klarjeti, a cradle of medieval Georgian culture that extended well into what is now Turkey. Artifacts found during archeological diggings indicate that Samtskhe-Javakheti was settled during the Bronze Age.</p>\r\n\r\n<p>Tao-Klarjeti fell under Ottoman rule from the 1550s to the 1870s, was briefly part of independent Georgia after the Russian Revolution, and was then divided between Turkey and Bolshevik Georgia in 1921.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Samtskhe-Javakheti is a mountainous region, bordered by the Arsiani Mountains to the west and the Persati Mountains to the north. To the south, it shares an international border with Turkey and Armenia.</p>\r\n\r\n<p>The landscape is extremely varied from beautiful lakes and swift flowing rivers to the alpine forests and high mountain meadows around Borjomi and Bakuriani and the bare volcanic canyons of the Vardzia area.</p>\r\n\r\n<p>The climate in this inland region is relatively cool and dry. Winters are cold with the average temperature in January ranging between 0&deg;C and -7&deg;C depending on altitude, while the average temperature in July varies between 16 &deg;C and 20&deg;C.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1187"
@@ -938,7 +938,7 @@
     "id": "1580",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The biggest attractions in this striking region are the spectacular cave city of Vardzia and the beautiful Borjomi-Kharagauli National Park, which offers some of the best hiking, horse riding and snow shoeing in Georgia. But there is much, much more to see.</p>\r\n\r\n<p>One particularly unique attraction is the Petrified Forest in Goderdzi Reserve. It dates back to the Tertiary Era when the surrounding landscape were covered with red-hot lava streams and volcanic ash. Visitors can walk amongst these ancient petrified tree branches and fossilized lumps of wooden logs.</p>\r\n\r\n<p>The city of Akhaltsikhe, the capital of Samtskhe-Javakheti dates back to the 12th century B.C. Take some time to explore the rabati (old town), with its multicultural architecture. Stroll past rare examples of traditional Georgian houses, a synagogue, an Armenian church and a castle, which houses, among other things, a mosque and the ruins of an Islamic school. Don't miss the historical ethnographic museum that has one of the most interesting museum collections in Georgia.</p>\r\n\r\n<p>A visit to the impressive Atskuri and Tmogvi fortresses, the Chule St. George Monastery and Cathedral, and the pink-stoned Timotesubani, a medieval monastery complex, is well worthwhile for their beauty, sophisticated architecture and design and historical significance.</p>\r\n\r\n<p>The Vardzia Cave complex is one of the most important and impressive historic monuments in Georgia. Carved from  a cliff, the caves used to have as many as 13 stories connected by a complex system of tunnels.  There were once over 3000 caves that could accommodate up to 50,000 people at a time incorporating living quarters, barns, wine storing cellars, stables, drugstores, and libraries.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1187"
@@ -947,7 +947,7 @@
     "id": "1581",
     "content":
       "<p>Kartli is the historical heart of Georgia, cut through by the river Mtkvari and known for its scenic beauty and historic monuments. Its boundaries, which were never strictly defined, have significantly fluctuated over the course of history.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1189"
@@ -956,7 +956,7 @@
     "id": "1582",
     "content":
       "<p>Today, the area is divided into two administrative regions, Shida (inner) Kartli and Kvemo (lower) Kartli.</p>\r\n\r\n<p>Gori is the centre of Inner Kartli and Rustavi is the capital of Kvemo Kartli.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1189"
@@ -964,7 +964,7 @@
   {
     "id": "1583",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1190"
@@ -973,7 +973,7 @@
     "id": "1584",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Located on the ancient Silk Route, Kartli is considered the cradle of Georgian civilization, steeped, marinated and glazed in layers of historyIn Georgian, the country is called Sakartvelo, a name derived from this province and the tribe, the Karts, that settled there. By the late 4th-early 3rd centuries BC, the Kartli Kingdom had emerged as a powerful force and created a single Georgian civilization.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>This large historical area is located in central-eastern Georgia and is filled with gorgeous hidden valleys, plains, orchards and significant cultural treasures.</p>\r\n\r\n<p>Separated from the west by low mountain ranges, Shida Kartli occupies a high plateau that extends along the Mtkvari River and its tributaries. Lower Kartli to the south consists largely of steppes and a number of volcanic lakes.</p>\r\n\r\n<p>The climate of the Kartli region is quite distinct from the climate of West Georgia. It is dry and continental, with temperatures ranging through the year from -1C&deg; in January to 23C&deg; in August.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1191"
@@ -982,7 +982,7 @@
     "id": "1585",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The historic monuments peppered throughout Kartli are a profoundly memorable attraction for travellers.</p>\r\n\r\n<p>Those based in the city of Gori must visit the city's fortress. According to the legend, it was built by Byzantine, Caesar Heraclius when he fought against Persians in the 7th century. The fortress was invaded many times and numerous important treasuries have been discovered here.</p>\r\n\r\n<p>For a contrasting historical experience, Gori's museum of Joseph Stalin is certainly worth a visit. One of Georgia's most interesting museums, it follows Stalin's life from his church school in Gori to a bronze copy of his eerie death mask.</p>\r\n\r\n<p>The Ateni Sioni domed church, the Rkoni monastic complex and the Kintsvisi monastery are all notable historic attractions in the wider region.</p>\r\n\r\n<p>Uplistsikhe is located on the river Mtkvari in Inner Kartli and is one of Georgia's most significant tourist attractions. The complex of caves was a very important cultural centre for pagan worship in the Kartli region.</p>\r\n\r\n<p>For travellers looking to relax away from hectic city lives, take a break at the popular mountain resort of Surami. Soak up the scenery, gulp lungful of fresh alpine air and drink the cocktail of mineral waters. While there, be sure to have a look around the great Surami fortress that overlooks the town, a monumental reminder of ancient times.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1191"
@@ -991,7 +991,7 @@
     "id": "1586",
     "content":
       "<p>Svaneti, one of the most ancient historical provinces of Georgia, is located on the southern slopes of the Caucasus. Surrounded by white-capped peaks, Svaneti is one of the most remarkable regions of Georgia, a hotpot of history steeped amidst timeless unwavering mountains.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1193"
@@ -1000,7 +1000,7 @@
     "id": "1587",
     "content":
       "<p>Svaneti is particularly known for its tower settlements, their cuisine, their unique musical instruments and tradition of woodcarving. Carpenters still make incredible furniture using the same traditional decorative ornaments.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1193"
@@ -1008,7 +1008,7 @@
   {
     "id": "1588",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1194"
@@ -1017,7 +1017,7 @@
     "id": "1589",
     "content":
       "<h3>History</h3>\r\n\r\n<p>In ancient times, Svaneti was part of the Colchis Kingdom. The myth of the Greek Argonauts' voyage to Colchis is thought to be connected to the gold of Svaneti. Svans used sheep wool to capture the gold from the rivers - the wool was fixed to a board that was placed into water, wool side up. Once removed from the water and dried, the gold would fall from the dry wool.</p>\r\n\r\n<p>Svaneti periodically gained independence and had its own ruler and tribal councils. Settlements grew out of large family farms and brotherhoods were created as big families divided.</p>\r\n\r\n<p>Svan religious beliefs and traditions were tied intimately to the fields. They have great respect for rituals which often feature deities protecting cattle and people, and granting fertility.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Svaneti is divided into two parts, Upper Svaneti and Lower Svaneti, separated by the Svaneti Mountain Range and running between the Enguri and Tskhenistskali Rivers. The region boasts several 4000-5000m high peaks.</p>\r\n\r\n<p>At 2000 meters above sea level, the climate of Upper Svaneti is humid and cold.  Temperatures in January average approximately -6 &deg;C and16 &deg;C in July.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1195"
@@ -1026,7 +1026,7 @@
     "id": "1590",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The tower settlements and fortresses in Svaneti are one of its most notable attractions. Originating in the early middle ages, they mirror the austere, natural ramparts of the near impregnable terrain,erupting from the rock and cliffs around them.</p>\r\n\r\n<p>Ushguli is home to the remnants of one of the most ancient fortresses of Svaneti, dating from the reign of Queen Tamar.  Ushguli itself is one of the highest settlements in Europe and like the towers and churches of Svaneti, is under the protection of UNESCO.</p>\r\n\r\n<p>Tourists interested in religious culture will find fine examples of wall paintings and icons from the Middle Ages in the churches around Mestia. The Church of Christ in Lagami is a good example of traditional basilica style architecture and is well known for its frescoes. Etseri and its surrounding villages are also known for their churches including one of the most dazzling, the 10th century Pkhutreri Church of the Archangels.</p>\r\n\r\n<p>Most of the treasures of Svaneti can be enjoyed in the Historic and Ethnographic Museum of Mestia. Highlights include icons from the Middle Ages and late 19th century photographs of Svaneti's landscapes and settlements that documented the daily lives of the local inhabitants.</p>\r\n\r\n<p>The Latali region has earned a reputation for its talented musicians and during festivities, as well as during mourning, visitors may have the opportunity to listen to these spine-tingling polyphonic songs.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1195"
@@ -1035,7 +1035,7 @@
     "id": "1591",
     "content":
       "<p>Khevi is a small historical-geographic area in north-eastern Georgia. High in the pristine and wild Caucasus, visitors will discover proud communities and raw, powerful landscapes.</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1197"
@@ -1044,7 +1044,7 @@
     "id": "1592",
     "content":
       "<h3>History</h3>\r\n\r\n<p>The name of this province, literally meaning &quot;a gorge&quot;, comes from the early medieval district of Tzanaria. The people of Khevi are ethnic Georgians called Mokheves.</p>\r\n\r\n<p>Khevi has long been of great strategic and military importance due primarily to its proximity to the Darial Pass which connects North Caucasus with Transcaucasia.</p>\r\n\r\n<p>Free of typical feudal relations, they lived in a patriarchal community governed by a khevisberi (i.e. &quot;gorge elder&quot;) who functioned as a judge, priest and military leader. When the area was placed under the control of the semi-autonomous Duchy of the Aragvi, it was met with fierce resistance by the communities, a story which has become famous in local folklore and classical Georgian literature. The people of Khevi retained their medieval traditions and a unique form of society until, under Soviet rule, many families were forcibly removed to the lowlands.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Khevi is located in the Kazbegi district of the Mtskheta-Mtianeti region. Situated on the northern slopes of the Greater Caucasus Mountains, the mountainous landscape of Khevi is dominated by snowy peaks, alpine meadows dotted with rhododendron forests, plunging ravines, thundering waterfalls and soaring above it all, the colossal Mount Kazbek. A popular tourist destination, the area is part of the projected Khevi-Aragvi Biosphere Reserve.</p>\r\n\r\n<p>Long winters and short and cool summers are typical to this region and snow permanently covers the mountain peaks.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1198"
@@ -1053,7 +1053,7 @@
     "id": "1593",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Travellers are particularly drawn to Khevi for its extraordinarily dramatic alpine landscape and the centuries-old churches, monasteries and fortifications that perch so wonderfully amongst it.</p>\r\n\r\n<p>The area's important cultural sites include the Gergeti Trinity Church, a significant altar of the 14th century on the slopes of Mount Kazbek, Garbani Church, the Sno fortress, Sioni Basilica and castle and the ancient Betlemi Monastery Complex, its monks are said to have entered by climbing a long iron chain.</p>\r\n\r\n<p>Khevi is home to the Kazbegi National Park, an ideal base for hikers, mountaineers and for those who just appreciate the awe-inspiring views. Don't miss the stunning Dariali Gorge or the Gveleti waterfall. Mount Kazbek is considered one of Georgia's must do climbs suitable for fit climbers and hikers. The park is also rich in wildlife and visitors can be lucky enough to see endangered species such as East-Caucasian aurochs, chamois and mountain eagles.</p>\r\n\r\n<p>Often referred to as the Georgian Dolomites, the big shouldered Chaukhi massive is on the border of three regions of Khevi, Khevsureti and Gudamakari. With its many summits over 3300-3700 m and gorgeous alpine meadows, Chaukhi is one of the most popular climbing and trekking areas in Georgia.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1198"
@@ -1062,7 +1062,7 @@
     "id": "1594",
     "content":
       "<p>The region of Racha-Lechkhumi also officially includes Kvemo (lower) Svaneti. This north-western region is the most sparsely populated in Georgia, situated in the midst of the awe-inspiring Caucasus.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1200"
@@ -1071,7 +1071,7 @@
     "id": "1595",
     "content":
       "<p>It is known for its impassive beauty, wine making, bee-keeping, dairy products and cattle-breeding, carpentry and singing, health resorts and like most of Georgia, for its hospitality. You'll be sure to get a warm welcomes from passionate people who enjoy sharing their paradise.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1200"
@@ -1079,7 +1079,7 @@
   {
     "id": "1596",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1201"
@@ -1088,7 +1088,7 @@
     "id": "1597",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Racha-Lechkhumi and Lower Savaneti was part of the early Kingdom of Colchis. Examples of the first money minted in the kingdom, the Colchis Tetri, were discovered in the city of Oni.</p>\r\n\r\n<p>After the Colchis Kingdom fell apart during the 1st century AD, the territory of modern Racha-Lechkhumi was part of several successive kingdoms until the county of Racha was created in the 10th century, as part of the United Kingdom of Georgia.</p>\r\n\r\n<p>According to medieval records, the mysterious Khvamli caves preserve the treasury of the kings of Georgia - but are yet to be found.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>This region borders Russian territory to the north and the Georgian regions of Samegrelo and Imereti to the west and south. It lies in the soaring mountains, high meadows and green valleys of the Greater Caucasus, its elevation ranging between 400-5000m asl.</p>\r\n\r\n<p>Winters in Racha-Lechkhumi and Lower Svaneti are typically cold and long with permanent ice and snow in the high mountains. The average temperature in January around the settlements of Oni and Ambrolauri drop to between -2&deg;C and -1&deg;C while the average temperature in July typically reaches between 19 &deg;C and 21&deg;C.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1202"
@@ -1097,7 +1097,7 @@
     "id": "1598",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Discover a natural wonderland of mountains, glaciers, rivers and lakes in this region. An outdoor paradise, it is the perfect destination for travellers wanting to try rafting, mountain biking, horse riding, mountaineering and 4x4 adventuring. It also offers exceptional trout fishing, birdwatching and walking.</p>\r\n\r\n<p>After working up an appetite, be sure to try some of the rich booming dishes and wine from the area including a well-known dish called &ldquo;Shkmeruli&rdquo; (chicken in garlic sauce) and the smoked ham of the region which is famous throughout Georgia. The most popular wine is Khvanchkara, liquid rubies and made from grapes that can only grow on the rich lands of Khvanchkara village.</p>\r\n\r\n<p>Racha is also known for its exceptional wood craftsmanship and there are opportunities for tourists to watch and learn about making the traditional crafts.</p>\r\n\r\n<p>Racha-Lechkhumi has numerous churches and monasteries dating back to the middle ages. Some sites worth particular interest include the Nikortsminda and Barakoni temples, Mravaldzali St. George Church, and 19th century Tsageri Cathedral, as well as the medieval Khotevi, Sori, Krikhi, Bugeuli and Labechini churches. Other remarkable early medieval attractions are the Svanetian towers such as those in the village of Leksuri.</p>\r\n\r\n<p>For a taste of the region's cultural treasures, a visit to the Oni, Lado and Tsageri Local Museums is worthwhile. They house fascinating archaeological collections from the Stone Age up to late medieval times, including weapons, ceramics, manuscripts and paintings by 20th century well-known Georgian artists.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1202"
@@ -1106,7 +1106,7 @@
     "id": "1599",
     "content":
       "<p>Adjara is an Autonomous Republic within Georgia and the country's premier summer holiday destination. There's nowhere quite like it on a luxuriously warm evening, the coastal cliffs topped by swaying bamboo forests, tea farms and the sun hanging, ablaze over the Black Sea.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1204"
@@ -1115,7 +1115,7 @@
     "id": "1600",
     "content":
       "<p>The port city of Batumi is the capital of Adjara, an exotic bustling resort town full of energy and self-confidence.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1204"
@@ -1123,7 +1123,7 @@
   {
     "id": "1601",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1205"
@@ -1132,7 +1132,7 @@
     "id": "1602",
     "content":
       "<h3>History</h3>\r\n\r\n<p>The Autonomous Republic of Adjara was one of Georgia's secessionist provinces. Colonised by Greeks in the 5th century BC, the region fell under Roman rule in the 2nd century BC before being incorporated into the unified Georgian Kingdom and then falling under Ottoman control - neoclassical mini-palaces still line the waterfront. The expanding Russian Empire took over Adjara in the late 19th century before it was ultimately ceded to Georgia.</p>\r\n\r\n<p>It was around this time that Adjara became renowned as a seaside jewel, the Black Sea Riviera that families like the Rothschilds and Nobels chose as their elegant summer retreat.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Adjara is situated in the southwest corner of Georgia, washed by the salty breath of the Black Sea. It's bordered by Turkey to the south and the Georgian region of Guria and the Meskheti Range of hills to the north.</p>\r\n\r\n<p>Running from mountains to sea, the region has a wealth of diverse plant and animal species.</p>\r\n\r\n<p>Subtropical and temperate in climate, winters are mild and summers are hot. January is Batumi's coldest month, with an average of 7 &deg;C. Summer temperatures hover between 19 &deg;C and 26 &deg;C.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1206"
@@ -1141,7 +1141,7 @@
     "id": "1603",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Adjara is Georgia's sunshine coast. The region has a wealth of religious monuments and relics as well as fascinating local traditions and exquisite local dishes.</p>\r\n\r\n<p>The ruins of the ancient Petra city-fortress and Gonio-Apsaros Fortress are a real paradise for the lovers of historical and cultural antiquities. The Adjaran highlands also reveal some  intriguing sights - the churches and fortresses of Skhalta, Khikhani and Khino in particular.</p>\r\n\r\n<p>There are great opportunities in the region for horse-riding with popular routes in the dramatic Kintrishi and Skhalta gorges. Many visitors also come for some of the best birdwatching in Georgia - over 800 000 birds of prey twitter over Batumi during the autumn migration.</p>\r\n\r\n<p>But the reason most visitors are drawn to Adjara is for the sun and the sea. An overnight train ride from Tbilisi, the capital of Batumi has numerous restaurants, caf&eacute;s, pebble beaches, and interesting Roman-Byzantine sites to explore. The seaside park is one of the charms of the city, a green line stretching along the seashore.</p>\r\n\r\n<p>Drive up into the hills behind the city to Mtsvane Kontskhi (Green Cape) and wander through the lush, century-old botanical gardens with sweeping views of the city.</p>\r\n\r\n<p>There are numerous seaside resorts festooning the coast for swimmers, sun-bleached sunbathers and boating enthusiasts from Kobuleti with its long beach the colour of lightly toasted almonds and the green slopes of Tsikhisdziri. The resort of Chakvi is the historical homeland of Georgian tea.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1206"
@@ -1150,7 +1150,7 @@
     "id": "1604",
     "content":
       "<p>The region of Imereti is situated on the beautiful Rioni River. The main city of the region is Kutaisi, the second biggest city in Georgia and Tbilisi's traditional rival.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1208"
@@ -1159,7 +1159,7 @@
     "id": "1605",
     "content":
       "<p>Besides its rich cultural heritage, Imereti is known for its viticulture, dairy products and orchards.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1208"
@@ -1167,7 +1167,7 @@
   {
     "id": "1606",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1209"
@@ -1176,7 +1176,7 @@
     "id": "1607",
     "content":
       "<h3>History</h3>\r\n\r\n<p>The region's history dates back to ancient times. 3500 years ago the powerful and well-known Colchis Kingdom was established in western Georgia with its unique culture, education, political and military system. Archaeological excavations have exposed many valuable objects including stunning gold jewellery, agricultural tools and weapons from this period which can be seen at a special archaeological museum in Vani.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>This central western region of Georgia borders the Likhi Mountain Range to the east, Tskhenistskali River to the west, the mountainous region of Racha-Lechkheumi to the north and Meskheti or Persati Mountains to the south. The forests and meadows in this region teem with wildlife.</p>\r\n\r\n<p>The Imereti lowland is part of the Kolkheti Valley and enjoys a sub-tropical sea climate.  Winter here is mild, while the summer is hot.  The average annual temperature is 11-15 degrees Celsius.  Upper Imereti has colder winters with more rain.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1210"
@@ -1185,7 +1185,7 @@
     "id": "1608",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Imeteti is home to two of the most unique masterpieces of Georgian architecture, the Bagrati Cathedral and Gelati Monastery Complex, both of which are protected by UNESCO and shouldn't be missed by visitors to Georgia. Bagrati Cathedral, now in partial ruins, stands watch over the attractive city of Kutaisi and has been the home of Colchis kings since antiquity. The Gelati Academy and Monastery was one of the biggest religious, educational, scientific and philosophical centers of Georgia.</p>\r\n\r\n<p>There are also numerous lesser known but intriguing historic and cultural landmarks dotted throughout Imereti. The Ubisa Temple is one of the most important examples of Georgian monumental painting while the striking Mgvimevi Monastery appears sculpted from the side of a cliff by butter knives. At Katskhis Sveti there are two mysterious churches built above a 40m high cliff. Thought to have been the home of hermit monks who came from the Middle East, they can only be reached by a testing climb up hanging stairs,</p>\r\n\r\n<p>The colourful villages of Imereti also have a special charm, each with their unique characteristics to explore, from cool chambers of aging wine to the homes of pottery and Georgian cognac.</p>\r\n\r\n<p>The Borjomi-Kharagauli National Park is a must see for outdoor enthusiasts. One of Europe's true wildernesses, it covers more than 76,000 hectares of native forest and sub-alpine and alpine meadows, and is home to rare species of flora and fauna including lynx and golden eagle.</p>\r\n\r\n<p>Sataplia Reserve is an example of Georgia's karstic landscapes and the magic that happens when water meets limestone - grottos and caverns with the most gorgeous display of stalactites, stalagmites and mineral rock curtains. Over 200 footprints from dinosaurs have been discovered here. When you go, be sure to check out the local museum.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1210"
@@ -1194,7 +1194,7 @@
     "id": "1609",
     "content":
       "<p>Also known as Mingrelia or Mengrelia, the region of Samegrelo is located in Western Georgia on the Black Sea. The pretty and fertile area overflows with exotic produce from mandarin groves and tea plantations to chilies and kiwi fruit.</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1212"
@@ -1202,7 +1202,7 @@
   {
     "id": "1610",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1213"
@@ -1211,7 +1211,7 @@
     "id": "1611",
     "content":
       "<h3>History</h3>\r\n\r\n<p>Samegrelo is home to the Megrelians, a distinctive sub group of Georgians who have their own language and traditions. In ancient times Samegrelo was a large part of the Kingdom of Colchis, featuring in Greek mythology as the rim of the world and the mysterious country where the Argonauts sailed in pursuit of the Golden Fleece. It was also in Colchis that the first Georgian money was minted - the Colchian tetri. In the 16th century, Samegrelo was ruled by Georgian dynasty, Dadiani, their castle-like palace can still be visited in Zugdidi.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>The region is divided into a low-lying land to the west around the major seaport of Poti and a hilly northern section bordering Svaneti. The main rivers are the Rioni, Enguri and Tskhenistskali. The Kolkheti National Park covers a large area of the coastal plain within the region, with more than half the park made up of significant wetlands and lakes.</p>\r\n\r\n<p>Zugdidi is the main city of the region and its administrative centre. The city of Poti on the Black Sea is the main port and trade centre of the country.</p>\r\n\r\n<p>The climate of Samegrelo along the Black Sea coast is subtropical, with hot summers and mild winters. The average January temperature is around 7C&deg; while in July it commonly reaches 24C&deg;.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1214"
@@ -1220,7 +1220,7 @@
     "id": "1612",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>The palace of the Dadiani family, former dukes of Samegrelo, is now a museum complex located in Zugdidi. As well as 19th-century paintings of the Caucasus region, fine furniture, crockery and other historical flotsam, the showstopper is one of Napoleon Bonaparte's three bronze death masks. The palace garden is planted with rare trees and bushes, brought from different parts of the world and well worth a stroll.</p>\r\n\r\n<p>Zugdidi is also home to some of the best food in the country. It is typically much spicier than elsewhere in Georgia and includes dishes that almost taste like curry so be sure to sample the local specialties. The bustling city also serves as an ideal stepping stone for getting to Svaneti or Abkhazia.</p>\r\n\r\n<p>For outdoors enthusiasts, boating tours, notably on Lake Paliastomi and the Pichori River are offered in the enchanting Kolkheti National Park, as well as diving, bird watching, hiking and horse riding. Samegrelo is also rich in karst limestone caves and a real paradise for speleologists.</p>\r\n\r\n<p>For travellers with a penchant for archaeology and architecture, there is plenty to see throughout the region. One outstanding attraction is the village and archaeological site of Nokalakevi. It is thought to be the site of the mythological city of Aia, capital of the Kingdom of Colchis. The ruins of ancient palaces, Christian churches, baths, and tunnels have all been identified and preserved.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1214"
@@ -1229,7 +1229,7 @@
     "id": "1613",
     "content":
       "<p>Guria is located in the western part of Georgia, bordered by the Black Sea. Famous for its music and polyphonic singing, Guria is a region rich in cultural traditions and natural beauty. The countryside is a fetching mosaic of perfumed citrus groves, tea plantations, orchards, grape vines and cornfields.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1216"
@@ -1238,7 +1238,7 @@
     "id": "1614",
     "content":
       "<p>Social relationships are strictly defined in Guria and they are known for their politeness and respect for the elderly. Gurians are also known for their building skills and handcrafts including leatherwork, saddle making and basket making.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1216"
@@ -1246,7 +1246,7 @@
   {
     "id": "1615",
     "content": "<hr />",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1217"
@@ -1255,7 +1255,7 @@
     "id": "1616",
     "content":
       "<h3>History</h3>\r\n\r\n<p>As with much of western Georgia, Guria was once part of the legendary Kingdom of the Colchis tribe. Roman coins from the 3rd-4th centuries have been found here and the remains of ancient burial mounds have also been found in the dunes along the Black Sea. During the Middle Ages this part of Georgia was an independent principality governed by the Gurielis.</p>\r\n\r\n<p>Gurian people were very good horse-riders and participated in Buffalo Bill's Wild West Show.  They traveled to Europe and America numerous times, starting their performances with Georgian songs and dances,</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>Guria is bordered by Samegrelo to the north-west, Imereti to the north, Samtskhe- Javakheti to the east, Adjara and the Meskheti Mountain range to the south, and the Black Sea to the west. It's capital is the town of Ozurgeti.</p>\r\n\r\n<p>Much of the eastern lowlands of Guria are awash in wetlands and swamp forests including the enchanting Kolkheti National Park. Thick beech, pine and fir forests cloak the mountains.</p>\r\n\r\n<p>Winter in Guria is mild, while the summer is hot. This region is also characterised by high winds.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1218"
@@ -1264,7 +1264,7 @@
     "id": "1617",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>It is hard to beat the simple pleasure of exploring the pretty Gurian countryside. Discover the unique charms of the Gurian villages, their little wooden houses nestle into the gold and green landscape, corn kernels and pumpkins outside drying in the sun.</p>\r\n\r\n<p>Lake Paliastomi, in Kolkheti National Park is of great interest to visitors thanks to its large bird population. More than 190 species have been sighted in the park including rare pelicans, storks and booted eagles.</p>\r\n\r\n<p>Local museums such as the Niko and Ozurgeti Museums are also well worth a visit. They contain diverse collections from the Neolithic period and Bronze Ages, from Colchian axes and hoes to currency and a comprehensive library of Georgian, Russian, French books and writings.</p>\r\n\r\n<p>Other historic places of interest include the Gurieli Church and Palace, the artificial caves of Khoreti and Gaguri, Bukistsikhe Castle, Goraberejouli Castle and Church, Upper Erketi Church, and the Udabno Monastery Complex and the Shemokmedi Monastery, one of the biggest cultural-educational centers in the region.</p>\r\n\r\n<p>For tourists seeking a place to relax and unwind, Guria has a number of popular health resorts, perfect for a rejuvenating break away. Nabeghlavi resort is particularly known for its mineral waters while Ureki is a health resort on the beaches of the Black Sea, famous for its magnetic sand beaches. One of the best mountain resorts in Georgia is in Guria, in the village of Bakhmaro on the Meskheti Mountain range. Located 2,000 meters above sea level, it's known for its unique climate of sea and mountain air.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1218"
@@ -1273,7 +1273,7 @@
     "id": "1620",
     "content":
       "<p>格鲁吉亚紧挨着欧洲和亚洲，以黑海和高加索高耸的山峰为界，融合了东西方的影响，但保留了与众不同的文化。 从它的雪脊上掉下来的是一片令人惊讶的皱巴巴的绿色山丘，蜿蜒的河流和金色的藤蔓。 佐治亚州拥有古老的遗产，山脉或大海的选择，以及一流的葡萄酒，盛宴和不懈的热情好客，是每个旅客的理想目的地。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1222"
@@ -1282,7 +1282,7 @@
     "id": "1621",
     "content":
       "<p>步行者，登山者和滑雪者将想要探索山脉，森林和传统村庄。 河流非常适合钓鱼和漂流，而植物学家和鸟类观察者将被令人难以置信的植物和野生动物的多样性所吸引。 但格鲁吉亚也以其美丽的教堂和防御工事而闻名，从装饰有壁画的蜂蜜色修道院到从该国骨干中挖空的洞穴城市。 不能错过复调的歌声。 格鲁吉亚是一片未受破坏的土地，拥挤不堪，等待被发现。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1222"
@@ -1291,7 +1291,7 @@
     "id": "1626",
     "content":
       "<p>Column 1<img alt=\"\" src=\"/library/content/history1.jpg\" style=\"width: 630px; height: 350px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1225"
@@ -1299,7 +1299,7 @@
   {
     "id": "1627",
     "content": "<p>Column 2</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1225"
@@ -1308,7 +1308,7 @@
     "id": "1728",
     "content":
       "<p>格鲁吉亚是目的地浪漫。 乔治亚州是一个童话故事的挂毯，包括崇高的石头教堂和了望塔，冰川高山峰，夏季草地和夏末的焦糖葡萄园，是与伴侣分享的绝佳场所。 在格鲁吉亚的葡萄酒中，您可以在格鲁吉亚的婚礼中享受生动而醉人的婚礼。＆nbsp; 体验浪漫和魔力的一天，你永远不会忘记。 我们的团队将让您沉浸在真正的格鲁吉亚婚礼氛围中，享受传统舞蹈，音乐和美食。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1298"
@@ -1317,7 +1317,7 @@
     "id": "1729",
     "content":
       "<p>为什么不将您的特殊日子与格鲁吉亚之旅结合起来。 手牵手走过古老的城市小巷迷人的网络。 参观佐治亚州最美丽的教堂，其精美的雕刻和壁画。 探索迷人的雪峰万花筒，木质包覆＆nbsp; 斜坡，古老神秘的寺庙，美妙的宫殿和令人敬畏的堡垒。 经过一天的观光后，没有比在第比利斯着名的矿泉浴室享受奢华浸泡更好的方式。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1298"
@@ -1326,7 +1326,7 @@
     "id": "1860",
     "content":
       "<p>沿着古老的脚步，从里海沿岸到高加索山脉的高峰。 每个国家都有独特的文化，历史和传统，从诺亚方舟的传奇登陆地点到山顶上岌岌可危的修道院，佐治亚州着名的葡萄园和阿塞拜疆强大的波斯影响。 这三个高加索国家拥有丰富的历史宝藏，不可磨灭的风景和无尽的冒险机会。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1400"
@@ -1335,7 +1335,7 @@
     "id": "1861",
     "content":
       "<p>阿塞拜疆的石油浸泡的土地包含重要的史前岩石雕刻，泥火山，粉红色的盐湖和辉煌的彩色玻璃宫殿。 探索首都巴库及其华丽的歌剧院和剧院以及带有咖啡馆和小屋的围墙老城区以及地毯商店。 邻近的佐治亚州拥有世界一流的葡萄酒，壮观的宗教场所，悬崖峭壁和无与伦比的远足机会。 埃里温是内陆亚美尼亚的国际首都，拥有地中海风情，充满异国情调的跳蚤市场和引人注目的石头教堂。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1400"
@@ -1344,7 +1344,7 @@
     "id": "1972",
     "content":
       "<p>格鲁吉亚是高加索和中亚的门户，这是一个战略性地点，可让投资者轻松接触数百万潜在客户，同时保持与重要商业中心的良好接近。 第比利斯正在发展成为一个具有巨大未来增长潜力的地区的金融中心。 格鲁吉亚拥有商业友好的环境，年轻的优秀劳动力和灵活的劳动立法。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1479"
@@ -1353,7 +1353,7 @@
     "id": "1973",
     "content":
       "<p>TikaTours提供商务和投资之旅，旨在为外国投资者提供第一手机会，探索格鲁吉亚的商业和投资机会。 格鲁吉亚的主要投资领域包括旅游业，农业，房地产，酒店，运输和可再生能源。 我们可以将您与当地顶级私营公司，律师，会计师和当地政府代表联系起来。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1479"
@@ -1362,7 +1362,7 @@
     "id": "1974",
     "content":
       "<p>把自己扔进一个假期，以吸引整个家庭。 您可以轻松前往大海和山脉，河谷进行漂流和洞穴城市的探索。 无论您是在寻找轻松的海滩假期，充满乐趣的冒险，教育体验，还是奢华的家庭度假，我们都会安排一个令人难忘的格鲁吉亚假期，满足所有年龄段，能量水平的需求。 和好奇心。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1480"
@@ -1371,7 +1371,7 @@
     "id": "1975",
     "content":
       "<p>在短途徒步旅行中探索葡萄园和村庄，或租用自行车，带着家人到山上踩踏板 - 和面包店。 他们会喜欢着名的奶酪馅饼，khachapuri。 在探索教堂，城堡和堡垒的同时，预订年龄较大的孩子参加骑马课程。 美丽的海滩和壮观的山路将受到孩子们的欢迎，一定要花一些时间在世界上最大的植物园之一。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1480"
@@ -1380,7 +1380,7 @@
     "id": "1978",
     "content":
       "<p>为了获得极致的刺激，让自己沉浸在佐治亚州非凡的后院中，乞求户外探险。野心勃勃。 步行前往森林覆盖的山坡。 沿着宁静的小径穿过茂密的树木繁茂的林间空地，穿过古老的石头城堡，或在高蜿蜒的山路上呼吸。 漂浮在隐藏的河谷中的雷鸣般的瀑布，不要错过山地自行车，还有无穷无尽的史诗轨道。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1484"
@@ -1389,7 +1389,7 @@
     "id": "1979",
     "content":
       "<p>格鲁吉亚拥有众多令人生畏的山脉，其中一些是欧洲最高的山峰，也是登山的圣杯。 在滑翔伞翼下滑过白雪皑皑的山峰，或者在地下探索，探索洞穴，洞穴和湖泊的不可能世界。 对于那些喜欢露天探险的人来说，可以骑马穿越鲜花盛夏的草地，骑马游览。丰富多样的植物群和动物群非常适合植物学家，鸟类观察者和野生动物爱好者。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1484"
@@ -1398,7 +1398,7 @@
     "id": "1982",
     "content":
       "<p>不是亚洲人，也不是完全欧洲人，格鲁吉亚是东西方影响和古老起点的令人陶醉的结合。 世界上最早采用基督教的地方之一，这个国家也被称为葡萄酒的发源地，也是古希腊神话中杰森和阿尔戈英雄的家园，也是他们寻找金羊毛的地方。 但格鲁吉亚也是我们最早的人类祖先的家园，他们的遗体可追溯到近200万年。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1486"
@@ -1407,7 +1407,7 @@
     "id": "1983",
     "content":
       "<p>探索格鲁吉亚有趣的历史和充满活力的文化。 追随丝绸之路的诱惑，这段旅程几个世纪以来一直困扰着旅行者。 探索迷人而优雅的城市及其艺术和建筑 - 教堂，大教堂，壁画，马赛克，古老的铁艺洞穴城镇，堡垒和城堡。 体验古怪的博物馆，精心制作的剧院和舞蹈，欢快的当地美食和葡萄酒以及无法抑制的音乐。 参观者将受到格鲁吉亚人的热情和热情好客的欢迎。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1486"
@@ -1416,7 +1416,7 @@
     "id": "1997",
     "content":
       "<p>Mtskheta-Mtianeti is one of the most scenic regions in Georgia like a perfectly composed painting brought vividly to life. It is mainly an agricultural region but also contains Georgia's main skiing resort, Gudauri.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1498"
@@ -1425,7 +1425,7 @@
     "id": "1998",
     "content":
       "<p>The city of Mtskheta is the administrative capital of the region and was once the ancient capital of the country.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1498"
@@ -1433,7 +1433,7 @@
   {
     "id": "1999",
     "content": "",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1499"
@@ -1442,7 +1442,7 @@
     "id": "2000",
     "content":
       "<h3>History</h3>\r\n\r\n<p>The picturesque settlement of Mtskheta is one of the oldest continuously inhabited settlements in the world. It was capital of most of eastern Georgia between the 3rd century BC and the 5th century AD, when that role was moved to Tbilisi.</p>\r\n\r\n<p>However, Mtskheta has remained a spiritual capital for the country. The numerous culturally significant monuments scattered around Mtskheta form a UNESCO World Heritage site and are a reminder of its past glories.</p>\r\n\r\n<h3>Geography and climate</h3>\r\n\r\n<p>This geographically diverse region represents a luscious slice of Georgia. It extends from the 3500-5000m high snowy peaks and glaciers of the Greater Caucasus through knife edge ravines and secluded lakes, south to lush river valleys and lowland plains.</p>\r\n\r\n<p>The city of Mtskheta is in an attractive setting in the south of the region, at the confluence of the Aragvi and Mtkvari Rivers where they have carved a passage through steep hills.</p>\r\n\r\n<p>The climate varies considerably from north to south but generally, winters in the region are cold and marked with a lot of snow. Summers in the lowlands are relatively warm while mountainous northern areas stay cool all year round.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1500"
@@ -1451,7 +1451,7 @@
     "id": "2001",
     "content":
       "<h3>What to see and do</h3>\r\n\r\n<p>Mtskheta-Mtianeti is the perfect place for adventure seekers. Popular activities in the region include paragliding, ski-touring, snowmobile sightseeing tours, trekking and hiking, bird-watching, horse riding, mountain biking, white water rafting, fishing, mountaineering, rock climbing, camping and more.</p>\r\n\r\n<p>Gudauri is Georgia's main snow resort and a premier outdoors playground with over 50 kilometres of prepared runs. The resort offers four types of runs: slalom, giant slalom, super giant and downhill racing, with something for every skier from beginner to professional.  Great snow coverage means the season runs from December to mid-April. Drop into the Khada Hut for a delicious meal and a welcome rest in the friendly atmosphere.</p>\r\n\r\n<p>This region is also the spiritual heart of the country and home to two of Georgia's greatest churches, Svetitskhoveli and Jvari. The Jvari Monastery stands solitary and sublime atop a hill overlooking Mtskheta.  Here, the missionary St Nino herself erected a cross (&quot;jvari&quot; in Georgian) in the 4th century to mark the coming of Christianity to Georgia.</p>\r\n\r\n<p>Svetitskhoveli is the royal cathedral of Georgia, used for centuries for the coronation and burial of Georgian monarchs. Nearby, in a narrow limestone canyon is the Shio-mgvime Monastic complex . It was founded by one of the 6th century Syrian Fathers who lived here as a religious recluse in a dark cave for 20 years, praying and devoting himself to God.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1500"
@@ -1460,7 +1460,7 @@
     "id": "2006",
     "content":
       "<p>阿塞拜疆，格鲁吉亚和亚美尼亚的高加索地区是一个保存完好的秘密，一个眼睛的盛宴，一个冒险和文化爱好者天堂的快感。 参观这三个神秘，迷人，异常美丽和奇妙欢迎的国家，将在戏剧性的冰雪覆盖的山峰，半干旱的沙漠，充满异国情调的现代化城堡，古老的城堡和古朴的村庄之间编织，这些古老而坚固的传统与土地一样古老而坚定。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1506"
@@ -1469,7 +1469,7 @@
     "id": "2007",
     "content":
       "<p>亚美尼亚和格鲁吉亚是两个最古老的基督教国家，而在伊斯兰阿塞拜疆，这种文化反映了伊朗和欧洲的影响。 堡垒，修道院，清真寺和教堂点缀着景观。 参观阿塞拜疆的巴库老城，亚美尼亚的悠闲首都，埃里温和佐治亚州的美丽乡村。 A Tika 高加索亚美尼亚和格鲁吉亚是两个最古老的基督教国家，而在伊斯兰阿塞拜疆，这种文化反映了伊朗和欧洲的影响。 堡垒，修道院，清真寺和教堂点缀着景观。 参观阿塞拜疆的巴库老城，亚美尼亚悠闲的首都埃里温，以及佐治亚州的美丽乡村。 高加索之旅非常适合那些喜欢超越人迹罕至并享受奢华款待的客人。之旅非常适合那些喜欢超越常规并享受奢华款待的客人。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1506"
@@ -1478,7 +1478,7 @@
     "id": "2010",
     "content":
       "<h3>我们为当地社区所做的一切</h3>\r\n\r\n<ul>\r\n\t<li>为孤儿提供融资</li>\r\n\t<li>在达里亚尔峡谷的教堂建设 - 恢复融资</li>\r\n\t<li>在Tusheti的Shenako教堂的融资恢复</li>\r\n\t<li>Manglisi教堂的融资恢复</li>\r\n\t<li>建立游乐园和绿色区域</li>\r\n\t<li>2014年在格鲁吉亚资助旅游峰会</li>\r\n\t<li>为阿姆斯特丹应用科学大学的格鲁吉亚学生提供暑期课程融资</li>\r\n\t<li>在国外推广格鲁吉亚文化</li>\r\n\t<li>阿姆斯特丹免费格鲁吉亚舞蹈课程</li>\r\n\t<li>着名格鲁吉亚艺术家的绘画展<br />\r\n\t </li>\r\n</ul>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1510"
@@ -1486,7 +1486,7 @@
   {
     "id": "2011",
     "content": "",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1510"
@@ -1495,7 +1495,7 @@
     "id": "2040",
     "content":
       "<p>格鲁吉亚舞蹈精致，充满激情，极具娱乐性，是表达几个世纪以来格鲁吉亚艺术，文化和传统的国宝。</p>\r\n\r\n<p>每一场舞蹈都是对格鲁吉亚生活和民间传说的庆祝，描绘了它起源地区的独特特征。 山地舞蹈与山谷或低地舞蹈有很大不同。 每件舞蹈的服装也不同，类似于佐治亚州不同地区的过去的服装。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1525"
@@ -1504,7 +1504,7 @@
     "id": "2041",
     "content":
       "<p>许多格鲁吉亚舞蹈都是基于竞争的观念。 他们经常代表婚礼，战争，季节性庆祝，爱情，勇气，男女关系，韧性，技巧和美丽的想法，将它们组合成令人难以置信的强大，令人难忘的表演。</p>\r\n\r\n<p>最着名的格鲁吉亚舞蹈包括Kartuli--一种浪漫的舞蹈，Khorumi战舞，Tbilisuri--一种描绘第比利斯，Samaia生活的轻盈有趣的舞蹈 - 一种优雅的舞蹈，骄傲地呈现格鲁吉亚历史，Parta节日舞蹈，Mtiuluri 山地舞蹈，Khevsuruli--一种爱与勇气的舞蹈，以及Parikaoba战士舞蹈。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1525"
@@ -1513,7 +1513,7 @@
     "id": "2042",
     "content":
       "<h3>Acharuli<img alt=\"\" src=\"/library/content/img11.jpg\" style=\"color: rgb(0, 0, 0); font-family: inherit; font-size: 1.1em; line-height: 1.42857143;\" /></h3>\r\n\r\n<p> </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1526"
@@ -1522,7 +1522,7 @@
     "id": "2043",
     "content":
       "<h3>Tbilisuri<img alt=\"\" src=\"/library/content/img12.jpg\" style=\"color: rgb(0, 0, 0); font-family: inherit; font-size: 1.1em; line-height: 1.42857143; width: 630px; height: 350px;\" /></h3>\r\n\r\n<p> </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1526"
@@ -1531,7 +1531,7 @@
     "id": "2044",
     "content":
       "<h3>Samaia<img alt=\"\" src=\"/library/content/samaia_cr.jpg\" style=\"width: 630px; height: 350px;\" /></h3>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1527"
@@ -1540,7 +1540,7 @@
     "id": "2045",
     "content":
       "<h3>Mtiuluri<img alt=\"\" src=\"/library/content/mtiuluri_cr.jpg\" style=\"width: 630px; height: 350px;\" /></h3>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1527"
@@ -1549,7 +1549,7 @@
     "id": "2046",
     "content":
       "<p>格鲁吉亚是一个古老的基督教土地和前苏联共和国，拥挤和未开发，提供了一个成熟和熟悉的夏末水果的神秘。 该国分为九个行政区，两个自治区和首都第比利斯。 每个地方都有自己独特的灵魂 - 从国际大都市的轻松喧嚣到宁静的山村和亚热带海滨度假胜地。 访问格鲁吉亚的地区，并陷入民间传说和古代文明的痕迹的土地的咒语。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1529"
@@ -1558,7 +1558,7 @@
     "id": "2047",
     "content":
       "<p>在高加索阴影下在Kakheti度过一天的品酒。 探索第比利斯蓬勃发展的文化景观和复杂的卡尔特历史。 潜入闷闷不乐的翡翠森林和姆茨赫塔 - 姆蒂内蒂（Mtskheta-Mtianeti）一览无余的山谷，探索Samtskhe-Javakheti历史悠久的岩石窑洞城镇Vardzia。 见证令人难以置信的野生动植物和风景，如同在伊梅利亚的闪闪发光的星星一样鼓舞人心。 在Racha-Lechkhumi的户外游乐场感受刺激的刺激。 无论你走到哪里，你都会在盘子里享受格鲁吉亚的历史和文化。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1529"
@@ -1567,7 +1567,7 @@
     "id": "2072",
     "content":
       "<p>格鲁吉亚是一个古老的地方，经过长时间的钎焊和釉面，有许多层次的黑暗和粘性历史，还有很多景观可供游客观赏。</p>\r\n\r\n<p>格鲁吉亚是其中之一 世界上第一批在公元337年正式采用基督教的国家，以及在你旅行时会注意到的最引人注目的事情之一，那就是美丽的古老教堂，修道院和山坡上的大教堂。＆nbsp; </p>\r\n\r\n<p>但它的历史远远超过了它。 最早占领现今格鲁吉亚的证据可追溯到大约180万年，在首都第比利斯附近出土了一个古老的人类祖先的头骨。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1542"
@@ -1576,7 +1576,7 @@
     "id": "2073",
     "content":
       "<p>格鲁吉亚的历史也可以追溯到希腊神话中的故事，当时高加索被认为是支撑世界的支柱之一。 根据希腊神话，在青铜器时代，格鲁吉亚是Colchis王国的所在地，这是一片令人难以置信的富裕土地，Jason和Argonauts在那里寻找金羊毛。 现今黑海的Kolkheti地区是这个传奇王国的继承者。</p>\r\n\r\n<p>罗马帝国在公元前66年完成征服高加索地区之后，王国 是一个罗马客户国和盟友近400年。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1542"
@@ -1585,7 +1585,7 @@
     "id": "2074",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img16.jpg\" /></p>\r\n\r\n<p>12世纪至13世纪初是一个被广泛称为格鲁吉亚黄金时代或格鲁吉亚时期的时期。 再生。 建立了教育中心，包括着名的Gelati和Ikalto修道院 - 教授哲学，天文学，数学，修辞和音乐的学院。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1543"
@@ -1594,7 +1594,7 @@
     "id": "2075",
     "content":
       "<p><img alt=\"\" src=\"/library/content/img15.jpg\" /></p>\r\n\r\n<p>格鲁吉亚多年来一直被希腊人，罗马人，波斯人和其他人入侵，其边界和首都随着国王和入侵者的统治而不断变化。<br />\r\n今天，格鲁吉亚越来越成为登山者的目的地， 步行者，滑雪者，食物和文化猎犬在陈旧的旅游路线上寻找冒险。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1543"
@@ -1603,7 +1603,7 @@
     "id": "2088",
     "content":
       "<p>在热水池中浸泡是生活中最奢华和最具活力的体验之一，格鲁吉亚很幸运能够拥有超过这些治疗水域的公平份额。 当地人已经享受了2000多种矿泉水，这些泉水经过了几个世纪的飞溅，滴水，休闲和嬉水。 这些热水库提供公认的药用特性，可以自然地改善皮肤再生，血液循环，关节活动，并带来一般的幸福感。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1552"
@@ -1612,7 +1612,7 @@
     "id": "2089",
     "content":
       "<p>从第比利斯的大型蓝色瓷砖Orbeliani浴场到树木繁茂的高山温泉小镇和黑海最田园诗般的阳光般的度假胜地，如果没有时尚的浸泡，格鲁吉亚之旅将无法完成。 真的没什么比滑进温泉池更能让身心焕然一新。 通过冒着灼热的桑拿和传统的格鲁吉亚打击来追随它。 轻快的散步，伴随着充满新鲜松树香气的山间空气，你所有的紧张情绪都会消失。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1552"
@@ -1621,7 +1621,7 @@
     "id": "2090",
     "content":
       "<p>格鲁吉亚人民与食物和葡萄酒有着充满激情和根深蒂固的关系。 凭借其精湛的美食，令人兴奋的葡萄酒和无与伦比的热情好客，您一定不会感到饥饿 - 或者在格鲁吉亚度假时口渴。 参加Supra并享用当地特色美食，如无处不在的khachapuri（填馅扁面包），shashlik（烤肉串）和badrijani nigvzit（带胡桃酱的茄子）。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1553"
@@ -1630,7 +1630,7 @@
     "id": "2091",
     "content":
       "<p>在传统的Supra中，您不仅可以享受健康的饮食机会，而且还可以品尝到葡萄酒世界。 作为葡萄种植的发源地，佐治亚州拥有世界上最古老的酿酒传统，传承了8000年的秘密。 几乎每个房子外面都有藤蔓覆盖的格子，葡萄等待压榨和发酵，以制作出色的有机葡萄酒。</ p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1553"
@@ -1639,7 +1639,7 @@
     "id": "2095",
     "content":
       "<p style=\"text-align: center;\">Visit our <a href=\"/\">homepage</a> or use the navigation above to find what you are looking for.</p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1557"
@@ -1648,7 +1648,7 @@
     "id": "2274",
     "content":
       "<p style=\"text-align: center;\">无论您想要举办公司休闲活动，特别庆祝活动，豪华家庭度假还是休闲度假，我们的酒店都为您的假期提供独特而私密的环境。 </p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1709"
@@ -1656,7 +1656,7 @@
   {
     "id": "2275",
     "content": "<h3 style=\"text-align: center;\">Bohema餐厅</h3>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1710"
@@ -1665,7 +1665,7 @@
     "id": "2276",
     "content":
       "<p><img alt=\"\" src=\"/library/content/bohema-restaurant.png\" style=\"width: 630px; height: 379px;\" /></p>\r\n\r\n<p><br />\r\n </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1711"
@@ -1674,7 +1674,7 @@
     "id": "2277",
     "content":
       "<p>在屡获殊荣的Bohema餐厅尽情享受格鲁吉亚美食，并享用丰盛的菜肴和多汁的葡萄酒。 我们的餐厅菜单提供富有想象力的格鲁吉亚传统和诱人的融合菜肴，保证您的味蕾诱人。 这家设计精美的餐厅不仅拥有顶级的国家建筑奖，而且以其采用有机新鲜食材的环保方式而闻名。餐厅的专职工作人员将注重细节和高端客户服务，使您的 活动真的令人难忘。</p>\r\n\r\n<p>事实上，您会被美丽的自然环境所震撼，甚至可能都没有注意到可口的波希玛美食。<br />\r\nBohema餐厅位于Old Tbilisi的中心地带，设有一个户外大型露台，享有Old Tbilisi最壮观的景色，可根据您的意愿组织私人现场爵士乐或民俗表演音乐会。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1711"
@@ -1682,7 +1682,7 @@
   {
     "id": "2278",
     "content": "<h3 style=\"text-align: center;\">Ch&acirc;teau Svanidze</h3>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1712"
@@ -1691,7 +1691,7 @@
     "id": "2279",
     "content":
       "<p><img alt=\"\" src=\"/library/content/chateau.png\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1713"
@@ -1700,7 +1700,7 @@
     "id": "2280",
     "content":
       "<p>格鲁吉亚是葡萄酒之乡的发源地，葡萄酒酿造始于公元前五千年左右。 来自格鲁吉亚语，“葡萄酒”这个词。 传播到其他欧洲语言。 格鲁吉亚是世界上唯一一个将葡萄酒保存在称为“Qvevri”的粘土容器中的国家。 这种古老的酿酒和储藏方法被列入联合国教科文组织的文化宝藏清单。</p>\r\n\r\n<p>Ch＆acirc;teau Svanidze酒店提供难得的机会，体验格鲁吉亚迷人的百年历史葡萄酒历史。 Ch＆acirc;teau酒店位于Signaghi镇 - 一个着名的葡萄酒产区，被称为爱之城。 从这里开始讲述Geogian画家Niko Pirosmani的故事，他深深地爱上了一位法国女演员，以至于卖掉了自己的房子给了她一百万朵玫瑰。</p>\r\n\r\n<p>Signagi镇位于山顶，环绕着壮观的防御墙，被认为是继中国长城之后的第二长壁。 每座城墙的23座塔楼都以附近的村庄命名。 在围城期间，这些塔是该镇居民的避难所。</p>\r\n\r\n<p>Ch＆acirc; teau Svanidze完全隐藏在道路之外，一旦您从停车场走进草坪的入口，就会打开一个漂亮的小绿洲。 在这里，您可以在Ch＆acirc;teau Svanidze的私密空间内放松身心，欣赏白雪皑皑的高加索山脉的壮丽景色。 从这个独特的休闲之中，您可以享受令人惊叹的自然美景，享用由着名厨师烹制的精致美食，享用优质的当地葡萄酒，并在私人导游的带领下体验Kakheti地区的最佳美食。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1713"
@@ -1709,7 +1709,7 @@
     "id": "2281",
     "content":
       "<h3 style=\"text-align: center;\">The Queen`s sulphur bath-house</h3>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "1714"
@@ -1718,7 +1718,7 @@
     "id": "2282",
     "content":
       "<p><img alt=\"\" src=\"/library/content/queens-bath.png\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1715"
@@ -1727,7 +1727,7 @@
     "id": "2283",
     "content":
       "<p>第比利斯 - 意为“温泉之城” 在格鲁吉亚，并以其硫磺浴而闻名。乔治亚水疗中心在欧洲享有极大的知名度，而俄罗斯着名诗人普希金则对此有所了解：“我一生都没见过这样的奢侈品。” 我真的重生了！&rdquo;</p>\r\n\r\n<p>在Queen`s硫磺浴室，您可以在入住我们的格鲁吉亚传统水疗中心的第一时间感受古董奢华，健康和私密的隐居感。<br />\r\n<br />\r\n到达，关闭并体验所有感官的放松：无论您是寻求放松，寻求从日常生活中消磨时间，只是想让自己焕发活力，增强健康 - 您的个人幸福总是 第一次来到女王浴场。我们的水疗团队成员致力于确保您在女王浴场的住宿让您充满活力，积极性和自信。</p>\r\n\r\n<p>当谈到天然热硫磺泉的健康益处时，毫无疑问，它的特殊疗效将让您的身体轻松放松，让肌肤看起来如丝般光滑，焕发健康光泽。</p>\r\n\r\n<p>Queen's浴缸远离主圆顶形状的浴缸。 你必须走一点，看到一个标志“Bohema&rdquo; （这是我们的餐厅），按照标志，发现旁边的女王浴。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1715"
@@ -1736,7 +1736,7 @@
     "id": "2476",
     "content":
       "<p>And Tika and George - - - nothing can compare to your marvelous hospitality! Where can I start?  Your many kindnesses during our trip to the Republic of Georgia brought an overwhelming feeling of appreciation to our hearts.  You welcomed us like long-not-seen family members into your own country home and gave us a lovely experience to be long remembered - - - and you sent us off with a farewell dinner as a lifetime experience to be cherished - - - the company, the dinner, the singers, the setting - - - incomparable.  We are deeply grateful. I must tell you that we can not stop singing Georgia's praises - - - and we are startled at the lack of perception of your marvelous country by so many of our friends and colleagues.  If they only knew first hand!  We are urging them to go and experience Georgia for themselves. With hearts full of appreciation for your kindnesses and your open arms,</p>\r\n\r\n<p>Barbara and Alden Smith</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1849"
@@ -1745,7 +1745,7 @@
     "id": "2477",
     "content":
       "<p>Dear Eka and George,</p>\r\n\r\n<p> First, let me apologize for the lateness of this email.  I want to express my very BIG THANK YOU!!!! Our trip in April visiting your beautiful country of Georgia was just a fabulous experience!!!  You exemplify the warm hospitality of the people and country and I enjoyed every moment!!  Each day there was something special to see/taste/experience and the true highlight was meeting you and spending time together on our last day.  Thank you so much for the opportunity, the care, the attention, the view into yourculture&hellip;I will never forget it. Since my return, I've been showing my photos and talking about Georgia nonstop!  I hope that I will be able to send you clients in the futurewho will share in the adventure of Georgia!  Thank you very, very much!! I wish you all the very best!!</p>\r\n\r\n<p>Beryl</p>\r\n\r\n<p> </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1849"
@@ -1754,7 +1754,7 @@
     "id": "2478",
     "content":
       "<p>Dear Tika, George and Eka</p>\r\n\r\n<p>we are in flight from Tbilisi to Barcelona we have a 4.40 hour flight and we will be home. to rest, relax, exercise and a little lenten behaviour valeria and i have found a new set of unique people we are pleased and honored to call our friends. you are our guests when you come to the Philippines we have found a unique country with so much content of all sorts from people, hospitality, history, food, wine, dance and beauty both internal and external thank you to all of you would be so lacking that I dare not use the words&hellip;the only correct word is revenge...We will make you gain weight in manila&hellip;again, our dear friends, thank you We will see you soon and hopefully we can do something together</p>\r\n\r\n<p>mabuhay.....</p>\r\n\r\n<p>Endika and Valeria </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1850"
@@ -1763,7 +1763,7 @@
     "id": "2479",
     "content":
       "<p>Tika - I just wanted to drop a quick note to say &quot;thank you&quot; for the lovely time that was planned for me while I visited Georgia last week.  Every aspect of my visit was wonderful - from the sites, fine food, and perfect guiding.I also enjoyed my visit to neighboring Armenia, where everything was also nicely done.I look forward to another visit in the near future - perhaps after the new Kempinski opens in Tbilisi - which I will intend to supplement with a visit to Azerbaijan.Until then, best wishes and thanks again for the hospitable welcome.</p>\r\n\r\n<p>Best Regards-</p>\r\n\r\n<p>Brian Brown</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1850"
@@ -1772,7 +1772,7 @@
     "id": "2480",
     "content":
       "<p>Thank you so much for the invitation to visit explore a new destination for us;  GEORGIA! What a lovely country.  There was so much to see and experience.  We loved Merab for his patience and his touring expertise on the history, culture, sights and economy of his homeland. The Marriott was spacious, comfortable and they have the most luxurious sheets. The staff was very accommodating. The Caucasus mountain trip was an adventure!  The Rooms hotel is very fun.  We loved the library, the great lobby, the bar and music, the antique rugs, the interesting furniture, the meals and the accommodations were very fine. The view is glorious! and to meet the &ldquo;Tica&rdquo; family on their personal turf was very special!  What a fabulous day walking the olive orchard, making Georgian Snickers and dumplings.  The feast was beautiful, plentiful and delicious!  Thank you for the Georgian Svanidze Wine! We shared it with family and friends for Easter.  It was so nice to meet George and Eka and dine at their wonderful restaurant and at their home. What a great venue you planned for us.Thanks for all your hard work in planning a very fine and interesting itinerary for us.</p>\r\n\r\n<p>Until next time!</p>\r\n\r\n<p>Sincerely,</p>\r\n\r\n<p>bo</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1851"
@@ -1781,7 +1781,7 @@
     "id": "2481",
     "content":
       "<p>Hi Tika, I would like to thank you for the perfect and professional organization of my trip.Georgia is a marvelous country. I was deeply impressed by its beauty, especially the stunning variety of landscapes and its richness of tradition. Georgia has a great potential as a holiday destination for Europeans, especially for a target group interested in mountains and outdoor activities (hiking &amp; biking), maybe in combination with a stay at the Black Sea. At present Georgia is rather an insider tipp and thus hardly known as a holiday destination in Europe. The country needs to be promoted via important tourism fairs throughout Europe and cooperations with tour operators. However, I will share my positive experience with your country and with your agency with people in the tourism industry and by doing so I hope to contribute to its promotion. And last but not least I would like you to extend my sincere thanks to Levan. He is a fantastic guide with a broad knowledge of your country's history and tradition. He does his job very professionally, conscientiously and with a lot of passion and dedication. I appreciated his company very much!I thank you also for the warm welcome and the delicious lunch at your house! A very special treat I shall never forget. It was a great pity I couldn't meet you personally.I wish you all the best and hope to be in contact with you soon again.</p>\r\n\r\n<p>Angelo</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1851"
@@ -1790,7 +1790,7 @@
     "id": "2482",
     "content":
       "<p>Dear Tika,<br />\r\n<br />\r\nNext time I hope to meet you ...unexpected surprise for a traveller like us ..who have been to almost 70 countries ...we know how to travel....trust me.<br />\r\nWhat your guys did for us was amazing &hellip; no words to thank you ...yes there is a word .....you Tika and friends are most welcome to Abu Dhabi at anytime...Eka is a lovely person that I really would like to meet her again with George. Bela is an amazing cook &hellip;we are looking forward to try the Kachapuri at our place...I will check if Georgia send the Cheese to Dubai...I will contact some Georgia people living there. David is amazing friend Goderzi is top !!! All kind and professionals. Tika if we have had an amazing time in Georgia be assured that was with the help of my colleagues from Tika......Amazing....Thanksssssss. We have just arrived safe at Baku and already missing Georgia.<br />\r\n<br />\r\nEduardo<br />\r\n </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1852"
@@ -1799,7 +1799,7 @@
     "id": "2483",
     "content":
       "<p>Dear Tika, George and Eka,</p>\r\n\r\n<p>A very big thank-you for all that you did to make my visit to Georgia so interesting and so successful. Although it was just six days long we managed to cover 1200 km and fit in all that I hoped - and more. Throughout I felt safe, well guided and the recipient of wonderful hospitality. None of that will surprise anyone who knows Georgia of course, but it is an important discovery to convey to readers. Also the availability of comfortable hotels to stay in.Now the hard, but enjoyable work of writing begins, and I may possibly trouble you with some questions. In the mean time renewed thanks for all your support and help.</p>\r\n\r\n<p>My best,</p>\r\n\r\n<p>Julian</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1852"
@@ -1808,7 +1808,7 @@
     "id": "2484",
     "content":
       "<p>Dear David,</p>\r\n\r\n<p>We have arrived Bangkok. Flight delayed 1 hour but it is ok. First of all i have to say thank you to all of you and of course you are the most important one who i have to give big thank. Pls. Sent my regards to Tika and tell her thank you for nice wine which she gave to me.</p>\r\n\r\n<p>Best regards,</p>\r\n\r\n<p>Parichat </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1853"
@@ -1817,7 +1817,7 @@
     "id": "2485",
     "content":
       "<p>How wonderful to receive your email, George, while we were in New York City for a family Christmas trip.  It brought back so many happy memories of you, your sister, and your wonderful family and our most memorable trip to the Republic of Georgia - - - what an experience for us.  We are still singing Georgia's praises to all of our friends and business colleagues - - -in fact, Travel &amp; Leisure magazine named Georgia one of the best places to have visited in 2015 and one to visit in 2016.  Your country has truly gained a worldwide, marvelous reputation - - - and it is most certainly based on the outstanding hospitality that Georgians offer their visitors.</p>\r\n\r\n<p>Alden and I send all best wishes back to you all,</p>\r\n\r\n<p>Barbara</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1853"
@@ -1826,7 +1826,7 @@
     "id": "2486",
     "content":
       "<p>Dear David and Tika-</p>\r\n\r\n<p>Thank you for a fantastic holiday in your beautiful country.   We were truly amazed at your side of the world.   It was everything you promised us.  The tour guide was patent, knowledgeable and a beautiful person inside and out.   The driver was seriously the sweetest driver we have ever had on any of our trips.  He was safe, courteous and went above and beyond every chance he got.   They were a great team and we believe truly highlighted the Georgian people well.  </p>\r\n\r\n<p>The highlights of our trip include the first hotel, being able to wake up to the Tbilisi city view was spectacular. They had a great breakfast with a beautiful view.   We loved Rooms hotel and the Mountain.   Wow, was that impressive.   We do not have that in the US.   We loved seeing the Georgian dancing.  And all the food.  So much delicious food.   The dinner with Katlino was also lovely.  We really enjoyed a smaller gathering and understanding more of a local view.</p>\r\n\r\n<p>Those are just a few of the special moments we had.  Thank you for everything. </p>\r\n\r\n<p>Laura </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "1854"
@@ -1835,7 +1835,7 @@
     "id": "2487",
     "content":
       "<p>Levan, were you and Merab with the Casendino party? They just wrote to their agent that no trip could top this - they had the BEST time!!! Just wanted to thank you all for your fantastic work!!</p>\r\n\r\n<p>All the best,</p>\r\n\r\n<p>Nicole </p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "1854"
@@ -1844,7 +1844,7 @@
     "id": "2756",
     "content":
       "<p>TikaTours is pleased to introduce tours of a first class experience in a small group setting. Unique experiences and touring the country with one of Georgia's top tour guides is what's in store for guests. Count on intimate group sizes of no more than 14 guests, savour personal service, experience meaningful cultural encounters, awe-inspiring surprises, and privileged access into world`s natural and cultural wonders.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2040"
@@ -1853,7 +1853,7 @@
     "id": "2757",
     "content":
       "<p>TikaTours is also happy to arrange for you to extend your stay beyond the escorted group tour dates. Our travel consultants would be delighted to design a hand-crafted extension for you, either pre- or post-tour, to fit in with your interests.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2040"
@@ -1862,7 +1862,7 @@
     "id": "2764",
     "content":
       "<p><iframe allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/tLayDDrsmk8\" width=\"560\"></iframe></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2044"
@@ -1871,7 +1871,7 @@
     "id": "2765",
     "content":
       "<p><iframe allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/U5mE1a6273o\" width=\"560\"></iframe></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2044"
@@ -1880,7 +1880,7 @@
     "id": "3013",
     "content":
       "<p>TikaTours是一家格鲁吉亚豪华旅游运营商，为挑剔的旅行者提供改变生活的旅行体验。 成立于2001年，我们在佐治亚州和高加索地区开创了豪华旅行的概念。 我们的豪华酒店使我们能够以无与伦比的价值创造私人超豪华假期。 我们很荣幸能够接待一位着名的美国足球运动员 - 印度尼西亚名厨Larry Darnell Fitzgerald Jr.，Farah Quinn和一位受欢迎的美国网球运动员Barbara Smith。<br />\r\n17年后，我们仍然是私人拥有的，我们无与伦比的经验，专业知识和亲密的关系使我们能够结合体验式服务＆mdash; 例如，通过高加索的私人旅程，内部访问机会不同于您以前经历过的任何机会。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2202"
@@ -1889,7 +1889,7 @@
     "id": "3014",
     "content":
       "<p>我们的定制旅程从奢华到冒险 - 没有TikaTours通道是完整的，没有令人愉快的不可预测性，这不可避免地使您的旅行体验改变生活。 我们提供注意从早茶喜好到枕头喜好的最小细节。 TikaTours建立在Tika Svanidze Vancko（创始人兼总裁）的高品质服务和对细节的关注之上。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2202"
@@ -1897,7 +1897,7 @@
   {
     "id": "3015",
     "content": "<h2 style=\"text-align: center;\">我们的队伍</h2>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "2203"
@@ -1906,7 +1906,7 @@
     "id": "3016",
     "content":
       "<p style=\"text-align: center;\"><span style=\"font-size:14px;\"><em>我们对自己的工作充满热情。 我们的高技能专业团队知道如何创造改变生活的旅行体验</em></span></p>",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "2204"
@@ -1915,7 +1915,7 @@
     "id": "3017",
     "content":
       "<p><img alt=\"\" src=\"/library/content/tika--svanidze-vancko---founder.jpg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2205"
@@ -1924,7 +1924,7 @@
     "id": "3018",
     "content":
       "<h4>Tika Svanidze Vancko <br />\r\n创始人兼总裁</h4>\r\n\r\n<p>Tika是TikaTours的创始人和总裁。 她在佐治亚州出生和长大，然后在世界各地（包括荷兰，新加坡，芝加哥和瑞士）学习，生活，工作。 Tika在荷兰学习旅游和法律。 凭借自己在奢侈旅游行业和目的地管理方面的高级职位，她积累了丰富的经验。 她坚信旅行可以改变生活，最重要的是建立人与人之间的桥梁。 蒂卡目前居住在荷兰，在佐治亚州度过了她的夏天。 她喜欢旅行，喜欢滑雪，远足和其他户外活动。 与丈夫和三个儿子共度时光是她最大的乐趣之一。 她说英语，荷兰语，德语，格鲁吉亚语和俄语。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2205"
@@ -1933,7 +1933,7 @@
     "id": "3019",
     "content":
       "<p><img alt=\"\" src=\"/library/content/eka-svanidze---gm.jpg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2206"
@@ -1942,7 +1942,7 @@
     "id": "3020",
     "content":
       "<h4>Eka Svanidze<br />\r\n总经理</h4>\r\n\r\n<p>凭借旅游和旅游的背景，Eka为我们的团队带来了巨大的热情和丰富的经验。 Eka负责整个Tika Tours的日常运营，确保TikaTours团队的每一位成员都将客人放在他们所做工作的核心位置。 她最大的乐趣是与丈夫，孩子和朋友共度时光。 你将永远记住Eka，因为她真正热爱结识新朋友，并渴望让您在格鲁吉亚的第一次旅行体验变得美妙。 她说荷兰语，英语，格鲁吉亚语和俄语</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2206"
@@ -1951,7 +1951,7 @@
     "id": "3021",
     "content":
       "<p><img alt=\"\" src=\"/library/content/giorgi.jpg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2207"
@@ -1960,7 +1960,7 @@
     "id": "3022",
     "content":
       "<h4>George Svanidze<br />\r\n投资顾问</h4>\r\n\r\n<p>乔治是TikaTours的联合创始人之一。 他负责管理和运营格鲁吉亚的投资旅游。 他是比荷卢商会的代表，也是荷兰格鲁吉亚侨民的名誉理事会主席，格鲁吉亚族长基金会主席，“让我们的绿色格鲁吉亚＆rdquo; 以及格鲁吉亚政府的投资顾问。 乔治是格鲁吉亚民族文化节“lvequoburebi”的创始人和赞助商。 他获得了多项提名，并获得了格鲁吉亚的发展和繁荣金奖，获得最佳项目奖，并被提名为格鲁吉亚最佳爱国者。 他说英语，荷兰语，格鲁吉亚语和俄语。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2207"
@@ -1969,7 +1969,7 @@
     "id": "3023",
     "content":
       "<p><img alt=\"\" src=\"/library/tours/dato.jpg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2208"
@@ -1978,7 +1978,7 @@
     "id": "3024",
     "content":
       "<h4>David Arutinyan<br />\r\n产品经理</h4>\r\n\r\n<p>幽默，好奇，富有创造力，具有广阔的视野和对引入新产品的卓越直觉，David评估和发现新的机会，开发和营销它们。 他的广泛技能有助于确保产品的完整成功。 他涉及许多不同的群体 - 客户，销售，营销，财务，运营和网络技术。 作为一个既奢华又冒险的男士，他完全可以确保TikaTours同时提供这两种服务。 大卫喜欢积极的假期，总是开辟新的道路。 他拥有旅游营销工商管理学士学位，会讲法语，英语，德语，格鲁吉亚语和俄语。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2208"
@@ -1987,7 +1987,7 @@
     "id": "3025",
     "content":
       "<p><img alt=\"\" src=\"/library/tours/headshot-for-tika_cr.jpg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2209"
@@ -1996,7 +1996,7 @@
     "id": "3026",
     "content":
       "<h4>Joyce Graves<br />\r\n亚洲市场经理</h4>\r\n\r\n<p>知道乔伊斯的人会说她热爱生活，她爱人。 除此之外，还有格鲁吉亚的自然冒险和激情，你可以看到为什么乔伊斯是Tika Tours团队的一员。 一个中国人在香港长大，但与一个美国人（有七个孩子）结婚，乔伊斯生活在许多国家，在不同背景，种族和文化的人们之间建立了友谊的桥梁。 由于她的一种爱情语言是食物，她不仅享受各种美食，访问乔伊斯的厨房意味着您将有幸闻到和品尝来自世界各地的菜肴。 乔伊斯说英语，普通话和广东话，居住在新加坡，经常前往亚洲各地。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2209"
@@ -2005,7 +2005,7 @@
     "id": "3027",
     "content":
       "<p><img alt=\"\" src=\"/library/content/tamar-gzirishvili_image.jpg\" style=\"width: 631px; height: 380px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2210"
@@ -2014,7 +2014,7 @@
     "id": "3028",
     "content":
       "<h4>Tamar Gzirishvili <br />\r\n&#8203;产品经理中文</h4>\r\n\r\n<p>Tamar专注于中国，致力于提供真实的旅行体验。 添马舰的旅行多次将她带到中国，包括上海，北京和香港以及其间的所有点。 当她第一次访问中国完成她的格鲁吉亚 - 中国东方研究联合学位时，她对世界这个地区的热爱引发了。 作为在佐治亚州中华人民共和国大使馆工作的国际关系专家，Tamar拥有丰富的经验，决定通过加入TikaTours，与中国游客一起热爱旅行，开始培养情感联系。 如今，添马舰为中国游客带来了许多他们梦寐以求的最酷假期。 她喜欢读书，和女儿一起度过闲暇时光，前往格鲁吉亚和中国的不同地方。</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2210"
@@ -2022,7 +2022,7 @@
   {
     "id": "3029",
     "content": "",
-    "css_class": "col-xs-12",
+    "css_class": "col-12",
     "span": null,
     "rank": "1",
     "content_row_id": "2211"
@@ -2031,7 +2031,7 @@
     "id": "3030",
     "content":
       "<p><img alt=\"\" src=\"/library/content/nino-ubilauwa-profile1.jpeg\" style=\"width: 630px; height: 379px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2212"
@@ -2040,7 +2040,7 @@
     "id": "3031",
     "content":
       "<h4>Nino Ubilauwa<br />\r\nMarketing &amp; PR Manager</h4>\r\n\r\n<p><span style=\"font-size:14px;\">The newest addition to our team is Nino, born in Georgia and raised in the Netherlands. She is responsible for our Marketing and Public Relations department. With her multicultural background, combined with her experiences around the world, she has developed a&nbsp;deep understanding of different cultures, markets, and consumers. She is creative, passionate and committed to every project, large or small, always with her head and heart.</span></p>\r\n\r\n<p><span style=\"font-size:14px;\">&lsquo;&rsquo;Everybody is different, that makes my job fun and challenging&rsquo;&rsquo;</span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family: inherit;\">Nino is fluent in Dutch, English and Georgian.&nbsp;&nbsp;You can also exchange a few words with her in Russian and Vietnamese.</span></span></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2212"
@@ -2049,7 +2049,7 @@
     "id": "3032",
     "content":
       "<p><img alt=\"\" src=\"/library/content/sandro-magradze---tika-tours.jpg\" style=\"width: 630px; height: 380px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2213"
@@ -2058,7 +2058,7 @@
     "id": "3033",
     "content":
       "<h4>Sandro Magradze&nbsp;<br />\r\nUSA Sales Manager</h4>\r\n\r\n<p>Sandro is an adventurous, outgoing, and enthusiastic individual who has traveled the world, worked for and with major tour companies and resorts in St Lucia, completed project work in multiple countries for multiple companies and organizations. He implements an analytical approach to any role he takes on.&nbsp;Sandro always takes pride in his customer service and has direct experience working and serving clients, guests, and customers in numerous industries. Now, he has joined Tika Tours on their mission to provide luxury tours to their breathtaking country, Georgia. &nbsp;Sandro fluently speaks English and Georgian and is regularly practicing and improving his Japanese and Spanish. He loves quotes and inspiring people through his actions.</p>\r\n\r\n<p>&quot;If you don&#39;t take opportunities as they come, don&#39;t be mad when they&#39;re gone.&quot; - Sandro Magradze</p>\r\n\r\n<p>He lives by his quote to ensure that he is making the most of life and all that it has to offer.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2213"
@@ -2067,7 +2067,7 @@
     "id": "3034",
     "content":
       "<p><img alt=\"\" src=\"/library/content/anna_sharia_tikatours_cr.jpg\" style=\"width: 630px; height: 380px;\" /></p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2214"
@@ -2076,7 +2076,7 @@
     "id": "3035",
     "content":
       "<h4>Ana Sharia<br />\r\nOperations Manager</h4>\r\n\r\n<p>Anna was born and raised in Georgia. She is a result-oriented individual who enjoys interacting with&nbsp;others and facing new&nbsp;challenges.&nbsp;While in law school she participated in many international projects; negotiating with counterparts from different cultural and language backgrounds was an invaluable experience for her. As a qualified lawyer she handles all general legal matters on variety of topics in the company.&nbsp; Driven by penchant for travel, she is also genuinely involved in day-to-day business operations. She has love of multi-tasking, managing many details, and handling changes. &nbsp;She harnesses a working environment which encourages team work, energy and creativity. She enjoys pursuing her passion of traveling the world and taking advantage of all &nbsp;the recreational opportunities available in Georgia.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2214"
@@ -2085,7 +2085,7 @@
     "id": "3036",
     "content":
       "<p>Tika Tours is your specialist&nbsp;in luxury journeys to places less traveled. We welcome you to Georgia, a seductive secret jewel set between Europe and Asia with a staggeringly beautiful landscape and deep rooted traditions. Georgia weaves a warm embrace around its visitors, thrilling adventure seekers and enthralling history hounds.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "1",
     "content_row_id": "2226"
@@ -2094,7 +2094,7 @@
     "id": "3037",
     "content":
       "<p>Ski powdery slopes of unbroken meringue, explore the shimmering subtropical coast, touch the dreams of the past in rock-hewn villages savour the bottled sunlight in this birthplace of wine, climb forgotten mountain trails or slumber the day away in a hot, luxurious mineral bath. Tika Tours will help you reach amazing places and create unforgettable memories.</p>",
-    "css_class": "col-xs-12 col-sm-6 col-md-6",
+    "css_class": "col-12 col-sm-6 col-md-6",
     "span": null,
     "rank": "2",
     "content_row_id": "2226"

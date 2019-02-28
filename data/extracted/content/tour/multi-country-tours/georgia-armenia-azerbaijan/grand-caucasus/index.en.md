@@ -14,16 +14,16 @@ main_category_id: 2
 sub_category_id: 16
 gallery_id: 0
 imggrp_id: 26
-heading: Grand Caucasus
-name: Grand Caucasus
-title: "Grand Caucasus | Tika tours"
+heading: ""
+name: The Grand Caucasus
+title: ""
 short_descr: Welcome to Caucasus! The three highland countries of the Caucasus straddle a
   stunning strip of snow-capped mountains wedged between Black and Caspian seas.
   The Caucasus region holds a wealth of views
 duration: 14 DAYS/13 NIGHTS
 ---
 Welcome to Caucasus! The three highland countries of the Caucasus straddle a stunning
-strip of snow\-capped mountains wedged between Black and Caspian seas. The Caucasus
+strip of snow-capped mountains wedged between Black and Caspian seas. The Caucasus
 region holds a wealth of views and warm hospitality from its inhabitants. Experience
 the places you have only read about.
 
@@ -32,8 +32,8 @@ from shores of the Caspian Sea and the marvelous history of Baku, through the ma
 wine fields of Kakheti and up to the spectacular High Caucasus mountains. Continue
 on a scenic drive over the border with Georgia to the capital of Yerevan with a
 European feel. The complex of cathedrals at Etchmiadzin and the Khor Virap Monastery
-will showcase the incredible Christian heritage of the country, while the Hellenistic\-era
+will showcase the incredible Christian heritage of the country, while the Hellenistic-era
 Garni Temple goes farther back into history.
 
 These three distinct countries and a wealth of history and culture can be found on
-the 14\-day luxury journey through the Grand Caucasus.
+the 14-day luxury journey through the Grand Caucasus.

@@ -8,7 +8,7 @@ import { contentData } from "../i18n-data"
 const GalleryIndexTabs = ({ groups, allImagesLabel, onTabClicked, active }) => (
   <React.Fragment>
     <div className="row hidden-xs">
-      <div className="col-xs-12">
+      <div className="col-12">
         <ul className="tabs">
           <li>
             <div
@@ -178,7 +178,7 @@ class GalleryIndex extends React.Component {
               active={this.state.currentGallery}
             />
             <div className="row">
-              <div className="col-xs-12">
+              <div className="col-12">
                 <Grid
                   id="gallery-shuffle"
                   className="gallery"

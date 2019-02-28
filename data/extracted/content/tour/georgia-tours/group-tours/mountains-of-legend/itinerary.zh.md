@@ -5,15 +5,15 @@ tour_id: 38
 ---
 ### Departure Options:
 
-*   Apr 5 \- 11, 2019
-*   May 2 \- 8, 2019
-*   Aug 26 \- Sep 1, 2019
-*   Sep 28 \- Oct 4, 2019
+*   Apr 5 - 11, 2019
+*   May 2 - 8, 2019
+*   Aug 26 - Sep 1, 2019
+*   Sep 28 - Oct 4, 2019
 
 ### DAY ONE: ARRIVE 
 
 
-\-/\-/ DINNER
+\-/-/ DINNER
 Upon arrival at Tbilisi international airport we meet you to transfer to your hotel
 where you can relax. This evening enjoy dinner at a traditional Georgian restaurant
 with folklore show.
@@ -37,7 +37,7 @@ towards Narikhala, the 4th century fort overlooking the city. The fort provides
 an exquisite view of the city and region.
 
 After lunch at a local restaurant, you will visit the Georgian State Museum, known
-for its collection of gold and silver artifacts and jewelry from the pre\-Christian
+for its collection of gold and silver artifacts and jewelry from the pre-Christian
 period from various regions of the country. If time permits, take a stroll along
 Rustaveli Avenue, where notorious architectural and historical buildings such as
 the Palace of Youth, Parliament of Georgia, Kashveti Church, Rustaveli Theater,

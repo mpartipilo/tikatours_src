@@ -6,7 +6,7 @@ title: 语言和脚本 | Tika Tours
 rank: 7
 ---
 <div class="row content-row"><!-- 891 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1232 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1232 -->
 
 尽管格鲁吉亚的情况与其他国家的情况紧密相关，但格鲁吉亚语与您可能看不到或听到的其他语言不同。 它属于自己的古老语言群体，拥有自己独特的语言和字母
 
@@ -14,7 +14,7 @@ rank: 7
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1233 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1233 -->
 
 格鲁吉亚字母表是世界上使用的大约46种不同字母之一。 它由33个符号组成，包括5个元音和28个辅音。 它没有大小写的情况。 字母的形状是独特的，但它们的排列表明了印欧语言的影响。
 许多科学家认为，格鲁吉亚字母表来源于公元前6世纪至5世纪的闪米特字母之一。
@@ -24,7 +24,7 @@ rank: 7
 </div>
 
 <div class="row content-row"><!-- 892 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1234 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1234 -->
 
 ![](/library/content/img19.jpg)
 
@@ -38,7 +38,7 @@ Bolnisi Sioni教堂位于第比利斯南部，也是格鲁吉亚最古老的（�
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1235 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1235 -->
 
 ![](/library/content/img21.jpg)
 

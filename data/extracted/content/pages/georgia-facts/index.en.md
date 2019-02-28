@@ -10,7 +10,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 867 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1189 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1189 -->
 
 Situated on the eastern shores of the Black Sea at the crossroads between Europe
 and Asia, Georgia offers 70,000 km2 of spectacular natural landscapes, rare and
@@ -21,7 +21,7 @@ around 4 million, the country is unspoiled and uncrowded.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1190 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1190 -->
 
 Georgia has a complex, time worn history. It was one of the first countries in the
 world to officially adopt Christianity and viticulture here can be traced back 8,000

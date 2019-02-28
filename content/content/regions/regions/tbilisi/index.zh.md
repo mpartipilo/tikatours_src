@@ -22,7 +22,7 @@ image_path: /library/regions/tbilisi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1161 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1548 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1548 -->
 
 被群山环绕，市内有一条库拉河,把第比利斯市区切成两半，林荫大道, 迷人的小路，高耸的教堂，粉彩色的房屋，第比利斯是可爱与出乎意料。
 
@@ -30,7 +30,7 @@ image_path: /library/regions/tbilisi1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1549 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1549 -->
 
 宽阔而叶茂盛的的街道，新古典和太空时代式建筑坐落在古老的教堂，清真寺，犹太教堂和有阳台的小巷。到处忍冬花和桑树给令人惊讶的庭院以荫凉。
 
@@ -39,7 +39,7 @@ image_path: /library/regions/tbilisi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1162 (3)-->
-<div class="col-xs-12"><!-- 1550 -->
+<div class="col-12"><!-- 1550 -->
 
 * * *
 
@@ -48,7 +48,7 @@ image_path: /library/regions/tbilisi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1163 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1551 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1551 -->
 
 ###历史
 
@@ -64,7 +64,7 @@ image_path: /library/regions/tbilisi1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1552 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1552 -->
 
 ### 看到和能做什么？
 

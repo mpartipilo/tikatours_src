@@ -47,7 +47,7 @@ class HomeGallery extends React.Component {
       <>
         <div className="container-fluid home-grid">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               <ul className="gallery">
                 {this.state.pictures.map(p => (
                   <li key={p.imgslide_id}>

@@ -10,7 +10,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 869 (2)-->
-<div class="col-xs-12"><!-- 1191 -->
+<div class="col-12"><!-- 1191 -->
 
 这令人难以置信地美丽的国家有不同的地形区。亚热带沼泽地区、半沙漠、高山草甸和巨大的白雪覆盖的山顶。这些都可以在一百公里的范围内找到，游客们可以享受美丽的风景美丽的风景-从山脉到大海。
 
@@ -20,7 +20,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 870 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1192 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1192 -->
 
 ###山脉
 
@@ -45,7 +45,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1193 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1193 -->
 
 ### 河流
 

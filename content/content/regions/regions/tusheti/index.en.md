@@ -20,14 +20,14 @@ image_path: /library/regions/tusheti.jpg
 </div>
 
 <div class="row content-row"><!-- 1181 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1572 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1572 -->
 
 Tusheti is an historic mountainous region of Georgia which today forms part of Georgia's
 eastern region of Kakheti. The largest village in Tusheti is Omalo.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1573 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1573 -->
 
 In the past, Tushetian Gouda cheese and its high quality wool have been famous and
 were exported to Europe and Russia. Even today sheep and cattle breeding is the
@@ -38,7 +38,7 @@ leading sector of the economy.
 </div>
 
 <div class="row content-row"><!-- 1182 (3)-->
-<div class="col-xs-12"><!-- 1574 -->
+<div class="col-12"><!-- 1574 -->
 
 * * *
 
@@ -47,7 +47,7 @@ leading sector of the economy.
 </div>
 
 <div class="row content-row"><!-- 1183 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1575 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1575 -->
 
 ### History
 
@@ -78,7 +78,7 @@ are blanketed in aromatic, virgin pine forests.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1576 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1576 -->
 
 ### What to see and do
 

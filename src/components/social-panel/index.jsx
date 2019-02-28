@@ -63,13 +63,13 @@ const SocialPanel = ({ language }) => {
   return (
     <div className="container-fluid social-panel">
       <div className="row">
-        <div className="col-xs-12 col-md-3">
+        <div className="col-12 col-lg-3">
           <h2>
             <img src="/img/logos/motif-sml.png" alt="Tika Tours logo" />
             {strings["Be Social"]}
           </h2>
         </div>
-        <div className="col-xs-12 col-md-9">
+        <div className="col-12 col-lg-9">
           <SocialLinks language={language} />
         </div>
       </div>

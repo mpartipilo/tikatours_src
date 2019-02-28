@@ -6,13 +6,13 @@ title: 格鲁吉亚的外国使团 | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 902 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1249 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1249 -->
 
 世界上许多国家都设有位于佐治亚州的大使馆和领事馆，通过网站或电话提供服务。 外国大使馆和领事馆可以提供一系列服务，包括格鲁吉亚的旅行建议，以及任何新闻和更新，以确保您在国外旅行时保持安全，避免问题并做出明智的决定。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1250 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1250 -->
 
 大使馆也可以协助其国民签发紧急护照，提供有关转移资金的信息，如果您是犯罪受害者，提供适当的帮助，或在医院，提供当地律师，口译员和医生的详细信息并提供 在一系列其他案件中提供支持和帮助，例如内乱或自然灾害。
 
@@ -21,7 +21,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 903 (2)-->
-<div class="col-xs-12"><!-- 1251 -->
+<div class="col-12"><!-- 1251 -->
 
 以下是格鲁吉亚的外国大使馆和领事馆名单。 欲了解更多信息，请访问格鲁吉亚外交部领事司网站。
 
@@ -30,7 +30,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 904 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1252 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1252 -->
 
 **罗马尼亚**
 大使： H.E. Mr. Constantin Girbea
@@ -144,7 +144,7 @@ Ch. d'Affaires: Mr. Surkhay Akhper ogli Aliyev
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1253 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1253 -->
 
 **捷克共和国**
 大使： Mr. Jozef Vrabec

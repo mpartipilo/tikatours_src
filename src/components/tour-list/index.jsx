@@ -19,7 +19,7 @@ class TourList extends React.Component {
       list.length > 0 && (
         <div className="container-fluid">
           <div className="row" ref={this.containerRef}>
-            <div className="col-xs-12 text-center">
+            <div className="col-12 text-center">
               <h2>{heading}</h2>
             </div>
             <HeightMatchingGroup

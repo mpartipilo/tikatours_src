@@ -6,13 +6,13 @@ title: 教科文组织世界遗产 | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 873 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1198 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1198 -->
 
 格鲁吉亚是一个拥有真正优秀景观，中世纪教堂，修道院和古老传统的国家。 要被列入世界遗产名录，教科文组织必须评估遗址或非物质文化习俗具有突出的普遍价值。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1199 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1199 -->
 
 格鲁吉亚有3个具有世界遗产价值的遗址和2个在联合国教科文组织非物质文化遗产名录上登记的遗产。
 
@@ -21,7 +21,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 874 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1200 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1200 -->
 
 ### 酿酒
 
@@ -33,7 +33,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1201 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1201 -->
 
 ### 格鲁吉亚音乐
 
@@ -48,7 +48,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 875 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1202 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1202 -->
 
 ### 巴格拉特大教堂和格拉蒂修道院
 
@@ -62,7 +62,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1203 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1203 -->
 
 ### 姆茨赫塔的历史古迹
 
@@ -77,7 +77,7 @@ Svetitstkhoveli大教堂和Samtavro修道院。 这些教堂包含考古遗迹�
 </div>
 
 <div class="row content-row"><!-- 876 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1204 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1204 -->
 
 ### 上斯瓦涅季
 
@@ -89,7 +89,7 @@ Svetitstkhoveli大教堂和Samtavro修道院。 这些教堂包含考古遗迹�
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1205 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1205 -->
 
 
 

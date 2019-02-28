@@ -6,13 +6,13 @@ title: 历史 | Tika Tours
 rank: 1
 ---
 <div class="row content-row"><!-- 1542 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2072 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2072 -->
 
 格鲁吉亚是一个古老的国家，也是是最先接受基督教的国家之一，并于公元337年把基督教定为国教。在你去旅行的时候，你会注意到最引人注目的事情之一就是建在山坡上的美丽的古老教堂、修道院和教堂的数量。格鲁吉亚的历史极为深远。早在180万年前，位于在首都第比利斯附近发掘出来的人类始祖的骨骼化石，可见这里在很早以前就有人居住。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2073 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2073 -->
 
 格鲁吉亚的历史也可以追溯到希腊神话的故事，当时高加索被认为是支撑世界的支柱之一。在铜器时代格鲁吉亚是科尔基斯王国的故乡。根据希腊神话，在一个非常富有的国土，詹森和阿尔戈英雄们去寻找金羊毛。目前位于黑海的科尔基斯地区是传奇王国的继承者.西元前66年，罗马帝国完成了对高加索地区的征服, 此后近400年, 格鲁吉亚王国成为了罗马帝国的附庸国和盟国。
 
@@ -21,7 +21,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1543 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2074 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2074 -->
 
 ![](/library/content/img16.jpg)
 
@@ -29,7 +29,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2075 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2075 -->
 
 ![](/library/content/img15.jpg)
 

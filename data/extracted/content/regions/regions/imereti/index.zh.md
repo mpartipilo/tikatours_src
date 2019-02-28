@@ -20,7 +20,7 @@ image_path: /library/regions/sataplia.jpg
 </div>
 
 <div class="row content-row"><!-- 1208 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1604 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1604 -->
 
 The region of Imereti is situated on the beautiful Rioni River. The main city of
 the region is Kutaisi, the second biggest city in Georgia and Tbilisi's traditional
@@ -28,7 +28,7 @@ rival.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1605 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1605 -->
 
 Besides its rich cultural heritage, Imereti is known for its viticulture, dairy products
 and orchards.
@@ -38,7 +38,7 @@ and orchards.
 </div>
 
 <div class="row content-row"><!-- 1209 (3)-->
-<div class="col-xs-12"><!-- 1606 -->
+<div class="col-12"><!-- 1606 -->
 
 * * *
 
@@ -47,13 +47,13 @@ and orchards.
 </div>
 
 <div class="row content-row"><!-- 1210 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1607 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1607 -->
 
 ### History
 
 
 The region's history dates back to ancient times. 3500 years ago the powerful and
-well\-known Colchis Kingdom was established in western Georgia with its unique culture,
+well-known Colchis Kingdom was established in western Georgia with its unique culture,
 education, political and military system. Archaeological excavations have exposed
 many valuable objects including stunning gold jewellery, agricultural tools and
 weapons from this period which can be seen at a special archaeological museum in
@@ -63,17 +63,17 @@ Vani.
 
 
 This central western region of Georgia borders the Likhi Mountain Range to the east,
-Tskhenistskali River to the west, the mountainous region of Racha\-Lechkheumi to
+Tskhenistskali River to the west, the mountainous region of Racha-Lechkheumi to
 the north and Meskheti or Persati Mountains to the south. The forests and meadows
 in this region teem with wildlife.
 
-The Imereti lowland is part of the Kolkheti Valley and enjoys a sub\-tropical sea
+The Imereti lowland is part of the Kolkheti Valley and enjoys a sub-tropical sea
 climate. Winter here is mild, while the summer is hot. The average annual temperature
-is 11\-15 degrees Celsius. Upper Imereti has colder winters with more rain.
+is 11-15 degrees Celsius. Upper Imereti has colder winters with more rain.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1608 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1608 -->
 
 ### What to see and do
 
@@ -98,13 +98,13 @@ The colourful villages of Imereti also have a special charm, each with their uni
 characteristics to explore, from cool chambers of aging wine to the homes of pottery
 and Georgian cognac.
 
-The Borjomi\-Kharagauli National Park is a must see for outdoor enthusiasts. One
-of Europe's true wildernesses, it covers more than 76,000 hectares of native forest
-and sub\-alpine and alpine meadows, and is home to rare species of flora and fauna
+The Borjomi-Kharagauli National Park is a must see for outdoor enthusiasts. One of
+Europe's true wildernesses, it covers more than 76,000 hectares of native forest
+and sub-alpine and alpine meadows, and is home to rare species of flora and fauna
 including lynx and golden eagle.
 
 Sataplia Reserve is an example of Georgia's karstic landscapes and the magic that
-happens when water meets limestone \- grottos and caverns with the most gorgeous
+happens when water meets limestone - grottos and caverns with the most gorgeous
 display of stalactites, stalagmites and mineral rock curtains. Over 200 footprints
 from dinosaurs have been discovered here. When you go, be sure to check out the
 local museum.

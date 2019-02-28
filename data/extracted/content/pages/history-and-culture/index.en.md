@@ -10,7 +10,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 878 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1206 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1206 -->
 
 An outpost of Eastern Europe that merges into western Asia, Georgia straddles historical,
 cultural and geographical crossroads. Civilizations have collided in the Caucasus
@@ -21,7 +21,7 @@ and the Golden Fleece to the skulls of our human ancestors.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1207 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1207 -->
 
 The cities boast mesmerising museums unfolding surprising secrets, dignified concert
 halls, and home to splendid dance and theatre. Contemporary art and architecture

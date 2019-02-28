@@ -9,7 +9,7 @@ tour_id: 29
 Upon your arrival into Tbilisi Airport (Georgia’s main international airport), we
 meet you to take you to Signagi located in the Kakheti region. Renowned for its
 excellent wine the region combines the cultural appeal of ancient churches in the
-vast valleys and old\-world charm with the snow\-capped Caucasus range.
+vast valleys and old-world charm with the snow-capped Caucasus range.
 
 ### Day Two: Signagi
 
@@ -24,7 +24,7 @@ Take dinner in a local family home where you can bake bread with the hosts, tast
 homemade wine and Georgian Chacha (vodka), and try famous Georgian barbecue called
 mtsvadi.
 
-### Day Three: Signagi\-Gudauri
+### Day Three: Signagi-Gudauri
 
 
 After breakfast drive to Telavi, one of the oldest towns of the Kakheti region. Numerous
@@ -33,14 +33,14 @@ of the city. After a city tour in this magnificent place, visit two of the most
 important and most beautiful architectural monuments: the Dzveli (old) and Akhali
 (new) Shuamta Monasteries. Both stand in a forest of deciduous trees, which makes
 them look even more fascinating. After lunch enjoy a wine tasting at Tsinandali,
-a historic winery in an estate which once belonged to the 19th\-century aristocratic
-poet Alexander Chavchavadze. Discover the great wine\-making tradition of eastern
+a historic winery in an estate which once belonged to the 19th-century aristocratic
+poet Alexander Chavchavadze. Discover the great wine-making tradition of eastern
 Georgia and learn the history behind the powerful family who left a lasting mark
 on Georgian culture. Continue your drive into the Caucasus, arriving to Gudauri
 and the Marco Polo Hotel Gudauri. Surrounded by majestic mountain peaks and stunning
 valleys, Marco Polo Hotel Gudauri is a sight to see.
 
-### Days Four\-Seven: Gudauri
+### Days Four-Seven: Gudauri
 
 
 â€‹â€‹Spend the next four nights in your mountain retreat at Marco Polo Hotel. All
@@ -62,7 +62,7 @@ After breakfast drive via Mtskheta to Tbilisi. Mtskheta is the ancient capital o
 eastern Georgia. The country's conversion to Christianity occurred in Mtskheta in
 337 AD and it is considered one of Georgia's most important religious centers. St.
 Nino erected the first Christian cross and the first churches were built here. Visit
-the monasteries of Jvari perched on a cliff overlooking the Mtskheta Sveti\-Tskhoveli
+the monasteries of Jvari perched on a cliff overlooking the Mtskheta Sveti-Tskhoveli
 cathedral.
 
 ### Day Nine: Tbilisi

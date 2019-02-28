@@ -11,7 +11,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 1510 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2010 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2010 -->
 
 ### What we have done for the local community
 
@@ -28,7 +28,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2011 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2011 -->
 
 
 

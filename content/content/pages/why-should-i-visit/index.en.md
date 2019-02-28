@@ -10,7 +10,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1054 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1430 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1430 -->
 
 Few of the world’s small nations can offer the visitor as much as Georgia. Once experienced,
 this country will stay with you forever. Inexpressibly exotic, views of arresting
@@ -20,7 +20,7 @@ carved wooden balconies and the grandeur of Art Nouveau.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1431 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1431 -->
 
 Georgia is where East meets West and ancient myth meets modern life. It bumps against
 Russia in the Caucasus Mountains where it boasts some of Europe's highest peaks.
@@ -33,7 +33,7 @@ from apples and avocados to walnuts and wine.
 </div>
 
 <div class="row content-row"><!-- 1055 (3)-->
-<div class="col-xs-12"><!-- 1432 -->
+<div class="col-12"><!-- 1432 -->
 
 * * *
 
@@ -42,7 +42,7 @@ from apples and avocados to walnuts and wine.
 </div>
 
 <div class="row content-row"><!-- 1056 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1433 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1433 -->
 
 ### Greek mythology
 
@@ -53,7 +53,7 @@ his quest to find the Golden Fleece.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1434 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1434 -->
 
 ### Homeland of the First European
 
@@ -66,7 +66,7 @@ is the oldest evidence of human habitation in Europe.
 </div>
 
 <div class="row content-row"><!-- 1057 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1435 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1435 -->
 
 ### Birthplace of wine
 
@@ -79,7 +79,7 @@ growing, it's no surprise that Georgian wine will match any in the world.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1436 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1436 -->
 
 ### Cave Architecture
 
@@ -96,7 +96,7 @@ frescoed cave monasteries at David\-Gareji.
 </div>
 
 <div class="row content-row"><!-- 1058 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1437 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1437 -->
 
 ### Table and Tamada
 
@@ -110,7 +110,7 @@ by introducing eloquent toasts at key moments.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1438 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1438 -->
 
 ### Folklore and Dance
 
@@ -126,7 +126,7 @@ including the potent vitality of Georgian folklore and dance.
 </div>
 
 <div class="row content-row"><!-- 1059 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1439 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1439 -->
 
 ### UNESCO World Heritage Sites
 
@@ -140,7 +140,7 @@ of the Upper Svaneti region.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1440 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1440 -->
 
 ### Georgian Music
 

@@ -5,7 +5,7 @@ import { contentData } from "../i18n-data"
 
 const FooterNav = props => (
   <div className="row">
-    <div className="col-xs-12">
+    <div className="col-12">
       <ul className="footer-nav">
         {props.links.map(l => (
           <li key={l.url}>
@@ -30,31 +30,31 @@ const Footer = props => {
       <div className="container-fluid">
         <FooterNav links={contact_data.navFooter} language={language} />
         <div className="row">
-          <div className="col-xs-12 col-md-6">
+          <div className="col-12 col-md-6">
             <div className="contact">
               <div className="row">
-                <div className="col-xs-4">{strings["phone"]}:</div>
-                <div className="col-xs-8">
+                <div className="col-4">{strings["phone"]}:</div>
+                <div className="col-8">
                   <a href={"tel:" + contact_data.phone}>{contact_data.phone}</a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-xs-4">{strings["email"]}:</div>
-                <div className="col-xs-8">
+                <div className="col-4">{strings["email"]}:</div>
+                <div className="col-8">
                   <a href={"mailto:" + contact_data.email}>
                     {contact_data.email}
                   </a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-xs-4">{strings["address"]}:</div>
-                <div className="col-xs-8">
+                <div className="col-4">{strings["address"]}:</div>
+                <div className="col-8">
                   <address>{contact_data.address}</address>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-md-6 credits text-center">
+          <div className="col-12 col-md-6 credits text-center">
             <img
               src="/img/logos/beyond-logo.png"
               alt="Beyond Limits logo"
@@ -83,7 +83,7 @@ const Footer = props => {
           </div>
         </div>
         <div className="row hidden-md hidden-lg">
-          <div className="col-xs-12">
+          <div className="col-12">
             <div className="divider" />
           </div>
         </div>

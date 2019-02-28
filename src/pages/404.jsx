@@ -2,7 +2,7 @@ import React from "react"
 
 const NotFoundPage = () => (
   <div className="row" style={{ marginBottom: 20 }}>
-    <div className="col-xs-12">
+    <div className="col-12">
       <div className="jumbotron" style={{ textAlign: "center" }}>
         <h1>
           <p>Page Not Found</p>

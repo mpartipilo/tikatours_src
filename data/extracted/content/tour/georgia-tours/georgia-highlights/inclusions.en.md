@@ -26,4 +26,4 @@ EXCLUSIONS:
 
 ●       Alcoholic Beverages
 
-●       Early Check\-Ins
+●       Early Check-Ins

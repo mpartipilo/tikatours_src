@@ -6,13 +6,13 @@ title: 植物群和动物群 | Tika Tours
 rank: 2
 ---
 <div class="row content-row"><!-- 871 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1194 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1194 -->
 
 格鲁吉亚是自然爱好者,植物学家、观鸟者和野生动物爱好者的天堂。这个国家仍然有许多真正的野生动物地区，大自然是统治者。它们代表了一个逃避和冒险的地方，为各种野生动植物资源提供了良好的栖息环境,其中包括一些欧洲最具代表性的物种。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1195 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1195 -->
 
 格鲁吉亚是主要的生物多样性热点区域。在高加索地区，有6,350种不同的不同的植物被，格鲁吉亚包含4,100多种，其中大约300种是地方性物种，包括多种的葡萄，谷物和水果。
 
@@ -22,7 +22,7 @@ rank: 2
 </div>
 
 <div class="row content-row"><!-- 872 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1196 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1196 -->
 
 ![](/library/content/img8.jpg)
 
@@ -32,7 +32,7 @@ rank: 2
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1197 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1197 -->
 
 ![](/library/content/img7.jpg)
 

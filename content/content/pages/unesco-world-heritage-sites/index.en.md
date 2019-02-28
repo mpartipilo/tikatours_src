@@ -6,7 +6,7 @@ title: UNESCO World Heritage Sites | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 873 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1198 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1198 -->
 
 Georgia is a country of truly outstanding landscapes, medieval churches, monasteries
 and ancient traditions. To be included on the World Heritage List, sites or intangible
@@ -14,7 +14,7 @@ cultural practices must be evaluated by UNESCO as having outstanding universal v
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1199 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1199 -->
 
 Georgia has 3 sites of World Heritage value and 2 practices registered on the UNESCO
 list of Intangible Cultural Heritage.
@@ -24,7 +24,7 @@ list of Intangible Cultural Heritage.
 </div>
 
 <div class="row content-row"><!-- 874 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1200 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1200 -->
 
 ### Winemaking
 
@@ -41,7 +41,7 @@ identity of Georgian communities.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1201 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1201 -->
 
 ### Georgian music
 
@@ -61,7 +61,7 @@ much alive in Georgia today.
 </div>
 
 <div class="row content-row"><!-- 875 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1202 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1202 -->
 
 ### Bagrati Cathedral and Gelati Monastery
 
@@ -81,7 +81,7 @@ of culture in ancient Georgia.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1203 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1203 -->
 
 ### Historical Monuments of Mtskheta
 
@@ -102,7 +102,7 @@ evolution of this mountain kingdom for some four millennia.
 </div>
 
 <div class="row content-row"><!-- 876 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1204 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1204 -->
 
 ### Upper Svaneti
 
@@ -118,7 +118,7 @@ region.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1205 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1205 -->
 
 
 

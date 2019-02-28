@@ -6,13 +6,13 @@ title: 格鲁吉亚大使馆和总领事馆 | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 897 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1241 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1241 -->
 
 在国外的许多国家格鲁吉亚设有大使馆和领事馆，这些国家的外交代表可以帮助你了解签证和领事的询问。这些代表提供一系列的服务，包括签证支持最新的信息和关于在格鲁吉亚旅行的建议。关于海外住格鲁吉亚人的信息，以及关于格鲁吉亚的一般事实，信息和新闻。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1242 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1242 -->
 
 以下是格鲁吉亚大使馆和驻海外领事馆的名单，包括他们的地址和联系方式，要求更多详情，欲获取更多的信息请访问他们各自的网站或者格鲁吉亚外交部网站帮助你制定一个明智的旅行计划。
 
@@ -21,7 +21,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 898 (2)-->
-<div class="col-xs-12"><!-- 1243 ?
+<div class="col-12"><!-- 1243 ?
 
 格鲁吉亚大使馆-------
 
@@ -30,7 +30,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 899 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1244 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1244 -->
 
 **亚美尼亚共和国**
 地址:?亚美尼亚，埃里温，Aramis 街#42.
@@ -93,7 +93,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1245 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1245 -->
 
 **哈萨克斯坦共和国.**
 地址:?哈萨克斯坦, Alma at 480092, Tsentralnaia 街8g。
@@ -158,7 +158,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 900 (4)-->
-<div class="col-xs-12"><!-- 1246 -->
+<div class="col-12"><!-- 1246 -->
 
 总领事馆------------------
 
@@ -167,7 +167,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 901 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1247 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1247 -->
 
 希腊，雅典
 地址: 希腊，雅典，154 52 PALEO PSYCHIKO，AgiouDimitrious街 #24
@@ -185,7 +185,7 @@ rank: 3
 电子邮件: geoconsulate@paco.net Web-site: www.avesol.ge
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1248 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1248 -->
 
 土耳其，伊斯坦布尔
 地址: 土耳其，伊斯坦布尔，Gumususuyu/Taksim，Marmara apartamenti, D.2,  Inonu cad.街55

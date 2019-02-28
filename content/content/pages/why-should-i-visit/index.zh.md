@@ -10,12 +10,12 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1054 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1430 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1430 -->
 
 世界上很少有小国家能像格鲁吉亚一样为游客提供最多的机会。一旦你有了经验，将永远不能忘记这个国家.令人惊叹，异国情调，引人注目的美丽景色，丰富和深厚的葡萄酒文化，高妙和谐的音乐和令人惊讶的一种建筑风格，石头砌成的瞭望塔和丰富而艳丽的壁画还有迷人，传统木雕阳台和怪异的艺术建筑。
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1431 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1431 -->
 
 格鲁吉亚位于东西方文明交汇的地方，古代的神话对现代生活有直接的联系。高加索山脉最高山峰，亦是欧洲第一高峰。它优雅的首都总会让人想起真正的巴黎。它在黑海拥有海滩度假胜地和地中海气候。内陆，绿色平原和山谷产生从苹果和鳄梨到核桃和葡萄酒的一切。
 
@@ -24,7 +24,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1055 (3)-->
-<div class="col-xs-12"><!-- 1432 -->
+<div class="col-12"><!-- 1432 -->
 
 * * *
 
@@ -33,7 +33,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1056 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1433 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1433 -->
 
 ### 希腊神话
 
@@ -42,7 +42,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1434 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1434 -->
 
 ###第一个欧洲人的家乡
 
@@ -54,7 +54,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1057 (5)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1435 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1435 -->
 
 ###葡萄酒的发源地
 
@@ -66,7 +66,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1436 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1436 -->
 
 ### 窑洞建筑
 
@@ -81,7 +81,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1058 (6)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1437 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1437 -->
 
 ###晚宴-Supra；Tamada-晚宴主持人
 
@@ -93,7 +93,7 @@ rank: 1
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1438 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1438 -->
 
 ### 格鲁吉亚音乐和舞蹈
 
@@ -107,7 +107,7 @@ rank: 1
 </div>
 
 <div class="row content-row"><!-- 1059 (7)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1439 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1439 -->
 
 ### 联合国教科文组织世界遗产
 
@@ -117,7 +117,7 @@ rank: 1
 访问格鲁吉亚最重要的历史文化遗址，被列入了联合国教科文组织非物质遗产名录，姆茨赫塔的生命之柱大教堂和季瓦里修道院，在库塔伊西,格拉特修道院和巴格拉特主教座堂，以及上斯瓦涅季地区一处带有典型中世纪式样的村落和塔状房屋的山地景区。
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1440 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1440 -->
 
 ### 格鲁吉亚音乐
 

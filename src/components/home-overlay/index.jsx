@@ -68,17 +68,17 @@ class HomeOverlay extends React.Component {
           <div className="container-fluid">
             <section className="row t-row" />
             <section className="row m-row">
-              <div className="col-xs-2 col-sm-2 col-md-4">
-                <div className="hidden-xs hidden-sm pad">
+              <div className="col-2 col-sm-2 col-md-4">
+                <div className="d-none d-lg-block pad">
                   <h1>{heading}</h1>
                   {subheading && <h2>{subheading}</h2>}
                 </div>
               </div>
-              <div className="col-xs-8 col-sm-8 col-md-4 text-center">
+              <div className="col-8 col-sm-8 col-md-4 text-center">
                 <div className="motif" />
               </div>
-              <div className="col-xs-2 col-sm-2 col-md-4">
-                <div className="hidden-xs hidden-sm pad">
+              <div className="col-2 col-sm-2 col-md-4">
+                <div className="d-none d-lg-block pad">
                   {intro && (
                     <p
                       dangerouslySetInnerHTML={{
@@ -101,9 +101,9 @@ class HomeOverlay extends React.Component {
               </div>
             </section>
             <section className="row b-row">
-              <div className="col-xs-12">
-                <div className="visible-xs visible-sm text-center">
-                  {heading}
+              <div className="col-12">
+                <div className="d-block d-lg-none text-center">
+                  {heading && <h1>{heading}</h1>}
                   {subheading && <h2>{subheading}</h2>}
                 </div>
                 <div className="text-center">

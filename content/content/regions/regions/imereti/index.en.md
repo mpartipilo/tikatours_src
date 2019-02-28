@@ -20,7 +20,7 @@ image_path: /library/regions/sataplia.jpg
 </div>
 
 <div class="row content-row"><!-- 1208 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1604 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1604 -->
 
 The region of Imereti is situated on the beautiful Rioni River. The main city of
 the region is Kutaisi, the second biggest city in Georgia and Tbilisi's traditional
@@ -28,7 +28,7 @@ rival.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1605 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1605 -->
 
 Besides its rich cultural heritage, Imereti is known for its viticulture, dairy products
 and orchards.
@@ -38,7 +38,7 @@ and orchards.
 </div>
 
 <div class="row content-row"><!-- 1209 (3)-->
-<div class="col-xs-12"><!-- 1606 -->
+<div class="col-12"><!-- 1606 -->
 
 * * *
 
@@ -47,7 +47,7 @@ and orchards.
 </div>
 
 <div class="row content-row"><!-- 1210 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1607 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1607 -->
 
 ### History
 
@@ -73,7 +73,7 @@ is 11\-15 degrees Celsius.  Upper Imereti has colder winters with more rain.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1608 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1608 -->
 
 ### What to see and do
 

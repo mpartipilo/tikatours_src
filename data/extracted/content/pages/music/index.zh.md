@@ -6,7 +6,7 @@ title: 音乐 | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 883 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1216 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1216 -->
 
 聆听格鲁吉亚声音所唱的令人叹为观止的和声的机会是一种神奇的体验。 格鲁吉亚复调音乐具有令人难以忘怀的共鸣声音，并且与欧洲音乐中的任何音乐都不同。
 
@@ -16,7 +16,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1217 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1217 -->
 
 格鲁吉亚的乐器可能会被这个国家丰富的声乐传统所掩盖，但它们也很重要，经常伴随着复调歌曲。 其中最受欢迎的乐器是larchemi（格鲁吉亚排箫），stviri（长笛），gudastviri（风笛），changi（竖琴），chonguri（四弦无褶长颈琵琶），panduri（三弦长颈琵琶），弓形chuniri
 （一种无品的viol）和各种鼓。
@@ -28,7 +28,7 @@ rank: 3
 </div>
 
 <div class="row content-row"><!-- 884 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1218 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1218 -->
 
 ![](/library/content/img5.jpg)
 
@@ -40,7 +40,7 @@ rank: 3
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1219 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1219 -->
 
 ![](/library/content/img6.jpg)
 

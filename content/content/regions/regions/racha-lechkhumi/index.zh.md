@@ -22,13 +22,13 @@ image_path: /library/regions/racha.jpg
 </div>
 
 <div class="row content-row"><!-- 1200 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1594 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1594 -->
 
 拉恰-列其呼米地区也正式包括下斯瓦涅季亚州。位于该国西部地区是格鲁吉亚人口最稀少的地区，坐落在令人惊叹的高加索山脉中间。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1595 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1595 -->
 
 该地区以其显著而独特的自然美，酿酒，养蜂，乳制品，牛饲养，木工手艺，疗养度假区，像大多数格鲁吉亚地区一样，为其热情好客而闻名-你一定会得到热情人的热烈欢迎。
 
@@ -37,7 +37,7 @@ image_path: /library/regions/racha.jpg
 </div>
 
 <div class="row content-row"><!-- 1201 (3)-->
-<div class="col-xs-12"><!-- 1596 -->
+<div class="col-12"><!-- 1596 -->
 
 * * *
 
@@ -46,7 +46,7 @@ image_path: /library/regions/racha.jpg
 </div>
 
 <div class="row content-row"><!-- 1202 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1597 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1597 -->
 
 ### 历史
 
@@ -65,7 +65,7 @@ image_path: /library/regions/racha.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1598 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1598 -->
 
 ### 看到和能做什么？
 

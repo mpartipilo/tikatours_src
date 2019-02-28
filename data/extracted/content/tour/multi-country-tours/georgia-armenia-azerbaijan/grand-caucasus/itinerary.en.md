@@ -15,14 +15,14 @@ to your hotel where you can relax after your flight.
 After breakfast at the hotel, we embark on a city tour of Baku. We take you along
 the central streets and green parks of the city, pointing out the main attractions
 along the way. In the afternoon, enjoy an excursion in Old Town, Icheri Sheher.
-This UNESCO\-recognized area of Baku hosts fascinating structures dating back as
+This UNESCO-recognized area of Baku hosts fascinating structures dating back as
 far as the seventh century. Visit the Palace of the Shirvans’ Shahs, the most striking
 example of the medieval palace structures in Azerbaijan, dating to the middle of
 the 15th century.
 
 Next, leave for a tour of the Absheron Peninsula. The Caspian Sea is well within
 reach in Baku, and a drive around the Absheron Peninsula offers an unforgettable
-view of this hidden Eurasian treasure. Visit the well\-preserved ancient castles
+view of this hidden Eurasian treasure. Visit the well-preserved ancient castles
 of the Absheron Peninsula, dated from the 12th century and situated farther from
 Baku. There are several fine medieval castles, in the surrounding towns, all having
 been built for defense by the Shirvan’s Shahs.Return to the hotel to for an evening
@@ -32,11 +32,11 @@ at your leisure.
 
 
 To truly experience the historical beauty of Azerbaijan, today we set off on a trip
-to Gobustan National Park. Found south of Baku, Gobustan is an open\-air museum
-with some 4,000 Neolithic rock drawings dated from as many as 12,000 years ago.
-Find drawings made in the Stone Age, all reflecting activities like hunting and
-dancing. Their dances are thought to have been accompanied by the Gaval\-Dashy or
-Tambourine Stone, a rock that has a deep, resonating tone when struck.
+to Gobustan National Park. Found south of Baku, Gobustan is an open-air museum with
+some 4,000 Neolithic rock drawings dated from as many as 12,000 years ago. Find
+drawings made in the Stone Age, all reflecting activities like hunting and dancing.
+Their dances are thought to have been accompanied by the Gaval-Dashy or Tambourine
+Stone, a rock that has a deep, resonating tone when struck.
 
 Next, take an excursion to the natural phenomenon of Yanar Dag, an incessant natural
 fire which blazes continuously on a hillside. Many historians claim that this place
@@ -70,7 +70,7 @@ towards Narikhala, the 4th century fort overlooking the city. The fort provides
 an exquisite view of the city and region.
 
 After lunch at a local restaurant, you will visit the Georgian State Museum, known
-for its collection of gold and silver artifacts and jewelry from the pre\-Christian
+for its collection of gold and silver artifacts and jewelry from the pre-Christian
 period from various regions of the country. If time permits, take a stroll along
 Rustaveli Avenue, where notorious architectural and historical buildings such as
 the Palace of Youth, Parliament of Georgia, Kashveti Church, Rustaveli Theater,
@@ -128,7 +128,7 @@ places on the planet.
 
 Explore multiple architectural monuments and learn about the traditions of local
 people, all while enjoying the splendid views that open up on the gorgeous Alazani
-Valley, known as the cradle of Georgian wines.  For lunch, receive hands\-on experience
+Valley, known as the cradle of Georgian wines.  For lunch, receive hands-on experience
 in the preparation of traditional Georgian cuisine, including Churchkela (a delicacy
 consisting of a mixture of walnuts and grapes), Khinkall (dumplings), Mtsvadi (barbeque),
 Khachapuri (cheese pie), and Chacha (grappa). These preparations will be accompanied
@@ -138,7 +138,7 @@ Spend the evening at your leisure in Signagi.
 ### Day Ten: Singagi to Dzoraget
 
 
-Enjoy breakfast this morning before checking out of your hotel and drive to the Georgia\-Armenia
+Enjoy breakfast this morning before checking out of your hotel and drive to the Georgia-Armenia
 border. Arrive at the town of Sadakhlo and cross into the town of Bagratashen. Armenia
 is a country rich with culture, located in the highlands surrounding the mountains
 of Ararat in the South Caucasus. With strong ties to the Christian religion, ancient
@@ -149,14 +149,14 @@ from the tenth century and inscribed as UNESCO World Heritage Sites. For 300 yea
 Sanahin was an important center of learning, where humanitarian sciences and medicine
 were taught. Continue on to Dzoraget, the midpoint between the capitals of Armenia
 and Georgia. Transfer to your hotel, Avan Dzoraget Hotel, a medieval castle nestled
-along the Debed River among the forest\-covered hills and rocky slope of the Caucasus
+along the Debed River among the forest-covered hills and rocky slope of the Caucasus
 Mountains.
 
 ### Day Eleven: Dzoraget to Yerevan
 
 
 After breakfast at the hotel, we drive to the pearl of Armenia, Lake Sevan. One of
-the greatest freshwater high\-mountain lakes of Eurasia, Lake Sevan has a unique
+the greatest freshwater high-mountain lakes of Eurasia, Lake Sevan has a unique
 combination of great size, high mountain location, and comparatively “soft water”.
 Here you will have an opportunity to taste the fish from the lake and explore the
 Sevanavank Monastery, the summer residence of the Favorite Armenian King Ashot the
@@ -208,7 +208,7 @@ and is credited with converting Armenia to Christianity in the year 301, making
 it the first nation to name Christianity as its official religion. In this historic
 atmosphere you will enjoy the best view of Mount Ararat over the border with Turkey,
 where it is said that Noah’s Ark rested after the famous flood. Return to Yerevan
-with a stop at the open\-air art and craft market called Vernissage. In Vernissage
+with a stop at the open-air art and craft market called Vernissage. In Vernissage
 you can buy different souvenirs to take a piece of Armenia with you.
 
 ###   

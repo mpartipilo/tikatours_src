@@ -22,7 +22,7 @@ image_path: /library/regions/guria.jpg
 </div>
 
 <div class="row content-row"><!-- 1216 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1613 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1613 -->
 
 Guria is located in the western part of Georgia, bordered by the Black Sea. Famous
 for its music and polyphonic singing, Guria is a region rich in cultural traditions
@@ -31,7 +31,7 @@ tea plantations, orchards, grape vines and cornfields.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1614 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1614 -->
 
 Social relationships are strictly defined in Guria and they are known for their politeness
 and respect for the elderly. Gurians are also known for their building skills and
@@ -42,7 +42,7 @@ handcrafts including leatherwork, saddle making and basket making.
 </div>
 
 <div class="row content-row"><!-- 1217 (3)-->
-<div class="col-xs-12"><!-- 1615 -->
+<div class="col-12"><!-- 1615 -->
 
 * * *
 
@@ -51,7 +51,7 @@ handcrafts including leatherwork, saddle making and basket making.
 </div>
 
 <div class="row content-row"><!-- 1218 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1616 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1616 -->
 
 ### History
 
@@ -82,7 +82,7 @@ by high winds.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1617 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1617 -->
 
 ### What to see and do
 

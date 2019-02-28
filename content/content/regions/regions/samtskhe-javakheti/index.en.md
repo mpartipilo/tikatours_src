@@ -22,7 +22,7 @@ image_path: /library/regions/vardzia1.jpg
 </div>
 
 <div class="row content-row"><!-- 1185 (2)-->
-<div class="col-xs-12"><!-- 1577 -->
+<div class="col-12"><!-- 1577 -->
 
 The river Jobiskhevi, a tributary of the Mtkvari, threads through this jaw\-droppingly
 beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
@@ -32,7 +32,7 @@ beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
 </div>
 
 <div class="row content-row"><!-- 1186 (3)-->
-<div class="col-xs-12"><!-- 1578 -->
+<div class="col-12"><!-- 1578 -->
 
 * * *
 
@@ -41,7 +41,7 @@ beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
 </div>
 
 <div class="row content-row"><!-- 1187 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1579 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1579 -->
 
 ### History
 
@@ -71,7 +71,7 @@ while the average temperature in July varies between 16 °C and 20°C.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1580 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1580 -->
 
 ### What to see and do
 

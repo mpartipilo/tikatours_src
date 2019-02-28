@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const SubNav = ({ list }) => (
   <div className="row">
-    <div className="col-xs-12">
+    <div className="col-12">
       <ul className="sub-nav">
         {list.map(l => (
           <li key={l.id}>

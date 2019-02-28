@@ -6,14 +6,14 @@ title: 戏院 | Tika Tours
 rank: 4
 ---
 <div class="row content-row"><!-- 885 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1220 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1220 -->
 
 格鲁吉亚电影和戏剧有漫长而令人骄傲的历史。从古老的民间传说和戏剧仪式到青铜时代的宗教神秘剧的雕刻。
 旅行者仍然可以在迷人的，一度繁荣的洞穴城市Uplistsikhe访问一个早期的格鲁吉亚剧院。这座城市有一个名为“剧院”的洞穴，有自己的舞台、管弦乐队和观众大厅。它被认为是公元1或2世纪的一座神庙，在那里上演了宗教神秘的戏剧。格鲁吉亚最旧的全国形式是"Sakhioba"。从中世纪开始，它是在皇家宫殿里由戴面具的演员在音乐伴奏下表演的。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1221 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1221 -->
 
 格鲁吉亚国家剧院建于17世纪90年代第比利斯，专业演出剧院成立于1850年，然后是1921年建于的，着名的Rustaveli国家剧院。它是格鲁吉亚最大的剧院，它位于第比利斯，坐落在一座华丽的洛可可风格建筑内建筑中，并带有格鲁吉亚国家诗人的名字。成功的KoteMarjanishvili国家戏剧剧场成立于1928年在现代格鲁吉亚戏剧生活的发展中也扮演了重要的角色。
 
@@ -24,7 +24,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 886 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1222 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1222 -->
 
 ![](/library/content/img13.jpg)
 
@@ -33,7 +33,7 @@ rank: 4
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1223 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1223 -->
 
 ![](/library/content/img14.jpg)
 

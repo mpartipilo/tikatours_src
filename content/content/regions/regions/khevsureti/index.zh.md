@@ -22,7 +22,7 @@ image_path: /library/regions/khevsureti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1173 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1562 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1562 -->
 
 历史悠久的赫雷苏维季地区是格鲁吉亚最美丽最神秘的地方之一·最大的村庄
 是Barisakho和Shatili。
@@ -30,7 +30,7 @@ image_path: /library/regions/khevsureti1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1563 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1563 -->
 
 赫雷苏维季以其以其古老的传统而闻名-中世纪的民谣，音乐和民间传说，中世纪的堡垒村庄守卫着秘密的山谷，难忘的风景。
 
@@ -39,7 +39,7 @@ image_path: /library/regions/khevsureti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1174 (3)-->
-<div class="col-xs-12"><!-- 1564 -->
+<div class="col-12"><!-- 1564 -->
 
 * * *
 
@@ -48,7 +48,7 @@ image_path: /library/regions/khevsureti1.jpg
 </div>
 
 <div class="row content-row"><!-- 1175 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1565 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1565 -->
 
 ###历史
 
@@ -66,7 +66,7 @@ image_path: /library/regions/khevsureti1.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1566 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1566 -->
 
 ###看到和能做什么？
 

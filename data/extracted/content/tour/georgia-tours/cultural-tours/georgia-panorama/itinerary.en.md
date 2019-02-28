@@ -42,7 +42,7 @@ dream. Discover the traditions of the local villagers in the area, explore the f
 in the surrounding countryside, and enjoy the beautiful landscapes of this hidden
 paradise.
 
-Before arriving at your hotel, stop to see Ananuri Fortress. This 13th\-century castle
+Before arriving at your hotel, stop to see Ananuri Fortress. This 13th-century castle
 was the seat of the Dukes of Aragvi and holds over 600 years of history. Two churches
 comprise part of the complex, with the larger Church of Assumption boasting elaborate
 facades, a large carved grapevine cross, and the remnants of stunning frescoes.
@@ -87,7 +87,7 @@ In the afternoon enjoy lunch, wine tasting in local Chateau. Engage yourself in
 process of  harvesting – picking grapes and squeeze them in an old wine press using
 an ancient Georgian method, make your own bread, participate in making Churchkela
 – a traditional Georgian dessert take part in making Georgian grappa, and cook famous
-delicious Georgian dishes Khinkali\- Georgian type of dumplings and famous Georgian
+delicious Georgian dishes Khinkali- Georgian type of dumplings and famous Georgian
 Georgian barbeque Mtsvadi.
 
 ### Day Seven: DEPARTURE

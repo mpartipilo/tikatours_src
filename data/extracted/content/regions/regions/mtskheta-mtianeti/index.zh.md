@@ -21,15 +21,15 @@ image_path: /library/regions/mtskheta.jpg
 </div>
 
 <div class="row content-row"><!-- 1498 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1997 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1997 -->
 
-Mtskheta\-Mtianeti is one of the most scenic regions in Georgia like a perfectly
-composed painting brought vividly to life. It is mainly an agricultural region but
-also contains Georgia's main skiing resort, Gudauri.
+Mtskheta-Mtianeti is one of the most scenic regions in Georgia like a perfectly composed
+painting brought vividly to life. It is mainly an agricultural region but also contains
+Georgia's main skiing resort, Gudauri.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1998 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1998 -->
 
 The city of Mtskheta is the administrative capital of the region and was once the
 ancient capital of the country.
@@ -39,7 +39,7 @@ ancient capital of the country.
 </div>
 
 <div class="row content-row"><!-- 1499 (3)-->
-<div class="col-xs-12"><!-- 1999 -->
+<div class="col-12"><!-- 1999 -->
 
 
 
@@ -48,7 +48,7 @@ ancient capital of the country.
 </div>
 
 <div class="row content-row"><!-- 1500 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2000 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2000 -->
 
 ### History
 
@@ -65,7 +65,7 @@ site and are a reminder of its past glories.
 
 
 This geographically diverse region represents a luscious slice of Georgia. It extends
-from the 3500\-5000m high snowy peaks and glaciers of the Greater Caucasus through
+from the 3500-5000m high snowy peaks and glaciers of the Greater Caucasus through
 knife edge ravines and secluded lakes, south to lush river valleys and lowland plains.
 
 The city of Mtskheta is in an attractive setting in the south of the region, at the
@@ -78,20 +78,20 @@ warm while mountainous northern areas stay cool all year round.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2001 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2001 -->
 
 ### What to see and do
 
 
-Mtskheta\-Mtianeti is the perfect place for adventure seekers. Popular activities
-in the region include paragliding, ski\-touring, snowmobile sightseeing tours, trekking
-and hiking, bird\-watching, horse riding, mountain biking, white water rafting,
-fishing, mountaineering, rock climbing, camping and more.
+Mtskheta-Mtianeti is the perfect place for adventure seekers. Popular activities
+in the region include paragliding, ski-touring, snowmobile sightseeing tours, trekking
+and hiking, bird-watching, horse riding, mountain biking, white water rafting, fishing,
+mountaineering, rock climbing, camping and more.
 
 Gudauri is Georgia's main snow resort and a premier outdoors playground with over
 50 kilometres of prepared runs. The resort offers four types of runs: slalom, giant
 slalom, super giant and downhill racing, with something for every skier from beginner
-to professional. Great snow coverage means the season runs from December to mid\-April.
+to professional. Great snow coverage means the season runs from December to mid-April.
 Drop into the Khada Hut for a delicious meal and a welcome rest in the friendly
 atmosphere.
 
@@ -102,7 +102,7 @@ erected a cross ("jvari" in Georgian) in the 4th century to mark the coming of C
 to Georgia.
 
 Svetitskhoveli is the royal cathedral of Georgia, used for centuries for the coronation
-and burial of Georgian monarchs. Nearby, in a narrow limestone canyon is the Shio\-mgvime
+and burial of Georgian monarchs. Nearby, in a narrow limestone canyon is the Shio-mgvime
 Monastic complex . It was founded by one of the 6th century Syrian Fathers who lived
 here as a religious recluse in a dark cave for 20 years, praying and devoting himself
 to God.

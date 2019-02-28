@@ -13,7 +13,7 @@ sub_category_id: 11
 rank: 4
 ---
 <div class="row content-row"><!-- 1552 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2088 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2088 -->
 
 A hot soak in a thermal pool is one of life's most luxurious and rejuvenating experiences
 and Georgia is fortunate to be home to more than its fair share of these healing
@@ -24,7 +24,7 @@ joint mobility and bring about a general sense of wellbeing.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 2089 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 2089 -->
 
 From Tbilisi's grand blue\-tiled Orbeliani baths to wooded alpine spa towns and the
 Black Sea's most idyllic sun\-soaked resorts, a trip to Georgia would not be complete

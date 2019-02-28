@@ -230,7 +230,7 @@ class PageWrapper extends React.Component {
             <div className="row">
               <div
                 className={
-                  "col-xs-12 text-center" + (hasBreadcrumbs ? " has-bc" : "")
+                  "col-12 text-center" + (hasBreadcrumbs ? " has-bc" : "")
                 }
               >
                 {heading && <h1>{heading}</h1>}
@@ -251,7 +251,7 @@ class PageWrapper extends React.Component {
               )}
             </div>
             <div className="row">
-              <div className="col-xs-12">
+              <div className="col-12">
                 <div className="divider" />
               </div>
             </div>

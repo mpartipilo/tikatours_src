@@ -4,10 +4,14 @@ import { Link } from "gatsby"
 
 const CatList = ({ heading, list }) => (
   <div className="row sub-wrap">
-    {heading && <h3 className="text-center">{heading}</h3>}
+    {heading && (
+      <div className="col-12">
+        <h3 className="text-center">{heading}</h3>
+      </div>
+    )}
     {list &&
       list.map(c => (
-        <div className="col-xs-12 col-sm-6" key={c.url}>
+        <div className="col-12 col-sm-6" key={c.url}>
           <Link to={`${c.url}`}>
             <div
               className="sub-cat"

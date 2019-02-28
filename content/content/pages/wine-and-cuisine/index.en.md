@@ -6,7 +6,7 @@ title: Wine & Cuisine | Tika Tours
 rank: 2
 ---
 <div class="row content-row"><!-- 881 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1212 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1212 -->
 
 It’s midday in the foothills of Georgia’s Caucasus Mountains. Green slopes thin out
 into alpine meadows and below, a broad beautiful valley uncurls with row upon row
@@ -15,7 +15,7 @@ of golden vineyards. Considered by many to be the birthplace of wine, more than
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1213 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1213 -->
 
 Georgia has been making wine for 8000 years \- it is a matter of pride, a symbol
 of hospitality and deeply rooted in Georgian national identity.
@@ -25,7 +25,7 @@ of hospitality and deeply rooted in Georgian national identity.
 </div>
 
 <div class="row content-row"><!-- 882 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1214 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1214 -->
 
 ![](/library/content/img3.jpg)
 
@@ -55,7 +55,7 @@ vegetables, fruit and greens.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1215 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1215 -->
 
 ![](/library/content/img4.jpg)
 

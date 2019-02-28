@@ -21,7 +21,7 @@ image_path: /library/regions/dmanisi.jpg
 </div>
 
 <div class="row content-row"><!-- 1169 (2)-->
-<div class="col-xs-12"><!-- 1558 -->
+<div class="col-12"><!-- 1558 -->
 
 Dmanisi is a town in Kvemo (lower) Kartli in eastern Georgia that has become famous
 for the ancient human skull fragments that have been found nearby.
@@ -33,7 +33,7 @@ The wider region is well known for its tradition of handcrafts, especially metal
 </div>
 
 <div class="row content-row"><!-- 1170 (3)-->
-<div class="col-xs-12"><!-- 1559 -->
+<div class="col-12"><!-- 1559 -->
 
 * * *
 
@@ -42,7 +42,7 @@ The wider region is well known for its tradition of handcrafts, especially metal
 </div>
 
 <div class="row content-row"><!-- 1171 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1560 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1560 -->
 
 ### History
 
@@ -73,7 +73,7 @@ The warmest month of the year in Dmanisi is July, with an average temperature of
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1561 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1561 -->
 
 ### What to see and do
 

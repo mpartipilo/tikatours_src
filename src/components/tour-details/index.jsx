@@ -62,9 +62,9 @@ class TourDetails extends React.Component {
 
     return (
       <div className="row tour-wrap">
-        <div className="col-xs-12 col-md-8">
+        <div className="col-12 col-md-8">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               <h2>{this.state.strings["tour overview"]}</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
@@ -75,7 +75,7 @@ class TourDetails extends React.Component {
               />
             )}
             {itinerary && (
-              <div className="col-xs-12">
+              <div className="col-12">
                 <h2>{this.state.strings["itinerary"]}</h2>
                 <div
                   dangerouslySetInnerHTML={{
@@ -86,9 +86,9 @@ class TourDetails extends React.Component {
             )}
           </div>
         </div>
-        <div className="col-xs-12 col-md-4 side">
+        <div className="col-12 col-md-4 side">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-12">
               <div className="tag">{tag}</div>
               {/* flag */}
               <span className="duration">{duration}</span>
@@ -109,7 +109,7 @@ class TourDetails extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="col-xs-12 incl-wrap">
+            <div className="col-12 incl-wrap">
               <h2>{this.state.strings["inclusions"]}</h2>
               <div
                 dangerouslySetInnerHTML={{

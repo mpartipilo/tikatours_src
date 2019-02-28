@@ -18,7 +18,7 @@ sub_heading: Choose your tour style
 </div>
 
 <div class="row content-row"><!-- 1152 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1542 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1542 -->
 
 Let Tika Tours unveil Georgia's many charms and reveal her secrets. Travel to the
 startlingly beautiful Caucasus mountain villages for a luxury adventure of a lifetime,
@@ -29,7 +29,7 @@ romantic stolen kisses   and exhilarating family holidays.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1543 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1543 -->
 
 Join with Tika Tours to explore Georgia's potential business and investment opportunities
 first hand or trust our extensive experience to facilitate your conference, symposium

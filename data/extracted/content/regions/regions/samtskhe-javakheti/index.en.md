@@ -22,9 +22,9 @@ image_path: /library/regions/vardzia1.jpg
 </div>
 
 <div class="row content-row"><!-- 1185 (2)-->
-<div class="col-xs-12"><!-- 1577 -->
+<div class="col-12"><!-- 1577 -->
 
-The river Jobiskhevi, a tributary of the Mtkvari, threads through this jaw\-droppingly
+The river Jobiskhevi, a tributary of the Mtkvari, threads through this jaw-droppingly
 beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
 
 </div>
@@ -32,7 +32,7 @@ beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
 </div>
 
 <div class="row content-row"><!-- 1186 (3)-->
-<div class="col-xs-12"><!-- 1578 -->
+<div class="col-12"><!-- 1578 -->
 
 * * *
 
@@ -41,23 +41,23 @@ beautiful region, dividing the two areas of Samtskhe and Javakheti that form it.
 </div>
 
 <div class="row content-row"><!-- 1187 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1579 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1579 -->
 
 ### History
 
 
-Samtskhe\-Javakheti was part of Tao\-Klarjeti, a cradle of medieval Georgian culture
+Samtskhe-Javakheti was part of Tao-Klarjeti, a cradle of medieval Georgian culture
 that extended well into what is now Turkey. Artifacts found during archeological
-diggings indicate that Samtskhe\-Javakheti was settled during the Bronze Age.
+diggings indicate that Samtskhe-Javakheti was settled during the Bronze Age.
 
-Tao\-Klarjeti fell under Ottoman rule from the 1550s to the 1870s, was briefly part
+Tao-Klarjeti fell under Ottoman rule from the 1550s to the 1870s, was briefly part
 of independent Georgia after the Russian Revolution, and was then divided between
 Turkey and Bolshevik Georgia in 1921.
 
 ### Geography and climate
 
 
-Samtskhe\-Javakheti is a mountainous region, bordered by the Arsiani Mountains to
+Samtskhe-Javakheti is a mountainous region, bordered by the Arsiani Mountains to
 the west and the Persati Mountains to the north. To the south, it shares an international
 border with Turkey and Armenia.
 
@@ -66,27 +66,27 @@ the alpine forests and high mountain meadows around Borjomi and Bakuriani and th
 bare volcanic canyons of the Vardzia area.
 
 The climate in this inland region is relatively cool and dry. Winters are cold with
-the average temperature in January ranging between 0°C and \-7°C depending on altitude,
+the average temperature in January ranging between 0°C and -7°C depending on altitude,
 while the average temperature in July varies between 16 °C and 20°C.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1580 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1580 -->
 
 ### What to see and do
 
 
 The biggest attractions in this striking region are the spectacular cave city of
-Vardzia and the beautiful Borjomi\-Kharagauli National Park, which offers some of
+Vardzia and the beautiful Borjomi-Kharagauli National Park, which offers some of
 the best hiking, horse riding and snow shoeing in Georgia. But there is much, much
 more to see.
 
 One particularly unique attraction is the Petrified Forest in Goderdzi Reserve. It
 dates back to the Tertiary Era when the surrounding landscape were covered with
-red\-hot lava streams and volcanic ash. Visitors can walk amongst these ancient
-petrified tree branches and fossilized lumps of wooden logs.
+red-hot lava streams and volcanic ash. Visitors can walk amongst these ancient petrified
+tree branches and fossilized lumps of wooden logs.
 
-The city of Akhaltsikhe, the capital of Samtskhe\-Javakheti dates back to the 12th
+The city of Akhaltsikhe, the capital of Samtskhe-Javakheti dates back to the 12th
 century B.C. Take some time to explore the rabati (old town), with its multicultural
 architecture. Stroll past rare examples of traditional Georgian houses, a synagogue,
 an Armenian church and a castle, which houses, among other things, a mosque and
@@ -94,8 +94,8 @@ the ruins of an Islamic school. Don't miss the historical ethnographic museum th
 has one of the most interesting museum collections in Georgia.
 
 A visit to the impressive Atskuri and Tmogvi fortresses, the Chule St. George Monastery
-and Cathedral, and the pink\-stoned Timotesubani, a medieval monastery complex,
-is well worthwhile for their beauty, sophisticated architecture and design and historical
+and Cathedral, and the pink-stoned Timotesubani, a medieval monastery complex, is
+well worthwhile for their beauty, sophisticated architecture and design and historical
 significance.
 
 The Vardzia Cave complex is one of the most important and impressive historic monuments

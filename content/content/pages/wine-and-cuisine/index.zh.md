@@ -6,13 +6,13 @@ title: 葡萄酒与美食 | Tika Tours
 rank: 2
 ---
 <div class="row content-row"><!-- 881 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1212 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1212 -->
 
 格鲁吉亚高加索山脉山麓的中午。绿色的山坡上到高山草甸。在下面一个广泛，美丽的山谷有一排排金色葡萄园。很多人认为格鲁吉亚是葡萄酒的诞生地，格鲁吉亚拥有500种本土葡萄品种。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1213 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1213 -->
 
 格鲁吉亚拥有8000 年的葡萄酒酿造历史。这是一个骄傲的事情， 格鲁吉亚人的好客的象征，深深植根，深深扎根于格鲁吉亚国家认同。
 
@@ -21,7 +21,7 @@ rank: 2
 </div>
 
 <div class="row content-row"><!-- 882 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1214 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1214 -->
 
 ![](/library/content/img3.jpg)
 
@@ -30,7 +30,7 @@ rank: 2
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1215 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1215 -->
 
 ![](/library/content/img4.jpg)
 

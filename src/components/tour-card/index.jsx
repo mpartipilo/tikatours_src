@@ -4,6 +4,65 @@ import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
 
+const TourCardRender = ({
+  tag,
+  image_path,
+  title,
+  duration,
+  flag,
+  price,
+  info,
+  info_url,
+  strings
+}) => (
+  <div className="col-12 col-lg-6 t-item">
+    <div className="row">
+      <div
+        className="col-12 col-md-6 col-lg-12 col-xl-6"
+        style={{ backgroundImage: "url('" + image_path + "')" }}
+      >
+        <span className="t-info" />
+        <div className="tag">{tag}</div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+        <div className="t-info">
+          <h3>
+            <Link to={info_url}>{title}</Link>
+          </h3>
+          <div className="duration">
+            {flag ? flag : null}
+            <span>{duration}</span>
+          </div>
+          <p>{info}</p>
+          {price > 0 && (
+            <p>
+              {strings.from_euro}
+              <span className="price">{price}</span>
+              {strings["per person"]}
+            </p>
+          )}
+          <div>
+            <Link to={info_url} className="btn moreInfo">
+              {strings.more_info}
+            </Link>
+            <a
+              href="https://form.jotform.com/TikaTours/bookings"
+              className="btn bookNow"
+              target="_blank"
+            >
+              {strings.book_tour}
+            </a>
+          </div>
+        </div>
+        <div className="blur-img">
+          <div style={{ backgroundImage: "url('" + image_path + "')" }} />
+          <div className="olay" />
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
   if (!tag) {
     var mainCategory = tourCategoryData.find(
@@ -15,65 +74,24 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
   }
   const { strings } = contentData[language]
 
-  return (
-    <div className="col-xs-12 col-md-6 t-item">
-      <div className="row">
-        <div
-          className="col-xs-12 col-sm-6 col-md-12 col-lg-6"
-          style={{ backgroundImage: "url('" + tour.image_path + "')" }}
-        >
-          <span className="t-info" />
-          <div className="tag">
-            {tag
-              ? tag
-              : subCategory
-                ? subCategory.name
-                : mainCategory
-                  ? mainCategory.name
-                  : ""}
-          </div>
-        </div>
-        <div className="col-xs-12 col-sm-6 col-md-12 col-lg-6">
-          <div className="t-info">
-            <h3>
-              <Link to={tour.url}>{tour.name}</Link>
-            </h3>
-            <div className="duration">
-              {tour.flag ? tour.flag : null}
-              <span>{tour.duration}</span>
-            </div>
-            <p>{tour.short_descr}</p>
-            {tour.price_from > 0 && (
-              <p>
-                {strings.from_euro}
-                <span className="price">{tour.price_from}</span>
-                {strings["per person"]}
-              </p>
-            )}
-            <div>
-              <Link to={tour.url} className="btn" style={{ width: "48%" }}>
-                {strings.more_info}
-              </Link>
-              <a
-                href="https://form.jotform.com/TikaTours/bookings"
-                className="btn"
-                style={{ width: "48%" }}
-                target="_blank"
-              >
-                {strings.book_tour}
-              </a>
-            </div>
-          </div>
-          <div className="blur-img">
-            <div
-              style={{ backgroundImage: "url('" + tour.image_path + "')" }}
-            />
-            <div className="olay" />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+  const tcrProps = {
+    strings,
+    image_path: tour.image_path,
+    info_url: tour.url,
+    title: tour.name,
+    tag: tag
+      ? tag
+      : subCategory
+      ? subCategory.name
+      : mainCategory
+      ? mainCategory.name
+      : "",
+    duration: tour.duration,
+    info: tour.short_descr,
+    price: tour.price_from
+  }
+
+  return <TourCardRender {...tcrProps} />
 }
 
 TourCard.propTypes = {

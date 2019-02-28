@@ -22,11 +22,11 @@ image_path: /library/regions/tbilisi1.jpg
 </div>
 
 <div class="row content-row"><!-- 1161 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1548 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1548 -->
 
-Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree\-lined
-boulevards, charming lanes, towering churches and pastel\-painted houses, Tbilisi
-is unexpectedly lovely.
+Surrounded by hills, sliced in two by the Mtkvari (Kura) River, with tree-lined boulevards,
+charming lanes, towering churches and pastel-painted houses, Tbilisi is unexpectedly
+lovely.
 
 Like a lovely lost kingdom, Georgia's capital city lies deep in the country's heartland,
 watched over by ancient towers and churches. The central city unfurls along Rustaveli
@@ -34,9 +34,9 @@ Avenue, the intriguingly eclectic architecture reflecting Georgia's dynamic hist
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1549 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1549 -->
 
-Broad and leafy streets, grand neo classical buildings and space\-age modern designs
+Broad and leafy streets, grand neo classical buildings and space-age modern designs
 sit alongside ancient churches, mosques, synagogues and a teasing maze of twisting,
 balconied side streets. Here and there, honeysuckle blossom and mulberry trees give
 shade to surprising courtyards.
@@ -46,7 +46,7 @@ shade to surprising courtyards.
 </div>
 
 <div class="row content-row"><!-- 1162 (3)-->
-<div class="col-xs-12"><!-- 1550 -->
+<div class="col-12"><!-- 1550 -->
 
 * * *
 
@@ -55,7 +55,7 @@ shade to surprising courtyards.
 </div>
 
 <div class="row content-row"><!-- 1163 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1551 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1551 -->
 
 ### History
 
@@ -81,17 +81,17 @@ on average 15–25 days of the year.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1552 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1552 -->
 
 ### What to see and do
 
 
-Take the new cable car up to the 17th\-century Narikala citadel for a bird’s\-eye
-vantage over the city and a close\-up of the oversized Mother Georgia statue and
-her gaze of steely self\-assurance. Explore the spidery lanes of the old town with
-its ornate balconied houses and Byzantine churches or spend a relaxing afternoon
-in the beautiful tiled surroundings of one of the city's ancient bath houses, immersed
-in the hot springs that bubble up beneath the city.
+Take the new cable car up to the 17th-century Narikala citadel for a bird’s-eye vantage
+over the city and a close-up of the oversized Mother Georgia statue and her gaze
+of steely self-assurance. Explore the spidery lanes of the old town with its ornate
+balconied houses and Byzantine churches or spend a relaxing afternoon in the beautiful
+tiled surroundings of one of the city's ancient bath houses, immersed in the hot
+springs that bubble up beneath the city.
 
 Stroll through Maidan Square, Tbilisi's historic center, with its outdoor cafés and
 bars. Breathe in the thick sweet smell of incense at Kashveti Church on Rustaveli

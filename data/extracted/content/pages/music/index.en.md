@@ -6,7 +6,7 @@ title: Music | Tika Tours
 rank: 3
 ---
 <div class="row content-row"><!-- 883 (1)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1216 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1216 -->
 
 The opportunity to listen to the breath\-taking harmonies sung by Georgian voices
 is a magical experience. Georgian polyphony has a haunting, resonant vocal quality
@@ -21,7 +21,7 @@ but they all share the same intonation and harmonic characteristics.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1217 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1217 -->
 
 Georgian musical instruments can be overshadowed by the country's rich vocal traditions
 but they are also important and often played to accompany polyphonic songs. Among
@@ -42,7 +42,7 @@ liturgy by the 10\-11th centuries.
 </div>
 
 <div class="row content-row"><!-- 884 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1218 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1218 -->
 
 ![](/library/content/img5.jpg)
 
@@ -60,7 +60,7 @@ marked by the development of chamber and symphony music.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1219 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1219 -->
 
 ![](/library/content/img6.jpg)
 

@@ -22,7 +22,7 @@ image_path: /library/regions/racha.jpg
 </div>
 
 <div class="row content-row"><!-- 1200 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1594 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1594 -->
 
 The region of Racha\-Lechkhumi also officially includes Kvemo (lower) Svaneti. This
 north\-western region is the most sparsely populated in Georgia, situated in the
@@ -30,7 +30,7 @@ midst of the awe\-inspiring Caucasus.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1595 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1595 -->
 
 It is known for its impassive beauty, wine making, bee\-keeping, dairy products and
 cattle\-breeding, carpentry and singing, health resorts and like most of Georgia,
@@ -42,7 +42,7 @@ who enjoy sharing their paradise.
 </div>
 
 <div class="row content-row"><!-- 1201 (3)-->
-<div class="col-xs-12"><!-- 1596 -->
+<div class="col-12"><!-- 1596 -->
 
 * * *
 
@@ -51,7 +51,7 @@ who enjoy sharing their paradise.
 </div>
 
 <div class="row content-row"><!-- 1202 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1597 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1597 -->
 
 ### History
 
@@ -82,7 +82,7 @@ temperature in July typically reaches between 19 °C and 21°C.
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1598 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1598 -->
 
 ### What to see and do
 

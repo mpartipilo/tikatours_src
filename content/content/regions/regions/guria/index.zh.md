@@ -22,13 +22,13 @@ image_path: /library/regions/guria.jpg
 </div>
 
 <div class="row content-row"><!-- 1216 (2)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1613 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1613 -->
 
 古里亚地区位于格鲁吉亚国土西部，比邻黑海东岸。古里亚以其音乐和复音歌乐而闻名，是一个文化传统丰富的地区和自然美景。乡村是芳香的柑橘园，茶园，果园，葡萄藤 ，玉米田的迷人的马赛克香。
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1614 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1614 -->
 
 古里亚地区是一个更为尊敬老人的社会。古里亚人也以他们的建筑技巧而闻名，手工艺品包括皮革制品、制鞍和篮子制作。
 
@@ -37,7 +37,7 @@ image_path: /library/regions/guria.jpg
 </div>
 
 <div class="row content-row"><!-- 1217 (3)-->
-<div class="col-xs-12"><!-- 1615 -->
+<div class="col-12"><!-- 1615 -->
 
 * * *
 
@@ -46,7 +46,7 @@ image_path: /library/regions/guria.jpg
 </div>
 
 <div class="row content-row"><!-- 1218 (4)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1616 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1616 -->
 
 ###历史
 
@@ -65,7 +65,7 @@ image_path: /library/regions/guria.jpg
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1617 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1617 -->
 
 ### 看到和能做什么？
 

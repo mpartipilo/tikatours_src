@@ -11,7 +11,7 @@ rank: 4
 </div>
 
 <div class="row content-row"><!-- 1222 (3)-->
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1620 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1620 -->
 
 Wedged snugly between Europe and Asia, bordered by the Black Sea and the towering
 peaks of the Caucasus, Georgia is a fusion of influences from East and West but
@@ -22,7 +22,7 @@ and unfailing hospitality, Georgia is a rewarding destination for every travelle
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6"><!-- 1621 -->
+<div class="col-12 col-sm-6 col-md-6"><!-- 1621 -->
 
 Walkers, climbers and skiers will want to explore the mountains, forests and traditional
 villages. The rivers are perfect for fishing and rafting while botanists and bird\-watchers

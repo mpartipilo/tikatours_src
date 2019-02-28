@@ -11,12 +11,12 @@ WELCOME TO JOHANNESBURG!
 Upon arrival you will be greeted at your gate and escorted through customs.
 
 Located only a short walk away from the arrivals hall of Johannesburg’s largest international
-airport, the award\-winning InterContinental Johannesburg, South Africa’s only luxury
+airport, the award-winning InterContinental Johannesburg, South Africa’s only luxury
 5 Star airport hotel, offers travelers a luxurious and enjoyable stay upon arrival.
 Your evening accommodation includes a double room and breakfast.
 
 ###   
-DAY 2­­\-5 | Timbavati Private Natural Reserve @ Ngala Tented Camp
+DAY 2­­-5 | Timbavati Private Natural Reserve @ Ngala Tented Camp
 
 
 
@@ -65,7 +65,7 @@ NGALA TENTED CAMP
 
 Chic and contemporary, Ngala Tented Camp is renowned for sophisticated tented accommodation
 in tranquil bush surrounds. Its luxurious tented suite is set on raised platforms
-with outdoor showers, baths mounted on rough\-hewn wooden bases, swirling overhead
+with outdoor showers, baths mounted on rough-hewn wooden bases, swirling overhead
 fans, air conditioning, electric blankets for winter and private wooden decks. The
 overall essence is African, with warm, earthy tones used throughout.. Mature indigenous
 shade trees form a luxuriantly cool canopy overhead and elegant guest areas overlook
@@ -75,19 +75,18 @@ adds a touch of pure indulgence. The food at Ngala is as individual and inventiv
 as the camp itself. Private lunch platters are savored on the viewing decks, at
 the poolside or on the lush lawn.
 
-### Day 6\-9 | Benguerra Island @ Bazaruto Archipelago
+### Day 6-9 | Benguerra Island @ Bazaruto Archipelago
 
 
 A tropical paradise tucked into a lush indigenous forest and looking out onto a picturesque
 crescent of sandy beach, Benguerra Island is the quintessential luxury island retreat.
 Days on your beach holiday can be as active or as leisurely as you want them to
 be. This secluded island, with its golden beaches and balmy Indian Ocean waters,
-invites you to lose all track of time. Activities and meals can be tailor\-made
-to your wishes and there are many ways to spend each ideal, sun\-washed day. The
-lodge’s is sheltered by swaying palm trees in the perfect setting to relax or enjoy
-open air meals throughout the day. Set deep in cleverly created patches of shade,
-comfortable loungers beckon guests to relax around the pool while drinking in the
-ocean views.
+invites you to lose all track of time. Activities and meals can be tailor-made to
+your wishes and there are many ways to spend each ideal, sun-washed day. The lodge’s
+is sheltered by swaying palm trees in the perfect setting to relax or enjoy open
+air meals throughout the day. Set deep in cleverly created patches of shade, comfortable
+loungers beckon guests to relax around the pool while drinking in the ocean views.
 
 
 **Breakfast**
@@ -134,7 +133,7 @@ bathroom is located on one side of the bedroom and a small sitting area is locat
 on the other side of the bed. The casinhas offer private timber decks and cool rim
 flow pools. There is also a private sala with a hanging daybed, as well as private
 sun loungers situated on the beach. Bathrooms feature generous tubs big enough for
-two, while al fresco showers are decorated with hand\-painted tiles. Woven hammocks
+two, while al fresco showers are decorated with hand-painted tiles. Woven hammocks
 invite guests to an afternoon siesta, lulled by a chorus of songbirds that makes
 the forest canopy its home. A shaded gazebo provides the ideal venue for starlit
 dinners, while the stylish dining room and open lounge, both of which boast wide,
