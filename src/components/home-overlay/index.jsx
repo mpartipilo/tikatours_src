@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 class HomeOverlay extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { opacity: 1, visible: true }
-
+    this.state = { visible: true }
+    this.opacity = 1
     this.refOverlay = null
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -30,21 +30,22 @@ class HomeOverlay extends React.Component {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
     const height = document.body.clientHeight
-    const opacity = Math.max((height - scrollTop) / height, 0)
+    this.opacity = Math.max((height - scrollTop) / height, 0)
 
     if (!this.refOverlay) {
       return
     }
 
+    this.refOverlay.style.opacity = this.opacity
+
     const overlayHeight = this.refOverlay.clientHeight
     const visible = scrollTop <= overlayHeight
 
-    if (this.state.opacity == opacity && this.state.visible == visible) {
+    if (this.state.visible == visible) {
       return
     }
 
     this.setState({
-      opacity,
       visible
     })
   }
@@ -62,7 +63,7 @@ class HomeOverlay extends React.Component {
       <>
         <div
           className="overlay"
-          style={{ opacity: this.state.opacity || 0 }}
+          style={{ opacity: this.opacity }}
           ref={refOverlay => (this.refOverlay = refOverlay)}
         >
           <div className="container-fluid">
