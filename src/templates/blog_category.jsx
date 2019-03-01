@@ -10,7 +10,8 @@ import { contentData } from "../components/i18n-data"
 const BlogPageTemplate = ({ pathContext, location, data }) => {
   const defaultLanguage = "en"
   const language = data.markdownRemark.frontmatter.language || defaultLanguage
-  const { strings, sitemetadata } = contentData[language]
+  const { strings } = contentData[language]
+  const { sitemetadata, contact_data } = data
 
   const { blog_post, blog_category } = pathContext
 
@@ -32,7 +33,7 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
       navigation={pathContext.navigation}
       language={language}
       contact={sitemetadata.contact}
-      data={{ markdownRemark: { frontmatter } }}
+      data={{ markdownRemark: { frontmatter }, contact_data }}
       sitemetadata={sitemetadata}
       fixed={false}
     >
@@ -57,7 +58,27 @@ BlogPageTemplate.propTypes = {
 export default BlogPageTemplate
 
 export const pageQuery = graphql`
-  query BlogCategoryPageById($id: String!) {
+  query BlogCategoryPageById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

@@ -1,0 +1,108 @@
+[
+  {
+    "lang": "en",
+    "highlights": [
+      {
+        "id": "388",
+        "highlight": "Swirl, Smell, Sip … like words whispered or a seductive kiss, Georgian wine holds certain magic that will transport you back in time, on a luscious journey to the undisputed birthplace of wine.",
+        "rank": 1,
+        "country_id": 1
+      },
+      {
+        "id": "389",
+        "highlight": "Go wild in Europe`s highest inhabited settlement. Hidden away for centuries high in the Caucasus Mountains, Svaneti encompasses a wild landscape of glacier-capped peaks, forested valleys and villages huddled among ancient stone towers.",
+        "rank": 2,
+        "country_id": 1
+      },
+      {
+        "id": "390",
+        "highlight": "From the Nile to the Caucasus–adventurous spirit and love for the mountains brought early humans to Georgia 1.8 million years ago. Visit the cradle of European civilization, where the earliest hominid skulls outside of Africa were unearthed",
+        "rank": 3,
+        "country_id": 1
+      },
+      {
+        "id": "391",
+        "highlight": "Georgia is a shining star in the culinary galaxy. If you want to try something new, a mouth watering experience in Georgia will make your inner foodie jump for joy.",
+        "rank": 3,
+        "country_id": 1
+      },
+      {
+        "id": "392",
+        "highlight": "Experience a goose bump moment while listening to the UNESCO-proclaimed Georgian polyphonic singers. Hear church chants that usher you into an awe-filled space, suggesting angels’ wings fluttering in an open heaven.",
+        "rank": 5,
+        "country_id": 1
+      },
+      {
+        "id": "393",
+        "highlight": "For over three millennia the Argonauts` and Jason`s life-changing travel experience in Georgia has enthralled the world. Everyone should go on this journey once in a lifetime. You will undoubtedly return to your home country a changed person.",
+        "rank": 6,
+        "country_id": 1
+      },
+      {
+        "id": "394",
+        "highlight": "If you ever dreamed of flying, then Georgian folk dance makes it possible to challenge yourself with dance performance. Georgian folk dancers spin so fast they levitate like a helicopter.",
+        "rank": 6,
+        "country_id": 1
+      },
+      {
+        "id": "395",
+        "highlight": "Some people are fascinated by the Caucasus Mountains, some by Georgian cuisine and wine, and some by polyphonic singing – but what makes you fall in love with this destination and return – is the hospitality of the Georgian people.",
+        "rank": 8,
+        "country_id": 1
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "highlights": [
+      {
+        "id": "388",
+        "highlight": "晃杯、闻香以及啜饮…像低语或令人激动的吻，格鲁吉亚葡萄酒拥有一定的魔力，它将把你带回到那个毫无争议的葡萄酒诞生地.",
+        "rank": 1,
+        "country_id": 1
+      },
+      {
+        "id": "389",
+        "highlight": "去看一看欧洲最高的定居点咯.几个世纪以来藏在高加索山脉深处的斯瓦涅季拥有环绕着冰川覆盖的山峰、森林覆盖的山谷和在古老石塔之间拥挤的村庄.",
+        "rank": 2,
+        "country_id": 1
+      },
+      {
+        "id": "390",
+        "highlight": "1.8年之前从尼罗河到高加索 - 冒险的精神和对山脉的热爱早期人类带到格鲁吉亚。参观欧洲文明的发祥地，那里出土了非洲以外最早的已知人类化石.",
+        "rank": 3,
+        "country_id": 1
+      },
+      {
+        "id": "391",
+        "highlight": "格鲁吉亚是烹饪界一颗颗闪耀的明星。如果你想尝试新的东西，必须品尝令人垂涎欲滴的格鲁吉亚食物.",
+        "rank": 3,
+        "country_id": 1
+      },
+      {
+        "id": "392",
+        "highlight": "听着被联合国教科文组织宣布为世界文化遗产的格鲁吉亚多音的歌手们的演唱，你会感到一阵鸡皮疙瘩。聆听教堂的圣歌，引领你进入一个充满敬畏的空间，就像天使的翅膀在一个开放的天空中飘扬.",
+        "rank": 5,
+        "country_id": 1
+      },
+      {
+        "id": "393",
+        "highlight": "三千多年来，阿耳戈英雄和伊阿宋在格鲁吉亚改变生活的旅行经历让全世界为之着迷。每个人一生中都要经历参加这样的旅程。根本毫无疑问， 您被回到你的祖国一个改变了的人.",
+        "rank": 6,
+        "country_id": 1
+      },
+      {
+        "id": "394",
+        "highlight": "如果你也曾梦想飞翔，那么格鲁吉亚民族舞蹈可以通过舞蹈表演挑战你自己。格鲁吉亚的民间舞蹈演员旋转得很快，像直升机一样漂浮着.",
+        "rank": 6,
+        "country_id": 1
+      },
+      {
+        "id": "395",
+        "highlight": " 一些人对高加索山脉着迷，一些人对格鲁吉亚美食和葡萄酒着迷，还有一些人对复调歌唱着迷，但是，让你爱上这个目的地是格鲁吉亚人民的好客.",
+        "rank": 8,
+        "country_id": 1
+      }
+    ]
+  }
+]

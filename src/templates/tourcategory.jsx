@@ -55,7 +55,7 @@ const TourCategoryPage = ({
 
 const GeneralPageTemplate = ({ location, data, pathContext }) => {
   const currentLanguage = pathContext.language
-  const { sitemetadata } = contentData[currentLanguage]
+  const { sitemetadata } = data
 
   const mainCategoryFound = data.markdownRemark.frontmatter
   const main_category_id = mainCategoryFound.main_category_id
@@ -119,6 +119,26 @@ export default GeneralPageTemplate
 
 export const pageQuery = graphql`
   query TourCategoryById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

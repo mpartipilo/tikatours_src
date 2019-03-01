@@ -31,6 +31,7 @@ class Layout extends React.Component {
       siteTitle,
       navigation
     } = this.props
+    const { contact_data } = data
     return (
       <>
         <Helmet title={siteTitle} />
@@ -43,7 +44,7 @@ class Layout extends React.Component {
           navigation={navigation}
         />
         {children}
-        <Footer language={language} />
+        <Footer contact_data={contact_data} language={language} />
         <WhatsHelp
           options={{
             facebook: "290339974371704", // Facebook page ID

@@ -107,13 +107,11 @@ const IndexPage = ({ location, data, pathContext }) => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const {
-    sitemetadata,
-    imagesSlides,
-    homeOverlayData,
-    countryHighlights,
-    strings
-  } = contentData[language]
+  const { imagesSlides, strings } = contentData[language]
+
+  const { sitemetadata } = data
+  const countryHighlights = data.highlightsJson.highlights
+  const homeOverlayData = data.homeOverlayJson.data
 
   var tourData = data.tours.edges.map(t => t.node.frontmatter)
   var tourList = tourData
@@ -250,6 +248,43 @@ export const pageQuery = graphql`
             rank
           }
         }
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
+    highlightsJson(lang: { eq: $language }) {
+      highlights {
+        id
+        highlight
+      }
+    }
+
+    homeOverlayJson(lang: { eq: $language }) {
+      data {
+        heading
+        subheading
+        intro
+        btn_text
+        btn_url
+      }
+    }
+
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
       }
     }
 

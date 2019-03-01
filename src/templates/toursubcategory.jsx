@@ -60,7 +60,8 @@ class TourSubCategoryPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
     const language = pathContext.language
-    const { sitemetadata, imagesSlides } = contentData[language]
+    const { imagesSlides } = contentData[language]
+    const { sitemetadata } = data
 
     const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
@@ -133,6 +134,26 @@ export default TourSubCategoryPageTemplate
 
 export const pageQuery = graphql`
   query TourSubCategoryById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

@@ -14,7 +14,8 @@ const GeneralPageTemplate = props => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { sitemetadata, imagesSlides } = contentData[language]
+  const { imagesSlides } = contentData[language]
+  const { sitemetadata } = data
 
   const imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
@@ -50,7 +51,27 @@ GeneralPageTemplate.propTypes = {
 export default GeneralPageTemplate
 
 export const pageQuery = graphql`
-  query PageById($id: String!) {
+  query PageById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

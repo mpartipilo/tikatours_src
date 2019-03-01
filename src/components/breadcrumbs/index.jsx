@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { contentData } from "../i18n-data"
 
@@ -21,7 +22,7 @@ const Breadcrumbs = props => (
     <div className="col-12">
       <ul className="breadcrumbs text-center">
         <li>
-          <a href={"/" + props.language} title="home" />
+          <Link to={"/" + props.language} title="home" />
         </li>
         {props.trail
           .filter(t => t.path.replace(/\/$/i, "") != "/" + props.language)

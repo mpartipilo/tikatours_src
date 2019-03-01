@@ -1,0 +1,24 @@
+[
+  {
+    "lang": "en",
+    "data": {
+      "heading": "Life changing travel experiences",
+      "subheading": "Luxury Journeys to Georgia, Armenia and Azerbaijan",
+      "intro":
+      "TikaTours warmly welcomes you to places of extraordinary culture and history, geographical diversity and startling beauty.\r\n\r\n We are your specialists in luxury journeys to less-travelled destinations, offering trips to the Caucasus region of Georgia, Armenia, and Azerbaijan.",
+      "btn_text": "About us",
+      "btn_url": "/en/about"
+    }
+  },
+  {
+    "lang": "zh",
+    "data": {
+      "heading": "旅行的经验会改变生活",
+      "subheading": "前往格鲁吉亚、亚美尼亚和阿塞拜疆的旅程",
+      "intro":
+      "帝卡旅行社热烈欢迎您到非凡的文化和历史，地理多样性和惊人的美丽的目的地。\r\n\r\n 我们是您的专业人士,您可以乘坐旅游目的地较少的旅途前往格鲁吉亚，亚美尼亚和阿塞拜疆的高加索地区。",
+      "btn_text": "关于我们",
+      "btn_url": "/zh/about"
+    }
+  }
+]

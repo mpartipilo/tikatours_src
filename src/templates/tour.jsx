@@ -64,7 +64,8 @@ class TourDetailPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
     const language = pathContext.language
-    const { imagesSlides, sitemetadata } = contentData[language]
+    const { imagesSlides } = contentData[language]
+    const { sitemetadata } = data
 
     const imgGroup = data.tour.frontmatter.imggrp_id
 
@@ -141,6 +142,26 @@ export default TourDetailPageTemplate
 
 export const pageQuery = graphql`
   query TourDetailById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     tour: markdownRemark(id: { eq: $id }) {
       id
       html

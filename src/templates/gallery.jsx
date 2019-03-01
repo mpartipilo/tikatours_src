@@ -48,12 +48,11 @@ const GalleryPage = ({
 )
 
 const GalleryPageTemplate = ({ location, data, pathContext }) => {
-  const { sitemetadata, imagesSlides, imagesGroups } = contentData[
-    data.markdownRemark.frontmatter.language
-  ]
+  const { sitemetadata } = data
   const defaultLanguage = "en"
   const currentLanguage =
     data.markdownRemark.frontmatter.language || defaultLanguage
+  const { imagesSlides, imagesGroups } = contentData[currentLanguage]
 
   const galleryGroups = imagesGroups
     .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
@@ -107,7 +106,27 @@ GalleryPageTemplate.propTypes = {
 export default GalleryPageTemplate
 
 export const pageQuery = graphql`
-  query GalleryPageById($id: String!) {
+  query GalleryPageById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

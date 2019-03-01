@@ -8,7 +8,7 @@ import Blog from "../components/blog"
 import { contentData } from "../components/i18n-data"
 
 const BlogPageTemplate = ({ pathContext, location, data }) => {
-  const { sitemetadata } = contentData[data.markdownRemark.frontmatter.language]
+  const { sitemetadata } = data
   const defaultLanguage = "en"
   const language = data.markdownRemark.frontmatter.language || defaultLanguage
 
@@ -46,7 +46,27 @@ BlogPageTemplate.propTypes = {
 export default BlogPageTemplate
 
 export const pageQuery = graphql`
-  query BlogPageById($id: String!) {
+  query BlogPageById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html

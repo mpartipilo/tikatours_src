@@ -40,7 +40,8 @@ class RegionPageTemplate extends React.Component {
     const { location, data, pathContext } = this.props
 
     const language = pathContext.language
-    const { sitemetadata, imagesSlides, strings } = contentData[language]
+    const { imagesSlides, strings } = contentData[language]
+    const { sitemetadata } = data
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
 
@@ -120,6 +121,26 @@ export default RegionPageTemplate
 
 export const pageQuery = graphql`
   query RegionPageById($id: String!, $language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       id
       html
