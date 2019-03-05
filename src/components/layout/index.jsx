@@ -7,6 +7,10 @@ import Footer from "../footer"
 import Slideshow from "../slideshow"
 import { WhatsHelp } from "../whatshelp"
 
+import "normalize-scss/sass/_normalize.scss"
+import "bootstrap/scss/bootstrap.scss"
+import "font-awesome/scss/font-awesome.scss"
+import "react-id-swiper/src/styles/scss/swiper.scss"
 import "../../../assets/sass/main.scss"
 
 /* 

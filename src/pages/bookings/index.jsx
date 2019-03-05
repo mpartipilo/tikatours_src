@@ -13,7 +13,8 @@ const ContactPageFormWrapper = ({ options, strings, tour_code }) => (
 
 const ContactPage = ({ location, data, pathContext }) => {
   const { language } = pathContext
-  const { sitemetadata, strings } = contentData[language]
+  const { strings } = contentData[language]
+  const { sitemetadata } = data
   const { edges } = data.allMarkdownRemark
 
   const options = edges
@@ -29,14 +30,14 @@ const ContactPage = ({ location, data, pathContext }) => {
           languages={pathContext.languages}
           navigation={pathContext.navigation}
           language={language}
-          contact={sitemetadata.contact}
           data={{
             markdownRemark: {
               frontmatter: {
                 title: gpdata.page_title,
                 heading: gpdata.page_heading
               }
-            }
+            },
+            ...data
           }}
           sitemetadata={sitemetadata}
         >
@@ -62,7 +63,27 @@ ContactPage.propTypes = {
 export default ContactPage
 
 export const query = graphql`
-  query BookingsQuery {
+  query BookingsQuery($language: String!) {
+    sitemetadata: metadataJson {
+      title
+      contact {
+        email
+        telephone
+      }
+    }
+
+    contact_data: contactJson(lang: { eq: $language }) {
+      phone
+      email
+      address
+      copyright
+      credits
+      navFooter {
+        title
+        url
+      }
+    }
+
     allMarkdownRemark(
       filter: { frontmatter: { template: { eq: "tour" }, name: { ne: null } } }
     ) {

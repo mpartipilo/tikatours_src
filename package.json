@@ -78,6 +78,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
     "gatsby-plugin-google-analytics": "^2.0.14",
+    "gatsby-plugin-purgecss": "^3.1.0",
     "gatsby-remark-source-name": "^1.0.0",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
