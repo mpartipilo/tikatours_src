@@ -9,7 +9,7 @@ const FooterNav = props => (
       <ul className="footer-nav">
         {props.links.map(l => (
           <li key={l.url}>
-            <Link href={l.url} title={l.title}>
+            <Link to={l.url} title={l.title}>
               {l.title}
             </Link>
           </li>

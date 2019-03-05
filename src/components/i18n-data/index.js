@@ -1,19 +1,10 @@
 import _ from "lodash"
 
-import general_pages_en from "../../../data/json/en/page/general.json"
-import general_pages_zh from "../../../data/json/zh/page/general.json"
-
 import imagesGroups_en from "../../../data/json/en/images/groups.json"
 import imagesGroups_zh from "../../../data/json/zh/images/groups.json"
 
 import imagesSlides_en from "../../../data/json/en/images/slides.json"
 import imagesSlides_zh from "../../../data/json/zh/images/slides.json"
-
-import contentPageData from "../../../data/json/common/content/content.json"
-import contentRowData from "../../../data/json/common/content/row.json"
-
-import content_column_en from "../../../data/json/en/content/column.json"
-import content_column_zh from "../../../data/json/zh/content/column.json"
 
 import strings_en from "../../../data/json/en/strings.json"
 import strings_zh from "../../../data/json/zh/strings.json"
@@ -44,31 +35,15 @@ const findInTree = (id, tree) => {
 
 const contentData = {
   en: {
-    content: contentPageData,
-    content_row: contentRowData,
-    content_column: content_column_en,
-    general_pages: general_pages_en,
     imagesGroups: imagesGroups_en,
     imagesSlides: imagesSlides_en,
     strings: strings_en
   },
   zh: {
-    content: contentPageData,
-    content_row: contentRowData,
-    content_column: content_column_zh,
-    general_pages: general_pages_zh,
     imagesGroups: imagesGroups_zh,
     imagesSlides: imagesSlides_zh,
     strings: strings_zh
   }
 }
 
-const GeneralPageData = ({ pageId, moduleId, language, children }) => {
-  const { general_pages } = contentData[language]
-
-  var page = general_pages.find(p => p.page_id == pageId)
-
-  return children({ data: page })
-}
-
-export { findInTree, getSlideshowData, contentData, GeneralPageData }
+export { findInTree, getSlideshowData, contentData }

@@ -6,58 +6,6 @@ const globalNavigation = {
   zh: require("./data/json/zh/navigation/navigation.json")
 }
 
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions
-
-  if (page.path.includes("404")) {
-    return Promise.resolve()
-  }
-
-  const redirect = path.resolve("src/i18n/redirect.js")
-
-  return new Promise(resolve => {
-    const redirectPage = {
-      ...page,
-      component: redirect,
-      context: {
-        languages,
-        locale: "",
-        routed: false,
-        redirectPage: page.path
-      }
-    }
-    deletePage(page)
-    createPage(redirectPage)
-
-    languages.forEach(({ value }) => {
-      const localePage = {
-        ...page,
-        originalPath: page.path,
-        path: `/${value}${page.path}`,
-        context: {
-          languages,
-          language: value,
-          routed: true,
-          originalPath: page.path,
-          navigation: globalNavigation[value]
-        }
-      }
-
-      if (localePage.originalPath === `/bookings/`) {
-        const bookingPage = {
-          ...localePage,
-          matchPath: `/${value}${page.path}:path`
-        }
-        createPage(bookingPage)
-      } else {
-        createPage(localePage)
-      }
-    })
-
-    resolve()
-  })
-}
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -71,7 +19,8 @@ exports.createPages = ({ graphql, actions }) => {
     toursubcategory: path.resolve("src/templates/toursubcategory.jsx"),
     tour: path.resolve("src/templates/tour.jsx"),
     home: path.resolve("src/templates/index.jsx"),
-    page: path.resolve("src/templates/page.jsx")
+    page: path.resolve("src/templates/page.jsx"),
+    contact: path.resolve("src/templates/contact.jsx")
   }
 
   return new Promise((resolve, reject) => {
@@ -231,13 +180,25 @@ exports.createPages = ({ graphql, actions }) => {
               .map(e => e.node.frontmatter)
           }
 
-          createPage({
-            path: `${page.node.frontmatter.language}/${
+          const createPageOptions = {
+            path: `/${page.node.frontmatter.language}/${
               page.node.frontmatter.url
             }`,
             component: component,
             context
-          })
+          }
+
+          if (
+            page.node.frontmatter.template === "contact" &&
+            page.node.frontmatter.url === "bookings"
+          ) {
+            context.isBooking = true
+            createPageOptions.matchPath = `/${page.node.frontmatter.language}/${
+              page.node.frontmatter.url
+            }/*`
+          }
+
+          createPage(createPageOptions)
         })
       })
     )
