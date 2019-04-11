@@ -1,7 +1,23 @@
 # Todo
 
+## Pending
+
+- Put breadcrumbs back in tour/sub/category pages
+- Untranslated Where in the world is Georgia?
+- Untranslated Click to see map
+- Untranslated Click to hide map
+- Untranslated Website by
+- Show map when country_id is available
+- Hook up to CMS
+- Use a proper I18N Component (react-i18next?)
+- SEO optimizations
+- Region map details
+- Social panel is missing some functionality
+
 ## Done
 
+- Wrong category shown for tours without a sub-category
+- In the tour details, show other tours in same subcategory
 - Video from slideshow not playing
 - Untranslated image slides
 - Untranslated buttons on image slides
@@ -17,17 +33,3 @@
 - Kill jQuery by changing fancybox for custom lightbox with react-id-swiper
 - Migrate to latest Bootstrap
 - In Main Category, hovering over subcategory does not show short description.
-
-## Pending
-
-- In the tour details, show other tours in same subcategory
-- Wrong category shown for tours without a sub-category
-- Put breadcrumbs back in tour/sub/category pages
-- SEO optimizations
-- Untranslated Where in the world is Georgia?
-- Untranslated Click to see map
-- Untranslated Click to hide map
-- Show map when country_id is available
-- Untranslated Website by
-- Region map details
-- Social panel is missing some functionality

@@ -64,13 +64,21 @@ const TourCardRender = ({
 )
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
+  var tourTag = '';
   if (!tag) {
-    var mainCategory = tourCategoryData.find(
-      c => c.main_category_id == tour.main_category_id
-    )
     var subCategory = tourCategoryData.find(
       c => c.sub_category_id == tour.sub_category_id
     )
+    if (subCategory) {
+      tourTag = subCategory.label
+    } else {
+      var mainCategory = tourCategoryData.find(
+        c => c.template === "tourcategory" && c.main_category_id == tour.main_category_id
+      )
+      if (mainCategory) {
+        tourTag = mainCategory.label
+      }
+    }
   }
   const { strings } = contentData[language]
 
@@ -79,13 +87,7 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
     image_path: tour.image_path,
     info_url: tour.url,
     title: tour.name,
-    tag: tag
-      ? tag
-      : subCategory
-      ? subCategory.name
-      : mainCategory
-      ? mainCategory.name
-      : "",
+    tag: tourTag,
     duration: tour.duration,
     info: tour.short_descr,
     price: tour.price_from

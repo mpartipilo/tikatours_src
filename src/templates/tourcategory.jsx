@@ -77,6 +77,8 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
     .sort((a, b) => a.rank - b.rank)
     .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
 
+  var tourFullCategoryData = tourCategoryData.concat(data.tourMainCategories.edges.map(e => e.node.frontmatter))
+
   const props = {
     sitemetadata,
     languages: pathContext.languages,
@@ -85,7 +87,7 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
     catList,
     tourListHeading,
     tourList,
-    tourCategoryData
+    tourCategoryData: tourFullCategoryData
   }
 
   return (
@@ -151,6 +153,28 @@ export const pageQuery = graphql`
         imggrp_id
         main_category_id
         sub_heading
+      }
+    }
+
+    tourMainCategories: allMarkdownRemarkTourcategory(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            language
+            url
+            template
+            heading
+            name
+            label
+            image_path
+            imggrp_id
+            main_category_id
+            rank
+          }
+        }
       }
     }
 

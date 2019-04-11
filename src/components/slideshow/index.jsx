@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Swiper from "react-id-swiper"
 import { Link } from "gatsby"
+import Swiper from "react-id-swiper"
+import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/dist/js/swiper.esm'
 
 import { contentData } from "../i18n-data"
 
@@ -12,6 +13,7 @@ class Slideshow extends React.Component {
     super(props)
 
     const params = {
+      modules: [Navigation, Autoplay, Pagination, EffectFade],
       effect: "fade",
       loop: true,
       autoplay: {

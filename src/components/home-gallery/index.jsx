@@ -2,6 +2,7 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
+import { Navigation } from 'swiper/dist/js/swiper.esm'
 
 class HomeGallery extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class HomeGallery extends React.Component {
       isOpen: false,
       activeSlideKey: 0,
       swiperParams: {
+        modules: [Navigation],
         loop: false,
         navigation: {
           nextEl: ".next",

@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
 import Swiper from "react-id-swiper"
+import { Navigation } from 'swiper/dist/js/swiper.esm'
 
 import { contentData } from "../i18n-data"
 
@@ -67,6 +68,7 @@ class GalleryIndex extends React.Component {
         defaultColumns: 6
       }),
       swiperParams: {
+        modules: [Navigation],
         loop: false,
         navigation: {
           nextEl: ".next",
