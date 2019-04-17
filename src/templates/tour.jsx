@@ -6,6 +6,7 @@ import { Layout } from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourDetails from "../components/tour-details"
 import TourList from "../components/tour-list"
+import { Breadcrumbs } from "../components/breadcrumbs"
 
 import { contentData, getSlideshowData } from "../components/i18n-data"
 
@@ -23,50 +24,65 @@ const GeneralPage = ({
   tourList,
   tourListHeading,
   tourListTag,
-  tour
+  tour,
+  mainCategoryFound,
+  subCategoryFound
 }) => (
-    <React.Fragment>
-      <div className="push" />
-      <Slideshow
-        fixed={false}
-        slides={slideshowData}
-        language={language}
-      >
-        <div className="main">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 text-center">
-                <h1>{data.heading}</h1>
-              </div>
-            </div>
-            <div className="content">
-              <TourDetails
-                language={language}
-                url={location.pathname}
-                imagesSlidesData={imagesSlides}
-                tourCategoryData={tourCategoryData}
-                tour={tour}
-              />
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <div className="divider" />
-              </div>
+  <React.Fragment>
+    <div className="push" />
+    <Slideshow fixed={false} slides={slideshowData} language={language}>
+      <div className="main">
+        <div className="container">
+          <Breadcrumbs
+            language={language}
+            trail={[
+              {
+                page_title: mainCategoryFound.label,
+                path: language + "/" + mainCategoryFound.url
+              },
+              {
+                page_title: subCategoryFound.label,
+                path: language + "/" + subCategoryFound.url
+              },
+              {
+                page_title: tour.name,
+                path: language + "/" + tour.url
+              }
+            ]}
+          />
+          <div className="row">
+            <div className="col-12 text-center has-bc">
+              <h1>{data.heading}</h1>
             </div>
           </div>
-          {tourList && (
-            <TourList
+          <div className="content">
+            <TourDetails
               language={language}
-              list={tourList}
-              heading={tourListHeading}
-              tag={tourListTag}
+              url={location.pathname}
+              imagesSlidesData={imagesSlides}
               tourCategoryData={tourCategoryData}
+              tour={tour}
             />
-          )}
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <div className="divider" />
+            </div>
+          </div>
         </div>
-      </Slideshow>
-    </React.Fragment>
-  )
+        {tourList && (
+          <TourList
+            language={language}
+            list={tourList}
+            heading={tourListHeading}
+            tag={tourListTag}
+            tourCategoryData={tourCategoryData}
+          />
+        )}
+      </div>
+    </Slideshow>
+  </React.Fragment>
+)
 
 class TourDetailPageTemplate extends React.Component {
   constructor(props) {
@@ -83,6 +99,10 @@ class TourDetailPageTemplate extends React.Component {
 
     const slides = getSlideshowData(imagesSlides, imgGroup)
 
+    const tourMainCategoryData = data.tourMainCategories.edges.map(
+      e => e.node.frontmatter
+    )
+
     const tourCategoryData = data.tourSubCategories.edges.map(
       e => e.node.frontmatter
     )
@@ -93,7 +113,8 @@ class TourDetailPageTemplate extends React.Component {
 
     const tour = {
       id: frontmatter.tour_id,
-      long_descr: data.tour.html,
+      name: frontmatter.name,
+      long_descr: frontmatter.html,
       sub_category_id: frontmatter.sub_category_id,
       main_category_id: frontmatter.main_category_id,
       is_featured: frontmatter.is_featured || false,
@@ -111,6 +132,21 @@ class TourDetailPageTemplate extends React.Component {
       price_from: frontmatter.price_from
     }
 
+    let mainCategoryFound = {}
+    let subCategoryFound = {}
+
+    if (tour.main_category_id) {
+      mainCategoryFound = tourMainCategoryData.find(
+        c => c.main_category_id == tour.main_category_id
+      )
+    }
+
+    if (tour.sub_category_id) {
+      subCategoryFound = tourCategoryData.find(
+        c => c.sub_category_id == tour.sub_category_id
+      )
+    }
+
     const props = {
       location,
       sitemetadata,
@@ -122,26 +158,24 @@ class TourDetailPageTemplate extends React.Component {
       slideshowData: slides,
       tour,
       data: frontmatter,
-      page: data.tour
+      page: data.tour,
+      mainCategoryFound,
+      subCategoryFound
     }
 
     var tourListProps = {}
 
     if (tour.sub_category_id) {
-      const subCategoryFound =
-        tourCategoryData.find(c => c.sub_category_id == tour.sub_category_id);
-      
-      const tourList =
-        tourData
-          .filter(
-            t =>
-              t.sub_category_id == tour.sub_category_id &&
-              t.tour_id != tour.id
-          )
-          .sort((a, b) => a.rank - b.rank)
-          .map(t => ({...t, url: `/${language}/${t.url}`}))
-      const tourListHeading = subCategoryFound ? strings.otherTours + subCategoryFound.label : '';
-      const tourListTag = subCategoryFound ? subCategoryFound.label : '';
+      const tourList = tourData
+        .filter(
+          t => t.sub_category_id == tour.sub_category_id && t.tour_id != tour.id
+        )
+        .sort((a, b) => a.rank - b.rank)
+        .map(t => ({ ...t, url: `/${language}/${t.url}` }))
+      const tourListHeading = subCategoryFound
+        ? strings.otherTours + subCategoryFound.label
+        : ""
+      const tourListTag = subCategoryFound ? subCategoryFound.label : ""
 
       tourListProps = {
         tourList,
@@ -161,10 +195,7 @@ class TourDetailPageTemplate extends React.Component {
         data={data}
         sitemetadata={sitemetadata}
       >
-        <GeneralPage
-          {...props}
-          {...tourListProps}
-        />
+        <GeneralPage {...props} {...tourListProps} />
       </Layout>
     )
   }
@@ -205,6 +236,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         tour_id
+        name
         heading
         language
         url
@@ -251,6 +283,28 @@ export const pageQuery = graphql`
             main_category_id
             sub_category_id
             image_path
+          }
+        }
+      }
+    }
+
+    tourMainCategories: allMarkdownRemarkTourcategory(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            language
+            url
+            template
+            heading
+            name
+            label
+            image_path
+            imggrp_id
+            main_category_id
+            rank
           }
         }
       }

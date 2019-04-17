@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { CSSTransition } from "react-transition-group"
-
+import format from "string-format"
 import CountryMap from "../countrymap"
+import { contentData } from "../i18n-data"
 
 import "./styles.scss"
 
@@ -22,15 +23,18 @@ class MapCanvasView extends React.Component {
   }
 
   render() {
+    const { language } = this.props
+    const { strings } = contentData[language]
+
     return (
       <React.Fragment>
         <div id="map-upper" data-toggle="#map-canvas" onClick={this.toggleMap}>
           <p>
             <i className="fa fa-map-marker" />
           </p>
-          <p className="xxl">Where in the World is {this.props.countryName}?</p>
+          <p className="xxl">{format(strings["Where in the world is {country}?"], "Georgia")}</p>
           <p>
-            Click to {this.state.mapVisible ? "hide" : "see"} map{" "}
+          {strings[`Click to ${this.state.mapVisible ? "hide" : "see"} map`]}
             <i
               className={
                 "fa fa-" +
@@ -43,7 +47,7 @@ class MapCanvasView extends React.Component {
         </div>
         <CSSTransition
           in={this.state.mapVisible}
-          timeout={{ enter: 500, exit: 300 }}
+          timeout={{ enter: 1000, exit: 1000 }}
           classNames="mapInView"
           unmountOnExit
         >

@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
+import { Breadcrumbs } from "../components/breadcrumbs"
 
 import { contentData } from "../components/i18n-data"
 
@@ -21,37 +22,46 @@ const TourCategoryPage = ({
   tourList,
   tourCategoryData
 }) => (
-  <React.Fragment>
-    <div className="push" />
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <h1>{data.heading}</h1>
+    <React.Fragment>
+      <div className="push" />
+      <div className="main">
+        <div className="container">
+          <Breadcrumbs
+            language={currentLanguage}
+            trail={[
+              {
+                page_title: data.label,
+                path: (currentLanguage + "/" + data.url)
+              }
+            ]}
+          />
+          <div className="row">
+            <div className="col-12 text-center has-bc">
+              <h1>{data.heading}</h1>
+            </div>
           </div>
-        </div>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: page.html }}
-        />
-        <div className="row">
-          <div className="col-12">
-            <div className="divider" />
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: page.html }}
+          />
+          <div className="row">
+            <div className="col-12">
+              <div className="divider" />
+            </div>
           </div>
+          {catList && <CatList list={catList} heading={catListHeading} />}
         </div>
-        {catList && <CatList list={catList} heading={catListHeading} />}
+        {tourList && (
+          <TourList
+            language={currentLanguage}
+            list={tourList}
+            heading={tourListHeading}
+            tourCategoryData={tourCategoryData}
+          />
+        )}
       </div>
-      {tourList && (
-        <TourList
-          language={currentLanguage}
-          list={tourList}
-          heading={tourListHeading}
-          tourCategoryData={tourCategoryData}
-        />
-      )}
-    </div>
-  </React.Fragment>
-)
+    </React.Fragment>
+  )
 
 const GeneralPageTemplate = ({ location, data, pathContext }) => {
   const currentLanguage = pathContext.language

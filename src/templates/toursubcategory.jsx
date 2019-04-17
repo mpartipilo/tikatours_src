@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import Slideshow from "../components/slideshow"
 import TourList from "../components/tour-list"
+import { Breadcrumbs } from "../components/breadcrumbs"
 
 import { contentData, getSlideshowData } from "../components/i18n-data"
 
@@ -17,40 +18,54 @@ const TourSubCategoryPage = ({
   slides,
   tourCategoryData,
   tourList,
-  tourListHeading
+  tourListHeading,
+  mainCategoryFound
 }) => (
-  <React.Fragment>
-    <div className="push" />
-    <Slideshow fixed={false} slides={slides} language={language}>
-      <div className="main">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h1>{data.heading}</h1>
+    <React.Fragment>
+      <div className="push" />
+      <Slideshow fixed={false} slides={slides} language={language}>
+        <div className="main">
+          <div className="container">
+            <Breadcrumbs
+              language={language}
+              trail={[
+                {
+                  page_title: mainCategoryFound.label,
+                  path: (language + "/" + mainCategoryFound.url)
+                },
+                {
+                  page_title: data.label,
+                  path: (language + "/" + data.url)
+                }
+              ]}
+            />
+            <div className="row">
+              <div className="col-12 text-center has-bc">
+                <h1>{data.heading}</h1>
+              </div>
+            </div>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: page.html }}
+            />
+            <div className="row">
+              <div className="col-12">
+                <div className="divider" />
+              </div>
             </div>
           </div>
-          <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: page.html }}
-          />
-          <div className="row">
-            <div className="col-12">
-              <div className="divider" />
-            </div>
-          </div>
+          {tourList && (
+            <TourList
+              language={language}
+              list={tourList}
+              heading={tourListHeading}
+              tourCategoryData={tourCategoryData}
+            />
+          )}
         </div>
-        {tourList && (
-          <TourList
-            language={language}
-            list={tourList}
-            heading={tourListHeading}
-            tourCategoryData={tourCategoryData}
-          />
-        )}
-      </div>
-    </Slideshow>
-  </React.Fragment>
-)
+      </Slideshow>
+    </React.Fragment>
+  )
 
 class TourSubCategoryPageTemplate extends React.Component {
   constructor(props) {
@@ -67,12 +82,20 @@ class TourSubCategoryPageTemplate extends React.Component {
 
     const slides = getSlideshowData(imagesSlides, imgGroup)
 
+    const tourMainCategoryData = data.tourMainCategories.edges.map(
+      e => e.node.frontmatter
+    )
+
     const tourCategoryData = data.tourSubCategories.edges.map(
       e => e.node.frontmatter
     )
 
     const main_category_id = data.markdownRemark.frontmatter.main_category_id
     const sub_category_id = data.markdownRemark.frontmatter.sub_category_id
+
+    const mainCategoryFound =
+      main_category_id &&
+      tourMainCategoryData.find(c => c.main_category_id == main_category_id)
 
     const subCategoryFound =
       sub_category_id &&
@@ -98,7 +121,8 @@ class TourSubCategoryPageTemplate extends React.Component {
       tourCategoryData,
       tourData,
       tourListHeading,
-      tourList
+      tourList,
+      mainCategoryFound
     }
 
     return (
@@ -159,7 +183,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         heading
+        label
         language
+        name
         url
         imggrp_id
         main_category_id
@@ -167,6 +193,28 @@ export const pageQuery = graphql`
       }
     }
 
+    tourMainCategories: allMarkdownRemarkTourcategory(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            language
+            url
+            template
+            heading
+            name
+            label
+            image_path
+            imggrp_id
+            main_category_id
+            rank
+          }
+        }
+      }
+    }
+    
     tourSubCategories: allMarkdownRemarkToursubcategory(
       filter: { frontmatter: { language: { eq: $language } } }
     ) {

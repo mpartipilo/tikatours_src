@@ -2,11 +2,6 @@
 
 ## Pending
 
-- Put breadcrumbs back in tour/sub/category pages
-- Untranslated Where in the world is Georgia?
-- Untranslated Click to see map
-- Untranslated Click to hide map
-- Untranslated Website by
 - Show map when country_id is available
 - Hook up to CMS
 - Use a proper I18N Component (react-i18next?)
@@ -16,6 +11,11 @@
 
 ## Done
 
+- Untranslated Where in the world is Georgia?
+- Untranslated Click to see map
+- Untranslated Click to hide map
+- Untranslated Website by
+- Put breadcrumbs back in tour/sub/category pages
 - Wrong category shown for tours without a sub-category
 - In the tour details, show other tours in same subcategory
 - Video from slideshow not playing

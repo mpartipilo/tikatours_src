@@ -43,5 +43,9 @@
   "loading video": "loading video",
   "All images": "All images",
   "Send us an email": "Send us an email",
-  "Be Social": "Be social"
+  "Be Social": "Be social",
+  "Where in the world is {country}?": "Where in the world is {}?",
+  "Click to see map": "Click to see map",
+  "Click to hide map": "Click to hide map",
+  "Website by": "Website by"
 }
