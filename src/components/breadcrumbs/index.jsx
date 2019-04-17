@@ -8,27 +8,31 @@ const BreadcrumbsTemplate = ({ rootUrl, trail }) => (
         <li>
           <Link to={rootUrl} title="home" />
         </li>
-        {trail
-          .map((t, idx) => (
-            <li key={t.path}>
-              <i className="fa fa-angle-right" />
-              <Link
-                to={t.path}
-                className={idx + 1 == trail.length ? "active" : null}
-                title={t.page_title}
-              >
-                {t.page_title}
-              </Link>
-            </li>
-          ))}
+        {trail.map((t, idx) => (
+          <li key={t.path}>
+            <i className="fa fa-angle-right" />
+            <Link
+              to={t.path}
+              className={idx + 1 == trail.length ? "active" : null}
+              title={t.page_title}
+            >
+              {t.page_title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   </div>
 )
 
-const Breadcrumbs = ({language, trail}) => {
+const Breadcrumbs = ({ language, trail }) => {
   return (
-    <BreadcrumbsTemplate rootUrl={"/" + language} trail={trail.filter(t => t.path.replace(/\/$/i, "") != "/" + language)} />
+    <BreadcrumbsTemplate
+      rootUrl={"/" + language}
+      trail={trail.filter(
+        t => t != null && t.path.replace(/\/$/i, "") != "/" + language
+      )}
+    />
   )
 }
 

@@ -40,10 +40,12 @@ const GeneralPage = ({
                 page_title: mainCategoryFound.label,
                 path: language + "/" + mainCategoryFound.url
               },
-              {
-                page_title: subCategoryFound.label,
-                path: language + "/" + subCategoryFound.url
-              },
+              subCategoryFound
+                ? {
+                    page_title: subCategoryFound.label,
+                    path: language + "/" + subCategoryFound.url
+                  }
+                : null,
               {
                 page_title: tour.name,
                 path: language + "/" + tour.url

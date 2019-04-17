@@ -31,8 +31,8 @@ module.exports = {
         // develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ["react-id-swiper/"] // Ignore files/folders
-        // purgeOnly: ['bootstrap/','fontawesome/'] // Purge only these files/folders
+        ignore: ["react-id-swiper/"], // Ignore files/folders
+        purgeOnly: ['bootstrap/','fontawesome/'] // Purge only these files/folders
       }
     },
     {
