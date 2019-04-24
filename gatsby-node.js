@@ -1,9 +1,14 @@
 const _ = require("lodash")
 const path = require("path")
 const { languages } = require("./src/i18n/locales")
-const globalNavigation = {
-  en: require("./data/json/en/navigation/navigation.json"),
-  zh: require("./data/json/zh/navigation/navigation.json")
+
+function makeNavigationTree(tree, parent) {
+  var nodes = tree.filter(f => f.parentPath == parent)
+  if (nodes.length === 0) return null
+  return nodes.map(({ parentPath, ...n }) => {
+    const children = makeNavigationTree(tree, n.path)
+    return { ...n, pages: children }
+  })
 }
 
 exports.createPages = ({ graphql, actions }) => {
@@ -29,6 +34,16 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(`
         {
+          allNavigation: allNavigationJson {
+            edges {
+              node {
+                path
+                title
+                parentPath
+              }
+            }
+          }
+
           allPages: allMarkdownRemark(
             filter: { frontmatter: { url: { ne: null } } }
           ) {
@@ -112,6 +127,17 @@ exports.createPages = ({ graphql, actions }) => {
           console.log(result.errors)
           reject(result.errors)
         }
+
+        const { allNavigation } = result.data
+        const navNodes = allNavigation.edges.map(e => e.node)
+        const navigationTree = makeNavigationTree(navNodes, "/")
+
+        const globalNavigation = {}
+        languages.forEach(({ value }) => {
+          globalNavigation[value] = navigationTree.find(
+            t => t.path === `/${value}`
+          )
+        })
 
         const pages = result.data.allPages.edges
 

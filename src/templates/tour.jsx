@@ -110,13 +110,14 @@ class TourDetailPageTemplate extends React.Component {
     )
 
     var tourData = data.tours.edges.map(t => t.node.frontmatter)
+    var tourOverview = data.tour
 
     const { frontmatter } = data.tour
 
     const tour = {
       id: frontmatter.tour_id,
       name: frontmatter.name,
-      long_descr: frontmatter.html,
+      long_descr: tourOverview.html,
       sub_category_id: frontmatter.sub_category_id,
       main_category_id: frontmatter.main_category_id,
       is_featured: frontmatter.is_featured || false,

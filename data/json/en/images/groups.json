@@ -326,5 +326,13 @@
         "is_carousel": null,
         "default_caption": "",
         "add_to_gallery_index": "0"
+    },
+    {
+        "imggrp_id": "45",
+        "imggrp_name": "Dental Tourism",
+        "is_gallery": "0",
+        "is_carousel": null,
+        "default_caption": "",
+        "add_to_gallery_index": "0"
     }
 ]

@@ -1618,5 +1618,29 @@
     "button_url": "",
     "imggrp_id": "42",
     "youtube_id": ""
+  },
+  {
+    "imgslide_id": "1670",
+    "imgslide_path": "/library/tourcategories/medical-tours/dental-tour/1.png",
+    "caption_heading": "",
+    "imgslide_caption": "",
+    "imgslide_alt": "",
+    "imgslide_rank": "1",
+    "button_label": "",
+    "button_url": "",
+    "imggrp_id": "45",
+    "youtube_id": ""
+  },
+  {
+    "imgslide_id": "1671",
+    "imgslide_path": "/library/tourcategories/medical-tours/dental-tour/2.png",
+    "caption_heading": "",
+    "imgslide_caption": "",
+    "imgslide_alt": "",
+    "imgslide_rank": "2",
+    "button_label": "",
+    "button_url": "",
+    "imggrp_id": "45",
+    "youtube_id": ""
   }
 ]

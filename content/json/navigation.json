@@ -1,0 +1,376 @@
+[
+  { "path": "/en", "title": "Tika Tours", "parentPath": "/" },
+  { "path": "/en/georgia-tours", "title": "Georgia Tours", "parentPath": "/en" },
+  {
+    "path": "/en/georgia-tours/group-tours",
+    "title": "Group Tours",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/medical",
+    "title": "Medical Tours",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/adventure-tours",
+    "title": "Adventure Tours",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/cultural-tours",
+    "title": "Cultural Tours",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/food-and-wine",
+    "title": "Food and Wine",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/leisure-and-health",
+    "title": "Leisure and Health",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/romance",
+    "title": "Romance",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/family",
+    "title": "Family",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/georgia-tours/business",
+    "title": "Business",
+    "parentPath": "/en/georgia-tours"
+  },
+  {
+    "path": "/en/multi-country-tours",
+    "title": "Multi-Country Tours",
+    "parentPath": "/en"
+  },
+  {
+    "path": "/en/multi-country-tours/georgia-armenia-azerbaijan",
+    "title": "Georgia, Armenia & Azerbaijan",
+    "parentPath": "/en/multi-country-tours"
+  },
+  {
+    "path": "/en/multi-country-tours/georgia-and-armenia",
+    "title": "Georgia & Armenia",
+    "parentPath": "/en/multi-country-tours"
+  },
+  {
+    "path": "/en/multi-country-tours/asia",
+    "title": "Asia",
+    "parentPath": "/en/multi-country-tours"
+  },
+  {
+    "path": "/en/multi-country-tours/europe",
+    "title": "Europe",
+    "parentPath": "/en/multi-country-tours"
+  },
+  {
+    "path": "/en/georgia-travel-guide",
+    "title": "Georgia Travel Guide",
+    "parentPath": "/en"
+  },
+  {
+    "path": "/en/why-should-i-visit",
+    "title": "Why should I visit?",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  {
+    "path": "/en/regions",
+    "title": "Regions",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  {
+    "path": "/en/georgia-facts",
+    "title": "Georgia Facts",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  {
+    "path": "/en/geography",
+    "title": "Geography",
+    "parentPath": "/en/georgia-facts"
+  },
+  {
+    "path": "/en/flora-and-fauna",
+    "title": "Flora & Fauna",
+    "parentPath": "/en/georgia-facts"
+  },
+  {
+    "path": "/en/unesco-world-heritage-sites",
+    "title": "UNESCO World Heritage Sites",
+    "parentPath": "/en/georgia-facts"
+  },
+  {
+    "path": "/en/history-and-culture",
+    "title": "History & Culture",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  {
+    "path": "/en/history",
+    "title": "History",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/wine-and-cuisine",
+    "title": "Wine & Cuisine",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/music",
+    "title": "Music",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/theatre",
+    "title": "Theatre",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/folk-dance",
+    "title": "Folk Dance",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/art-and-architecture",
+    "title": "Art & Architecture",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/language-and-script",
+    "title": "Language & Script",
+    "parentPath": "/en/history-and-culture"
+  },
+  {
+    "path": "/en/travel-info",
+    "title": "Travel Info",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  {
+    "path": "/en/getting-to-georgia",
+    "title": "Getting to Georgia",
+    "parentPath": "/en/travel-info"
+  },
+  {
+    "path": "/en/visa-support",
+    "title": "Visa Support",
+    "parentPath": "/en/travel-info"
+  },
+  {
+    "path": "/en/georgian-embassies",
+    "title": "Georgian Embasies",
+    "parentPath": "/en/travel-info"
+  },
+  {
+    "path": "/en/foreign-missions-in-georgia",
+    "title": "Foreign Missions in Georgia",
+    "parentPath": "/en/travel-info"
+  },
+  {
+    "path": "/en/hotels",
+    "title": "Hotels",
+    "parentPath": "/en/georgia-travel-guide"
+  },
+  { "path": "/en/gallery", "title": "Gallery", "parentPath": "/en" },
+  {
+    "path": "/en/video-gallery",
+    "title": "Video gallery",
+    "parentPath": "/en/gallery"
+  },
+  { "path": "/en/about", "title": "About", "parentPath": "/en" },
+  {
+    "path": "/en/our-properties",
+    "title": "Our Properties",
+    "parentPath": "/en/about"
+  },
+  { "path": "/en/blog", "title": "Blog", "parentPath": "/en/about" },
+  { "path": "/en/giving-back", "title": "Giving Back", "parentPath": "/en/about" },
+  {
+    "path": "/en/testimonials",
+    "title": "Testimonials",
+    "parentPath": "/en/about"
+  },
+  { "path": "/en/contact-us", "title": "Contact Us", "parentPath": "/en" },
+  { "path": "/zh", "title": "Tika Tours", "parentPath": "/" },
+  { "path": "/zh/georgia-tours", "title": "格鲁吉亚之旅", "parentPath": "/zh" },
+  {
+    "path": "/zh/georgia-tours/group-tours",
+    "title": "参团旅游",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/medical",
+    "title": "ZH: Medical Tours",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/adventure-tours",
+    "title": "探险旅游",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/cultural-tours",
+    "title": "文化之旅",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/food-and-wine",
+    "title": "食物和酒",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/leisure-and-health",
+    "title": "休闲与健康",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/romance",
+    "title": "浪漫",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/family",
+    "title": "家庭",
+    "parentPath": "/zh/georgia-tours"
+  },
+  {
+    "path": "/zh/georgia-tours/business",
+    "title": "商业",
+    "parentPath": "/zh/georgia-tours"
+  },
+  { "path": "/zh/multi-country-tours", "title": "多国之旅", "parentPath": "/zh" },
+  {
+    "path": "/zh/multi-country-tours/georgia-armenia-azerbaijan",
+    "title": "格鲁吉亚，亚美尼亚和阿塞拜疆",
+    "parentPath": "/zh/multi-country-tours"
+  },
+  {
+    "path": "/zh/multi-country-tours/georgia-and-armenia",
+    "title": "格鲁吉亚和亚美尼亚",
+    "parentPath": "/zh/multi-country-tours"
+  },
+  {
+    "path": "/zh/multi-country-tours/asia",
+    "title": "亚洲",
+    "parentPath": "/zh/multi-country-tours"
+  },
+  {
+    "path": "/zh/multi-country-tours/europe",
+    "title": "欧洲",
+    "parentPath": "/zh/multi-country-tours"
+  },
+  {
+    "path": "/zh/georgia-travel-guide",
+    "title": "格鲁吉亚旅游指南",
+    "parentPath": "/zh"
+  },
+  {
+    "path": "/zh/why-should-i-visit",
+    "title": "我为什么要去参观？",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  {
+    "path": "/zh/regions",
+    "title": "地区",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  {
+    "path": "/zh/georgia-facts",
+    "title": "格鲁吉亚事实",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  { "path": "/zh/geography", "title": "地理", "parentPath": "/zh/georgia-facts" },
+  {
+    "path": "/zh/flora-and-fauna",
+    "title": "植物群和动物群",
+    "parentPath": "/zh/georgia-facts"
+  },
+  {
+    "path": "/zh/unesco-world-heritage-sites",
+    "title": "教科文组织世界遗产",
+    "parentPath": "/zh/georgia-facts"
+  },
+  {
+    "path": "/zh/history-and-culture",
+    "title": "历史与文化",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  {
+    "path": "/zh/history",
+    "title": "历史",
+    "parentPath": "/zh/history-and-culture"
+  },
+  {
+    "path": "/zh/wine-and-cuisine",
+    "title": "葡萄酒和美食",
+    "parentPath": "/zh/history-and-culture"
+  },
+  { "path": "/zh/music", "title": "音乐", "parentPath": "/zh/history-and-culture" },
+  {
+    "path": "/zh/theatre",
+    "title": "剧院",
+    "parentPath": "/zh/history-and-culture"
+  },
+  {
+    "path": "/zh/folk-dance",
+    "title": "民间舞蹈",
+    "parentPath": "/zh/history-and-culture"
+  },
+  {
+    "path": "/zh/art-and-architecture",
+    "title": "艺术与建筑",
+    "parentPath": "/zh/history-and-culture"
+  },
+  {
+    "path": "/zh/language-and-script",
+    "title": "语言和脚本",
+    "parentPath": "/zh/history-and-culture"
+  },
+  {
+    "path": "/zh/travel-info",
+    "title": "旅游信息",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  {
+    "path": "/zh/getting-to-georgia",
+    "title": "去格鲁吉亚",
+    "parentPath": "/zh/travel-info"
+  },
+  {
+    "path": "/zh/visa-support",
+    "title": "签证支持",
+    "parentPath": "/zh/travel-info"
+  },
+  {
+    "path": "/zh/georgian-embassies",
+    "title": "格鲁吉亚大使馆",
+    "parentPath": "/zh/travel-info"
+  },
+  {
+    "path": "/zh/foreign-missions-in-georgia",
+    "title": "格鲁吉亚的外国使团",
+    "parentPath": "/zh/travel-info"
+  },
+  {
+    "path": "/zh/hotels",
+    "title": "酒店",
+    "parentPath": "/zh/georgia-travel-guide"
+  },
+  { "path": "/zh/gallery", "title": "画廊", "parentPath": "/zh" },
+  { "path": "/zh/video-gallery", "title": "视频库", "parentPath": "/zh/gallery" },
+  { "path": "/zh/about", "title": "关于", "parentPath": "/zh" },
+  {
+    "path": "/zh/our-properties",
+    "title": "我们的属性",
+    "parentPath": "/zh/about"
+  },
+  { "path": "/zh/blog", "title": "博客", "parentPath": "/zh/about" },
+  { "path": "/zh/giving-back", "title": "回馈", "parentPath": "/zh/about" },
+  { "path": "/zh/testimonials", "title": "褒奖", "parentPath": "/zh/about" },
+  { "path": "/zh/contact-us", "title": "联系我们", "parentPath": "/zh" }
+]
