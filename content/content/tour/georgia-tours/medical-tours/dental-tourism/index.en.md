@@ -23,15 +23,14 @@ Dental tourism is the practice in which people seek for dental treatment outside
 
 ## Why Georgia?
 
-### Safe treatment
+### Safe Treatment
 
 Georgian dentists are among the best trained in the world. Georgian dental clinics use the latest equipment and procedures.
-Money saving
 
-### Cost effective
+### Money Saving
 
 The cost of implant treatment in the most renowed Georgian clinics are comparable to the cost of treatment in the statistical UK dental office. The cost of typical treatment in the UK, Scandinavia and Germany is comparable to the cost of world's best and most known Georgian dentistry.
 
-### Top-class
+### Top-Class
 
 Through the use of modern methods of treatment and first-class equipment treatments at Georgian clinics are quick and minimally invasive. As a result, even the most complex operation quickly return to work and everyday pleasures.

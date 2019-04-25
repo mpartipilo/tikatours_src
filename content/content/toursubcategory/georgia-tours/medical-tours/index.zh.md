@@ -2,10 +2,10 @@
 language: zh
 url: georgia-tours/medical
 template: toursubcategory
-heading: Medical Tourism
-title: Medical Tourism | Tika Tours
-label: Medical Tourism
-name: Medical Tourism
+heading: 医疗旅游
+title: 医疗旅游 | Tika Tours
+label: 医疗旅游
+name: 医疗旅游
 image_path: /library/tourcategories/medical-tours/image.png
 imggrp_id: 87
 main_category_id: 1
