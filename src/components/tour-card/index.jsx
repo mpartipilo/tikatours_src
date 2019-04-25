@@ -64,7 +64,7 @@ const TourCardRender = ({
 )
 
 const TourCard = ({ tour, tag, language, tourCategoryData }) => {
-  var tourTag = '';
+  var tourTag = tag;
   if (!tag) {
     var subCategory = tourCategoryData.find(
       c => c.sub_category_id == tour.sub_category_id
