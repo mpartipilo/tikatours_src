@@ -1,11 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { contentData } from "../i18n-data"
-
-const SocialLinks = ({ language }) => {
-  const contentDataLoc = contentData[language]
-  const { strings } = contentDataLoc
+const SocialLinks = ({ strings }) => {
   return (
     <ul className="social-links">
       <li>
@@ -50,31 +46,31 @@ const SocialLinks = ({ language }) => {
           <span>
             <i className="fa fa-envelope-o" />
           </span>
-          <span>{strings["Send us an email"]}</span>
+          <span>{strings["Send_us_an_email"]}</span>
         </a>
       </li>
     </ul>
   )
 }
 
-const SocialPanel = ({ language }) => {
-  const contentDataLoc = contentData[language]
-  const { strings } = contentDataLoc
-  return (
-    <div className="container-fluid social-panel">
-      <div className="row">
-        <div className="col-12 col-lg-3">
-          <h2>
-            <img src="/img/logos/motif-sml.png" alt="Tika Tours logo" />
-            {strings["Be Social"]}
-          </h2>
-        </div>
-        <div className="col-12 col-lg-9">
-          <SocialLinks language={language} />
-        </div>
+const SocialPanel = ({ strings }) => (
+  <div className="container-fluid social-panel">
+    <div className="row">
+      <div className="col-12 col-lg-3">
+        <h2>
+          <img src="/img/logos/motif-sml.png" alt="Tika Tours logo" />
+          {strings["Be_Social"]}
+        </h2>
+      </div>
+      <div className="col-12 col-lg-9">
+        <SocialLinks strings={strings} />
       </div>
     </div>
-  )
+  </div>
+)
+
+SocialPanel.propTypes = {
+  strings: PropTypes.object.isRequired
 }
 
 export default SocialPanel

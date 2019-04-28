@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import { contentData } from "../i18n-data"
-
 const TourCardRender = ({
   tag,
   image_path,
@@ -38,7 +36,7 @@ const TourCardRender = ({
             <p>
               {strings.from_euro}
               <span className="price">{price}</span>
-              {strings["per person"]}
+              {strings["per_person"]}
             </p>
           )}
           <div>
@@ -63,7 +61,7 @@ const TourCardRender = ({
   </div>
 )
 
-const TourCard = ({ tour, tag, language, tourCategoryData }) => {
+const TourCard = ({ tour, tag, strings, tourCategoryData }) => {
   var tourTag = tag;
   if (!tag) {
     var subCategory = tourCategoryData.find(
@@ -80,7 +78,6 @@ const TourCard = ({ tour, tag, language, tourCategoryData }) => {
       }
     }
   }
-  const { strings } = contentData[language]
 
   const tcrProps = {
     strings,
@@ -100,7 +97,8 @@ TourCard.propTypes = {
   tour: PropTypes.object.isRequired,
   tag: PropTypes.string,
   language: PropTypes.string.isRequired,
-  tourCategoryData: PropTypes.array
+  tourCategoryData: PropTypes.array,
+  strings: PropTypes.object.isRequired
 }
 
 export default TourCard

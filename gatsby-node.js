@@ -121,6 +121,62 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
+
+          allStrings: allStringsJson {
+            nodes {
+              lang
+              strings {
+                book_tour
+                more_info
+                view_this_tour
+                featured_tour
+                feature_tour_list_heading
+                otherTours
+                category_archives
+                required_fields
+                tour_name
+                first_name
+                last_name
+                email
+                phone_mobile
+                message
+                captcha
+                submit
+                enter_text_you_see_above
+                required_tname
+                required_fname
+                required_lname
+                required_email
+                required_captcha
+                from_euro
+                per_person
+                phone
+                address
+                bookings
+                tour_overview
+                itinerary
+                inclusions
+                recent_posts
+                categories
+                posted_on
+                _in_
+                tour_gallery
+                _Gallery
+                Thank_you
+                Reasons_to_Visit_Georgia
+                View_Georgia_Tours
+                watch_video
+                loading_video
+                All_images
+                Send_us_an_email
+                Be_Social
+                Where_in_the_world_is__country__
+                Click_to_see_map
+                Click_to_hide_map
+                Georgia
+              }
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -132,11 +188,16 @@ exports.createPages = ({ graphql, actions }) => {
         const navNodes = allNavigation.edges.map(e => e.node)
         const navigationTree = makeNavigationTree(navNodes, "/")
 
+        const { allStrings } = result.data
+        const allStringsNodes = allStrings.nodes
+
         const globalNavigation = {}
+        const globalStrings = {}
         languages.forEach(({ value }) => {
           globalNavigation[value] = navigationTree.find(
             t => t.path === `/${value}`
           )
+          globalStrings[value] = allStringsNodes.find(t => t.lang === `${value}`).strings
         })
 
         const pages = result.data.allPages.edges
@@ -185,7 +246,8 @@ exports.createPages = ({ graphql, actions }) => {
             url: page.node.frontmatter.url,
             language: page.node.frontmatter.language,
             languages,
-            navigation: globalNavigation[page.node.frontmatter.language]
+            navigation: globalNavigation[page.node.frontmatter.language],
+            strings: globalStrings[page.node.frontmatter.language]
           }
 
           if (

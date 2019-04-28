@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Router } from "@reach/router"
 import { graphql } from "gatsby"
 
-import { contentData } from "../components/i18n-data"
 import { LayoutPage } from "../components/layout"
 import ContactPageForm from "../components/contact-page-form"
 
@@ -12,9 +11,8 @@ const ContactPageFormWrapper = ({ options, strings, tour_code }) => (
 )
 
 const ContactPage = ({ location, pathContext, data }) => {
-  const { language, isBooking } = pathContext
+  const { language, isBooking, strings } = pathContext
   const { sitemetadata } = data
-  const { strings } = contentData[language]
 
   var tag = <ContactPageForm strings={strings} />
 

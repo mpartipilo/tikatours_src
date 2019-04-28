@@ -6,9 +6,6 @@ import imagesGroups_zh from "../../../data/json/zh/images/groups.json"
 import imagesSlides_en from "../../../data/json/en/images/slides.json"
 import imagesSlides_zh from "../../../data/json/zh/images/slides.json"
 
-import strings_en from "../../../data/json/en/strings.json"
-import strings_zh from "../../../data/json/zh/strings.json"
-
 const getSlideshowData = (imagesSlides, groupId) => {
   return imagesSlides
     .filter(f => f.imggrp_id == groupId)
@@ -33,17 +30,14 @@ const findInTree = (id, tree) => {
   }
 }
 
-const contentData = {
-  en: {
-    imagesGroups: imagesGroups_en,
-    imagesSlides: imagesSlides_en,
-    strings: strings_en
-  },
-  zh: {
-    imagesGroups: imagesGroups_zh,
-    imagesSlides: imagesSlides_zh,
-    strings: strings_zh
-  }
+const allImagesGroups = {
+  en: { imagesGroups: imagesGroups_en },
+  zh: { imagesGroups: imagesGroups_zh }
 }
 
-export { findInTree, getSlideshowData, contentData }
+const allImagesSlides = {
+  en: { imagesSlides: imagesSlides_en },
+  zh: { imagesSlides: imagesSlides_zh }
+}
+
+export { findInTree, getSlideshowData, allImagesGroups, allImagesSlides }

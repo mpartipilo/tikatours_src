@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import Swiper from "react-id-swiper"
 import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/dist/js/swiper.esm'
 
-import { contentData } from "../i18n-data"
-
 // TODO Transition opacity when mounting .ss-cap, .next and .prev
 
 class Slideshow extends React.Component {
@@ -54,13 +52,11 @@ class Slideshow extends React.Component {
 
     this.createSlideFromRaw = this.createSlideFromRaw.bind(this)
 
-    const { slides, language } = props
-    const contentDataLoc = contentData[language]
-    const { strings } = contentDataLoc
+    const { slides, strings } = props
 
     this.state = {
-      labelWatchVideo: strings["watch video"],
-      labelLoadingVideo: strings["loading video"],
+      labelWatchVideo: strings["watch_video"],
+      labelLoadingVideo: strings["loading_video"],
       slides,
       params,
       showVideo: false,
@@ -223,7 +219,7 @@ Slideshow.defaultProps = {
 }
 
 Slideshow.propTypes = {
-  language: PropTypes.string.isRequired,
+  strings: PropTypes.string.isRequired,
   fixed: PropTypes.bool,
   slides: PropTypes.array.isRequired,
   children: PropTypes.any.isRequired

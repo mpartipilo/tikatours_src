@@ -7,7 +7,7 @@ import md5 from "md5"
 import { Layout } from "../components/layout"
 import GalleryIndex from "../components/gallery-index"
 
-import { contentData } from "../components/i18n-data"
+import { imagesSlides, imagesGroups } from "../components/i18n-data"
 
 const GalleryPage = ({
   location,
@@ -52,7 +52,8 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
   const defaultLanguage = "en"
   const currentLanguage =
     data.markdownRemark.frontmatter.language || defaultLanguage
-  const { imagesSlides, imagesGroups } = contentData[currentLanguage]
+  const { imagesGroups } = imagesGroups[currentLanguage]
+  const { imagesSlides } = imagesSlides[currentLanguage]
 
   const galleryGroups = imagesGroups
     .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)

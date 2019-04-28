@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { contentData } from "../i18n-data"
 
 const FooterNav = props => (
   <div className="row">
@@ -20,15 +19,13 @@ const FooterNav = props => (
 )
 
 const Footer = props => {
-  const { language, contact_data } = props
-  const { strings } = contentData[language]
-
+  const { contact_data, strings } = props
   const { copyright, credits, navFooter, phone, email, address } = contact_data
 
   return (
     <footer>
       <div className="container-fluid">
-        <FooterNav links={navFooter} language={language} />
+        <FooterNav links={navFooter} />
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="contact">
@@ -100,12 +97,11 @@ const Footer = props => {
 
 Footer.propTypes = {
   contact_data: PropTypes.object.isRequired,
-  language: PropTypes.string.isRequired
+  strings: PropTypes.object.isRequired
 }
 
 FooterNav.propTypes = {
-  links: PropTypes.array,
-  language: PropTypes.string.isRequired
+  links: PropTypes.array
 }
 
 export default Footer

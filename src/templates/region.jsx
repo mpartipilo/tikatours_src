@@ -7,7 +7,7 @@ import { LayoutPage } from "../components/layout"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
 
-import { contentData, getSlideshowData } from "../components/i18n-data"
+import { imagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const RegionPage = ({
   page,
@@ -39,8 +39,8 @@ class RegionPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
 
-    const language = pathContext.language
-    const { imagesSlides, strings } = contentData[language]
+    const { language, strings } = pathContext
+    const { imagesSlides } = imagesSlides[language]
     const { sitemetadata } = data
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
@@ -69,7 +69,7 @@ class RegionPageTemplate extends React.Component {
 
     var regionGallery = subnavData.gallery_id
     const thumbPath = `/thumbs/galleries/g${regionGallery}/`
-    var regionGalleryHeading = subnavData.name + strings[" Gallery"]
+    var regionGalleryHeading = subnavData.name + strings["_Gallery"]
     var regionGalleryPhotos = imagesSlides
       .filter(i => i.imggrp_id == regionGallery)
       .map(i => ({

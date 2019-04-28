@@ -2,6 +2,7 @@
 
 ## Pending
 
+- Localize GalleryIndex: Pass the string for "All Images"
 - Show map when country_id is available
 - Hook up to CMS
 - Use a proper I18N Component (react-i18next?)

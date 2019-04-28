@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import { LayoutPage } from "../components/layout"
 
-import { getSlideshowData, contentData } from "../components/i18n-data"
+import { getSlideshowData, imagesSlides } from "../components/i18n-data"
 
 const GeneralPageTemplate = props => {
   const { location, data, pathContext } = props
@@ -14,7 +14,7 @@ const GeneralPageTemplate = props => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { imagesSlides } = contentData[language]
+  const { imagesSlides } = imagesSlides[language]
   const { sitemetadata } = data
 
   const imgGroup = data.markdownRemark.frontmatter.imggrp_id

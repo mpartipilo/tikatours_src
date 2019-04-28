@@ -7,7 +7,7 @@ import Slideshow from "../components/slideshow"
 import TourList from "../components/tour-list"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
-import { contentData, getSlideshowData } from "../components/i18n-data"
+import { imagesSlides, getSlideshowData } from "../components/i18n-data"
 
 // Use this template for tour sub-categories
 
@@ -75,7 +75,7 @@ class TourSubCategoryPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
     const language = pathContext.language
-    const { imagesSlides } = contentData[language]
+    const { imagesSlides } = imagesSlides[language]
     const { sitemetadata } = data
 
     const imgGroup = data.markdownRemark.frontmatter.imggrp_id

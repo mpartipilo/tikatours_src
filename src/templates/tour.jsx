@@ -8,7 +8,7 @@ import TourDetails from "../components/tour-details"
 import TourList from "../components/tour-list"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
-import { contentData, getSlideshowData } from "../components/i18n-data"
+import { imagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const GeneralPage = ({
   location,
@@ -93,8 +93,8 @@ class TourDetailPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const language = pathContext.language
-    const { imagesSlides, strings } = contentData[language]
+    const { language, strings } = pathContext
+    const { imagesSlides } = imagesSlides[language]
     const { sitemetadata } = data
 
     const imgGroup = data.tour.frontmatter.imggrp_id

@@ -183,7 +183,7 @@ class ContactPageForm extends React.Component {
         <div className="col-12 col-sm-6">
           {this.state.submitted ? (
             <div className="contact-submitted">
-              <p>{this.state.strings["Thank you"]}</p>
+              <p>{this.state.strings["Thank_you"]}</p>
             </div>
           ) : (
             <React.Fragment>
@@ -266,7 +266,7 @@ class ContactPageForm extends React.Component {
                 </div>
                 <div className="form-group">
                   <label htmlFor="mobile" className="control-label">
-                    {this.state.strings["phone/mobile"]}
+                    {this.state.strings["phone_mobile"]}
                   </label>
                   <input
                     type="tel"

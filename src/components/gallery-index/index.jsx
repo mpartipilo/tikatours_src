@@ -4,8 +4,6 @@ import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
 import Swiper from "react-id-swiper"
 import { Navigation } from 'swiper/dist/js/swiper.esm'
 
-import { contentData } from "../i18n-data"
-
 const GalleryIndexTabs = ({ groups, allImagesLabel, onTabClicked, active }) => (
   <React.Fragment>
     <div className="row hidden-xs">
@@ -53,8 +51,7 @@ class GalleryIndex extends React.Component {
   constructor(props) {
     super(props)
 
-    const contentDataLoc = contentData[props.currentLanguage]
-    const { strings } = contentDataLoc
+    const strings = { "All images": "All images" }
 
     this.state = {
       allImagesLabel: strings["All images"],

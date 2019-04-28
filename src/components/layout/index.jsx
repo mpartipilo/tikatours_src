@@ -33,7 +33,8 @@ class Layout extends React.Component {
       sitemetadata,
       data,
       siteTitle,
-      navigation
+      navigation,
+      strings
     } = this.props
     const { contact_data } = data
     return (
@@ -48,7 +49,7 @@ class Layout extends React.Component {
           navigation={navigation}
         />
         {children}
-        <Footer contact_data={contact_data} language={language} />
+        <Footer {...{contact_data, language, strings}} />
         <WhatsHelp
           options={{
             facebook: "290339974371704", // Facebook page ID
@@ -131,7 +132,8 @@ Layout.propTypes = {
   location: PropTypes.string.isRequired,
   navigation: PropTypes.any.isRequired,
   siteTitle: PropTypes.any,
-  sitemetadata: PropTypes.any
+  sitemetadata: PropTypes.any,
+  strings: PropTypes.object.isRequired
 }
 
 LayoutMain.propTypes = {

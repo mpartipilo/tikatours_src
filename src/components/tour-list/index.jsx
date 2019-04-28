@@ -12,7 +12,7 @@ class TourList extends React.Component {
   }
 
   render() {
-    const { language, heading, list, tag, tourCategoryData } = this.props
+    const { language, heading, list, tag, tourCategoryData, strings } = this.props
 
     return (
       list &&
@@ -33,6 +33,7 @@ class TourList extends React.Component {
                   tour={t}
                   tag={tag}
                   tourCategoryData={tourCategoryData}
+                  strings={strings}
                 />
               ))}
             </HeightMatchingGroup>
@@ -48,7 +49,8 @@ TourList.propTypes = {
   heading: PropTypes.string.isRequired,
   list: PropTypes.array.isRequired,
   tag: PropTypes.string,
-  tourCategoryData: PropTypes.array
+  tourCategoryData: PropTypes.array,
+  strings: PropTypes.object.isRequired
 }
 
 export default TourList

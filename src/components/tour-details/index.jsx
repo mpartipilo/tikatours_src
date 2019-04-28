@@ -2,16 +2,13 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 
-import { contentData } from "../i18n-data"
-
 import Gallery from "../gallery"
 
 class TourDetails extends React.Component {
   constructor(props) {
     super(props)
 
-    const { tour, imagesSlidesData, tourCategoryData, language } = props
-    const { strings } = contentData[language]
+    const { tour, imagesSlidesData, tourCategoryData, strings } = props
 
     var tag = ""
 
@@ -65,12 +62,12 @@ class TourDetails extends React.Component {
         <div className="col-12 col-md-8">
           <div className="row">
             <div className="col-12">
-              <h2>{this.state.strings["tour overview"]}</h2>
+              <h2>{this.state.strings["tour_overview"]}</h2>
               <div dangerouslySetInnerHTML={{ __html: long_descr }} />
             </div>
             {tourGallery && (
               <Gallery
-                heading={this.state.strings["tour gallery"]}
+                heading={this.state.strings["tour_gallery"]}
                 photos={tourGallery}
               />
             )}
@@ -96,7 +93,7 @@ class TourDetails extends React.Component {
                 <p>
                   {this.state.strings.from_euro}
                   <span className="price">{price_from}</span>
-                  {this.state.strings["per person"]}
+                  {this.state.strings["per_person"]}
                 </p>
               )}
               <div>
@@ -125,10 +122,10 @@ class TourDetails extends React.Component {
 }
 
 TourDetails.propTypes = {
-  language: PropTypes.string.isRequired,
   tour: PropTypes.object.isRequired,
   imagesSlidesData: PropTypes.array.isRequired,
-  tourCategoryData: PropTypes.array.isRequired
+  tourCategoryData: PropTypes.array.isRequired,
+  strings: PropTypes.object.isRequired
 }
 
 export default TourDetails

@@ -13,7 +13,7 @@ import Slideshow from "../components/slideshow"
 import SocialPanel from "../components/social-panel"
 import TourList from "../components/tour-list"
 
-import { getSlideshowData, contentData } from "../components/i18n-data"
+import { getSlideshowData, allImagesSlides } from "../components/i18n-data"
 
 class GeneralPage extends React.Component {
   constructor(props) {
@@ -49,6 +49,7 @@ class GeneralPage extends React.Component {
               fixed={overlayVisible}
               slides={slides}
               language={language}
+              strings={strings}
             >
               <div
                 className="main"
@@ -75,18 +76,19 @@ class GeneralPage extends React.Component {
                   list={tourList}
                   tourCategoryData={tourCategoryData}
                   tag={tourListTag}
+                  strings={strings}
                 />
                 <ReasonsSlider
                   reasons={countryHighlights}
                   title={format(
-                    strings["Reasons to Visit Georgia"],
+                    strings["Reasons_to_Visit_Georgia"],
                     countryHighlights.length
                   )}
                   btnUrl={"/" + language + "/georgia-tours"}
-                  btnText={strings["View Georgia Tours"]}
+                  btnText={strings["View_Georgia_Tours"]}
                 />
-                <MapCanvasView countryName="Georgia" language={language} />
-                <SocialPanel language={language} />
+                <MapCanvasView countryName="Georgia" strings={strings} />
+                <SocialPanel language={language} strings={strings} />
                 <HomeGallery
                   imageSlides={imagesSlides}
                   galleryId={data.imggrp_id_gallery}
@@ -107,8 +109,8 @@ const IndexPage = ({ location, data, pathContext }) => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { imagesSlides, strings } = contentData[language]
-
+  const { imagesSlides } = allImagesSlides[language]
+  const { strings } = pathContext
   const { sitemetadata } = data
   const countryHighlights = data.highlightsJson.highlights
   const homeOverlayData = data.homeOverlayJson.data
@@ -160,6 +162,7 @@ const IndexPage = ({ location, data, pathContext }) => {
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}
+        strings={strings}
       >
         <GeneralPage
           location={location}

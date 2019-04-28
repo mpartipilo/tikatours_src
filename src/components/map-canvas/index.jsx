@@ -23,8 +23,7 @@ class MapCanvasView extends React.Component {
   }
 
   render() {
-    const { language } = this.props
-    const { strings } = contentData[language]
+    const { strings, countryName } = this.props
 
     return (
       <React.Fragment>
@@ -32,9 +31,9 @@ class MapCanvasView extends React.Component {
           <p>
             <i className="fa fa-map-marker" />
           </p>
-          <p className="xxl">{format(strings["Where in the world is {country}?"], "Georgia")}</p>
+          <p className="xxl">{format(strings["Where_in_the_world_is__country__"], strings[countryName])}</p>
           <p>
-          {strings[`Click to ${this.state.mapVisible ? "hide" : "see"} map`]}
+          {strings[`Click_to_${this.state.mapVisible ? "hide" : "see"}_map`]}
             <i
               className={
                 "fa fa-" +
@@ -68,7 +67,8 @@ class MapCanvasView extends React.Component {
 }
 
 MapCanvasView.propTypes = {
-  countryName: PropTypes.string
+  countryName: PropTypes.string,
+  strings: PropTypes.object.isRequired
 }
 
 export default MapCanvasView

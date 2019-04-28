@@ -5,15 +5,12 @@ import { graphql } from "gatsby"
 import { LayoutPage } from "../components/layout"
 import Blog from "../components/blog"
 
-import { contentData } from "../components/i18n-data"
-
 const BlogPageTemplate = ({ pathContext, location, data }) => {
   const defaultLanguage = "en"
   const language = data.markdownRemark.frontmatter.language || defaultLanguage
-  const { strings } = contentData[language]
   const { sitemetadata, contact_data } = data
 
-  const { blog_post, blog_category } = pathContext
+  const { blog_post, blog_category, strings } = pathContext
 
   const blog_post_filtered = blog_post.filter(
     p => p.category_id == data.markdownRemark.frontmatter.id

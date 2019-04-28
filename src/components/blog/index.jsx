@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import { contentData } from "../i18n-data"
-
 function truncate(n, useWordBoundary) {
   if (this.length <= n) {
     return this
@@ -38,9 +36,9 @@ const BlogPost = ({ post, linkTitle, strings }) => (
     <hr />
     <p>
       <span className="fa fa-clock-o" />
-      {strings["posted on"]}
+      {strings["posted_on"]}
       {post.date_posted}
-      {strings[" in "]}
+      {strings["_in_"]}
       <Link to={post.category.url}>{post.category.label}</Link>
     </p>
     <div className="description">
@@ -55,8 +53,7 @@ class Blog extends React.Component {
   constructor(props) {
     super(props)
 
-    const { strings } = contentData[props.language]
-    const { blog_post, blog_category } = props
+    const { blog_post, blog_category, strings, language } = props
 
     var posts = (blog_post || [])
       .sort((a, b) => b.date_posted.localeCompare(a.date_posted))
@@ -66,7 +63,7 @@ class Blog extends React.Component {
           {
             ...post,
             category,
-            post_url: `/${props.language}/${post.url}`
+            post_url: `/${language}/${post.url}`
           }
         ])
       }, [])
@@ -132,7 +129,7 @@ class Blog extends React.Component {
               )}
             </div>
             <div className="well well-small">
-              <h3>{this.state.strings["recent posts"]}</h3>
+              <h3>{this.state.strings["recent_posts"]}</h3>
               <ul className="list-unstyled">
                 {this.state.recent_posts.map(p => (
                   <li
@@ -174,7 +171,8 @@ Blog.propTypes = {
   post_id: PropTypes.number,
   language: PropTypes.string.isRequired,
   blog_post: PropTypes.array.isRequired,
-  blog_category: PropTypes.array.isRequired
+  blog_category: PropTypes.array.isRequired,
+  strings: PropTypes.object.isRequired
 }
 
 export default Blog
