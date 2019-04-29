@@ -7,7 +7,7 @@ import { LayoutPage } from "../components/layout"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
 
-import { imagesSlides, getSlideshowData } from "../components/i18n-data"
+import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const RegionPage = ({
   page,
@@ -40,7 +40,7 @@ class RegionPageTemplate extends React.Component {
     const { location, data, pathContext } = this.props
 
     const { language, strings } = pathContext
-    const { imagesSlides } = imagesSlides[language]
+    const { imagesSlides } = allImagesSlides[language]
     const { sitemetadata } = data
 
     var imgGroup = data.markdownRemark.frontmatter.imggrp_id
@@ -92,6 +92,7 @@ class RegionPageTemplate extends React.Component {
         sitemetadata={sitemetadata}
         slides={slides}
         fixed={false}
+        strings={strings}
       >
         <RegionPage
           location={location}
@@ -105,6 +106,7 @@ class RegionPageTemplate extends React.Component {
           subnavData={subnavData}
           regionGalleryPhotos={regionGalleryPhotos}
           regionGalleryHeading={regionGalleryHeading}
+          strings={strings}
         />
       </LayoutPage>
     )

@@ -33,6 +33,7 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
       data={{ markdownRemark: { frontmatter }, contact_data }}
       sitemetadata={sitemetadata}
       fixed={false}
+      strings={strings}
     >
       <div className="content">
         <Blog
@@ -40,6 +41,7 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
           blog_post={blog_post_filtered}
           blog_category={blog_category}
           category_id={data.markdownRemark.frontmatter.id}
+          strings={strings}
         />
       </div>
     </LayoutPage>

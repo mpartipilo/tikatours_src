@@ -7,7 +7,7 @@ import Slideshow from "../components/slideshow"
 import TourList from "../components/tour-list"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
-import { imagesSlides, getSlideshowData } from "../components/i18n-data"
+import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 // Use this template for tour sub-categories
 
@@ -19,53 +19,55 @@ const TourSubCategoryPage = ({
   tourCategoryData,
   tourList,
   tourListHeading,
-  mainCategoryFound
+  mainCategoryFound,
+  strings
 }) => (
-    <React.Fragment>
-      <div className="push" />
-      <Slideshow fixed={false} slides={slides} language={language}>
-        <div className="main">
-          <div className="container">
-            <Breadcrumbs
-              language={language}
-              trail={[
-                {
-                  page_title: mainCategoryFound.label,
-                  path: (language + "/" + mainCategoryFound.url)
-                },
-                {
-                  page_title: data.label,
-                  path: (language + "/" + data.url)
-                }
-              ]}
-            />
-            <div className="row">
-              <div className="col-12 text-center has-bc">
-                <h1>{data.heading}</h1>
-              </div>
-            </div>
-            <div
-              className="content"
-              dangerouslySetInnerHTML={{ __html: page.html }}
-            />
-            <div className="row">
-              <div className="col-12">
-                <div className="divider" />
-              </div>
+  <React.Fragment>
+    <div className="push" />
+    <Slideshow fixed={false} slides={slides} language={language} strings={strings}>
+      <div className="main">
+        <div className="container">
+          <Breadcrumbs
+            language={language}
+            trail={[
+              {
+                page_title: mainCategoryFound.label,
+                path: language + "/" + mainCategoryFound.url
+              },
+              {
+                page_title: data.label,
+                path: language + "/" + data.url
+              }
+            ]}
+          />
+          <div className="row">
+            <div className="col-12 text-center has-bc">
+              <h1>{data.heading}</h1>
             </div>
           </div>
-          {tourList && (
-            <TourList
-              language={language}
-              list={tourList}
-              heading={tourListHeading}
-              tourCategoryData={tourCategoryData}
-            />
-          )}
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: page.html }}
+          />
+          <div className="row">
+            <div className="col-12">
+              <div className="divider" />
+            </div>
+          </div>
         </div>
-      </Slideshow>
-    </React.Fragment>
-  )
+        {tourList && (
+          <TourList
+            language={language}
+            list={tourList}
+            heading={tourListHeading}
+            tourCategoryData={tourCategoryData}
+            strings={strings}
+          />
+        )}
+      </div>
+    </Slideshow>
+  </React.Fragment>
+)
 
 class TourSubCategoryPageTemplate extends React.Component {
   constructor(props) {
@@ -74,8 +76,8 @@ class TourSubCategoryPageTemplate extends React.Component {
 
   render() {
     const { location, data, pathContext } = this.props
-    const language = pathContext.language
-    const { imagesSlides } = imagesSlides[language]
+    const { language, strings }  = pathContext
+    const { imagesSlides } = allImagesSlides[language]
     const { sitemetadata } = data
 
     const imgGroup = data.markdownRemark.frontmatter.imggrp_id
@@ -122,7 +124,8 @@ class TourSubCategoryPageTemplate extends React.Component {
       tourData,
       tourListHeading,
       tourList,
-      mainCategoryFound
+      mainCategoryFound,
+      strings
     }
 
     return (
@@ -135,6 +138,7 @@ class TourSubCategoryPageTemplate extends React.Component {
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}
+        strings={strings}
       >
         <TourSubCategoryPage
           location={location}
@@ -214,7 +218,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    
+
     tourSubCategories: allMarkdownRemarkToursubcategory(
       filter: { frontmatter: { language: { eq: $language } } }
     ) {

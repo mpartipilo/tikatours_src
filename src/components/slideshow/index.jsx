@@ -219,7 +219,7 @@ Slideshow.defaultProps = {
 }
 
 Slideshow.propTypes = {
-  strings: PropTypes.string.isRequired,
+  strings: PropTypes.object.isRequired,
   fixed: PropTypes.bool,
   slides: PropTypes.array.isRequired,
   children: PropTypes.any.isRequired

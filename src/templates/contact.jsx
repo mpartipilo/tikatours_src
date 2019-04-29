@@ -48,6 +48,7 @@ const ContactPage = ({ location, pathContext, data }) => {
       language={language}
       data={data}
       sitemetadata={sitemetadata}
+      strings={strings}
     >
       {tag}
     </LayoutPage>

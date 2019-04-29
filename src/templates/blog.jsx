@@ -12,7 +12,7 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
   const defaultLanguage = "en"
   const language = data.markdownRemark.frontmatter.language || defaultLanguage
 
-  const { blog_post, blog_category } = pathContext
+  const { blog_post, blog_category, strings } = pathContext
 
   return (
     <LayoutPage
@@ -25,12 +25,14 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
       data={data}
       sitemetadata={sitemetadata}
       fixed={false}
+      strings={strings}
     >
       <div className="content">
         <Blog
           language={language}
           blog_post={blog_post}
           blog_category={blog_category}
+          strings={strings}
         />
       </div>
     </LayoutPage>

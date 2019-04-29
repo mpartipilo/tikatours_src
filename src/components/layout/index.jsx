@@ -100,8 +100,8 @@ const LayoutMain = ({ heading, children }) => (
   </>
 )
 
-const LayoutSlideshow = ({ fixed, slides, language, children, heading }) => (
-  <Slideshow fixed={fixed} slides={slides} language={language}>
+const LayoutSlideshow = ({ fixed, slides, language, children, heading, strings }) => (
+  <Slideshow fixed={fixed} slides={slides} language={language} strings={strings}>
     <LayoutMain heading={heading}>{children}</LayoutMain>
   </Slideshow>
 )
@@ -156,6 +156,7 @@ LayoutSlideshow.propTypes = {
   fixed: PropTypes.any,
   slides: PropTypes.any,
   language: PropTypes.any,
+  strings: PropTypes.object.isRequired,
   children: PropTypes.any,
   heading: PropTypes.any
 }

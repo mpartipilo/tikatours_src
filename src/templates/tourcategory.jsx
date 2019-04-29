@@ -7,8 +7,6 @@ import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
-import { contentData } from "../components/i18n-data"
-
 const TourCategoryPage = ({
   location,
   page,
@@ -20,7 +18,8 @@ const TourCategoryPage = ({
   catList,
   tourListHeading,
   tourList,
-  tourCategoryData
+  tourCategoryData,
+  strings
 }) => (
     <React.Fragment>
       <div className="push" />
@@ -57,6 +56,7 @@ const TourCategoryPage = ({
             list={tourList}
             heading={tourListHeading}
             tourCategoryData={tourCategoryData}
+            strings={strings}
           />
         )}
       </div>
@@ -64,7 +64,7 @@ const TourCategoryPage = ({
   )
 
 const GeneralPageTemplate = ({ location, data, pathContext }) => {
-  const currentLanguage = pathContext.language
+  const { language:currentLanguage, strings } = pathContext
   const { sitemetadata } = data
 
   const mainCategoryFound = data.markdownRemark.frontmatter
@@ -97,7 +97,8 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
     catList,
     tourListHeading,
     tourList,
-    tourCategoryData: tourFullCategoryData
+    tourCategoryData: tourFullCategoryData,
+    strings
   }
 
   return (
@@ -110,6 +111,7 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
       contact={sitemetadata.contact}
       data={data}
       sitemetadata={sitemetadata}
+      strings={strings}
     >
       <TourCategoryPage
         location={location}

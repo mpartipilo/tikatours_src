@@ -51,10 +51,10 @@ class GalleryIndex extends React.Component {
   constructor(props) {
     super(props)
 
-    const strings = { "All images": "All images" }
+    const { strings } = props
 
     this.state = {
-      allImagesLabel: strings["All images"],
+      allImagesLabel: strings["All_images"],
       columnWidth: 145,
       currentGallery: -1,
       isOpen: false,

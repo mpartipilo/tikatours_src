@@ -8,7 +8,7 @@ import TourDetails from "../components/tour-details"
 import TourList from "../components/tour-list"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
-import { imagesSlides, getSlideshowData } from "../components/i18n-data"
+import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const GeneralPage = ({
   location,
@@ -26,11 +26,17 @@ const GeneralPage = ({
   tourListTag,
   tour,
   mainCategoryFound,
-  subCategoryFound
+  subCategoryFound,
+  strings
 }) => (
   <React.Fragment>
     <div className="push" />
-    <Slideshow fixed={false} slides={slideshowData} language={language}>
+    <Slideshow
+      fixed={false}
+      slides={slideshowData}
+      language={language}
+      strings={strings}
+    >
       <div className="main">
         <div className="container">
           <Breadcrumbs
@@ -64,6 +70,7 @@ const GeneralPage = ({
               imagesSlidesData={imagesSlides}
               tourCategoryData={tourCategoryData}
               tour={tour}
+              strings={strings}
             />
           </div>
           <div className="row">
@@ -79,6 +86,7 @@ const GeneralPage = ({
             heading={tourListHeading}
             tag={tourListTag}
             tourCategoryData={tourCategoryData}
+            strings={strings}
           />
         )}
       </div>
@@ -94,7 +102,7 @@ class TourDetailPageTemplate extends React.Component {
   render() {
     const { location, data, pathContext } = this.props
     const { language, strings } = pathContext
-    const { imagesSlides } = imagesSlides[language]
+    const { imagesSlides } = allImagesSlides[language]
     const { sitemetadata } = data
 
     const imgGroup = data.tour.frontmatter.imggrp_id
@@ -163,7 +171,8 @@ class TourDetailPageTemplate extends React.Component {
       data: frontmatter,
       page: data.tour,
       mainCategoryFound,
-      subCategoryFound
+      subCategoryFound,
+      strings
     }
 
     var tourListProps = {}
@@ -197,6 +206,7 @@ class TourDetailPageTemplate extends React.Component {
         contact={sitemetadata.contact}
         data={data}
         sitemetadata={sitemetadata}
+        strings={strings}
       >
         <GeneralPage {...props} {...tourListProps} />
       </Layout>

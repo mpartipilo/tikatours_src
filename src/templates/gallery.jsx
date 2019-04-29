@@ -7,7 +7,7 @@ import md5 from "md5"
 import { Layout } from "../components/layout"
 import GalleryIndex from "../components/gallery-index"
 
-import { imagesSlides, imagesGroups } from "../components/i18n-data"
+import { allImagesSlides, allImagesGroups } from "../components/i18n-data"
 
 const GalleryPage = ({
   location,
@@ -17,7 +17,8 @@ const GalleryPage = ({
   currentLanguage,
   languages,
   galleryGroups,
-  galleryIndexPhotos
+  galleryIndexPhotos,
+  strings
 }) => (
   <React.Fragment>
     <div className="push" />
@@ -42,6 +43,7 @@ const GalleryPage = ({
         groups={galleryGroups}
         photos={galleryIndexPhotos}
         currentLanguage={currentLanguage}
+        strings={strings}
       />
     </div>
   </React.Fragment>
@@ -52,8 +54,8 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
   const defaultLanguage = "en"
   const currentLanguage =
     data.markdownRemark.frontmatter.language || defaultLanguage
-  const { imagesGroups } = imagesGroups[currentLanguage]
-  const { imagesSlides } = imagesSlides[currentLanguage]
+  const { imagesGroups } = allImagesGroups[currentLanguage]
+  const { imagesSlides } = allImagesSlides[currentLanguage]
 
   const galleryGroups = imagesGroups
     .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
@@ -83,6 +85,7 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
       contact={sitemetadata.contact}
       data={data}
       sitemetadata={sitemetadata}
+      strings={pathContext.strings}
     >
       <GalleryPage
         location={location}
@@ -93,6 +96,7 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
         languages={pathContext.languages}
         galleryGroups={galleryGroups}
         galleryIndexPhotos={galleryIndexPhotos}
+        strings={pathContext.strings}
       />
     </Layout>
   )
