@@ -2,12 +2,72 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+const HomeOverlayTemplate = ({
+  heading,
+  subheading,
+  intro,
+  btn_text,
+  btn_url,
+  scrollOverlayUp
+}) => (
+  <div className="container-fluid">
+    <section className="row t-row" />
+    <section className="row m-row">
+      <div className="col-2 col-sm-2 col-md-4">
+        <div className="d-none d-lg-block pad">
+          <h1>{heading}</h1>
+          {subheading && <h2>{subheading}</h2>}
+        </div>
+      </div>
+      <div className="col-8 col-sm-8 col-md-4 text-center">
+        <div className="motif" />
+      </div>
+      <div className="col-2 col-sm-2 col-md-4">
+        <div className="d-none d-lg-block pad">
+          {intro && (
+            <p
+              dangerouslySetInnerHTML={{
+                __html: intro.replace(/(?:\r\n|\r|\n)/g, "<br />")
+              }}
+            />
+          )}
+          {btn_text && btn_url && (
+            <p>
+              <Link to={btn_url} className="btn">
+                {btn_text}
+              </Link>
+            </p>
+          )}
+        </div>
+      </div>
+      <div className="dummy">
+        <div className="l" />
+        <div className="r" />
+      </div>
+    </section>
+    <section className="row b-row">
+      <div className="col-12">
+        <div className="d-block d-lg-none text-center">
+          {heading && <h1>{heading}</h1>}
+          {subheading && <h2>{subheading}</h2>}
+        </div>
+        <div className="text-center">
+          <i
+            className="fa fa-angle-double-down"
+            onClick={() => scrollOverlayUp()}
+          />
+        </div>
+      </div>
+    </section>
+  </div>
+)
+
 class HomeOverlay extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { visible: true }
     this.opacity = 1
     this.refOverlay = null
+    this.visible = true
 
     this.handleScroll = this.handleScroll.bind(this)
     this.scrollOverlayUp = this.scrollOverlayUp.bind(this)
@@ -41,24 +101,16 @@ class HomeOverlay extends React.Component {
     const overlayHeight = this.refOverlay.clientHeight
     const visible = scrollTop <= overlayHeight
 
-    if (this.state.visible == visible) {
+    if (this.visible == visible) {
       return
     }
 
-    this.setState({
-      visible
-    })
+    this.visible = visible
+    this.props.visibleChanged(visible)
   }
 
   render() {
-    const {
-      heading,
-      subheading,
-      intro,
-      btn_text,
-      btn_url,
-      children
-    } = this.props
+    const { heading, subheading, intro, btn_text, btn_url } = this.props
     return (
       <>
         <div
@@ -66,58 +118,11 @@ class HomeOverlay extends React.Component {
           style={{ opacity: this.opacity }}
           ref={refOverlay => (this.refOverlay = refOverlay)}
         >
-          <div className="container-fluid">
-            <section className="row t-row" />
-            <section className="row m-row">
-              <div className="col-2 col-sm-2 col-md-4">
-                <div className="d-none d-lg-block pad">
-                  <h1>{heading}</h1>
-                  {subheading && <h2>{subheading}</h2>}
-                </div>
-              </div>
-              <div className="col-8 col-sm-8 col-md-4 text-center">
-                <div className="motif" />
-              </div>
-              <div className="col-2 col-sm-2 col-md-4">
-                <div className="d-none d-lg-block pad">
-                  {intro && (
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: intro.replace(/(?:\r\n|\r|\n)/g, "<br />")
-                      }}
-                    />
-                  )}
-                  {btn_text && btn_url && (
-                    <p>
-                      <Link to={btn_url} className="btn">
-                        {btn_text}
-                      </Link>
-                    </p>
-                  )}
-                </div>
-              </div>
-              <div className="dummy">
-                <div className="l" />
-                <div className="r" />
-              </div>
-            </section>
-            <section className="row b-row">
-              <div className="col-12">
-                <div className="d-block d-lg-none text-center">
-                  {heading && <h1>{heading}</h1>}
-                  {subheading && <h2>{subheading}</h2>}
-                </div>
-                <div className="text-center">
-                  <i
-                    className="fa fa-angle-double-down"
-                    onClick={() => this.scrollOverlayUp()}
-                  />
-                </div>
-              </div>
-            </section>
-          </div>
+          <HomeOverlayTemplate
+            {...this.props}
+            scrollOverlayUp={this.scrollOverlayUp}
+          />
         </div>
-        {children(this.state.visible)}
       </>
     )
   }
@@ -129,7 +134,7 @@ HomeOverlay.propTypes = {
   intro: PropTypes.string,
   btn_text: PropTypes.string,
   btn_url: PropTypes.string,
-  children: PropTypes.func.isRequired
+  visibleChanged: PropTypes.func.isRequired
 }
 
 export default HomeOverlay

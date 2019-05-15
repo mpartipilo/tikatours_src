@@ -32,7 +32,12 @@ const Footer = props => {
               <div className="row">
                 <div className="col-4">{strings["phone"]}:</div>
                 <div className="col-8">
-                  <a href={"tel:" + phone}>{phone}</a>
+                  {phone.map((p, idx) => (
+                    <a key={p} href={"tel:" + p}>
+                      {idx > 0 ? <br /> : null}
+                      {p}
+                    </a>
+                  ))}
                 </div>
               </div>
               <div className="row">

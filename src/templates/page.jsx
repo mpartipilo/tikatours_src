@@ -2,45 +2,52 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import { LayoutPage } from "../components/layout"
+import { NewLayout } from "../components/layout"
 
 import { getSlideshowData, allImagesSlides } from "../components/i18n-data"
 
-const GeneralPageTemplate = props => {
-  const { location, data, pathContext } = props
-  const { language, strings } = pathContext
+const GeneralPageTemplate = ({ location, data, pathContext }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title
+  } = pathContext
 
   if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
 
+  const { contact_data, markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { heading } = frontmatter
+
   const { imagesSlides } = allImagesSlides[language]
-  const { sitemetadata } = data
-
   const imgGroup = data.markdownRemark.frontmatter.imggrp_id
-
   const slides = getSlideshowData(imagesSlides, imgGroup)
 
-  return (
-    <LayoutPage
-      location={location.pathname}
-      siteTitle={pathContext.title || sitemetadata.title}
-      languages={pathContext.languages}
-      navigation={pathContext.navigation}
-      language={language}
-      contact={sitemetadata.contact}
-      data={data}
-      sitemetadata={sitemetadata}
-      slides={slides}
-      fixed={false}
-      strings={strings}
-    >
-      <div
-        className="content"
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-      />
-    </LayoutPage>
-  )
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: (
+      <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+    ),
+    postContent: null,
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
 }
 
 GeneralPageTemplate.propTypes = {
@@ -53,14 +60,6 @@ export default GeneralPageTemplate
 
 export const pageQuery = graphql`
   query PageById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email

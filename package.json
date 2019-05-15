@@ -30,7 +30,6 @@
     "iso-639-1": "^2.0.5",
     "md5": "^2.2.1",
     "node-sass": "^4.11.0",
-    "normalize-scss": "^7.0.1",
     "pixrem": "^5.0.0",
     "postcss-cssnext": "^3.1.0",
     "prop-types": "^15.7.2",
@@ -61,7 +60,13 @@
     "build": "gatsby build",
     "develop": "gatsby develop --host 0.0.0.0 --port 8000",
     "format": "prettier --write 'src/**/*.js' 'src/**/*.jsx'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .cache ./public/*",
+    "buildp": "npm run clean && npm run build",
+    "predeploy": "bash -c 'pushd ./public' && git add . && git commit -m 'deploying website' && git bash -c 'popd'",
+    "deploy": "bash -c 'pushd public' && git push && bash -c 'popd'",
+    "serve": "npx serve ./public",
+    "fulldeploy": "npm run buildp && npm run predeploy && npm run deploy"
   },
   "devDependencies": {
     "ajv": "^6.10.0",

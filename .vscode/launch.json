@@ -7,6 +7,29 @@
     {
       "type": "node",
       "request": "launch",
+      "protocol": "inspector",
+      "name": "Launch via NPM",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "develop", "--nolazy"],
+      "stopOnEntry": false,
+      "sourceMaps": false,
+      "port": 9229
+    },
+    {
+      "name": "Gatsby develop",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
+      "cwd": "${workspaceRoot}",
+      "args": ["develop"],
+      "stopOnEntry": false,
+      "runtimeArgs": ["--nolazy"],
+      "sourceMaps": false
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Extract Content",
       "program": "${workspaceFolder}/extract_content.mjs",
       "runtimeArgs": ["--experimental-modules"]

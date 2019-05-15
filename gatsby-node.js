@@ -34,6 +34,14 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(`
         {
+          sitemetadata: metadataJson {
+            title
+            contact {
+              email
+              telephone
+            }
+          }
+
           allNavigation: allNavigationJson {
             edges {
               node {
@@ -163,8 +171,6 @@ exports.createPages = ({ graphql, actions }) => {
                 tour_gallery
                 _Gallery
                 Thank_you
-                Reasons_to_Visit_Georgia
-                View_Georgia_Tours
                 watch_video
                 loading_video
                 All_images
@@ -184,11 +190,11 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const { allNavigation } = result.data
+        const { sitemetadata, allStrings, allNavigation } = result.data
+
         const navNodes = allNavigation.edges.map(e => e.node)
         const navigationTree = makeNavigationTree(navNodes, "/")
 
-        const { allStrings } = result.data
         const allStringsNodes = allStrings.nodes
 
         const globalNavigation = {}
@@ -246,6 +252,7 @@ exports.createPages = ({ graphql, actions }) => {
             url: page.node.frontmatter.url,
             language: page.node.frontmatter.language,
             languages,
+            sitemetadata,
             navigation: globalNavigation[page.node.frontmatter.language],
             strings: globalStrings[page.node.frontmatter.language]
           }

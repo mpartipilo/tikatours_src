@@ -1,7 +1,7 @@
 [
   {
     "lang": "en",
-    "phone": "+995 570 70 72 14",
+    "phone": ["+995 570 70 72 14", "+995 551 402223"],
     "email": "info@tikatours.com",
     "address": "11, Grishashvili str.\r\n0105\r\nTbilisi, Georgia",
     "copyright": "&copy; Copyright 2013 Tika Tours",
@@ -19,7 +19,7 @@
   },
   {
     "lang": "zh",
-    "phone": "+995 570 70 72 14",
+    "phone": ["+995 570 70 72 14", "+995 551 402223"],
     "email": "info@tikatours.com",
     "address": "格鲁吉亚， 第比利斯，\r\nGrishashvili街 #11，0105",
     "copyright": "&copy; Copyright 2013 Tika Tours",

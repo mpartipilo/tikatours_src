@@ -3,14 +3,14 @@ import PropTypes from "prop-types"
 import path from "path"
 import { graphql } from "gatsby"
 
-import { LayoutPage } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import SubNav from "../components/sub-nav"
 import Gallery from "../components/gallery"
 
 import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const RegionPage = ({
-  page,
+  html,
   subnav,
   regionGalleryPhotos,
   regionGalleryHeading
@@ -18,7 +18,7 @@ const RegionPage = ({
   <React.Fragment>
     {subnav && <SubNav {...subnav} />}
     <div className="content">
-      <span dangerouslySetInnerHTML={{ __html: page.html }} />
+      <span dangerouslySetInnerHTML={{ __html: html }} />
       <div className="row">
         {regionGalleryPhotos && (
           <Gallery
@@ -31,86 +31,84 @@ const RegionPage = ({
   </React.Fragment>
 )
 
-class RegionPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
+const RegionPageTemplate = ({ location, data, pathContext }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title
+  } = pathContext
+
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
   }
 
-  render() {
-    const { location, data, pathContext } = this.props
+  const { contact_data, markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { heading, gallery_id, name } = frontmatter
 
-    const { language, strings } = pathContext
-    const { imagesSlides } = allImagesSlides[language]
-    const { sitemetadata } = data
+  const { imagesSlides } = allImagesSlides[language]
+  var imgGroup = data.markdownRemark.frontmatter.imggrp_id
+  const slides = getSlideshowData(imagesSlides, imgGroup)
 
-    var imgGroup = data.markdownRemark.frontmatter.imggrp_id
-
-    const slides = getSlideshowData(imagesSlides, imgGroup)
-
-    const regionData = data.regions.edges.map(e => e.node.frontmatter)
-    var subNav = {
-      list: regionData
-        .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
-        .sort((a, b) => a.rank - b.rank)
-        .map(r => {
-          const full_url = `/${language}/${r.url}`
-          return {
-            id: r.name,
-            active: location.pathname.replace(/\/?$/i, "") === full_url,
-            full_url,
-            label: r.name,
-            title: r.name,
-            ...r
-          }
-        })
-    }
-
-    const subnavData = data.markdownRemark.frontmatter
-
-    var regionGallery = subnavData.gallery_id
-    const thumbPath = `/thumbs/galleries/g${regionGallery}/`
-    var regionGalleryHeading = subnavData.name + strings["_Gallery"]
-    var regionGalleryPhotos = imagesSlides
-      .filter(i => i.imggrp_id == regionGallery)
-      .map(i => ({
-        ...i,
-        srcThumb: thumbPath + path.basename(i.imgslide_path)
-      }))
-      .sort((l, r) => {
-        return l.imgslide_rank - r.imgslide_rank
+  const regionData = data.regions.edges.map(e => e.node.frontmatter)
+  var subnav = {
+    list: regionData
+      .filter(t => t.country_id == data.markdownRemark.frontmatter.country_id)
+      .sort((a, b) => a.rank - b.rank)
+      .map(r => {
+        const full_url = `/${language}/${r.url}`
+        return {
+          id: r.name,
+          active: location.pathname.replace(/\/?$/i, "") === full_url,
+          full_url,
+          label: r.name,
+          title: r.name,
+          ...r
+        }
       })
-
-    return (
-      <LayoutPage
-        location={location.pathname}
-        siteTitle={pathContext.title || sitemetadata.title}
-        languages={pathContext.languages}
-        navigation={pathContext.navigation}
-        language={language}
-        contact={sitemetadata.contact}
-        data={data}
-        sitemetadata={sitemetadata}
-        slides={slides}
-        fixed={false}
-        strings={strings}
-      >
-        <RegionPage
-          location={location}
-          page={data.markdownRemark}
-          data={data.markdownRemark.frontmatter}
-          sitemetadata={sitemetadata}
-          language={language}
-          languages={pathContext.languages}
-          slideshowData={slides}
-          subnav={subNav}
-          subnavData={subnavData}
-          regionGalleryPhotos={regionGalleryPhotos}
-          regionGalleryHeading={regionGalleryHeading}
-          strings={strings}
-        />
-      </LayoutPage>
-    )
   }
+
+  var regionGallery = gallery_id
+  const thumbPath = `/thumbs/galleries/g${regionGallery}/`
+  var regionGalleryHeading = name + strings["_Gallery"]
+  var regionGalleryPhotos = imagesSlides
+    .filter(i => i.imggrp_id == regionGallery)
+    .map(i => ({
+      ...i,
+      srcThumb: thumbPath + path.basename(i.imgslide_path)
+    }))
+    .sort((l, r) => {
+      return l.imgslide_rank - r.imgslide_rank
+    })
+
+  const regionPageProps = {
+    html,
+    subnav,
+    regionGalleryPhotos,
+    regionGalleryHeading
+  }
+
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: <RegionPage {...regionPageProps} />,
+    postContent: null,
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
 }
 
 RegionPageTemplate.propTypes = {
@@ -123,14 +121,6 @@ export default RegionPageTemplate
 
 export const pageQuery = graphql`
   query RegionPageById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email

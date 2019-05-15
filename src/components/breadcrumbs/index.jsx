@@ -1,39 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const BreadcrumbsTemplate = ({ rootUrl, trail }) => (
-  <div className="row hidden-xs">
-    <div className="col-12">
-      <ul className="breadcrumbs text-center">
-        <li>
-          <Link to={rootUrl} title="home" />
-        </li>
-        {trail.map((t, idx) => (
-          <li key={t.path}>
-            <i className="fa fa-angle-right" />
-            <Link
-              to={t.path}
-              className={idx + 1 == trail.length ? "active" : null}
-              title={t.page_title}
-            >
-              {t.page_title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+const BreadcrumbsTemplate = ({ trail }) => (
+  <ul className="breadcrumbs text-center">
+    {trail.map((t, idx) => (
+      <li key={t.path}>
+        {idx > 0 && <i className="fa fa-angle-right" />}
+        <Link
+          to={t.path}
+          className={idx + 1 == trail.length ? "active" : null}
+          title={t.page_title}
+        >
+          {idx > 0 && t.page_title}
+        </Link>
+      </li>
+    ))}
+  </ul>
 )
 
-const Breadcrumbs = ({ language, trail }) => {
-  return (
-    <BreadcrumbsTemplate
-      rootUrl={"/" + language}
-      trail={trail.filter(
-        t => t != null && t.path.replace(/\/$/i, "") != "/" + language
-      )}
-    />
-  )
-}
+const Breadcrumbs = ({ trail }) =>
+  trail ? (
+    <div className="row hidden-xs">
+      <div className="col-12">
+        <BreadcrumbsTemplate trail={trail} />
+      </div>
+    </div>
+  ) : null
 
 export { Breadcrumbs }

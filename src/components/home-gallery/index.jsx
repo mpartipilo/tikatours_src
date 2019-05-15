@@ -1,8 +1,50 @@
+/* eslint-disable react/display-name */
 import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
-import { Navigation } from 'swiper/dist/js/swiper.esm'
+import { Navigation } from "swiper/dist/js/swiper.esm"
+
+const ButtonCommon = ({ isNext, show }) => (
+  <div className={isNext ? "next" : "prev"}>
+    <i
+      className={`fa fa-angle-${isNext ? "right" : "left"}`}
+      style={{
+        display: show ? "block" : "none"
+      }}
+    />
+  </div>
+)
+
+const HomeGallerySlider = ({ activeSlideKey, children }) => {
+  const params = {
+    modules: [Navigation],
+    loop: false,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev"
+    },
+    renderPrevButton: () => <ButtonCommon show={true} />,
+    renderNextButton: () => <ButtonCommon show={true} isNext />
+  }
+
+  return (
+    <Swiper {...params} activeSlideKey={activeSlideKey}>
+      {children}
+    </Swiper>
+  )
+}
+
+const HomeGallerySlide = ({ imgslide_id, imgslide_path }) => (
+  <img
+    src={imgslide_path}
+    style={{
+      display: "block",
+      objectFit: "contain",
+      maxHeight: "90vh"
+    }}
+  />
+)
 
 class HomeGallery extends React.Component {
   constructor(props) {
@@ -22,25 +64,7 @@ class HomeGallery extends React.Component {
     this.state = {
       pictures: images,
       isOpen: false,
-      activeSlideKey: 0,
-      swiperParams: {
-        modules: [Navigation],
-        loop: false,
-        navigation: {
-          nextEl: ".next",
-          prevEl: ".prev"
-        },
-        renderPrevButton: () => (
-          <div className="prev">
-            <i className="fa fa-angle-left" />
-          </div>
-        ),
-        renderNextButton: () => (
-          <div className="next">
-            <i className="fa fa-angle-right" />
-          </div>
-        )
-      }
+      activeSlideKey: 0
     }
   }
 
@@ -90,26 +114,16 @@ class HomeGallery extends React.Component {
               />
             </div>
             <div style={{ bottom: 0 }}>
-              <Swiper
-                {...this.state.swiperParams}
-                activeSlideKey={this.state.activeSlideKey}
-              >
-                {this.state.pictures.map(({ imgslide_id, imgslide_path }) => (
+              <HomeGallerySlider activeSlideKey={this.state.activeSlideKey}>
+                {this.state.pictures.map(p => (
                   <div
-                    key={imgslide_id}
+                    key={p.imgslide_id}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-                    <img
-                      src={imgslide_path}
-                      style={{
-                        display: "block",
-                        objectFit: "contain",
-                        maxHeight: "90vh"
-                      }}
-                    />
+                    <HomeGallerySlide {...p} />
                   </div>
-                )) || []}
-              </Swiper>
+                ))}
+              </HomeGallerySlider>
             </div>
           </div>
         )}

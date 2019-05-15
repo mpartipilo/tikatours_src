@@ -1,56 +1,113 @@
-import React from "react"
+import React, { useState, useCallback, useRef, useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Swiper from "react-id-swiper"
-import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/dist/js/swiper.esm'
+import {
+  Navigation,
+  Autoplay,
+  Pagination,
+  EffectFade
+} from "swiper/dist/js/swiper.esm"
 
 // TODO Transition opacity when mounting .ss-cap, .next and .prev
+
+const SliderCaption = ({
+  heading,
+  caption,
+  button,
+  buttonUrl,
+  youtubeId,
+  labelWatchVideo,
+  onWatchVideoRequested
+}) => (
+  <>
+    <span style={{ textShadow: "#330000 1px 1px 3px, 0px 0.2em 0.4em black" }}>
+      {heading}
+    </span>
+    <span style={{ textShadow: "#330000 1px 1px 2px" }} className="caption">
+      {caption}
+    </span>
+    {button && (
+      <div>
+        <Link className="btn" to={buttonUrl}>
+          {button}
+        </Link>
+      </div>
+    )}
+    {youtubeId && (
+      <div>
+        <a
+          href="#"
+          className="btn video-link"
+          onClick={() => onWatchVideoRequested(youtubeId)}
+        >
+          <i className="fa fa-youtube-play" />
+          {labelWatchVideo}
+        </a>
+      </div>
+    )}
+  </>
+)
+
+const ButtonCommon = ({ isNext, show }) => (
+  <div className={isNext ? "next" : "prev"}>
+    <i
+      className={`fa fa-angle-${isNext ? "right" : "left"}`}
+      style={{
+        display: show ? "block" : "none"
+      }}
+    />
+  </div>
+)
+
+const SlideTemplate = ({ src }) => <img src={src} className="slideshow" />
+
+const Slider = ({ children, showButtons, onSlideChange }) => {
+  const [swiper, updateSwiper] = useState(null)
+  const swiperRef = useRef(swiper)
+
+  useEffect(() => {
+    swiperRef.current = swiper
+  })
+
+  const onSwiperSlideChange = () => {
+    if (swiperRef.current && onSlideChange) {
+      onSlideChange(swiperRef.current.realIndex)
+    }
+  }
+
+  const params = {
+    modules: [Navigation, Autoplay, Pagination, EffectFade],
+    effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev"
+    },
+    renderPrevButton: () => <ButtonCommon show={showButtons} />,
+    renderNextButton: () => <ButtonCommon show={showButtons} isNext />,
+    getSwiper: updateSwiper,
+    on: {
+      slideChange: useCallback(onSwiperSlideChange)
+    }
+  }
+
+  return <Swiper {...params}>{children}</Swiper>
+}
 
 class Slideshow extends React.Component {
   constructor(props) {
     super(props)
 
-    const params = {
-      modules: [Navigation, Autoplay, Pagination, EffectFade],
-      effect: "fade",
-      loop: true,
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".next",
-        prevEl: ".prev"
-      },
-      renderPrevButton: () => (
-        <div className="prev">
-          <i
-            className="fa fa-angle-left"
-            style={{
-              display:
-                this.state.showCap || !this.props.fixed ? "block" : "none"
-            }}
-          />
-        </div>
-      ),
-      renderNextButton: () => (
-        <div className="next">
-          <i
-            className="fa fa-angle-right"
-            style={{
-              display:
-                this.state.showCap || !this.props.fixed ? "block" : "none"
-            }}
-          />
-        </div>
-      )
-    }
-
-    this.createSlideFromRaw = this.createSlideFromRaw.bind(this)
+    this.watchVideo = this.watchVideo.bind(this)
 
     const { slides, strings } = props
 
@@ -58,10 +115,10 @@ class Slideshow extends React.Component {
       labelWatchVideo: strings["watch_video"],
       labelLoadingVideo: strings["loading_video"],
       slides,
-      params,
       showVideo: false,
       videoId: "",
-      showCap: !props.fixed
+      showCap: !props.fixed,
+      currentSlide: 0
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -100,15 +157,13 @@ class Slideshow extends React.Component {
     const height = document.body.clientHeight
     const wWidth = document.body.clientWidth
 
-    var triggerPoint = height / 2
+    var capHeight = 0
 
-    if (wWidth >= 768) {
-      var capHeight = 0
-      if (this.capRef) {
-        capHeight = this.capRef.clientHeight
-      }
-      triggerPoint = height / 2 + capHeight * 1.5
+    if (wWidth >= 768 && this.capRef) {
+      capHeight = this.capRef.clientHeight
     }
+
+    var triggerPoint = height / 2 + capHeight * 1.2
 
     const showCap = scrollTop > triggerPoint
 
@@ -129,66 +184,59 @@ class Slideshow extends React.Component {
   }
 
   createSlideFromRaw(m) {
-    var src = m.imgslide_path
-    var cap = m.imgslide_caption
-    var cap_heading = m.caption_heading
-    //var alt = m.imgslide_alt
-    if (m.youtube_id !== "") {
-      var youtube_id = m.youtube_id
-    } else {
-      var button = m.button_label
-      var button_url = m.button_url
+    var result = {
+      src: m.imgslide_path,
+      caption: m.imgslide_caption,
+      heading: m.caption_heading
     }
-
-    return (
-      <div key={src}>
-        <img src={src} className="slideshow" />
-        <div
-          className="ss-cap"
-          style={{ visibility: this.state.showCap ? "visible" : "hidden" }}
-          ref={ref => {
-            this.capRef = ref
-          }}
-        >
-          <span>{cap_heading}</span>
-          <span className="caption">{cap}</span>
-          {button && (
-            <div>
-              <Link className="btn" to={button_url}>
-                {button}
-              </Link>
-            </div>
-          )}
-          {youtube_id && (
-            <div>
-              <a
-                href="#"
-                className="btn video-link"
-                onClick={() => this.watchVideo(youtube_id)}
-              >
-                <i className="fa fa-youtube-play" />
-                {this.state.labelWatchVideo}
-              </a>
-            </div>
-          )}
-        </div>
-      </div>
-    )
+    //var alt = m.imgslide_alt
+    return m.youtube_id !== ""
+      ? {
+          ...result,
+          youtubeId: m.youtube_id
+        }
+      : {
+          ...result,
+          button: m.button_label,
+          buttonUrl: m.button_url
+        }
   }
 
   render() {
-    const { slides } = this.state
-    const params = slides.length > 1 ? this.state.params : {}
+    const { slides, currentSlide, showCap, labelWatchVideo } = this.state
+    const showCaption = showCap || !this.props.fixed
     return (
       <>
         {slides && slides.length > 0 && (
           <div className={this.ssInitialClassName} ref={r => (this.ssRef = r)}>
-            <Swiper {...params}>
-              {slides.map(this.createSlideFromRaw) || []}
-            </Swiper>
+            <div
+              className="ss-cap"
+              style={{
+                visibility: showCaption ? "visible" : "hidden",
+                zIndex: 2
+              }}
+              ref={ref => {
+                this.capRef = ref
+              }}
+            >
+              <SliderCaption
+                {...slides[currentSlide]}
+                labelWatchVideo={labelWatchVideo}
+                onWatchVideoRequested={this.watchVideo}
+              />
+            </div>
+            <Slider
+              showButtons={showCaption}
+              onSlideChange={s => this.setState({ currentSlide: s })}
+            >
+              {slides.map(s => (
+                <div key={s.src}>
+                  <SlideTemplate src={s.src} />
+                </div>
+              )) || []}
+            </Slider>
           </div>
         )}
-        {this.props.children}
         {this.state.showVideo && (
           <div className="video-wrap" style={{ display: "block" }}>
             <span>{this.state.labelLoadingVideo}...</span>
@@ -221,8 +269,7 @@ Slideshow.defaultProps = {
 Slideshow.propTypes = {
   strings: PropTypes.object.isRequired,
   fixed: PropTypes.bool,
-  slides: PropTypes.array.isRequired,
-  children: PropTypes.any.isRequired
+  slides: PropTypes.array.isRequired
 }
 
 export default Slideshow

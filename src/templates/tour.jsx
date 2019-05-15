@@ -2,216 +2,167 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import { Layout } from "../components/layout"
-import Slideshow from "../components/slideshow"
+import { NewLayout } from "../components/layout"
 import TourDetails from "../components/tour-details"
 import TourList from "../components/tour-list"
-import { Breadcrumbs } from "../components/breadcrumbs"
 
 import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
-const GeneralPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  languages,
-  language,
-  slideshowData,
-  imagesSlides,
-  tourCategoryData,
-  tourData,
-  tourList,
-  tourListHeading,
-  tourListTag,
-  tour,
-  mainCategoryFound,
-  subCategoryFound,
-  strings
-}) => (
-  <React.Fragment>
-    <div className="push" />
-    <Slideshow
-      fixed={false}
-      slides={slideshowData}
-      language={language}
-      strings={strings}
-    >
-      <div className="main">
-        <div className="container">
-          <Breadcrumbs
-            language={language}
-            trail={[
-              {
-                page_title: mainCategoryFound.label,
-                path: language + "/" + mainCategoryFound.url
-              },
-              subCategoryFound
-                ? {
-                    page_title: subCategoryFound.label,
-                    path: language + "/" + subCategoryFound.url
-                  }
-                : null,
-              {
-                page_title: tour.name,
-                path: language + "/" + tour.url
-              }
-            ]}
-          />
-          <div className="row">
-            <div className="col-12 text-center has-bc">
-              <h1>{data.heading}</h1>
-            </div>
-          </div>
-          <div className="content">
-            <TourDetails
-              language={language}
-              url={location.pathname}
-              imagesSlidesData={imagesSlides}
-              tourCategoryData={tourCategoryData}
-              tour={tour}
-              strings={strings}
-            />
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="divider" />
-            </div>
-          </div>
-        </div>
-        {tourList && (
-          <TourList
-            language={language}
-            list={tourList}
-            heading={tourListHeading}
-            tag={tourListTag}
-            tourCategoryData={tourCategoryData}
-            strings={strings}
-          />
-        )}
-      </div>
-    </Slideshow>
-  </React.Fragment>
-)
+const TourDetailPageTemplate = ({ location, data, pathContext }) => {
+  const { tour, contact_data } = data
+  const { frontmatter, html: tourOverview } = tour
+  const {
+    tour_id,
+    name,
+    language,
+    heading,
+    imggrp_id: imgGroup,
+    gallery_id,
+    main_category_id,
+    sub_category_id,
+    duration,
+    inclusions,
+    itinerary,
+    price_from,
+    is_featured
+  } = frontmatter
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const { tourMainCategories, tourSubCategories } = data
 
-class TourDetailPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
+  if (!navigation) {
+    return <pre>No navigation</pre>
   }
 
-  render() {
-    const { location, data, pathContext } = this.props
-    const { language, strings } = pathContext
-    const { imagesSlides } = allImagesSlides[language]
-    const { sitemetadata } = data
+  const { imagesSlides } = allImagesSlides[language]
+  const slides = getSlideshowData(imagesSlides, imgGroup)
 
-    const imgGroup = data.tour.frontmatter.imggrp_id
+  var tourData = data.tours.edges.map(({ node }) => node.frontmatter)
 
-    const slides = getSlideshowData(imagesSlides, imgGroup)
+  const tourDetails = {
+    id: tour_id,
+    name: name,
+    long_descr: tourOverview,
+    sub_category_id: sub_category_id,
+    main_category_id: main_category_id,
+    is_featured: is_featured || false,
+    slideshow_id: imgGroup,
+    gallery_id: gallery_id,
+    duration: duration,
+    inclusions: inclusions ? inclusions.childMarkdownRemark.html : "",
+    itinerary: itinerary ? itinerary.childMarkdownRemark.html : "",
+    price_from: price_from
+  }
 
-    const tourMainCategoryData = data.tourMainCategories.edges.map(
-      e => e.node.frontmatter
+  const tourMainCategoryData = tourMainCategories.edges.map(
+    ({ node }) => node.frontmatter
+  )
+
+  const tourCategoryData = tourSubCategories.edges.map(
+    ({ node }) => node.frontmatter
+  )
+
+  let mainCategoryFound = {}
+  let subCategoryFound = null
+
+  if (main_category_id) {
+    mainCategoryFound = tourMainCategoryData.find(
+      c => c.main_category_id == main_category_id
     )
+  }
 
-    const tourCategoryData = data.tourSubCategories.edges.map(
-      e => e.node.frontmatter
+  if (sub_category_id) {
+    subCategoryFound = tourCategoryData.find(
+      c => c.sub_category_id == sub_category_id
     )
+  }
 
-    var tourData = data.tours.edges.map(t => t.node.frontmatter)
-    var tourOverview = data.tour
+  var tourListProps = {}
 
-    const { frontmatter } = data.tour
+  if (sub_category_id) {
+    const list = tourData
+      .filter(t => t.sub_category_id == sub_category_id && t.tour_id != tour.id)
+      .map(t => ({ ...t, url: `/${language}/${t.url}` }))
+    const heading = subCategoryFound
+      ? strings.otherTours + subCategoryFound.label
+      : ""
+    const tag = subCategoryFound ? subCategoryFound.label : ""
 
-    const tour = {
-      id: frontmatter.tour_id,
-      name: frontmatter.name,
-      long_descr: tourOverview.html,
-      sub_category_id: frontmatter.sub_category_id,
-      main_category_id: frontmatter.main_category_id,
-      is_featured: frontmatter.is_featured || false,
-      slideshow_id: frontmatter.imggrp_id,
-      gallery_id: frontmatter.gallery_id,
-      duration: frontmatter.duration,
-      inclusions:
-        (frontmatter.inclusions &&
-          frontmatter.inclusions.childMarkdownRemark.html) ||
-        "",
-      itinerary:
-        (frontmatter.itinerary &&
-          frontmatter.itinerary.childMarkdownRemark.html) ||
-        "",
-      price_from: frontmatter.price_from
+    tourListProps = {
+      list,
+      heading,
+      tag
     }
-
-    let mainCategoryFound = {}
-    let subCategoryFound = {}
-
-    if (tour.main_category_id) {
-      mainCategoryFound = tourMainCategoryData.find(
-        c => c.main_category_id == tour.main_category_id
+  } else if (main_category_id) {
+    const list = tourData
+      .filter(
+        t => t.main_category_id == main_category_id && t.tour_id != tour.id
       )
+      .map(t => ({ ...t, url: `/${language}/${t.url}` }))
+    const heading = mainCategoryFound
+      ? strings.otherTours + mainCategoryFound.label
+      : ""
+    const tag = mainCategoryFound ? mainCategoryFound.label : ""
+
+    tourListProps = {
+      list,
+      heading,
+      tag
     }
+  }
 
-    if (tour.sub_category_id) {
-      subCategoryFound = tourCategoryData.find(
-        c => c.sub_category_id == tour.sub_category_id
-      )
-    }
-
-    const props = {
-      location,
-      sitemetadata,
-      languages: pathContext.languages,
-      language,
-      imagesSlides,
-      tourCategoryData,
-      tourData,
-      slideshowData: slides,
-      tour,
-      data: frontmatter,
-      page: data.tour,
-      mainCategoryFound,
-      subCategoryFound,
-      strings
-    }
-
-    var tourListProps = {}
-
-    if (tour.sub_category_id) {
-      const tourList = tourData
-        .filter(
-          t => t.sub_category_id == tour.sub_category_id && t.tour_id != tour.id
-        )
-        .sort((a, b) => a.rank - b.rank)
-        .map(t => ({ ...t, url: `/${language}/${t.url}` }))
-      const tourListHeading = subCategoryFound
-        ? strings.otherTours + subCategoryFound.label
-        : ""
-      const tourListTag = subCategoryFound ? subCategoryFound.label : ""
-
-      tourListProps = {
-        tourList,
-        tourListHeading,
-        tourListTag
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides,
+    fixed: false,
+    heading,
+    breadcrumbTrail: [
+      { path: `/${language}`, page_title: "home" },
+      {
+        page_title: mainCategoryFound.label,
+        path: `/${language}/${mainCategoryFound.url}`
+      },
+      subCategoryFound
+        ? {
+            page_title: subCategoryFound.label,
+            path: `/${language}/${subCategoryFound.url}`
+          }
+        : null,
+      {
+        page_title: frontmatter.name,
+        path: `/${language}/${frontmatter.url}`
       }
-    }
-
-    return (
-      <Layout
-        location={location.pathname}
-        siteTitle={pathContext.title || sitemetadata.title}
-        languages={pathContext.languages}
-        navigation={pathContext.navigation}
+    ].filter(t => t),
+    mainContent: (
+      <TourDetails
         language={language}
-        contact={sitemetadata.contact}
-        data={data}
-        sitemetadata={sitemetadata}
+        url={location.pathname}
+        imagesSlidesData={imagesSlides}
+        tourCategoryData={tourCategoryData}
+        tour={tourDetails}
         strings={strings}
-      >
-        <GeneralPage {...props} {...tourListProps} />
-      </Layout>
-    )
+      />
+    ),
+    postContent: (
+      <TourList
+        language={language}
+        tourCategoryData={tourCategoryData}
+        strings={strings}
+        {...tourListProps}
+      />
+    ),
+    contact_data
   }
+
+  return <NewLayout {...layoutProps} />
 }
 
 TourDetailPageTemplate.propTypes = {
@@ -224,14 +175,6 @@ export default TourDetailPageTemplate
 
 export const pageQuery = graphql`
   query TourDetailById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email
@@ -280,6 +223,7 @@ export const pageQuery = graphql`
           name: { ne: null }
         }
       }
+      sort: { fields: frontmatter___rank, order: ASC }
     ) {
       edges {
         node {
@@ -303,6 +247,7 @@ export const pageQuery = graphql`
 
     tourMainCategories: allMarkdownRemarkTourcategory(
       filter: { frontmatter: { language: { eq: $language } } }
+      sort: { fields: frontmatter___rank, order: ASC }
     ) {
       edges {
         node {
@@ -325,6 +270,7 @@ export const pageQuery = graphql`
 
     tourSubCategories: allMarkdownRemarkToursubcategory(
       filter: { frontmatter: { language: { eq: $language } } }
+      sort: { fields: frontmatter___rank, order: ASC }
     ) {
       edges {
         node {

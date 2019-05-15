@@ -2,10 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import { Layout } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import CatList from "../components/cat-list"
 import TourList from "../components/tour-list"
-import { Breadcrumbs } from "../components/breadcrumbs"
 
 const TourCategoryPage = ({
   location,
@@ -13,7 +12,7 @@ const TourCategoryPage = ({
   data,
   sitemetadata,
   languages,
-  currentLanguage,
+  language,
   catListHeading,
   catList,
   tourListHeading,
@@ -21,126 +20,139 @@ const TourCategoryPage = ({
   tourCategoryData,
   strings
 }) => (
-    <React.Fragment>
-      <div className="push" />
-      <div className="main">
-        <div className="container">
-          <Breadcrumbs
-            language={currentLanguage}
-            trail={[
-              {
-                page_title: data.label,
-                path: (currentLanguage + "/" + data.url)
-              }
-            ]}
-          />
-          <div className="row">
-            <div className="col-12 text-center has-bc">
-              <h1>{data.heading}</h1>
-            </div>
+  <React.Fragment>
+    <div className="push" />
+    <div className="main">
+      <div className="container">
+        <Breadcrumbs
+          language={language}
+          trail={[
+            { path: `/${language}`, page_title: "home" },
+            {
+              page_title: data.label,
+              path: language + "/" + data.url
+            }
+          ]}
+        />
+        <div className="row">
+          <div className="col-12 text-center has-bc">
+            <h1>{data.heading}</h1>
           </div>
-          <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: page.html }}
-          />
-          <div className="row">
-            <div className="col-12">
-              <div className="divider" />
-            </div>
-          </div>
-          {catList && <CatList list={catList} heading={catListHeading} />}
         </div>
-        {tourList && (
-          <TourList
-            language={currentLanguage}
-            list={tourList}
-            heading={tourListHeading}
-            tourCategoryData={tourCategoryData}
-            strings={strings}
-          />
-        )}
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: page.html }}
+        />
+        <div className="row">
+          <div className="col-12">
+            <div className="divider" />
+          </div>
+        </div>
+        {catList && <CatList list={catList} heading={catListHeading} />}
       </div>
-    </React.Fragment>
+      {tourList && (
+        <TourList
+          language={language}
+          list={tourList}
+          heading={tourListHeading}
+          tourCategoryData={tourCategoryData}
+          strings={strings}
+        />
+      )}
+    </div>
+  </React.Fragment>
+)
+
+const TourCategoryTemplate = ({ location, data, pathContext }) => {
+  const { markdownRemark, contact_data } = data
+  const { frontmatter: mainCategoryFound } = markdownRemark
+  const {
+    language,
+    heading,
+    name,
+    imggrp_id: imgGroup,
+    imggrp_id_gallery,
+    main_category_id,
+    sub_heading
+  } = mainCategoryFound
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const { tourMainCategories, tourSubCategories, tours } = data
+
+  const tourCategoryData = tourSubCategories.edges.map(
+    ({ node }) => node.frontmatter
   )
 
-const GeneralPageTemplate = ({ location, data, pathContext }) => {
-  const { language:currentLanguage, strings } = pathContext
-  const { sitemetadata } = data
-
-  const mainCategoryFound = data.markdownRemark.frontmatter
-  const main_category_id = mainCategoryFound.main_category_id
-
-  const tourCategoryData = data.tourSubCategories.edges.map(
-    e => e.node.frontmatter
-  )
-
-  var catListHeading = mainCategoryFound.sub_heading
+  var catListHeading = sub_heading
   var catList = tourCategoryData
     .filter(t => t.main_category_id == main_category_id && t.rank >= 0)
     .sort((a, b) => a.rank - b.rank)
-    .map(c => ({ ...c, url: `/${currentLanguage}/${c.url}` }))
+    .map(c => ({ ...c, url: `/${language}/${c.url}` }))
 
-  var tourListHeading = mainCategoryFound.name
-  var tourData = data.tours.edges.map(t => t.node.frontmatter)
+  var tourListHeading = name
+  var tourData = tours.edges.map(t => t.node.frontmatter)
   var tourList = tourData
     .filter(t => t.main_category_id == main_category_id)
     .sort((a, b) => a.rank - b.rank)
-    .map(t => ({ ...t, url: `/${currentLanguage}/${t.url}` }))
+    .map(t => ({ ...t, url: `/${language}/${t.url}` }))
 
-  var tourFullCategoryData = tourCategoryData.concat(data.tourMainCategories.edges.map(e => e.node.frontmatter))
+  var tourFullCategoryData = tourCategoryData.concat(
+    tourMainCategories.edges.map(({ node }) => node.frontmatter)
+  )
 
-  const props = {
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
     sitemetadata,
-    languages: pathContext.languages,
-    currentLanguage,
-    catListHeading,
-    catList,
-    tourListHeading,
-    tourList,
-    tourCategoryData: tourFullCategoryData,
-    strings
+    navigation,
+    slides: null,
+    fixed: false,
+    heading,
+    breadcrumbTrail: [
+      { path: `/${language}`, page_title: "home" },
+      {
+        page_title: mainCategoryFound.label,
+        path: `/${language}/${mainCategoryFound.url}`
+      }
+    ],
+    mainContent: (
+      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+    ),
+    postDividerContent: catList ? (
+      <CatList list={catList} heading={catListHeading} />
+    ) : null,
+    postContent: (
+      <>
+        <TourList
+          language={language}
+          heading={tourListHeading}
+          list={tourList}
+          tourCategoryData={tourFullCategoryData}
+          strings={strings}
+        />
+      </>
+    ),
+    contact_data
   }
 
-  return (
-    <Layout
-      location={location.pathname}
-      siteTitle={pathContext.title}
-      languages={pathContext.languages}
-      navigation={pathContext.navigation}
-      language={currentLanguage}
-      contact={sitemetadata.contact}
-      data={data}
-      sitemetadata={sitemetadata}
-      strings={strings}
-    >
-      <TourCategoryPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        {...props}
-      />
-    </Layout>
-  )
+  return <NewLayout {...layoutProps} />
 }
 
-GeneralPageTemplate.propTypes = {
+TourCategoryTemplate.propTypes = {
   location: PropTypes.object,
   data: PropTypes.object,
   pathContext: PropTypes.object
 }
 
-export default GeneralPageTemplate
+export default TourCategoryTemplate
 
 export const pageQuery = graphql`
   query TourCategoryById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email

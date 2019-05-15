@@ -1,155 +1,107 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 
-import { Layout } from "../components/layout"
-import Slideshow from "../components/slideshow"
+import { NewLayout } from "../components/layout"
 import TourList from "../components/tour-list"
-import { Breadcrumbs } from "../components/breadcrumbs"
 
 import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 // Use this template for tour sub-categories
 
-const TourSubCategoryPage = ({
-  page,
-  data,
-  language,
-  slides,
-  tourCategoryData,
-  tourList,
-  tourListHeading,
-  mainCategoryFound,
-  strings
-}) => (
-  <React.Fragment>
-    <div className="push" />
-    <Slideshow fixed={false} slides={slides} language={language} strings={strings}>
-      <div className="main">
-        <div className="container">
-          <Breadcrumbs
-            language={language}
-            trail={[
-              {
-                page_title: mainCategoryFound.label,
-                path: language + "/" + mainCategoryFound.url
-              },
-              {
-                page_title: data.label,
-                path: language + "/" + data.url
-              }
-            ]}
-          />
-          <div className="row">
-            <div className="col-12 text-center has-bc">
-              <h1>{data.heading}</h1>
-            </div>
-          </div>
-          <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: page.html }}
-          />
-          <div className="row">
-            <div className="col-12">
-              <div className="divider" />
-            </div>
-          </div>
-        </div>
-        {tourList && (
-          <TourList
-            language={language}
-            list={tourList}
-            heading={tourListHeading}
-            tourCategoryData={tourCategoryData}
-            strings={strings}
-          />
-        )}
-      </div>
-    </Slideshow>
-  </React.Fragment>
-)
+const TourSubCategoryPageTemplate = ({ location, data, pathContext }) => {
+  const { markdownRemark, contact_data } = data
+  const { frontmatter } = markdownRemark
+  const {
+    language,
+    heading,
+    imggrp_id: imgGroup,
+    imggrp_id_gallery,
+    main_category_id,
+    sub_category_id
+  } = frontmatter
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const { tourMainCategories, tourSubCategories } = data
 
-class TourSubCategoryPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
+  if (!navigation) {
+    return <pre>No navigation</pre>
   }
 
-  render() {
-    const { location, data, pathContext } = this.props
-    const { language, strings }  = pathContext
-    const { imagesSlides } = allImagesSlides[language]
-    const { sitemetadata } = data
+  const { imagesSlides } = allImagesSlides[language]
+  const slides = getSlideshowData(imagesSlides, imgGroup)
 
-    const imgGroup = data.markdownRemark.frontmatter.imggrp_id
+  const tourMainCategoryData = tourMainCategories.edges.map(
+    ({ node }) => node.frontmatter
+  )
 
-    const slides = getSlideshowData(imagesSlides, imgGroup)
+  const tourCategoryData = tourSubCategories.edges.map(
+    ({ node }) => node.frontmatter
+  )
 
-    const tourMainCategoryData = data.tourMainCategories.edges.map(
-      e => e.node.frontmatter
+  const mainCategoryFound =
+    main_category_id &&
+    tourMainCategoryData.find(c => c.main_category_id == main_category_id)
+
+  const subCategoryFound =
+    sub_category_id &&
+    tourCategoryData.find(c => c.sub_category_id == sub_category_id)
+
+  var tourListHeading = subCategoryFound.name
+
+  var tourData = data.tours.edges.map(t => t.node.frontmatter)
+  var tourList = tourData
+    .filter(
+      t =>
+        t.main_category_id == main_category_id &&
+        t.sub_category_id == sub_category_id
     )
+    .sort((a, b) => a.rank - b.rank)
+    .map(t => ({ ...t, url: `/${language}/${t.url}` }))
 
-    const tourCategoryData = data.tourSubCategories.edges.map(
-      e => e.node.frontmatter
-    )
-
-    const main_category_id = data.markdownRemark.frontmatter.main_category_id
-    const sub_category_id = data.markdownRemark.frontmatter.sub_category_id
-
-    const mainCategoryFound =
-      main_category_id &&
-      tourMainCategoryData.find(c => c.main_category_id == main_category_id)
-
-    const subCategoryFound =
-      sub_category_id &&
-      tourCategoryData.find(c => c.sub_category_id == sub_category_id)
-
-    var tourListHeading = subCategoryFound.name
-
-    var tourData = data.tours.edges.map(t => t.node.frontmatter)
-    var tourList = tourData
-      .filter(
-        t =>
-          t.main_category_id == main_category_id &&
-          t.sub_category_id == sub_category_id
-      )
-      .sort((a, b) => a.rank - b.rank)
-      .map(t => ({ ...t, url: `/${language}/${t.url}` }))
-
-    const props = {
-      sitemetadata,
-      languages: pathContext.languages,
-      language,
-      slideshowData: slides,
-      tourCategoryData,
-      tourData,
-      tourListHeading,
-      tourList,
-      mainCategoryFound,
-      strings
-    }
-
-    return (
-      <Layout
-        location={location.pathname}
-        siteTitle={pathContext.title || sitemetadata.title}
-        languages={pathContext.languages}
-        navigation={pathContext.navigation}
-        language={language}
-        contact={sitemetadata.contact}
-        data={data}
-        sitemetadata={sitemetadata}
-        strings={strings}
-      >
-        <TourSubCategoryPage
-          location={location}
-          page={data.markdownRemark}
-          data={data.markdownRemark.frontmatter}
-          slides={slides}
-          {...props}
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides,
+    fixed: false,
+    heading,
+    breadcrumbTrail: [
+      { path: `/${language}`, page_title: "home" },
+      {
+        page_title: mainCategoryFound.label,
+        path: `/${language}/${mainCategoryFound.url}`
+      },
+      {
+        page_title: frontmatter.label,
+        path: `/${language}/${frontmatter.url}`
+      }
+    ],
+    mainContent: (
+      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+    ),
+    postContent: (
+      <>
+        <TourList
+          language={language}
+          heading={tourListHeading}
+          list={tourList}
+          tourCategoryData={tourCategoryData}
+          strings={strings}
         />
-      </Layout>
-    )
+      </>
+    ),
+    contact_data
   }
+
+  return <NewLayout {...layoutProps} />
 }
 
 TourSubCategoryPageTemplate.propTypes = {
@@ -162,14 +114,6 @@ export default TourSubCategoryPageTemplate
 
 export const pageQuery = graphql`
   query TourSubCategoryById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email

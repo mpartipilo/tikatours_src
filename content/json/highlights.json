@@ -1,6 +1,9 @@
 [
   {
     "lang": "en",
+    "title_count": "{} Reasons to Visit Georgia",
+    "actionLabel": "View Georgia Tours",
+    "actionUrl": "/georgia-tours",
     "highlights": [
       {
         "id": "388",
@@ -54,6 +57,9 @@
   },
   {
     "lang": "zh",
+    "title_count": "必去格鲁吉亚的{}个理由",
+    "actionLabel": "格鲁吉亚旅游",
+    "actionUrl": "/georgia-tours",
     "highlights": [
       {
         "id": "388",

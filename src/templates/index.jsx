@@ -4,130 +4,93 @@ import Helmet from "react-helmet"
 import format from "string-format"
 import { graphql } from "gatsby"
 
-import { Layout } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import HomeGallery from "../components/home-gallery"
-import HomeOverlay from "../components/home-overlay"
 import MapCanvasView from "../components/map-canvas"
 import ReasonsSlider from "../components/reasons"
-import Slideshow from "../components/slideshow"
 import SocialPanel from "../components/social-panel"
 import TourList from "../components/tour-list"
 
 import { getSlideshowData, allImagesSlides } from "../components/i18n-data"
 
-class GeneralPage extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      overlayVisible: true
-    }
-  }
-
-  render() {
-    const {
-      page,
-      data,
-      language,
-      slides,
-      imagesSlides,
-      homeOverlayData,
-      countryHighlights,
-      strings,
-      tourCategoryData,
-      tourList,
-      tourListHeading,
-      tourListTag
-    } = this.props
-
-    return (
-      <>
-        <div className="push" />
-        <HomeOverlay {...homeOverlayData}>
-          {overlayVisible => (
-            <Slideshow
-              fixed={overlayVisible}
-              slides={slides}
-              language={language}
-              strings={strings}
-            >
-              <div
-                className="main"
-                style={{ top: overlayVisible ? "100%" : "auto" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-12 text-center">
-                      <h1>{data.heading}</h1>
-                    </div>
-                  </div>
-                  <div className="content">
-                    <div dangerouslySetInnerHTML={{ __html: page.html }} />
-                  </div>
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="divider" />
-                    </div>
-                  </div>
-                </div>
-                <TourList
-                  language={language}
-                  heading={tourListHeading}
-                  list={tourList}
-                  tourCategoryData={tourCategoryData}
-                  tag={tourListTag}
-                  strings={strings}
-                />
-                <ReasonsSlider
-                  reasons={countryHighlights}
-                  title={format(
-                    strings["Reasons_to_Visit_Georgia"],
-                    countryHighlights.length
-                  )}
-                  btnUrl={"/" + language + "/georgia-tours"}
-                  btnText={strings["View_Georgia_Tours"]}
-                />
-                <MapCanvasView countryName="Georgia" strings={strings} />
-                <SocialPanel language={language} strings={strings} />
-                <HomeGallery
-                  imageSlides={imagesSlides}
-                  galleryId={data.imggrp_id_gallery}
-                />
-              </div>
-            </Slideshow>
-          )}
-        </HomeOverlay>
-      </>
-    )
-  }
-}
+const CountryHighlights = ({
+  language,
+  highlights,
+  title_count,
+  actionLabel,
+  actionUrl
+}) => (
+  <ReasonsSlider
+    reasons={highlights}
+    title={format(title_count, highlights.length)}
+    btnUrl={`/${language}${actionUrl}`}
+    btnText={actionLabel}
+  />
+)
 
 const IndexPage = ({ location, data, pathContext }) => {
-  const { language, imggrp_id: imgGroup } = data.markdownRemark.frontmatter
-
-  if (!data.markdownRemark.frontmatter.language) {
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const {
+    language,
+    heading,
+    imggrp_id: imgGroup,
+    imggrp_id_gallery
+  } = frontmatter
+  if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
-
   const { imagesSlides } = allImagesSlides[language]
-  const { strings } = pathContext
-  const { sitemetadata } = data
-  const countryHighlights = data.highlightsJson.highlights
-  const homeOverlayData = data.homeOverlayJson.data
+  const { title, languages, strings, navigation, sitemetadata } = pathContext
 
-  var tourData = data.tours.edges.map(t => t.node.frontmatter)
-  var tourList = tourData
-    .sort((a, b) => a.rank - b.rank)
-    .map(t => ({ ...t, url: `/${language}/${t.url}` }))
-
-  const slides = getSlideshowData(imagesSlides, imgGroup)
-
-  if (!pathContext.navigation) {
+  if (!navigation) {
     return <pre>No navigation</pre>
   }
 
+  const { highlightsJson, homeOverlayJson, tours, contact_data } = data
+  const homeOverlayData = homeOverlayJson.data
+
+  var tourData = tours.edges.map(t => t.node.frontmatter)
+  var tourList = tourData.map(t => ({ ...t, url: `/${language}/${t.url}` }))
+
+  const slides = getSlideshowData(imagesSlides, imgGroup)
+
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    is_home: true,
+    overlay: homeOverlayData,
+    slides,
+    fixed: true,
+    heading,
+    mainContent: (
+      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+    ),
+    postContent: (
+      <>
+        <TourList
+          language={language}
+          heading={strings["feature_tour_list_heading"]}
+          list={tourList}
+          tag={strings["featured_tour"]}
+          strings={strings}
+        />
+        <CountryHighlights {...highlightsJson} />
+        <MapCanvasView countryName="Georgia" strings={strings} />
+        <SocialPanel language={language} strings={strings} />
+        <HomeGallery imageSlides={imagesSlides} galleryId={imggrp_id_gallery} />
+      </>
+    ),
+    contact_data
+  }
+
   return (
-    <React.Fragment>
+    <>
       <Helmet
         meta={[
           {
@@ -146,44 +109,9 @@ const IndexPage = ({ location, data, pathContext }) => {
           },
           { "http-equiv": "cleartype", content: "on" }
         ]}
-        bodyAttributes={{
-          class: "home" + (slides ? "" : " no-ss")
-        }}
-      >
-        {/* -- ==ex_meta_taga== -- */}
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Helmet>
-      <Layout
-        location={location.pathname}
-        siteTitle={pathContext.title}
-        languages={pathContext.languages}
-        navigation={pathContext.navigation}
-        language={language}
-        contact={sitemetadata.contact}
-        data={data}
-        sitemetadata={sitemetadata}
-        strings={strings}
-      >
-        <GeneralPage
-          location={location}
-          page={data.markdownRemark}
-          data={data.markdownRemark.frontmatter}
-          sitemetadata={sitemetadata}
-          languages={pathContext.languages}
-          language={language}
-          tourListHeading={strings["feature_tour_list_heading"]}
-          tourListTag={strings["featured_tour"]}
-          {...{
-            slides,
-            homeOverlayData,
-            imagesSlides,
-            countryHighlights,
-            tourList,
-            strings
-          }}
-        />
-      </Layout>
-    </React.Fragment>
+      />
+      <NewLayout {...layoutProps} />
+    </>
   )
 }
 
@@ -267,6 +195,9 @@ export const pageQuery = graphql`
     }
 
     highlightsJson(lang: { eq: $language }) {
+      actionUrl
+      actionLabel
+      title_count
       highlights {
         id
         highlight
@@ -283,15 +214,8 @@ export const pageQuery = graphql`
       }
     }
 
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     tours: allMarkdownRemark(
+      sort: { fields: [frontmatter___rank], order: ASC }
       filter: {
         frontmatter: {
           template: { eq: "tour" }
