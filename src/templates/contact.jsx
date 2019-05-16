@@ -3,16 +3,31 @@ import PropTypes from "prop-types"
 import { Router } from "@reach/router"
 import { graphql } from "gatsby"
 
-import { LayoutPage } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import ContactPageForm from "../components/contact-page-form"
 
 const ContactPageFormWrapper = ({ options, strings, tour_code }) => (
   <ContactPageForm tours={options} selectedTour={tour_code} strings={strings} />
 )
 
-const ContactPage = ({ location, pathContext, data }) => {
-  const { language, isBooking, strings } = pathContext
-  const { sitemetadata } = data
+const ContactPage = ({ location, data, pathContext }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title,
+    isBooking
+  } = pathContext
+
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+
+  const { contact_data, markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { heading } = frontmatter
 
   var tag = <ContactPageForm strings={strings} />
 
@@ -39,20 +54,24 @@ const ContactPage = ({ location, pathContext, data }) => {
     )
   }
 
-  return (
-    <LayoutPage
-      location={location.pathname}
-      siteTitle={pathContext.title || sitemetadata.title}
-      languages={pathContext.languages}
-      navigation={pathContext.navigation}
-      language={language}
-      data={data}
-      sitemetadata={sitemetadata}
-      strings={strings}
-    >
-      {tag}
-    </LayoutPage>
-  )
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides: null,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: tag,
+    postContent: null,
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
 }
 
 ContactPage.propTypes = {

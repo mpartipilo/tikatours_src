@@ -1,15 +1,7 @@
 const _ = require("lodash")
 const path = require("path")
 const { languages } = require("./src/i18n/locales")
-
-function makeNavigationTree(tree, parent) {
-  var nodes = tree.filter(f => f.parentPath == parent)
-  if (nodes.length === 0) return null
-  return nodes.map(({ parentPath, ...n }) => {
-    const children = makeNavigationTree(tree, n.path)
-    return { ...n, pages: children }
-  })
-}
+const { makeNavigationTree } = require("./src/utils/navigation")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -203,7 +195,9 @@ exports.createPages = ({ graphql, actions }) => {
           globalNavigation[value] = navigationTree.find(
             t => t.path === `/${value}`
           )
-          globalStrings[value] = allStringsNodes.find(t => t.lang === `${value}`).strings
+          globalStrings[value] = allStringsNodes.find(
+            t => t.lang === `${value}`
+          ).strings
         })
 
         const pages = result.data.allPages.edges

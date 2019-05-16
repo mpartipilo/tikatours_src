@@ -103,57 +103,62 @@ class Blog extends React.Component {
           </div>
 
           <div className="col-lg-4">
-            <div className="well well-small">
-              <h3>{this.state.strings["categories"]}</h3>
-              {this.state.category_list && this.state.category_list.length > 0 && (
+            <div className="card mb-3">
+              <div className="card-body">
+                <h3>{this.state.strings["categories"]}</h3>
+                {this.state.category_list &&
+                  this.state.category_list.length > 0 && (
+                    <ul className="list-unstyled">
+                      {this.state.category_list.map(c => (
+                        <li
+                          key={c.id}
+                          className={
+                            (this.state.category &&
+                              this.state.category.id == c.id &&
+                              "active") ||
+                            ""
+                          }
+                        >
+                          <Link
+                            to={`/${this.props.language}/${c.url}`}
+                            title={c.title}
+                          >
+                            {c.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <h3>{this.state.strings["recent_posts"]}</h3>
                 <ul className="list-unstyled">
-                  {this.state.category_list.map(c => (
+                  {this.state.recent_posts.map(p => (
                     <li
-                      key={c.id}
+                      key={p.id}
                       className={
-                        (this.state.category &&
-                          this.state.category.id == c.id &&
+                        (this.state.posts &&
+                          this.props.post_id == p.id &&
                           "active") ||
                         ""
                       }
                     >
                       <Link
-                        to={`/${this.props.language}/${c.url}`}
-                        title={c.title}
+                        to={`/${this.props.language}/${p.url}`}
+                        title={p.title}
                       >
-                        {c.label}
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: truncate.apply(p.name, [45, true])
+                          }}
+                        />
                       </Link>
                     </li>
                   ))}
                 </ul>
-              )}
-            </div>
-            <div className="well well-small">
-              <h3>{this.state.strings["recent_posts"]}</h3>
-              <ul className="list-unstyled">
-                {this.state.recent_posts.map(p => (
-                  <li
-                    key={p.id}
-                    className={
-                      (this.state.posts &&
-                        this.props.post_id == p.id &&
-                        "active") ||
-                      ""
-                    }
-                  >
-                    <Link
-                      to={`/${this.props.language}/${p.url}`}
-                      title={p.title}
-                    >
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: truncate.apply(p.name, [45, true])
-                        }}
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
