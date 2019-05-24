@@ -2,39 +2,51 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import { LayoutPage } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import Blog from "../components/blog"
 
-const BlogPageTemplate = ({ pathContext, location, data }) => {
-  const defaultLanguage = "en"
-  const language = data.markdownRemark.frontmatter.language || defaultLanguage
-  const { sitemetadata, contact_data } = data
+const BlogPageTemplate = ({ location, data, pathContext }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title
+  } = pathContext
 
-  const { blog_post, blog_category, strings } = pathContext
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+
+  const { contact_data, markdownRemark } = data
+  var { frontmatter } = markdownRemark
+  const { heading } = frontmatter
+
+  const { blog_post, blog_category } = pathContext
 
   const blog_post_filtered = blog_post.filter(
     p => p.category_id == data.markdownRemark.frontmatter.id
   )
 
-  var { heading, ...frontmatter } = data.markdownRemark.frontmatter
   frontmatter = {
     heading: `${strings["category_archives"]}: ${heading}`,
     ...frontmatter
   }
 
-  return (
-    <LayoutPage
-      location={location.pathname}
-      siteTitle={pathContext.title || sitemetadata.title}
-      languages={pathContext.languages}
-      navigation={pathContext.navigation}
-      language={language}
-      contact={sitemetadata.contact}
-      data={{ markdownRemark: { frontmatter }, contact_data }}
-      sitemetadata={sitemetadata}
-      fixed={false}
-      strings={strings}
-    >
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides: null,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: (
       <div className="content">
         <Blog
           language={language}
@@ -44,8 +56,12 @@ const BlogPageTemplate = ({ pathContext, location, data }) => {
           strings={strings}
         />
       </div>
-    </LayoutPage>
-  )
+    ),
+    postContent: null,
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
 }
 
 BlogPageTemplate.propTypes = {

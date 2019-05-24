@@ -900,7 +900,7 @@ footer {
   hr {
     border-color: $gold;
   }
-  .well {
+  .card {
     background: none;
     box-shadow: none;
     border-color: $gold;
@@ -1111,7 +1111,8 @@ footer {
 }
 
 .gallery {
-  li,img {
+  li,
+  img {
     &:hover {
       cursor: pointer;
       opacity: 1;
