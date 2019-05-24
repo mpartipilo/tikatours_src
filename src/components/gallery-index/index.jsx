@@ -242,7 +242,7 @@ class GalleryIndex extends React.Component {
 }
 
 GalleryIndex.propTypes = {
-  currentLanguage: PropTypes.string.isRequired,
+  strings: PropTypes.object.isRequired,
   groups: PropTypes.array,
   photos: PropTypes.array
 }

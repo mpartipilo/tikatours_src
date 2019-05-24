@@ -4,58 +4,31 @@ import { graphql } from "gatsby"
 import path from "path"
 import md5 from "md5"
 
-import { Layout } from "../components/layout"
+import { NewLayout } from "../components/layout"
 import GalleryIndex from "../components/gallery-index"
 
 import { allImagesSlides, allImagesGroups } from "../components/i18n-data"
 
-const GalleryPage = ({
-  location,
-  page,
-  data,
-  sitemetadata,
-  currentLanguage,
-  languages,
-  galleryGroups,
-  galleryIndexPhotos,
-  strings
-}) => (
-  <React.Fragment>
-    <div className="push" />
-    <div className="main">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <h1>{data.heading}</h1>
-          </div>
-        </div>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: page.html }}
-        />
-        <div className="row">
-          <div className="col-12">
-            <div className="divider" />
-          </div>
-        </div>
-      </div>
-      <GalleryIndex
-        groups={galleryGroups}
-        photos={galleryIndexPhotos}
-        currentLanguage={currentLanguage}
-        strings={strings}
-      />
-    </div>
-  </React.Fragment>
-)
+const GalleryPageTemplate = ({ location, pathContext, data }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title
+  } = pathContext
 
-const GalleryPageTemplate = ({ location, data, pathContext }) => {
-  const { sitemetadata } = data
-  const defaultLanguage = "en"
-  const currentLanguage =
-    data.markdownRemark.frontmatter.language || defaultLanguage
-  const { imagesGroups } = allImagesGroups[currentLanguage]
-  const { imagesSlides } = allImagesSlides[currentLanguage]
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+
+  const { contact_data, markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { heading } = frontmatter
+
+  const { imagesGroups } = allImagesGroups[language]
+  const { imagesSlides } = allImagesSlides[language]
 
   const galleryGroups = imagesGroups
     .filter(f => f.is_gallery == 1 && f.add_to_gallery_index == 1)
@@ -75,31 +48,32 @@ const GalleryPageTemplate = ({ location, data, pathContext }) => {
       )}`
     }))
 
-  return (
-    <Layout
-      location={location.pathname}
-      siteTitle={pathContext.title}
-      languages={pathContext.languages}
-      navigation={pathContext.navigation}
-      language={currentLanguage}
-      contact={sitemetadata.contact}
-      data={data}
-      sitemetadata={sitemetadata}
-      strings={pathContext.strings}
-    >
-      <GalleryPage
-        location={location}
-        page={data.markdownRemark}
-        data={data.markdownRemark.frontmatter}
-        sitemetadata={sitemetadata}
-        currentLanguage={currentLanguage}
-        languages={pathContext.languages}
-        galleryGroups={galleryGroups}
-        galleryIndexPhotos={galleryIndexPhotos}
-        strings={pathContext.strings}
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides: null,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: (
+      <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+    ),
+    postContent: (
+      <GalleryIndex
+        groups={galleryGroups}
+        photos={galleryIndexPhotos}
+        strings={strings}
       />
-    </Layout>
-  )
+    ),
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
 }
 
 GalleryPageTemplate.propTypes = {
@@ -112,14 +86,6 @@ export default GalleryPageTemplate
 
 export const pageQuery = graphql`
   query GalleryPageById($id: String!, $language: String!) {
-    sitemetadata: metadataJson {
-      title
-      contact {
-        email
-        telephone
-      }
-    }
-
     contact_data: contactJson(lang: { eq: $language }) {
       phone
       email

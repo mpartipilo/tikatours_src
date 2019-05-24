@@ -2,12 +2,59 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import { LayoutPage } from "../components/layout"
+import { NewLayout, LayoutPage } from "../components/layout"
 import Blog from "../components/blog"
 
-import { contentData } from "../components/i18n-data"
+const BlogPageTemplate = ({ location, data, pathContext }) => {
+  const {
+    language,
+    strings,
+    sitemetadata,
+    navigation,
+    languages,
+    title,
+    blog_post,
+    blog_category
+  } = pathContext
 
-const BlogPageTemplate = ({ pathContext, location, data }) => {
+  if (!language) {
+    console.log(`language not set on ${location.pathname}`)
+  }
+
+  const { contact_data, markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const { heading } = frontmatter
+
+  const layoutProps = {
+    location: location.pathname,
+    strings,
+    title,
+    languages,
+    language,
+    sitemetadata,
+    navigation,
+    slides: null,
+    fixed: false,
+    heading,
+    breadcrumbTrail: null,
+    mainContent: (
+      <div className="content">
+        <Blog
+          language={language}
+          blog_post={blog_post}
+          blog_category={blog_category}
+          strings={strings}
+        />
+      </div>
+    ),
+    postContent: null,
+    contact_data
+  }
+
+  return <NewLayout {...layoutProps} />
+}
+
+const BlogPageTemplateOld = ({ pathContext, location, data }) => {
   const { sitemetadata } = data
   const defaultLanguage = "en"
   const language = data.markdownRemark.frontmatter.language || defaultLanguage
