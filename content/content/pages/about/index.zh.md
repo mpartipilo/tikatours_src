@@ -230,3 +230,42 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 </div>
 
 </div>
+
+<div class="row content-row">
+<div class="col-12 col-sm-6 col-md-6">
+
+![](/library/content/profilepic_lela_arabuli.jpg)
+
+</div>
+
+<div class="col-12 col-sm-6 col-md-6">
+
+#### 莱拉·阿拉布里
+旅行经理
+
+出生和成长在格鲁吉亚，她是我们球队的新成员。获得旅游专业的商业学位有助于她与格鲁吉亚
+的几家服务供应商进行互动以及了解旅游市场。她有很多机会与来自不同背景和不同国家的人交
+流，这有助于她培养了理解不同文化和市场消费者偏好的习惯。她欢迎新的挑战，喜欢多任务处
+理，注重结果。她对每一个项目都全力以赴 。
+
+</div>
+
+</div>
+
+<div class="row content-row">
+<div class="col-12 col-sm-6 col-md-6">
+
+![](/library/content/profilepic_Baykal_Dogan.jpg)
+
+</div>
+
+<div class="col-12 col-sm-6 col-md-6">
+
+#### Baykal Dogan 
+Dance and Music Tour Manager
+
+
+Baykal was born in Turkey and has been living in Netherlands for almost twenty years now. He is an exceptional dancer, choreographer and musician, performing for more than ten years. During his stay in Netherlands he had the pleasure of joining numerous music and dance-related projects, album studies, has performed countless concerts and went on tour with some of the major Ensembles and Orchestras in multiple countries. Currently, Baykal travels the world giving international dance workshops to amateur and professional dance groups.  He also serves as a choreographer, Art Director and Advisor and producer in some of the Amsterdam’s greatest Dance Companies.  And now, joining TikaTours with his multicultural background and vast experience he will be the ideal person to offer our customers unparalleled dancing tours.
+</div>
+
+</div>

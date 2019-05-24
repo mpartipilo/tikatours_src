@@ -319,3 +319,42 @@ advantage of all  the recreational opportunities available in Georgia.
 </div>
 
 </div>
+
+<div class="row content-row">
+<div class="col-12 col-sm-6 col-md-6">
+
+![](/library/content/profilepic_lela_arabuli.jpg)
+
+</div>
+
+<div class="col-12 col-sm-6 col-md-6">
+
+#### Lela Arabuli
+Tour Manager
+
+
+Lela, born and raised in Georgia, is a new addition to our team.
+
+Getting her business degree with the major in tourism has helped her interact with several service providers in Georgia and get the feel of the tourism market. She had several opportunities of communicating with people from different backgrounds and nationalities that has helped her develop penchant for understanding the consumer's preferences from different cultures and markets. She welcomes new challenges, loves multitasking and is result-oriented. She dedicates her full attention to every project.
+
+</div>
+
+</div>
+
+<div class="row content-row">
+<div class="col-12 col-sm-6 col-md-6">
+
+![](/library/content/profilepic_Baykal_Dogan.jpg)
+
+</div>
+
+<div class="col-12 col-sm-6 col-md-6">
+
+#### Baykal Dogan 
+Dance and Music Tour Manager
+
+
+Baykal was born in Turkey and has been living in Netherlands for almost twenty years now. He is an exceptional dancer, choreographer and musician, performing for more than ten years. During his stay in Netherlands he had the pleasure of joining numerous music and dance-related projects, album studies, has performed countless concerts and went on tour with some of the major Ensembles and Orchestras in multiple countries. Currently, Baykal travels the world giving international dance workshops to amateur and professional dance groups.  He also serves as a choreographer, Art Director and Advisor and producer in some of the Amsterdam’s greatest Dance Companies.  And now, joining TikaTours with his multicultural background and vast experience he will be the ideal person to offer our customers unparalleled dancing tours.
+</div>
+
+</div>
