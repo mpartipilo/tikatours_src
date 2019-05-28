@@ -261,11 +261,15 @@ _我们能够对自己选择的工作充满激情。我们团队的高技能的�
 
 <div class="col-12 col-sm-6 col-md-6">
 
-#### Baykal Dogan 
-Dance and Music Tour Manager
+#### 巴伊卡尔•多甘
+舞蹈和音乐旅游经理
 
-
-Baykal was born in Turkey and has been living in Netherlands for almost twenty years now. He is an exceptional dancer, choreographer and musician, performing for more than ten years. During his stay in Netherlands he had the pleasure of joining numerous music and dance-related projects, album studies, has performed countless concerts and went on tour with some of the major Ensembles and Orchestras in multiple countries. Currently, Baykal travels the world giving international dance workshops to amateur and professional dance groups.  He also serves as a choreographer, Art Director and Advisor and producer in some of the Amsterdam’s greatest Dance Companies.  And now, joining TikaTours with his multicultural background and vast experience he will be the ideal person to offer our customers unparalleled dancing tours.
+巴伊卡尔在土耳其出生。他住在荷兰差不多二十年了。他是一位杰出的舞蹈家、编舞家和音乐家。他
+大概有超过二十年的表演经验。在荷兰停留期间，他有幸参与了许多与音乐和舞蹈相关的项目、专
+辑研究，举办过无数场音乐会，并与多个国家的一些主要乐团和管弦乐队一起巡演. 目前，巴伊卡
+尔在世界各地为业余和专业舞蹈团体举办国际舞蹈工作坊。他还在阿姆斯特丹一些最伟大的舞蹈公
+司担任编舞、艺术指导、顾问和制片人。 那么现在，以他多元文化的背景和丰富的经验加入蒂卡
+图尔，他将是为我们的客户提供无与伦比的舞蹈之旅的理想人选。
 </div>
 
 </div>
