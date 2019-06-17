@@ -132,7 +132,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
           allTours: allMarkdownRemark(
             filter: {
-              frontmatter: { template: { eq: "tour" }, url: { ne: null } }
+              frontmatter: {
+                template: { eq: "tour" }
+                url: { ne: null }
+                language: { eq: $language }
+              }
             }
           ) {
             edges {
