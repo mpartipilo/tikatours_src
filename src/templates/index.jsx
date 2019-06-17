@@ -41,13 +41,20 @@ const IndexPage = ({ location, data, pathContext }) => {
     console.log(`language not set on ${location.pathname}`)
   }
   const { imagesSlides } = allImagesSlides[language]
-  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const {
+    title,
+    languages,
+    strings,
+    navigation,
+    contact_data,
+    sitemetadata
+  } = pathContext
 
   if (!navigation) {
     return <pre>No navigation</pre>
   }
 
-  const { highlightsJson, homeOverlayJson, tours, contact_data } = data
+  const { highlightsJson, homeOverlayJson, tours } = data
   const homeOverlayData = homeOverlayJson.data
 
   var tourData = tours.edges.map(t => t.node.frontmatter)
@@ -179,18 +186,6 @@ export const pageQuery = graphql`
             rank
           }
         }
-      }
-    }
-
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
       }
     }
 

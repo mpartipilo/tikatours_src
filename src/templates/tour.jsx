@@ -9,7 +9,7 @@ import TourList from "../components/tour-list"
 import { allImagesSlides, getSlideshowData } from "../components/i18n-data"
 
 const TourDetailPageTemplate = ({ location, data, pathContext }) => {
-  const { tour, contact_data } = data
+  const { tour } = data
   const { frontmatter, html: tourOverview } = tour
   const {
     tour_id,
@@ -29,7 +29,14 @@ const TourDetailPageTemplate = ({ location, data, pathContext }) => {
   if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
-  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const {
+    title,
+    languages,
+    strings,
+    navigation,
+    contact_data,
+    sitemetadata
+  } = pathContext
   const { tourMainCategories, tourSubCategories } = data
 
   if (!navigation) {
@@ -175,18 +182,6 @@ export default TourDetailPageTemplate
 
 export const pageQuery = graphql`
   query TourDetailById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
     tour: markdownRemark(id: { eq: $id }) {
       id
       html

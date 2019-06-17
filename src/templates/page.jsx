@@ -10,6 +10,7 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
   const {
     language,
     strings,
+    contact_data,
     sitemetadata,
     navigation,
     languages,
@@ -20,7 +21,7 @@ const GeneralPageTemplate = ({ location, data, pathContext }) => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { contact_data, markdownRemark } = data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const { heading } = frontmatter
 
@@ -59,19 +60,7 @@ GeneralPageTemplate.propTypes = {
 export default GeneralPageTemplate
 
 export const pageQuery = graphql`
-  query PageById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
+  query PageById($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

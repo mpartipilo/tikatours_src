@@ -14,14 +14,15 @@ const BlogPageTemplate = ({ location, data, pathContext }) => {
     languages,
     title,
     blog_post,
-    blog_category
+    blog_category,
+    contact_data
   } = pathContext
 
   if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { contact_data, markdownRemark } = data
+  const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const { heading } = frontmatter
 
@@ -63,19 +64,7 @@ BlogPageTemplate.propTypes = {
 export default BlogPageTemplate
 
 export const pageQuery = graphql`
-  query BlogPageById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
+  query BlogPageById($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

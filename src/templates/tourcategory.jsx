@@ -64,7 +64,7 @@ const TourCategoryPage = ({
 )
 
 const TourCategoryTemplate = ({ location, data, pathContext }) => {
-  const { markdownRemark, contact_data } = data
+  const { markdownRemark } = data
   const { frontmatter: mainCategoryFound } = markdownRemark
   const {
     language,
@@ -78,7 +78,14 @@ const TourCategoryTemplate = ({ location, data, pathContext }) => {
   if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
-  const { title, languages, strings, navigation, sitemetadata } = pathContext
+  const {
+    title,
+    languages,
+    strings,
+    navigation,
+    contact_data,
+    sitemetadata
+  } = pathContext
   const { tourMainCategories, tourSubCategories, tours } = data
 
   const tourCategoryData = tourSubCategories.edges.map(
@@ -153,18 +160,6 @@ export default TourCategoryTemplate
 
 export const pageQuery = graphql`
   query TourCategoryById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
     markdownRemark(id: { eq: $id }) {
       id
       html

@@ -41,14 +41,15 @@ const ContactPage = ({ location, data, pathContext }) => {
     navigation,
     languages,
     title,
-    isBooking
+    isBooking,
+    contact_data
   } = pathContext
 
   if (!language) {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { contact_data, markdownRemark, tours } = data
+  const { markdownRemark, tours } = data
   const { frontmatter, html } = markdownRemark
   const { heading } = frontmatter
 
@@ -108,7 +109,13 @@ export const query = graphql`
     }
 
     tours: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "tour" }, name: { ne: null } } }
+      filter: {
+        frontmatter: {
+          template: { eq: "tour" }
+          name: { ne: null }
+          language: { eq: $language }
+        }
+      }
     ) {
       edges {
         node {
@@ -119,18 +126,6 @@ export const query = graphql`
             language
           }
         }
-      }
-    }
-
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
       }
     }
   }

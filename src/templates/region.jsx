@@ -36,6 +36,7 @@ const RegionPageTemplate = ({ location, data, pathContext }) => {
     language,
     strings,
     sitemetadata,
+    contact_data,
     navigation,
     languages,
     title
@@ -45,7 +46,7 @@ const RegionPageTemplate = ({ location, data, pathContext }) => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { contact_data, markdownRemark } = data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const { heading, gallery_id, name } = frontmatter
 
@@ -121,18 +122,6 @@ export default RegionPageTemplate
 
 export const pageQuery = graphql`
   query RegionPageById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
     markdownRemark(id: { eq: $id }) {
       id
       html

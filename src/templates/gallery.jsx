@@ -14,6 +14,7 @@ const GalleryPageTemplate = ({ location, pathContext, data }) => {
     language,
     strings,
     sitemetadata,
+    contact_data,
     navigation,
     languages,
     title
@@ -23,7 +24,7 @@ const GalleryPageTemplate = ({ location, pathContext, data }) => {
     console.log(`language not set on ${location.pathname}`)
   }
 
-  const { contact_data, markdownRemark } = data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const { heading } = frontmatter
 
@@ -85,19 +86,7 @@ GalleryPageTemplate.propTypes = {
 export default GalleryPageTemplate
 
 export const pageQuery = graphql`
-  query GalleryPageById($id: String!, $language: String!) {
-    contact_data: contactJson(lang: { eq: $language }) {
-      phone
-      email
-      address
-      copyright
-      credits
-      navFooter {
-        title
-        url
-      }
-    }
-
+  query GalleryPageById($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
