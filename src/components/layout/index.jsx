@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef } from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
@@ -57,7 +57,9 @@ const NewLayout = ({
   contact_data,
   breadcrumbTrail
 }) => {
-  const [overlayVisible, setOverlayVisible] = useState(fixed)
+  const mainDivRef = useRef(null)
+  const ssRef = useRef(null)
+  const fixedRef = useRef(fixed)
 
   const classes = []
   if (is_home) classes.push("home")
@@ -85,17 +87,33 @@ const NewLayout = ({
       />
       <div className="push" />
       {overlay && (
-        <HomeOverlay {...overlay} visibleChanged={s => setOverlayVisible(s)} />
+        <HomeOverlay
+          {...overlay}
+          visibleChanged={s => {
+            fixedRef.current = s
+            if (mainDivRef.current) {
+              mainDivRef.current.style = s ? "top: 100%" : "top: auto"
+            }
+            if (ssRef.current) {
+              if (s) {
+                ssRef.current.classList.add("fixed")
+              } else {
+                ssRef.current.classList.remove("fixed")
+              }
+            }
+          }}
+        />
       )}
       {slides && (
         <Slideshow
-          fixed={overlayVisible}
+          fixed={fixedRef.current}
+          ref={ssRef}
           slides={slides.map(createSlideFromRaw)}
           language={language}
           strings={strings}
         />
       )}
-      <div className="main" style={{ top: overlayVisible ? "100%" : "auto" }}>
+      <div className="main" ref={mainDivRef}>
         <div className="container">
           <Breadcrumbs trail={breadcrumbTrail} />
           <div className={`row text-center${breadcrumbTrail ? " has-bc" : ""}`}>

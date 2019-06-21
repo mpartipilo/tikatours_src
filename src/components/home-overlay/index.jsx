@@ -1,6 +1,11 @@
+/* eslint-disable react/display-name */
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+
+const HomeOverlayTemplateWithRef = React.forwardRef((props, ref) => (
+  <HomeOverlayTemplate {...props} fRef={ref} />
+))
 
 const HomeOverlayTemplate = ({
   heading,
@@ -8,65 +13,68 @@ const HomeOverlayTemplate = ({
   intro,
   btn_text,
   btn_url,
-  scrollOverlayUp
+  scrollOverlayUp,
+  opacity,
+  fRef
 }) => (
-  <div className="container-fluid">
-    <section className="row t-row" />
-    <section className="row m-row">
-      <div className="col-2 col-sm-2 col-md-4">
-        <div className="d-none d-lg-block pad">
-          <h1>{heading}</h1>
-          {subheading && <h2>{subheading}</h2>}
+  <div className="overlay" ref={fRef}>
+    <div className="container-fluid">
+      <section className="row t-row" />
+      <section className="row m-row">
+        <div className="col-2 col-sm-2 col-md-4">
+          <div className="d-none d-lg-block pad">
+            <h1>{heading}</h1>
+            {subheading && <h2>{subheading}</h2>}
+          </div>
         </div>
-      </div>
-      <div className="col-8 col-sm-8 col-md-4 text-center">
-        <div className="motif" />
-      </div>
-      <div className="col-2 col-sm-2 col-md-4">
-        <div className="d-none d-lg-block pad">
-          {intro && (
-            <p
-              dangerouslySetInnerHTML={{
-                __html: intro.replace(/(?:\r\n|\r|\n)/g, "<br />")
-              }}
+        <div className="col-8 col-sm-8 col-md-4 text-center">
+          <div className="motif" />
+        </div>
+        <div className="col-2 col-sm-2 col-md-4">
+          <div className="d-none d-lg-block pad">
+            {intro && (
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: intro.replace(/(?:\r\n|\r|\n)/g, "<br />")
+                }}
+              />
+            )}
+            {btn_text && btn_url && (
+              <p>
+                <Link to={btn_url} className="btn">
+                  {btn_text}
+                </Link>
+              </p>
+            )}
+          </div>
+        </div>
+        <div className="dummy">
+          <div className="l" />
+          <div className="r" />
+        </div>
+      </section>
+      <section className="row b-row">
+        <div className="col-12">
+          <div className="d-block d-lg-none text-center">
+            {heading && <h1>{heading}</h1>}
+            {subheading && <h2>{subheading}</h2>}
+          </div>
+          <div className="text-center">
+            <i
+              className="fa fa-angle-double-down"
+              onClick={() => scrollOverlayUp()}
             />
-          )}
-          {btn_text && btn_url && (
-            <p>
-              <Link to={btn_url} className="btn">
-                {btn_text}
-              </Link>
-            </p>
-          )}
+          </div>
         </div>
-      </div>
-      <div className="dummy">
-        <div className="l" />
-        <div className="r" />
-      </div>
-    </section>
-    <section className="row b-row">
-      <div className="col-12">
-        <div className="d-block d-lg-none text-center">
-          {heading && <h1>{heading}</h1>}
-          {subheading && <h2>{subheading}</h2>}
-        </div>
-        <div className="text-center">
-          <i
-            className="fa fa-angle-double-down"
-            onClick={() => scrollOverlayUp()}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 )
 
 class HomeOverlay extends React.Component {
   constructor(props) {
     super(props)
-    this.opacity = 1
-    this.refOverlay = null
+    this.refOverlay = React.createRef()
     this.visible = true
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -82,23 +90,28 @@ class HomeOverlay extends React.Component {
   }
 
   scrollOverlayUp() {
-    const height = this.refOverlay.clientHeight
+    if (!this.refOverlay.current) {
+      return
+    }
+
+    const height = this.refOverlay.current.clientHeight
     window.scrollTo({ top: height, behavior: "smooth" })
   }
 
   handleScroll(event) {
     const el = document.scrollingElement || document.documentElement
     const scrollTop = el.scrollTop
-    const height = document.body.clientHeight
-    this.opacity = Math.max((height - scrollTop) / height, 0)
 
-    if (!this.refOverlay) {
+    if (!this.refOverlay.current) {
       return
     }
 
-    this.refOverlay.style.opacity = this.opacity
+    const height = document.body.clientHeight
+    const opacity = Math.max((height - scrollTop) / height, 0)
 
-    const overlayHeight = this.refOverlay.clientHeight
+    this.refOverlay.current.style.opacity = opacity
+
+    const overlayHeight = this.refOverlay.current.clientHeight
     const visible = scrollTop <= overlayHeight
 
     if (this.visible == visible) {
@@ -112,18 +125,11 @@ class HomeOverlay extends React.Component {
   render() {
     const { heading, subheading, intro, btn_text, btn_url } = this.props
     return (
-      <>
-        <div
-          className="overlay"
-          style={{ opacity: this.opacity }}
-          ref={refOverlay => (this.refOverlay = refOverlay)}
-        >
-          <HomeOverlayTemplate
-            {...this.props}
-            scrollOverlayUp={this.scrollOverlayUp}
-          />
-        </div>
-      </>
+      <HomeOverlayTemplateWithRef
+        {...this.props}
+        scrollOverlayUp={this.scrollOverlayUp}
+        ref={this.refOverlay}
+      />
     )
   }
 }

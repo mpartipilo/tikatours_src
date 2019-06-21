@@ -100,12 +100,12 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      isOpen: false,
-      thresholdCrossed: false
+      isOpen: false
     }
 
+    this.thresholdCrossed = false
     this.setCollapsibleElement = React.createRef()
-    this.divTopHeader = null
+    this.divTopHeader = React.createRef()
     this.toggleNavbar = this.toggleNavbar.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -126,7 +126,7 @@ class Header extends React.Component {
   }
 
   handleScroll(event) {
-    if (this.divTopHeader == null) {
+    if (this.divTopHeader.current == null) {
       return
     }
 
@@ -138,11 +138,18 @@ class Header extends React.Component {
 
     const thresholdCrossed = scrollPoint >= height
 
-    if (this.state.thresholdCrossed == thresholdCrossed) {
+    if (this.thresholdCrossed == thresholdCrossed) {
       return
     }
 
-    this.setState({ thresholdCrossed })
+    this.thresholdCrossed = thresholdCrossed
+    if (thresholdCrossed) {
+      this.divTopHeader.current.classList.add("fixed")
+      this.divTopHeader.current.classList.add("fade-in")
+    } else {
+      this.divTopHeader.current.classList.remove("fixed")
+      this.divTopHeader.current.classList.remove("fade-in")
+    }
   }
 
   render() {
@@ -157,10 +164,8 @@ class Header extends React.Component {
     return (
       <header>
         <div
-          className={
-            "top " + (this.state.thresholdCrossed ? "fixed fade-in" : "")
-          }
-          ref={divTopHeader => (this.divTopHeader = divTopHeader)}
+          className={"top " + (this.thresholdCrossed ? "fixed fade-in" : "")}
+          ref={this.divTopHeader}
         >
           <Link to={navigation.path} className="logo">
             <img src={logo} alt={navigation.title} />

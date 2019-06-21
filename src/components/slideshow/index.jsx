@@ -124,7 +124,6 @@ class Slideshow extends React.Component {
     this.handleScroll = this.handleScroll.bind(this)
 
     this.fixed = props.fixed
-    this.ssRef = null
     this.capRef = null
     this.ssInitialClassName = props.fixed ? "ss-wrap fixed" : "ss-wrap"
   }
@@ -135,20 +134,6 @@ class Slideshow extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll)
-  }
-
-  componentDidUpdate() {
-    if (this.fixed !== this.props.fixed) {
-      this.fixed = this.props.fixed
-
-      if (this.ssRef) {
-        if (this.fixed) {
-          this.ssRef.classList.add("fixed")
-        } else {
-          this.ssRef.classList.remove("fixed")
-        }
-      }
-    }
   }
 
   handleScroll(event) {
@@ -208,7 +193,7 @@ class Slideshow extends React.Component {
     return (
       <>
         {slides && slides.length > 0 && (
-          <div className={this.ssInitialClassName} ref={r => (this.ssRef = r)}>
+          <div className={this.ssInitialClassName} ref={this.props.forwardRef}>
             <div
               className="ss-cap"
               style={{
@@ -249,9 +234,7 @@ class Slideshow extends React.Component {
             <iframe
               width="100%"
               height="95%"
-              src={`https://www.youtube.com/embed/${
-                this.state.videoId
-              }?rel=0&autoplay=1&showinfo=1`}
+              src={`https://www.youtube.com/embed/${this.state.videoId}?rel=0&autoplay=1&showinfo=1`}
               frameBorder="0"
               allowFullScreen
             />
@@ -269,7 +252,14 @@ Slideshow.defaultProps = {
 Slideshow.propTypes = {
   strings: PropTypes.object.isRequired,
   fixed: PropTypes.bool,
-  slides: PropTypes.array.isRequired
+  slides: PropTypes.array.isRequired,
+  forwardRef: PropTypes.object
 }
 
-export default Slideshow
+function SlideshowWithForwardRef(props, ref) {
+  return <Slideshow {...props} forwardRef={ref} />
+}
+
+const SlideshowWithRef = React.forwardRef(SlideshowWithForwardRef)
+
+export default SlideshowWithRef
