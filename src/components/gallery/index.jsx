@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
-import { Navigation } from 'swiper/dist/js/swiper.esm'
+import { Navigation } from 'swiper/js/swiper.esm'
 
 class Gallery extends React.Component {
   constructor(props) {

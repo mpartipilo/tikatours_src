@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { SpringGrid, makeResponsive, easings, layout } from "react-stonecutter"
 import Swiper from "react-id-swiper"
-import { Navigation } from 'swiper/dist/js/swiper.esm'
+import { Navigation } from 'swiper/js/swiper.esm'
 
 const GalleryIndexTabs = ({ groups, allImagesLabel, onTabClicked, active }) => (
   <React.Fragment>

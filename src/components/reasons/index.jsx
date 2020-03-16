@@ -2,7 +2,7 @@ import React, { useState, useCallback, useRef, useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Swiper from "react-id-swiper"
-import { Navigation, Autoplay } from 'swiper/dist/js/swiper.esm'
+import { Navigation, Autoplay } from 'swiper/js/swiper.esm'
 
 // TODO Sometimes the slides are getting a width that overflows the container. This fixes itself with a window resize.
 

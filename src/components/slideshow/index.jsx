@@ -7,7 +7,7 @@ import {
   Autoplay,
   Pagination,
   EffectFade
-} from "swiper/dist/js/swiper.esm"
+} from "swiper/js/swiper.esm"
 
 // TODO Transition opacity when mounting .ss-cap, .next and .prev
 

@@ -3,7 +3,7 @@ import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Swiper from "react-id-swiper"
-import { Navigation } from "swiper/dist/js/swiper.esm"
+import { Navigation } from "swiper/js/swiper.esm"
 
 const ButtonCommon = ({ isNext, show }) => (
   <div className={isNext ? "next" : "prev"}>
