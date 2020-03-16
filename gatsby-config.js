@@ -104,9 +104,9 @@ module.exports = {
       resolve: `gatsby-plugin-whatshelp`,
       options: {
         facebook: "290339974371704", // Facebook page ID
-        whatsapp: "+31627468794", // WhatsApp number
+        whatsapp: "+995 551 402223", // WhatsApp number
         email: "info@tikatours.com", // Email
-        call: "+995 570 70 72 14", // Call phone number
+        call: "+995 551 402223", // Call phone number
         company_logo_url:
           "//storage.whatshelp.io/widget/a5/a50c/a50c13510f5f1806f76bc4fabcb3d87c/logo.jpg", // URL of company logo (png, jpg, gif)
         greeting_message:

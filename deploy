@@ -30,6 +30,18 @@ elif [ $1 == "staging" ]
         else
             echo $ERRORSTRING;
         fi
+elif [ $1 == "github" ]
+    then
+        if [[ -z $2 ]]
+            then
+               echo "Specify commit message"
+               exit(1)
+        else
+            rsync -r ~/pcode/tikatours.com/public/ ~/deploy/tikatours.com/
+            git add .
+            git commit $2
+            git push -u origin master
+        fi
 else
     echo $ERRORSTRING;
 fi
