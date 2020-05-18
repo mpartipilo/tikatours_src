@@ -10,7 +10,7 @@ import { Breadcrumbs } from "../breadcrumbs"
 
 import "bootstrap/scss/bootstrap.scss"
 import "font-awesome/scss/font-awesome.scss"
-import "react-id-swiper/lib/styles/scss/swiper.scss"
+import "swiper/swiper.scss"
 import "../../../assets/sass/main.scss"
 
 /* 
