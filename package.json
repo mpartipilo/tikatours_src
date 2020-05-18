@@ -70,12 +70,9 @@
     "develop": "gatsby develop --host 0.0.0.0 --port 8000",
     "format": "prettier --write 'src/**/*.js' 'src/**/*.jsx'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf .cache ./public/*",
-    "buildp": "npm run clean && npm run build",
-    "predeploy": "bash -c 'pushd ./public' && git add . && git commit -m 'deploying website' && git bash -c 'popd'",
-    "deploy": "bash -c 'pushd public' && git push && bash -c 'popd'",
-    "serve": "gatsby serve",
-    "fulldeploy": "npm run buildp && npm run predeploy && npm run deploy"
+    "clean": "gatsby clean",
+    "buildp": "gatsby clean && gatsby build",
+    "serve": "gatsby serve"
   },
   "devDependencies": {
     "ajv": "^6.10.2",
